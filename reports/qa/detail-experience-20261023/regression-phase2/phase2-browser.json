@@ -1,0 +1,344 @@
+{
+  "date": "2026-10-23T07:45:24.476Z",
+  "scope": "Scripted simulated first-visit walkthrough; no human participants; isolated synthetic local storage; no camera access.",
+  "checks": [
+    {
+      "name": "1280-home: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: story entry visible in first viewport",
+      "pass": true
+    },
+    {
+      "name": "1280: static home makes no hand or Three requests",
+      "pass": true
+    },
+    {
+      "name": "1280: all home card links point at current detail",
+      "pass": true
+    },
+    {
+      "name": "1280: keyboard entry opens story",
+      "pass": true
+    },
+    {
+      "name": "1280: silent story complete and honest",
+      "pass": true
+    },
+    {
+      "name": "1280: reading does not auto-collect",
+      "pass": true
+    },
+    {
+      "name": "1280: save confirmation names recovery destination",
+      "pass": true
+    },
+    {
+      "name": "1280-detail: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: collection retrievable through visible link",
+      "pass": true
+    },
+    {
+      "name": "1280-collection: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: later visit from home finds saved flower",
+      "pass": true
+    },
+    {
+      "name": "1280-catalogue: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: collection toggle retains keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "1280: second keyboard toggle cancels same collection",
+      "pass": true
+    },
+    {
+      "name": "1280: catalogue supports keyboard story entry",
+      "pass": true
+    },
+    {
+      "name": "1280: model remains beside the same story",
+      "pass": true
+    },
+    {
+      "name": "1280: optional scanner receives peony instead of default lotus",
+      "pass": true
+    },
+    {
+      "name": "1280: scanner return retains flower",
+      "pass": true
+    },
+    {
+      "name": "768-home: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "768: story entry visible in first viewport",
+      "pass": true
+    },
+    {
+      "name": "768: static home makes no hand or Three requests",
+      "pass": true
+    },
+    {
+      "name": "768: all home card links point at current detail",
+      "pass": true
+    },
+    {
+      "name": "768: keyboard entry opens story",
+      "pass": true
+    },
+    {
+      "name": "768: silent story complete and honest",
+      "pass": true
+    },
+    {
+      "name": "768: reading does not auto-collect",
+      "pass": true
+    },
+    {
+      "name": "768: save confirmation names recovery destination",
+      "pass": true
+    },
+    {
+      "name": "768-detail: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "768: collection retrievable through visible link",
+      "pass": true
+    },
+    {
+      "name": "768-collection: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "768: later visit from home finds saved flower",
+      "pass": true
+    },
+    {
+      "name": "768-catalogue: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "768: collection toggle retains keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "768: second keyboard toggle cancels same collection",
+      "pass": true
+    },
+    {
+      "name": "768: catalogue supports keyboard story entry",
+      "pass": true
+    },
+    {
+      "name": "768: model remains beside the same story",
+      "pass": true
+    },
+    {
+      "name": "768: optional scanner receives peony instead of default lotus",
+      "pass": true
+    },
+    {
+      "name": "768: scanner return retains flower",
+      "pass": true
+    },
+    {
+      "name": "390-home: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: story entry visible in first viewport",
+      "pass": true
+    },
+    {
+      "name": "390: static home makes no hand or Three requests",
+      "pass": true
+    },
+    {
+      "name": "390: all home card links point at current detail",
+      "pass": true
+    },
+    {
+      "name": "390: keyboard entry opens story",
+      "pass": true
+    },
+    {
+      "name": "390: silent story complete and honest",
+      "pass": true
+    },
+    {
+      "name": "390: reading does not auto-collect",
+      "pass": true
+    },
+    {
+      "name": "390: save confirmation names recovery destination",
+      "pass": true
+    },
+    {
+      "name": "390-detail: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: collection retrievable through visible link",
+      "pass": true
+    },
+    {
+      "name": "390-collection: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: later visit from home finds saved flower",
+      "pass": true
+    },
+    {
+      "name": "390-catalogue: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: collection toggle retains keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "390: second keyboard toggle cancels same collection",
+      "pass": true
+    },
+    {
+      "name": "390: catalogue supports keyboard story entry",
+      "pass": true
+    },
+    {
+      "name": "390: model remains beside the same story",
+      "pass": true
+    },
+    {
+      "name": "390: optional scanner receives peony instead of default lotus",
+      "pass": true
+    },
+    {
+      "name": "390: scanner return retains flower",
+      "pass": true
+    },
+    {
+      "name": "320-home: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "320: story entry visible in first viewport",
+      "pass": true
+    },
+    {
+      "name": "320: static home makes no hand or Three requests",
+      "pass": true
+    },
+    {
+      "name": "320: all home card links point at current detail",
+      "pass": true
+    },
+    {
+      "name": "320: keyboard entry opens story",
+      "pass": true
+    },
+    {
+      "name": "320: silent story complete and honest",
+      "pass": true
+    },
+    {
+      "name": "320: reading does not auto-collect",
+      "pass": true
+    },
+    {
+      "name": "320: save confirmation names recovery destination",
+      "pass": true
+    },
+    {
+      "name": "320-detail: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "320: collection retrievable through visible link",
+      "pass": true
+    },
+    {
+      "name": "320-collection: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "320: later visit from home finds saved flower",
+      "pass": true
+    },
+    {
+      "name": "320-catalogue: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "320: collection toggle retains keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "320: second keyboard toggle cancels same collection",
+      "pass": true
+    },
+    {
+      "name": "320: catalogue supports keyboard story entry",
+      "pass": true
+    },
+    {
+      "name": "320: model remains beside the same story",
+      "pass": true
+    },
+    {
+      "name": "320: optional scanner receives peony instead of default lotus",
+      "pass": true
+    },
+    {
+      "name": "320: scanner return retains flower",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion: story entry remains available",
+      "pass": true
+    },
+    {
+      "name": "No page errors or HTTP failures",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "1280-home.png",
+    "1280-detail.png",
+    "1280-collection.png",
+    "1280-catalogue.png",
+    "768-home.png",
+    "768-detail.png",
+    "768-collection.png",
+    "768-catalogue.png",
+    "390-home.png",
+    "390-detail.png",
+    "390-collection.png",
+    "390-catalogue.png",
+    "320-home.png",
+    "320-detail.png",
+    "320-collection.png",
+    "320-catalogue.png"
+  ],
+  "browser": "155.0.8059.85",
+  "summary": {
+    "total": 78,
+    "passed": 78,
+    "failed": 0
+  }
+}

@@ -1,0 +1,1028 @@
+
+> zevth-handheld-candidate@0.5.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: five distinct geometric model constructors are bound to exact card keys
+ok 1 - five distinct geometric model constructors are bound to exact card keys
+  ---
+  duration_ms: 534.15575
+  type: 'test'
+  ...
+# Subtest: unknown key never receives a substitute bloom
+ok 2 - unknown key never receives a substitute bloom
+  ---
+  duration_ms: 0.226167
+  type: 'test'
+  ...
+# Subtest: export v2 round-trips checksummed canonical records without a write
+ok 3 - export v2 round-trips checksummed canonical records without a write
+  ---
+  duration_ms: 69.712541
+  type: 'test'
+  ...
+# Subtest: legacy v1 preflight migrates only on explicit merge and preserves existing bytes until confirmation
+ok 4 - legacy v1 preflight migrates only on explicit merge and preserves existing bytes until confirmation
+  ---
+  duration_ms: 0.590625
+  type: 'test'
+  ...
+# Subtest: undo restores exact prior raw serialization, including the no-data state
+ok 5 - undo restores exact prior raw serialization, including the no-data state
+  ---
+  duration_ms: 0.447625
+  type: 'test'
+  ...
+# Subtest: duplicate-only import is read-only and cannot create a new recovery point
+ok 6 - duplicate-only import is read-only and cannot create a new recovery point
+  ---
+  duration_ms: 0.252959
+  type: 'test'
+  ...
+# Subtest: preflight and undo refuse to overwrite intervening records
+ok 7 - preflight and undo refuse to overwrite intervening records
+  ---
+  duration_ms: 0.286041
+  type: 'test'
+  ...
+# Subtest: recovery journal is saved before target; silent or throwing write failure restores original data
+ok 8 - recovery journal is saved before target; silent or throwing write failure restores original data
+  ---
+  duration_ms: 1.168542
+  type: 'test'
+  ...
+# Subtest: failed recovery-point write cannot alter the collection
+ok 9 - failed recovery-point write cannot alter the collection
+  ---
+  duration_ms: 0.266667
+  type: 'test'
+  ...
+# Subtest: a rollback that cannot be verified is reported without deleting its recovery journal
+ok 10 - a rollback that cannot be verified is reported without deleting its recovery journal
+  ---
+  duration_ms: 0.174708
+  type: 'test'
+  ...
+# Subtest: change during journal creation is detected without rolling back another tab data
+ok 11 - change during journal creation is detected without rolling back another tab data
+  ---
+  duration_ms: 0.403792
+  type: 'test'
+  ...
+# Subtest: unknown current versions and malformed journals are preserved
+ok 12 - unknown current versions and malformed journals are preserved
+  ---
+  duration_ms: 1.898292
+  type: 'test'
+  ...
+# Subtest: corrupt restore-before payload is rejected rather than installed
+ok 13 - corrupt restore-before payload is rejected rather than installed
+  ---
+  duration_ms: 0.460084
+  type: 'test'
+  ...
+# Subtest: checksum, catalogue and future-version failures do not produce a plan
+ok 14 - checksum, catalogue and future-version failures do not produce a plan
+  ---
+  duration_ms: 4.067625
+  type: 'test'
+  ...
+# Subtest: unknown cards, duplicates, cross-card targets, fake methods and invalid dates are refused
+ok 15 - unknown cards, duplicates, cross-card targets, fake methods and invalid dates are refused
+  ---
+  duration_ms: 0.510416
+  type: 'test'
+  ...
+# Subtest: unsafe keys at any depth, excessive bytes, invalid JSON and top-level arrays are rejected
+ok 16 - unsafe keys at any depth, excessive bytes, invalid JSON and top-level arrays are rejected
+  ---
+  duration_ms: 0.361125
+  type: 'test'
+  ...
+# Subtest: superseded asynchronous preflight cannot commit stale content
+ok 17 - superseded asynchronous preflight cannot commit stale content
+  ---
+  duration_ms: 0.16525
+  type: 'test'
+  ...
+# Subtest: restored provenance survives existing store reads and later other-card recognition
+ok 18 - restored provenance survives existing store reads and later other-card recognition
+  ---
+  duration_ms: 0.393042
+  type: 'test'
+  ...
+# Subtest: existing recognition writer preserves unsupported stored versions
+ok 19 - existing recognition writer preserves unsupported stored versions
+  ---
+  duration_ms: 0.081916
+  type: 'test'
+  ...
+# Subtest: recognition cannot erase malformed or extended legacy records while adding a card
+ok 20 - recognition cannot erase malformed or extended legacy records while adding a card
+  ---
+  duration_ms: 0.376791
+  type: 'test'
+  ...
+# Subtest: route planning, explicit views, resume, completion and undo are independent from collection
+ok 21 - route planning, explicit views, resume, completion and undo are independent from collection
+  ---
+  duration_ms: 0.8215
+  type: 'test'
+  ...
+# Subtest: editing route order retains only relevant viewed cards and rejects invalid input
+ok 22 - editing route order retains only relevant viewed cards and rejects invalid input
+  ---
+  duration_ms: 0.395417
+  type: 'test'
+  ...
+# Subtest: future/corrupt route data cannot be silently reset or migrated
+ok 23 - future/corrupt route data cannot be silently reset or migrated
+  ---
+  duration_ms: 0.225625
+  type: 'test'
+  ...
+# Subtest: storage denial and discarded route writes never report saved progress
+ok 24 - storage denial and discarded route writes never report saved progress
+  ---
+  duration_ms: 0.136875
+  type: 'test'
+  ...
+# Subtest: chrysanthemum has distinct art-specific solid geometry, not a reused lotus
+ok 25 - chrysanthemum has distinct art-specific solid geometry, not a reused lotus
+  ---
+  duration_ms: 452.3125
+  type: 'test'
+  ...
+# Subtest: chrysanthemum attributes are finite and indexed within practical budgets
+ok 26 - chrysanthemum attributes are finite and indexed within practical budgets
+  ---
+  duration_ms: 71.324042
+  type: 'test'
+  ...
+# Subtest: chrysanthemum growth preserves its original printed branch root and open pose
+ok 27 - chrysanthemum growth preserves its original printed branch root and open pose
+  ---
+  duration_ms: 66.372
+  type: 'test'
+  ...
+# Subtest: chrysanthemum owns independent resources and disposes idempotently
+ok 28 - chrysanthemum owns independent resources and disposes idempotently
+  ---
+  duration_ms: 78.432833
+  type: 'test'
+  ...
+# Subtest: v1 to v2 migration preserves legacy data
+ok 29 - v1 to v2 migration preserves legacy data
+  ---
+  duration_ms: 2.633833
+  type: 'test'
+  ...
+# Subtest: v2 migration is idempotent
+ok 30 - v2 migration is idempotent
+  ---
+  duration_ms: 0.875375
+  type: 'test'
+  ...
+# Subtest: manual collection does not create duplicate
+ok 31 - manual collection does not create duplicate
+  ---
+  duration_ms: 0.304791
+  type: 'test'
+  ...
+# Subtest: encounter recording does not auto-collect
+ok 32 - encounter recording does not auto-collect
+  ---
+  duration_ms: 0.367
+  type: 'test'
+  ...
+# Subtest: remove collection keeps encounters and views
+ok 33 - remove collection keeps encounters and views
+  ---
+  duration_ms: 1.3155
+  type: 'test'
+  ...
+# Subtest: recent views limited to 10 entries
+ok 34 - recent views limited to 10 entries
+  ---
+  duration_ms: 1.467792
+  type: 'test'
+  ...
+# Subtest: recent views stores up to 10 different manual entries
+ok 35 - recent views stores up to 10 different manual entries
+  ---
+  duration_ms: 0.7205
+  type: 'test'
+  ...
+# Subtest: recent view updates existing entry to front
+ok 36 - recent view updates existing entry to front
+  ---
+  duration_ms: 0.152167
+  type: 'test'
+  ...
+# Subtest: weak recognition evidence is rejected
+ok 37 - weak recognition evidence is rejected
+  ---
+  duration_ms: 0.280541
+  type: 'test'
+  ...
+# Subtest: collection with note preserves note text
+ok 38 - collection with note preserves note text
+  ---
+  duration_ms: 0.863542
+  type: 'test'
+  ...
+# Subtest: corrupt v2 offers read-only legacy history without overwriting either source
+ok 39 - corrupt v2 offers read-only legacy history without overwriting either source
+  ---
+  duration_ms: 1.095959
+  type: 'test'
+  ...
+# Subtest: explicit recovery verifies an exact backup and retains v1 before enabling writes
+ok 40 - explicit recovery verifies an exact backup and retains v1 before enabling writes
+  ---
+  duration_ms: 0.288458
+  type: 'test'
+  ...
+# Subtest: invalid data without valid legacy stays unavailable instead of pretending to be empty
+ok 41 - invalid data without valid legacy stays unavailable instead of pretending to be empty
+  ---
+  duration_ms: 0.272875
+  type: 'test'
+  ...
+# Subtest: unsupported versions and mismatched catalogues never downgrade to legacy
+ok 42 - unsupported versions and mismatched catalogues never downgrade to legacy
+  ---
+  duration_ms: 0.125417
+  type: 'test'
+  ...
+# Subtest: storage access denied returns an error state without throwing
+ok 43 - storage access denied returns an error state without throwing
+  ---
+  duration_ms: 0.064167
+  type: 'test'
+  ...
+# Subtest: silent write failure cannot claim a successful collection
+ok 44 - silent write failure cannot claim a successful collection
+  ---
+  duration_ms: 0.102625
+  type: 'test'
+  ...
+# Subtest: quota errors preserve existing records and report failure
+ok 45 - quota errors preserve existing records and report failure
+  ---
+  duration_ms: 0.222542
+  type: 'test'
+  ...
+# Subtest: migration write failures expose legacy preview and can be retried after storage recovers
+ok 46 - migration write failures expose legacy preview and can be retried after storage recovers
+  ---
+  duration_ms: 0.200125
+  type: 'test'
+  ...
+# Subtest: backup write failure prevents replacement of corrupt v2
+ok 47 - backup write failure prevents replacement of corrupt v2
+  ---
+  duration_ms: 0.171583
+  type: 'test'
+  ...
+# Subtest: recovery never overwrites a different previous recovery copy
+ok 48 - recovery never overwrites a different previous recovery copy
+  ---
+  duration_ms: 0.220875
+  type: 'test'
+  ...
+# Subtest: write failure during recovery retains the backup and the original value
+ok 49 - write failure during recovery retains the backup and the original value
+  ---
+  duration_ms: 0.127084
+  type: 'test'
+  ...
+# Subtest: intervening writes are detected before a collection replaces another tab data
+ok 50 - intervening writes are detected before a collection replaces another tab data
+  ---
+  duration_ms: 0.101833
+  type: 'test'
+  ...
+# Subtest: a recovery backup never authorizes overwriting a concurrent newer v2
+ok 51 - a recovery backup never authorizes overwriting a concurrent newer v2
+  ---
+  duration_ms: 0.098958
+  type: 'test'
+  ...
+# Subtest: oversized data is rejected before persistence instead of making the next read fail
+ok 52 - oversized data is rejected before persistence instead of making the next read fail
+  ---
+  duration_ms: 0.17925
+  type: 'test'
+  ...
+# Subtest: storage events notify listeners of errors and legacy changes, and dispose detaches
+ok 53 - storage events notify listeners of errors and legacy changes, and dispose detaches
+  ---
+  duration_ms: 0.372208
+  type: 'test'
+  ...
+# Subtest: homepage presents the original card without loading the retired hand scene
+ok 54 - homepage presents the original card without loading the retired hand scene
+  ---
+  duration_ms: 0.496792
+  type: 'test'
+  ...
+# Subtest: handheld movement stays finite, native-scroll-driven and exactly reversible
+ok 55 - handheld movement stays finite, native-scroll-driven and exactly reversible
+  ---
+  duration_ms: 3.091959
+  type: 'test'
+  ...
+# Subtest: initial card load keeps geometry and high priority without requesting camera
+ok 56 - initial card load keeps geometry and high priority without requesting camera
+  ---
+  duration_ms: 0.086792
+  type: 'test'
+  ...
+# Subtest: hero preserves the immutable 64 × 91 mm supplied metal GLB
+ok 57 - hero preserves the immutable 64 × 91 mm supplied metal GLB
+  ---
+  duration_ms: 4.960584
+  type: 'test'
+  ...
+# Subtest: five thick transmitting glass panels rest on the stone and clear the card
+ok 58 - five thick transmitting glass panels rest on the stone and clear the card
+  ---
+  duration_ms: 114.7385
+  type: 'test'
+  ...
+# Subtest: the pedestal is a thick beveled non-metallic stone object with bounded microtexture
+ok 59 - the pedestal is a thick beveled non-metallic stone object with bounded microtexture
+  ---
+  duration_ms: 31.698083
+  type: 'test'
+  ...
+# Subtest: two complete padded holders physically meet the unmodified card bottom
+ok 60 - two complete padded holders physically meet the unmodified card bottom
+  ---
+  duration_ms: 4.382542
+  type: 'test'
+  ...
+# Subtest: cover lift, fade and card turn are finite, clamped, and exactly reversible
+ok 61 - cover lift, fade and card turn are finite, clamped, and exactly reversible
+  ---
+  duration_ms: 2.781208
+  type: 'test'
+  ...
+# Subtest: hero additions stay finite and inside modest mesh/triangle/material budgets
+ok 62 - hero additions stay finite and inside modest mesh/triangle/material budgets
+  ---
+  duration_ms: 7.525
+  type: 'test'
+  ...
+# Subtest: camera matches the CPU still’s 80 mm horizontal-fit portrait lens
+ok 63 - camera matches the CPU still’s 80 mm horizontal-fit portrait lens
+  ---
+  duration_ms: 0.132708
+  type: 'test'
+  ...
+# Subtest: the reflection environment uses just three broad, neutral softboxes
+ok 64 - the reflection environment uses just three broad, neutral softboxes
+  ---
+  duration_ms: 0.68725
+  type: 'test'
+  ...
+# Subtest: flowers retain three five-rounded-petal heads, mint centres and pointed foliage
+ok 65 - flowers retain three five-rounded-petal heads, mint centres and pointed foliage
+  ---
+  duration_ms: 259.74275
+  type: 'test'
+  ...
+# Subtest: flowers attributes/index bounds are finite within geometry and draw budgets
+ok 66 - flowers attributes/index bounds are finite within geometry and draw budgets
+  ---
+  duration_ms: 62.191416
+  type: 'test'
+  ...
+# Subtest: flowers growth remains rooted, clamps input, and restores exact full-open pose
+ok 67 - flowers growth remains rooted, clamps input, and restores exact full-open pose
+  ---
+  duration_ms: 76.0375
+  type: 'test'
+  ...
+# Subtest: flowers instances are deterministic and disposal is isolated and idempotent
+ok 68 - flowers instances are deterministic and disposal is isolated and idempotent
+  ---
+  duration_ms: 130.815958
+  type: 'test'
+  ...
+# Subtest: flowers transparent fallback hashes match the final source, reference and render
+ok 69 - flowers transparent fallback hashes match the final source, reference and render
+  ---
+  duration_ms: 2.4245
+  type: 'test'
+  ...
+# Subtest: hand sequence uses 32 uniform absolute poses from one 25-joint mesh
+ok 70 - hand sequence uses 32 uniform absolute poses from one 25-joint mesh
+  ---
+  duration_ms: 2.098958
+  type: 'test'
+  ...
+# Subtest: every hand asset is local, unique and hash-verified
+ok 71 - every hand asset is local, unique and hash-verified
+  ---
+  duration_ms: 14.45625
+  type: 'test'
+  ...
+# Subtest: hand source license and stable source digest are retained
+ok 72 - hand source license and stable source digest are retained
+  ---
+  duration_ms: 0.404542
+  type: 'test'
+  ...
+# Subtest: the complete hand remains in front of the immutable card in all 32 checked poses
+ok 73 - the complete hand remains in front of the immutable card in all 32 checked poses
+  ---
+  duration_ms: 1.835917
+  type: 'test'
+  ...
+# Subtest: render package validates exact alpha and continuous distinct frame motion
+ok 74 - render package validates exact alpha and continuous distinct frame motion
+  ---
+  duration_ms: 10.867958
+  type: 'test'
+  ...
+# Subtest: hand faces the camera and gently descends during a lateral planar fan
+ok 75 - hand faces the camera and gently descends during a lateral planar fan
+  ---
+  duration_ms: 4.311083
+  type: 'test'
+  ...
+# Subtest: the preserved source GLB contains one actual weighted 25-joint hand
+ok 76 - the preserved source GLB contains one actual weighted 25-joint hand
+  ---
+  duration_ms: 5.980542
+  type: 'test'
+  ...
+# Subtest: the final renderer hash and pose variant agree across deliverable records
+ok 77 - the final renderer hash and pose variant agree across deliverable records
+  ---
+  duration_ms: 1.616
+  type: 'test'
+  ...
+# Subtest: the saved skeletal fan separates its fingertip spread without camera pitch
+ok 78 - the saved skeletal fan separates its fingertip spread without camera pitch
+  ---
+  duration_ms: 1.659333
+  type: 'test'
+  ...
+# Subtest: uniform pose selection is exact, clamped and fully reversible with no elapsed time
+ok 79 - uniform pose selection is exact, clamped and fully reversible with no elapsed time
+  ---
+  duration_ms: 5.964
+  type: 'test'
+  ...
+# Subtest: the hand completely opens before withdrawal or card lift, then ends in the fan
+ok 80 - the hand completely opens before withdrawal or card lift, then ends in the fan
+  ---
+  duration_ms: 0.336666
+  type: 'test'
+  ...
+# Subtest: only the initial frame loads until decoded, followed by small adjacent prefetch
+ok 81 - only the initial frame loads until decoded, followed by small adjacent prefetch
+  ---
+  duration_ms: 2.233084
+  type: 'test'
+  ...
+# Subtest: a requested frame replaces the hand only after decode, with no stale intermediate pose
+ok 82 - a requested frame replaces the hand only after decode, with no stale intermediate pose
+  ---
+  duration_ms: 1.02075
+  type: 'test'
+  ...
+# Subtest: reverse scrolling chooses the same cached frame immediately and ignores invalid progress
+ok 83 - reverse scrolling chooses the same cached frame immediately and ignores invalid progress
+  ---
+  duration_ms: 0.308666
+  type: 'test'
+  ...
+# Subtest: load and decode failures retain the last safe frame and explicit retry recovers
+ok 84 - load and decode failures retain the last safe frame and explicit retry recovers
+  ---
+  duration_ms: 0.489458
+  type: 'test'
+  ...
+# Subtest: all layers switch together without changing existing accessibility attributes
+ok 85 - all layers switch together without changing existing accessibility attributes
+  ---
+  duration_ms: 0.729708
+  type: 'test'
+  ...
+# Subtest: reduced motion is the static first pose, with no adjacent preloads or hidden animation
+ok 86 - reduced motion is the static first pose, with no adjacent preloads or hidden animation
+  ---
+  duration_ms: 0.52175
+  type: 'test'
+  ...
+# Subtest: disposal cancels pending loads, blocks late decodes and remains idempotent
+ok 87 - disposal cancels pending loads, blocks late decodes and remains idempotent
+  ---
+  duration_ms: 0.448542
+  type: 'test'
+  ...
+# Subtest: frame inputs are copied and cache remains bounded during rapid scrubbing
+ok 88 - frame inputs are copied and cache remains bounded during rapid scrubbing
+  ---
+  duration_ms: 1.026375
+  type: 'test'
+  ...
+# Subtest: canvas targets receive only decoded frames at the verified source dimensions
+ok 89 - canvas targets receive only decoded frames at the verified source dimensions
+  ---
+  duration_ms: 0.41575
+  type: 'test'
+  ...
+# Subtest: controller does not create animation loops, crossfades, storage writes or accessibility announcements
+ok 90 - controller does not create animation loops, crossfades, storage writes or accessibility announcements
+  ---
+  duration_ms: 0.644833
+  type: 'test'
+  ...
+# Subtest: paired frames wait for both layers to decode before one atomic pose commit
+ok 91 - paired frames wait for both layers to decode before one atomic pose commit
+  ---
+  duration_ms: 0.251166
+  type: 'test'
+  ...
+# Subtest: one failed layer holds both previous frames and retries as an entire pose pair
+ok 92 - one failed layer holds both previous frames and retries as an entire pose pair
+  ---
+  duration_ms: 0.202667
+  type: 'test'
+  ...
+# Subtest: reverse paired poses remain identical and cache is bounded by five pose pairs
+ok 93 - reverse paired poses remain identical and cache is bounded by five pose pairs
+  ---
+  duration_ms: 0.344583
+  type: 'test'
+  ...
+# Subtest: late paired decodes and disposal cannot produce mismatched foreground fingers
+ok 94 - late paired decodes and disposal cannot produce mismatched foreground fingers
+  ---
+  duration_ms: 0.163709
+  type: 'test'
+  ...
+# Subtest: paired source objects are immutable snapshots and malformed pairs are rejected
+ok 95 - paired source objects are immutable snapshots and malformed pairs are rejected
+  ---
+  duration_ms: 0.145042
+  type: 'test'
+  ...
+# Subtest: optional cache warmup downloads at most two compressed assets concurrently without decoding the sequence
+ok 96 - optional cache warmup downloads at most two compressed assets concurrently without decoding the sequence
+  ---
+  duration_ms: 0.600416
+  type: 'test'
+  ...
+# Subtest: warmup pauses on hidden or pagehide, resumes visibly, and removes all listeners at disposal
+ok 97 - warmup pauses on hidden or pagehide, resumes visibly, and removes all listeners at disposal
+  ---
+  duration_ms: 0.594292
+  type: 'test'
+  ...
+# Subtest: reduced motion and Save-Data suppress network warming and abort an active warmup
+ok 98 - reduced motion and Save-Data suppress network warming and abort an active warmup
+  ---
+  duration_ms: 0.501
+  type: 'test'
+  ...
+# Subtest: warmup skips off-origin URLs and failed requests do not retry forever
+ok 99 - warmup skips off-origin URLs and failed requests do not retry forever
+  ---
+  duration_ms: 0.240833
+  type: 'test'
+  ...
+# Subtest: handheld source GLB is the immutable supplied relief and original artwork
+ok 100 - handheld source GLB is the immutable supplied relief and original artwork
+  ---
+  duration_ms: 6.758333
+  type: 'test'
+  ...
+# Subtest: CPU raster and independent WebGL camera agree on the bottom-edge hand contact
+ok 101 - CPU raster and independent WebGL camera agree on the bottom-edge hand contact
+  ---
+  duration_ms: 1.225416
+  type: 'test'
+  ...
+# Subtest: all supplied vertices stay finite and within the independently layerable card bounds
+ok 102 - all supplied vertices stay finite and within the independently layerable card bounds
+  ---
+  duration_ms: 143.159167
+  type: 'test'
+  ...
+# Subtest: render presentation is a transparent card-only scene with restrained source-preserving materials
+ok 103 - render presentation is a transparent card-only scene with restrained source-preserving materials
+  ---
+  duration_ms: 4.465125
+  type: 'test'
+  ...
+# Subtest: hand/card support references remain aligned across contain sizing and release reverses exactly
+ok 104 - hand/card support references remain aligned across contain sizing and release reverses exactly
+  ---
+  duration_ms: 0.913583
+  type: 'test'
+  ...
+# Subtest: handheld scene retains the original GLB bytes, dimensions, topology and original reverse texture
+ok 105 - handheld scene retains the original GLB bytes, dimensions, topology and original reverse texture
+  ---
+  duration_ms: 2.946208
+  type: 'test'
+  ...
+# Subtest: shared state is dependency-free, finite, clamped and reversible for the complete native scroll
+ok 106 - shared state is dependency-free, finite, clamped and reversible for the complete native scroll
+  ---
+  duration_ms: 0.971959
+  type: 'test'
+  ...
+# Subtest: only the independent card turns; HTML owns common lift and centering
+ok 107 - only the independent card turns; HTML owns common lift and centering
+  ---
+  duration_ms: 2.976875
+  type: 'test'
+  ...
+# Subtest: the initial fixed camera and lower-edge contact match the CPU card raster
+ok 108 - the initial fixed camera and lower-edge contact match the CPU card raster
+  ---
+  duration_ms: 51.695292
+  type: 'test'
+  ...
+# Subtest: responsive lens shift follows object-fit contain with no hand/card registration drift
+ok 109 - responsive lens shift follows object-fit contain with no hand/card registration drift
+  ---
+  duration_ms: 1.9645
+  type: 'test'
+  ...
+# Subtest: geometry bounds stay finite, centered, unclipped and restore exactly throughout the flip
+ok 110 - geometry bounds stay finite, centered, unclipped and restore exactly throughout the flip
+  ---
+  duration_ms: 4.293084
+  type: 'test'
+  ...
+# Subtest: display-only PBR calibration matches the raster while original art, geometry and texture remain intact
+ok 111 - display-only PBR calibration matches the raster while original art, geometry and texture remain intact
+  ---
+  duration_ms: 6.558167
+  type: 'test'
+  ...
+# Subtest: the offscreen PBR environment has three neutral, broad softboxes matching physical light directions
+ok 112 - the offscreen PBR environment has three neutral, broad softboxes matching physical light directions
+  ---
+  duration_ms: 2.773834
+  type: 'test'
+  ...
+# Subtest: hero WebGL unavailability preserves independent hand and fallback card DOM through repeated disposal
+ok 113 - hero WebGL unavailability preserves independent hand and fallback card DOM through repeated disposal
+  ---
+  duration_ms: 7.521
+  type: 'test'
+  ...
+# Subtest: hero route is card-only, demand-rendered, transparent and lifecycle guarded
+ok 114 - hero route is card-only, demand-rendered, transparent and lifecycle guarded
+  ---
+  duration_ms: 0.962292
+  type: 'test'
+  ...
+# Subtest: front-facing reveal retains a solid foreground hand until it clears the card
+ok 115 - front-facing reveal retains a solid foreground hand until it clears the card
+  ---
+  duration_ms: 2.444666
+  type: 'test'
+  ...
+# Subtest: leaves has distinct art-specific solid geometry, not a reused lotus
+ok 116 - leaves has distinct art-specific solid geometry, not a reused lotus
+  ---
+  duration_ms: 465.474583
+  type: 'test'
+  ...
+# Subtest: leaves attributes are finite and indexed within practical budgets
+ok 117 - leaves attributes are finite and indexed within practical budgets
+  ---
+  duration_ms: 56.682208
+  type: 'test'
+  ...
+# Subtest: leaves growth preserves its original printed branch root and open pose
+ok 118 - leaves growth preserves its original printed branch root and open pose
+  ---
+  duration_ms: 30.006833
+  type: 'test'
+  ...
+# Subtest: leaves owns independent resources and disposes idempotently
+ok 119 - leaves owns independent resources and disposes idempotently
+  ---
+  duration_ms: 48.103459
+  type: 'test'
+  ...
+# Subtest: SCAN lotus is a planted, volumetric procedural Group with 21 petals
+ok 120 - SCAN lotus is a planted, volumetric procedural Group with 21 petals
+  ---
+  duration_ms: 156.001125
+  type: 'test'
+  ...
+# Subtest: all geometry attributes are finite, indexed, and inside a practical budget
+ok 121 - all geometry attributes are finite, indexed, and inside a practical budget
+  ---
+  duration_ms: 46.358375
+  type: 'test'
+  ...
+# Subtest: growth keeps the original root anchored and restores the exact open pose
+ok 122 - growth keeps the original root anchored and restores the exact open pose
+  ---
+  duration_ms: 28.514375
+  type: 'test'
+  ...
+# Subtest: disposal is idempotent and separate instances own separate resources
+ok 123 - disposal is idempotent and separate instances own separate resources
+  ---
+  duration_ms: 42.564167
+  type: 'test'
+  ...
+# Subtest: exact original identities and source artwork names
+ok 124 - exact original identities and source artwork names
+  ---
+  duration_ms: 1.060875
+  type: 'test'
+  ...
+# Subtest: every original front and target exists and retains source checksum
+ok 125 - every original front and target exists and retains source checksum
+  ---
+  duration_ms: 25.933375
+  type: 'test'
+  ...
+# Subtest: all seven route entrypoints exist
+ok 126 - all seven route entrypoints exist
+  ---
+  duration_ms: 0.735625
+  type: 'test'
+  ...
+# Subtest: each scan link preserves work and preview return card
+ok 127 - each scan link preserves work and preview return card
+  ---
+  duration_ms: 0.690125
+  type: 'test'
+  ...
+# Subtest: untrusted navigation parameters cannot escape candidate
+ok 128 - untrusted navigation parameters cannot escape candidate
+  ---
+  duration_ms: 0.217208
+  type: 'test'
+  ...
+# Subtest: supplied recovered flow baseline remains byte-identical
+ok 129 - supplied recovered flow baseline remains byte-identical
+  ---
+  duration_ms: 2.485667
+  type: 'test'
+  ...
+# Subtest: preview code never invokes recognition storage writer
+ok 130 - preview code never invokes recognition storage writer
+  ---
+  duration_ms: 1.690625
+  type: 'test'
+  ...
+# Subtest: detail scan links preserve each flower and return to its story
+ok 131 - detail scan links preserve each flower and return to its story
+  ---
+  duration_ms: 0.173708
+  type: 'test'
+  ...
+# Subtest: peony has its own reference-derived composition and the normalized vase-mouth root
+ok 132 - peony has its own reference-derived composition and the normalized vase-mouth root
+  ---
+  duration_ms: 125.465083
+  type: 'test'
+  ...
+# Subtest: all peony petals and leaves are closed curved finite-thickness shells
+ok 133 - all peony petals and leaves are closed curved finite-thickness shells
+  ---
+  duration_ms: 80.313333
+  type: 'test'
+  ...
+# Subtest: geometry has finite indexed data with less than 70k rendered triangles and 90 draw objects
+ok 134 - geometry has finite indexed data with less than 70k rendered triangles and 90 draw objects
+  ---
+  duration_ms: 132.388208
+  type: 'test'
+  ...
+# Subtest: growth remains fixed at the printed root and exactly restores all open transforms
+ok 135 - growth remains fixed at the printed root and exactly restores all open transforms
+  ---
+  duration_ms: 120.424125
+  type: 'test'
+  ...
+# Subtest: deterministic instances own independent resources and dispose exactly once
+ok 136 - deterministic instances own independent resources and dispose exactly once
+  ---
+  duration_ms: 108.759958
+  type: 'test'
+  ...
+# Subtest: static peony fallback matches its geometry source and declares CPU-only provenance
+ok 137 - static peony fallback matches its geometry source and declares CPU-only provenance
+  ---
+  duration_ms: 15.306083
+  type: 'test'
+  ...
+# Subtest: candidate collection ignores production and writes only isolated namespace
+ok 138 - candidate collection ignores production and writes only isolated namespace
+  ---
+  duration_ms: 3.113291
+  type: 'test'
+  ...
+# Subtest: preview, unknown card and insufficient tracking never collect
+ok 139 - preview, unknown card and insufficient tracking never collect
+  ---
+  duration_ms: 0.476333
+  type: 'test'
+  ...
+# Subtest: malformed and unsupported collection schema is safe
+ok 140 - malformed and unsupported collection schema is safe
+  ---
+  duration_ms: 0.564708
+  type: 'test'
+  ...
+# Subtest: blocked and silently failing storage does not claim saved
+ok 141 - blocked and silently failing storage does not claim saved
+  ---
+  duration_ms: 0.237625
+  type: 'test'
+  ...
+# Subtest: subscribers see one durable change and may unsubscribe
+ok 142 - subscribers see one durable change and may unsubscribe
+  ---
+  duration_ms: 0.502208
+  type: 'test'
+  ...
+# Subtest: initialization is camera opt-in and preview does not collect
+ok 143 - initialization is camera opt-in and preview does not collect
+  ---
+  duration_ms: 0.5685
+  type: 'test'
+  ...
+# Subtest: security, support, and unavailable guards never request camera
+ok 144 - security, support, and unavailable guards never request camera
+  ---
+  duration_ms: 0.288917
+  type: 'test'
+  ...
+# Subtest: double start opens one camera; stop releases resources; retry works
+ok 145 - double start opens one camera; stop releases resources; retry works
+  ---
+  duration_ms: 0.4105
+  type: 'test'
+  ...
+# Subtest: denied permission is explicit and retry recovers
+ok 146 - denied permission is explicit and retry recovers
+  ---
+  duration_ms: 0.437041
+  type: 'test'
+  ...
+# Subtest: late permission after Back/cancel is closed without starting tracker
+ok 147 - late permission after Back/cancel is closed without starting tracker
+  ---
+  duration_ms: 0.375833
+  type: 'test'
+  ...
+# Subtest: cancel while loading stops stream and disposes late tracker
+ok 148 - cancel while loading stops stream and disposes late tracker
+  ---
+  duration_ms: 0.163917
+  type: 'test'
+  ...
+# Subtest: tracker/model load error closes camera and permits retry
+ok 149 - tracker/model load error closes camera and permits retry
+  ---
+  duration_ms: 0.091
+  type: 'test'
+  ...
+# Subtest: stable genuine lotus observations collect once; unknown targets never collect
+ok 150 - stable genuine lotus observations collect once; unknown targets never collect
+  ---
+  duration_ms: 0.23375
+  type: 'test'
+  ...
+# Subtest: lost target and stale frame gaps reset recognition evidence
+ok 151 - lost target and stale frame gaps reset recognition evidence
+  ---
+  duration_ms: 0.207542
+  type: 'test'
+  ...
+# Subtest: no late callbacks after stop, and storage failure is disclosed
+ok 152 - no late callbacks after stop, and storage failure is disclosed
+  ---
+  duration_ms: 0.171375
+  type: 'test'
+  ...
+# Subtest: startup timeout closes late camera and stale retry cannot alter new session
+ok 153 - startup timeout closes late camera and stale retry cannot alter new session
+  ---
+  duration_ms: 0.211708
+  type: 'test'
+  ...
+# Subtest: page-hide stops while preserving restart bindings; permanent cleanup removes listeners
+ok 154 - page-hide stops while preserving restart bindings; permanent cleanup removes listeners
+  ---
+  duration_ms: 1.414583
+  type: 'test'
+  ...
+# Subtest: camera track ending unexpectedly closes tracker and permits retry
+ok 155 - camera track ending unexpectedly closes tracker and permits retry
+  ---
+  duration_ms: 0.139416
+  type: 'test'
+  ...
+# Subtest: verified target metadata agrees with manifest and all five original PNGs
+ok 156 - verified target metadata agrees with manifest and all five original PNGs
+  ---
+  duration_ms: 14.285
+  type: 'test'
+  ...
+# Subtest: all target dimensions are checked even when the corrupted entry is another card
+ok 157 - all target dimensions are checked even when the corrupted entry is another card
+  ---
+  duration_ms: 0.801167
+  type: 'test'
+  ...
+# Subtest: existing version-one lotus records survive adding the other four verified cards
+ok 158 - existing version-one lotus records survive adding the other four verified cards
+  ---
+  duration_ms: 0.61375
+  type: 'test'
+  ...
+# Subtest: all twenty cross-card evidence mismatches are refused without a storage write
+ok 159 - all twenty cross-card evidence mismatches are refused without a storage write
+  ---
+  duration_ms: 0.131125
+  type: 'test'
+  ...
+# Subtest: stored records reject cross-card target indices and preview methods while preserving valid entries
+ok 160 - stored records reject cross-card target indices and preview methods while preserving valid entries
+  ---
+  duration_ms: 0.391916
+  type: 'test'
+  ...
+# Subtest: every selected card binds its own tracker and records only its own stable evidence
+ok 161 - every selected card binds its own tracker and records only its own stable evidence
+  ---
+  duration_ms: 0.445458
+  type: 'test'
+  ...
+# Subtest: wrong-card events interrupt pending evidence; non-boolean tracking and invalid times do not collect
+ok 162 - wrong-card events interrupt pending evidence; non-boolean tracking and invalid times do not collect
+  ---
+  duration_ms: 0.092375
+  type: 'test'
+  ...
+# Subtest: real geometric model constructors integrate with the selected target for all five cards
+ok 163 - real geometric model constructors integrate with the selected target for all five cards
+  ---
+  duration_ms: 332.228417
+  type: 'test'
+  ...
+# Subtest: tracker rejects an unexpected matcher index for every selected card
+ok 164 - tracker rejects an unexpected matcher index for every selected card
+  ---
+  duration_ms: 267.68225
+  type: 'test'
+  ...
+# Subtest: constructor rejects every corrupted target dimension and disposes before rendering
+ok 165 - constructor rejects every corrupted target dimension and disposes before rendering
+  ---
+  duration_ms: 1.845667
+  type: 'test'
+  ...
+# Subtest: unsupported cards and already-aborted startup cannot create tracking resources
+ok 166 - unsupported cards and already-aborted startup cannot create tracking resources
+  ---
+  duration_ms: 0.750709
+  type: 'test'
+  ...
+# Subtest: renderer failure, context loss and cancellation dispose constructor-owned resources
+ok 167 - renderer failure, context loss and cancellation dispose constructor-owned resources
+  ---
+  duration_ms: 55.120125
+  type: 'test'
+  ...
+# Subtest: stale callbacks cannot collect or fail a new scan after retry
+ok 168 - stale callbacks cannot collect or fail a new scan after retry
+  ---
+  duration_ms: 0.329
+  type: 'test'
+  ...
+# Subtest: a thrown storage writer is disclosed without interrupting viewing or claiming persistence
+ok 169 - a thrown storage writer is disclosed without interrupting viewing or claiming persistence
+  ---
+  duration_ms: 0.122625
+  type: 'test'
+  ...
+1..169
+# tests 169
+# suites 0
+# pass 169
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1483.366625

@@ -94,7 +94,7 @@ try {
     await shot(page, `${prefix}-catalogue`);
     await page.locator('.flower-card[data-key=lotus] img').click();
     check(`${prefix}: card body enters lotus detail`, page.url().endsWith('/flower-detail.html?key=lotus'));
-    check(`${prefix}: detail title, English and full story`, await page.locator('h1').textContent() === '清荷入梦' && await page.locator('.flower-info>p').first().textContent() === 'LOTUS IN REVERIE' && await page.locator('h2').filter({ hasText: '花的故事' }).locator('..').locator('p').textContent().then(t => t.length === 104));
+    check(`${prefix}: detail title, English and full story`, await page.locator('h1').textContent() === '清荷入梦' && await page.locator('.detail-title>p').textContent() === 'LOTUS IN REVERIE' && await page.locator('h2').filter({ hasText: '花的故事' }).locator('..').locator('p').textContent().then(t => t.length === 104));
     check(`${prefix}: audio honestly unavailable`, await page.locator('#audio-btn').isDisabled() && await page.locator('#audio-btn').textContent() === '暂无配音' && await page.getByText('当前暂无配音，完整故事已在上方呈现。', { exact: true }).count() === 1);
     await page.locator('#collect-btn').click(); await page.reload();
     check(`${prefix}: collection persists after reload`, await page.locator('#collect-btn').textContent() === '已收藏');

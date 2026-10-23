@@ -110,6 +110,14 @@ export async function createViewer(container,{hero=false,interactive=false,cardK
   camera.position.copy(view==='front'?new THREE.Vector3(0,0,.225):baseCamera);
   display.rotation.set(0,0,0);controls?.target.set(0,0,.007);controls?.update();render();
  }
+ // Explicit view buttons provide a keyboard alternative to drag and pinch.
+ function adjustView({turn=0,zoom=1}={}){
+  if(disposed||fallback||!controls||!Number.isFinite(turn)||!Number.isFinite(zoom)||zoom<=0)return;
+  const offset=camera.position.clone().sub(controls.target);
+  offset.applyAxisAngle(new THREE.Vector3(0,1,0),turn);
+  offset.setLength(Math.max(controls.minDistance,Math.min(controls.maxDistance,offset.length()*zoom)));
+  camera.position.copy(controls.target).add(offset);controls.update();render();
+ }
  function dispose(){
   if(disposed)return;disposed=true;resizeObserver.disconnect();controls?.dispose();environment.dispose();
   bloom?.userData.dispose?.();
@@ -119,7 +127,7 @@ export async function createViewer(container,{hero=false,interactive=false,cardK
  }
  renderer.domElement.addEventListener('webglcontextlost',event=>{event.preventDefault();container.classList.remove('model-ready');dispose();fallback=staticViewer(container,hero,card)},{once:true});
  addEventListener('pagehide',event=>{if(!event.persisted)dispose()});
- return {setProgress,setView,dispose,getView:()=>fallback?.getView()||currentView};
+ return {setProgress,setView,adjustView,dispose,getView:()=>fallback?.getView()||currentView};
 }
 
 /** Hero-only viewer. The photograph and all fallback card faces remain independent HTML. */

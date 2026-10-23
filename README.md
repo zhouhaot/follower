@@ -1,3 +1,7 @@
+# 模型与故事同页（2026-10-23）
+
+五款花卡已整合同页原作、三维模型、故事和收藏，并加入观察提示与“再遇一朵”。[交付与验证说明](DETAIL-EXPERIENCE-REPORT.md)。运行 `npm run test:detail-ui` 复验。下方第二阶段记录保留为已推送历史版本说明。
+
 # 第二阶段本地预览（2026-10-23）
 
 首页已改为原作花卡静态展示，移除手托滚动特效调用。无音频的阅读、收藏与找回流程及模拟走查结果见 [PHASE-2-REPORT.md](PHASE-2-REPORT.md)，真人试用准备见 [任务卡](docs/usability/PHASE-2-TRIAL.md)。`npm run dev` 启动后可运行 `npm run test:phase2-ui`。本阶段尚未部署线上；下方保留历史版本说明。

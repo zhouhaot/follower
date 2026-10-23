@@ -1,0 +1,32 @@
+[
+  {
+    "source": "public/app.mjs",
+    "sha256": "8556054c885a355db6a9559460976503e00e9094a34ab38728c610d896b6e3ae",
+    "distMatches": true
+  },
+  {
+    "source": "public/flower-detail.mjs",
+    "sha256": "dadf5f76d56538726549cb3e0ebc299af43d88b47a2a14a453f0ff5844d0a220",
+    "distMatches": true
+  },
+  {
+    "source": "public/flower-detail.html",
+    "sha256": "03d3af4160dd9a8b74257b063de7dd05c42c6d533483491dd671db41cd245090",
+    "distMatches": true
+  },
+  {
+    "source": "public/model-viewer.mjs",
+    "sha256": "cb0df19df47624a0a94e2efdc6e3e04f68d2fd7604a05fdfaf77108ecd373857",
+    "distMatches": true
+  },
+  {
+    "source": "public/detail-exhibit.mjs",
+    "sha256": "d91c8324f011f6a27449babde13e17fd54c212cff0e9035de76c9d1aff98c1a8",
+    "distMatches": true
+  },
+  {
+    "source": "public/detail-experience.css",
+    "sha256": "686bb9ec7f2152472fa969647c8c4db89a9a9d6cce5caf537823ee39ea0b252e",
+    "distMatches": true
+  }
+]

@@ -1,6 +1,7 @@
+import { initDetailExhibit } from './detail-exhibit.mjs';
 import { visitorNavigation } from './visitor-navigation.mjs';
 import { scanURL } from './flow.mjs';
-import { cardByKey } from './cards.mjs';
+import { cards, cardByKey } from './cards.mjs';
 import { getStatus, hasCollected, addCollection, removeCollection, recordView, subscribe } from './collection-store-v2.mjs';
 import { createAudioPlayer, getAudioStateMessage } from './audio-player.mjs';
 
@@ -21,6 +22,17 @@ if (!card) {
   `;
   throw new Error('Invalid flower key');
 }
+
+const observations = {
+  flowers: '从花瓶向上看，找一找花朵与枝叶是怎样散开的。',
+  peony: '先看中央盛开的主花，再找两侧花苞：它们怎样围绕花瓶展开？',
+  chrysanthemum: '沿着橙黄色花瓣看一圈，哪些向内卷，哪些向外舒展？',
+  lotus: '看看中央荷花、两侧圆叶与下方瓶形，怎样围绕中轴展开？',
+  leaves: '沿着斜向花枝找到花朵，再找一片五裂叶，看看它们的方向。'
+};
+const otherCards = cards.filter(item => item.key !== card.key);
+const nextCard = otherCards[Math.floor(Math.random() * otherCards.length)];
+let exhibit;
 
 // 记录浏览
 recordView({ key: card.key, source: 'detail' });
@@ -115,56 +127,67 @@ function render() {
     <main id="main" class="visitor-main">
       <a class="detail-back" href="./catalogue.html">← 返回花卡图录</a>
       <div id="collection-notice"></div>
-      <div class="flower-detail-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start">
-        <div class="flower-exhibit">
-          <img src="${card.image}" alt="${card.title}" width="1100" height="1881" class="detail-art">
-        </div>
-        <div class="flower-info">
-          <h1 style="font-size:2.5rem;margin:0 0 10px">${card.title}</h1>
-          <p style="color:#999;margin:0 0 30px">${card.english}</p>
-
-          <div style="margin-bottom:30px;padding:20px;background:#1a1a1a;border-radius:8px">
-            <p style="color:#ccc;line-height:1.8;margin:0">${card.description}</p>
+      <header class="detail-title">
+        <h1>${card.title}</h1>
+        <p>${card.english}</p>
+      </header>
+      <div class="flower-detail-grid story-exhibit-grid">
+        <section class="flower-exhibit" aria-label="${card.title}展台">
+          <div class="exhibit-switch" role="group" aria-label="选择花卡展示方式">
+            <button type="button" data-exhibit-view="original" aria-pressed="true">原作花卡</button>
+            <button type="button" data-exhibit-view="bloom" aria-pressed="false">立体花朵</button>
+            ${card.key === 'lotus' ? '<button type="button" data-exhibit-view="relief" aria-pressed="false">金属花卡</button>' : ''}
           </div>
-
-          <div style="margin-bottom:30px">
-            <h2 style="font-size:1.2rem;margin:0 0 15px;color:#ccc">花的故事</h2>
-            <p style="color:#999;line-height:1.8;margin:0">${card.story}</p>
-          </div>
-
-          <div class="audio-panel" style="margin-bottom:30px;padding:20px;background:#1a1a1a;border-radius:8px">
-            <h3 style="font-size:1rem;margin:0 0 15px;color:#ccc">听花</h3>
-            <div class="flower-audio-controls" style="display:flex;gap:10px;align-items:center;margin-bottom:10px">
-              <button id="audio-btn" style="padding:10px 20px;background:#444;color:#fff;border:none;border-radius:4px;cursor:pointer">
-                ${card.audioAvailable ? '播放故事' : '暂无配音'}
-              </button>
-              <span id="audio-status" role="status" style="color:#999;font-size:0.9rem"></span>
+          <div class="detail-stage">
+            <div id="detail-original" class="detail-media">
+              <img src="${card.image}" alt="${card.title}完整原作" width="1100" height="1881" class="detail-art" fetchpriority="high">
             </div>
-            ${!card.audioAvailable ? '<p style="color:#999;font-size:0.85rem;margin:10px 0 0">当前暂无配音，完整故事已在上方呈现。</p>' : ''}
+            <div id="detail-model" class="detail-media detail-model" role="img" aria-label="${card.title}立体花朵" hidden>
+              <img class="model-fallback" src="./assets/renders/${card.key}-bloom.png" alt="${card.title}立体花朵静态效果图">
+            </div>
           </div>
-
-          <div class="flower-actions" style="display:flex;gap:15px;margin-bottom:30px">
-            <button id="collect-btn" style="padding:12px 30px;background:#16753a;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:1rem">
-              收藏这朵花
-            </button>
-            <a href="./preview.html?card=${card.key}" style="padding:12px 30px;background:#444;color:#fff;text-decoration:none;border-radius:4px;display:inline-block">
-              观赏三维花卡
-            </a>
+          <div class="view-tools" role="group" aria-label="调整模型视角" hidden>
+            <button type="button" data-exhibit-adjust="left" aria-label="向左转动模型">左转</button>
+            <button type="button" data-exhibit-adjust="right" aria-label="向右转动模型">右转</button>
+            <button type="button" data-exhibit-adjust="in" aria-label="放大模型">放大</button>
+            <button type="button" data-exhibit-adjust="out" aria-label="缩小模型">缩小</button>
+            <button type="button" data-exhibit-adjust="reset" aria-label="重置模型视角">重置</button>
           </div>
-
+          <p id="exhibit-status" class="exhibit-status" role="status" aria-live="polite">原作完整呈现。选择“立体花朵”，换个角度看花。</p>
+          <button type="button" id="exhibit-reload" class="exhibit-reload" hidden>重新加载页面</button>
+          <aside class="flower-observation" aria-labelledby="observation-title">
+            <h2 id="observation-title">观察提示</h2>
+            <p>${observations[card.key]}</p>
+            <span>可以对照原作与立体花朵，慢慢看。</span>
+          </aside>
+        </section>
+        <section class="flower-info" aria-labelledby="story-title">
+          <p class="detail-description">${card.description}</p>
+          <div class="flower-story">
+            <h2 id="story-title">花的故事</h2>
+            <p>${card.story}</p>
+          </div>
+          <div class="flower-actions">
+            <button id="collect-btn" type="button">收藏这朵花</button>
+            <a href="./collection.html">到我的花册查看 <span class="arrow-north arrow-right" aria-hidden="true"></span></a>
+          </div>
           <p id="collection-status" role="status" aria-live="polite" class="save-status"></p>
-          <p class="detail-followup"><a href="./collection.html">到我的花册查看 →</a><span>收藏仅保存在当前浏览器</span></p>
-          <details class="optional-scan"><summary>有实体花卡？</summary><p>实体卡扫描仍为候选体验，扫描记录尚未接入新版花册。</p><a href="${scanURL(card.key, {from:'detail'})}">进入扫描准备页 →</a></details>
-          <div style="padding:20px;background:#1a1a1a;border-radius:8px;font-size:0.85rem;color:#999">
-            <p style="margin:0 0 5px"><strong>原作：</strong>${card.artwork}</p>
-            <p style="margin:0"><strong>来源：</strong>${card.credit}</p>
+          <p class="detail-save-note">收藏仅保存在当前浏览器，不会跨设备同步。</p>
+          <div class="audio-panel detail-audio">
+            <div class="flower-audio-controls">
+              <button id="audio-btn" type="button">${card.audioAvailable ? '播放故事' : '暂无配音'}</button>
+              <span id="audio-status" role="status"></span>
+            </div>
+            ${!card.audioAvailable ? '<p>当前暂无配音，完整故事已在上方呈现。</p>' : ''}
           </div>
-        </div>
+          <dl class="detail-provenance"><div><dt>原作</dt><dd>${card.artwork}</dd></div><div><dt>来源</dt><dd>${card.credit}</dd></div></dl>
+          <details class="optional-scan"><summary>有实体花卡？</summary><p>实体卡扫描仍为候选体验，扫描记录尚未接入新版花册。</p><a href="${scanURL(card.key, {from:'detail'})}">进入扫描准备页 →</a></details>
+        </section>
       </div>
-
-      <div style="margin-top:60px;padding-top:40px;border-top:1px solid #333;text-align:center">
-        <a href="./catalogue.html" class="visitor-link">浏览全部五朵花 →</a>
-      </div>
+      <nav class="discovery-next" aria-label="继续探索花卡">
+        <div><p>换一朵花，继续看看。</p><a id="meet-another" href="./flower-detail.html?key=${nextCard.key}" class="discovery-link">再遇一朵 <span class="arrow-north arrow-right" aria-hidden="true"></span><small>${nextCard.title}</small></a></div>
+        <a href="./catalogue.html" class="visitor-link">浏览全部五朵花 <span class="arrow-north arrow-right" aria-hidden="true"></span></a>
+      </nav>
     </main>
   `;
 
@@ -175,10 +198,13 @@ function render() {
   // 初始化 UI 状态
   updateAudioUI();
   updateCollectionUI();
+  exhibit = initDetailExhibit({ card, initialView: params.get('view') });
 }
 
 // 页面卸载时清理
-window.addEventListener('beforeunload', () => {
+window.addEventListener('pagehide', event => {
+  if (event.persisted) return;
+  exhibit?.dispose();
   audioPlayer?.dispose();
   unsubscribe();
 });

@@ -1,0 +1,14 @@
+{
+  "public/app.mjs": "8556054c885a355db6a9559460976503e00e9094a34ab38728c610d896b6e3ae",
+  "public/flower-detail.mjs": "dadf5f76d56538726549cb3e0ebc299af43d88b47a2a14a453f0ff5844d0a220",
+  "public/flower-detail.html": "03d3af4160dd9a8b74257b063de7dd05c42c6d533483491dd671db41cd245090",
+  "public/model-viewer.mjs": "cb0df19df47624a0a94e2efdc6e3e04f68d2fd7604a05fdfaf77108ecd373857",
+  "public/detail-exhibit.mjs": "d91c8324f011f6a27449babde13e17fd54c212cff0e9035de76c9d1aff98c1a8",
+  "public/detail-experience.css": "686bb9ec7f2152472fa969647c8c4db89a9a9d6cce5caf537823ee39ea0b252e",
+  "tests/detail-experience-browser.mjs": "b532a62261e827cf14d124004613e958b6f876a7352bd4b381658927f9bdcb89",
+  "tests/phase1-browser.mjs": "9e3a85f69e6ce17b91a6d3b904faef1082e89a45280e49d9fddc3dc4e8507477",
+  "tests/phase2-browser.mjs": "bcc5286c5df6e1bcc7125f1bc4a1e2c57d2ff818f79b9f1849ff8bb8d28bf1d1",
+  "package.json": "7c5951d97dcf01975f17e370481153ed19477b7df685733710997a6a323db6db",
+  "DETAIL-EXPERIENCE-REPORT.md": "65b7bd5865ab331f4131d715b7ed8abdfcaee95fe2ff2bc3339c34575b1eada9",
+  "README.md": "c1cff90abec4c3c11751cbf5de4cda4ea7d7a4631019def3a2b0982ce977edf6"
+}

@@ -22,7 +22,7 @@ function home(){const featured=cardByKey('lotus');return `<main id="main">
   </div>
   <figure class="home-featured">
     <a href="flower-detail.html?key=lotus" aria-label="阅读清荷入梦的故事"><img src="${featured.image}" alt="清荷入梦花卡完整原作：荷花与圆叶围绕瓶形对称展开" width="1100" height="1881" fetchpriority="high" decoding="async"></a>
-    <figcaption><span>清荷入梦<small>LOTUS IN REVERIE</small></span><a href="preview.html?card=lotus">观赏三维花卡 ${arrow}</a></figcaption>
+    <figcaption><span>清荷入梦<small>LOTUS IN REVERIE</small></span><a href="flower-detail.html?key=lotus&view=bloom">观赏三维花卡 ${arrow}</a></figcaption>
   </figure>
   <a class="home-more" href="#catalogue">向下浏览五张花卡 <span class="arrow-north arrow-right" aria-hidden="true"></span></a>
 </section>
