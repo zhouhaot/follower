@@ -1,0 +1,54 @@
+{
+  "scope": "Local Chrome, 45 frames x 4 synthetic pointer events, DPR2 desktop/DPR3 emulated mobile. Submission/copy CPU time excludes GPU completion.",
+  "results": [
+    {
+      "surface": "home",
+      "width": 1280,
+      "dpr": 2,
+      "draws": 45,
+      "idleDraws": 0,
+      "median": 16.699999809265137,
+      "p95": 17.399999856948853,
+      "submissionAndCopyP95": 0.6000001430511475,
+      "canvasWidth": 414,
+      "canvasHeight": 588
+    },
+    {
+      "surface": "detail",
+      "width": 1280,
+      "dpr": 2,
+      "draws": 45,
+      "idleDraws": 0,
+      "median": 16.700000047683716,
+      "p95": 17.399999856948853,
+      "submissionAndCopyP95": 0.40000009536743164,
+      "canvasWidth": 384,
+      "canvasHeight": 545
+    },
+    {
+      "surface": "home",
+      "width": 390,
+      "dpr": 3,
+      "draws": 45,
+      "idleDraws": 0,
+      "median": 16.700000047683716,
+      "p95": 17.40000009536743,
+      "submissionAndCopyP95": 0.40000009536743164,
+      "canvasWidth": 392,
+      "canvasHeight": 557
+    },
+    {
+      "surface": "detail",
+      "width": 390,
+      "dpr": 3,
+      "draws": 45,
+      "idleDraws": 0,
+      "median": 16.59999990463257,
+      "p95": 17.700000047683716,
+      "submissionAndCopyP95": 0.2999999523162842,
+      "canvasWidth": 347,
+      "canvasHeight": 492
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "file": "public/app.mjs",
+    "sha256": "f94a69f112f71fd7f27f320f14d542a3e6c00135786cdda40070518de15407b2",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/index.html",
+    "sha256": "ccac79f47be426bf41b8ddf57997ff0551aeb4bd7399c390c047cc3f03d72afb",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/flower-detail.html",
+    "sha256": "3b335e314e5f996fd7e216ac69d7a32ce98f0ab8f47f239d4cfc23d20878523d",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/flower-detail.mjs",
+    "sha256": "0551fd1c8117df0b6e55629a89142a257fb24fd068e2d2014696b031514d4caf",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/detail-exhibit.mjs",
+    "sha256": "526528d077b8c41467651aed131257d9faf9cd870d65c89e17365ab2b91f2430",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/pearl-card.mjs",
+    "sha256": "13360e14c3e8bfca73834c937039cd17b334921faa8369ffdd821e493a63bc05",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/pearl-exhibition.css",
+    "sha256": "fb384468d328f6a624cbc0e16e265c8e4c07e791eb61f1c8dd87b303f3148428",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/pearl-gallery.mjs",
+    "sha256": "c4b1f1fc00544517829a663fcb70c5ff75e1f04e21115cba9bd31bf9d645e098",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/pearl-renderer.mjs",
+    "sha256": "f515f53194fa5753b6fcc0375adbd05deae9749a21f526a01310964b3feb6da7",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/card-material-shaders.mjs",
+    "sha256": "9fdd14c9bb9d52af7b6a3ce829eea6805629ad5979f9d4186452e4baa36a114a",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/card-material-renderer.mjs",
+    "sha256": "222cc82a2acac3ccafce99642ed3535355e2f63f169716a8c34c7cac936e0c12",
+    "distMatches": true,
+    "localServerMatches": true
+  }
+]

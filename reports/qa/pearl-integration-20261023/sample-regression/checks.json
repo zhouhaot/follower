@@ -1,0 +1,352 @@
+{
+  "checks": [
+    {
+      "name": "1280: both actual WebGL materials render",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1280: center artwork is colored, not a blank texture",
+      "pass": true,
+      "detail": [
+        [
+          199,
+          246,
+          199,
+          255
+        ],
+        [
+          213,
+          255,
+          222,
+          255
+        ]
+      ]
+    },
+    {
+      "name": "1280: no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: complete cards fit screen width",
+      "pass": true
+    },
+    {
+      "name": "1280: both original artworks decoded",
+      "pass": true
+    },
+    {
+      "name": "1280: idle does not draw or schedule frames",
+      "pass": true
+    },
+    {
+      "name": "1280: keyboard changes angle",
+      "pass": true
+    },
+    {
+      "name": "1280: turning changes rendered material pixels",
+      "pass": true
+    },
+    {
+      "name": "1280: Home restores the exact material image",
+      "pass": true
+    },
+    {
+      "name": "Desktop pointer directs material light",
+      "pass": true
+    },
+    {
+      "name": "Light sweep changes both card angles",
+      "pass": true
+    },
+    {
+      "name": "Light sweep stops drawing after completing",
+      "pass": true
+    },
+    {
+      "name": "Original cancels sweep and straightens cards",
+      "pass": true
+    },
+    {
+      "name": "1280: original toggle shows unfiltered image",
+      "pass": true
+    },
+    {
+      "name": "1280: original mode has no render loop",
+      "pass": true
+    },
+    {
+      "name": "1280: return to material remains usable",
+      "pass": true
+    },
+    {
+      "name": "768: both actual WebGL materials render",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "768: center artwork is colored, not a blank texture",
+      "pass": true,
+      "detail": [
+        [
+          199,
+          245,
+          197,
+          255
+        ],
+        [
+          213,
+          255,
+          220,
+          255
+        ]
+      ]
+    },
+    {
+      "name": "768: no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "768: complete cards fit screen width",
+      "pass": true
+    },
+    {
+      "name": "768: both original artworks decoded",
+      "pass": true
+    },
+    {
+      "name": "768: idle does not draw or schedule frames",
+      "pass": true
+    },
+    {
+      "name": "768: keyboard changes angle",
+      "pass": true
+    },
+    {
+      "name": "768: turning changes rendered material pixels",
+      "pass": true
+    },
+    {
+      "name": "768: Home restores the exact material image",
+      "pass": true
+    },
+    {
+      "name": "768: original toggle shows unfiltered image",
+      "pass": true
+    },
+    {
+      "name": "768: original mode has no render loop",
+      "pass": true
+    },
+    {
+      "name": "768: return to material remains usable",
+      "pass": true
+    },
+    {
+      "name": "390: both actual WebGL materials render",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390: center artwork is colored, not a blank texture",
+      "pass": true,
+      "detail": [
+        [
+          199,
+          246,
+          199,
+          255
+        ],
+        [
+          213,
+          255,
+          222,
+          255
+        ]
+      ]
+    },
+    {
+      "name": "390: no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "390: complete cards fit screen width",
+      "pass": true
+    },
+    {
+      "name": "390: both original artworks decoded",
+      "pass": true
+    },
+    {
+      "name": "390: idle does not draw or schedule frames",
+      "pass": true
+    },
+    {
+      "name": "390: keyboard changes angle",
+      "pass": true
+    },
+    {
+      "name": "390: turning changes rendered material pixels",
+      "pass": true
+    },
+    {
+      "name": "390: Home restores the exact material image",
+      "pass": true
+    },
+    {
+      "name": "Touch horizontal drag turns the pearl card",
+      "pass": true
+    },
+    {
+      "name": "390: original toggle shows unfiltered image",
+      "pass": true
+    },
+    {
+      "name": "390: original mode has no render loop",
+      "pass": true
+    },
+    {
+      "name": "390: return to material remains usable",
+      "pass": true
+    },
+    {
+      "name": "320: both actual WebGL materials render",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "320: center artwork is colored, not a blank texture",
+      "pass": true,
+      "detail": [
+        [
+          199,
+          245,
+          197,
+          255
+        ],
+        [
+          213,
+          255,
+          220,
+          255
+        ]
+      ]
+    },
+    {
+      "name": "320: no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "320: complete cards fit screen width",
+      "pass": true
+    },
+    {
+      "name": "320: both original artworks decoded",
+      "pass": true
+    },
+    {
+      "name": "320: idle does not draw or schedule frames",
+      "pass": true
+    },
+    {
+      "name": "320: keyboard changes angle",
+      "pass": true
+    },
+    {
+      "name": "320: turning changes rendered material pixels",
+      "pass": true
+    },
+    {
+      "name": "320: Home restores the exact material image",
+      "pass": true
+    },
+    {
+      "name": "320: original toggle shows unfiltered image",
+      "pass": true
+    },
+    {
+      "name": "320: original mode has no render loop",
+      "pass": true
+    },
+    {
+      "name": "320: return to material remains usable",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion hides sweep and keeps original comparison",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion never tilts the card",
+      "pass": true
+    },
+    {
+      "name": "module: explicit fallback message",
+      "pass": true
+    },
+    {
+      "name": "module: unavailable controls disabled",
+      "pass": true
+    },
+    {
+      "name": "module: original image still decoded",
+      "pass": true
+    },
+    {
+      "name": "webgl: explicit fallback message",
+      "pass": true
+    },
+    {
+      "name": "webgl: unavailable controls disabled",
+      "pass": true
+    },
+    {
+      "name": "webgl: original image still decoded",
+      "pass": true
+    },
+    {
+      "name": "image: explicit fallback message",
+      "pass": true
+    },
+    {
+      "name": "image: unavailable controls disabled",
+      "pass": true
+    },
+    {
+      "name": "context: explicit fallback message",
+      "pass": true
+    },
+    {
+      "name": "context: unavailable controls disabled",
+      "pass": true
+    },
+    {
+      "name": "context: original image still decoded",
+      "pass": true
+    },
+    {
+      "name": "Hidden document cancels animation and pending draws",
+      "pass": true
+    },
+    {
+      "name": "Offscreen cards do not draw",
+      "pass": true
+    },
+    {
+      "name": "Existing model optimization, original assets and retained motion modules unchanged",
+      "pass": true
+    },
+    {
+      "name": "No uncaught page errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "scope": "Local Chrome. Mobile is viewport and touch emulation, not real hardware.",
+  "summary": {
+    "total": 70,
+    "passed": 70,
+    "failed": 0
+  }
+}

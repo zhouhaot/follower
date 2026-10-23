@@ -1,0 +1,40 @@
+[
+  {
+    "name": "home",
+    "width": 320,
+    "scrollWidth": 320,
+    "nav": [
+      {
+        "text": "展览首页",
+        "left": 17,
+        "right": 88.5,
+        "height": 44
+      },
+      {
+        "text": "花卡图录",
+        "left": 88.5,
+        "right": 160,
+        "height": 44
+      },
+      {
+        "text": "我的花册",
+        "left": 160,
+        "right": 231.5,
+        "height": 44
+      },
+      {
+        "text": "参观指南",
+        "left": 231.5,
+        "right": 303,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "name": "detail",
+    "width": 320,
+    "scrollWidth": 320,
+    "nav": [],
+    "button": "完整原作"
+  }
+]

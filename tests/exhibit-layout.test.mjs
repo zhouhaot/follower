@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
+import {pearlCard} from '../public/pearl-card.mjs';
+import {cardByKey} from '../public/cards.mjs';
 import {getHandheldState} from '../public/handheld-state.mjs';
 const app=await readFile(new URL('../public/app.mjs',import.meta.url),'utf8');
 const css=await readFile(new URL('../public/styles.css',import.meta.url),'utf8');
@@ -24,7 +26,13 @@ test('handheld movement stays finite, native-scroll-driven and exactly reversibl
  }
 });
 test('initial card load keeps geometry and high priority without requesting camera',()=>{
- assert.match(app,/width="1100" height="1881" fetchpriority="high"/);
+ const card=cardByKey('lotus');
+ const markup=pearlCard(card,{priority:true});
+ assert.match(markup,/width="884" height="1255"/);
+ assert.match(markup,/fetchpriority="high"/);
+ assert.match(markup,/aspect-ratio:884\/1255/);
+ assert.ok(markup.includes(card.target));
+ assert.match(app,/pearlCard\(featured,\{priority:true\}\)/);
  assert.doesNotMatch(app,/getUserMedia\(/);
  assert.match(css,/合成场景 · 预渲染画面/);
 });

@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "width": 1280,
+      "view": "relief",
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "view": "front",
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "view": "bloom",
+      "pass": false
+    },
+    {
+      "width": 390,
+      "view": "relief",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "view": "front",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "view": "bloom",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

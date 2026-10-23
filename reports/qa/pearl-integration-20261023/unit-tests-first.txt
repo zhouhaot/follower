@@ -1,0 +1,1176 @@
+
+> zevth-handheld-candidate@0.5.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: five distinct geometric model constructors are bound to exact card keys
+ok 1 - five distinct geometric model constructors are bound to exact card keys
+  ---
+  duration_ms: 457.117375
+  type: 'test'
+  ...
+# Subtest: unknown key never receives a substitute bloom
+ok 2 - unknown key never receives a substitute bloom
+  ---
+  duration_ms: 0.236792
+  type: 'test'
+  ...
+# Subtest: export v2 round-trips checksummed canonical records without a write
+ok 3 - export v2 round-trips checksummed canonical records without a write
+  ---
+  duration_ms: 19.513333
+  type: 'test'
+  ...
+# Subtest: legacy v1 preflight migrates only on explicit merge and preserves existing bytes until confirmation
+ok 4 - legacy v1 preflight migrates only on explicit merge and preserves existing bytes until confirmation
+  ---
+  duration_ms: 1.134042
+  type: 'test'
+  ...
+# Subtest: undo restores exact prior raw serialization, including the no-data state
+ok 5 - undo restores exact prior raw serialization, including the no-data state
+  ---
+  duration_ms: 0.919417
+  type: 'test'
+  ...
+# Subtest: duplicate-only import is read-only and cannot create a new recovery point
+ok 6 - duplicate-only import is read-only and cannot create a new recovery point
+  ---
+  duration_ms: 0.358292
+  type: 'test'
+  ...
+# Subtest: preflight and undo refuse to overwrite intervening records
+ok 7 - preflight and undo refuse to overwrite intervening records
+  ---
+  duration_ms: 0.238458
+  type: 'test'
+  ...
+# Subtest: recovery journal is saved before target; silent or throwing write failure restores original data
+ok 8 - recovery journal is saved before target; silent or throwing write failure restores original data
+  ---
+  duration_ms: 2.565
+  type: 'test'
+  ...
+# Subtest: failed recovery-point write cannot alter the collection
+ok 9 - failed recovery-point write cannot alter the collection
+  ---
+  duration_ms: 0.389792
+  type: 'test'
+  ...
+# Subtest: a rollback that cannot be verified is reported without deleting its recovery journal
+ok 10 - a rollback that cannot be verified is reported without deleting its recovery journal
+  ---
+  duration_ms: 0.187792
+  type: 'test'
+  ...
+# Subtest: change during journal creation is detected without rolling back another tab data
+ok 11 - change during journal creation is detected without rolling back another tab data
+  ---
+  duration_ms: 0.362083
+  type: 'test'
+  ...
+# Subtest: unknown current versions and malformed journals are preserved
+ok 12 - unknown current versions and malformed journals are preserved
+  ---
+  duration_ms: 1.687917
+  type: 'test'
+  ...
+# Subtest: corrupt restore-before payload is rejected rather than installed
+ok 13 - corrupt restore-before payload is rejected rather than installed
+  ---
+  duration_ms: 0.443083
+  type: 'test'
+  ...
+# Subtest: checksum, catalogue and future-version failures do not produce a plan
+ok 14 - checksum, catalogue and future-version failures do not produce a plan
+  ---
+  duration_ms: 4.883333
+  type: 'test'
+  ...
+# Subtest: unknown cards, duplicates, cross-card targets, fake methods and invalid dates are refused
+ok 15 - unknown cards, duplicates, cross-card targets, fake methods and invalid dates are refused
+  ---
+  duration_ms: 0.619833
+  type: 'test'
+  ...
+# Subtest: unsafe keys at any depth, excessive bytes, invalid JSON and top-level arrays are rejected
+ok 16 - unsafe keys at any depth, excessive bytes, invalid JSON and top-level arrays are rejected
+  ---
+  duration_ms: 0.788333
+  type: 'test'
+  ...
+# Subtest: superseded asynchronous preflight cannot commit stale content
+ok 17 - superseded asynchronous preflight cannot commit stale content
+  ---
+  duration_ms: 0.302334
+  type: 'test'
+  ...
+# Subtest: restored provenance survives existing store reads and later other-card recognition
+ok 18 - restored provenance survives existing store reads and later other-card recognition
+  ---
+  duration_ms: 0.495208
+  type: 'test'
+  ...
+# Subtest: existing recognition writer preserves unsupported stored versions
+ok 19 - existing recognition writer preserves unsupported stored versions
+  ---
+  duration_ms: 0.089833
+  type: 'test'
+  ...
+# Subtest: recognition cannot erase malformed or extended legacy records while adding a card
+ok 20 - recognition cannot erase malformed or extended legacy records while adding a card
+  ---
+  duration_ms: 0.250792
+  type: 'test'
+  ...
+# Subtest: route planning, explicit views, resume, completion and undo are independent from collection
+ok 21 - route planning, explicit views, resume, completion and undo are independent from collection
+  ---
+  duration_ms: 0.650625
+  type: 'test'
+  ...
+# Subtest: editing route order retains only relevant viewed cards and rejects invalid input
+ok 22 - editing route order retains only relevant viewed cards and rejects invalid input
+  ---
+  duration_ms: 0.367208
+  type: 'test'
+  ...
+# Subtest: future/corrupt route data cannot be silently reset or migrated
+ok 23 - future/corrupt route data cannot be silently reset or migrated
+  ---
+  duration_ms: 0.136916
+  type: 'test'
+  ...
+# Subtest: storage denial and discarded route writes never report saved progress
+ok 24 - storage denial and discarded route writes never report saved progress
+  ---
+  duration_ms: 0.108083
+  type: 'test'
+  ...
+# Subtest: chrysanthemum has distinct art-specific solid geometry, not a reused lotus
+ok 25 - chrysanthemum has distinct art-specific solid geometry, not a reused lotus
+  ---
+  duration_ms: 211.555208
+  type: 'test'
+  ...
+# Subtest: chrysanthemum attributes are finite and indexed within practical budgets
+ok 26 - chrysanthemum attributes are finite and indexed within practical budgets
+  ---
+  duration_ms: 63.531416
+  type: 'test'
+  ...
+# Subtest: chrysanthemum growth preserves its original printed branch root and open pose
+ok 27 - chrysanthemum growth preserves its original printed branch root and open pose
+  ---
+  duration_ms: 21.596375
+  type: 'test'
+  ...
+# Subtest: chrysanthemum owns independent resources and disposes idempotently
+ok 28 - chrysanthemum owns independent resources and disposes idempotently
+  ---
+  duration_ms: 34.742792
+  type: 'test'
+  ...
+# Subtest: v1 to v2 migration preserves legacy data
+ok 29 - v1 to v2 migration preserves legacy data
+  ---
+  duration_ms: 7.425959
+  type: 'test'
+  ...
+# Subtest: v2 migration is idempotent
+ok 30 - v2 migration is idempotent
+  ---
+  duration_ms: 0.614625
+  type: 'test'
+  ...
+# Subtest: manual collection does not create duplicate
+ok 31 - manual collection does not create duplicate
+  ---
+  duration_ms: 0.27125
+  type: 'test'
+  ...
+# Subtest: encounter recording does not auto-collect
+ok 32 - encounter recording does not auto-collect
+  ---
+  duration_ms: 0.22525
+  type: 'test'
+  ...
+# Subtest: remove collection keeps encounters and views
+ok 33 - remove collection keeps encounters and views
+  ---
+  duration_ms: 2.936166
+  type: 'test'
+  ...
+# Subtest: recent views limited to 10 entries
+ok 34 - recent views limited to 10 entries
+  ---
+  duration_ms: 3.185042
+  type: 'test'
+  ...
+# Subtest: recent views stores up to 10 different manual entries
+ok 35 - recent views stores up to 10 different manual entries
+  ---
+  duration_ms: 1.607125
+  type: 'test'
+  ...
+# Subtest: recent view updates existing entry to front
+ok 36 - recent view updates existing entry to front
+  ---
+  duration_ms: 0.46625
+  type: 'test'
+  ...
+# Subtest: weak recognition evidence is rejected
+ok 37 - weak recognition evidence is rejected
+  ---
+  duration_ms: 0.96975
+  type: 'test'
+  ...
+# Subtest: collection with note preserves note text
+ok 38 - collection with note preserves note text
+  ---
+  duration_ms: 0.446084
+  type: 'test'
+  ...
+# Subtest: corrupt v2 offers read-only legacy history without overwriting either source
+ok 39 - corrupt v2 offers read-only legacy history without overwriting either source
+  ---
+  duration_ms: 3.287375
+  type: 'test'
+  ...
+# Subtest: explicit recovery verifies an exact backup and retains v1 before enabling writes
+ok 40 - explicit recovery verifies an exact backup and retains v1 before enabling writes
+  ---
+  duration_ms: 0.303625
+  type: 'test'
+  ...
+# Subtest: invalid data without valid legacy stays unavailable instead of pretending to be empty
+ok 41 - invalid data without valid legacy stays unavailable instead of pretending to be empty
+  ---
+  duration_ms: 0.287625
+  type: 'test'
+  ...
+# Subtest: unsupported versions and mismatched catalogues never downgrade to legacy
+ok 42 - unsupported versions and mismatched catalogues never downgrade to legacy
+  ---
+  duration_ms: 0.123042
+  type: 'test'
+  ...
+# Subtest: storage access denied returns an error state without throwing
+ok 43 - storage access denied returns an error state without throwing
+  ---
+  duration_ms: 0.06225
+  type: 'test'
+  ...
+# Subtest: silent write failure cannot claim a successful collection
+ok 44 - silent write failure cannot claim a successful collection
+  ---
+  duration_ms: 0.07975
+  type: 'test'
+  ...
+# Subtest: quota errors preserve existing records and report failure
+ok 45 - quota errors preserve existing records and report failure
+  ---
+  duration_ms: 0.06725
+  type: 'test'
+  ...
+# Subtest: migration write failures expose legacy preview and can be retried after storage recovers
+ok 46 - migration write failures expose legacy preview and can be retried after storage recovers
+  ---
+  duration_ms: 0.15075
+  type: 'test'
+  ...
+# Subtest: backup write failure prevents replacement of corrupt v2
+ok 47 - backup write failure prevents replacement of corrupt v2
+  ---
+  duration_ms: 0.074208
+  type: 'test'
+  ...
+# Subtest: recovery never overwrites a different previous recovery copy
+ok 48 - recovery never overwrites a different previous recovery copy
+  ---
+  duration_ms: 0.065917
+  type: 'test'
+  ...
+# Subtest: write failure during recovery retains the backup and the original value
+ok 49 - write failure during recovery retains the backup and the original value
+  ---
+  duration_ms: 0.081209
+  type: 'test'
+  ...
+# Subtest: intervening writes are detected before a collection replaces another tab data
+ok 50 - intervening writes are detected before a collection replaces another tab data
+  ---
+  duration_ms: 0.078791
+  type: 'test'
+  ...
+# Subtest: a recovery backup never authorizes overwriting a concurrent newer v2
+ok 51 - a recovery backup never authorizes overwriting a concurrent newer v2
+  ---
+  duration_ms: 0.082292
+  type: 'test'
+  ...
+# Subtest: oversized data is rejected before persistence instead of making the next read fail
+ok 52 - oversized data is rejected before persistence instead of making the next read fail
+  ---
+  duration_ms: 0.163834
+  type: 'test'
+  ...
+# Subtest: storage events notify listeners of errors and legacy changes, and dispose detaches
+ok 53 - storage events notify listeners of errors and legacy changes, and dispose detaches
+  ---
+  duration_ms: 0.223375
+  type: 'test'
+  ...
+# Subtest: homepage presents the original card without loading the retired hand scene
+ok 54 - homepage presents the original card without loading the retired hand scene
+  ---
+  duration_ms: 0.463333
+  type: 'test'
+  ...
+# Subtest: handheld movement stays finite, native-scroll-driven and exactly reversible
+ok 55 - handheld movement stays finite, native-scroll-driven and exactly reversible
+  ---
+  duration_ms: 0.773041
+  type: 'test'
+  ...
+# Subtest: initial card load keeps geometry and high priority without requesting camera
+not ok 56 - initial card load keeps geometry and high priority without requesting camera
+  ---
+  duration_ms: 1.184375
+  type: 'test'
+  location: '/Users/airuquan/Documents/codex/2026-10-14/task-3/zevth-handoff-v041/zevth-local-handoff-2026-10-14/candidate/tests/exhibit-layout.test.mjs:26:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /width="1100" height="1881" fetchpriority="high"/. Input:
+    
+    "import {pearlCard} from './pearl-card.mjs';\n" +
+      "import {cards,cardByKey} from './cards.mjs';\n" +
+      "import {requestFor,scanURL} from './flow.mjs';\n" +
+      "import {getCollection,subscribeCollection} from './collection-store.mjs';\n" +
+      'const $=s=>document.querySelector(s);\n' +
+      'const page=document.body.dataset.page;\n' +
+      'const params=new URLSearchParams(location.search);\n' +
+      "const selected=cardByKey(params.get('card')||'lotus');\n" +
+      "const no=(c)=>String(cards.indexOf(c)+1).padStart(2,'0');\n" +
+      'const icon=`<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M7 12h10" stroke="currentColor" stroke-width="1.3"/></svg>`;\n' +
+      `const arrow='<span class="arrow-north" aria-hidden="true"></span>';\n` +
+      'const nav=()=>`<a class="skip" href="#main">跳到主要内容</a><header class="site-header"><a href="index.html" class="brand" aria-label="花开有声 首页"><span class="brand-mark">花</span><span>花开有声<small>FLOWERS SPEAK</small></span></a><nav aria-label="主导航" class="glass-nav">${[[\'home\',\'index.html\',\'展览首页\'],[\'catalogue\',\'catalogue.html\',\'花卡图录\'],[\'collection\',\'collection.html\',\'我的花册\'],[\'guide\',\'guide.html\',\'参观指南\']].map(([id,url,label])=>`<a href="${url}" ${(page===\'journey\'?\'guide\':page===\'backup\'?\'collection\':page)===id?\'aria-current="page"\':\'\'}>${label}</a>`).join(\'\')}</nav><a class="scan-nav" aria-label="扫描花卡" href="${scanURL(selected?.key||\'lotus\',{from:[\'home\',\'catalogue\',\'collection\',\'work\',\'preview\'].includes(page)?page:page===\'scan\'?requestFor(location.search).from:\'catalogue\',backCard:page===\'scan\'?requestFor(location.search).backCard:selected?.key||\'lotus\'})}">${icon}<span>扫描花卡</span></a></header>`;\n' +
+      'const footer=()=>`<footer><a href="index.html" class="footer-brand">花开有声<span>FLOWERS SPEAK</span></a><p>让古老的纹样，在此刻重新生长。</p><div><a href="guide.html">参观指南</a><a href="catalogue.html">全部花卡 ↗</a></div><small>数字花卡探索 · 本地图录候选<br>原作图像与作品名称来自 zevth.work</small></footer>`;\n' +
+      'const meta=(eyebrow,title,sub=\'\')=>`<div class="page-heading"><p class="eyebrow">${eyebrow}</p><h1>${title}</h1>${sub?`<p class="lead">${sub}</p>`:\'\'}</div>`;\n' +
+      'const cardMarkup=(c,i)=>`<article class="catalogue-card"><a href="flower-detail.html?key=${c.key}" class="card-image"><span class="card-index">${no(c)} / 05</span><img src="${c.image}" alt="${c.title}花卡原作正面" loading="lazy" width="1100" height="1881"><span class="card-view">观赏花卡 ${arrow}</span></a><a class="card-name" href="flower-detail.html?key=${c.key}"><h3>${c.title}</h3>${arrow}</a><p>《${c.artwork}》</p></article>`;\n' +
+      'function home(){const featured=cardByKey(\'lotus\');return `<main id="main">\n' +
+      '<section class="home-exhibition" aria-labelledby="home-title">\n' +
+      '  <div class="home-introduction">\n' +
+      '    <h1 id="home-title">花开有声</h1>\n' +
+      '    <p class="home-description">五种花卉纹样，一场数字展览。<br>沿着花瓣与叶脉，看光影轻轻流转。</p>\n' +
+      '    <div class="home-start"><a class="pill-link" href="flower-detail.html?key=lotus">从清荷入梦开始 ${arrow}</a><a class="text-link" href="catalogue.html">走进花卡图录 ${arrow}</a></div>\n' +
+      '    <p class="home-availability">无需实体花卡 · 阅读故事，把喜欢的花留在花册</p>\n' +
+      '  </div>\n' +
+      '  <figure class="home-featured">\n' +
+      '    <a class="home-main-card" href="flower-detail.html?key=lotus" aria-label="阅读清荷入梦的故事">${pearlCard(featured,{priority:true})}</a>\n' +
+      '    <div class="pearl-toolbar"><span class="pearl-note">局部珠光 · 清荷入梦</span><button class="pearl-button pearl-demo" id="home-pearl-demo" type="button" disabled>演示光影</button></div>\n' +
+      '    <figcaption><small>纹样原型 ·《荷花图》</small><a href="flower-detail.html?key=lotus&view=bloom">观赏三维花朵 ${arrow}</a></figcaption>\n' +
+      '    <p id="home-pearl-status" class="pearl-note" role="status">轻触花卡，走进花的故事。</p>\n' +
+      '  </figure>\n' +
+      '  <a class="home-more" href="#catalogue">向下浏览五张花卡 <span class="arrow-north arrow-right" aria-hidden="true"></span></a>\n' +
+      '</section>\n' +
+      '<section class="catalogue-section" id="catalogue"><div class="section-title"><div><h2>五种纹样，各自盛放。</h2></div><a class="text-link" href="catalogue.html">查看完整图录 ${arrow}</a></div><div class="home-cards">${cards.map(c=>`<article class="catalogue-card"><a href="flower-detail.html?key=${c.key}" class="card-image" aria-label="观赏${c.title}">${pearlCard(c)}</a><a class="card-name" href="flower-detail.html?key=${c.key}"><h3>${c.title}</h3>${arrow}</a><p>《${c.artwork}》</p></article>`).join(\'\')}</div></section>\n' +
+      '<section class="editorial-section home-editorial"><div><h2>把喜欢的花，<br>留在自己的花册。</h2></div><div class="editorial-copy"><p>阅读花的故事，点击“收藏这朵花”。下次来到这里，仍能在“我的花册”中找到它。</p><p class="quiet">花册保存在当前浏览器，不会跨设备同步。</p><a class="pill-link" href="collection.html">打开我的花册 ${arrow}</a><a class="text-link" href="guide.html">了解体验方式 →</a></div></section></main>`}\n' +
+      '\n' +
+      'function catalogue(){return `<main id="main" class="light-page"><section class="page-wrap">${meta(\'THE COLLECTION / 全部五款\',\'五种纹样，<br><em>各自成诗。</em>\',\'循着花枝与叶脉，走进五张花卡的世界。\')}<div class="catalogue-meta"><span>花开有声系列</span><span>全部作品 · 05</span><span>点击花卡，查看原作与细节</span></div><div class="catalogue-grid">${cards.map(cardMarkup).join(\'\')}</div></section></main>`}\n' +
+      'function work(){if(!selected)return invalid();const c=selected,i=cards.indexOf(c),next=cards[(i+1)%5];return `<main id="main" class="work-page"><div class="breadcrumb"><a href="catalogue.html">花卡图录</a><span> / ${c.title}</span></div><section class="work-grid"><div class="work-art"><span class="eyebrow">${no(c)} / 05</span><img src="${c.image}" alt="${c.title}花卡原作完整正面" width="1100" height="1881"><span class="art-caption">ORIGINAL CARD / 原作正面</span></div><div class="work-info"><p class="eyebrow">${c.english}</p><h1>${c.title}</h1><p class="work-subtitle">纹样原型 ·《${c.artwork}》</p><p class="work-description">${c.description}</p><dl><div><dt>纹样原型</dt><dd>《${c.artwork}》</dd></div><div><dt>资料来源</dt><dd>${c.credit.replace(\'《\'+c.artwork+\'》\',\'\')}</dd></div><div><dt>系列</dt><dd>花开有声 · ${no(c)} / 05</dd></div><div><dt>候选版体验</dt><dd>${c.scanSupported?\'三维花卉候选 / 实体卡识别待验证\':\'原作浏览 / 三维内容待制作\'}</dd></div></dl><div class="work-actions"><a class="pill-link" href="preview.html?card=${c.key}">${c.scanSupported?\'观赏三维花卡\':\'查看花卡预览\'} ${arrow}</a><a class="text-link" href="${scanURL(c.key,{from:\'work\'})}">${c.scanSupported?\'用实体花卡扫描\':\'查看扫描支持状态\'} ${icon}</a></div><p class="quiet small">预览不会计入收藏。收藏仅在扫描识别成功后记录。</p><a class="next-work" href="work.html?card=${next.key}"><span>下一件作品</span><strong>${next.title} →</strong></a></div></section></main>`}\n' +
+      'function collection(){const collected=getCollection();const keys=new Set(collected.map(c=>c.key));return `<main id="main" class="light-page"><section class="page-wrap">${meta(\'YOUR COLLECTION / 我的收藏\',\'把相遇，<br><em>留在这里。</em>\')}<a class="text-link business-entry-link" href="backup.html">备份与恢复本机收藏</a><div class="collection-summary"><span><strong>${keys.size.toString().padStart(2,\'0\')}</strong> / 05</span><p>保存扫描识别记录，也可恢复历史备份。<br><small>记录仅保存在此浏览器；预览不会计入。</small></p><a class="pill-link dark-pill" href="${scanURL(\'lotus\',{from:\'collection\'})}">扫描实体花卡 ${arrow}</a></div>${keys.size===0?\'<p class="empty-note">你的第一朵花，还在等待与你相遇。</p>\':\'\'}<div class="collection-grid">${cards.map(c=>`<a href="flower-detail.html?key=${c.key}" class="collection-item ${keys.has(c.key)?\'collected\':\'\'}"><div>${keys.has(c.key)?`<img src="${c.image}" alt="已收藏的${c.title}">`:`<span class="ghost-flower">${no(c)}</span><span class="collection-status">尚未收集</span>`}</div><h2>${c.title}</h2><p>${keys.has(c.key)?(collected.find(row=>row.key===c.key)?.restoredFromBackup?\'历史备份恢复 · 非本次识别\':\'已有识别收藏\'):\'《\'+c.artwork+\'》\'}</p></a>`).join(\'\')}</div><p class="quiet">五款三维花卉均为新建候选，实体卡识别尚待逐款真机验证。清除浏览器数据会同时清除本机收藏。</p></section></main>`}\n' +
+      'function guide(){return `<main id="main" class="light-page"><section class="page-wrap">${meta(\'VISITOR GUIDE / 参观指南\',\'让一次相遇，<br><em>慢慢发生。</em>\',\'无需注册，也无需实体花卡。先阅读故事，再把喜欢的花留在花册。\')}<div class="guide-steps"><article><span>01</span><h2>选择一张花卡</h2><p>浏览五张花卡，了解纹样名称与作品来源。五款花卉均有独立三维预览，可拖动查看花瓣与枝叶；清荷入梦另有金属花卡。</p><a class="text-link" href="catalogue.html">浏览花卡图录 ↗</a></article><article><span>02</span><h2>阅读与收藏</h2><p>每张花卡都有文字故事，目前暂无配音。点击“收藏这朵花”，即可在同一浏览器的“我的花册”中找回。浏览记录与主动收藏分别保存。</p><a class="text-link" href="flower-detail.html?key=lotus">读清荷入梦的故事 ↗</a></article><article><span>03</span><h2>可选：实体卡扫描</h2><p>点击“开启相机”后才会申请权限。识别稳定后，立体花朵随卡片出现。退出扫描会关闭相机。此入口仍为旧版候选，扫描记录尚未接入新版花册；阅读和主动收藏不需要相机。</p><a class="text-link" href="${scanURL(\'lotus\')}">进入扫描准备页 ↗</a></article></div><section class="guide-details"><h2>开始之前</h2><div><details open><summary>当前候选版支持什么？</summary><p>五款原作图录、独立三维花卉、对应图像目标与扫描逻辑已接入。清荷入梦另有金属花卡展陈模型。五款均处于候选验证阶段，iPhone 与实体卡的追踪、对齐和性能仍待逐款真机验证。</p></details><details><summary>我的相机与收藏会被上传吗？</summary><p>候选版在浏览器内处理画面，不上传相机视频。收藏记录保存在当前浏览器本地，不会跨设备同步。若本地存储不可用，页面会说明无法保存，不会伪装成功。</p></details><details><summary>为什么不能开启扫描？</summary><p>扫描需要 HTTPS 或本机 localhost、安全的相机权限和 WebGL 支持。若权限被拒绝，请在浏览器的网站设置里允许相机后重试。也可以随时返回图录或观看不需要相机的预览。</p></details><details><summary>看过预览，也算收集了吗？</summary><p>预览只用于观赏，不会自动收藏。请在花卡详情或图录中主动点击收藏，再到“我的花册”查看。实体扫描仍为独立候选入口。</p></details></div></section></section></main>`}\n' +
+      'function preview(){\n' +
+      ' if(!selected)return invalid();\n' +
+      ' const c=selected;\n' +
+      ' const controls=c.scanSupported?`<div class="model-controls" aria-label="模型视角"><button data-view="bloom" aria-pressed="true">立体花朵</button>${c.key===\'lotus\'?\'<button data-view="relief" aria-pressed="false">金属花卡</button>\':\'\'}<button data-view="front" aria-pressed="false">原作正面</button><button data-view="reset">重置视角</button></div>`:\'\';\n' +
+      ' return `<main id="main" class="preview-page"><a href="flower-detail.html?key=${c.key}" class="back-link">← 返回${c.title}</a><div class="preview-title"><p class="eyebrow">${c.scanSupported?\'3D STUDY / 三维花卉\':\'CARD STUDY / 花卡预览\'}</p><h1>${c.title}</h1><p>${c.scanSupported?\'拖动旋转 · 双指缩放\':\'完整原作浏览 · 三维内容待制作\'}</p></div><div id="preview-model" class="preview-stage" ${c.scanSupported?`role="img" aria-label="${c.title}三维花朵，可用下面的按钮切换模式"`:\'\'}>${c.scanSupported?`<img class="model-fallback" src="./assets/renders/${c.key}-bloom.png" alt="${c.title}立体花朵静态效果图">`:`<img class="original-preview" src="${c.image}" alt="${c.title}完整原作">`}</div>${controls}<div class="preview-bottom"><p><span class="status-dot"></span>观赏模式 · 不计入收藏</p><a href="${scanURL(c.key,{from:\'preview\'})}" class="text-link">${c.scanSupported?\'拿起实体花卡，进入扫描\':\'查看扫描支持状态\'} ${arro'... 5358 more characters
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+    import {pearlCard} from './pearl-card.mjs';
+    import {cards,cardByKey} from './cards.mjs';
+    import {requestFor,scanURL} from './flow.mjs';
+    import {getCollection,subscribeCollection} from './collection-store.mjs';
+    const $=s=>document.querySelector(s);
+    const page=document.body.dataset.page;
+    const params=new URLSearchParams(location.search);
+    const selected=cardByKey(params.get('card')||'lotus');
+    const no=(c)=>String(cards.indexOf(c)+1).padStart(2,'0');
+    const icon=`<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M7 12h10" stroke="currentColor" stroke-width="1.3"/></svg>`;
+    const arrow='<span class="arrow-north" aria-hidden="true"></span>';
+    const nav=()=>`<a class="skip" href="#main">跳到主要内容</a><header class="site-header"><a href="index.html" class="brand" aria-label="花开有声 首页"><span class="brand-mark">花</span><span>花开有声<small>FLOWERS SPEAK</small></span></a><nav aria-label="主导航" class="glass-nav">${[['home','index.html','展览首页'],['catalogue','catalogue.html','花卡图录'],['collection','collection.html','我的花册'],['guide','guide.html','参观指南']].map(([id,url,label])=>`<a href="${url}" ${(page==='journey'?'guide':page==='backup'?'collection':page)===id?'aria-current="page"':''}>${label}</a>`).join('')}</nav><a class="scan-nav" aria-label="扫描花卡" href="${scanURL(selected?.key||'lotus',{from:['home','catalogue','collection','work','preview'].includes(page)?page:page==='scan'?requestFor(location.search).from:'catalogue',backCard:page==='scan'?requestFor(location.search).backCard:selected?.key||'lotus'})}">${icon}<span>扫描花卡</span></a></header>`;
+    const footer=()=>`<footer><a href="index.html" class="footer-brand">花开有声<span>FLOWERS SPEAK</span></a><p>让古老的纹样，在此刻重新生长。</p><div><a href="guide.html">参观指南</a><a href="catalogue.html">全部花卡 ↗</a></div><small>数字花卡探索 · 本地图录候选<br>原作图像与作品名称来自 zevth.work</small></footer>`;
+    const meta=(eyebrow,title,sub='')=>`<div class="page-heading"><p class="eyebrow">${eyebrow}</p><h1>${title}</h1>${sub?`<p class="lead">${sub}</p>`:''}</div>`;
+    const cardMarkup=(c,i)=>`<article class="catalogue-card"><a href="flower-detail.html?key=${c.key}" class="card-image"><span class="card-index">${no(c)} / 05</span><img src="${c.image}" alt="${c.title}花卡原作正面" loading="lazy" width="1100" height="1881"><span class="card-view">观赏花卡 ${arrow}</span></a><a class="card-name" href="flower-detail.html?key=${c.key}"><h3>${c.title}</h3>${arrow}</a><p>《${c.artwork}》</p></article>`;
+    function home(){const featured=cardByKey('lotus');return `<main id="main">
+    <section class="home-exhibition" aria-labelledby="home-title">
+      <div class="home-introduction">
+        <h1 id="home-title">花开有声</h1>
+        <p class="home-description">五种花卉纹样，一场数字展览。<br>沿着花瓣与叶脉，看光影轻轻流转。</p>
+        <div class="home-start"><a class="pill-link" href="flower-detail.html?key=lotus">从清荷入梦开始 ${arrow}</a><a class="text-link" href="catalogue.html">走进花卡图录 ${arrow}</a></div>
+        <p class="home-availability">无需实体花卡 · 阅读故事，把喜欢的花留在花册</p>
+      </div>
+      <figure class="home-featured">
+        <a class="home-main-card" href="flower-detail.html?key=lotus" aria-label="阅读清荷入梦的故事">${pearlCard(featured,{priority:true})}</a>
+        <div class="pearl-toolbar"><span class="pearl-note">局部珠光 · 清荷入梦</span><button class="pearl-button pearl-demo" id="home-pearl-demo" type="button" disabled>演示光影</button></div>
+        <figcaption><small>纹样原型 ·《荷花图》</small><a href="flower-detail.html?key=lotus&view=bloom">观赏三维花朵 ${arrow}</a></figcaption>
+        <p id="home-pearl-status" class="pearl-note" role="status">轻触花卡，走进花的故事。</p>
+      </figure>
+      <a class="home-more" href="#catalogue">向下浏览五张花卡 <span class="arrow-north arrow-right" aria-hidden="true"></span></a>
+    </section>
+    <section class="catalogue-section" id="catalogue"><div class="section-title"><div><h2>五种纹样，各自盛放。</h2></div><a class="text-link" href="catalogue.html">查看完整图录 ${arrow}</a></div><div class="home-cards">${cards.map(c=>`<article class="catalogue-card"><a href="flower-detail.html?key=${c.key}" class="card-image" aria-label="观赏${c.title}">${pearlCard(c)}</a><a class="card-name" href="flower-detail.html?key=${c.key}"><h3>${c.title}</h3>${arrow}</a><p>《${c.artwork}》</p></article>`).join('')}</div></section>
+    <section class="editorial-section home-editorial"><div><h2>把喜欢的花，<br>留在自己的花册。</h2></div><div class="editorial-copy"><p>阅读花的故事，点击“收藏这朵花”。下次来到这里，仍能在“我的花册”中找到它。</p><p class="quiet">花册保存在当前浏览器，不会跨设备同步。</p><a class="pill-link" href="collection.html">打开我的花册 ${arrow}</a><a class="text-link" href="guide.html">了解体验方式 →</a></div></section></main>`}
+    
+    function catalogue(){return `<main id="main" class="light-page"><section class="page-wrap">${meta('THE COLLECTION / 全部五款','五种纹样，<br><em>各自成诗。</em>','循着花枝与叶脉，走进五张花卡的世界。')}<div class="catalogue-meta"><span>花开有声系列</span><span>全部作品 · 05</span><span>点击花卡，查看原作与细节</span></div><div class="catalogue-grid">${cards.map(cardMarkup).join('')}</div></section></main>`}
+    function work(){if(!selected)return invalid();const c=selected,i=cards.indexOf(c),next=cards[(i+1)%5];return `<main id="main" class="work-page"><div class="breadcrumb"><a href="catalogue.html">花卡图录</a><span> / ${c.title}</span></div><section class="work-grid"><div class="work-art"><span class="eyebrow">${no(c)} / 05</span><img src="${c.image}" alt="${c.title}花卡原作完整正面" width="1100" height="1881"><span class="art-caption">ORIGINAL CARD / 原作正面</span></div><div class="work-info"><p class="eyebrow">${c.english}</p><h1>${c.title}</h1><p class="work-subtitle">纹样原型 ·《${c.artwork}》</p><p class="work-description">${c.description}</p><dl><div><dt>纹样原型</dt><dd>《${c.artwork}》</dd></div><div><dt>资料来源</dt><dd>${c.credit.replace('《'+c.artwork+'》','')}</dd></div><div><dt>系列</dt><dd>花开有声 · ${no(c)} / 05</dd></div><div><dt>候选版体验</dt><dd>${c.scanSupported?'三维花卉候选 / 实体卡识别待验证':'原作浏览 / 三维内容待制作'}</dd></div></dl><div class="work-actions"><a class="pill-link" href="preview.html?card=${c.key}">${c.scanSupported?'观赏三维花卡':'查看花卡预览'} ${arrow}</a><a class="text-link" href="${scanURL(c.key,{from:'work'})}">${c.scanSupported?'用实体花卡扫描':'查看扫描支持状态'} ${icon}</a></div><p class="quiet small">预览不会计入收藏。收藏仅在扫描识别成功后记录。</p><a class="next-work" href="work.html?card=${next.key}"><span>下一件作品</span><strong>${next.title} →</strong></a></div></section></main>`}
+    function collection(){const collected=getCollection();const keys=new Set(collected.map(c=>c.key));return `<main id="main" class="light-page"><section class="page-wrap">${meta('YOUR COLLECTION / 我的收藏','把相遇，<br><em>留在这里。</em>')}<a class="text-link business-entry-link" href="backup.html">备份与恢复本机收藏</a><div class="collection-summary"><span><strong>${keys.size.toString().padStart(2,'0')}</strong> / 05</span><p>保存扫描识别记录，也可恢复历史备份。<br><small>记录仅保存在此浏览器；预览不会计入。</small></p><a class="pill-link dark-pill" href="${scanURL('lotus',{from:'collection'})}">扫描实体花卡 ${arrow}</a></div>${keys.size===0?'<p class="empty-note">你的第一朵花，还在等待与你相遇。</p>':''}<div class="collection-grid">${cards.map(c=>`<a href="flower-detail.html?key=${c.key}" class="collection-item ${keys.has(c.key)?'collected':''}"><div>${keys.has(c.key)?`<img src="${c.image}" alt="已收藏的${c.title}">`:`<span class="ghost-flower">${no(c)}</span><span class="collection-status">尚未收集</span>`}</div><h2>${c.title}</h2><p>${keys.has(c.key)?(collected.find(row=>row.key===c.key)?.restoredFromBackup?'历史备份恢复 · 非本次识别':'已有识别收藏'):'《'+c.artwork+'》'}</p></a>`).join('')}</div><p class="quiet">五款三维花卉均为新建候选，实体卡识别尚待逐款真机验证。清除浏览器数据会同时清除本机收藏。</p></section></main>`}
+    function guide(){return `<main id="main" class="light-page"><section class="page-wrap">${meta('VISITOR GUIDE / 参观指南','让一次相遇，<br><em>慢慢发生。</em>','无需注册，也无需实体花卡。先阅读故事，再把喜欢的花留在花册。')}<div class="guide-steps"><article><span>01</span><h2>选择一张花卡</h2><p>浏览五张花卡，了解纹样名称与作品来源。五款花卉均有独立三维预览，可拖动查看花瓣与枝叶；清荷入梦另有金属花卡。</p><a class="text-link" href="catalogue.html">浏览花卡图录 ↗</a></article><article><span>02</span><h2>阅读与收藏</h2><p>每张花卡都有文字故事，目前暂无配音。点击“收藏这朵花”，即可在同一浏览器的“我的花册”中找回。浏览记录与主动收藏分别保存。</p><a class="text-link" href="flower-detail.html?key=lotus">读清荷入梦的故事 ↗</a></article><article><span>03</span><h2>可选：实体卡扫描</h2><p>点击“开启相机”后才会申请权限。识别稳定后，立体花朵随卡片出现。退出扫描会关闭相机。此入口仍为旧版候选，扫描记录尚未接入新版花册；阅读和主动收藏不需要相机。</p><a class="text-link" href="${scanURL('lotus')}">进入扫描准备页 ↗</a></article></div><section class="guide-details"><h2>开始之前</h2><div><details open><summary>当前候选版支持什么？</summary><p>五款原作图录、独立三维花卉、对应图像目标与扫描逻辑已接入。清荷入梦另有金属花卡展陈模型。五款均处于候选验证阶段，iPhone 与实体卡的追踪、对齐和性能仍待逐款真机验证。</p></details><details><summary>我的相机与收藏会被上传吗？</summary><p>候选版在浏览器内处理画面，不上传相机视频。收藏记录保存在当前浏览器本地，不会跨设备同步。若本地存储不可用，页面会说明无法保存，不会伪装成功。</p></details><details><summary>为什么不能开启扫描？</summary><p>扫描需要 HTTPS 或本机 localhost、安全的相机权限和 WebGL 支持。若权限被拒绝，请在浏览器的网站设置里允许相机后重试。也可以随时返回图录或观看不需要相机的预览。</p></details><details><summary>看过预览，也算收集了吗？</summary><p>预览只用于观赏，不会自动收藏。请在花卡详情或图录中主动点击收藏，再到“我的花册”查看。实体扫描仍为独立候选入口。</p></details></div></section></section></main>`}
+    function preview(){
+     if(!selected)return invalid();
+     const c=selected;
+     const controls=c.scanSupported?`<div class="model-controls" aria-label="模型视角"><button data-view="bloom" aria-pressed="true">立体花朵</button>${c.key==='lotus'?'<button data-view="relief" aria-pressed="false">金属花卡</button>':''}<button data-view="front" aria-pressed="false">原作正面</button><button data-view="reset">重置视角</button></div>`:'';
+     return `<main id="main" class="preview-page"><a href="flower-detail.html?key=${c.key}" class="back-link">← 返回${c.title}</a><div class="preview-title"><p class="eyebrow">${c.scanSupported?'3D STUDY / 三维花卉':'CARD STUDY / 花卡预览'}</p><h1>${c.title}</h1><p>${c.scanSupported?'拖动旋转 · 双指缩放':'完整原作浏览 · 三维内容待制作'}</p></div><div id="preview-model" class="preview-stage" ${c.scanSupported?`role="img" aria-label="${c.title}三维花朵，可用下面的按钮切换模式"`:''}>${c.scanSupported?`<img class="model-fallback" src="./assets/renders/${c.key}-bloom.png" alt="${c.title}立体花朵静态效果图">`:`<img class="original-preview" src="${c.image}" alt="${c.title}完整原作">`}</div>${controls}<div class="preview-bottom"><p><span class="status-dot"></span>观赏模式 · 不计入收藏</p><a href="${scanURL(c.key,{from:'preview'})}" class="text-link">${c.scanSupported?'拿起实体花卡，进入扫描':'查看扫描支持状态'} ${arrow}</a></div></main>`;
+    }
+    function scan(){const q=requestFor(location.search);if(!q.card)return invalid();return `<main id="main" class="scan-page"><a class="back-link" id="scan-back" href="${q.returnURL}">← 返回上一页</a><div class="scan-layout"><section class="scan-instructions"><p class="eyebrow">ENCOUNTER / 扫描花卡</p><h1>${q.card.title}</h1><nav class="scan-card-picker" aria-label="选择要扫描的花卡">${cards.map(c=>`<a href="${scanURL(c.key,{from:q.from,backCard:q.backCard})}" ${c.key===q.card.key?'aria-current="true"':''}>${c.title}</a>`).join('')}</nav><p class="lead">让花，从卡片上浮起。</p><p>将完整花卡放入取景框，保持光线均匀。本页为旧版扫描候选，识别记录尚未接入新版花册。请在花卡详情中主动收藏。</p><div class="scan-notice"><span>候选体验</span>五款各自的图像目标与三维花卉已接入。只识别当前选中的花卡；实体卡追踪仍待逐款真机验证。</div><div class="scan-controls"><button id="start-scan" class="pill-link">${icon} 开启相机</button><button id="retry-scan" class="pill-link" hidden>重新尝试</button><button id="stop-scan" class="text-button" hidden>关闭相机</button></div><a id="scan-preview" class="text-link" href="preview.html?card=${q.card.key}">先看无需相机的预览 ${arrow}</a><p class="small quiet">相机仅在你点击后开启，画面在设备上处理。离开页面即关闭。</p></section><section class="scan-view"><div id="scan-stage"><div class="scan-placeholder">${icon}<span>等待你开启相机</span></div><div class="viewfinder" aria-hidden="true"></div></div><p id="scan-status" role="status" aria-live="polite">准备好实体花卡后，点击开启相机。</p></section></div></main>`}
+    function invalid(){return `<main id="main" class="error-page">${meta('404 / 未找到花卡','这朵花，<br>还未出现在图录。','请从完整图录中选择一张花卡。')}<a href="catalogue.html" class="pill-link">返回花卡图录 →</a></main>`}
+    function journey(){return '<main id="main" class="light-page"><section class="page-wrap"><div class="page-heading"><h1>按自己的节奏，<br><em>看完这一程。</em></h1><p class="lead">安排花卡顺序，留下本机导览进度。</p></div><div id="business-root" class="business-root"></div></section></main>'}
+    function backup(){return '<main id="main" class="light-page"><section class="page-wrap"><div class="page-heading"><h1>把记录，<br><em>妥善留存。</em></h1><p class="lead">备份、预检、合并与撤销，都在本机完成。</p></div><div id="business-root" class="business-root"></div></section></main>'}
+    const renderers={home,catalogue,work,collection,guide,preview,scan,journey,backup};
+    function mount(content){$('#app').innerHTML=content.replaceAll('↗','<span class="arrow-north" aria-hidden="true"></span>').replaceAll('→','<span class="arrow-north arrow-right" aria-hidden="true"></span>').replaceAll('←','<span class="arrow-north arrow-left" aria-hidden="true"></span>')}
+    mount(nav()+(renderers[page]||invalid)()+footer());
+    if(page==='home')import('./pearl-gallery.mjs').then(({initPearlGallery})=>{
+     const button=$('#home-pearl-demo'),status=$('#home-pearl-status'),main=$('.home-main-card [data-pearl]');
+     const gallery=initPearlGallery($('#main'),{onState:(state,element)=>{if(element!==main)return;button.disabled=state!=='ready';status.textContent=state==='fallback'?(element.querySelector('img').naturalWidth?'珠光暂不可用，已保留花卉纹样。':'花卡图片暂不可用，仍可进入故事。'):state==='ready'?(matchMedia('(prefers-reduced-motion: reduce)').matches?'珠光静态呈现，轻触花卡进入故事。':'轻移指针或横向拖动，让光掠过花瓣。轻触进入故事。'):'纹样已呈现，正在准备珠光。';}});
+     button.addEventListener('click',()=>gallery.demo(main));
+    }).catch(()=>{$('#home-pearl-status').textContent='当前显示花卉纹样，仍可进入故事。';});
+    if(selected&&['work','preview','scan'].includes(page))document.title=`${selected.title} · ${page==='scan'?'扫描花卡':page==='preview'?'花卡预览':'花卡图录'} | 花开有声`;
+    if(page==='preview'&&selected?.scanSupported){import('./model-viewer.mjs').then(async({createViewer})=>{const viewer=await createViewer($('#preview-model'),{interactive:true,cardKey:selected.key});document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{viewer?.setView(button.dataset.view);if(button.dataset.view!=='reset')document.querySelectorAll('[data-view][aria-pressed]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)))}))}).catch(()=>$('#preview-model').classList.add('fallback-only'))}
+    if(page==='scan'&&requestFor(location.search).card){import('./scan-controller.mjs').then(({initScan})=>{const q=requestFor(location.search);initScan({card:q.card,returnURL:q.returnURL})}).catch(()=>{$('#scan-status').textContent='扫描组件未能加载。请刷新重试，或先观看花卡预览。';$('#start-scan').disabled=true;})}
+    if(page==='collection')subscribeCollection(()=>{mount(nav()+collection()+footer())});
+    
+    // Local business tools: explicit user actions only; no camera or production writes.
+    if(page==='guide'){const entry=document.createElement('a');entry.href='journey.html';entry.className='text-link business-entry-link';entry.textContent='安排我的本地导览';document.querySelector('.page-heading')?.append(entry)}
+    let businessController;
+    const bindBusiness=async()=>{if(page==='journey'){const module=await import('./journey-page.mjs');businessController=module.initJourneyPage(document.querySelector('#business-root'))}else if(page==='backup'){const module=await import('./backup-page.mjs');businessController=module.initBackupPage(document.querySelector('#business-root'))}else if(page==='work'&&selected){const module=await import('./journey-page.mjs');businessController=module.initWorkJourney(selected)}};
+    if(['journey','backup','work'].includes(page))bindBusiness().catch(()=>{const target=document.querySelector('#business-root');if(target)target.textContent='本地工具未能加载，请刷新重试。'});
+    addEventListener('pagehide',event=>{if(!event.persisted)businessController?.dispose()});
+    
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/airuquan/Documents/codex/2026-10-14/task-3/zevth-handoff-v041/zevth-local-handoff-2026-10-14/candidate/tests/exhibit-layout.test.mjs:27:9)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: hero preserves the immutable 64 × 91 mm supplied metal GLB
+ok 57 - hero preserves the immutable 64 × 91 mm supplied metal GLB
+  ---
+  duration_ms: 7.455917
+  type: 'test'
+  ...
+# Subtest: five thick transmitting glass panels rest on the stone and clear the card
+ok 58 - five thick transmitting glass panels rest on the stone and clear the card
+  ---
+  duration_ms: 32.339417
+  type: 'test'
+  ...
+# Subtest: the pedestal is a thick beveled non-metallic stone object with bounded microtexture
+ok 59 - the pedestal is a thick beveled non-metallic stone object with bounded microtexture
+  ---
+  duration_ms: 14.4875
+  type: 'test'
+  ...
+# Subtest: two complete padded holders physically meet the unmodified card bottom
+ok 60 - two complete padded holders physically meet the unmodified card bottom
+  ---
+  duration_ms: 7.178291
+  type: 'test'
+  ...
+# Subtest: cover lift, fade and card turn are finite, clamped, and exactly reversible
+ok 61 - cover lift, fade and card turn are finite, clamped, and exactly reversible
+  ---
+  duration_ms: 5.784
+  type: 'test'
+  ...
+# Subtest: hero additions stay finite and inside modest mesh/triangle/material budgets
+ok 62 - hero additions stay finite and inside modest mesh/triangle/material budgets
+  ---
+  duration_ms: 16.27075
+  type: 'test'
+  ...
+# Subtest: camera matches the CPU still’s 80 mm horizontal-fit portrait lens
+ok 63 - camera matches the CPU still’s 80 mm horizontal-fit portrait lens
+  ---
+  duration_ms: 0.144292
+  type: 'test'
+  ...
+# Subtest: the reflection environment uses just three broad, neutral softboxes
+ok 64 - the reflection environment uses just three broad, neutral softboxes
+  ---
+  duration_ms: 0.775042
+  type: 'test'
+  ...
+# Subtest: flowers retain three five-rounded-petal heads, mint centres and pointed foliage
+ok 65 - flowers retain three five-rounded-petal heads, mint centres and pointed foliage
+  ---
+  duration_ms: 81.949416
+  type: 'test'
+  ...
+# Subtest: flowers attributes/index bounds are finite within geometry and draw budgets
+ok 66 - flowers attributes/index bounds are finite within geometry and draw budgets
+  ---
+  duration_ms: 40.426708
+  type: 'test'
+  ...
+# Subtest: flowers growth remains rooted, clamps input, and restores exact full-open pose
+ok 67 - flowers growth remains rooted, clamps input, and restores exact full-open pose
+  ---
+  duration_ms: 22.730833
+  type: 'test'
+  ...
+# Subtest: flowers instances are deterministic and disposal is isolated and idempotent
+ok 68 - flowers instances are deterministic and disposal is isolated and idempotent
+  ---
+  duration_ms: 231.108375
+  type: 'test'
+  ...
+# Subtest: flowers transparent fallback hashes match the final source, reference and render
+ok 69 - flowers transparent fallback hashes match the final source, reference and render
+  ---
+  duration_ms: 3.211167
+  type: 'test'
+  ...
+# Subtest: dense input draws only the latest state once per frame and stops while idle
+ok 70 - dense input draws only the latest state once per frame and stops while idle
+  ---
+  duration_ms: 0.807375
+  type: 'test'
+  ...
+# Subtest: hidden view never draws a pending frame and resumes on request
+ok 71 - hidden view never draws a pending frame and resumes on request
+  ---
+  duration_ms: 0.118625
+  type: 'test'
+  ...
+# Subtest: cancellation and disposal release pending work, including a late callback
+ok 72 - cancellation and disposal release pending work, including a late callback
+  ---
+  duration_ms: 0.074625
+  type: 'test'
+  ...
+# Subtest: hand sequence uses 32 uniform absolute poses from one 25-joint mesh
+ok 73 - hand sequence uses 32 uniform absolute poses from one 25-joint mesh
+  ---
+  duration_ms: 1.721584
+  type: 'test'
+  ...
+# Subtest: every hand asset is local, unique and hash-verified
+ok 74 - every hand asset is local, unique and hash-verified
+  ---
+  duration_ms: 13.196208
+  type: 'test'
+  ...
+# Subtest: hand source license and stable source digest are retained
+ok 75 - hand source license and stable source digest are retained
+  ---
+  duration_ms: 1.850208
+  type: 'test'
+  ...
+# Subtest: the complete hand remains in front of the immutable card in all 32 checked poses
+ok 76 - the complete hand remains in front of the immutable card in all 32 checked poses
+  ---
+  duration_ms: 2.914458
+  type: 'test'
+  ...
+# Subtest: render package validates exact alpha and continuous distinct frame motion
+ok 77 - render package validates exact alpha and continuous distinct frame motion
+  ---
+  duration_ms: 0.82075
+  type: 'test'
+  ...
+# Subtest: hand faces the camera and gently descends during a lateral planar fan
+ok 78 - hand faces the camera and gently descends during a lateral planar fan
+  ---
+  duration_ms: 0.680209
+  type: 'test'
+  ...
+# Subtest: the preserved source GLB contains one actual weighted 25-joint hand
+ok 79 - the preserved source GLB contains one actual weighted 25-joint hand
+  ---
+  duration_ms: 0.724708
+  type: 'test'
+  ...
+# Subtest: the final renderer hash and pose variant agree across deliverable records
+ok 80 - the final renderer hash and pose variant agree across deliverable records
+  ---
+  duration_ms: 0.774458
+  type: 'test'
+  ...
+# Subtest: the saved skeletal fan separates its fingertip spread without camera pitch
+ok 81 - the saved skeletal fan separates its fingertip spread without camera pitch
+  ---
+  duration_ms: 0.707708
+  type: 'test'
+  ...
+# Subtest: uniform pose selection is exact, clamped and fully reversible with no elapsed time
+ok 82 - uniform pose selection is exact, clamped and fully reversible with no elapsed time
+  ---
+  duration_ms: 2.992083
+  type: 'test'
+  ...
+# Subtest: the hand completely opens before withdrawal or card lift, then ends in the fan
+ok 83 - the hand completely opens before withdrawal or card lift, then ends in the fan
+  ---
+  duration_ms: 0.261083
+  type: 'test'
+  ...
+# Subtest: only the initial frame loads until decoded, followed by small adjacent prefetch
+ok 84 - only the initial frame loads until decoded, followed by small adjacent prefetch
+  ---
+  duration_ms: 1.911709
+  type: 'test'
+  ...
+# Subtest: a requested frame replaces the hand only after decode, with no stale intermediate pose
+ok 85 - a requested frame replaces the hand only after decode, with no stale intermediate pose
+  ---
+  duration_ms: 0.943666
+  type: 'test'
+  ...
+# Subtest: reverse scrolling chooses the same cached frame immediately and ignores invalid progress
+ok 86 - reverse scrolling chooses the same cached frame immediately and ignores invalid progress
+  ---
+  duration_ms: 0.353958
+  type: 'test'
+  ...
+# Subtest: load and decode failures retain the last safe frame and explicit retry recovers
+ok 87 - load and decode failures retain the last safe frame and explicit retry recovers
+  ---
+  duration_ms: 1.490291
+  type: 'test'
+  ...
+# Subtest: all layers switch together without changing existing accessibility attributes
+ok 88 - all layers switch together without changing existing accessibility attributes
+  ---
+  duration_ms: 0.229458
+  type: 'test'
+  ...
+# Subtest: reduced motion is the static first pose, with no adjacent preloads or hidden animation
+ok 89 - reduced motion is the static first pose, with no adjacent preloads or hidden animation
+  ---
+  duration_ms: 0.150875
+  type: 'test'
+  ...
+# Subtest: disposal cancels pending loads, blocks late decodes and remains idempotent
+ok 90 - disposal cancels pending loads, blocks late decodes and remains idempotent
+  ---
+  duration_ms: 0.398458
+  type: 'test'
+  ...
+# Subtest: frame inputs are copied and cache remains bounded during rapid scrubbing
+ok 91 - frame inputs are copied and cache remains bounded during rapid scrubbing
+  ---
+  duration_ms: 2.337167
+  type: 'test'
+  ...
+# Subtest: canvas targets receive only decoded frames at the verified source dimensions
+ok 92 - canvas targets receive only decoded frames at the verified source dimensions
+  ---
+  duration_ms: 1.03
+  type: 'test'
+  ...
+# Subtest: controller does not create animation loops, crossfades, storage writes or accessibility announcements
+ok 93 - controller does not create animation loops, crossfades, storage writes or accessibility announcements
+  ---
+  duration_ms: 0.778125
+  type: 'test'
+  ...
+# Subtest: paired frames wait for both layers to decode before one atomic pose commit
+ok 94 - paired frames wait for both layers to decode before one atomic pose commit
+  ---
+  duration_ms: 0.840709
+  type: 'test'
+  ...
+# Subtest: one failed layer holds both previous frames and retries as an entire pose pair
+ok 95 - one failed layer holds both previous frames and retries as an entire pose pair
+  ---
+  duration_ms: 0.320208
+  type: 'test'
+  ...
+# Subtest: reverse paired poses remain identical and cache is bounded by five pose pairs
+ok 96 - reverse paired poses remain identical and cache is bounded by five pose pairs
+  ---
+  duration_ms: 0.408084
+  type: 'test'
+  ...
+# Subtest: late paired decodes and disposal cannot produce mismatched foreground fingers
+ok 97 - late paired decodes and disposal cannot produce mismatched foreground fingers
+  ---
+  duration_ms: 0.20575
+  type: 'test'
+  ...
+# Subtest: paired source objects are immutable snapshots and malformed pairs are rejected
+ok 98 - paired source objects are immutable snapshots and malformed pairs are rejected
+  ---
+  duration_ms: 0.57675
+  type: 'test'
+  ...
+# Subtest: optional cache warmup downloads at most two compressed assets concurrently without decoding the sequence
+ok 99 - optional cache warmup downloads at most two compressed assets concurrently without decoding the sequence
+  ---
+  duration_ms: 2.121375
+  type: 'test'
+  ...
+# Subtest: warmup pauses on hidden or pagehide, resumes visibly, and removes all listeners at disposal
+ok 100 - warmup pauses on hidden or pagehide, resumes visibly, and removes all listeners at disposal
+  ---
+  duration_ms: 1.139
+  type: 'test'
+  ...
+# Subtest: reduced motion and Save-Data suppress network warming and abort an active warmup
+ok 101 - reduced motion and Save-Data suppress network warming and abort an active warmup
+  ---
+  duration_ms: 1.855541
+  type: 'test'
+  ...
+# Subtest: warmup skips off-origin URLs and failed requests do not retry forever
+ok 102 - warmup skips off-origin URLs and failed requests do not retry forever
+  ---
+  duration_ms: 0.564042
+  type: 'test'
+  ...
+# Subtest: handheld source GLB is the immutable supplied relief and original artwork
+ok 103 - handheld source GLB is the immutable supplied relief and original artwork
+  ---
+  duration_ms: 9.068
+  type: 'test'
+  ...
+# Subtest: CPU raster and independent WebGL camera agree on the bottom-edge hand contact
+ok 104 - CPU raster and independent WebGL camera agree on the bottom-edge hand contact
+  ---
+  duration_ms: 1.460458
+  type: 'test'
+  ...
+# Subtest: all supplied vertices stay finite and within the independently layerable card bounds
+ok 105 - all supplied vertices stay finite and within the independently layerable card bounds
+  ---
+  duration_ms: 86.90125
+  type: 'test'
+  ...
+# Subtest: render presentation is a transparent card-only scene with restrained source-preserving materials
+ok 106 - render presentation is a transparent card-only scene with restrained source-preserving materials
+  ---
+  duration_ms: 6.265333
+  type: 'test'
+  ...
+# Subtest: hand/card support references remain aligned across contain sizing and release reverses exactly
+ok 107 - hand/card support references remain aligned across contain sizing and release reverses exactly
+  ---
+  duration_ms: 1.003
+  type: 'test'
+  ...
+# Subtest: handheld scene retains the original GLB bytes, dimensions, topology and original reverse texture
+ok 108 - handheld scene retains the original GLB bytes, dimensions, topology and original reverse texture
+  ---
+  duration_ms: 2.849042
+  type: 'test'
+  ...
+# Subtest: shared state is dependency-free, finite, clamped and reversible for the complete native scroll
+ok 109 - shared state is dependency-free, finite, clamped and reversible for the complete native scroll
+  ---
+  duration_ms: 1.900084
+  type: 'test'
+  ...
+# Subtest: only the independent card turns; HTML owns common lift and centering
+ok 110 - only the independent card turns; HTML owns common lift and centering
+  ---
+  duration_ms: 4.539667
+  type: 'test'
+  ...
+# Subtest: the initial fixed camera and lower-edge contact match the CPU card raster
+ok 111 - the initial fixed camera and lower-edge contact match the CPU card raster
+  ---
+  duration_ms: 84.558208
+  type: 'test'
+  ...
+# Subtest: responsive lens shift follows object-fit contain with no hand/card registration drift
+ok 112 - responsive lens shift follows object-fit contain with no hand/card registration drift
+  ---
+  duration_ms: 1.087708
+  type: 'test'
+  ...
+# Subtest: geometry bounds stay finite, centered, unclipped and restore exactly throughout the flip
+ok 113 - geometry bounds stay finite, centered, unclipped and restore exactly throughout the flip
+  ---
+  duration_ms: 1.359583
+  type: 'test'
+  ...
+# Subtest: display-only PBR calibration matches the raster while original art, geometry and texture remain intact
+ok 114 - display-only PBR calibration matches the raster while original art, geometry and texture remain intact
+  ---
+  duration_ms: 0.888333
+  type: 'test'
+  ...
+# Subtest: the offscreen PBR environment has three neutral, broad softboxes matching physical light directions
+ok 115 - the offscreen PBR environment has three neutral, broad softboxes matching physical light directions
+  ---
+  duration_ms: 0.715291
+  type: 'test'
+  ...
+# Subtest: hero WebGL unavailability preserves independent hand and fallback card DOM through repeated disposal
+ok 116 - hero WebGL unavailability preserves independent hand and fallback card DOM through repeated disposal
+  ---
+  duration_ms: 2.73375
+  type: 'test'
+  ...
+# Subtest: hero route is card-only, demand-rendered, transparent and lifecycle guarded
+ok 117 - hero route is card-only, demand-rendered, transparent and lifecycle guarded
+  ---
+  duration_ms: 0.422916
+  type: 'test'
+  ...
+# Subtest: front-facing reveal retains a solid foreground hand until it clears the card
+ok 118 - front-facing reveal retains a solid foreground hand until it clears the card
+  ---
+  duration_ms: 0.30775
+  type: 'test'
+  ...
+# Subtest: leaves has distinct art-specific solid geometry, not a reused lotus
+ok 119 - leaves has distinct art-specific solid geometry, not a reused lotus
+  ---
+  duration_ms: 245.366958
+  type: 'test'
+  ...
+# Subtest: leaves attributes are finite and indexed within practical budgets
+ok 120 - leaves attributes are finite and indexed within practical budgets
+  ---
+  duration_ms: 50.614125
+  type: 'test'
+  ...
+# Subtest: leaves growth preserves its original printed branch root and open pose
+ok 121 - leaves growth preserves its original printed branch root and open pose
+  ---
+  duration_ms: 25.430375
+  type: 'test'
+  ...
+# Subtest: leaves owns independent resources and disposes idempotently
+ok 122 - leaves owns independent resources and disposes idempotently
+  ---
+  duration_ms: 36.1625
+  type: 'test'
+  ...
+# Subtest: SCAN lotus is a planted, volumetric procedural Group with 21 petals
+ok 123 - SCAN lotus is a planted, volumetric procedural Group with 21 petals
+  ---
+  duration_ms: 73.345083
+  type: 'test'
+  ...
+# Subtest: all geometry attributes are finite, indexed, and inside a practical budget
+ok 124 - all geometry attributes are finite, indexed, and inside a practical budget
+  ---
+  duration_ms: 46.680625
+  type: 'test'
+  ...
+# Subtest: growth keeps the original root anchored and restores the exact open pose
+ok 125 - growth keeps the original root anchored and restores the exact open pose
+  ---
+  duration_ms: 16.729041
+  type: 'test'
+  ...
+# Subtest: disposal is idempotent and separate instances own separate resources
+ok 126 - disposal is idempotent and separate instances own separate resources
+  ---
+  duration_ms: 19.918625
+  type: 'test'
+  ...
+# Subtest: exact original identities and source artwork names
+ok 127 - exact original identities and source artwork names
+  ---
+  duration_ms: 0.975166
+  type: 'test'
+  ...
+# Subtest: every original front and target exists and retains source checksum
+ok 128 - every original front and target exists and retains source checksum
+  ---
+  duration_ms: 49.961041
+  type: 'test'
+  ...
+# Subtest: all seven route entrypoints exist
+ok 129 - all seven route entrypoints exist
+  ---
+  duration_ms: 0.699167
+  type: 'test'
+  ...
+# Subtest: each scan link preserves work and preview return card
+ok 130 - each scan link preserves work and preview return card
+  ---
+  duration_ms: 0.564458
+  type: 'test'
+  ...
+# Subtest: untrusted navigation parameters cannot escape candidate
+ok 131 - untrusted navigation parameters cannot escape candidate
+  ---
+  duration_ms: 0.227917
+  type: 'test'
+  ...
+# Subtest: supplied recovered flow baseline remains byte-identical
+ok 132 - supplied recovered flow baseline remains byte-identical
+  ---
+  duration_ms: 3.181167
+  type: 'test'
+  ...
+# Subtest: preview code never invokes recognition storage writer
+ok 133 - preview code never invokes recognition storage writer
+  ---
+  duration_ms: 2.716042
+  type: 'test'
+  ...
+# Subtest: detail scan links preserve each flower and return to its story
+ok 134 - detail scan links preserve each flower and return to its story
+  ---
+  duration_ms: 0.143709
+  type: 'test'
+  ...
+# Subtest: peony has its own reference-derived composition and the normalized vase-mouth root
+ok 135 - peony has its own reference-derived composition and the normalized vase-mouth root
+  ---
+  duration_ms: 82.982792
+  type: 'test'
+  ...
+# Subtest: all peony petals and leaves are closed curved finite-thickness shells
+ok 136 - all peony petals and leaves are closed curved finite-thickness shells
+  ---
+  duration_ms: 29.172333
+  type: 'test'
+  ...
+# Subtest: geometry has finite indexed data with less than 70k rendered triangles and 90 draw objects
+ok 137 - geometry has finite indexed data with less than 70k rendered triangles and 90 draw objects
+  ---
+  duration_ms: 36.741042
+  type: 'test'
+  ...
+# Subtest: growth remains fixed at the printed root and exactly restores all open transforms
+ok 138 - growth remains fixed at the printed root and exactly restores all open transforms
+  ---
+  duration_ms: 26.318084
+  type: 'test'
+  ...
+# Subtest: deterministic instances own independent resources and dispose exactly once
+ok 139 - deterministic instances own independent resources and dispose exactly once
+  ---
+  duration_ms: 36.073
+  type: 'test'
+  ...
+# Subtest: static peony fallback matches its geometry source and declares CPU-only provenance
+ok 140 - static peony fallback matches its geometry source and declares CPU-only provenance
+  ---
+  duration_ms: 7.05825
+  type: 'test'
+  ...
+# Subtest: candidate collection ignores production and writes only isolated namespace
+ok 141 - candidate collection ignores production and writes only isolated namespace
+  ---
+  duration_ms: 6.709625
+  type: 'test'
+  ...
+# Subtest: preview, unknown card and insufficient tracking never collect
+ok 142 - preview, unknown card and insufficient tracking never collect
+  ---
+  duration_ms: 0.198084
+  type: 'test'
+  ...
+# Subtest: malformed and unsupported collection schema is safe
+ok 143 - malformed and unsupported collection schema is safe
+  ---
+  duration_ms: 0.326917
+  type: 'test'
+  ...
+# Subtest: blocked and silently failing storage does not claim saved
+ok 144 - blocked and silently failing storage does not claim saved
+  ---
+  duration_ms: 0.1285
+  type: 'test'
+  ...
+# Subtest: subscribers see one durable change and may unsubscribe
+ok 145 - subscribers see one durable change and may unsubscribe
+  ---
+  duration_ms: 0.21075
+  type: 'test'
+  ...
+# Subtest: initialization is camera opt-in and preview does not collect
+ok 146 - initialization is camera opt-in and preview does not collect
+  ---
+  duration_ms: 0.455959
+  type: 'test'
+  ...
+# Subtest: security, support, and unavailable guards never request camera
+ok 147 - security, support, and unavailable guards never request camera
+  ---
+  duration_ms: 0.3825
+  type: 'test'
+  ...
+# Subtest: double start opens one camera; stop releases resources; retry works
+ok 148 - double start opens one camera; stop releases resources; retry works
+  ---
+  duration_ms: 0.412625
+  type: 'test'
+  ...
+# Subtest: denied permission is explicit and retry recovers
+ok 149 - denied permission is explicit and retry recovers
+  ---
+  duration_ms: 0.974667
+  type: 'test'
+  ...
+# Subtest: late permission after Back/cancel is closed without starting tracker
+ok 150 - late permission after Back/cancel is closed without starting tracker
+  ---
+  duration_ms: 0.377125
+  type: 'test'
+  ...
+# Subtest: cancel while loading stops stream and disposes late tracker
+ok 151 - cancel while loading stops stream and disposes late tracker
+  ---
+  duration_ms: 0.155292
+  type: 'test'
+  ...
+# Subtest: tracker/model load error closes camera and permits retry
+ok 152 - tracker/model load error closes camera and permits retry
+  ---
+  duration_ms: 0.090584
+  type: 'test'
+  ...
+# Subtest: stable genuine lotus observations collect once; unknown targets never collect
+ok 153 - stable genuine lotus observations collect once; unknown targets never collect
+  ---
+  duration_ms: 0.229333
+  type: 'test'
+  ...
+# Subtest: lost target and stale frame gaps reset recognition evidence
+ok 154 - lost target and stale frame gaps reset recognition evidence
+  ---
+  duration_ms: 0.211667
+  type: 'test'
+  ...
+# Subtest: no late callbacks after stop, and storage failure is disclosed
+ok 155 - no late callbacks after stop, and storage failure is disclosed
+  ---
+  duration_ms: 0.163958
+  type: 'test'
+  ...
+# Subtest: startup timeout closes late camera and stale retry cannot alter new session
+ok 156 - startup timeout closes late camera and stale retry cannot alter new session
+  ---
+  duration_ms: 0.085834
+  type: 'test'
+  ...
+# Subtest: page-hide stops while preserving restart bindings; permanent cleanup removes listeners
+ok 157 - page-hide stops while preserving restart bindings; permanent cleanup removes listeners
+  ---
+  duration_ms: 0.492083
+  type: 'test'
+  ...
+# Subtest: camera track ending unexpectedly closes tracker and permits retry
+ok 158 - camera track ending unexpectedly closes tracker and permits retry
+  ---
+  duration_ms: 9.341917
+  type: 'test'
+  ...
+# Subtest: verified target metadata agrees with manifest and all five original PNGs
+ok 159 - verified target metadata agrees with manifest and all five original PNGs
+  ---
+  duration_ms: 18.978917
+  type: 'test'
+  ...
+# Subtest: all target dimensions are checked even when the corrupted entry is another card
+ok 160 - all target dimensions are checked even when the corrupted entry is another card
+  ---
+  duration_ms: 0.433291
+  type: 'test'
+  ...
+# Subtest: existing version-one lotus records survive adding the other four verified cards
+ok 161 - existing version-one lotus records survive adding the other four verified cards
+  ---
+  duration_ms: 0.580416
+  type: 'test'
+  ...
+# Subtest: all twenty cross-card evidence mismatches are refused without a storage write
+ok 162 - all twenty cross-card evidence mismatches are refused without a storage write
+  ---
+  duration_ms: 0.121583
+  type: 'test'
+  ...
+# Subtest: stored records reject cross-card target indices and preview methods while preserving valid entries
+ok 163 - stored records reject cross-card target indices and preview methods while preserving valid entries
+  ---
+  duration_ms: 0.30125
+  type: 'test'
+  ...
+# Subtest: every selected card binds its own tracker and records only its own stable evidence
+ok 164 - every selected card binds its own tracker and records only its own stable evidence
+  ---
+  duration_ms: 0.401292
+  type: 'test'
+  ...
+# Subtest: wrong-card events interrupt pending evidence; non-boolean tracking and invalid times do not collect
+ok 165 - wrong-card events interrupt pending evidence; non-boolean tracking and invalid times do not collect
+  ---
+  duration_ms: 0.085042
+  type: 'test'
+  ...
+# Subtest: real geometric model constructors integrate with the selected target for all five cards
+ok 166 - real geometric model constructors integrate with the selected target for all five cards
+  ---
+  duration_ms: 160.930542
+  type: 'test'
+  ...
+# Subtest: tracker rejects an unexpected matcher index for every selected card
+ok 167 - tracker rejects an unexpected matcher index for every selected card
+  ---
+  duration_ms: 85.479959
+  type: 'test'
+  ...
+# Subtest: constructor rejects every corrupted target dimension and disposes before rendering
+ok 168 - constructor rejects every corrupted target dimension and disposes before rendering
+  ---
+  duration_ms: 2.172458
+  type: 'test'
+  ...
+# Subtest: unsupported cards and already-aborted startup cannot create tracking resources
+ok 169 - unsupported cards and already-aborted startup cannot create tracking resources
+  ---
+  duration_ms: 0.405167
+  type: 'test'
+  ...
+# Subtest: renderer failure, context loss and cancellation dispose constructor-owned resources
+ok 170 - renderer failure, context loss and cancellation dispose constructor-owned resources
+  ---
+  duration_ms: 33.658291
+  type: 'test'
+  ...
+# Subtest: stale callbacks cannot collect or fail a new scan after retry
+ok 171 - stale callbacks cannot collect or fail a new scan after retry
+  ---
+  duration_ms: 0.399
+  type: 'test'
+  ...
+# Subtest: a thrown storage writer is disclosed without interrupting viewing or claiming persistence
+ok 172 - a thrown storage writer is disclosed without interrupting viewing or claiming persistence
+  ---
+  duration_ms: 0.58225
+  type: 'test'
+  ...
+1..172
+# tests 172
+# suites 0
+# pass 171
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 892.602291

@@ -1,0 +1,309 @@
+{
+  "date": "2026-10-23T08:02:07.572Z",
+  "browser": "155.0.8059.85",
+  "scope": "Local Chrome; synthetic dense input (4 moves per animation frame), mobile viewport emulation. Renderer CPU submission time, not GPU timing or real-device FPS.",
+  "sourceSHA256": "c63126488eebcb59938284692002bda1730a3d7f8e71d603906d377eba9c2831",
+  "results": [
+    {
+      "width": 1280,
+      "key": "lotus",
+      "initial": {
+        "at": 382.89999985694885,
+        "ms": 0.40000009536743164,
+        "calls": 45,
+        "triangles": 44622
+      },
+      "drag": {
+        "renders": 45,
+        "cpuTotalMs": 27.00000023841858,
+        "cpuP50Ms": 0.6000001430511475,
+        "cpuP95Ms": 0.7999999523162842,
+        "drawCalls": 45,
+        "triangles": 44622,
+        "events": 180,
+        "frameP50Ms": 16.699999999999932,
+        "frameP95Ms": 16.700000000000045
+      },
+      "wheel": {
+        "renders": 20,
+        "cpuTotalMs": 9.499999523162842,
+        "cpuP50Ms": 0.39999985694885254,
+        "cpuP95Ms": 1,
+        "drawCalls": 45,
+        "triangles": 44622
+      },
+      "idleRenders": 0
+    },
+    {
+      "width": 1280,
+      "key": "peony",
+      "initial": {
+        "at": 213.39999985694885,
+        "ms": 0.6000001430511475,
+        "calls": 82,
+        "triangles": 63446
+      },
+      "drag": {
+        "renders": 45,
+        "cpuTotalMs": 25.09999990463257,
+        "cpuP50Ms": 0.5999999046325684,
+        "cpuP95Ms": 0.7999999523162842,
+        "drawCalls": 82,
+        "triangles": 63446,
+        "events": 180,
+        "frameP50Ms": 16.699999999999932,
+        "frameP95Ms": 16.700000000000045
+      },
+      "wheel": {
+        "renders": 20,
+        "cpuTotalMs": 7.599999904632568,
+        "cpuP50Ms": 0.2999999523162842,
+        "cpuP95Ms": 0.6999998092651367,
+        "drawCalls": 82,
+        "triangles": 63446
+      },
+      "idleRenders": 0
+    },
+    {
+      "width": 1280,
+      "key": "chrysanthemum",
+      "initial": {
+        "at": 192,
+        "ms": 0.2999999523162842,
+        "calls": 28,
+        "triangles": 23658
+      },
+      "drag": {
+        "renders": 45,
+        "cpuTotalMs": 17.99999976158142,
+        "cpuP50Ms": 0.39999985694885254,
+        "cpuP95Ms": 0.7999999523162842,
+        "drawCalls": 28,
+        "triangles": 23658,
+        "events": 180,
+        "frameP50Ms": 16.69999999999999,
+        "frameP95Ms": 16.700000000000045
+      },
+      "wheel": {
+        "renders": 20,
+        "cpuTotalMs": 11.800000190734863,
+        "cpuP50Ms": 0.5999999046325684,
+        "cpuP95Ms": 0.7999999523162842,
+        "drawCalls": 28,
+        "triangles": 23658
+      },
+      "idleRenders": 0
+    },
+    {
+      "width": 1280,
+      "key": "flowers",
+      "initial": {
+        "at": 188.10000014305115,
+        "ms": 0.39999985694885254,
+        "calls": 51,
+        "triangles": 42486
+      },
+      "drag": {
+        "renders": 45,
+        "cpuTotalMs": 19.59999990463257,
+        "cpuP50Ms": 0.40000009536743164,
+        "cpuP95Ms": 0.7000000476837158,
+        "drawCalls": 51,
+        "triangles": 42486,
+        "events": 180,
+        "frameP50Ms": 16.699999999999932,
+        "frameP95Ms": 16.700000000000045
+      },
+      "wheel": {
+        "renders": 20,
+        "cpuTotalMs": 8,
+        "cpuP50Ms": 0.3000001907348633,
+        "cpuP95Ms": 0.5999999046325684,
+        "drawCalls": 51,
+        "triangles": 42486
+      },
+      "idleRenders": 0
+    },
+    {
+      "width": 1280,
+      "key": "leaves",
+      "initial": {
+        "at": 192.59999990463257,
+        "ms": 0.2999999523162842,
+        "calls": 36,
+        "triangles": 45778
+      },
+      "drag": {
+        "renders": 45,
+        "cpuTotalMs": 22.999999523162842,
+        "cpuP50Ms": 0.5,
+        "cpuP95Ms": 0.8999998569488525,
+        "drawCalls": 36,
+        "triangles": 45778,
+        "events": 180,
+        "frameP50Ms": 16.699999999999932,
+        "frameP95Ms": 16.700000000000045
+      },
+      "wheel": {
+        "renders": 20,
+        "cpuTotalMs": 7.900000095367432,
+        "cpuP50Ms": 0.2999999523162842,
+        "cpuP95Ms": 0.7999999523162842,
+        "drawCalls": 36,
+        "triangles": 45778
+      },
+      "idleRenders": 0
+    },
+    {
+      "width": 390,
+      "key": "lotus",
+      "initial": {
+        "at": 225.20000004768372,
+        "ms": 0.6000001430511475,
+        "calls": 45,
+        "triangles": 44622
+      },
+      "drag": {
+        "renders": 45,
+        "cpuTotalMs": 33.59999990463257,
+        "cpuP50Ms": 0.5,
+        "cpuP95Ms": 1.5,
+        "drawCalls": 45,
+        "triangles": 44622,
+        "events": 180,
+        "frameP50Ms": 16.699999999999932,
+        "frameP95Ms": 16.700000000000045
+      },
+      "wheel": {
+        "renders": 20,
+        "cpuTotalMs": 11.899999380111694,
+        "cpuP50Ms": 0.5,
+        "cpuP95Ms": 1,
+        "drawCalls": 45,
+        "triangles": 44622
+      },
+      "idleRenders": 0
+    },
+    {
+      "width": 390,
+      "key": "peony",
+      "initial": {
+        "at": 193.70000004768372,
+        "ms": 0.5,
+        "calls": 82,
+        "triangles": 63446
+      },
+      "drag": {
+        "renders": 45,
+        "cpuTotalMs": 38.499999046325684,
+        "cpuP50Ms": 0.8999998569488525,
+        "cpuP95Ms": 1.5,
+        "drawCalls": 82,
+        "triangles": 63446,
+        "events": 180,
+        "frameP50Ms": 16.699999999999932,
+        "frameP95Ms": 16.700000000000045
+      },
+      "wheel": {
+        "renders": 20,
+        "cpuTotalMs": 13.800000429153442,
+        "cpuP50Ms": 0.7000000476837158,
+        "cpuP95Ms": 1.1999998092651367,
+        "drawCalls": 82,
+        "triangles": 63446
+      },
+      "idleRenders": 0
+    },
+    {
+      "width": 390,
+      "key": "chrysanthemum",
+      "initial": {
+        "at": 183.40000009536743,
+        "ms": 0.2999999523162842,
+        "calls": 28,
+        "triangles": 23658
+      },
+      "drag": {
+        "renders": 45,
+        "cpuTotalMs": 20.499999284744263,
+        "cpuP50Ms": 0.40000009536743164,
+        "cpuP95Ms": 0.7999999523162842,
+        "drawCalls": 28,
+        "triangles": 23658,
+        "events": 180,
+        "frameP50Ms": 16.699999999999932,
+        "frameP95Ms": 16.700000000000045
+      },
+      "wheel": {
+        "renders": 20,
+        "cpuTotalMs": 6.600000381469727,
+        "cpuP50Ms": 0.2999999523162842,
+        "cpuP95Ms": 0.6999998092651367,
+        "drawCalls": 28,
+        "triangles": 23658
+      },
+      "idleRenders": 0
+    },
+    {
+      "width": 390,
+      "key": "flowers",
+      "initial": {
+        "at": 168.70000004768372,
+        "ms": 0.5,
+        "calls": 51,
+        "triangles": 42486
+      },
+      "drag": {
+        "renders": 45,
+        "cpuTotalMs": 24.599998712539673,
+        "cpuP50Ms": 0.5,
+        "cpuP95Ms": 0.9000000953674316,
+        "drawCalls": 51,
+        "triangles": 42486,
+        "events": 180,
+        "frameP50Ms": 16.699999999999932,
+        "frameP95Ms": 16.700000000000045
+      },
+      "wheel": {
+        "renders": 20,
+        "cpuTotalMs": 5.999999523162842,
+        "cpuP50Ms": 0.20000004768371582,
+        "cpuP95Ms": 0.5999999046325684,
+        "drawCalls": 51,
+        "triangles": 42486
+      },
+      "idleRenders": 0
+    },
+    {
+      "width": 390,
+      "key": "leaves",
+      "initial": {
+        "at": 191.59999990463257,
+        "ms": 0.40000009536743164,
+        "calls": 36,
+        "triangles": 45778
+      },
+      "drag": {
+        "renders": 45,
+        "cpuTotalMs": 21.40000009536743,
+        "cpuP50Ms": 0.40000009536743164,
+        "cpuP95Ms": 0.9000000953674316,
+        "drawCalls": 36,
+        "triangles": 45778,
+        "events": 180,
+        "frameP50Ms": 16.699999999999932,
+        "frameP95Ms": 16.700000000000045
+      },
+      "wheel": {
+        "renders": 20,
+        "cpuTotalMs": 6.400000095367432,
+        "cpuP50Ms": 0.2999999523162842,
+        "cpuP95Ms": 0.5999999046325684,
+        "drawCalls": 36,
+        "triangles": 45778
+      },
+      "idleRenders": 0
+    }
+  ],
+  "errors": []
+}

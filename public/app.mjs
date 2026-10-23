@@ -1,3 +1,4 @@
+import {pearlCard} from './pearl-card.mjs';
 import {cards,cardByKey} from './cards.mjs';
 import {requestFor,scanURL} from './flow.mjs';
 import {getCollection,subscribeCollection} from './collection-store.mjs';
@@ -15,19 +16,22 @@ const cardMarkup=(c,i)=>`<article class="catalogue-card"><a href="flower-detail.
 function home(){const featured=cardByKey('lotus');return `<main id="main">
 <section class="home-exhibition" aria-labelledby="home-title">
   <div class="home-introduction">
-    <h1 id="home-title">花开，<br><em>自有回声。</em></h1>
-    <p class="home-description">循着花枝与叶脉，读一段花的故事。<br>把喜欢的花，留在自己的花册。</p>
+    <h1 id="home-title">花开有声</h1>
+    <p class="home-description">五种花卉纹样，一场数字展览。<br>沿着花瓣与叶脉，看光影轻轻流转。</p>
     <div class="home-start"><a class="pill-link" href="flower-detail.html?key=lotus">从清荷入梦开始 ${arrow}</a><a class="text-link" href="catalogue.html">走进花卡图录 ${arrow}</a></div>
-    <p class="home-availability">无需实体花卡 · 当前暂无配音，可阅读完整故事</p>
+    <p class="home-availability">无需实体花卡 · 阅读故事，把喜欢的花留在花册</p>
   </div>
   <figure class="home-featured">
-    <a href="flower-detail.html?key=lotus" aria-label="阅读清荷入梦的故事"><img src="${featured.image}" alt="清荷入梦花卡完整原作：荷花与圆叶围绕瓶形对称展开" width="1100" height="1881" fetchpriority="high" decoding="async"></a>
-    <figcaption><span>清荷入梦<small>LOTUS IN REVERIE</small></span><a href="flower-detail.html?key=lotus&view=bloom">观赏三维花卡 ${arrow}</a></figcaption>
+    <a class="home-main-card" href="flower-detail.html?key=lotus" aria-label="阅读清荷入梦的故事">${pearlCard(featured,{priority:true})}</a>
+    <div class="pearl-toolbar"><span class="pearl-note">局部珠光 · 清荷入梦</span><button class="pearl-button pearl-demo" id="home-pearl-demo" type="button" disabled>演示光影</button></div>
+    <figcaption><small>纹样原型 ·《荷花图》</small><a href="flower-detail.html?key=lotus&view=bloom">观赏三维花朵 ${arrow}</a></figcaption>
+    <p id="home-pearl-status" class="pearl-note" role="status">轻触花卡，走进花的故事。</p>
   </figure>
   <a class="home-more" href="#catalogue">向下浏览五张花卡 <span class="arrow-north arrow-right" aria-hidden="true"></span></a>
 </section>
-<section class="catalogue-section" id="catalogue"><div class="section-title"><div><h2>留住一朵花的姿态。</h2></div><a class="text-link" href="catalogue.html">查看完整图录 ${arrow}</a></div><div class="home-cards">${cards.map(cardMarkup).join('')}</div></section>
-<section class="editorial-section home-editorial"><div><h2>看过之后，<br><em>把喜欢的留下。</em></h2></div><div class="editorial-copy"><p>选一张花卡，阅读它的故事。点击“收藏这朵花”，以后便能从“我的花册”找到它。</p><p class="quiet">花册保存在当前浏览器，不会跨设备同步。</p><a class="pill-link" href="collection.html">打开我的花册 ${arrow}</a><a class="text-link" href="guide.html">了解体验方式 →</a></div></section></main>`}
+<section class="catalogue-section" id="catalogue"><div class="section-title"><div><h2>五种纹样，各自盛放。</h2></div><a class="text-link" href="catalogue.html">查看完整图录 ${arrow}</a></div><div class="home-cards">${cards.map(c=>`<article class="catalogue-card"><a href="flower-detail.html?key=${c.key}" class="card-image" aria-label="观赏${c.title}">${pearlCard(c)}</a><a class="card-name" href="flower-detail.html?key=${c.key}"><h3>${c.title}</h3>${arrow}</a><p>《${c.artwork}》</p></article>`).join('')}</div></section>
+<section class="editorial-section home-editorial"><div><h2>把喜欢的花，<br>留在自己的花册。</h2></div><div class="editorial-copy"><p>阅读花的故事，点击“收藏这朵花”。下次来到这里，仍能在“我的花册”中找到它。</p><p class="quiet">花册保存在当前浏览器，不会跨设备同步。</p><a class="pill-link" href="collection.html">打开我的花册 ${arrow}</a><a class="text-link" href="guide.html">了解体验方式 →</a></div></section></main>`}
+
 function catalogue(){return `<main id="main" class="light-page"><section class="page-wrap">${meta('THE COLLECTION / 全部五款','五种纹样，<br><em>各自成诗。</em>','循着花枝与叶脉，走进五张花卡的世界。')}<div class="catalogue-meta"><span>花开有声系列</span><span>全部作品 · 05</span><span>点击花卡，查看原作与细节</span></div><div class="catalogue-grid">${cards.map(cardMarkup).join('')}</div></section></main>`}
 function work(){if(!selected)return invalid();const c=selected,i=cards.indexOf(c),next=cards[(i+1)%5];return `<main id="main" class="work-page"><div class="breadcrumb"><a href="catalogue.html">花卡图录</a><span> / ${c.title}</span></div><section class="work-grid"><div class="work-art"><span class="eyebrow">${no(c)} / 05</span><img src="${c.image}" alt="${c.title}花卡原作完整正面" width="1100" height="1881"><span class="art-caption">ORIGINAL CARD / 原作正面</span></div><div class="work-info"><p class="eyebrow">${c.english}</p><h1>${c.title}</h1><p class="work-subtitle">纹样原型 ·《${c.artwork}》</p><p class="work-description">${c.description}</p><dl><div><dt>纹样原型</dt><dd>《${c.artwork}》</dd></div><div><dt>资料来源</dt><dd>${c.credit.replace('《'+c.artwork+'》','')}</dd></div><div><dt>系列</dt><dd>花开有声 · ${no(c)} / 05</dd></div><div><dt>候选版体验</dt><dd>${c.scanSupported?'三维花卉候选 / 实体卡识别待验证':'原作浏览 / 三维内容待制作'}</dd></div></dl><div class="work-actions"><a class="pill-link" href="preview.html?card=${c.key}">${c.scanSupported?'观赏三维花卡':'查看花卡预览'} ${arrow}</a><a class="text-link" href="${scanURL(c.key,{from:'work'})}">${c.scanSupported?'用实体花卡扫描':'查看扫描支持状态'} ${icon}</a></div><p class="quiet small">预览不会计入收藏。收藏仅在扫描识别成功后记录。</p><a class="next-work" href="work.html?card=${next.key}"><span>下一件作品</span><strong>${next.title} →</strong></a></div></section></main>`}
 function collection(){const collected=getCollection();const keys=new Set(collected.map(c=>c.key));return `<main id="main" class="light-page"><section class="page-wrap">${meta('YOUR COLLECTION / 我的收藏','把相遇，<br><em>留在这里。</em>')}<a class="text-link business-entry-link" href="backup.html">备份与恢复本机收藏</a><div class="collection-summary"><span><strong>${keys.size.toString().padStart(2,'0')}</strong> / 05</span><p>保存扫描识别记录，也可恢复历史备份。<br><small>记录仅保存在此浏览器；预览不会计入。</small></p><a class="pill-link dark-pill" href="${scanURL('lotus',{from:'collection'})}">扫描实体花卡 ${arrow}</a></div>${keys.size===0?'<p class="empty-note">你的第一朵花，还在等待与你相遇。</p>':''}<div class="collection-grid">${cards.map(c=>`<a href="flower-detail.html?key=${c.key}" class="collection-item ${keys.has(c.key)?'collected':''}"><div>${keys.has(c.key)?`<img src="${c.image}" alt="已收藏的${c.title}">`:`<span class="ghost-flower">${no(c)}</span><span class="collection-status">尚未收集</span>`}</div><h2>${c.title}</h2><p>${keys.has(c.key)?(collected.find(row=>row.key===c.key)?.restoredFromBackup?'历史备份恢复 · 非本次识别':'已有识别收藏'):'《'+c.artwork+'》'}</p></a>`).join('')}</div><p class="quiet">五款三维花卉均为新建候选，实体卡识别尚待逐款真机验证。清除浏览器数据会同时清除本机收藏。</p></section></main>`}
@@ -45,6 +49,11 @@ function backup(){return '<main id="main" class="light-page"><section class="pag
 const renderers={home,catalogue,work,collection,guide,preview,scan,journey,backup};
 function mount(content){$('#app').innerHTML=content.replaceAll('↗','<span class="arrow-north" aria-hidden="true"></span>').replaceAll('→','<span class="arrow-north arrow-right" aria-hidden="true"></span>').replaceAll('←','<span class="arrow-north arrow-left" aria-hidden="true"></span>')}
 mount(nav()+(renderers[page]||invalid)()+footer());
+if(page==='home')import('./pearl-gallery.mjs').then(({initPearlGallery})=>{
+ const button=$('#home-pearl-demo'),status=$('#home-pearl-status'),main=$('.home-main-card [data-pearl]');
+ const gallery=initPearlGallery($('#main'),{onState:(state,element)=>{if(element!==main)return;button.disabled=state!=='ready';status.textContent=state==='fallback'?(element.querySelector('img').naturalWidth?'珠光暂不可用，已保留花卉纹样。':'花卡图片暂不可用，仍可进入故事。'):state==='ready'?(matchMedia('(prefers-reduced-motion: reduce)').matches?'珠光静态呈现，轻触花卡进入故事。':'轻移指针或横向拖动，让光掠过花瓣。轻触进入故事。'):'纹样已呈现，正在准备珠光。';}});
+ button.addEventListener('click',()=>gallery.demo(main));
+}).catch(()=>{$('#home-pearl-status').textContent='当前显示花卉纹样，仍可进入故事。';});
 if(selected&&['work','preview','scan'].includes(page))document.title=`${selected.title} · ${page==='scan'?'扫描花卡':page==='preview'?'花卡预览':'花卡图录'} | 花开有声`;
 if(page==='preview'&&selected?.scanSupported){import('./model-viewer.mjs').then(async({createViewer})=>{const viewer=await createViewer($('#preview-model'),{interactive:true,cardKey:selected.key});document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{viewer?.setView(button.dataset.view);if(button.dataset.view!=='reset')document.querySelectorAll('[data-view][aria-pressed]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)))}))}).catch(()=>$('#preview-model').classList.add('fallback-only'))}
 if(page==='scan'&&requestFor(location.search).card){import('./scan-controller.mjs').then(({initScan})=>{const q=requestFor(location.search);initScan({card:q.card,returnURL:q.returnURL})}).catch(()=>{$('#scan-status').textContent='扫描组件未能加载。请刷新重试，或先观看花卡预览。';$('#start-scan').disabled=true;})}

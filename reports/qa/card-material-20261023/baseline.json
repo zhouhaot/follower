@@ -1,0 +1,10 @@
+{
+  "public/app.mjs": "ecabe98b38885d76a373bf25765cf897ab3b7cf0e87895f69bf69c661b5adc63",
+  "public/index.html": "f484570c314323728ad37063734dee7b3df44b7e35001ec6f6eb50e83b4c7fca",
+  "public/model-viewer.mjs": "c63126488eebcb59938284692002bda1730a3d7f8e71d603906d377eba9c2831",
+  "public/frame-renderer.mjs": "0464e329c8450db3267a083e111b58e7f2395d0467827957d2246ae5c97c1992",
+  "public/home-glass.css": "669749fd38413a0b6025dc6a95fa14ce64a6f656309837131bb9407f239327ea",
+  "public/home-motion.mjs": "9d664adc8be3b3f2336c523e9c0a37d743d237dfcae2635cdf1d43a02d9d0d94",
+  "public/assets/originals/lotus/target.png": "5589f2774dfdbc46e64d4d6656b28d3626eab1f072c3703198d098bcd0464ba2",
+  "public/assets/originals/lotus/card-named.png": "31a466768a1696135ab70953ae9c614fae3160924c016297d359c8310227dcda"
+}

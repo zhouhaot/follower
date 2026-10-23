@@ -1,0 +1,480 @@
+{
+  "date": "2026-10-23T09:28:56.392Z",
+  "scope": "Isolated local Chrome. Desktop and emulated touch layouts; no real phone, camera, audio, or human participant.",
+  "checks": [
+    {
+      "name": "1280: original view does not load Three or model",
+      "pass": true
+    },
+    {
+      "name": "1280: title and view choices appear in first viewport",
+      "pass": true
+    },
+    {
+      "name": "1280: model and story use responsive layout",
+      "pass": true
+    },
+    {
+      "name": "1280: original, story and observation belong to same flower",
+      "pass": true
+    },
+    {
+      "name": "1280: actual interactive model loads",
+      "pass": true
+    },
+    {
+      "name": "1280: story retained and stage height stable",
+      "pass": true
+    },
+    {
+      "name": "1280: device-specific guidance",
+      "pass": true
+    },
+    {
+      "name": "1280: keyboard turn changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "1280: reset restores initial image",
+      "pass": true
+    },
+    {
+      "name": "1280: zoom changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "1280: tiny trackpad wheel delta repaints immediately",
+      "pass": true
+    },
+    {
+      "name": "1280: reset after wheel restores exact image",
+      "pass": true
+    },
+    {
+      "name": "1280: metal view renders another model",
+      "pass": true
+    },
+    {
+      "name": "1280: original return hides model tools",
+      "pass": true
+    },
+    {
+      "name": "1280: viewing and switching never collects",
+      "pass": true
+    },
+    {
+      "name": "1280: explicit collection survives reload",
+      "pass": true
+    },
+    {
+      "name": "1280: next flower is a valid different card",
+      "pass": true
+    },
+    {
+      "name": "1280: next flower displays matching story",
+      "pass": true
+    },
+    {
+      "name": "1280: next flower only adds a view",
+      "pass": true
+    },
+    {
+      "name": "1280: no overflow and usable touch targets",
+      "pass": true
+    },
+    {
+      "name": "1280: no audio or camera requests",
+      "pass": true
+    },
+    {
+      "name": "768: original view does not load Three or model",
+      "pass": true
+    },
+    {
+      "name": "768: title and view choices appear in first viewport",
+      "pass": true
+    },
+    {
+      "name": "768: model and story use responsive layout",
+      "pass": true
+    },
+    {
+      "name": "768: original, story and observation belong to same flower",
+      "pass": true
+    },
+    {
+      "name": "768: actual interactive model loads",
+      "pass": true
+    },
+    {
+      "name": "768: story retained and stage height stable",
+      "pass": true
+    },
+    {
+      "name": "768: device-specific guidance",
+      "pass": true
+    },
+    {
+      "name": "768: keyboard turn changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "768: reset restores initial image",
+      "pass": true
+    },
+    {
+      "name": "768: zoom changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "768: tiny trackpad wheel delta repaints immediately",
+      "pass": true
+    },
+    {
+      "name": "768: reset after wheel restores exact image",
+      "pass": true
+    },
+    {
+      "name": "768: metal view renders another model",
+      "pass": true
+    },
+    {
+      "name": "768: original return hides model tools",
+      "pass": true
+    },
+    {
+      "name": "768: viewing and switching never collects",
+      "pass": true
+    },
+    {
+      "name": "768: explicit collection survives reload",
+      "pass": true
+    },
+    {
+      "name": "768: next flower is a valid different card",
+      "pass": true
+    },
+    {
+      "name": "768: next flower displays matching story",
+      "pass": true
+    },
+    {
+      "name": "768: next flower only adds a view",
+      "pass": true
+    },
+    {
+      "name": "768: no overflow and usable touch targets",
+      "pass": true
+    },
+    {
+      "name": "768: no audio or camera requests",
+      "pass": true
+    },
+    {
+      "name": "390: original view does not load Three or model",
+      "pass": true
+    },
+    {
+      "name": "390: title and view choices appear in first viewport",
+      "pass": true
+    },
+    {
+      "name": "390: model and story use responsive layout",
+      "pass": true
+    },
+    {
+      "name": "390: original, story and observation belong to same flower",
+      "pass": true
+    },
+    {
+      "name": "390: actual interactive model loads",
+      "pass": true
+    },
+    {
+      "name": "390: story retained and stage height stable",
+      "pass": true
+    },
+    {
+      "name": "390: device-specific guidance",
+      "pass": true
+    },
+    {
+      "name": "390: keyboard turn changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "390: reset restores initial image",
+      "pass": true
+    },
+    {
+      "name": "390: zoom changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "390: touch drag changes model",
+      "pass": true
+    },
+    {
+      "name": "390: two-finger pinch changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "390: reset after pinch restores exact image",
+      "pass": true
+    },
+    {
+      "name": "390: touch guidance survives alternate input",
+      "pass": true
+    },
+    {
+      "name": "390: metal view renders another model",
+      "pass": true
+    },
+    {
+      "name": "390: original return hides model tools",
+      "pass": true
+    },
+    {
+      "name": "390: viewing and switching never collects",
+      "pass": true
+    },
+    {
+      "name": "390: explicit collection survives reload",
+      "pass": true
+    },
+    {
+      "name": "390: next flower is a valid different card",
+      "pass": true
+    },
+    {
+      "name": "390: next flower displays matching story",
+      "pass": true
+    },
+    {
+      "name": "390: next flower only adds a view",
+      "pass": true
+    },
+    {
+      "name": "390: no overflow and usable touch targets",
+      "pass": true
+    },
+    {
+      "name": "390: no audio or camera requests",
+      "pass": true
+    },
+    {
+      "name": "320: original view does not load Three or model",
+      "pass": true
+    },
+    {
+      "name": "320: title and view choices appear in first viewport",
+      "pass": true
+    },
+    {
+      "name": "320: model and story use responsive layout",
+      "pass": true
+    },
+    {
+      "name": "320: original, story and observation belong to same flower",
+      "pass": true
+    },
+    {
+      "name": "320: actual interactive model loads",
+      "pass": true
+    },
+    {
+      "name": "320: story retained and stage height stable",
+      "pass": true
+    },
+    {
+      "name": "320: device-specific guidance",
+      "pass": true
+    },
+    {
+      "name": "320: keyboard turn changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "320: reset restores initial image",
+      "pass": true
+    },
+    {
+      "name": "320: zoom changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "320: touch drag changes model",
+      "pass": true
+    },
+    {
+      "name": "320: two-finger pinch changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "320: reset after pinch restores exact image",
+      "pass": true
+    },
+    {
+      "name": "320: touch guidance survives alternate input",
+      "pass": true
+    },
+    {
+      "name": "320: metal view renders another model",
+      "pass": true
+    },
+    {
+      "name": "320: original return hides model tools",
+      "pass": true
+    },
+    {
+      "name": "320: viewing and switching never collects",
+      "pass": true
+    },
+    {
+      "name": "320: explicit collection survives reload",
+      "pass": true
+    },
+    {
+      "name": "320: next flower is a valid different card",
+      "pass": true
+    },
+    {
+      "name": "320: next flower displays matching story",
+      "pass": true
+    },
+    {
+      "name": "320: next flower only adds a view",
+      "pass": true
+    },
+    {
+      "name": "320: no overflow and usable touch targets",
+      "pass": true
+    },
+    {
+      "name": "320: no audio or camera requests",
+      "pass": true
+    },
+    {
+      "name": "flowers: direct model link and observation work",
+      "pass": true
+    },
+    {
+      "name": "flowers: discovery never points to itself",
+      "pass": true
+    },
+    {
+      "name": "peony: direct model link and observation work",
+      "pass": true
+    },
+    {
+      "name": "peony: discovery never points to itself",
+      "pass": true
+    },
+    {
+      "name": "chrysanthemum: direct model link and observation work",
+      "pass": true
+    },
+    {
+      "name": "chrysanthemum: discovery never points to itself",
+      "pass": true
+    },
+    {
+      "name": "lotus: direct model link and observation work",
+      "pass": true
+    },
+    {
+      "name": "lotus: discovery never points to itself",
+      "pass": true
+    },
+    {
+      "name": "leaves: direct model link and observation work",
+      "pass": true
+    },
+    {
+      "name": "leaves: discovery never points to itself",
+      "pass": true
+    },
+    {
+      "name": "Context loss: fallback message and static image",
+      "pass": true
+    },
+    {
+      "name": "webgl: failure offers still image, original and story",
+      "pass": true
+    },
+    {
+      "name": "webgl: model failure does not block collection",
+      "pass": true
+    },
+    {
+      "name": "webgl: original remains available",
+      "pass": true
+    },
+    {
+      "name": "module: failure offers still image, original and story",
+      "pass": true
+    },
+    {
+      "name": "module: model failure does not block collection",
+      "pass": true
+    },
+    {
+      "name": "module: original remains available",
+      "pass": true
+    },
+    {
+      "name": "asset: failure offers still image, original and story",
+      "pass": true
+    },
+    {
+      "name": "asset: model failure does not block collection",
+      "pass": true
+    },
+    {
+      "name": "asset: original remains available",
+      "pass": true
+    },
+    {
+      "name": "Slow load: story available while loading",
+      "pass": true
+    },
+    {
+      "name": "Slow load: late result does not override original choice",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion: no required animation to reach story",
+      "pass": true
+    },
+    {
+      "name": "No uncaught page errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "1280-original.png",
+    "1280-bloom.png",
+    "1280-relief.png",
+    "768-original.png",
+    "768-bloom.png",
+    "390-original.png",
+    "390-bloom.png",
+    "390-relief.png",
+    "320-original.png",
+    "320-bloom.png",
+    "flower-flowers.png",
+    "flower-peony.png",
+    "flower-chrysanthemum.png",
+    "flower-lotus.png",
+    "flower-leaves.png",
+    "390-model-unavailable.png"
+  ],
+  "browser": "155.0.8059.85",
+  "summary": {
+    "total": 112,
+    "passed": 112,
+    "failed": 0
+  }
+}

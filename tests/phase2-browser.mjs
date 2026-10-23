@@ -32,7 +32,7 @@ try{
   await snapshot(page,`${width}-home`,true);
   const primary=page.getByRole('link',{name:'从清荷入梦开始',exact:true});
   check(`${width}: story entry visible in first viewport`,await primary.evaluate(e=>{const r=e.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight;}));
-  check(`${width}: static home makes no hand or Three requests`,requests.every(u=>!/(hand-sequence|handheld|three\.module|model-viewer)/.test(u))&&await page.locator('canvas').count()===0);
+  check(`${width}: pearl home does not load hand or 3D flower models`,requests.every(u=>!/(hand-sequence|handheld|model-viewer|\.glb)/.test(u))&&await page.locator('.pearl-card').count()===6);
   check(`${width}: all home card links point at current detail`,await page.locator('.home-cards .card-image').evaluateAll(a=>a.length===5&&a.every(x=>x.getAttribute('href').startsWith('flower-detail.html?key='))));
   await primary.focus();await page.keyboard.press('Enter');await page.waitForURL('**/flower-detail.html?key=lotus');
   check(`${width}: keyboard entry opens story`,await page.locator('h1').textContent()==='清荷入梦');

@@ -1,3 +1,4 @@
+import {pearlCard} from './pearl-card.mjs';
 import { initDetailExhibit } from './detail-exhibit.mjs';
 import { visitorNavigation } from './visitor-navigation.mjs';
 import { scanURL } from './flow.mjs';
@@ -134,18 +135,21 @@ function render() {
       <div class="flower-detail-grid story-exhibit-grid">
         <section class="flower-exhibit" aria-label="${card.title}展台">
           <div class="exhibit-switch" role="group" aria-label="选择花卡展示方式">
-            <button type="button" data-exhibit-view="original" aria-pressed="true">原作花卡</button>
+            <button type="button" data-exhibit-view="pearl" aria-pressed="true">珠光花卡</button>
+            <button type="button" data-exhibit-view="original" aria-pressed="false">原作花卡</button>
             <button type="button" data-exhibit-view="bloom" aria-pressed="false">立体花朵</button>
             ${card.key === 'lotus' ? '<button type="button" data-exhibit-view="relief" aria-pressed="false">金属花卡</button>' : ''}
           </div>
           <div class="detail-stage">
-            <div id="detail-original" class="detail-media">
+            <div id="detail-pearl" class="detail-media detail-pearl">${pearlCard(card,{interactive:true,priority:true})}</div>
+            <div id="detail-original" class="detail-media" hidden>
               <img src="${card.image}" alt="${card.title}完整原作" width="1100" height="1881" class="detail-art" fetchpriority="high">
             </div>
             <div id="detail-model" class="detail-media detail-model" role="img" aria-label="${card.title}立体花朵" hidden>
               <img class="model-fallback" src="./assets/renders/${card.key}-bloom.png" alt="${card.title}立体花朵静态效果图">
             </div>
           </div>
+          <div class="pearl-detail-tools" role="group" aria-label="观察珠光花卡"><button class="pearl-button pearl-demo" type="button" id="detail-pearl-demo" disabled>演示光影</button><button class="pearl-button" type="button" id="detail-pearl-reset">归正</button><button class="pearl-button" type="button" id="detail-pearl-original">完整原作</button></div>
           <div class="view-tools" role="group" aria-label="调整模型视角" hidden>
             <button type="button" data-exhibit-adjust="left" aria-label="向左转动模型">左转</button>
             <button type="button" data-exhibit-adjust="right" aria-label="向右转动模型">右转</button>

@@ -1,0 +1,11 @@
+{
+  "public/card-material.html": "a51e7a329f436d4a8a9aafb89518f792fc7925ae309e5605b0b36447fccb96ce",
+  "public/card-material.css": "24c2ac85c884bc8e37fd72803383b912469d9af4e5076e23c70c8931f89759b2",
+  "public/card-material.mjs": "46ef400c2b1a4a43c8eb75e6b6733ac22f6032811d6adf64436d76e6bb73bb14",
+  "public/card-material-renderer.mjs": "b949b77496cc30656c6ee0287ba191078a6b5f7e647d2d829d8a47ce5981a2a6",
+  "tests/card-material-browser.mjs": "d0aa4bfc1a18fa768f597e91fb9118ec762378691057e42e36a1a268c0e0a82a",
+  "CARD-MATERIAL-REPORT.md": "a5ba634f263afabd50147fba254a8c4fc230a1636eb74e36120e9988af84445b",
+  "README.md": "acc73a9e5ace0f5f06eb603b926f0cd4f6b52f8249142b6c3ec9240deae6a1ad",
+  "reports/qa/card-material-20261023/design-notes.md": "d7be5efe7898ca5345fcee0b43e8c78dd14a179262391aae298b77763fc64a2f",
+  "reports/qa/card-material-20261023/visual-review.md": "81e0db0e0d95cee431f1bfe784a4bc5d2a88f5d2d71eadcb1dd5bfee540176dc"
+}

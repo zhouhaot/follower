@@ -1,0 +1,19 @@
+{
+  "scope": "Accepted pearl prototype, one active card, 45 frames x 4 pointer events; local Chrome, simulated mobile.",
+  "results": [
+    {
+      "width": 1280,
+      "draws": 45,
+      "idleDraws": 0,
+      "median": 16.699999809265137,
+      "p95": 17.399999856948853
+    },
+    {
+      "width": 390,
+      "draws": 46,
+      "idleDraws": 0,
+      "median": 16.700000047683716,
+      "p95": 17.5
+    }
+  ]
+}

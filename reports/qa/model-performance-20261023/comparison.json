@@ -1,0 +1,88 @@
+{
+  "comparisons": [
+    {
+      "width": 1280,
+      "key": "lotus",
+      "initialImageIdentical": true,
+      "beforeDraws": 175,
+      "afterDraws": 45,
+      "triangleCountUnchanged": true
+    },
+    {
+      "width": 1280,
+      "key": "peony",
+      "initialImageIdentical": true,
+      "beforeDraws": 175,
+      "afterDraws": 45,
+      "triangleCountUnchanged": true
+    },
+    {
+      "width": 1280,
+      "key": "chrysanthemum",
+      "initialImageIdentical": true,
+      "beforeDraws": 175,
+      "afterDraws": 45,
+      "triangleCountUnchanged": true
+    },
+    {
+      "width": 1280,
+      "key": "flowers",
+      "initialImageIdentical": true,
+      "beforeDraws": 175,
+      "afterDraws": 45,
+      "triangleCountUnchanged": true
+    },
+    {
+      "width": 1280,
+      "key": "leaves",
+      "initialImageIdentical": true,
+      "beforeDraws": 175,
+      "afterDraws": 45,
+      "triangleCountUnchanged": true
+    },
+    {
+      "width": 390,
+      "key": "lotus",
+      "initialImageIdentical": true,
+      "beforeDraws": 177,
+      "afterDraws": 45,
+      "triangleCountUnchanged": true
+    },
+    {
+      "width": 390,
+      "key": "peony",
+      "initialImageIdentical": true,
+      "beforeDraws": 177,
+      "afterDraws": 45,
+      "triangleCountUnchanged": true
+    },
+    {
+      "width": 390,
+      "key": "chrysanthemum",
+      "initialImageIdentical": true,
+      "beforeDraws": 177,
+      "afterDraws": 45,
+      "triangleCountUnchanged": true
+    },
+    {
+      "width": 390,
+      "key": "flowers",
+      "initialImageIdentical": true,
+      "beforeDraws": 177,
+      "afterDraws": 45,
+      "triangleCountUnchanged": true
+    },
+    {
+      "width": 390,
+      "key": "leaves",
+      "initialImageIdentical": true,
+      "beforeDraws": 177,
+      "afterDraws": 45,
+      "triangleCountUnchanged": true
+    }
+  ],
+  "beforeTotalDraws": 1760,
+  "afterTotalDraws": 450,
+  "sourceHashesMatch": true,
+  "note": "Dense synthetic input, not real-device FPS."
+}

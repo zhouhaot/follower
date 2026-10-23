@@ -2,25 +2,37 @@
 export function initDetailExhibit({card, initialView} = {}) {
   const original = document.getElementById('detail-original');
   const model = document.getElementById('detail-model');
+  const pearl = document.getElementById('detail-pearl');
+  const pearlTools = document.querySelector('.pearl-detail-tools');
+  const pearlDemo = document.getElementById('detail-pearl-demo');
   const status = document.getElementById('exhibit-status');
   const toolbar = document.querySelector('.view-tools');
   const reload = document.getElementById('exhibit-reload');
   const buttons = [...document.querySelectorAll('[data-exhibit-view]')];
   const touch = matchMedia('(pointer: coarse)');
   const narrow = matchMedia('(max-width: 700px)');
-  let view = 'original', viewer = null, loading = null, disposed = false;
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  let view = 'pearl', viewer = null, loading = null, disposed = false, pearlGallery = null;
 
   function update() {
     if (disposed) return;
     const isOriginal = view === 'original';
+    const isPearl = view === 'pearl';
+    const isModel = !isOriginal && !isPearl;
     const fallback = model.classList.contains('fallback-only');
     original.hidden = !isOriginal;
-    model.hidden = isOriginal;
+    pearl.hidden = !isPearl;
+    model.hidden = !isModel;
     buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.exhibitView === view)));
-    toolbar.hidden = isOriginal || !viewer || fallback;
-    reload.hidden = isOriginal || !fallback;
-    model.setAttribute('aria-busy', String(!isOriginal && !viewer && !fallback));
-    if (isOriginal) {
+    toolbar.hidden = !isModel || !viewer || fallback;
+    pearlTools.hidden = !isPearl;
+    pearlDemo.disabled = pearl.querySelector('[data-pearl]').dataset.pearlState !== 'ready';
+    reload.hidden = !isModel || !fallback;
+    model.setAttribute('aria-busy', String(isModel && !viewer && !fallback));
+    if (isPearl) {
+      const state = pearl.querySelector('[data-pearl]').dataset.pearlState;
+      status.textContent = state === 'fallback' ? (pearl.querySelector('img').naturalWidth ? '珠光暂不可用，已保留花卉纹样。仍可阅读故事、查看原作或收藏。' : '花卡图片暂不可用。仍可阅读故事、查看完整原作或收藏。') : state !== 'ready' ? '纹样已呈现，正在准备珠光。' : reduced.matches ? '已减少动态效果，静态呈现珠光。可切换原作对照。' : '横向轻拖或使用方向键，观察局部珠光；按 Home 归正。竖向滑动继续阅读。';
+    } else if (isOriginal) {
       status.textContent = '原作完整呈现。选择“立体花朵”，换个角度看花。';
     } else if (fallback) {
       status.textContent = '三维暂不可用，当前显示静态效果图。仍可切换原作、阅读故事或收藏。';
@@ -29,7 +41,7 @@ export function initDetailExhibit({card, initialView} = {}) {
     } else {
       status.textContent = touch.matches || navigator.maxTouchPoints > 0 && narrow.matches ? '单指转动 · 双指缩放。滑动正文可继续阅读。' : '拖动旋转 · 滚轮缩放，也可使用视角按钮。';
     }
-    if (!isOriginal) model.setAttribute('aria-label', `${card.title}${view === 'relief' ? '金属花卡' : '立体花朵'}${fallback ? '静态效果图' : '，可使用视角按钮调整'}`);
+    if (isModel) model.setAttribute('aria-label', `${card.title}${view === 'relief' ? '金属花卡' : '立体花朵'}${fallback ? '静态效果图' : '，可使用视角按钮调整'}`);
   }
 
   function fallbackImage() {
@@ -41,9 +53,11 @@ export function initDetailExhibit({card, initialView} = {}) {
   function select(next) {
     if (disposed || !buttons.some(button => button.dataset.exhibitView === next)) return;
     view = next;
-    if (view !== 'original') fallbackImage();
+    const isModel = view === 'bloom' || view === 'relief';
+    if (isModel) fallbackImage();
     update();
-    if (view === 'original') return;
+    pearlGallery?.setEnabled(view === 'pearl');
+    if (!isModel) return;
     if (viewer) { viewer.setView(view); update(); return; }
     if (loading) return;
     loading = import('./model-viewer.mjs')
@@ -51,7 +65,7 @@ export function initDetailExhibit({card, initialView} = {}) {
       .then(result => {
         if (disposed) { result?.dispose(); return; }
         viewer = result;
-        if (viewer && view !== 'original') viewer.setView(view);
+        if (viewer && (view === 'bloom' || view === 'relief')) viewer.setView(view);
         update();
       })
       .catch(() => {
@@ -63,9 +77,12 @@ export function initDetailExhibit({card, initialView} = {}) {
   }
 
   const events = new AbortController();
+  pearlDemo.addEventListener('click',()=>pearlGallery?.demo(),{signal:events.signal});
+  document.getElementById('detail-pearl-reset').addEventListener('click',()=>pearlGallery?.reset(),{signal:events.signal});
+  document.getElementById('detail-pearl-original').addEventListener('click',()=>select('original'),{signal:events.signal});
   buttons.forEach(button => button.addEventListener('click', () => select(button.dataset.exhibitView), {signal:events.signal}));
   document.querySelectorAll('[data-exhibit-adjust]').forEach(button => button.addEventListener('click', () => {
-    if (view === 'original' || !viewer || model.classList.contains('fallback-only')) return;
+    if (view === 'original' || view === 'pearl' || !viewer || model.classList.contains('fallback-only')) return;
     const action = button.dataset.exhibitAdjust;
     if (action === 'reset') viewer.setView('reset');
     else viewer.adjustView?.({turn:action === 'left' ? Math.PI / 8 : action === 'right' ? -Math.PI / 8 : 0, zoom:action === 'in' ? .8 : action === 'out' ? 1.25 : 1});
@@ -73,9 +90,13 @@ export function initDetailExhibit({card, initialView} = {}) {
   reload.addEventListener('click', () => location.reload(), {signal:events.signal});
   touch.addEventListener('change', update, {signal:events.signal});
   narrow.addEventListener('change', update, {signal:events.signal});
+  reduced.addEventListener('change', update, {signal:events.signal});
   // The shared renderer switches to a still image after WebGL context loss.
   const observer = new MutationObserver(update);
   observer.observe(model, {attributes:true, attributeFilter:['class']});
-  select(initialView === 'bloom' || initialView === 'relief' && card.key === 'lotus' ? initialView : 'original');
-  return {dispose() {disposed = true;events.abort();observer.disconnect();viewer?.dispose();}};
+  select(buttons.some(button=>button.dataset.exhibitView===initialView) ? initialView : 'pearl');
+  import('./pearl-gallery.mjs').then(({initPearlGallery})=>{
+    if(!disposed)pearlGallery=initPearlGallery(pearl,{enabled:view==='pearl',onState:update});
+  }).catch(()=>{if(!disposed){pearl.querySelector('[data-pearl]').dataset.pearlState='fallback';update();}});
+  return {dispose() {disposed = true;events.abort();observer.disconnect();viewer?.dispose();pearlGallery?.dispose();}};
 }

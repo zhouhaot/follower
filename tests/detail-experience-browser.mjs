@@ -40,7 +40,7 @@ async function canvasHash(page){return createHash('sha256').update(await page.lo
 try{
  for(const width of [1280,768,390,320]){
   const {context,page}=await setup(width);const requests=[];page.on('request',r=>requests.push(r.url()));
-  await page.goto(`${base}/flower-detail.html?key=lotus`);
+  await page.goto(`${base}/flower-detail.html?key=lotus&view=original`);
   check(`${width}: original view does not load Three or model`,!requests.some(u=>/three\.module|model-viewer|\.glb/.test(u))&&await page.locator('#detail-original').isVisible());
   check(`${width}: title and view choices appear in first viewport`,await page.locator('.detail-title').evaluate(e=>e.getBoundingClientRect().bottom<innerHeight)&&await page.locator('.exhibit-switch').evaluate(e=>e.getBoundingClientRect().bottom<innerHeight));
   check(`${width}: model and story use responsive layout`,await page.evaluate(()=>{
@@ -62,6 +62,15 @@ try{
   check(`${width}: reset restores initial image`,before===await canvasHash(page));
   await page.getByRole('button',{name:'放大模型',exact:true}).click();
   check(`${width}: zoom changes rendered model`,before!==await canvasHash(page));await page.getByRole('button',{name:'重置模型视角',exact:true}).click();
+  if(width>=701){
+    const box=await page.locator('#detail-model canvas').boundingBox();
+    await page.mouse.move(box.x+box.width/2,box.y+box.height/2);
+    await page.mouse.wheel(0,3);
+    await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+    check(`${width}: tiny trackpad wheel delta repaints immediately`,before!==await canvasHash(page));
+    await page.getByRole('button',{name:'重置模型视角',exact:true}).click();
+    check(`${width}: reset after wheel restores exact image`,before===await canvasHash(page));
+  }
   if(width<701){
     await page.locator('#detail-model').scrollIntoViewIfNeeded();
     const bounds=await page.locator('#detail-model canvas').boundingBox(),cdp=await context.newCDPSession(page);
@@ -71,6 +80,12 @@ try{
     await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
     check(`${width}: touch drag changes model`,before!==await canvasHash(page));
     await page.getByRole('button',{name:'重置模型视角',exact:true}).click();
+    await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:startX-30,y:startY,id:1},{x:startX+30,y:startY,id:2}]});
+    for(let step=1;step<=6;step++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:startX-30-step*4,y:startY,id:1},{x:startX+30+step*4,y:startY,id:2}]});
+    await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+    check(`${width}: two-finger pinch changes rendered model`,before!==await canvasHash(page));
+    await page.getByRole('button',{name:'重置模型视角',exact:true}).click();
+    check(`${width}: reset after pinch restores exact image`,before===await canvasHash(page));
     check(`${width}: touch guidance survives alternate input`,(await page.locator('#exhibit-status').textContent()).includes('单指转动'));
     await cdp.detach();
   }
@@ -121,7 +136,7 @@ try{
  await slow.page.getByRole('button',{name:'原作花卡',exact:true}).click();release();await ready(slow.page);
  check('Slow load: late result does not override original choice',await slow.page.locator('#detail-original').isVisible()&&await slow.page.locator('[data-exhibit-view=original]').getAttribute('aria-pressed')==='true');await slow.context.close();
  const reduced=await setup(390,{reducedMotion:'reduce'});await reduced.page.goto(`${base}/flower-detail.html?key=lotus`);
- check('Reduced motion: no required animation to reach story',await reduced.page.locator('#detail-original').isVisible()&&await reduced.page.locator('.flower-story').isVisible());await reduced.context.close();
+ check('Reduced motion: no required animation to reach story',await reduced.page.locator('#detail-pearl').isVisible()&&await reduced.page.locator('.flower-story').isVisible());await reduced.context.close();
  check('No uncaught page errors',report.errors.length===0,report.errors);
 }catch(error){check('Detail workflow completed',false,{message:error.message,stack:error.stack});}
 finally{await browser.close();report.summary={total:report.checks.length,passed:report.checks.filter(c=>c.pass).length,failed:report.checks.filter(c=>!c.pass).length};await writeFile(path.join(output,'detail-browser.json'),JSON.stringify(report,null,2));console.log('SUMMARY',report.summary);}

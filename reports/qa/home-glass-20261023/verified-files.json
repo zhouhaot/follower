@@ -1,0 +1,48 @@
+[
+  {
+    "file": "public/app.mjs",
+    "sha256": "ecabe98b38885d76a373bf25765cf897ab3b7cf0e87895f69bf69c661b5adc63",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/index.html",
+    "sha256": "f484570c314323728ad37063734dee7b3df44b7e35001ec6f6eb50e83b4c7fca",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/home-glass.css",
+    "sha256": "669749fd38413a0b6025dc6a95fa14ce64a6f656309837131bb9407f239327ea",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/home-motion.mjs",
+    "sha256": "9d664adc8be3b3f2336c523e9c0a37d743d237dfcae2635cdf1d43a02d9d0d94",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/frame-renderer.mjs",
+    "sha256": "0464e329c8450db3267a083e111b58e7f2395d0467827957d2246ae5c97c1992",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "tests/home-glass-browser.mjs",
+    "sha256": "80cc940624ad5adab5ee776a24da00729fbf823619558a0172913dcf66c2c455"
+  },
+  {
+    "file": "tests/phase2-browser.mjs",
+    "sha256": "f249d658386438d8cf26d6ebc588cc64f860cfcebd461bd85c51b809d9600a02"
+  },
+  {
+    "file": "HOME-GLASS-REPORT.md",
+    "sha256": "78b79316ecec177e0701d878c1bebcf6352fd57ad3f9d4ed329c2d33714767bb"
+  },
+  {
+    "file": "README.md",
+    "sha256": "2a04311922458627698088b6811252a49fe32076983939d34adaf6cc5b89880a"
+  }
+]

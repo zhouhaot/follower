@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#182421">
+  <title>清荷入梦 · 材质样稿 | 花开有声</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./card-material.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+  <header class="material-header">
+    <a class="material-brand" href="./index.html">花开有声</a>
+    <nav aria-label="样稿导航"><a href="./flower-detail.html?key=lotus">阅读花的故事</a><a href="./assets/originals/lotus/card-named.png" target="_blank" rel="noopener">完整原作 <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="material-intro" aria-labelledby="page-title">
+      <div><h1 id="page-title">清荷入梦</h1><p>同一幅荷花纹样，两种材质的光影。</p></div>
+      <div class="material-tools" aria-label="比较控制">
+        <button type="button" id="demo-light" disabled>演示光影</button>
+        <button type="button" id="original-toggle" aria-pressed="false" disabled>查看原图</button>
+        <button type="button" id="reset-material" disabled>归正</button>
+      </div>
+    </section>
+    <p class="interaction-note" id="interaction-note">移动指针或横向拖动卡面，让光掠过花瓣。聚焦卡片后也可使用方向键，按 Home 归正。</p>
+    <section class="material-comparison" aria-label="莲花卡材质比较">
+      <article class="material-study" data-material="paper" aria-labelledby="paper-title">
+        <div class="study-heading"><h2 id="paper-title">纸本压纹</h2><span>温润 · 细纹 · 浅浮起伏</span></div>
+        <div class="card-stage">
+          <div class="specimen" role="group" tabindex="0" aria-label="纸本压纹莲花卡，方向键调整角度，Home 归正" aria-describedby="interaction-note">
+            <div class="card-edge" aria-hidden="true"></div>
+            <div class="card-face">
+              <div class="card-art"><img src="./assets/originals/lotus/target.png" alt="清荷入梦完整纹样：中央荷花、两侧圆叶与下方花瓶" width="884" height="1255" draggable="false"></div>
+              <div class="card-colophon"><span>清荷入梦</span><span>荷花图</span></div>
+            </div>
+          </div>
+        </div>
+        <p class="study-caption">光停在纸面，纹样的边缘轻轻浮起。<br>保留原画的色彩，让细节慢慢显现。</p>
+        <p class="material-status" role="status">原图已显示，正在准备材质。</p>
+      </article>
+      <article class="material-study" data-material="pearl" aria-labelledby="pearl-title">
+        <div class="study-heading"><h2 id="pearl-title">局部珠光</h2><span>月白 · 清蓝 · 随光变幻</span></div>
+        <div class="card-stage">
+          <div class="specimen" role="group" tabindex="0" aria-label="局部珠光莲花卡，方向键调整角度，Home 归正" aria-describedby="interaction-note">
+            <div class="card-edge" aria-hidden="true"></div>
+            <div class="card-face">
+              <div class="card-art"><img src="./assets/originals/lotus/target.png" alt="与纸本版相同的清荷入梦纹样，用于比较局部珠光" width="884" height="1255" draggable="false"></div>
+              <div class="card-colophon"><span>清荷入梦</span><span>荷花图</span></div>
+            </div>
+          </div>
+        </div>
+        <p class="study-caption">光沿花瓣与叶片流动，转过一个角度，<br>清蓝里浮现一层柔和的珠光。</p>
+        <p class="material-status" role="status">原图已显示，正在准备材质。</p>
+      </article>
+    </section>
+    <footer class="material-footer"><p>纹样来源沿用原项目资料：都江堰市博物馆《荷花图》。</p><p>数字材质样稿 · 用于比较视觉效果，不代表实物印刷工艺。</p></footer>
+  </main>
+  <noscript><p class="noscript-note">当前显示原图。开启 JavaScript 后可比较材质和交互光影。</p></noscript>
+  <script type="module" src="./card-material.mjs"></script>
+</body>
+</html>

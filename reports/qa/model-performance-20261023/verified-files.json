@@ -1,0 +1,34 @@
+[
+  {
+    "file": "public/model-viewer.mjs",
+    "sha256": "c63126488eebcb59938284692002bda1730a3d7f8e71d603906d377eba9c2831",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/frame-renderer.mjs",
+    "sha256": "0464e329c8450db3267a083e111b58e7f2395d0467827957d2246ae5c97c1992",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "tests/frame-renderer.test.mjs",
+    "sha256": "44d390228373f7670b0c79951caf7ef7e57738515afda377eb24a559ae755605"
+  },
+  {
+    "file": "tests/detail-experience-browser.mjs",
+    "sha256": "f7df39997d5e4122ec75ca7e9472dcba8f0f72fe1871e0b12ce78ed1d23a51c8"
+  },
+  {
+    "file": "tests/model-performance-browser.mjs",
+    "sha256": "ff55584f9f55d9f04df337f925e57e594a257009c201fcb53597b5278fd64849"
+  },
+  {
+    "file": "MOTION-PERFORMANCE-REPORT.md",
+    "sha256": "2214e0475dee98e8918d6324c98df8e3f4cda8d61a573ec5386e1d5834ff42b7"
+  },
+  {
+    "file": "README.md",
+    "sha256": "b3373ce1aa04b411cee12088ccd3952e8a296825639922610df3055b62dce530"
+  }
+]

@@ -1,0 +1,316 @@
+{
+  "date": "2026-10-23T08:21:09.528Z",
+  "scope": "Local Chrome, desktop and mobile viewport/touch simulation. No real device or production data.",
+  "checks": [
+    {
+      "name": "1440: glass surfaces visible",
+      "pass": true
+    },
+    {
+      "name": "1440: original cards stay within viewport",
+      "pass": true
+    },
+    {
+      "name": "1440: main artwork stays above caption",
+      "pass": true
+    },
+    {
+      "name": "1440: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1440: primary story entry is in first screen",
+      "pass": true
+    },
+    {
+      "name": "1440: no WebGL or hand sequence loads",
+      "pass": true
+    },
+    {
+      "name": "1440: keyboard replay opens three cards",
+      "pass": true
+    },
+    {
+      "name": "1440: opening finishes without an idle loop",
+      "pass": true
+    },
+    {
+      "name": "1440: pointer changes card angle",
+      "pass": true
+    },
+    {
+      "name": "1440: pointer leave restores angle",
+      "pass": true
+    },
+    {
+      "name": "1440: no scheduled frames while idle",
+      "pass": true
+    },
+    {
+      "name": "1440: repeated replay replaces prior sequence",
+      "pass": true
+    },
+    {
+      "name": "1440: offscreen sequence stops",
+      "pass": true
+    },
+    {
+      "name": "1280: glass surfaces visible",
+      "pass": true
+    },
+    {
+      "name": "1280: original cards stay within viewport",
+      "pass": true
+    },
+    {
+      "name": "1280: main artwork stays above caption",
+      "pass": true
+    },
+    {
+      "name": "1280: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: primary story entry is in first screen",
+      "pass": true
+    },
+    {
+      "name": "1280: no WebGL or hand sequence loads",
+      "pass": true
+    },
+    {
+      "name": "1280: keyboard replay opens three cards",
+      "pass": true
+    },
+    {
+      "name": "1280: opening finishes without an idle loop",
+      "pass": true
+    },
+    {
+      "name": "1280: pointer changes card angle",
+      "pass": true
+    },
+    {
+      "name": "1280: pointer leave restores angle",
+      "pass": true
+    },
+    {
+      "name": "1280: no scheduled frames while idle",
+      "pass": true
+    },
+    {
+      "name": "1280: repeated replay replaces prior sequence",
+      "pass": true
+    },
+    {
+      "name": "1280: offscreen sequence stops",
+      "pass": true
+    },
+    {
+      "name": "768: glass surfaces visible",
+      "pass": true
+    },
+    {
+      "name": "768: original cards stay within viewport",
+      "pass": true
+    },
+    {
+      "name": "768: main artwork stays above caption",
+      "pass": true
+    },
+    {
+      "name": "768: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "768: primary story entry is in first screen",
+      "pass": true
+    },
+    {
+      "name": "768: no WebGL or hand sequence loads",
+      "pass": true
+    },
+    {
+      "name": "768: keyboard replay opens three cards",
+      "pass": true
+    },
+    {
+      "name": "768: opening finishes without an idle loop",
+      "pass": true
+    },
+    {
+      "name": "768: pointer changes card angle",
+      "pass": true
+    },
+    {
+      "name": "768: pointer leave restores angle",
+      "pass": true
+    },
+    {
+      "name": "768: no scheduled frames while idle",
+      "pass": true
+    },
+    {
+      "name": "768: repeated replay replaces prior sequence",
+      "pass": true
+    },
+    {
+      "name": "768: offscreen sequence stops",
+      "pass": true
+    },
+    {
+      "name": "390: glass surfaces visible",
+      "pass": true
+    },
+    {
+      "name": "390: original cards stay within viewport",
+      "pass": true
+    },
+    {
+      "name": "390: main artwork stays above caption",
+      "pass": true
+    },
+    {
+      "name": "390: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: primary story entry is in first screen",
+      "pass": true
+    },
+    {
+      "name": "390: no WebGL or hand sequence loads",
+      "pass": true
+    },
+    {
+      "name": "390: keyboard replay opens three cards",
+      "pass": true
+    },
+    {
+      "name": "390: opening finishes without an idle loop",
+      "pass": true
+    },
+    {
+      "name": "390: touch has no hover tilt",
+      "pass": true
+    },
+    {
+      "name": "390: no scheduled frames while idle",
+      "pass": true
+    },
+    {
+      "name": "390: repeated replay replaces prior sequence",
+      "pass": true
+    },
+    {
+      "name": "390: offscreen sequence stops",
+      "pass": true
+    },
+    {
+      "name": "320: glass surfaces visible",
+      "pass": true
+    },
+    {
+      "name": "320: original cards stay within viewport",
+      "pass": true
+    },
+    {
+      "name": "320: main artwork stays above caption",
+      "pass": true
+    },
+    {
+      "name": "320: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "320: primary story entry is in first screen",
+      "pass": true
+    },
+    {
+      "name": "320: no WebGL or hand sequence loads",
+      "pass": true
+    },
+    {
+      "name": "320: keyboard replay opens three cards",
+      "pass": true
+    },
+    {
+      "name": "320: opening finishes without an idle loop",
+      "pass": true
+    },
+    {
+      "name": "320: touch has no hover tilt",
+      "pass": true
+    },
+    {
+      "name": "320: no scheduled frames while idle",
+      "pass": true
+    },
+    {
+      "name": "320: repeated replay replaces prior sequence",
+      "pass": true
+    },
+    {
+      "name": "320: offscreen sequence stops",
+      "pass": true
+    },
+    {
+      "name": "1280: reduced motion shows complete static fan",
+      "pass": true
+    },
+    {
+      "name": "1280: reduced motion keeps story entry usable",
+      "pass": true
+    },
+    {
+      "name": "390: reduced motion shows complete static fan",
+      "pass": true
+    },
+    {
+      "name": "390: reduced motion keeps story entry usable",
+      "pass": true
+    },
+    {
+      "name": "Motion module failure leaves artwork and navigation visible",
+      "pass": true
+    },
+    {
+      "name": "No uncaught page errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "motionTiming": [
+    {
+      "width": 1440,
+      "median": 16.700000000000045,
+      "p95": 16.700000000000273
+    },
+    {
+      "width": 1280,
+      "median": 16.700000000000045,
+      "p95": 16.800000000000182
+    },
+    {
+      "width": 768,
+      "median": 16.700000000000045,
+      "p95": 16.799999999999955
+    },
+    {
+      "width": 390,
+      "median": 16.699999999999818,
+      "p95": 16.700000000000045
+    },
+    {
+      "width": 320,
+      "median": 16.699999999999818,
+      "p95": 16.799999999999955
+    }
+  ],
+  "summary": {
+    "total": 69,
+    "passed": 69,
+    "failed": 0
+  }
+}

@@ -3,6 +3,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 import {cardByKey} from './cards.mjs';
+import {createFrameRenderer} from './frame-renderer.mjs';
 import {HERO_EXHIBIT_SPEC,createExhibit,createExhibitEnvironment,setExhibitProgress} from './exhibit-scene.mjs';
 import {HERO_HANDHELD_SPEC,clampProgress,configureHandheldCamera,createHandheldEnvironment,setHandheldProgress,applyHandheldMaterials} from './handheld-scene.mjs';
 const METAL_MODEL='./assets/models/lotus-relief.glb';
@@ -88,10 +89,23 @@ export async function createViewer(container,{hero=false,interactive=false,cardK
   return staticViewer(container,hero,card);
  }
  let disposed=false,fallback=null;
- function render(){if(!disposed)renderer.render(scene,camera)}
+ const renderQueue=createFrameRenderer(()=>renderer.render(scene,camera),{
+  canRender:()=>!disposed&&!document.hidden&&!container.hidden,
+ });
+ function render(){renderQueue.request()}
  const controls=interactive?new OrbitControls(camera,renderer.domElement):null;
  if(controls){controls.enableDamping=false;controls.enablePan=false;controls.minDistance=.11;controls.maxDistance=.38;controls.target.set(0,0,.007);controls.update();controls.addEventListener('change',render)}
- function resize(){const {width,height}=container.getBoundingClientRect();if(width<1||height<1)return;renderer.setSize(width,height,false);camera.aspect=width/height;if(hero){const {verticalFov,referenceAspect}=HERO_EXHIBIT_SPEC.camera;camera.fov=THREE.MathUtils.radToDeg(2*Math.atan(Math.tan(THREE.MathUtils.degToRad(verticalFov)/2)*Math.max(1,referenceAspect/camera.aspect)));}camera.updateProjectionMatrix();render()}
+ const events=new AbortController();
+ // OrbitControls' change threshold is absolute in world units. These small
+ // sculptures can move visibly below that threshold, especially on trackpads.
+ // Queue after controls consume the input; never draw in the input handler.
+ if(controls){
+  renderer.domElement.addEventListener('pointermove',event=>{if(event.buttons||event.pointerType==='touch')render()},{passive:true,signal:events.signal});
+  renderer.domElement.addEventListener('wheel',render,{passive:true,signal:events.signal});
+ }
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)renderQueue.cancel();else render()},{signal:events.signal});
+ let lastWidth=0,lastHeight=0;
+ function resize(){const {width,height}=container.getBoundingClientRect();if(width<1||height<1)return;if(width===lastWidth&&height===lastHeight){render();return;}lastWidth=width;lastHeight=height;renderer.setSize(width,height,false);camera.aspect=width/height;if(hero){const {verticalFov,referenceAspect}=HERO_EXHIBIT_SPEC.camera;camera.fov=THREE.MathUtils.radToDeg(2*Math.atan(Math.tan(THREE.MathUtils.degToRad(verticalFov)/2)*Math.max(1,referenceAspect/camera.aspect)));}camera.updateProjectionMatrix();render()}
  const resizeObserver=new ResizeObserver(resize);resizeObserver.observe(container);resize();container.classList.add('model-ready');
  function setProgress(p){
   if(fallback)return fallback.setProgress(p);
@@ -119,14 +133,14 @@ export async function createViewer(container,{hero=false,interactive=false,cardK
   camera.position.copy(controls.target).add(offset);controls.update();render();
  }
  function dispose(){
-  if(disposed)return;disposed=true;resizeObserver.disconnect();controls?.dispose();environment.dispose();
+  if(disposed)return;disposed=true;renderQueue.dispose();events.abort();resizeObserver.disconnect();controls?.dispose();environment.dispose();
   bloom?.userData.dispose?.();
   const textures=new Set(),materials=new Set(),geometries=new Set();
   scene.traverse(obj=>{if(obj.geometry)geometries.add(obj.geometry);for(const material of Array.isArray(obj.material)?obj.material:obj.material?[obj.material]:[]){materials.add(material);Object.values(material).forEach(t=>{if(t?.isTexture)textures.add(t)})}});
   textures.forEach(t=>t.dispose());materials.forEach(m=>m.dispose());geometries.forEach(g=>g.dispose());renderer.dispose();renderer.domElement.remove();
  }
  renderer.domElement.addEventListener('webglcontextlost',event=>{event.preventDefault();container.classList.remove('model-ready');dispose();fallback=staticViewer(container,hero,card)},{once:true});
- addEventListener('pagehide',event=>{if(!event.persisted)dispose()});
+ addEventListener('pagehide',event=>{if(!event.persisted)dispose()},{signal:events.signal});
  return {setProgress,setView,adjustView,dispose,getView:()=>fallback?.getView()||currentView};
 }
 

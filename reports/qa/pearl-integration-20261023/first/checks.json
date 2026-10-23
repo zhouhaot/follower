@@ -1,0 +1,401 @@
+{
+  "checks": [
+    {
+      "name": "Home 1280: actual pearl pixels",
+      "pass": true
+    },
+    {
+      "name": "Home 1280: no 3D flower or hand assets",
+      "pass": true
+    },
+    {
+      "name": "Home 1280: story action visible in first viewport",
+      "pass": true
+    },
+    {
+      "name": "Home 1280: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "Home 1280: idle has no rendering loop",
+      "pass": true
+    },
+    {
+      "name": "Home 1280: flowers artwork and pearl ready",
+      "pass": true
+    },
+    {
+      "name": "Home 1280: peony artwork and pearl ready",
+      "pass": false
+    },
+    {
+      "name": "Home 1280: chrysanthemum artwork and pearl ready",
+      "pass": false
+    },
+    {
+      "name": "Home 1280: lotus artwork and pearl ready",
+      "pass": true
+    },
+    {
+      "name": "Home 1280: leaves artwork and pearl ready",
+      "pass": true
+    },
+    {
+      "name": "Home 1280: six cards share one WebGL context",
+      "pass": true
+    },
+    {
+      "name": "Home 1280: focused link supports pearl keyboard control",
+      "pass": true
+    },
+    {
+      "name": "home 1280: 180 input events coalesce to at most 46 draws",
+      "pass": true,
+      "detail": {
+        "draws": 45,
+        "median": 16.699999809265137,
+        "p95": 17.40000009536743,
+        "submissionAndCopyP95": 0.20000004768371582
+      }
+    },
+    {
+      "name": "home 1280: no draws after dense input",
+      "pass": true
+    },
+    {
+      "name": "Home 1280: finite light sweep stops",
+      "pass": true
+    },
+    {
+      "name": "Detail 1280: pearl is default and retains full story",
+      "pass": true
+    },
+    {
+      "name": "Detail 1280: layout fits and keeps touch controls",
+      "pass": true
+    },
+    {
+      "name": "Detail 1280: pearl idle has no rendering loop",
+      "pass": true
+    },
+    {
+      "name": "Detail 1280: keyboard changes material pixels",
+      "pass": true
+    },
+    {
+      "name": "Detail 1280: reset restores exact pearl pixels",
+      "pass": true
+    },
+    {
+      "name": "detail 1280: 180 input events coalesce to at most 46 draws",
+      "pass": true,
+      "detail": {
+        "draws": 45,
+        "median": 16.600000143051147,
+        "p95": 17.5,
+        "submissionAndCopyP95": 0.20000004768371582
+      }
+    },
+    {
+      "name": "detail 1280: no draws after dense input",
+      "pass": true
+    },
+    {
+      "name": "Detail 1280: complete original remains accessible",
+      "pass": true
+    },
+    {
+      "name": "Detail 1280: original view stops pearl drawing",
+      "pass": true
+    },
+    {
+      "name": "Detail 1280: explicit model loads beside same story",
+      "pass": true
+    },
+    {
+      "name": "Detail 1280: model and hidden pearl remain idle",
+      "pass": true
+    },
+    {
+      "name": "Detail 1280: return to pearl preserves content",
+      "pass": true
+    },
+    {
+      "name": "Detail 1280: collection still persists",
+      "pass": true
+    },
+    {
+      "name": "Home 768: actual pearl pixels",
+      "pass": true
+    },
+    {
+      "name": "Home 768: no 3D flower or hand assets",
+      "pass": true
+    },
+    {
+      "name": "Home 768: story action visible in first viewport",
+      "pass": true
+    },
+    {
+      "name": "Home 768: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "Home 768: idle has no rendering loop",
+      "pass": true
+    },
+    {
+      "name": "Home 768: flowers artwork and pearl ready",
+      "pass": true
+    },
+    {
+      "name": "Home 768: peony artwork and pearl ready",
+      "pass": true
+    },
+    {
+      "name": "Home 768: chrysanthemum artwork and pearl ready",
+      "pass": true
+    },
+    {
+      "name": "Home 768: lotus artwork and pearl ready",
+      "pass": true
+    },
+    {
+      "name": "Home 768: leaves artwork and pearl ready",
+      "pass": true
+    },
+    {
+      "name": "Home 768: six cards share one WebGL context",
+      "pass": true
+    },
+    {
+      "name": "Home 768: focused link supports pearl keyboard control",
+      "pass": true
+    },
+    {
+      "name": "Home 768: finite light sweep stops",
+      "pass": true
+    },
+    {
+      "name": "Detail 768: pearl is default and retains full story",
+      "pass": true
+    },
+    {
+      "name": "Detail 768: layout fits and keeps touch controls",
+      "pass": true
+    },
+    {
+      "name": "Detail 768: pearl idle has no rendering loop",
+      "pass": true
+    },
+    {
+      "name": "Detail 768: keyboard changes material pixels",
+      "pass": true
+    },
+    {
+      "name": "Detail 768: reset restores exact pearl pixels",
+      "pass": true
+    },
+    {
+      "name": "Detail 768: complete original remains accessible",
+      "pass": true
+    },
+    {
+      "name": "Detail 768: original view stops pearl drawing",
+      "pass": true
+    },
+    {
+      "name": "Detail 768: explicit model loads beside same story",
+      "pass": true
+    },
+    {
+      "name": "Detail 768: model and hidden pearl remain idle",
+      "pass": true
+    },
+    {
+      "name": "Detail 768: return to pearl preserves content",
+      "pass": true
+    },
+    {
+      "name": "Detail 768: collection still persists",
+      "pass": true
+    },
+    {
+      "name": "Home 390: actual pearl pixels",
+      "pass": true
+    },
+    {
+      "name": "Home 390: no 3D flower or hand assets",
+      "pass": true
+    },
+    {
+      "name": "Home 390: story action visible in first viewport",
+      "pass": true
+    },
+    {
+      "name": "Home 390: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "Home 390: idle has no rendering loop",
+      "pass": true
+    },
+    {
+      "name": "Home 390: flowers artwork and pearl ready",
+      "pass": true
+    },
+    {
+      "name": "Home 390: peony artwork and pearl ready",
+      "pass": false
+    },
+    {
+      "name": "Home 390: chrysanthemum artwork and pearl ready",
+      "pass": false
+    },
+    {
+      "name": "Home 390: lotus artwork and pearl ready",
+      "pass": true
+    },
+    {
+      "name": "Home 390: leaves artwork and pearl ready",
+      "pass": true
+    },
+    {
+      "name": "Home 390: six cards share one WebGL context",
+      "pass": true
+    },
+    {
+      "name": "Home 390: focused link supports pearl keyboard control",
+      "pass": true
+    },
+    {
+      "name": "home 390: 180 input events coalesce to at most 46 draws",
+      "pass": true,
+      "detail": {
+        "draws": 45,
+        "median": 16.700000047683716,
+        "p95": 16.899999856948853,
+        "submissionAndCopyP95": 0.20000004768371582
+      }
+    },
+    {
+      "name": "home 390: no draws after dense input",
+      "pass": true
+    },
+    {
+      "name": "Home touch drag adjusts light without opening story",
+      "pass": true
+    },
+    {
+      "name": "Home card permits vertical touch scrolling",
+      "pass": true
+    },
+    {
+      "name": "Home 390: finite light sweep stops",
+      "pass": true
+    },
+    {
+      "name": "Detail 390: pearl is default and retains full story",
+      "pass": true
+    },
+    {
+      "name": "Detail 390: layout fits and keeps touch controls",
+      "pass": true
+    },
+    {
+      "name": "Detail 390: pearl idle has no rendering loop",
+      "pass": true
+    },
+    {
+      "name": "Detail 390: keyboard changes material pixels",
+      "pass": true
+    },
+    {
+      "name": "Detail 390: reset restores exact pearl pixels",
+      "pass": true
+    },
+    {
+      "name": "detail 390: 180 input events coalesce to at most 46 draws",
+      "pass": true,
+      "detail": {
+        "draws": 45,
+        "median": 16.699999809265137,
+        "p95": 16.90000009536743,
+        "submissionAndCopyP95": 0.2999999523162842
+      }
+    },
+    {
+      "name": "detail 390: no draws after dense input",
+      "pass": true
+    },
+    {
+      "name": "Detail 390: complete original remains accessible",
+      "pass": true
+    },
+    {
+      "name": "Detail 390: original view stops pearl drawing",
+      "pass": true
+    },
+    {
+      "name": "Detail 390: explicit model loads beside same story",
+      "pass": true
+    },
+    {
+      "name": "Detail 390: model and hidden pearl remain idle",
+      "pass": true
+    },
+    {
+      "name": "Detail 390: return to pearl preserves content",
+      "pass": true
+    },
+    {
+      "name": "Integration workflow completed",
+      "pass": false,
+      "detail": {
+        "message": "page.waitForFunction: Timeout 20000ms exceeded.",
+        "stack": "page.waitForFunction: Timeout 20000ms exceeded.\n    at ready (/Users/airuquan/Documents/codex/2026-10-14/task-3/zevth-handoff-v041/zevth-local-handoff-2026-10-14/candidate/tests/pearl-integration-browser.mjs:30:93)\n    at async file:///Users/airuquan/Documents/codex/2026-10-14/task-3/zevth-handoff-v041/zevth-local-handoff-2026-10-14/candidate/tests/pearl-integration-browser.mjs:80:66"
+      }
+    }
+  ],
+  "errors": [],
+  "performance": [
+    {
+      "surface": "home",
+      "width": 1280,
+      "draws": 45,
+      "median": 16.699999809265137,
+      "p95": 17.40000009536743,
+      "submissionAndCopyP95": 0.20000004768371582
+    },
+    {
+      "surface": "detail",
+      "width": 1280,
+      "draws": 45,
+      "median": 16.600000143051147,
+      "p95": 17.5,
+      "submissionAndCopyP95": 0.20000004768371582
+    },
+    {
+      "surface": "home",
+      "width": 390,
+      "draws": 45,
+      "median": 16.700000047683716,
+      "p95": 16.899999856948853,
+      "submissionAndCopyP95": 0.20000004768371582
+    },
+    {
+      "surface": "detail",
+      "width": 390,
+      "draws": 45,
+      "median": 16.699999809265137,
+      "p95": 16.90000009536743,
+      "submissionAndCopyP95": 0.2999999523162842
+    }
+  ],
+  "scope": "Local Chrome, desktop and emulated touch. No physical phone/GPU guarantee.",
+  "summary": {
+    "total": 82,
+    "passed": 77,
+    "failed": 5
+  }
+}

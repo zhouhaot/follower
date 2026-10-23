@@ -1,0 +1,26 @@
+[
+  {
+    "file": "public/card-material.html",
+    "sha256": "a51e7a329f436d4a8a9aafb89518f792fc7925ae309e5605b0b36447fccb96ce",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/card-material.css",
+    "sha256": "24c2ac85c884bc8e37fd72803383b912469d9af4e5076e23c70c8931f89759b2",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/card-material.mjs",
+    "sha256": "46ef400c2b1a4a43c8eb75e6b6733ac22f6032811d6adf64436d76e6bb73bb14",
+    "distMatches": true,
+    "localServerMatches": true
+  },
+  {
+    "file": "public/card-material-renderer.mjs",
+    "sha256": "b949b77496cc30656c6ee0287ba191078a6b5f7e647d2d829d8a47ce5981a2a6",
+    "distMatches": true,
+    "localServerMatches": true
+  }
+]
