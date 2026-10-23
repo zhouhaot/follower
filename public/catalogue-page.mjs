@@ -1,5 +1,7 @@
 import { cards } from './cards.mjs';
-import { hasCollected, addCollection, removeCollection, subscribe } from './collection-store-v2.mjs';
+import { getData, getStatus, hasCollected, addCollection, removeCollection, subscribe } from './collection-store-v2.mjs';
+
+import { renderCollectionNotice, collectionFailureMessage } from './collection-feedback.mjs';
 
 let unsubscribe = null;
 
@@ -11,12 +13,12 @@ function toggleCollection(key, event) {
   if (collected) {
     const result = removeCollection(key);
     if (!result.saved) {
-      alert('取消收藏失败：' + (result.reason || '未知错误'));
+      alert(collectionFailureMessage(result.reason));
     }
   } else {
     const result = addCollection({ key });
     if (!result.saved) {
-      alert('收藏失败：' + (result.reason || '未知错误'));
+      alert(collectionFailureMessage(result.reason));
     }
   }
 }
@@ -25,8 +27,8 @@ function goToDetail(key) {
   window.location.href = `./flower-detail.html?key=${key}`;
 }
 
-function renderCard(card) {
-  const collected = hasCollected(card.key);
+function renderCard(card, data) {
+  const collected = data?.collections.some(c => c.key === card.key) || false;
 
   return `
     <div class="flower-card" data-key="${card.key}" style="
@@ -54,7 +56,7 @@ function renderCard(card) {
             onclick="event.stopPropagation();window.catalogueToggleCollection('${card.key}', event)"
             style="
               padding:8px 16px;
-              background:${collected ? '#2a5' : '#444'};
+              background:${collected ? '#16753a' : '#444'};
               color:#fff;
               border:none;
               border-radius:4px;
@@ -73,6 +75,8 @@ function renderCard(card) {
 
 function render() {
   const app = document.getElementById('app');
+  const data = getData();
+  const state = getStatus();
 
   app.innerHTML = `
     <header style="padding:20px;border-bottom:1px solid #333">
@@ -85,19 +89,22 @@ function render() {
       <h1 style="font-size:2.5rem;margin:0 0 10px;text-align:center">五花图录</h1>
       <p style="text-align:center;color:#999;margin:0 0 40px">探索五朵来自石刻的数字花卡</p>
 
+      <div id="collection-notice"></div>
       <div style="
         display:grid;
-        grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns:repeat(auto-fit, minmax(min(100%, 300px), 1fr));
         gap:30px;
       ">
-        ${cards.map(card => renderCard(card)).join('')}
+        ${cards.map(card => renderCard(card, data)).join('')}
       </div>
 
       <div style="margin-top:60px;padding-top:40px;border-top:1px solid #333;text-align:center">
-        <p style="color:#666;font-size:0.9rem">点击卡片查看详情 · 点击收藏按钮加入花册</p>
+        <p style="color:#999;font-size:0.9rem">点击卡片查看详情 · 点击收藏按钮加入花册</p>
       </div>
     </main>
   `;
+  renderCollectionNotice(document.getElementById('collection-notice'), state);
+  for (const button of app.querySelectorAll('.collect-btn')) button.disabled = state.kind !== 'ready';
 }
 
 // 暴露全局函数供内联事件调用

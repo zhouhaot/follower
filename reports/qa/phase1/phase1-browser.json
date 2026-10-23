@@ -1,0 +1,384 @@
+{
+  "date": "2026-10-23T06:59:15.719Z",
+  "scope": "Isolated local Chrome contexts; synthetic data only; no camera or production requests.",
+  "checks": [
+    {
+      "name": "1280: homepage scene and scan navigation",
+      "pass": true
+    },
+    {
+      "name": "1280-home: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: five card titles",
+      "pass": true
+    },
+    {
+      "name": "1280: flowers collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: flowers uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: peony collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: peony uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: chrysanthemum collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: chrysanthemum uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: lotus collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: lotus uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: leaves collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: leaves uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280-catalogue: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: card body enters lotus detail",
+      "pass": true
+    },
+    {
+      "name": "1280: detail title, English and full story",
+      "pass": true
+    },
+    {
+      "name": "1280: audio honestly unavailable",
+      "pass": true
+    },
+    {
+      "name": "1280: collection persists after reload",
+      "pass": true
+    },
+    {
+      "name": "1280-detail: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: detail layout and labels remain readable",
+      "pass": true
+    },
+    {
+      "name": "1280: detail uncollect",
+      "pass": true
+    },
+    {
+      "name": "1280: genuine empty state",
+      "pass": true
+    },
+    {
+      "name": "1280-empty: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: three manual collections with date",
+      "pass": true
+    },
+    {
+      "name": "1280-collections: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: removal retains recent views",
+      "pass": true
+    },
+    {
+      "name": "1280: view labels",
+      "pass": true
+    },
+    {
+      "name": "1280: migration exact values and idempotence",
+      "pass": true
+    },
+    {
+      "name": "1280: migration source labels",
+      "pass": true
+    },
+    {
+      "name": "1280: all three categories independent",
+      "pass": true
+    },
+    {
+      "name": "1280-three-categories: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: corrupt v2 readable legacy preview with edits disabled",
+      "pass": true
+    },
+    {
+      "name": "1280-legacy-preview: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: cancel recovery preserves source",
+      "pass": true
+    },
+    {
+      "name": "1280: confirmed recovery preserves original copy and v1",
+      "pass": true
+    },
+    {
+      "name": "1280: recovery re-enables editing",
+      "pass": true
+    },
+    {
+      "name": "1280: no legacy gives error instead of blank or false empty",
+      "pass": true
+    },
+    {
+      "name": "1280-unreadable: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: future version preserved without downgrade",
+      "pass": true
+    },
+    {
+      "name": "1280: cross-tab corruption refreshes failure UI",
+      "pass": true
+    },
+    {
+      "name": "390: homepage scene and scan navigation",
+      "pass": true
+    },
+    {
+      "name": "390-home: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: five card titles",
+      "pass": true
+    },
+    {
+      "name": "390: flowers collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "390: flowers uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "390: peony collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "390: peony uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "390: chrysanthemum collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "390: chrysanthemum uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "390: lotus collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "390: lotus uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "390: leaves collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "390: leaves uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "390-catalogue: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: card body enters lotus detail",
+      "pass": true
+    },
+    {
+      "name": "390: detail title, English and full story",
+      "pass": true
+    },
+    {
+      "name": "390: audio honestly unavailable",
+      "pass": true
+    },
+    {
+      "name": "390: collection persists after reload",
+      "pass": true
+    },
+    {
+      "name": "390-detail: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: detail layout and labels remain readable",
+      "pass": true
+    },
+    {
+      "name": "390: detail uncollect",
+      "pass": true
+    },
+    {
+      "name": "390: genuine empty state",
+      "pass": true
+    },
+    {
+      "name": "390-empty: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: three manual collections with date",
+      "pass": true
+    },
+    {
+      "name": "390-collections: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: removal retains recent views",
+      "pass": true
+    },
+    {
+      "name": "390: view labels",
+      "pass": true
+    },
+    {
+      "name": "390: migration exact values and idempotence",
+      "pass": true
+    },
+    {
+      "name": "390: migration source labels",
+      "pass": true
+    },
+    {
+      "name": "390: all three categories independent",
+      "pass": true
+    },
+    {
+      "name": "390-three-categories: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: corrupt v2 readable legacy preview with edits disabled",
+      "pass": true
+    },
+    {
+      "name": "390-legacy-preview: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: cancel recovery preserves source",
+      "pass": true
+    },
+    {
+      "name": "390: confirmed recovery preserves original copy and v1",
+      "pass": true
+    },
+    {
+      "name": "390: recovery re-enables editing",
+      "pass": true
+    },
+    {
+      "name": "390: no legacy gives error instead of blank or false empty",
+      "pass": true
+    },
+    {
+      "name": "390-unreadable: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: future version preserved without downgrade",
+      "pass": true
+    },
+    {
+      "name": "390: cross-tab corruption refreshes failure UI",
+      "pass": true
+    },
+    {
+      "name": "denied: collection.html remains readable",
+      "pass": true
+    },
+    {
+      "name": "denied: catalogue.html remains readable",
+      "pass": true
+    },
+    {
+      "name": "denied: flower-detail.html?key=lotus remains readable",
+      "pass": true
+    },
+    {
+      "name": "silent: no false save success",
+      "pass": true
+    },
+    {
+      "name": "quota: no false save success",
+      "pass": true
+    },
+    {
+      "name": "migration quota: historical data is still visible",
+      "pass": true
+    },
+    {
+      "name": "migration quota: recovery failure is visible",
+      "pass": true
+    },
+    {
+      "name": "No uncaught errors or HTTP failures",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "1280-home.png",
+    "1280-catalogue.png",
+    "1280-detail.png",
+    "1280-empty.png",
+    "1280-collections.png",
+    "1280-three-categories.png",
+    "1280-legacy-preview.png",
+    "1280-unreadable.png",
+    "390-home.png",
+    "390-catalogue.png",
+    "390-detail.png",
+    "390-empty.png",
+    "390-collections.png",
+    "390-three-categories.png",
+    "390-legacy-preview.png",
+    "390-unreadable.png"
+  ],
+  "browser": "155.0.8059.85",
+  "summary": {
+    "total": 88,
+    "passed": 88,
+    "failed": 0
+  }
+}

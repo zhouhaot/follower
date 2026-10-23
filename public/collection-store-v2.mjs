@@ -1,8 +1,9 @@
 import { imageTargetFor } from './image-targets.mjs';
-import { collectionDataV2, CATALOGUE_VERSION, CURRENT_DATA_VERSION } from './business-data.mjs';
+import { collectionDataV2, DataIssue } from './business-data.mjs';
 
 /** V2 storage with separated collections, encounters, and recent views */
 export const COLLECTION_KEY = 'flowers-speak:cloud-candidate:collection:v2';
+export const RECOVERY_KEY = `${COLLECTION_KEY}:recovery`;
 export const MIN_RECOGNITION_MS = 1200;
 export const MAX_RECENT_VIEWS = 10;
 
@@ -12,64 +13,152 @@ export function createCollectionStoreV2({
   legacyKey = 'flowers-speak:cloud-candidate:collection:v1'
 } = {}) {
   const listeners = new Set();
-  let lastStorageError = false;
+  const snapshots = new WeakMap();
+  let status = { kind: 'ready', code: null, recoverable: false };
+
+  function mark(kind, code = null, recoverable = false) {
+    status = { kind, code, recoverable };
+  }
+
+  function failure(error) {
+    const reason = error instanceof DataIssue ? error.code : 'storage-unavailable';
+    mark('error', reason);
+    return { saved: false, reason };
+  }
+
+  function storage() {
+    const value = getStorage();
+    if (!value) throw new DataIssue('storage-unavailable');
+    return value;
+  }
+
+  // Compare-before-write is best effort: localStorage is not a cross-tab transaction.
+  function writeExact(s, raw, next, legacyRaw) {
+    const serialized = JSON.stringify(next);
+    collectionDataV2(serialized); // Never persist a value our reader cannot accept.
+    if (s.getItem(COLLECTION_KEY) !== raw ||
+        (legacyRaw !== undefined && s.getItem(legacyKey) !== legacyRaw)) {
+      throw new DataIssue('conflict');
+    }
+    s.setItem(COLLECTION_KEY, serialized);
+    if (s.getItem(COLLECTION_KEY) !== serialized) throw new DataIssue('storage-unavailable');
+  }
+
+  function remember(data, raw, writable, legacyRaw) {
+    snapshots.set(data, { raw, writable, legacyRaw });
+    return data;
+  }
+
+  function readLegacy(s) {
+    const raw = s.getItem(legacyKey);
+    if (raw === null) throw new DataIssue('no-legacy-data');
+    // A legacy key must actually contain a v1 document, not a future schema.
+    const data = collectionDataV2(raw);
+    if (JSON.parse(raw).version !== 1) throw new DataIssue('unsupported-version');
+    return { raw, data };
+  }
 
   function getData() {
     try {
-      const storage = getStorage();
-      if (!storage) { lastStorageError = true; return null; }
-
-      // 尝试读取 v2 数据
-      let raw = storage.getItem(COLLECTION_KEY);
-
-      // 如果 v2 不存在，尝试从 v1 迁移
-      if (!raw) {
-        const v1Raw = storage.getItem(legacyKey);
-        if (v1Raw) {
-          try {
-            const migrated = collectionDataV2(v1Raw);
-            // 保存迁移后的数据
-            storage.setItem(COLLECTION_KEY, JSON.stringify(migrated));
-            raw = storage.getItem(COLLECTION_KEY);
-          } catch (e) {
-            console.warn('V1 migration failed:', e);
+      const s = storage();
+      const raw = s.getItem(COLLECTION_KEY);
+      if (raw !== null) {
+        try {
+          const data = collectionDataV2(raw);
+          mark('ready');
+          return remember(data, raw, true);
+        } catch (error) {
+          // Never downgrade an unsupported version or a different catalogue.
+          if (!['unsupported-version', 'catalogue-mismatch'].includes(error.code)) {
+            try {
+              const legacy = readLegacy(s);
+              mark('legacy-preview', error.code || 'invalid-data', true);
+              return remember(legacy.data, raw, false, legacy.raw);
+            } catch { /* Keep the original v2 failure and all stored bytes. */ }
           }
+          throw error;
         }
       }
-
-      const data = collectionDataV2(raw);
-      lastStorageError = false;
-      return data;
-    } catch (e) {
-      console.error('Failed to load collection data:', e);
-      lastStorageError = true;
+      const legacyRaw = s.getItem(legacyKey);
+      if (legacyRaw !== null) {
+        const legacy = readLegacy(s);
+        try {
+          writeExact(s, null, legacy.data, legacy.raw);
+          mark('ready');
+          return remember(legacy.data, JSON.stringify(legacy.data), true);
+        } catch (error) {
+          mark('legacy-preview', error instanceof DataIssue ? error.code : 'storage-unavailable', true);
+          return remember(legacy.data, null, false, legacy.raw);
+        }
+      }
+      mark('ready');
+      return remember(collectionDataV2(null), null, true);
+    } catch (error) {
+      failure(error);
       return null;
     }
   }
 
   function saveData(data) {
     try {
-      const storage = getStorage();
-      if (!storage) throw new Error('Storage unavailable');
-      storage.setItem(COLLECTION_KEY, JSON.stringify(data));
-      // 验证写入
-      const verification = storage.getItem(COLLECTION_KEY);
-      if (!verification) throw new Error('Write not retained');
-      lastStorageError = false;
+      const snapshot = snapshots.get(data);
+      if (!snapshot?.writable) throw new DataIssue('recovery-required');
+      writeExact(storage(), snapshot.raw, data);
+      mark('ready');
       return true;
-    } catch (e) {
-      console.error('Failed to save collection data:', e);
-      lastStorageError = true;
+    } catch (error) {
+      failure(error);
       return false;
+    }
+  }
+
+  function recoverLegacy() {
+    const wasPreview = status.kind === 'legacy-preview';
+    const data = getData();
+    if (wasPreview && status.kind === 'ready') {
+      notify();
+      return { saved: true };
+    }
+    const snapshot = data && snapshots.get(data);
+    if (!snapshot || status.kind !== 'legacy-preview') {
+      return { saved: false, reason: 'recovery-unavailable' };
+    }
+    try {
+      const s = storage();
+      if (s.getItem(COLLECTION_KEY) !== snapshot.raw || s.getItem(legacyKey) !== snapshot.legacyRaw) {
+        throw new DataIssue('conflict');
+      }
+      if (snapshot.raw !== null) {
+        const previous = s.getItem(RECOVERY_KEY);
+        // Preserve the first recovery copy; never overwrite a different backup.
+        if (previous !== null && previous !== snapshot.raw) throw new DataIssue('recovery-backup-exists');
+        if (previous === null) s.setItem(RECOVERY_KEY, snapshot.raw);
+        if (s.getItem(RECOVERY_KEY) !== snapshot.raw) throw new DataIssue('storage-unavailable');
+      }
+      writeExact(s, snapshot.raw, data, snapshot.legacyRaw);
+      mark('ready');
+      notify();
+      return { saved: true };
+    } catch (error) {
+      return failure(error);
     }
   }
 
   function notify() {
     const data = getData();
-    if (!data) return;
+    // Error transitions must also reach the UI, so a different tab cannot leave
+    // stale successful state on screen after storage becomes unreadable.
     for (const listener of listeners) {
-      try { listener(data); } catch (e) { console.error('Listener error:', e); }
+      try { listener(data); } catch { console.warn('花册视图更新失败，请刷新页面。'); }
     }
+  }
+
+  function canWrite(data) {
+    return data && snapshots.get(data)?.writable;
+  }
+
+  function unavailable() {
+    return { saved: false, reason: status.kind === 'legacy-preview' ? 'recovery-required' : status.code || 'storage-unavailable' };
   }
 
   function addCollection({ key, note = null }) {
@@ -77,8 +166,7 @@ export function createCollectionStoreV2({
     if (!target) return { saved: false, reason: 'invalid-key' };
 
     const data = getData();
-    if (!data) return { saved: false, reason: 'storage-unavailable' };
-    if (lastStorageError) return { saved: false, reason: 'storage-unavailable' };
+    if (!canWrite(data)) return unavailable();
 
     // 检查是否已收藏
     if (data.collections.some(c => c.key === key)) {
@@ -101,12 +189,12 @@ export function createCollectionStoreV2({
       notify();
       return { saved: true, alreadyCollected: false };
     }
-    return { saved: false, reason: 'storage-unavailable' };
+    return unavailable();
   }
 
   function removeCollection(key) {
     const data = getData();
-    if (!data) return { saved: false, reason: 'storage-unavailable' };
+    if (!canWrite(data)) return unavailable();
 
     const index = data.collections.findIndex(c => c.key === key);
     if (index === -1) return { saved: true, notFound: true };
@@ -117,7 +205,7 @@ export function createCollectionStoreV2({
       notify();
       return { saved: true };
     }
-    return { saved: false, reason: 'storage-unavailable' };
+    return unavailable();
   }
 
   function recordEncounter({ key, targetIndex, stableMs, observationCount }) {
@@ -129,8 +217,7 @@ export function createCollectionStoreV2({
     }
 
     const data = getData();
-    if (!data) return { saved: false, reason: 'storage-unavailable' };
-    if (lastStorageError) return { saved: false, reason: 'storage-unavailable' };
+    if (!canWrite(data)) return unavailable();
 
     // 检查是否已记录过相遇
     if (data.encounters.some(e => e.key === key)) {
@@ -150,7 +237,7 @@ export function createCollectionStoreV2({
       notify();
       return { saved: true, alreadyRecorded: false };
     }
-    return { saved: false, reason: 'storage-unavailable' };
+    return unavailable();
   }
 
   function recordView({ key, source = 'detail' }) {
@@ -161,7 +248,7 @@ export function createCollectionStoreV2({
     }
 
     const data = getData();
-    if (!data) return { saved: false, reason: 'storage-unavailable' };
+    if (!canWrite(data)) return unavailable();
 
     // 移除旧的相同 key 的浏览记录
     data.recentViews = data.recentViews.filter(v => v.key !== key);
@@ -182,16 +269,18 @@ export function createCollectionStoreV2({
       notify();
       return { saved: true };
     }
-    return { saved: false, reason: 'storage-unavailable' };
+    return unavailable();
   }
 
   const onStorage = (event) => {
-    if (event.key === COLLECTION_KEY || event.key === null) notify();
+    if ([COLLECTION_KEY, legacyKey, null].includes(event.key)) notify();
   };
   eventTarget?.addEventListener?.('storage', onStorage);
 
   return {
     getData,
+    getStatus: () => ({ ...status }),
+    recoverLegacy,
     getCollections: () => getData()?.collections || [],
     getEncounters: () => getData()?.encounters || [],
     getRecentViews: () => getData()?.recentViews || [],
@@ -207,7 +296,7 @@ export function createCollectionStoreV2({
     },
     isStorageAvailable() {
       getData();
-      return !lastStorageError;
+      return status.kind === 'ready';
     },
     dispose() {
       listeners.clear();
@@ -229,3 +318,6 @@ export const recordEncounter = (evidence) => store.recordEncounter(evidence);
 export const recordView = (params) => store.recordView(params);
 export const subscribe = (listener) => store.subscribe(listener);
 export const isStorageAvailable = () => store.isStorageAvailable();
+
+export const getStatus = () => store.getStatus();
+export const recoverLegacy = () => store.recoverLegacy();

@@ -1,6 +1,8 @@
 import { cards, cardByKey } from './cards.mjs';
-import { hasCollected, addCollection, removeCollection, recordView, subscribe } from './collection-store-v2.mjs';
+import { getStatus, hasCollected, addCollection, removeCollection, recordView, subscribe } from './collection-store-v2.mjs';
 import { createAudioPlayer, getAudioStateMessage } from './audio-player.mjs';
+
+import { renderCollectionNotice, collectionFailureMessage } from './collection-feedback.mjs';
 
 // 从 URL 参数获取花卡 key
 const params = new URLSearchParams(window.location.search);
@@ -70,7 +72,9 @@ function updateCollectionUI() {
   if (collectBtn) {
     collectBtn.textContent = collected ? '已收藏' : '收藏这朵花';
     collectBtn.classList.toggle('collected', collected);
+    collectBtn.disabled = getStatus().kind !== 'ready';
   }
+  renderCollectionNotice(document.getElementById('collection-notice'), getStatus());
 }
 
 function toggleCollection() {
@@ -81,14 +85,14 @@ function toggleCollection() {
     if (result.saved) {
       updateCollectionUI();
     } else {
-      alert('取消收藏失败：' + (result.reason || '未知错误'));
+      alert(collectionFailureMessage(result.reason));
     }
   } else {
     const result = addCollection({ key: card.key });
     if (result.saved) {
       updateCollectionUI();
     } else {
-      alert('收藏失败：' + (result.reason || '未知错误'));
+      alert(collectionFailureMessage(result.reason));
     }
   }
 }
@@ -107,7 +111,8 @@ function render() {
       <a href="./index.html" style="color:#fff;text-decoration:none">← 返回</a>
     </header>
     <main style="max-width:1200px;margin:0 auto;padding:40px 20px">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start">
+      <div id="collection-notice"></div>
+      <div class="flower-detail-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start">
         <div class="flower-exhibit">
           <img src="${card.image}" alt="${card.title}" style="width:100%;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,0.3)">
         </div>
@@ -126,17 +131,17 @@ function render() {
 
           <div style="margin-bottom:30px;padding:20px;background:#1a1a1a;border-radius:8px">
             <h3 style="font-size:1rem;margin:0 0 15px;color:#ccc">听花</h3>
-            <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px">
+            <div class="flower-audio-controls" style="display:flex;gap:10px;align-items:center;margin-bottom:10px">
               <button id="audio-btn" style="padding:10px 20px;background:#444;color:#fff;border:none;border-radius:4px;cursor:pointer">
                 ${card.audioAvailable ? '播放故事' : '暂无配音'}
               </button>
               <span id="audio-status" style="color:#999;font-size:0.9rem"></span>
             </div>
-            ${!card.audioAvailable ? '<p style="color:#666;font-size:0.85rem;margin:10px 0 0">配音内容制作中，敬请期待</p>' : ''}
+            ${!card.audioAvailable ? '<p style="color:#999;font-size:0.85rem;margin:10px 0 0">配音内容制作中，敬请期待</p>' : ''}
           </div>
 
-          <div style="display:flex;gap:15px;margin-bottom:30px">
-            <button id="collect-btn" style="padding:12px 30px;background:#2a5;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:1rem">
+          <div class="flower-actions" style="display:flex;gap:15px;margin-bottom:30px">
+            <button id="collect-btn" style="padding:12px 30px;background:#16753a;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:1rem">
               收藏这朵花
             </button>
             <a href="./scan.html?key=${card.key}" style="padding:12px 30px;background:#444;color:#fff;text-decoration:none;border-radius:4px;display:inline-block">
@@ -144,7 +149,7 @@ function render() {
             </a>
           </div>
 
-          <div style="padding:20px;background:#1a1a1a;border-radius:8px;font-size:0.85rem;color:#666">
+          <div style="padding:20px;background:#1a1a1a;border-radius:8px;font-size:0.85rem;color:#999">
             <p style="margin:0 0 5px"><strong>原作：</strong>${card.artwork}</p>
             <p style="margin:0"><strong>来源：</strong>${card.credit}</p>
           </div>

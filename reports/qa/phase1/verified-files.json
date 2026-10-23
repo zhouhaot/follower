@@ -1,0 +1,11 @@
+{
+  "public/collection-store-v2.mjs": "f9e6cdabbc1d2fff4e9fd61df6d81e1f4b45ee6c310a3074c5fc9c5531a425a2",
+  "public/collection-feedback.mjs": "5f2e4971e099c68ca4c1eae8ea004e98751f7cde5d63f6558a7ff6820eb3b013",
+  "public/my-collection.mjs": "d250ff30ae253276719e30d7e028242533de36e8e308ffd71669af6685f6c707",
+  "public/catalogue-page.mjs": "cd3db74e0bd40272d59bf535c814d163641b1df95e28dc8cf567617e141cca26",
+  "public/flower-detail.mjs": "94502ba9340a8a4dee23b2432368f71211a0dfe2bfa407e37597dfc3590f75b1",
+  "public/styles.css": "f3cc8fac16ed2a20853914bb78e9542362e36283ea3ccaff545769c6141207a9",
+  "tests/collection-store-v2.test.mjs": "712ba22da45376247aa77f6774517434bf9d894aba0bbdb611971675bb76db53",
+  "tests/phase1-browser.mjs": "1864701ff6aef37ac1a4d0b66a4b41119ba987e2108313636bc147817a2cb95b",
+  "package.json": "a87d444865a094031b241b8fbbaa349115d88e3fed12abf4a35006998cbd7340"
+}

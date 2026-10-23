@@ -1,5 +1,7 @@
 import { cards, cardByKey } from './cards.mjs';
-import { getData, removeCollection, subscribe } from './collection-store-v2.mjs';
+import { getData, getStatus, removeCollection, subscribe } from './collection-store-v2.mjs';
+
+import { renderCollectionNotice, collectionFailureMessage } from './collection-feedback.mjs';
 
 let unsubscribe = null;
 
@@ -20,7 +22,7 @@ function removeFromCollection(key, event) {
 
   const result = removeCollection(key);
   if (!result.saved) {
-    alert('取消收藏失败：' + (result.reason || '未知错误'));
+    alert(collectionFailureMessage(result.reason));
   }
 }
 
@@ -57,8 +59,8 @@ function renderCollectionCard(collection) {
         <h3 style="margin:0 0 5px;font-size:1.2rem">${card.title}</h3>
         <p style="margin:0 0 10px;color:#999;font-size:0.85rem">${card.english}</p>
         <p style="margin:0 0 10px;color:#ccc;font-size:0.9rem;line-height:1.6">${card.description}</p>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:15px">
-          <span style="color:#666;font-size:0.85rem">
+        <div class="collection-meta" style="display:flex;justify-content:space-between;align-items:center;margin-top:15px">
+          <span style="color:#999;font-size:0.85rem">
             ${sourceLabel} · ${formatDate(collection.collectedAt)}
           </span>
           <button onclick="event.stopPropagation();window.myCollectionRemove('${card.key}', event)" style="
@@ -99,7 +101,7 @@ function renderEncounterCard(encounter) {
       ">
       <div style="flex:1">
         <h4 style="margin:0 0 5px;font-size:1rem">${card.title}</h4>
-        <p style="margin:0;color:#666;font-size:0.85rem">
+        <p style="margin:0;color:#999;font-size:0.85rem">
           ${sourceLabel} · ${formatTime(encounter.recognizedAt)}
         </p>
       </div>
@@ -134,7 +136,7 @@ function renderRecentViewCard(view) {
       ">
       <div style="flex:1">
         <h4 style="margin:0 0 5px;font-size:1rem">${card.title}</h4>
-        <p style="margin:0;color:#666;font-size:0.85rem">
+        <p style="margin:0;color:#999;font-size:0.85rem">
           ${sourceLabel} · ${formatTime(view.viewedAt)}
         </p>
       </div>
@@ -144,7 +146,9 @@ function renderRecentViewCard(view) {
 
 function render() {
   const app = document.getElementById('app');
-  const data = getData();
+  const loaded = getData();
+  const state = getStatus();
+  const data = loaded || { collections: [], encounters: [], recentViews: [] };
 
   const hasAnyData = data && (
     data.collections.length > 0 ||
@@ -163,13 +167,14 @@ function render() {
       <h1 style="font-size:2.5rem;margin:0 0 10px">我的花册</h1>
       <p style="color:#999;margin:0 0 40px">你收藏的花、相遇的花和最近看过的花</p>
 
-      ${!hasAnyData ? `
+      <div id="collection-notice"></div>
+      ${loaded && state.kind === 'ready' && !hasAnyData ? `
         <div style="text-align:center;padding:60px 20px;background:#1a1a1a;border-radius:8px">
-          <p style="color:#666;font-size:1.1rem;margin:0 0 20px">花册还是空的</p>
+          <p style="color:#999;font-size:1.1rem;margin:0 0 20px">花册还是空的</p>
           <a href="./catalogue.html" style="
             display:inline-block;
             padding:12px 30px;
-            background:#2a5;
+            background:#16753a;
             color:#fff;
             text-decoration:none;
             border-radius:4px;
@@ -180,7 +185,7 @@ function render() {
       ${data.collections.length > 0 ? `
         <section style="margin-bottom:60px">
           <h2 style="font-size:1.5rem;margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid #333">
-            我的收藏 <span style="color:#666;font-size:1rem">(${data.collections.length})</span>
+            我的收藏 <span style="color:#999;font-size:1rem">(${data.collections.length})</span>
           </h2>
           <div style="display:grid;gap:20px">
             ${data.collections.map(c => renderCollectionCard(c)).join('')}
@@ -191,9 +196,9 @@ function render() {
       ${data.encounters.length > 0 ? `
         <section style="margin-bottom:60px">
           <h2 style="font-size:1.5rem;margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid #333">
-            扫描相遇 <span style="color:#666;font-size:1rem">(${data.encounters.length})</span>
+            扫描相遇 <span style="color:#999;font-size:1rem">(${data.encounters.length})</span>
           </h2>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));gap:15px">
+          <div style="display:grid;grid-template-columns:repeat(auto-fill, minmax(min(100%, 300px), 1fr));gap:15px">
             ${data.encounters.map(e => renderEncounterCard(e)).join('')}
           </div>
         </section>
@@ -202,15 +207,15 @@ function render() {
       ${data.recentViews.length > 0 ? `
         <section style="margin-bottom:60px">
           <h2 style="font-size:1.5rem;margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid #333">
-            最近浏览 <span style="color:#666;font-size:1rem">(${data.recentViews.length})</span>
+            最近浏览 <span style="color:#999;font-size:1rem">(${data.recentViews.length})</span>
           </h2>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));gap:15px">
+          <div style="display:grid;grid-template-columns:repeat(auto-fill, minmax(min(100%, 300px), 1fr));gap:15px">
             ${data.recentViews.map(v => renderRecentViewCard(v)).join('')}
           </div>
         </section>
       ` : ''}
 
-      <div style="padding:30px;background:#1a1a1a;border-radius:8px;font-size:0.9rem;color:#666">
+      <div style="padding:30px;background:#1a1a1a;border-radius:8px;font-size:0.9rem;color:#999">
         <p style="margin:0 0 10px"><strong style="color:#ccc">数据保存说明</strong></p>
         <p style="margin:0 0 5px">• 所有数据保存在当前浏览器的本地存储中</p>
         <p style="margin:0 0 5px">• 清除浏览器数据可能导致数据丢失</p>
@@ -218,6 +223,8 @@ function render() {
       </div>
     </main>
   `;
+  renderCollectionNotice(document.getElementById('collection-notice'), state);
+  for (const button of app.querySelectorAll('.collection-card button')) button.disabled = state.kind !== 'ready';
 }
 
 // 暴露全局函数

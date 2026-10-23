@@ -1,0 +1,11 @@
+{
+  "command": "npm run build",
+  "publicDistMatch": {
+    "collection-store-v2.mjs": true,
+    "collection-feedback.mjs": true,
+    "my-collection.mjs": true,
+    "catalogue-page.mjs": true,
+    "flower-detail.mjs": true,
+    "styles.css": true
+  }
+}

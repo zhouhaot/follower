@@ -49,3 +49,22 @@ body[data-page=home] .glass-nav a[aria-current=page]{background:#eeeeea12}
 @media(max-width:700px){.handheld-frame{--scene-scale:1.12}}
 @media(max-width:700px){.handheld-card-media{transform:translateX(var(--card-support-shift,0px)) translateY(calc(var(--card-lift)*-8%))}}
 @media(prefers-reduced-motion:reduce){.handheld-card-media{transform:translateX(var(--card-support-shift,0px))!important}}
+
+/* Collection recovery notices are shared by the three v2 pages. */
+.collection-notice{margin:0 0 28px;padding:20px;border:1px solid #9f8953;border-radius:8px;background:#242219;color:#eee5cc;line-height:1.7;overflow-wrap:anywhere}
+.collection-notice p{margin:8px 0 16px;font-size:14px}
+.collection-notice button{padding:9px 15px;margin:0 10px 8px 0;border:1px solid #9f8953;border-radius:4px;background:#353025;color:#fff;font:inherit;cursor:pointer}
+body:is([data-page=catalogue],[data-page=collection],[data-page=flower-detail]) button:disabled{opacity:.55;cursor:not-allowed}
+.flower-detail-grid>div{min-width:0}
+.flower-actions,.flower-audio-controls,.collection-meta{flex-wrap:wrap;gap:10px}
+.flower-actions>*{white-space:nowrap;flex-shrink:0}
+.collection-meta button,#audio-btn{white-space:nowrap;flex-shrink:0}
+@media(max-width:700px){
+  .flower-detail-grid{grid-template-columns:minmax(0,1fr)!important;gap:32px!important}
+  .flower-exhibit{width:100%;max-width:360px;margin:0 auto}
+  .flower-info h1{font-size:2rem!important}
+  .collection-card{gap:16px!important;padding:16px!important}
+  .collection-card>img{width:88px!important;height:120px!important;flex-shrink:0}
+  .collection-card>div{min-width:0}
+  body:is([data-page=catalogue],[data-page=collection],[data-page=flower-detail]) button{min-height:44px}
+}
