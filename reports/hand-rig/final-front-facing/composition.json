@@ -1,0 +1,9 @@
+{
+  "cardSource": "public/assets/renders/handheld-relief.webp",
+  "cardSha256": "b02f4297bac74ebe61ee678eb4b1324107ddebc94850a0ad64c91d76e10677e3",
+  "handSource": "work/hand-rig/frames",
+  "handInFront": true,
+  "screenRegistration": "identity; native common 3:4 frame",
+  "sourceArtworkEdited": false,
+  "purpose": "Technical alpha-compositing registration proof"
+}

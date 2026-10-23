@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>双手捧卡 · 三帧构图占位</title>
+<style>
+@font-face{font-family:Exhibition;src:url('../assets/fonts/exhibition.ttf')}*{box-sizing:border-box}body{margin:0;background:#101211;color:#ecece4;font:15px/1.8 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif}main{max-width:1420px;margin:auto;padding:48px 5vw 64px}a{color:#c9c6b4;text-underline-offset:5px}a:focus-visible{outline:2px solid #c6b789;outline-offset:6px}h1,h2{font-family:Exhibition,'Songti SC',serif;font-weight:400;line-height:1.5}h1{font-size:clamp(28px,3.3vw,45px);margin:28px 0 12px}h2{font-size:23px;margin:0 0 12px}.intro{max-width:70ch;color:#b7b9af}.status{max-width:78ch;padding:18px 0;margin:25px 0 36px;border-block:1px solid #666957;color:#d1c6a9}.frames{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}figure{margin:0;min-width:0}svg{display:block;width:100%;height:auto;background:#0b0d0c;border-bottom:1px solid #383d34}.zone{fill:#b5a58e;fill-opacity:.09;stroke:#b5a58e;stroke-width:1.3;stroke-dasharray:5 4}.guide{stroke:#797f71;stroke-width:1;stroke-dasharray:3 4;fill:none}.contact{fill:#cab78b;stroke:#101211;stroke-width:2}svg text{font-family:-apple-system,'PingFang SC',sans-serif;fill:#b7bcaf;font-size:12px;text-anchor:middle}.ref{fill:#d0bd94;font-size:10px}figcaption{padding:22px 0 0}figcaption p{font-size:13px;color:#a8afa0;margin:0}.notes{display:grid;grid-template-columns:1fr 1fr;gap:38px;margin-top:42px;padding-top:24px;border-top:1px solid #383d34}.notes h2{font-size:21px}.notes p{font-size:13px;color:#a8afa0;margin:0}.small{font-size:12px;color:#8e9888;margin-top:28px}@media(max-width:760px){main{padding:28px 6vw 45px}.frames,.notes{grid-template-columns:1fr;gap:32px}svg{max-height:390px}h1{margin-top:22px}.status{font-size:13px}.notes{margin-top:34px}}
+</style>
+</head>
+<body><main>
+<a href="../index.html">返回当前预览</a>
+<h1>双手捧卡，先看空间关系。</h1>
+<p class="intro">卡牌保持视觉主体，两掌从下方和两侧围出容纳它的空间。先对照合拢、舒展、显现三个构图，再制作真实骨骼动作。</p>
+<p class="status"><strong>构图占位，尚非双手渲染。</strong>虚线块只代表左右掌的投影占位，没有使用或镜像旧手部图片。真实左右手骨骼、指尖与拇指姿态、接触阴影仍未制作；这三帧不证明自然抓握。</p>
+<section class="frames" aria-label="三关键帧构图占位">
+<figure data-stage="closed">
+<svg viewBox="0 0 400 340" role="img" aria-label="起始构图：卡牌居中，左右掌占位从下方接近卡牌下缘">
+<image href="../assets/renders/lotus-transparent.png" x="90" y="0" width="220" height="264"/>
+<rect class="zone" x="88" y="233" width="96" height="82" rx="6"/><rect class="zone" x="216" y="233" width="96" height="82" rx="6"/>
+<path class="guide" d="M136 274L145 235M264 274L255 235M145 235H255"/>
+<circle class="contact" cx="145" cy="235" r="4"/><circle class="contact" cx="255" cy="235" r="4"/>
+<text x="136" y="279">左掌占位</text><text x="264" y="279">右掌占位</text><text class="ref" x="200" y="329">两处下缘支点 · 非接触验证</text>
+</svg>
+<figcaption><h2>合拢，围住下缘</h2><p>掌心留在卡牌下方，指尖应包裹边缘，避免覆盖花纹中心。左右手须分别建模，不能用同一手图翻转代替。</p></figcaption>
+</figure>
+<figure data-stage="opening">
+<svg viewBox="0 0 400 340" role="img" aria-label="舒展构图：左右掌占位各向外下方移动，卡牌保持中轴">
+<image href="../assets/renders/lotus-transparent.png" x="90" y="-4" width="220" height="264"/>
+<rect class="zone" x="58" y="250" width="96" height="76" rx="6"/><rect class="zone" x="246" y="250" width="96" height="76" rx="6"/>
+<path class="guide" d="M145 231L154 250M255 231L246 250M106 243L88 251M294 243L312 251"/>
+<circle class="contact" cx="145" cy="231" r="4"/><circle class="contact" cx="255" cy="231" r="4"/>
+<text x="106" y="291">左掌占位</text><text x="294" y="291">右掌占位</text><text class="ref" x="200" y="329">逐渐释放下缘 · 卡牌不漂移跳位</text>
+</svg>
+<figcaption><h2>舒展，向两侧打开</h2><p>两掌沿同一节奏向外、稍向下展开。手指的弧线与接触阴影须随真实骨骼变化，画面不能只平移两张手图。</p></figcaption>
+</figure>
+<figure data-stage="revealed">
+<svg viewBox="0 0 400 340" role="img" aria-label="显现构图：两掌占位分开，中央卡牌完整露出并保留旋转衔接空间">
+<image href="../assets/renders/lotus-transparent.png" x="90" y="-18" width="220" height="264"/>
+<rect class="zone" x="26" y="266" width="96" height="64" rx="6"/><rect class="zone" x="278" y="266" width="96" height="64" rx="6"/>
+<path class="guide" d="M145 240H255M200 235V253"/><text class="ref" x="200" y="269">预留旋转衔接区</text>
+<text x="74" y="304">左掌占位</text><text x="326" y="304">右掌占位</text>
+</svg>
+<figcaption><h2>显现，再接卡牌旋转</h2><p>卡面完整可读，两手退出中央通道。先确认这一帧的尺度和指尖余量，再连接旋转与原有五卡目录。</p></figcaption>
+</figure>
+</section>
+<section class="notes" aria-label="比例与制作边界">
+<div><h2>这一页可以确认什么</h2><p>卡牌相对两掌占位的主次、下缘支点、中轴、打开方向，以及桌面和窄屏的留白。示意中牌面可见宽度约为单掌占位宽度的 1.45 倍；它是待验证的屏幕比例，不是真人手掌尺寸。</p></div>
+<div><h2>接动画前仍需完成</h2><p>真实左右手及独立拇指骨骼、自然合拢与展开、三维接触和阴影、卡牌倾角与相机校准，再检查正反滚动。当前缺少可用 Blender，未将此占位稿接入正式预览。</p></div>
+</section>
+<p class="small">沿用既有金属花卡效果图；未改原画、展柜备份或生产网站。此页是独立、静态的构图说明，未接摄像头，也没有自动动画。</p>
+</main></body></html>

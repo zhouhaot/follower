@@ -1,0 +1,27 @@
+{
+  "previous_runtime": "Zevth-Handheld-Runtime-v0.4.0.zip",
+  "previous_source": "Zevth-Handheld-Source-v0.4.0.zip",
+  "current_site_version": 1,
+  "unchanged_boundaries": [
+    {
+      "file": "assets/models/lotus-relief.glb",
+      "sha256": "4d0b0e912d24dafb5186d62569a58729b34407352f11f871b960c593e4fd9ac3"
+    },
+    {
+      "file": "assets/originals/assets.json",
+      "sha256": "3741d53d9fe06d60a23a432f0f9c4c3ec4712e8c2c6b77ddce7e411cb368f80f"
+    },
+    {
+      "file": "cards.mjs",
+      "sha256": "46b26bdbd08380fecccc49d061b9e9e2cee579430f9a513d0ed8f361fde0b3af"
+    },
+    {
+      "file": "lotus-tracker.mjs",
+      "sha256": "6fc9123a3da8025d3e9d0462de223c2d94933ae99d7b46d779f748654d7ac545"
+    },
+    {
+      "file": "collection-store.mjs",
+      "sha256": "39201b8bebcfabcfa689c2b976226809b6fee72e38c257fb330e80119a4ed122"
+    }
+  ]
+}

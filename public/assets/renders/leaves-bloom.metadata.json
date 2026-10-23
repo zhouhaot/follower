@@ -1,0 +1,28 @@
+{
+  "title": "花叶生辉 · Procedural hibiscus fallback",
+  "source": "New procedural 3D reconstruction made after visual inspection of the corresponding original; not a migrated AR model or image plane",
+  "source_module": "../../leaves-bloom.mjs",
+  "source_sha256": "8e1e06cb0a608ea90c689f17f9a1bf05cdeb151ee47f8079017fa2feb9cfd9e1",
+  "reference_image": "../originals/leaves/target.png",
+  "reference_sha256": "e9c96c998db83870baec2c47c50092eec634c94dc7771a257cb305c356ef36db",
+  "image_sha256": "ed5132509f91d5d90619b70b89becbc00c562dad69088a75c503294bc8e0d597",
+  "renderer": "Blender Cycles CPU",
+  "samples": 192,
+  "denoising": false,
+  "size": [
+    1000,
+    1000
+  ],
+  "transparent": true,
+  "alpha_bounds": [
+    244,
+    67,
+    768,
+    919
+  ],
+  "growth": 1,
+  "triangles": 45776,
+  "draw_objects": 35,
+  "card_plane_included": false,
+  "verified": "CPU geometry render, palette, silhouette, full framing and alpha inspected; not browser WebGL, mobile GPU or physical-card tracking validation"
+}

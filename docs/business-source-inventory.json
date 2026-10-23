@@ -1,0 +1,116 @@
+{
+  "internalVersion": "0.5.0",
+  "published": false,
+  "formalRegistrationSubmitted": false,
+  "humanAuthorshipOrRightsDetermined": false,
+  "aiAssistance": "Codex generated/modified code, tests and documentation under the user requirements; human review/acceptance and rights verification remain required.",
+  "newFiles": [
+    {
+      "path": "public/business-data.mjs",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 37,
+      "sha256": "5ed8c8272efbc824f150b68a51609609c50da75b41367876c9a9ca796b715327"
+    },
+    {
+      "path": "public/local-transaction.mjs",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 32,
+      "sha256": "231afb19459975fd5a1b89a9eb54e12f7b5bd47c54e3eeab736b518450a0870f"
+    },
+    {
+      "path": "public/visit-route.mjs",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 22,
+      "sha256": "a90639d1546beed20e35e0c319bff6dd2e1335dd6d6964d0ed943ca4d4e25dd6"
+    },
+    {
+      "path": "public/collection-backup.mjs",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 31,
+      "sha256": "48905673832e4a41e7d973ca59fbe201eededd19c250c5bea5eb47317843b726"
+    },
+    {
+      "path": "public/business-ui.mjs",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 5,
+      "sha256": "5ff68d5dd207cdb3fc4913b3342fdd36125ba151cf2f5f3dd62bfec16b365a1b"
+    },
+    {
+      "path": "public/journey-page.mjs",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 35,
+      "sha256": "47ba7c497fd095b1bed65f464e46eba934989be19d9b522757eb5cae66af1fdd"
+    },
+    {
+      "path": "public/backup-page.mjs",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 19,
+      "sha256": "984896f2566dbef116f7293974a5de461e1ba62de06bee187587ce21d220f96a"
+    },
+    {
+      "path": "public/business.css",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 3,
+      "sha256": "916583c261b45b453d0486f61f76eee1068479967d31608f3cf12879b2e56edf"
+    },
+    {
+      "path": "public/journey.html",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 3,
+      "sha256": "899dab00d81faa135096f26b0e877482bfb863cd0038be8dc3d0432b4b517037"
+    },
+    {
+      "path": "public/backup.html",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 3,
+      "sha256": "1863f91d89f94b3e381f0232a4d7d5d126a7b55ad6cb497e2942fa937b3caf0a"
+    },
+    {
+      "path": "tests/business-tools.test.mjs",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 106,
+      "sha256": "b161dbb9a3f89739b929c9d2296903d899a8dc224a80a41892ae5a58875fa8c0"
+    },
+    {
+      "path": "tests/business-browser.mjs",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 66,
+      "sha256": "af7d973d26a1de42f90efcf3df77e1e2d08e0e01081d590f52c2ca5f640ef633"
+    },
+    {
+      "path": "scripts/backup-business.py",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 37,
+      "sha256": "d707598b7dd74c0e9611677d95424ef4293d63c7b77e69372161fd35364a9e3a"
+    },
+    {
+      "path": "scripts/start-local-preview.py",
+      "classification": "New project application/test/tool code; AI-assisted; not a legal authorship claim",
+      "lines": 19,
+      "sha256": "1c333d2aa371ffd7dda44ed4e1fc9bb7b7ca3e654aa04bf4d4a1294d0cdb6ae9"
+    }
+  ],
+  "modifiedExistingFiles": [
+    "README.md",
+    "package-lock.json",
+    "package.json",
+    "public/app.mjs",
+    "public/collection-store.mjs",
+    "public/collection.html",
+    "public/guide.html",
+    "public/work.html"
+  ],
+  "protectedHashesPassed": 170,
+  "homepageTemplateUnchanged": true,
+  "thirdPartyCodeClaimedAsNew": false,
+  "newExternalDependencies": false,
+  "excludedFromNewApplicationClaims": [
+    "public/vendor/",
+    "public/assets/",
+    "public/assets/originals/_source/",
+    "work/",
+    "node_modules/",
+    "Existing cards, models, hand rig and recovered code"
+  ],
+  "cloudBackupConfirmed": false
+}

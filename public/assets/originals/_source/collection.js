@@ -1,0 +1,3 @@
+export const KEY='zevth-flower-collection-v1';
+export function readCollection(storage,ids){try{const value=JSON.parse(storage.getItem(KEY)||'{}');if(!value||typeof value!=='object'||Array.isArray(value))return {};return Object.fromEntries(Object.entries(value).filter(([id,date])=>ids.includes(id)&&typeof date==='string'&&Number.isFinite(Date.parse(date))));}catch{return {}}}
+export function collect(storage,record,id,ids){if(!ids.includes(id)||record[id])return {record,fresh:false,persisted:true};const next={...record,[id]:new Date().toISOString()};let persisted=true;try{storage.setItem(KEY,JSON.stringify(next))}catch{persisted=false}return {record:next,fresh:true,persisted};}

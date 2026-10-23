@@ -1,0 +1,300 @@
+{
+  "conversion": "Lossless PNG-to-WebP encoding only; dimensions and decoded RGBA bytes unchanged",
+  "source_artwork_modified": false,
+  "assets": [
+    {
+      "source": "assets/originals/blooms.png",
+      "runtime": "assets/originals/blooms.webp",
+      "dimensions": [
+        720,
+        1008
+      ],
+      "source_sha256": "71fc467659fd4b01b85a3ab2dc1795198bf398ebd9559d38dcacb9a67b322eb7",
+      "runtime_sha256": "ca7d0d7b363db41b5ff1cae37f267ef2b6dd44438fd670a9d9e6b47555e4ba87",
+      "decoded_rgba_sha256": "581da04c4143a54b56f839f2cb48ff609b419dacbb822f011044887bbb97523c",
+      "decoded_pixels_identical": true,
+      "source_bytes": 77969,
+      "runtime_bytes": 45868
+    },
+    {
+      "source": "assets/originals/card.png",
+      "runtime": "assets/originals/card.webp",
+      "dimensions": [
+        2100,
+        3420
+      ],
+      "source_sha256": "09a2bdcfab9b237191184b20b887a3be931d535658b08e2f2ce03b8e3b1f5434",
+      "runtime_sha256": "64ff4457f90505af42fcc46ff3fae133b0793e22e62ef38e7fa85d4b6c4e97cf",
+      "decoded_rgba_sha256": "a4ec5de2d98cbb06cf81163a914ab88753fcb43a81d2513902a7bd525e731aed",
+      "decoded_pixels_identical": true,
+      "source_bytes": 971926,
+      "runtime_bytes": 450584
+    },
+    {
+      "source": "assets/originals/chrysanthemum/card-named.png",
+      "runtime": "assets/originals/chrysanthemum/card-named.webp",
+      "dimensions": [
+        1100,
+        1891
+      ],
+      "source_sha256": "7e66c0db664301104b2952bd2085eb6be5ff68556a5ade1bfba427ffb534cdaa",
+      "runtime_sha256": "3c461df09ad00679dc51beae2a6fa099546b303702dcb639e54e70afc455f82c",
+      "decoded_rgba_sha256": "8b973efa9756386849dbb14aeb150717bf0f9e17cf6902bc4463c79e9dc179af",
+      "decoded_pixels_identical": true,
+      "source_bytes": 1210829,
+      "runtime_bytes": 864068
+    },
+    {
+      "source": "assets/originals/chrysanthemum/target.png",
+      "runtime": "assets/originals/chrysanthemum/target.webp",
+      "dimensions": [
+        875,
+        1228
+      ],
+      "source_sha256": "5e1471dceb89e5d94e0da2e1632b68d9cf567f9cd435107b02b082dd3f48adf9",
+      "runtime_sha256": "5791cda5c52e30d9cbe24776e0ac9e994ec8db195c1d2e3cadb401a44861cc35",
+      "decoded_rgba_sha256": "e27aae15ca0d7ebf7be78d80b0107793466e389cc8ad773a79c4ac19d7695787",
+      "decoded_pixels_identical": true,
+      "source_bytes": 1338969,
+      "runtime_bytes": 730474
+    },
+    {
+      "source": "assets/originals/details.png",
+      "runtime": "assets/originals/details.webp",
+      "dimensions": [
+        720,
+        1008
+      ],
+      "source_sha256": "039d6c383a52f453e4d054fe3436dd92fa681f7685b68de980313a48bb8f19cb",
+      "runtime_sha256": "d9117c74f901f6f444f75fb1392c29b095c5466626367d487dacee9235390550",
+      "decoded_rgba_sha256": "344cfeccffb47c7a84c1b6250191db71605eb75657b1096524882bcee3ea4217",
+      "decoded_pixels_identical": true,
+      "source_bytes": 23710,
+      "runtime_bytes": 14308
+    },
+    {
+      "source": "assets/originals/greens.png",
+      "runtime": "assets/originals/greens.webp",
+      "dimensions": [
+        720,
+        1008
+      ],
+      "source_sha256": "1b7766959a2b9f15b55db236b01f11aa44f333f2d0f06fa2f1e3d02d7db5b15f",
+      "runtime_sha256": "3056e3ee9e1efe5639208d28821a00f0dad793c642954fc66ab91d22925e1590",
+      "decoded_rgba_sha256": "bbeb241c4b749ce63656a4746d8346f55734b6dd685c79d39f00ee60bd793fc5",
+      "decoded_pixels_identical": true,
+      "source_bytes": 82022,
+      "runtime_bytes": 54208
+    },
+    {
+      "source": "assets/originals/leaves/card-named.png",
+      "runtime": "assets/originals/leaves/card-named.webp",
+      "dimensions": [
+        1100,
+        1912
+      ],
+      "source_sha256": "30b1b16ff93cebf44c311c789e80325df34c116c59a8ea881feefa7759c1840b",
+      "runtime_sha256": "f76d710df4d745cc29015fc297101af446fcf2bffb48c69a3a98353eca28ec8f",
+      "decoded_rgba_sha256": "8eeb0767a8b1340f03af2b86dbcfea400f6ed5ca0734577fbd7fc3324cefc179",
+      "decoded_pixels_identical": true,
+      "source_bytes": 1234316,
+      "runtime_bytes": 881692
+    },
+    {
+      "source": "assets/originals/leaves/target.png",
+      "runtime": "assets/originals/leaves/target.webp",
+      "dimensions": [
+        881,
+        1255
+      ],
+      "source_sha256": "e9c96c998db83870baec2c47c50092eec634c94dc7771a257cb305c356ef36db",
+      "runtime_sha256": "e808e79646e45d2d5cae4833e1e5d2b1ec1ea140c6d4d634a66db31aa17f9469",
+      "decoded_rgba_sha256": "62f389c87ef8e9b829f018c99e961ca261a3ef848f72aa729b03fe5b5ebcfa06",
+      "decoded_pixels_identical": true,
+      "source_bytes": 1388239,
+      "runtime_bytes": 756472
+    },
+    {
+      "source": "assets/originals/lotus/card-named.png",
+      "runtime": "assets/originals/lotus/card-named.webp",
+      "dimensions": [
+        1100,
+        1907
+      ],
+      "source_sha256": "31a466768a1696135ab70953ae9c614fae3160924c016297d359c8310227dcda",
+      "runtime_sha256": "3b15f1c1c6d2a374b877bef0c69977257b6a87ba86ce7eea204cccc3e5c22b7b",
+      "decoded_rgba_sha256": "96a732af617d1908c0c33b7e01db2641b7c73a6528fc5cc05e68b280026c171e",
+      "decoded_pixels_identical": true,
+      "source_bytes": 1216901,
+      "runtime_bytes": 871128
+    },
+    {
+      "source": "assets/originals/lotus/target.png",
+      "runtime": "assets/originals/lotus/target.webp",
+      "dimensions": [
+        884,
+        1255
+      ],
+      "source_sha256": "5589f2774dfdbc46e64d4d6656b28d3626eab1f072c3703198d098bcd0464ba2",
+      "runtime_sha256": "162afd5394e37c484f3ba4c7d27970c7aa453ffc76586aa458331974e8787c9c",
+      "decoded_rgba_sha256": "52ec752f905ffa6d835a9556194b563ffe114f9e5e6f96d8ab6af7bb5c7484c8",
+      "decoded_pixels_identical": true,
+      "source_bytes": 1347130,
+      "runtime_bytes": 750244
+    },
+    {
+      "source": "assets/originals/ornaments.png",
+      "runtime": "assets/originals/ornaments.webp",
+      "dimensions": [
+        720,
+        1008
+      ],
+      "source_sha256": "8ce610c4add2619a5b565d59edde885415392336b883bdf7b8d350033aaee62f",
+      "runtime_sha256": "5de67ab636c30d4f54f4f36c0718affd8a55866db69d4ad4132870a2e73c5378",
+      "decoded_rgba_sha256": "fda66134b2d347e3a14d88d918d1485f1dbd06994c929b7e0f38e42f3d96dc23",
+      "decoded_pixels_identical": true,
+      "source_bytes": 59767,
+      "runtime_bytes": 37102
+    },
+    {
+      "source": "assets/originals/peony/card-named.png",
+      "runtime": "assets/originals/peony/card-named.webp",
+      "dimensions": [
+        1100,
+        1881
+      ],
+      "source_sha256": "2343f2ba0cd1b171e25b307e6adaffff164516424d891e72fc9e93a49ecc3de6",
+      "runtime_sha256": "1ba2704e1728948f683706aecc18181a905402f5861bd1901769264b6882648c",
+      "decoded_rgba_sha256": "653126c5b97e383525ce3957d6b9d94db4b87441435fad0a862fb731b241a1bd",
+      "decoded_pixels_identical": true,
+      "source_bytes": 1246908,
+      "runtime_bytes": 890446
+    },
+    {
+      "source": "assets/originals/peony/target.png",
+      "runtime": "assets/originals/peony/target.webp",
+      "dimensions": [
+        877,
+        1222
+      ],
+      "source_sha256": "18f704962a3ce011ebdca8c75705ec2d8cd0bc611feee3d84f0ec32f7323053c",
+      "runtime_sha256": "22f9794925fef03f822f02bd7901d5a3b4a99f8b5ec2e97ef364871f46fd1868",
+      "decoded_rgba_sha256": "f1439fc34f454fe945120127c5cbefa3e51c5560e693735f3975ace2f58b2d4e",
+      "decoded_pixels_identical": true,
+      "source_bytes": 1394044,
+      "runtime_bytes": 760128
+    },
+    {
+      "source": "assets/originals/target.png",
+      "runtime": "assets/originals/target.webp",
+      "dimensions": [
+        900,
+        1260
+      ],
+      "source_sha256": "9812ff4b9fe5cfb2d68ed786ed62cd63f4ae71aad6f27d2452add51930177c25",
+      "runtime_sha256": "fa388cd7ec143846eea2c91dc36a158d501ce237f8b0c7e2caf05e85bd1031a1",
+      "decoded_rgba_sha256": "d6b09c9d309512484ff9bbc77a2e8ea1fe362ec9117c2dd988305fdb973e0ab6",
+      "decoded_pixels_identical": true,
+      "source_bytes": 316247,
+      "runtime_bytes": 192398
+    },
+    {
+      "source": "assets/originals/vase.png",
+      "runtime": "assets/originals/vase.webp",
+      "dimensions": [
+        720,
+        1008
+      ],
+      "source_sha256": "b2c10c30018e28f6d885e3e2bdf70fe318a590084b6772749175199b00dcfcd2",
+      "runtime_sha256": "53aba9c27bae6d0ad86a767e4bc6366d01dcf45137ebf46b0b2bfbd7d8ad097c",
+      "decoded_rgba_sha256": "d2327757cdb9e2e72ad2c02b6e96edbacc0b00cd2320e93cece8be390c066793",
+      "decoded_pixels_identical": true,
+      "source_bytes": 34883,
+      "runtime_bytes": 18988
+    },
+    {
+      "source": "assets/renders/chrysanthemum-bloom.png",
+      "runtime": "assets/renders/chrysanthemum-bloom.webp",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "source_sha256": "4c1f993f39f6a873ce78ae2332416f997a908a2d24d15d968a0203886659a9e6",
+      "runtime_sha256": "03bae50a9439f709a04360a925fadd353f74aa3654723f23cc04de775a1cf3fa",
+      "decoded_rgba_sha256": "b2654b88551d4b2279ebb8f48aa68ee17b7ebf7b72ba988ba71dc4c46e1ffaf3",
+      "decoded_pixels_identical": true,
+      "source_bytes": 860774,
+      "runtime_bytes": 306944
+    },
+    {
+      "source": "assets/renders/flowers-bloom.png",
+      "runtime": "assets/renders/flowers-bloom.webp",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "source_sha256": "21937c4949f8d5c54b32d130eeaf03e67ad4bc6c1fa6da8dd1e91b05791941aa",
+      "runtime_sha256": "10bae478808a1a75bd8694853fb3adfced08c695d447637d4a057fc12c75172d",
+      "decoded_rgba_sha256": "a2b77a26e38fde94edb627e58c67f691805f58677688da8ee4d5865e0836ffbd",
+      "decoded_pixels_identical": true,
+      "source_bytes": 847181,
+      "runtime_bytes": 373406
+    },
+    {
+      "source": "assets/renders/leaves-bloom.png",
+      "runtime": "assets/renders/leaves-bloom.webp",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "source_sha256": "ed5132509f91d5d90619b70b89becbc00c562dad69088a75c503294bc8e0d597",
+      "runtime_sha256": "01e21a9f2a04cf533493cf2e6da19f8b163e942f3d5bc7ad6ea4b723e9ce78e4",
+      "decoded_rgba_sha256": "81ecf83541931005231eccf90e827c5991b9859a1925aba0bc8a324093c0f5da",
+      "decoded_pixels_identical": true,
+      "source_bytes": 908028,
+      "runtime_bytes": 347170
+    },
+    {
+      "source": "assets/renders/lotus-bloom.png",
+      "runtime": "assets/renders/lotus-bloom.webp",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "source_sha256": "f9e1730121bbe185fda02dff479de49f26d7a24e80f2cd538a2ee3c8c1df2b93",
+      "runtime_sha256": "244106eff65e1e74b1895f93004d2a7f5334607e2e88712c038da976b0c35ea3",
+      "decoded_rgba_sha256": "ab6b26dcc14e44e3ca5ee0dda0291c02fcf0ac4ef789069a3311430f03fe5a97",
+      "decoded_pixels_identical": true,
+      "source_bytes": 850187,
+      "runtime_bytes": 318226
+    },
+    {
+      "source": "assets/renders/lotus-transparent.png",
+      "runtime": "assets/renders/lotus-transparent.webp",
+      "dimensions": [
+        1000,
+        1200
+      ],
+      "source_sha256": "0595427b632598759ca372a77ea39c01eb6517d333e1fd849f03437c4cf27416",
+      "runtime_sha256": "4a4b59763d363690738b249873c24b85d281f11c8483be178527f79ebc382c08",
+      "decoded_rgba_sha256": "07154f5344aa4690d3cbc17ee70a51ca92af96d75b95ec4008f5c735f3cc00df",
+      "decoded_pixels_identical": true,
+      "source_bytes": 1326003,
+      "runtime_bytes": 548732
+    },
+    {
+      "source": "assets/renders/peony-bloom.png",
+      "runtime": "assets/renders/peony-bloom.webp",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "source_sha256": "a5211e1176339b00aba8094a4a06c7e2cb1f73d58f583e858a9f3ce631488fb6",
+      "runtime_sha256": "305ad7a66916427523976db5717771580a95f366bfe3767256c9b4b1e8aec0c0",
+      "decoded_rgba_sha256": "a0a12dd7e9d1ae636fdf987a54e35f276817b77073a98fe35b4f00ed00fe621b",
+      "decoded_pixels_identical": true,
+      "source_bytes": 1038908,
+      "runtime_bytes": 461410
+    }
+  ]
+}

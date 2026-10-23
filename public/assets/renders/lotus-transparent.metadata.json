@@ -1,0 +1,13 @@
+{
+  "title": "Metal card static fallback",
+  "source": "Rendered directly from existing Qinghe-Relief-Card-v2.blend geometry",
+  "image_sha256": "0595427b632598759ca372a77ea39c01eb6517d333e1fd849f03437c4cf27416",
+  "renderer": "Blender Cycles CPU",
+  "samples": 64,
+  "size": [
+    1000,
+    1200
+  ],
+  "transparent": true,
+  "verified": "Full framing and transparent background visually inspected; not browser WebGL proof"
+}

@@ -1,0 +1,63 @@
+{
+  "title": "Procedural 牡丹承瑞 peony fallback",
+  "source": "New procedural reconstruction from the supplied original illustration; not a recovered historical AR asset or metal relief",
+  "source_module": "../../peony-bloom.mjs",
+  "source_sha256": "4f3088c5498f0fcc382ccb00fef6848e611513a93f200bdcc26e34d2c9d4f9b9",
+  "reference_image": "../originals/peony/target.png",
+  "reference_sha256": "18f704962a3ce011ebdca8c75705ec2d8cd0bc611feee3d84f0ec32f7323053c",
+  "image_sha256": "a5211e1176339b00aba8094a4a06c7e2cb1f73d58f583e858a9f3ce631488fb6",
+  "renderer": "Blender Cycles CPU",
+  "renderer_version": "4.3.2",
+  "samples": 128,
+  "denoising": false,
+  "size": [
+    1000,
+    1000
+  ],
+  "transparent": true,
+  "alpha_range": [
+    0,
+    255
+  ],
+  "content_pixel_bounds": [
+    172,
+    88,
+    835,
+    856
+  ],
+  "growth": 1,
+  "card_plane_included": false,
+  "rendered_triangles": 63444,
+  "mesh_objects": 81,
+  "unique_geometry_resources": 38,
+  "materials": 5,
+  "root": [
+    0,
+    -0.09236031927023945,
+    0.012
+  ],
+  "reference_dimensions": [
+    877,
+    1222
+  ],
+  "camera": {
+    "projection": "orthographic",
+    "position": [
+      0,
+      0.4,
+      3
+    ],
+    "target": [
+      0,
+      0.147,
+      0.17
+    ],
+    "ortho_scale": 0.94
+  },
+  "color_management": {
+    "view_transform": "Standard",
+    "exposure": -0.3
+  },
+  "material_translation": "Exact full-growth geometry, transforms and vertex colors exported; physical material parameters translated to Blender Principled BSDF, not exact WebGL shader equivalence",
+  "verified": "Final CPU-rendered silhouette, pink/turquoise palette, two lower buds, transparency and framing visually inspected. No browser WebGL, mobile GPU, camera or physical-card AR tracking validation is claimed."
+}

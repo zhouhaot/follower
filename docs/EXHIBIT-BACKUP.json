@@ -1,0 +1,8 @@
+{
+  "original_private_site": "appgprj_6acdff588e248191b4aa7c2c2660e0df",
+  "original_version": 2,
+  "original_commit": "3e7b726e87833089d0b3a07c182ba9763330c96f",
+  "backup_library_file_id": "libfile_e8a2c84f8e888191a9e2af82c71b57de",
+  "backup_sha256": "e0eb2baa63b85a4308b55d89e46583943b28302f2bdac723fef7a46191b2f840",
+  "constraint": "Do not overwrite or change the existing private exhibit site. New public variant must use a separate Site identity."
+}

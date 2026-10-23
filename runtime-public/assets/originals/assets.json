@@ -1,0 +1,672 @@
+{
+  "sourceSite": "https://zevth.work/",
+  "retrievedAt": "2026-10-13T08:26:00Z",
+  "identityVerifiedFrom": [
+    "https://zevth.work/",
+    "https://zevth.work/cards.json?v=20260913-pages"
+  ],
+  "cards": [
+    {
+      "id": "flowers",
+      "name": "花开有声",
+      "english": "FLOWERS SPEAK",
+      "keyword": "瓶插花卉",
+      "credit": "都江堰博物馆《瓶插花卉图》",
+      "accent": "#e36a90",
+      "target": "assets/target.png",
+      "image": "assets/card.png",
+      "ratio": 1.4,
+      "legacy": true,
+      "sourceName": "瓶插花卉图",
+      "museum": "都江堰博物馆",
+      "sourceMetadataUrl": "https://zevth.work/cards.json?v=20260913-pages",
+      "targetIndex": 0,
+      "imageAsset": {
+        "sourceUrl": "https://zevth.work/assets/card.png",
+        "localPath": "/assets/originals/card.png",
+        "bytes": 971926,
+        "sha256": "09a2bdcfab9b237191184b20b887a3be931d535658b08e2f2ce03b8e3b1f5434",
+        "contentType": "image/png",
+        "dimensions": {
+          "width": 2100,
+          "height": 3420
+        },
+        "mode": "RGBA"
+      },
+      "targetAsset": {
+        "sourceUrl": "https://zevth.work/assets/target.png",
+        "localPath": "/assets/originals/target.png",
+        "bytes": 316247,
+        "sha256": "9812ff4b9fe5cfb2d68ed786ed62cd63f4ae71aad6f27d2452add51930177c25",
+        "contentType": "image/png",
+        "dimensions": {
+          "width": 900,
+          "height": 1260
+        },
+        "mode": "RGBA"
+      }
+    },
+    {
+      "id": "peony",
+      "name": "牡丹承瑞",
+      "english": "PEONY IN BLOOM",
+      "keyword": "牡丹花卉",
+      "credit": "都江堰市博物馆《瓶插牡丹图》",
+      "accent": "#ee6688",
+      "target": "assets/peony/target.png",
+      "image": "assets/peony/card-named.png",
+      "ratio": 1.3933865450399088,
+      "legacy": false,
+      "crop": {
+        "left": 48,
+        "top": 48,
+        "width": 877,
+        "height": 1222
+      },
+      "sourceName": "瓶插牡丹图",
+      "photo": "assets/origins/museum-8399.jpg",
+      "viewBox": "230 615 232 450",
+      "description": "保留插瓶、主花与两侧花苞的关系，将石刻线条转化为清晰的花瓣与枝叶色块。",
+      "museum": "都江堰市博物馆",
+      "sourceMetadataUrl": "https://zevth.work/cards.json?v=20260913-pages",
+      "targetIndex": 1,
+      "imageAsset": {
+        "sourceUrl": "https://zevth.work/assets/peony/card-named.png",
+        "localPath": "/assets/originals/peony/card-named.png",
+        "bytes": 1246908,
+        "sha256": "2343f2ba0cd1b171e25b307e6adaffff164516424d891e72fc9e93a49ecc3de6",
+        "contentType": "image/png",
+        "dimensions": {
+          "width": 1100,
+          "height": 1881
+        },
+        "mode": "RGB"
+      },
+      "targetAsset": {
+        "sourceUrl": "https://zevth.work/assets/peony/target.png",
+        "localPath": "/assets/originals/peony/target.png",
+        "bytes": 1394044,
+        "sha256": "18f704962a3ce011ebdca8c75705ec2d8cd0bc611feee3d84f0ec32f7323053c",
+        "contentType": "image/png",
+        "dimensions": {
+          "width": 877,
+          "height": 1222
+        },
+        "mode": "RGB"
+      },
+      "photoAsset": {
+        "sourceUrl": "https://zevth.work/assets/origins/museum-8399.jpg",
+        "localPath": "/assets/originals/origins/museum-8399.jpg",
+        "bytes": 159916,
+        "sha256": "3ea74b361f626cf4a42272ec3179d3945c0c758e297fe34a9b80d24ef674f83e",
+        "contentType": "image/jpeg",
+        "dimensions": {
+          "width": 961,
+          "height": 1280
+        },
+        "mode": "RGB"
+      }
+    },
+    {
+      "id": "chrysanthemum",
+      "name": "菊影流金",
+      "english": "GOLDEN CHRYSANTHEMUM",
+      "keyword": "菊花纹样",
+      "credit": "都江堰市博物馆《摘枝菊花图》",
+      "accent": "#df8439",
+      "target": "assets/chrysanthemum/target.png",
+      "image": "assets/chrysanthemum/card-named.png",
+      "ratio": 1.4034285714285715,
+      "legacy": false,
+      "crop": {
+        "left": 48,
+        "top": 46,
+        "width": 875,
+        "height": 1228
+      },
+      "sourceName": "摘枝菊花图",
+      "photo": "assets/origins/museum-8399.jpg",
+      "viewBox": "645 655 220 385",
+      "description": "从卷曲花瓣与舒展枝叶中提取轮廓，以橙黄花色和青绿枝叶呈现菊花的流动感。",
+      "museum": "都江堰市博物馆",
+      "sourceMetadataUrl": "https://zevth.work/cards.json?v=20260913-pages",
+      "targetIndex": 2,
+      "imageAsset": {
+        "sourceUrl": "https://zevth.work/assets/chrysanthemum/card-named.png",
+        "localPath": "/assets/originals/chrysanthemum/card-named.png",
+        "bytes": 1210829,
+        "sha256": "7e66c0db664301104b2952bd2085eb6be5ff68556a5ade1bfba427ffb534cdaa",
+        "contentType": "image/png",
+        "dimensions": {
+          "width": 1100,
+          "height": 1891
+        },
+        "mode": "RGB"
+      },
+      "targetAsset": {
+        "sourceUrl": "https://zevth.work/assets/chrysanthemum/target.png",
+        "localPath": "/assets/originals/chrysanthemum/target.png",
+        "bytes": 1338969,
+        "sha256": "5e1471dceb89e5d94e0da2e1632b68d9cf567f9cd435107b02b082dd3f48adf9",
+        "contentType": "image/png",
+        "dimensions": {
+          "width": 875,
+          "height": 1228
+        },
+        "mode": "RGB"
+      },
+      "photoAsset": {
+        "sourceUrl": "https://zevth.work/assets/origins/museum-8399.jpg",
+        "localPath": "/assets/originals/origins/museum-8399.jpg",
+        "bytes": 159916,
+        "sha256": "3ea74b361f626cf4a42272ec3179d3945c0c758e297fe34a9b80d24ef674f83e",
+        "contentType": "image/jpeg",
+        "dimensions": {
+          "width": 961,
+          "height": 1280
+        },
+        "mode": "RGB"
+      }
+    },
+    {
+      "id": "lotus",
+      "name": "清荷入梦",
+      "english": "LOTUS IN REVERIE",
+      "keyword": "莲荷纹样",
+      "credit": "都江堰市博物馆《荷花图》",
+      "accent": "#477cc7",
+      "target": "assets/lotus/target.png",
+      "image": "assets/lotus/card-named.png",
+      "ratio": 1.419683257918552,
+      "legacy": false,
+      "crop": {
+        "left": 45,
+        "top": 43,
+        "width": 884,
+        "height": 1255
+      },
+      "sourceName": "荷花图",
+      "photo": "assets/origins/museum-8400.jpg",
+      "viewBox": "165 480 275 450",
+      "description": "保留中央荷花、两侧圆叶与下方瓶形，以月白和清蓝重新组织纹样的对称秩序。",
+      "museum": "都江堰市博物馆",
+      "sourceMetadataUrl": "https://zevth.work/cards.json?v=20260913-pages",
+      "targetIndex": 3,
+      "imageAsset": {
+        "sourceUrl": "https://zevth.work/assets/lotus/card-named.png",
+        "localPath": "/assets/originals/lotus/card-named.png",
+        "bytes": 1216901,
+        "sha256": "31a466768a1696135ab70953ae9c614fae3160924c016297d359c8310227dcda",
+        "contentType": "image/png",
+        "dimensions": {
+          "width": 1100,
+          "height": 1907
+        },
+        "mode": "RGB"
+      },
+      "targetAsset": {
+        "sourceUrl": "https://zevth.work/assets/lotus/target.png",
+        "localPath": "/assets/originals/lotus/target.png",
+        "bytes": 1347130,
+        "sha256": "5589f2774dfdbc46e64d4d6656b28d3626eab1f072c3703198d098bcd0464ba2",
+        "contentType": "image/png",
+        "dimensions": {
+          "width": 884,
+          "height": 1255
+        },
+        "mode": "RGB"
+      },
+      "photoAsset": {
+        "sourceUrl": "https://zevth.work/assets/origins/museum-8400.jpg",
+        "localPath": "/assets/originals/origins/museum-8400.jpg",
+        "bytes": 190563,
+        "sha256": "65a6c0b50784eb6c086d5153ba8271e382d0e2ba36047780e5a532420a47ffe2",
+        "contentType": "image/jpeg",
+        "dimensions": {
+          "width": 961,
+          "height": 1280
+        },
+        "mode": "RGB"
+      }
+    },
+    {
+      "id": "leaves",
+      "name": "花叶生辉",
+      "english": "LEAVES IN RADIANCE",
+      "keyword": "折枝花叶",
+      "credit": "都江堰市博物馆《芙蓉花图》",
+      "accent": "#ad63ad",
+      "target": "assets/leaves/target.png",
+      "image": "assets/leaves/card-named.png",
+      "ratio": 1.4245175936435868,
+      "legacy": false,
+      "crop": {
+        "left": 45,
+        "top": 43,
+        "width": 881,
+        "height": 1255
+      },
+      "sourceName": "芙蓉花图",
+      "photo": "assets/origins/museum-8400.jpg",
+      "viewBox": "625 480 230 345",
+      "description": "提取斜向花枝、芙蓉花与五裂叶片，用兰紫花瓣和清爽绿叶延续原型的生长姿态。",
+      "museum": "都江堰市博物馆",
+      "sourceMetadataUrl": "https://zevth.work/cards.json?v=20260913-pages",
+      "targetIndex": 4,
+      "imageAsset": {
+        "sourceUrl": "https://zevth.work/assets/leaves/card-named.png",
+        "localPath": "/assets/originals/leaves/card-named.png",
+        "bytes": 1234316,
+        "sha256": "30b1b16ff93cebf44c311c789e80325df34c116c59a8ea881feefa7759c1840b",
+        "contentType": "image/png",
+        "dimensions": {
+          "width": 1100,
+          "height": 1912
+        },
+        "mode": "RGB"
+      },
+      "targetAsset": {
+        "sourceUrl": "https://zevth.work/assets/leaves/target.png",
+        "localPath": "/assets/originals/leaves/target.png",
+        "bytes": 1388239,
+        "sha256": "e9c96c998db83870baec2c47c50092eec634c94dc7771a257cb305c356ef36db",
+        "contentType": "image/png",
+        "dimensions": {
+          "width": 881,
+          "height": 1255
+        },
+        "mode": "RGB"
+      },
+      "photoAsset": {
+        "sourceUrl": "https://zevth.work/assets/origins/museum-8400.jpg",
+        "localPath": "/assets/originals/origins/museum-8400.jpg",
+        "bytes": 190563,
+        "sha256": "65a6c0b50784eb6c086d5153ba8271e382d0e2ba36047780e5a532420a47ffe2",
+        "contentType": "image/jpeg",
+        "dimensions": {
+          "width": 961,
+          "height": 1280
+        },
+        "mode": "RGB"
+      }
+    }
+  ],
+  "ar": {
+    "library": "MindARThree",
+    "trackingSource": {
+      "sourceUrl": "https://zevth.work/assets/five-flowers.mind",
+      "localPath": "/assets/originals/five-flowers.mind",
+      "bytes": 3410863,
+      "sha256": "609ed685bf07b33b60880fa35cb9afdf16c5763a92174557e2c8127fafeeb685",
+      "contentType": "application/octet-stream"
+    },
+    "targetOrder": [
+      "flowers",
+      "peony",
+      "chrysanthemum",
+      "lotus",
+      "leaves"
+    ],
+    "targetOrderEvidence": "app-v5.js iterates cards.json order with ar.addAnchor(i)",
+    "rendering": "Three.js PlaneGeometry textured planes; no GLB or GLTF referenced in live app-v5.js or art.js. flowers uses five transparent PNG layers; other cards use shader masks of their unchanged target PNG.",
+    "flowersLayerOrder": [
+      "ornaments",
+      "greens",
+      "vase",
+      "blooms",
+      "details"
+    ],
+    "assetBaseRule": "Local copies preserve original asset-relative paths beneath /assets/originals/.",
+    "compiledFormatVersion": 2,
+    "compiledTargetCount": 5,
+    "compiledTargets": [
+      {
+        "index": 0,
+        "cardId": "flowers",
+        "width": 900,
+        "height": 1260,
+        "matchingEntries": 11,
+        "trackingEntries": 2
+      },
+      {
+        "index": 1,
+        "cardId": "peony",
+        "width": 877,
+        "height": 1222,
+        "matchingEntries": 11,
+        "trackingEntries": 2
+      },
+      {
+        "index": 2,
+        "cardId": "chrysanthemum",
+        "width": 875,
+        "height": 1228,
+        "matchingEntries": 11,
+        "trackingEntries": 2
+      },
+      {
+        "index": 3,
+        "cardId": "lotus",
+        "width": 884,
+        "height": 1255,
+        "matchingEntries": 11,
+        "trackingEntries": 2
+      },
+      {
+        "index": 4,
+        "cardId": "leaves",
+        "width": 881,
+        "height": 1255,
+        "matchingEntries": 11,
+        "trackingEntries": 2
+      }
+    ],
+    "compiledTargetVerification": "Decoded MessagePack has five dataList entries; dimensions at each index exactly equal the corresponding original target PNG dimensions in cards.json order.",
+    "runtimeDependencies": [
+      "vendor/CSS3DRenderer.js",
+      "vendor/controller-mGt1s8dJ.js",
+      "vendor/mindar-image-three.prod.js",
+      "vendor/three.module.js",
+      "vendor/ui-fBadYuor.js"
+    ],
+    "threeRevision": "160",
+    "workerImplementation": "MindAR controller embeds worker JavaScript as base64, using Blob URLs and data URL fallback; no separate worker file download is required. Restrictive CSP needs appropriate worker-src allowance."
+  },
+  "files": {
+    "assets/blooms.png": {
+      "sourceUrl": "https://zevth.work/assets/blooms.png",
+      "localPath": "/assets/originals/blooms.png",
+      "bytes": 77969,
+      "sha256": "71fc467659fd4b01b85a3ab2dc1795198bf398ebd9559d38dcacb9a67b322eb7",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 720,
+        "height": 1008
+      },
+      "mode": "RGBA"
+    },
+    "assets/card.png": {
+      "sourceUrl": "https://zevth.work/assets/card.png",
+      "localPath": "/assets/originals/card.png",
+      "bytes": 971926,
+      "sha256": "09a2bdcfab9b237191184b20b887a3be931d535658b08e2f2ce03b8e3b1f5434",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 2100,
+        "height": 3420
+      },
+      "mode": "RGBA"
+    },
+    "assets/chrysanthemum/card-named.png": {
+      "sourceUrl": "https://zevth.work/assets/chrysanthemum/card-named.png",
+      "localPath": "/assets/originals/chrysanthemum/card-named.png",
+      "bytes": 1210829,
+      "sha256": "7e66c0db664301104b2952bd2085eb6be5ff68556a5ade1bfba427ffb534cdaa",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 1100,
+        "height": 1891
+      },
+      "mode": "RGB"
+    },
+    "assets/chrysanthemum/target.png": {
+      "sourceUrl": "https://zevth.work/assets/chrysanthemum/target.png",
+      "localPath": "/assets/originals/chrysanthemum/target.png",
+      "bytes": 1338969,
+      "sha256": "5e1471dceb89e5d94e0da2e1632b68d9cf567f9cd435107b02b082dd3f48adf9",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 875,
+        "height": 1228
+      },
+      "mode": "RGB"
+    },
+    "assets/details.png": {
+      "sourceUrl": "https://zevth.work/assets/details.png",
+      "localPath": "/assets/originals/details.png",
+      "bytes": 23710,
+      "sha256": "039d6c383a52f453e4d054fe3436dd92fa681f7685b68de980313a48bb8f19cb",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 720,
+        "height": 1008
+      },
+      "mode": "RGBA"
+    },
+    "assets/five-flowers.mind": {
+      "sourceUrl": "https://zevth.work/assets/five-flowers.mind",
+      "localPath": "/assets/originals/five-flowers.mind",
+      "bytes": 3410863,
+      "sha256": "609ed685bf07b33b60880fa35cb9afdf16c5763a92174557e2c8127fafeeb685",
+      "contentType": "application/octet-stream"
+    },
+    "assets/greens.png": {
+      "sourceUrl": "https://zevth.work/assets/greens.png",
+      "localPath": "/assets/originals/greens.png",
+      "bytes": 82022,
+      "sha256": "1b7766959a2b9f15b55db236b01f11aa44f333f2d0f06fa2f1e3d02d7db5b15f",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 720,
+        "height": 1008
+      },
+      "mode": "RGBA"
+    },
+    "assets/leaves/card-named.png": {
+      "sourceUrl": "https://zevth.work/assets/leaves/card-named.png",
+      "localPath": "/assets/originals/leaves/card-named.png",
+      "bytes": 1234316,
+      "sha256": "30b1b16ff93cebf44c311c789e80325df34c116c59a8ea881feefa7759c1840b",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 1100,
+        "height": 1912
+      },
+      "mode": "RGB"
+    },
+    "assets/leaves/target.png": {
+      "sourceUrl": "https://zevth.work/assets/leaves/target.png",
+      "localPath": "/assets/originals/leaves/target.png",
+      "bytes": 1388239,
+      "sha256": "e9c96c998db83870baec2c47c50092eec634c94dc7771a257cb305c356ef36db",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 881,
+        "height": 1255
+      },
+      "mode": "RGB"
+    },
+    "assets/lotus/card-named.png": {
+      "sourceUrl": "https://zevth.work/assets/lotus/card-named.png",
+      "localPath": "/assets/originals/lotus/card-named.png",
+      "bytes": 1216901,
+      "sha256": "31a466768a1696135ab70953ae9c614fae3160924c016297d359c8310227dcda",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 1100,
+        "height": 1907
+      },
+      "mode": "RGB"
+    },
+    "assets/lotus/target.png": {
+      "sourceUrl": "https://zevth.work/assets/lotus/target.png",
+      "localPath": "/assets/originals/lotus/target.png",
+      "bytes": 1347130,
+      "sha256": "5589f2774dfdbc46e64d4d6656b28d3626eab1f072c3703198d098bcd0464ba2",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 884,
+        "height": 1255
+      },
+      "mode": "RGB"
+    },
+    "assets/origins/museum-8399.jpg": {
+      "sourceUrl": "https://zevth.work/assets/origins/museum-8399.jpg",
+      "localPath": "/assets/originals/origins/museum-8399.jpg",
+      "bytes": 159916,
+      "sha256": "3ea74b361f626cf4a42272ec3179d3945c0c758e297fe34a9b80d24ef674f83e",
+      "contentType": "image/jpeg",
+      "dimensions": {
+        "width": 961,
+        "height": 1280
+      },
+      "mode": "RGB"
+    },
+    "assets/origins/museum-8400.jpg": {
+      "sourceUrl": "https://zevth.work/assets/origins/museum-8400.jpg",
+      "localPath": "/assets/originals/origins/museum-8400.jpg",
+      "bytes": 190563,
+      "sha256": "65a6c0b50784eb6c086d5153ba8271e382d0e2ba36047780e5a532420a47ffe2",
+      "contentType": "image/jpeg",
+      "dimensions": {
+        "width": 961,
+        "height": 1280
+      },
+      "mode": "RGB"
+    },
+    "assets/ornaments.png": {
+      "sourceUrl": "https://zevth.work/assets/ornaments.png",
+      "localPath": "/assets/originals/ornaments.png",
+      "bytes": 59767,
+      "sha256": "8ce610c4add2619a5b565d59edde885415392336b883bdf7b8d350033aaee62f",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 720,
+        "height": 1008
+      },
+      "mode": "RGBA"
+    },
+    "assets/peony/card-named.png": {
+      "sourceUrl": "https://zevth.work/assets/peony/card-named.png",
+      "localPath": "/assets/originals/peony/card-named.png",
+      "bytes": 1246908,
+      "sha256": "2343f2ba0cd1b171e25b307e6adaffff164516424d891e72fc9e93a49ecc3de6",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 1100,
+        "height": 1881
+      },
+      "mode": "RGB"
+    },
+    "assets/peony/target.png": {
+      "sourceUrl": "https://zevth.work/assets/peony/target.png",
+      "localPath": "/assets/originals/peony/target.png",
+      "bytes": 1394044,
+      "sha256": "18f704962a3ce011ebdca8c75705ec2d8cd0bc611feee3d84f0ec32f7323053c",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 877,
+        "height": 1222
+      },
+      "mode": "RGB"
+    },
+    "assets/target.png": {
+      "sourceUrl": "https://zevth.work/assets/target.png",
+      "localPath": "/assets/originals/target.png",
+      "bytes": 316247,
+      "sha256": "9812ff4b9fe5cfb2d68ed786ed62cd63f4ae71aad6f27d2452add51930177c25",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 900,
+        "height": 1260
+      },
+      "mode": "RGBA"
+    },
+    "assets/vase.png": {
+      "sourceUrl": "https://zevth.work/assets/vase.png",
+      "localPath": "/assets/originals/vase.png",
+      "bytes": 34883,
+      "sha256": "b2c10c30018e28f6d885e3e2bdf70fe318a590084b6772749175199b00dcfcd2",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 720,
+        "height": 1008
+      },
+      "mode": "RGBA"
+    },
+    "collection.js": {
+      "sourceUrl": "https://zevth.work/collection.js",
+      "localPath": "/assets/originals/_source/collection.js",
+      "bytes": 685,
+      "sha256": "ab7c2e94aeae07b7cfe763dfa12e192793ced6a992b8f25d10335332a666dd13",
+      "contentType": "application/javascript"
+    },
+    "origins.js": {
+      "sourceUrl": "https://zevth.work/origins.js",
+      "localPath": "/assets/originals/_source/origins.js",
+      "bytes": 2356,
+      "sha256": "d974f9a9956262b163d7f031c9681aa92a0268f991b906b2ef546c3879c84587",
+      "contentType": "application/javascript"
+    },
+    "vendor/CSS3DRenderer.js": {
+      "sourceUrl": "https://zevth.work/vendor/CSS3DRenderer.js",
+      "localPath": "/assets/originals/_source/vendor/CSS3DRenderer.js",
+      "bytes": 7804,
+      "sha256": "e776aad62e4988c78e684a40804cf1c61ccd0a04c9162afaeef5fd1b5f36fded",
+      "contentType": "application/javascript"
+    },
+    "vendor/mindar-image-three.prod.js": {
+      "sourceUrl": "https://zevth.work/vendor/mindar-image-three.prod.js",
+      "localPath": "/assets/originals/_source/vendor/mindar-image-three.prod.js",
+      "bytes": 385065,
+      "sha256": "29c8bd077a2b3777ee48a07575004acd947f18f03bf054ce28a21d454ea26f4f",
+      "contentType": "application/javascript"
+    },
+    "vendor/three.module.js": {
+      "sourceUrl": "https://zevth.work/vendor/three.module.js",
+      "localPath": "/assets/originals/_source/vendor/three.module.js",
+      "bytes": 1272972,
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495",
+      "contentType": "application/javascript"
+    },
+    "vendor/controller-mGt1s8dJ.js": {
+      "sourceUrl": "https://zevth.work/vendor/controller-mGt1s8dJ.js",
+      "localPath": "/assets/originals/_source/vendor/controller-mGt1s8dJ.js",
+      "bytes": 2199370,
+      "sha256": "98a90806c01077a46fc5a3daddc6441ac9d61c5b85b3cc09d3f0b2087d228713",
+      "contentType": "application/javascript"
+    },
+    "vendor/ui-fBadYuor.js": {
+      "sourceUrl": "https://zevth.work/vendor/ui-fBadYuor.js",
+      "localPath": "/assets/originals/_source/vendor/ui-fBadYuor.js",
+      "bytes": 4552,
+      "sha256": "aed9538fec28fecfb0a564da48fbf053ac2549d3314746e67182d381b3a24c31",
+      "contentType": "application/javascript"
+    },
+    "app-v5.js": {
+      "sourceUrl": "https://zevth.work/app-v5.js",
+      "localPath": "/assets/originals/_source/app-v5.js",
+      "bytes": 13285,
+      "sha256": "9aaa8cd8661846e02145ab5aa9e7e1c0d51b47f9289c42232768fefd2d4d0ffb",
+      "contentType": "text/javascript"
+    },
+    "art.js": {
+      "sourceUrl": "https://zevth.work/art.js",
+      "localPath": "/assets/originals/_source/art.js",
+      "bytes": 3875,
+      "sha256": "aca82fc0d67c76b42de9dc86e4ea1b9e4c6468b79b8df6787865e2e6465d8f58",
+      "contentType": "text/javascript"
+    },
+    "cards.json": {
+      "sourceUrl": "https://zevth.work/cards.json",
+      "localPath": "/assets/originals/_source/cards.json",
+      "bytes": 3305,
+      "sha256": "17a0b98d9a12ad757201ce04e5ce8e2e05eeba010881767b16ff7bf91f50f463",
+      "contentType": "application/json"
+    },
+    "index.html": {
+      "sourceUrl": "https://zevth.work/",
+      "localPath": "/assets/originals/_source/index.html",
+      "bytes": 6911,
+      "sha256": "e7f0971ad9d0cba5647f029777fa34f86e252dab8fee7f506baae7ae78ee791e",
+      "contentType": "text/html"
+    },
+    "scan.html": {
+      "sourceUrl": "https://zevth.work/scan.html",
+      "localPath": "/assets/originals/_source/scan.html",
+      "bytes": 4089,
+      "sha256": "c4daecaccfd5a0cb6e7316dc02be937873f30841f035123b6df45c96c281df35",
+      "contentType": "text/html"
+    }
+  }
+}

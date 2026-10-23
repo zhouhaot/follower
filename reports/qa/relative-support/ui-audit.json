@@ -1,0 +1,4107 @@
+{
+  "date": "2026-10-14T02:53:25.038Z",
+  "base": "http://127.0.0.1:4173",
+  "checks": [
+    {
+      "name": "1440px index.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开，\n自有回声。"
+        ]
+      }
+    },
+    {
+      "name": "1440px index.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px index.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px index.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px index.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px home 0: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0,
+        "handOpen": 0,
+        "handFrame": 0,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 134.46)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 37.35)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.00004074096682415984,
+          "fingertipPixels": [
+            {
+              "x": 1174.758688723232,
+              "y": 650.4587272678036
+            },
+            {
+              "x": 984.1261968461913,
+              "y": 476.0494848318631
+            },
+            {
+              "x": 933.8565586713812,
+              "y": 445.5083699396346
+            },
+            {
+              "x": 891.0610802316514,
+              "y": 483.9520685467869
+            },
+            {
+              "x": 872.678135889495,
+              "y": 564.9218912423821
+            }
+          ],
+          "palmReferenceY": 816.944457397461,
+          "cardBottomY": 669.8018627770452,
+          "palmBelowCardPixels": 147.1425946204157
+        }
+      }
+    },
+    {
+      "name": "1440px home 0.12: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.12037037037037036,
+        "handOpen": 0.3537786885091666,
+        "handFrame": 11,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 134.46)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 41.3141)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.00004074096682415984,
+          "fingertipPixels": [
+            {
+              "x": 1203.057931305084,
+              "y": 711.5405794096296
+            },
+            {
+              "x": 1009.46857543636,
+              "y": 512.7786276747938
+            },
+            {
+              "x": 939.2748238772765,
+              "y": 488.88840105966665
+            },
+            {
+              "x": 872.0756432542548,
+              "y": 532.821895764675
+            },
+            {
+              "x": 837.0322538521505,
+              "y": 613.7464422100456
+            }
+          ],
+          "palmReferenceY": 820.908568725586,
+          "cardBottomY": 673.7659741051702,
+          "palmBelowCardPixels": 147.1425946204157
+        }
+      }
+    },
+    {
+      "name": "1440px home 0.22: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.22037037037037038,
+        "handOpen": 0.8260390146789578,
+        "handFrame": 26,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 134.46)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 46.6058)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.00004074096682415984,
+          "fingertipPixels": [
+            {
+              "x": 1235.1146036602613,
+              "y": 800.5515380591096
+            },
+            {
+              "x": 1045.4198691054544,
+              "y": 569.4675629345074
+            },
+            {
+              "x": 947.008025230436,
+              "y": 550.4642287342285
+            },
+            {
+              "x": 847.2958153107579,
+              "y": 603.9756260934118
+            },
+            {
+              "x": 791.4796533133447,
+              "y": 692.2299444531745
+            }
+          ],
+          "palmReferenceY": 826.2002111816406,
+          "cardBottomY": 679.057661116889,
+          "palmBelowCardPixels": 147.14255006475162
+        }
+      }
+    },
+    {
+      "name": "1440px home 0.3: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.3,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 134.46)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.00004074096682415984,
+          "fingertipPixels": [
+            {
+              "x": 1243.8961906283666,
+              "y": 831.5727771173842
+            },
+            {
+              "x": 1057.3617584159774,
+              "y": 590.2879417288059
+            },
+            {
+              "x": 949.6148863632789,
+              "y": 571.8100556324862
+            },
+            {
+              "x": 839.5682049342465,
+              "y": 629.0045640155768
+            },
+            {
+              "x": 777.8751943270915,
+              "y": 721.4197288662544
+            }
+          ],
+          "palmReferenceY": 828.1494299316406,
+          "cardBottomY": 681.006879866889,
+          "palmBelowCardPixels": 147.14255006475162
+        }
+      }
+    },
+    {
+      "name": "1440px home 0.42: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.4203703703703704,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 401.786)",
+        "cardTurn": 0.0005711671976131522,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.00003662109372726263,
+          "fingertipPixels": [
+            {
+              "x": 1243.8962080508645,
+              "y": 1136.3239052924328
+            },
+            {
+              "x": 1057.3617624690232,
+              "y": 895.0390526102856
+            },
+            {
+              "x": 949.6148826938006,
+              "y": 876.5611651896033
+            },
+            {
+              "x": 839.5681933774104,
+              "y": 933.7556776719866
+            },
+            {
+              "x": 777.8751783485422,
+              "y": 1026.1708491463214
+            }
+          ],
+          "palmReferenceY": 1132.9005578613283,
+          "cardBottomY": 651.4051807344367,
+          "palmBelowCardPixels": 481.4953771268915
+        }
+      }
+    },
+    {
+      "name": "1440px home 0.56: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.5601851851851852,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 545.31)",
+        "cardTurn": 60.62588904310797,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+          "handLocalTransform": "none",
+          "supportErrorX": -16.95915725708005,
+          "fingertipPixels": [
+            {
+              "x": 1243.8962080508645,
+              "y": 1299.9417946967296
+            },
+            {
+              "x": 1057.3617624690232,
+              "y": 1058.6569420145825
+            },
+            {
+              "x": 949.6148826938006,
+              "y": 1040.1790545939002
+            },
+            {
+              "x": 839.5681933774104,
+              "y": 1097.3735670762835
+            },
+            {
+              "x": 777.8751783485422,
+              "y": 1189.7887385506183
+            }
+          ],
+          "palmReferenceY": 1296.5184472656251,
+          "cardBottomY": 612.8804760582952,
+          "palmBelowCardPixels": 683.6379712073299
+        }
+      }
+    },
+    {
+      "name": "1440px home 0.7: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.7,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 545.31)",
+        "cardTurn": 157.28395061728392,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+          "handLocalTransform": "none",
+          "supportErrorX": -135.91762283325193,
+          "fingertipPixels": [
+            {
+              "x": 1243.8962080508645,
+              "y": 1299.9417946967296
+            },
+            {
+              "x": 1057.3617624690232,
+              "y": 1058.6569420145825
+            },
+            {
+              "x": 949.6148826938006,
+              "y": 1040.1790545939002
+            },
+            {
+              "x": 839.5681933774104,
+              "y": 1097.3735670762835
+            },
+            {
+              "x": 777.8751783485422,
+              "y": 1189.7887385506183
+            }
+          ],
+          "palmReferenceY": 1296.5184472656251,
+          "cardBottomY": 612.8804760582952,
+          "palmBelowCardPixels": 683.6379712073299
+        }
+      }
+    },
+    {
+      "name": "1440px home 0.84: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.8398148148148148,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 545.31)",
+        "cardTurn": 180,
+        "fanOpacity": 0.4154857992842242,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+          "handLocalTransform": "none",
+          "supportErrorX": -244.10466506958005,
+          "fingertipPixels": [
+            {
+              "x": 1243.8962080508645,
+              "y": 1299.9417946967296
+            },
+            {
+              "x": 1057.3617624690232,
+              "y": 1058.6569420145825
+            },
+            {
+              "x": 949.6148826938006,
+              "y": 1040.1790545939002
+            },
+            {
+              "x": 839.5681933774104,
+              "y": 1097.3735670762835
+            },
+            {
+              "x": 777.8751783485422,
+              "y": 1189.7887385506183
+            }
+          ],
+          "palmReferenceY": 1296.5184472656251,
+          "cardBottomY": 612.8804760582952,
+          "palmBelowCardPixels": 683.6379712073299
+        }
+      }
+    },
+    {
+      "name": "1440px home 0.96: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.9601851851851851,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 545.31)",
+        "cardTurn": 180,
+        "fanOpacity": 1,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+          "handLocalTransform": "none",
+          "supportErrorX": -251.96184280395505,
+          "fingertipPixels": [
+            {
+              "x": 1243.8962080508645,
+              "y": 1299.9417946967296
+            },
+            {
+              "x": 1057.3617624690232,
+              "y": 1058.6569420145825
+            },
+            {
+              "x": 949.6148826938006,
+              "y": 1040.1790545939002
+            },
+            {
+              "x": 839.5681933774104,
+              "y": 1097.3735670762835
+            },
+            {
+              "x": 777.8751783485422,
+              "y": 1189.7887385506183
+            }
+          ],
+          "palmReferenceY": 1296.5184472656251,
+          "cardBottomY": 612.8804760582952,
+          "palmBelowCardPixels": 683.6379712073299
+        }
+      }
+    },
+    {
+      "name": "1440px home: fully open before withdrawal",
+      "pass": true,
+      "detail": {
+        "requested": 0.3,
+        "progress": 0.3,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 134.46)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.00004074096682415984,
+          "fingertipPixels": [
+            {
+              "x": 1243.8961906283666,
+              "y": 831.5727771173842
+            },
+            {
+              "x": 1057.3617584159774,
+              "y": 590.2879417288059
+            },
+            {
+              "x": 949.6148863632789,
+              "y": 571.8100556324862
+            },
+            {
+              "x": 839.5682049342465,
+              "y": 629.0045640155768
+            },
+            {
+              "x": 777.8751943270915,
+              "y": 721.4197288662544
+            }
+          ],
+          "palmReferenceY": 828.1494299316406,
+          "cardBottomY": 681.006879866889,
+          "palmBelowCardPixels": 147.14255006475162
+        }
+      }
+    },
+    {
+      "name": "1440px composition: card support reference and palm anchor agree",
+      "pass": true,
+      "detail": {
+        "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 37.35)",
+        "handLocalTransform": "none",
+        "supportErrorX": 0.00004074096682415984,
+        "fingertipPixels": [
+          {
+            "x": 1174.758688723232,
+            "y": 650.4587272678036
+          },
+          {
+            "x": 984.1261968461913,
+            "y": 476.0494848318631
+          },
+          {
+            "x": 933.8565586713812,
+            "y": 445.5083699396346
+          },
+          {
+            "x": 891.0610802316514,
+            "y": 483.9520685467869
+          },
+          {
+            "x": 872.678135889495,
+            "y": 564.9218912423821
+          }
+        ],
+        "palmReferenceY": 816.944457397461,
+        "cardBottomY": 669.8018627770452,
+        "palmBelowCardPixels": 147.1425946204157
+      }
+    },
+    {
+      "name": "1440px composition: palm is visibly below the lower card edge",
+      "pass": true,
+      "detail": {
+        "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 37.35)",
+        "handLocalTransform": "none",
+        "supportErrorX": 0.00004074096682415984,
+        "fingertipPixels": [
+          {
+            "x": 1174.758688723232,
+            "y": 650.4587272678036
+          },
+          {
+            "x": 984.1261968461913,
+            "y": 476.0494848318631
+          },
+          {
+            "x": 933.8565586713812,
+            "y": 445.5083699396346
+          },
+          {
+            "x": 891.0610802316514,
+            "y": 483.9520685467869
+          },
+          {
+            "x": 872.678135889495,
+            "y": 564.9218912423821
+          }
+        ],
+        "palmReferenceY": 816.944457397461,
+        "cardBottomY": 669.8018627770452,
+        "palmBelowCardPixels": 147.1425946204157
+      }
+    },
+    {
+      "name": "1440px composition: all five fingertips remain inside the viewport before release",
+      "pass": true,
+      "detail": [
+        [
+          {
+            "x": 1174.758688723232,
+            "y": 650.4587272678036
+          },
+          {
+            "x": 984.1261968461913,
+            "y": 476.0494848318631
+          },
+          {
+            "x": 933.8565586713812,
+            "y": 445.5083699396346
+          },
+          {
+            "x": 891.0610802316514,
+            "y": 483.9520685467869
+          },
+          {
+            "x": 872.678135889495,
+            "y": 564.9218912423821
+          }
+        ],
+        [
+          {
+            "x": 1203.057931305084,
+            "y": 711.5405794096296
+          },
+          {
+            "x": 1009.46857543636,
+            "y": 512.7786276747938
+          },
+          {
+            "x": 939.2748238772765,
+            "y": 488.88840105966665
+          },
+          {
+            "x": 872.0756432542548,
+            "y": 532.821895764675
+          },
+          {
+            "x": 837.0322538521505,
+            "y": 613.7464422100456
+          }
+        ],
+        [
+          {
+            "x": 1235.1146036602613,
+            "y": 800.5515380591096
+          },
+          {
+            "x": 1045.4198691054544,
+            "y": 569.4675629345074
+          },
+          {
+            "x": 947.008025230436,
+            "y": 550.4642287342285
+          },
+          {
+            "x": 847.2958153107579,
+            "y": 603.9756260934118
+          },
+          {
+            "x": 791.4796533133447,
+            "y": 692.2299444531745
+          }
+        ],
+        [
+          {
+            "x": 1243.8961906283666,
+            "y": 831.5727771173842
+          },
+          {
+            "x": 1057.3617584159774,
+            "y": 590.2879417288059
+          },
+          {
+            "x": 949.6148863632789,
+            "y": 571.8100556324862
+          },
+          {
+            "x": 839.5682049342465,
+            "y": 629.0045640155768
+          },
+          {
+            "x": 777.8751943270915,
+            "y": 721.4197288662544
+          }
+        ]
+      ]
+    },
+    {
+      "name": "1440px home: card turns and five originals appear",
+      "pass": true,
+      "detail": {
+        "requested": 0.96,
+        "progress": 0.9601851851851851,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 545.31)",
+        "cardTurn": 180,
+        "fanOpacity": 1,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+          "handLocalTransform": "none",
+          "supportErrorX": -251.96184280395505,
+          "fingertipPixels": [
+            {
+              "x": 1243.8962080508645,
+              "y": 1299.9417946967296
+            },
+            {
+              "x": 1057.3617624690232,
+              "y": 1058.6569420145825
+            },
+            {
+              "x": 949.6148826938006,
+              "y": 1040.1790545939002
+            },
+            {
+              "x": 839.5681933774104,
+              "y": 1097.3735670762835
+            },
+            {
+              "x": 777.8751783485422,
+              "y": 1189.7887385506183
+            }
+          ],
+          "palmReferenceY": 1296.5184472656251,
+          "cardBottomY": 612.8804760582952,
+          "palmBelowCardPixels": 683.6379712073299
+        }
+      }
+    },
+    {
+      "name": "1440px home: all five fan cards fit the screen",
+      "pass": true,
+      "detail": [
+        {
+          "left": 85.40744018554688,
+          "right": 422.5578918457031,
+          "top": 271.3968505859375,
+          "bottom": 736.1296997070312
+        },
+        {
+          "left": 340.4539794921875,
+          "right": 633.5286865234375,
+          "top": 234.26461791992188,
+          "bottom": 679.1170043945312
+        },
+        {
+          "left": 597.6015625,
+          "right": 842.3984375,
+          "top": 231.703125,
+          "bottom": 650.296875
+        },
+        {
+          "left": 806.4713134765625,
+          "right": 1099.5460205078125,
+          "top": 234.26461791992188,
+          "bottom": 679.1170043945312
+        },
+        {
+          "left": 1017.4420776367188,
+          "right": 1354.592529296875,
+          "top": 271.3968505859375,
+          "bottom": 736.1296997070312
+        }
+      ]
+    },
+    {
+      "name": "1440px reverse 0.96: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.96: rendered pixels match within mean-channel raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "1440px reverse 0.84: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.7: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.56: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.56: rendered pixels match within mean-channel raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "1440px reverse 0.42: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.3: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.22: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.22: rendered pixels match within mean-channel raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "1440px reverse 0.12: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0: rendered pixels match within mean-channel raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "1440px home: native wheel works in both directions",
+      "pass": true,
+      "detail": {
+        "down": 0.16666666666666666,
+        "up": 0
+      }
+    },
+    {
+      "name": "1440px index.html: native scroll unfolds fan",
+      "pass": true,
+      "detail": {
+        "y": 1015,
+        "progress": 0.9398148148148148,
+        "fanOpacity": 0.999997
+      }
+    },
+    {
+      "name": "1440px index.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px index.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开，\n自有回声。"
+        ]
+      }
+    },
+    {
+      "name": "390px index.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px index.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px index.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px index.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px home 0: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0,
+        "handOpen": 0,
+        "handFrame": 0,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 19.4117)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.014879913330076988,
+          "fingertipPixels": [
+            {
+              "x": 283.81029548746665,
+              "y": 692.7067436311918
+            },
+            {
+              "x": 186.47206425105833,
+              "y": 603.6522125654883
+            },
+            {
+              "x": 160.80404923089918,
+              "y": 588.0577140918758
+            },
+            {
+              "x": 138.9523903913032,
+              "y": 607.6873249087948
+            },
+            {
+              "x": 129.5659354928539,
+              "y": 649.0310604237166
+            }
+          ],
+          "palmReferenceY": 777.7154760742187,
+          "cardBottomY": 702.6307597045579,
+          "palmBelowCardPixels": 75.08471636966078
+        }
+      }
+    },
+    {
+      "name": "390px home 0.12: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.11973684210526316,
+        "handOpen": 0.3507373051357233,
+        "handFrame": 11,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 21.4542)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.014879913330076988,
+          "fingertipPixels": [
+            {
+              "x": 298.2600644004724,
+              "y": 723.9139506589981
+            },
+            {
+              "x": 199.4120524174623,
+              "y": 622.4247768421556
+            },
+            {
+              "x": 163.57065626162284,
+              "y": 610.2262683232766
+            },
+            {
+              "x": 129.25830793201067,
+              "y": 632.659002765562
+            },
+            {
+              "x": 111.36492035395872,
+              "y": 673.9796141228107
+            }
+          ],
+          "palmReferenceY": 779.7579730224609,
+          "cardBottomY": 704.6733012084642,
+          "palmBelowCardPixels": 75.08467181399669
+        }
+      }
+    },
+    {
+      "name": "390px home 0.22: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.21973684210526315,
+        "handOpen": 0.8235622769219139,
+        "handFrame": 26,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 24.2077)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.014879913330076988,
+          "fingertipPixels": [
+            {
+              "x": 314.62843976806107,
+              "y": 769.4151108103106
+            },
+            {
+              "x": 217.76902677910766,
+              "y": 651.4220719721343
+            },
+            {
+              "x": 167.51927445326874,
+              "y": 641.7188411481911
+            },
+            {
+              "x": 116.60554644011245,
+              "y": 669.042122148021
+            },
+            {
+              "x": 88.10543704564861,
+              "y": 714.1053733243316
+            }
+          ],
+          "palmReferenceY": 782.5114965820312,
+          "cardBottomY": 707.4267802123704,
+          "palmBelowCardPixels": 75.08471636966078
+        }
+      }
+    },
+    {
+      "name": "390px home 0.3: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.3,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.014877853393556961,
+          "fingertipPixels": [
+            {
+              "x": 319.11236868870446,
+              "y": 785.2869547196387
+            },
+            {
+              "x": 223.86663411064592,
+              "y": 662.0852963632642
+            },
+            {
+              "x": 168.8503571936717,
+              "y": 652.6503635531662
+            },
+            {
+              "x": 112.65978215468101,
+              "y": 681.8542638742383
+            },
+            {
+              "x": 81.15891636857248,
+              "y": 729.042068066512
+            }
+          ],
+          "palmReferenceY": 783.5389706420899,
+          "cardBottomY": 708.4542540104021,
+          "palmBelowCardPixels": 75.0847166316878
+        }
+      }
+    },
+    {
+      "name": "390px home 0.42: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.41973684210526313,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 207.802)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.014877853393556961,
+          "fingertipPixels": [
+            {
+              "x": 319.1123948224513,
+              "y": 939.8043864231295
+            },
+            {
+              "x": 223.86664019021464,
+              "y": 816.6027021264017
+            },
+            {
+              "x": 168.85035168945433,
+              "y": 807.16776732976
+            },
+            {
+              "x": 112.65976481942675,
+              "y": 836.3716737997711
+            },
+            {
+              "x": 81.15889240074853,
+              "y": 883.5594879275304
+            }
+          ],
+          "palmReferenceY": 938.056401977539,
+          "cardBottomY": 693.4884947330584,
+          "palmBelowCardPixels": 244.5679072444807
+        }
+      }
+    },
+    {
+      "name": "390px home 0.56: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.5605263157894737,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+        "cardTurn": 60.86932618943478,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 1.6910502624511707,
+          "fingertipPixels": [
+            {
+              "x": 319.1123948224513,
+              "y": 1024.4393961887545
+            },
+            {
+              "x": 223.86664019021464,
+              "y": 901.2377118920267
+            },
+            {
+              "x": 168.85035168945433,
+              "y": 891.802777095385
+            },
+            {
+              "x": 112.65976481942675,
+              "y": 921.0066835653961
+            },
+            {
+              "x": 81.15889240074853,
+              "y": 968.1944976931554
+            }
+          ],
+          "palmReferenceY": 1022.691411743164,
+          "cardBottomY": 673.6684794311204,
+          "palmBelowCardPixels": 349.0229323120436
+        }
+      }
+    },
+    {
+      "name": "390px home 0.7: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.7,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+        "cardTurn": 157.28395061728392,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 13.306353302001952,
+          "fingertipPixels": [
+            {
+              "x": 319.1123948224513,
+              "y": 1024.4393961887545
+            },
+            {
+              "x": 223.86664019021464,
+              "y": 901.2377118920267
+            },
+            {
+              "x": 168.85035168945433,
+              "y": 891.802777095385
+            },
+            {
+              "x": 112.65976481942675,
+              "y": 921.0066835653961
+            },
+            {
+              "x": 81.15889240074853,
+              "y": 968.1944976931554
+            }
+          ],
+          "palmReferenceY": 1022.691411743164,
+          "cardBottomY": 673.6684794311204,
+          "palmBelowCardPixels": 349.0229323120436
+        }
+      }
+    },
+    {
+      "name": "390px home 0.84: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.8394736842105263,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+        "cardTurn": 180,
+        "fanOpacity": 0.412680684875098,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 23.873465270996093,
+          "fingertipPixels": [
+            {
+              "x": 319.1123948224513,
+              "y": 1024.4393961887545
+            },
+            {
+              "x": 223.86664019021464,
+              "y": 901.2377118920267
+            },
+            {
+              "x": 168.85035168945433,
+              "y": 891.802777095385
+            },
+            {
+              "x": 112.65976481942675,
+              "y": 921.0066835653961
+            },
+            {
+              "x": 81.15889240074853,
+              "y": 968.1944976931554
+            }
+          ],
+          "palmReferenceY": 1022.691411743164,
+          "cardBottomY": 673.6684794311204,
+          "palmBelowCardPixels": 349.0229323120436
+        }
+      }
+    },
+    {
+      "name": "390px home 0.96: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.9605263157894737,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+        "cardTurn": 180,
+        "fanOpacity": 1,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 24.65442153930664,
+          "fingertipPixels": [
+            {
+              "x": 319.1123948224513,
+              "y": 1024.4393961887545
+            },
+            {
+              "x": 223.86664019021464,
+              "y": 901.2377118920267
+            },
+            {
+              "x": 168.85035168945433,
+              "y": 891.802777095385
+            },
+            {
+              "x": 112.65976481942675,
+              "y": 921.0066835653961
+            },
+            {
+              "x": 81.15889240074853,
+              "y": 968.1944976931554
+            }
+          ],
+          "palmReferenceY": 1022.691411743164,
+          "cardBottomY": 673.6684794311204,
+          "palmBelowCardPixels": 349.0229323120436
+        }
+      }
+    },
+    {
+      "name": "390px home: fully open before withdrawal",
+      "pass": true,
+      "detail": {
+        "requested": 0.3,
+        "progress": 0.3,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.014877853393556961,
+          "fingertipPixels": [
+            {
+              "x": 319.11236868870446,
+              "y": 785.2869547196387
+            },
+            {
+              "x": 223.86663411064592,
+              "y": 662.0852963632642
+            },
+            {
+              "x": 168.8503571936717,
+              "y": 652.6503635531662
+            },
+            {
+              "x": 112.65978215468101,
+              "y": 681.8542638742383
+            },
+            {
+              "x": 81.15891636857248,
+              "y": 729.042068066512
+            }
+          ],
+          "palmReferenceY": 783.5389706420899,
+          "cardBottomY": 708.4542540104021,
+          "palmBelowCardPixels": 75.0847166316878
+        }
+      }
+    },
+    {
+      "name": "390px composition: card support reference and palm anchor agree",
+      "pass": true,
+      "detail": {
+        "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 19.4117)",
+        "handLocalTransform": "none",
+        "supportErrorX": 0.014879913330076988,
+        "fingertipPixels": [
+          {
+            "x": 283.81029548746665,
+            "y": 692.7067436311918
+          },
+          {
+            "x": 186.47206425105833,
+            "y": 603.6522125654883
+          },
+          {
+            "x": 160.80404923089918,
+            "y": 588.0577140918758
+          },
+          {
+            "x": 138.9523903913032,
+            "y": 607.6873249087948
+          },
+          {
+            "x": 129.5659354928539,
+            "y": 649.0310604237166
+          }
+        ],
+        "palmReferenceY": 777.7154760742187,
+        "cardBottomY": 702.6307597045579,
+        "palmBelowCardPixels": 75.08471636966078
+      }
+    },
+    {
+      "name": "390px composition: palm is visibly below the lower card edge",
+      "pass": true,
+      "detail": {
+        "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 19.4117)",
+        "handLocalTransform": "none",
+        "supportErrorX": 0.014879913330076988,
+        "fingertipPixels": [
+          {
+            "x": 283.81029548746665,
+            "y": 692.7067436311918
+          },
+          {
+            "x": 186.47206425105833,
+            "y": 603.6522125654883
+          },
+          {
+            "x": 160.80404923089918,
+            "y": 588.0577140918758
+          },
+          {
+            "x": 138.9523903913032,
+            "y": 607.6873249087948
+          },
+          {
+            "x": 129.5659354928539,
+            "y": 649.0310604237166
+          }
+        ],
+        "palmReferenceY": 777.7154760742187,
+        "cardBottomY": 702.6307597045579,
+        "palmBelowCardPixels": 75.08471636966078
+      }
+    },
+    {
+      "name": "390px composition: all five fingertips remain inside the viewport before release",
+      "pass": true,
+      "detail": [
+        [
+          {
+            "x": 283.81029548746665,
+            "y": 692.7067436311918
+          },
+          {
+            "x": 186.47206425105833,
+            "y": 603.6522125654883
+          },
+          {
+            "x": 160.80404923089918,
+            "y": 588.0577140918758
+          },
+          {
+            "x": 138.9523903913032,
+            "y": 607.6873249087948
+          },
+          {
+            "x": 129.5659354928539,
+            "y": 649.0310604237166
+          }
+        ],
+        [
+          {
+            "x": 298.2600644004724,
+            "y": 723.9139506589981
+          },
+          {
+            "x": 199.4120524174623,
+            "y": 622.4247768421556
+          },
+          {
+            "x": 163.57065626162284,
+            "y": 610.2262683232766
+          },
+          {
+            "x": 129.25830793201067,
+            "y": 632.659002765562
+          },
+          {
+            "x": 111.36492035395872,
+            "y": 673.9796141228107
+          }
+        ],
+        [
+          {
+            "x": 314.62843976806107,
+            "y": 769.4151108103106
+          },
+          {
+            "x": 217.76902677910766,
+            "y": 651.4220719721343
+          },
+          {
+            "x": 167.51927445326874,
+            "y": 641.7188411481911
+          },
+          {
+            "x": 116.60554644011245,
+            "y": 669.042122148021
+          },
+          {
+            "x": 88.10543704564861,
+            "y": 714.1053733243316
+          }
+        ],
+        [
+          {
+            "x": 319.11236868870446,
+            "y": 785.2869547196387
+          },
+          {
+            "x": 223.86663411064592,
+            "y": 662.0852963632642
+          },
+          {
+            "x": 168.8503571936717,
+            "y": 652.6503635531662
+          },
+          {
+            "x": 112.65978215468101,
+            "y": 681.8542638742383
+          },
+          {
+            "x": 81.15891636857248,
+            "y": 729.042068066512
+          }
+        ]
+      ]
+    },
+    {
+      "name": "390px home: card turns and five originals appear",
+      "pass": true,
+      "detail": {
+        "requested": 0.96,
+        "progress": 0.9605263157894737,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+        "cardTurn": 180,
+        "fanOpacity": 1,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 24.65442153930664,
+          "fingertipPixels": [
+            {
+              "x": 319.1123948224513,
+              "y": 1024.4393961887545
+            },
+            {
+              "x": 223.86664019021464,
+              "y": 901.2377118920267
+            },
+            {
+              "x": 168.85035168945433,
+              "y": 891.802777095385
+            },
+            {
+              "x": 112.65976481942675,
+              "y": 921.0066835653961
+            },
+            {
+              "x": 81.15889240074853,
+              "y": 968.1944976931554
+            }
+          ],
+          "palmReferenceY": 1022.691411743164,
+          "cardBottomY": 673.6684794311204,
+          "palmBelowCardPixels": 349.0229323120436
+        }
+      }
+    },
+    {
+      "name": "390px home: all five fan cards fit the screen",
+      "pass": true,
+      "detail": [
+        {
+          "left": 12.638286590576172,
+          "right": 163.04203414916992,
+          "top": 404.1227111816406,
+          "bottom": 611.4151611328125
+        },
+        {
+          "left": 76.05304718017578,
+          "right": 206.78711700439453,
+          "top": 337.9030456542969,
+          "bottom": 536.3251953125
+        },
+        {
+          "left": 140.40625,
+          "right": 249.59375,
+          "top": 320.2109375,
+          "bottom": 506.9140625
+        },
+        {
+          "left": 183.21287536621094,
+          "right": 313.94696044921875,
+          "top": 337.9030456542969,
+          "bottom": 536.3251953125
+        },
+        {
+          "left": 226.9579620361328,
+          "right": 377.3617248535156,
+          "top": 404.1227111816406,
+          "bottom": 611.4151611328125
+        }
+      ]
+    },
+    {
+      "name": "390px reverse 0.96: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.96: rendered pixels match within mean-channel raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "390px reverse 0.84: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.7: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.56: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.56: rendered pixels match within mean-channel raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "390px reverse 0.42: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.3: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.22: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.22: rendered pixels match within mean-channel raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "390px reverse 0.12: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0: rendered pixels match within mean-channel raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": false,
+        "meanChannelDelta": 0.03208773848584275,
+        "maxChannelDelta": 13,
+        "changedChannelFraction": 0.020986754162109614
+      }
+    },
+    {
+      "name": "390px home: native wheel works in both directions",
+      "pass": true,
+      "detail": {
+        "down": 0.23684210526315788,
+        "up": 0
+      }
+    },
+    {
+      "name": "390px index.html: native scroll unfolds fan",
+      "pass": true,
+      "detail": {
+        "y": 714,
+        "progress": 0.9394736842105263,
+        "fanOpacity": 0.999974
+      }
+    },
+    {
+      "name": "390px index.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px index.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开，\n自有回声。"
+        ]
+      }
+    },
+    {
+      "name": "320px index.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px index.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px index.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px index.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px home 0: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0,
+        "handOpen": 0,
+        "handFrame": 0,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 19.4117)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.014895172119139488,
+          "fingertipPixels": [
+            {
+              "x": 248.81026496988852,
+              "y": 692.7067436311918
+            },
+            {
+              "x": 151.4720337334802,
+              "y": 603.6522125654883
+            },
+            {
+              "x": 125.80401871332106,
+              "y": 588.0577140918758
+            },
+            {
+              "x": 103.95235987372507,
+              "y": 607.6873249087948
+            },
+            {
+              "x": 94.56590497527577,
+              "y": 649.0310604237166
+            }
+          ],
+          "palmReferenceY": 777.7154760742187,
+          "cardBottomY": 702.6307597045579,
+          "palmBelowCardPixels": 75.08471636966078
+        }
+      }
+    },
+    {
+      "name": "320px home 0.12: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.11973684210526316,
+        "handOpen": 0.3507373051357233,
+        "handFrame": 11,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 21.4542)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.014895172119139488,
+          "fingertipPixels": [
+            {
+              "x": 263.2600338828943,
+              "y": 723.9139506589981
+            },
+            {
+              "x": 164.41202189988417,
+              "y": 622.4247768421556
+            },
+            {
+              "x": 128.57062574404472,
+              "y": 610.2262683232766
+            },
+            {
+              "x": 94.25827741443254,
+              "y": 632.659002765562
+            },
+            {
+              "x": 76.3648898363806,
+              "y": 673.9796141228107
+            }
+          ],
+          "palmReferenceY": 779.7579730224609,
+          "cardBottomY": 704.6733012084642,
+          "palmBelowCardPixels": 75.08467181399669
+        }
+      }
+    },
+    {
+      "name": "320px home 0.22: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.21973684210526315,
+        "handOpen": 0.8235622769219139,
+        "handFrame": 26,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 24.2077)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.014895172119139488,
+          "fingertipPixels": [
+            {
+              "x": 279.62840925048295,
+              "y": 769.4151108103106
+            },
+            {
+              "x": 182.76899626152954,
+              "y": 651.4220719721343
+            },
+            {
+              "x": 132.5192439356906,
+              "y": 641.7188411481911
+            },
+            {
+              "x": 81.60551592253432,
+              "y": 669.042122148021
+            },
+            {
+              "x": 53.10540652807049,
+              "y": 714.1053733243316
+            }
+          ],
+          "palmReferenceY": 782.5114965820312,
+          "cardBottomY": 707.4267802123704,
+          "palmBelowCardPixels": 75.08471636966078
+        }
+      }
+    },
+    {
+      "name": "320px home 0.3: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.3,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.014893112182619461,
+          "fingertipPixels": [
+            {
+              "x": 284.11233817112634,
+              "y": 785.2869547196387
+            },
+            {
+              "x": 188.8666035930678,
+              "y": 662.0852963632642
+            },
+            {
+              "x": 133.85032667609357,
+              "y": 652.6503635531662
+            },
+            {
+              "x": 77.65975163710289,
+              "y": 681.8542638742383
+            },
+            {
+              "x": 46.15888585099435,
+              "y": 729.042068066512
+            }
+          ],
+          "palmReferenceY": 783.5389706420899,
+          "cardBottomY": 708.4542540104021,
+          "palmBelowCardPixels": 75.0847166316878
+        }
+      }
+    },
+    {
+      "name": "320px home 0.42: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.41973684210526313,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 207.802)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.014893112182619461,
+          "fingertipPixels": [
+            {
+              "x": 284.11236430487315,
+              "y": 939.8043864231295
+            },
+            {
+              "x": 188.8666096726365,
+              "y": 816.6027021264017
+            },
+            {
+              "x": 133.8503211718762,
+              "y": 807.16776732976
+            },
+            {
+              "x": 77.65973430184863,
+              "y": 836.3716737997711
+            },
+            {
+              "x": 46.1588618831704,
+              "y": 883.5594879275304
+            }
+          ],
+          "palmReferenceY": 938.056401977539,
+          "cardBottomY": 693.4884947330584,
+          "palmBelowCardPixels": 244.5679072444807
+        }
+      }
+    },
+    {
+      "name": "320px home 0.56: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.5605263157894737,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+        "cardTurn": 60.86932618943478,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 1.6910998535156239,
+          "fingertipPixels": [
+            {
+              "x": 284.11236430487315,
+              "y": 1024.4393961887545
+            },
+            {
+              "x": 188.8666096726365,
+              "y": 901.2377118920267
+            },
+            {
+              "x": 133.8503211718762,
+              "y": 891.802777095385
+            },
+            {
+              "x": 77.65973430184863,
+              "y": 921.0066835653961
+            },
+            {
+              "x": 46.1588618831704,
+              "y": 968.1944976931554
+            }
+          ],
+          "palmReferenceY": 1022.691411743164,
+          "cardBottomY": 673.6684794311204,
+          "palmBelowCardPixels": 349.0229323120436
+        }
+      }
+    },
+    {
+      "name": "320px home 0.7: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.7,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+        "cardTurn": 157.28395061728392,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 13.306383819580077,
+          "fingertipPixels": [
+            {
+              "x": 284.11236430487315,
+              "y": 1024.4393961887545
+            },
+            {
+              "x": 188.8666096726365,
+              "y": 901.2377118920267
+            },
+            {
+              "x": 133.8503211718762,
+              "y": 891.802777095385
+            },
+            {
+              "x": 77.65973430184863,
+              "y": 921.0066835653961
+            },
+            {
+              "x": 46.1588618831704,
+              "y": 968.1944976931554
+            }
+          ],
+          "palmReferenceY": 1022.691411743164,
+          "cardBottomY": 673.6684794311204,
+          "palmBelowCardPixels": 349.0229323120436
+        }
+      }
+    },
+    {
+      "name": "320px home 0.84: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.8394736842105263,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+        "cardTurn": 180,
+        "fanOpacity": 0.412680684875098,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 23.873509140014647,
+          "fingertipPixels": [
+            {
+              "x": 284.11236430487315,
+              "y": 1024.4393961887545
+            },
+            {
+              "x": 188.8666096726365,
+              "y": 901.2377118920267
+            },
+            {
+              "x": 133.8503211718762,
+              "y": 891.802777095385
+            },
+            {
+              "x": 77.65973430184863,
+              "y": 921.0066835653961
+            },
+            {
+              "x": 46.1588618831704,
+              "y": 968.1944976931554
+            }
+          ],
+          "palmReferenceY": 1022.691411743164,
+          "cardBottomY": 673.6684794311204,
+          "palmBelowCardPixels": 349.0229323120436
+        }
+      }
+    },
+    {
+      "name": "320px home 0.96: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.9605263157894737,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+        "cardTurn": 180,
+        "fanOpacity": 1,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 24.654436798095702,
+          "fingertipPixels": [
+            {
+              "x": 284.11236430487315,
+              "y": 1024.4393961887545
+            },
+            {
+              "x": 188.8666096726365,
+              "y": 901.2377118920267
+            },
+            {
+              "x": 133.8503211718762,
+              "y": 891.802777095385
+            },
+            {
+              "x": 77.65973430184863,
+              "y": 921.0066835653961
+            },
+            {
+              "x": 46.1588618831704,
+              "y": 968.1944976931554
+            }
+          ],
+          "palmReferenceY": 1022.691411743164,
+          "cardBottomY": 673.6684794311204,
+          "palmBelowCardPixels": 349.0229323120436
+        }
+      }
+    },
+    {
+      "name": "320px home: fully open before withdrawal",
+      "pass": true,
+      "detail": {
+        "requested": 0.3,
+        "progress": 0.3,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 0.014893112182619461,
+          "fingertipPixels": [
+            {
+              "x": 284.11233817112634,
+              "y": 785.2869547196387
+            },
+            {
+              "x": 188.8666035930678,
+              "y": 662.0852963632642
+            },
+            {
+              "x": 133.85032667609357,
+              "y": 652.6503635531662
+            },
+            {
+              "x": 77.65975163710289,
+              "y": 681.8542638742383
+            },
+            {
+              "x": 46.15888585099435,
+              "y": 729.042068066512
+            }
+          ],
+          "palmReferenceY": 783.5389706420899,
+          "cardBottomY": 708.4542540104021,
+          "palmBelowCardPixels": 75.0847166316878
+        }
+      }
+    },
+    {
+      "name": "320px composition: card support reference and palm anchor agree",
+      "pass": true,
+      "detail": {
+        "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 19.4117)",
+        "handLocalTransform": "none",
+        "supportErrorX": 0.014895172119139488,
+        "fingertipPixels": [
+          {
+            "x": 248.81026496988852,
+            "y": 692.7067436311918
+          },
+          {
+            "x": 151.4720337334802,
+            "y": 603.6522125654883
+          },
+          {
+            "x": 125.80401871332106,
+            "y": 588.0577140918758
+          },
+          {
+            "x": 103.95235987372507,
+            "y": 607.6873249087948
+          },
+          {
+            "x": 94.56590497527577,
+            "y": 649.0310604237166
+          }
+        ],
+        "palmReferenceY": 777.7154760742187,
+        "cardBottomY": 702.6307597045579,
+        "palmBelowCardPixels": 75.08471636966078
+      }
+    },
+    {
+      "name": "320px composition: palm is visibly below the lower card edge",
+      "pass": true,
+      "detail": {
+        "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 19.4117)",
+        "handLocalTransform": "none",
+        "supportErrorX": 0.014895172119139488,
+        "fingertipPixels": [
+          {
+            "x": 248.81026496988852,
+            "y": 692.7067436311918
+          },
+          {
+            "x": 151.4720337334802,
+            "y": 603.6522125654883
+          },
+          {
+            "x": 125.80401871332106,
+            "y": 588.0577140918758
+          },
+          {
+            "x": 103.95235987372507,
+            "y": 607.6873249087948
+          },
+          {
+            "x": 94.56590497527577,
+            "y": 649.0310604237166
+          }
+        ],
+        "palmReferenceY": 777.7154760742187,
+        "cardBottomY": 702.6307597045579,
+        "palmBelowCardPixels": 75.08471636966078
+      }
+    },
+    {
+      "name": "320px composition: all five fingertips remain inside the viewport before release",
+      "pass": true,
+      "detail": [
+        [
+          {
+            "x": 248.81026496988852,
+            "y": 692.7067436311918
+          },
+          {
+            "x": 151.4720337334802,
+            "y": 603.6522125654883
+          },
+          {
+            "x": 125.80401871332106,
+            "y": 588.0577140918758
+          },
+          {
+            "x": 103.95235987372507,
+            "y": 607.6873249087948
+          },
+          {
+            "x": 94.56590497527577,
+            "y": 649.0310604237166
+          }
+        ],
+        [
+          {
+            "x": 263.2600338828943,
+            "y": 723.9139506589981
+          },
+          {
+            "x": 164.41202189988417,
+            "y": 622.4247768421556
+          },
+          {
+            "x": 128.57062574404472,
+            "y": 610.2262683232766
+          },
+          {
+            "x": 94.25827741443254,
+            "y": 632.659002765562
+          },
+          {
+            "x": 76.3648898363806,
+            "y": 673.9796141228107
+          }
+        ],
+        [
+          {
+            "x": 279.62840925048295,
+            "y": 769.4151108103106
+          },
+          {
+            "x": 182.76899626152954,
+            "y": 651.4220719721343
+          },
+          {
+            "x": 132.5192439356906,
+            "y": 641.7188411481911
+          },
+          {
+            "x": 81.60551592253432,
+            "y": 669.042122148021
+          },
+          {
+            "x": 53.10540652807049,
+            "y": 714.1053733243316
+          }
+        ],
+        [
+          {
+            "x": 284.11233817112634,
+            "y": 785.2869547196387
+          },
+          {
+            "x": 188.8666035930678,
+            "y": 662.0852963632642
+          },
+          {
+            "x": 133.85032667609357,
+            "y": 652.6503635531662
+          },
+          {
+            "x": 77.65975163710289,
+            "y": 681.8542638742383
+          },
+          {
+            "x": 46.15888585099435,
+            "y": 729.042068066512
+          }
+        ]
+      ]
+    },
+    {
+      "name": "320px home: card turns and five originals appear",
+      "pass": true,
+      "detail": {
+        "requested": 0.96,
+        "progress": 0.9605263157894737,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+        "cardTurn": 180,
+        "fanOpacity": 1,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0,
+        "composition": {
+          "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+          "handLocalTransform": "none",
+          "supportErrorX": 24.654436798095702,
+          "fingertipPixels": [
+            {
+              "x": 284.11236430487315,
+              "y": 1024.4393961887545
+            },
+            {
+              "x": 188.8666096726365,
+              "y": 901.2377118920267
+            },
+            {
+              "x": 133.8503211718762,
+              "y": 891.802777095385
+            },
+            {
+              "x": 77.65973430184863,
+              "y": 921.0066835653961
+            },
+            {
+              "x": 46.1588618831704,
+              "y": 968.1944976931554
+            }
+          ],
+          "palmReferenceY": 1022.691411743164,
+          "cardBottomY": 673.6684794311204,
+          "palmBelowCardPixels": 349.0229323120436
+        }
+      }
+    },
+    {
+      "name": "320px home: all five fan cards fit the screen",
+      "pass": true,
+      "detail": [
+        {
+          "left": 10.366647720336914,
+          "right": 133.78131294250488,
+          "top": 422.72015380859375,
+          "bottom": 592.8177490234375
+        },
+        {
+          "left": 62.399864196777344,
+          "right": 169.6741180419922,
+          "top": 355.70452880859375,
+          "bottom": 518.523681640625
+        },
+        {
+          "left": 115.203125,
+          "right": 204.796875,
+          "top": 336.9609375,
+          "bottom": 490.1640625
+        },
+        {
+          "left": 150.3258819580078,
+          "right": 257.6001281738281,
+          "top": 355.70452880859375,
+          "bottom": 518.523681640625
+        },
+        {
+          "left": 186.21868896484375,
+          "right": 309.63336181640625,
+          "top": 422.72015380859375,
+          "bottom": 592.8177490234375
+        }
+      ]
+    },
+    {
+      "name": "320px reverse 0.96: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.84: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.7: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.56: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.42: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.3: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.22: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.12: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px home: native wheel works in both directions",
+      "pass": true,
+      "detail": {
+        "down": 0.23684210526315788,
+        "up": 0
+      }
+    },
+    {
+      "name": "320px index.html: native scroll unfolds fan",
+      "pass": true,
+      "detail": {
+        "y": 714,
+        "progress": 0.9394736842105263,
+        "fanOpacity": 0.999974
+      }
+    },
+    {
+      "name": "320px index.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "Reduced motion: no animated or pinned exhibition",
+      "pass": true,
+      "detail": {
+        "matches": true,
+        "scrollBehavior": "auto",
+        "sticky": "relative",
+        "fanDisplay": "none",
+        "modelReady": true,
+        "progress": "0",
+        "heroTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "animations": 0
+      }
+    },
+    {
+      "name": "Reduced motion: finite scene progress",
+      "pass": true,
+      "detail": {
+        "matches": true,
+        "scrollBehavior": "auto",
+        "sticky": "relative",
+        "fanDisplay": "none",
+        "modelReady": true,
+        "progress": "0",
+        "heroTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "animations": 0
+      }
+    },
+    {
+      "name": "Unavailable 3D module: original card fallback is visible",
+      "pass": true
+    },
+    {
+      "name": "Fallback: card rotates with native scroll",
+      "pass": true
+    },
+    {
+      "name": "Unavailable hand manifest: initial decoded palm remains",
+      "pass": true
+    },
+    {
+      "name": "Unavailable hand manifest: five-card catalogue remains usable",
+      "pass": true
+    },
+    {
+      "name": "Image decode failure: last complete hand layers survive",
+      "pass": true
+    },
+    {
+      "name": "Image decode failure: no false collection",
+      "pass": true
+    }
+  ],
+  "routes": [
+    {
+      "route": "index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花开，\n自有回声。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "index.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花开，\n自有回声。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        {
+          "tag": "DIV",
+          "class": "hero-model model-ready",
+          "left": -23.40625,
+          "right": 413.390625
+        }
+      ],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "index.html",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花开，\n自有回声。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        {
+          "tag": "DIV",
+          "class": "hero-model model-ready",
+          "left": -19.203125,
+          "right": 339.1875
+        }
+      ],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    }
+  ],
+  "screenshots": [
+    "1440-index-html.png",
+    "1440-home-phase-00.png",
+    "1440-home-phase-12.png",
+    "1440-home-phase-22.png",
+    "1440-home-phase-30.png",
+    "1440-home-phase-42.png",
+    "1440-home-phase-56.png",
+    "1440-home-phase-70.png",
+    "1440-home-phase-84.png",
+    "1440-home-phase-96.png",
+    "1440-home-reverse-96.png",
+    "1440-home-reverse-56.png",
+    "1440-home-reverse-22.png",
+    "1440-home-reverse-0.png",
+    "1440-home-scrolled.png",
+    "390-index-html.png",
+    "390-home-phase-00.png",
+    "390-home-phase-12.png",
+    "390-home-phase-22.png",
+    "390-home-phase-30.png",
+    "390-home-phase-42.png",
+    "390-home-phase-56.png",
+    "390-home-phase-70.png",
+    "390-home-phase-84.png",
+    "390-home-phase-96.png",
+    "390-home-reverse-96.png",
+    "390-home-reverse-56.png",
+    "390-home-reverse-22.png",
+    "390-home-reverse-0.png",
+    "390-home-scrolled.png",
+    "1440-home-reduced-motion.png",
+    "390-home-fallback.png"
+  ],
+  "motion": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "samples": [
+        {
+          "requested": 0,
+          "progress": 0,
+          "handOpen": 0,
+          "handFrame": 0,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 134.46)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 37.35)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.00004074096682415984,
+            "fingertipPixels": [
+              {
+                "x": 1174.758688723232,
+                "y": 650.4587272678036
+              },
+              {
+                "x": 984.1261968461913,
+                "y": 476.0494848318631
+              },
+              {
+                "x": 933.8565586713812,
+                "y": 445.5083699396346
+              },
+              {
+                "x": 891.0610802316514,
+                "y": 483.9520685467869
+              },
+              {
+                "x": 872.678135889495,
+                "y": 564.9218912423821
+              }
+            ],
+            "palmReferenceY": 816.944457397461,
+            "cardBottomY": 669.8018627770452,
+            "palmBelowCardPixels": 147.1425946204157
+          }
+        },
+        {
+          "requested": 0.12,
+          "progress": 0.12037037037037036,
+          "handOpen": 0.3537786885091666,
+          "handFrame": 11,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 134.46)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 41.3141)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.00004074096682415984,
+            "fingertipPixels": [
+              {
+                "x": 1203.057931305084,
+                "y": 711.5405794096296
+              },
+              {
+                "x": 1009.46857543636,
+                "y": 512.7786276747938
+              },
+              {
+                "x": 939.2748238772765,
+                "y": 488.88840105966665
+              },
+              {
+                "x": 872.0756432542548,
+                "y": 532.821895764675
+              },
+              {
+                "x": 837.0322538521505,
+                "y": 613.7464422100456
+              }
+            ],
+            "palmReferenceY": 820.908568725586,
+            "cardBottomY": 673.7659741051702,
+            "palmBelowCardPixels": 147.1425946204157
+          }
+        },
+        {
+          "requested": 0.22,
+          "progress": 0.22037037037037038,
+          "handOpen": 0.8260390146789578,
+          "handFrame": 26,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 134.46)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 46.6058)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.00004074096682415984,
+            "fingertipPixels": [
+              {
+                "x": 1235.1146036602613,
+                "y": 800.5515380591096
+              },
+              {
+                "x": 1045.4198691054544,
+                "y": 569.4675629345074
+              },
+              {
+                "x": 947.008025230436,
+                "y": 550.4642287342285
+              },
+              {
+                "x": 847.2958153107579,
+                "y": 603.9756260934118
+              },
+              {
+                "x": 791.4796533133447,
+                "y": 692.2299444531745
+              }
+            ],
+            "palmReferenceY": 826.2002111816406,
+            "cardBottomY": 679.057661116889,
+            "palmBelowCardPixels": 147.14255006475162
+          }
+        },
+        {
+          "requested": 0.3,
+          "progress": 0.3,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 134.46)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.00004074096682415984,
+            "fingertipPixels": [
+              {
+                "x": 1243.8961906283666,
+                "y": 831.5727771173842
+              },
+              {
+                "x": 1057.3617584159774,
+                "y": 590.2879417288059
+              },
+              {
+                "x": 949.6148863632789,
+                "y": 571.8100556324862
+              },
+              {
+                "x": 839.5682049342465,
+                "y": 629.0045640155768
+              },
+              {
+                "x": 777.8751943270915,
+                "y": 721.4197288662544
+              }
+            ],
+            "palmReferenceY": 828.1494299316406,
+            "cardBottomY": 681.006879866889,
+            "palmBelowCardPixels": 147.14255006475162
+          }
+        },
+        {
+          "requested": 0.42,
+          "progress": 0.4203703703703704,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 401.786)",
+          "cardTurn": 0.0005711671976131522,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.00003662109372726263,
+            "fingertipPixels": [
+              {
+                "x": 1243.8962080508645,
+                "y": 1136.3239052924328
+              },
+              {
+                "x": 1057.3617624690232,
+                "y": 895.0390526102856
+              },
+              {
+                "x": 949.6148826938006,
+                "y": 876.5611651896033
+              },
+              {
+                "x": 839.5681933774104,
+                "y": 933.7556776719866
+              },
+              {
+                "x": 777.8751783485422,
+                "y": 1026.1708491463214
+              }
+            ],
+            "palmReferenceY": 1132.9005578613283,
+            "cardBottomY": 651.4051807344367,
+            "palmBelowCardPixels": 481.4953771268915
+          }
+        },
+        {
+          "requested": 0.56,
+          "progress": 0.5601851851851852,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 545.31)",
+          "cardTurn": 60.62588904310797,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+            "handLocalTransform": "none",
+            "supportErrorX": -16.95915725708005,
+            "fingertipPixels": [
+              {
+                "x": 1243.8962080508645,
+                "y": 1299.9417946967296
+              },
+              {
+                "x": 1057.3617624690232,
+                "y": 1058.6569420145825
+              },
+              {
+                "x": 949.6148826938006,
+                "y": 1040.1790545939002
+              },
+              {
+                "x": 839.5681933774104,
+                "y": 1097.3735670762835
+              },
+              {
+                "x": 777.8751783485422,
+                "y": 1189.7887385506183
+              }
+            ],
+            "palmReferenceY": 1296.5184472656251,
+            "cardBottomY": 612.8804760582952,
+            "palmBelowCardPixels": 683.6379712073299
+          }
+        },
+        {
+          "requested": 0.7,
+          "progress": 0.7,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 545.31)",
+          "cardTurn": 157.28395061728392,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+            "handLocalTransform": "none",
+            "supportErrorX": -135.91762283325193,
+            "fingertipPixels": [
+              {
+                "x": 1243.8962080508645,
+                "y": 1299.9417946967296
+              },
+              {
+                "x": 1057.3617624690232,
+                "y": 1058.6569420145825
+              },
+              {
+                "x": 949.6148826938006,
+                "y": 1040.1790545939002
+              },
+              {
+                "x": 839.5681933774104,
+                "y": 1097.3735670762835
+              },
+              {
+                "x": 777.8751783485422,
+                "y": 1189.7887385506183
+              }
+            ],
+            "palmReferenceY": 1296.5184472656251,
+            "cardBottomY": 612.8804760582952,
+            "palmBelowCardPixels": 683.6379712073299
+          }
+        },
+        {
+          "requested": 0.84,
+          "progress": 0.8398148148148148,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 545.31)",
+          "cardTurn": 180,
+          "fanOpacity": 0.4154857992842242,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+            "handLocalTransform": "none",
+            "supportErrorX": -244.10466506958005,
+            "fingertipPixels": [
+              {
+                "x": 1243.8962080508645,
+                "y": 1299.9417946967296
+              },
+              {
+                "x": 1057.3617624690232,
+                "y": 1058.6569420145825
+              },
+              {
+                "x": 949.6148826938006,
+                "y": 1040.1790545939002
+              },
+              {
+                "x": 839.5681933774104,
+                "y": 1097.3735670762835
+              },
+              {
+                "x": 777.8751783485422,
+                "y": 1189.7887385506183
+              }
+            ],
+            "palmReferenceY": 1296.5184472656251,
+            "cardBottomY": 612.8804760582952,
+            "palmBelowCardPixels": 683.6379712073299
+          }
+        },
+        {
+          "requested": 0.96,
+          "progress": 0.9601851851851851,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 545.31)",
+          "cardTurn": 180,
+          "fanOpacity": 1,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.14, 0, 0, 1.14, 0, 48.555)",
+            "handLocalTransform": "none",
+            "supportErrorX": -251.96184280395505,
+            "fingertipPixels": [
+              {
+                "x": 1243.8962080508645,
+                "y": 1299.9417946967296
+              },
+              {
+                "x": 1057.3617624690232,
+                "y": 1058.6569420145825
+              },
+              {
+                "x": 949.6148826938006,
+                "y": 1040.1790545939002
+              },
+              {
+                "x": 839.5681933774104,
+                "y": 1097.3735670762835
+              },
+              {
+                "x": 777.8751783485422,
+                "y": 1189.7887385506183
+              }
+            ],
+            "palmReferenceY": 1296.5184472656251,
+            "cardBottomY": 612.8804760582952,
+            "palmBelowCardPixels": 683.6379712073299
+          }
+        }
+      ],
+      "cycles": [
+        {
+          "durationMs": 2400,
+          "samples": 145,
+          "p95RafGapMs": 16.700000000000728,
+          "maxRafGapMs": 16.800000000000182
+        },
+        {
+          "durationMs": 800,
+          "samples": 49,
+          "p95RafGapMs": 16.699999999999818,
+          "maxRafGapMs": 16.699999999999818
+        },
+        {
+          "durationMs": 800,
+          "samples": 49,
+          "p95RafGapMs": 16.700000000000728,
+          "maxRafGapMs": 16.80000000000109
+        }
+      ],
+      "scope": "Desktop automated scroll and rAF scheduling measurements; not physical-device FPS."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "samples": [
+        {
+          "requested": 0,
+          "progress": 0,
+          "handOpen": 0,
+          "handFrame": 0,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 19.4117)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.014879913330076988,
+            "fingertipPixels": [
+              {
+                "x": 283.81029548746665,
+                "y": 692.7067436311918
+              },
+              {
+                "x": 186.47206425105833,
+                "y": 603.6522125654883
+              },
+              {
+                "x": 160.80404923089918,
+                "y": 588.0577140918758
+              },
+              {
+                "x": 138.9523903913032,
+                "y": 607.6873249087948
+              },
+              {
+                "x": 129.5659354928539,
+                "y": 649.0310604237166
+              }
+            ],
+            "palmReferenceY": 777.7154760742187,
+            "cardBottomY": 702.6307597045579,
+            "palmBelowCardPixels": 75.08471636966078
+          }
+        },
+        {
+          "requested": 0.12,
+          "progress": 0.11973684210526316,
+          "handOpen": 0.3507373051357233,
+          "handFrame": 11,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 21.4542)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.014879913330076988,
+            "fingertipPixels": [
+              {
+                "x": 298.2600644004724,
+                "y": 723.9139506589981
+              },
+              {
+                "x": 199.4120524174623,
+                "y": 622.4247768421556
+              },
+              {
+                "x": 163.57065626162284,
+                "y": 610.2262683232766
+              },
+              {
+                "x": 129.25830793201067,
+                "y": 632.659002765562
+              },
+              {
+                "x": 111.36492035395872,
+                "y": 673.9796141228107
+              }
+            ],
+            "palmReferenceY": 779.7579730224609,
+            "cardBottomY": 704.6733012084642,
+            "palmBelowCardPixels": 75.08467181399669
+          }
+        },
+        {
+          "requested": 0.22,
+          "progress": 0.21973684210526315,
+          "handOpen": 0.8235622769219139,
+          "handFrame": 26,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 24.2077)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.014879913330076988,
+            "fingertipPixels": [
+              {
+                "x": 314.62843976806107,
+                "y": 769.4151108103106
+              },
+              {
+                "x": 217.76902677910766,
+                "y": 651.4220719721343
+              },
+              {
+                "x": 167.51927445326874,
+                "y": 641.7188411481911
+              },
+              {
+                "x": 116.60554644011245,
+                "y": 669.042122148021
+              },
+              {
+                "x": 88.10543704564861,
+                "y": 714.1053733243316
+              }
+            ],
+            "palmReferenceY": 782.5114965820312,
+            "cardBottomY": 707.4267802123704,
+            "palmBelowCardPixels": 75.08471636966078
+          }
+        },
+        {
+          "requested": 0.3,
+          "progress": 0.3,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.014877853393556961,
+            "fingertipPixels": [
+              {
+                "x": 319.11236868870446,
+                "y": 785.2869547196387
+              },
+              {
+                "x": 223.86663411064592,
+                "y": 662.0852963632642
+              },
+              {
+                "x": 168.8503571936717,
+                "y": 652.6503635531662
+              },
+              {
+                "x": 112.65978215468101,
+                "y": 681.8542638742383
+              },
+              {
+                "x": 81.15891636857248,
+                "y": 729.042068066512
+              }
+            ],
+            "palmReferenceY": 783.5389706420899,
+            "cardBottomY": 708.4542540104021,
+            "palmBelowCardPixels": 75.0847166316878
+          }
+        },
+        {
+          "requested": 0.42,
+          "progress": 0.41973684210526313,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 207.802)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.014877853393556961,
+            "fingertipPixels": [
+              {
+                "x": 319.1123948224513,
+                "y": 939.8043864231295
+              },
+              {
+                "x": 223.86664019021464,
+                "y": 816.6027021264017
+              },
+              {
+                "x": 168.85035168945433,
+                "y": 807.16776732976
+              },
+              {
+                "x": 112.65976481942675,
+                "y": 836.3716737997711
+              },
+              {
+                "x": 81.15889240074853,
+                "y": 883.5594879275304
+              }
+            ],
+            "palmReferenceY": 938.056401977539,
+            "cardBottomY": 693.4884947330584,
+            "palmBelowCardPixels": 244.5679072444807
+          }
+        },
+        {
+          "requested": 0.56,
+          "progress": 0.5605263157894737,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+          "cardTurn": 60.86932618943478,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+            "handLocalTransform": "none",
+            "supportErrorX": 1.6910502624511707,
+            "fingertipPixels": [
+              {
+                "x": 319.1123948224513,
+                "y": 1024.4393961887545
+              },
+              {
+                "x": 223.86664019021464,
+                "y": 901.2377118920267
+              },
+              {
+                "x": 168.85035168945433,
+                "y": 891.802777095385
+              },
+              {
+                "x": 112.65976481942675,
+                "y": 921.0066835653961
+              },
+              {
+                "x": 81.15889240074853,
+                "y": 968.1944976931554
+              }
+            ],
+            "palmReferenceY": 1022.691411743164,
+            "cardBottomY": 673.6684794311204,
+            "palmBelowCardPixels": 349.0229323120436
+          }
+        },
+        {
+          "requested": 0.7,
+          "progress": 0.7,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+          "cardTurn": 157.28395061728392,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+            "handLocalTransform": "none",
+            "supportErrorX": 13.306353302001952,
+            "fingertipPixels": [
+              {
+                "x": 319.1123948224513,
+                "y": 1024.4393961887545
+              },
+              {
+                "x": 223.86664019021464,
+                "y": 901.2377118920267
+              },
+              {
+                "x": 168.85035168945433,
+                "y": 891.802777095385
+              },
+              {
+                "x": 112.65976481942675,
+                "y": 921.0066835653961
+              },
+              {
+                "x": 81.15889240074853,
+                "y": 968.1944976931554
+              }
+            ],
+            "palmReferenceY": 1022.691411743164,
+            "cardBottomY": 673.6684794311204,
+            "palmBelowCardPixels": 349.0229323120436
+          }
+        },
+        {
+          "requested": 0.84,
+          "progress": 0.8394736842105263,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+          "cardTurn": 180,
+          "fanOpacity": 0.412680684875098,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+            "handLocalTransform": "none",
+            "supportErrorX": 23.873465270996093,
+            "fingertipPixels": [
+              {
+                "x": 319.1123948224513,
+                "y": 1024.4393961887545
+              },
+              {
+                "x": 223.86664019021464,
+                "y": 901.2377118920267
+              },
+              {
+                "x": 168.85035168945433,
+                "y": 891.802777095385
+              },
+              {
+                "x": 112.65976481942675,
+                "y": 921.0066835653961
+              },
+              {
+                "x": 81.15889240074853,
+                "y": 968.1944976931554
+              }
+            ],
+            "palmReferenceY": 1022.691411743164,
+            "cardBottomY": 673.6684794311204,
+            "palmBelowCardPixels": 349.0229323120436
+          }
+        },
+        {
+          "requested": 0.96,
+          "progress": 0.9605263157894737,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+          "cardTurn": 180,
+          "fanOpacity": 1,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+            "handLocalTransform": "none",
+            "supportErrorX": 24.65442153930664,
+            "fingertipPixels": [
+              {
+                "x": 319.1123948224513,
+                "y": 1024.4393961887545
+              },
+              {
+                "x": 223.86664019021464,
+                "y": 901.2377118920267
+              },
+              {
+                "x": 168.85035168945433,
+                "y": 891.802777095385
+              },
+              {
+                "x": 112.65976481942675,
+                "y": 921.0066835653961
+              },
+              {
+                "x": 81.15889240074853,
+                "y": 968.1944976931554
+              }
+            ],
+            "palmReferenceY": 1022.691411743164,
+            "cardBottomY": 673.6684794311204,
+            "palmBelowCardPixels": 349.0229323120436
+          }
+        }
+      ],
+      "cycles": [
+        {
+          "durationMs": 2400,
+          "samples": 145,
+          "p95RafGapMs": 16.700000000000728,
+          "maxRafGapMs": 16.800000000000182
+        },
+        {
+          "durationMs": 800,
+          "samples": 48,
+          "p95RafGapMs": 16.800000000000182,
+          "maxRafGapMs": 16.800000000000182
+        },
+        {
+          "durationMs": 800,
+          "samples": 49,
+          "p95RafGapMs": 16.700000000000728,
+          "maxRafGapMs": 16.800000000000182
+        }
+      ],
+      "scope": "Desktop automated scroll and rAF scheduling measurements; not physical-device FPS."
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "samples": [
+        {
+          "requested": 0,
+          "progress": 0,
+          "handOpen": 0,
+          "handFrame": 0,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 19.4117)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.014895172119139488,
+            "fingertipPixels": [
+              {
+                "x": 248.81026496988852,
+                "y": 692.7067436311918
+              },
+              {
+                "x": 151.4720337334802,
+                "y": 603.6522125654883
+              },
+              {
+                "x": 125.80401871332106,
+                "y": 588.0577140918758
+              },
+              {
+                "x": 103.95235987372507,
+                "y": 607.6873249087948
+              },
+              {
+                "x": 94.56590497527577,
+                "y": 649.0310604237166
+              }
+            ],
+            "palmReferenceY": 777.7154760742187,
+            "cardBottomY": 702.6307597045579,
+            "palmBelowCardPixels": 75.08471636966078
+          }
+        },
+        {
+          "requested": 0.12,
+          "progress": 0.11973684210526316,
+          "handOpen": 0.3507373051357233,
+          "handFrame": 11,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 21.4542)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.014895172119139488,
+            "fingertipPixels": [
+              {
+                "x": 263.2600338828943,
+                "y": 723.9139506589981
+              },
+              {
+                "x": 164.41202189988417,
+                "y": 622.4247768421556
+              },
+              {
+                "x": 128.57062574404472,
+                "y": 610.2262683232766
+              },
+              {
+                "x": 94.25827741443254,
+                "y": 632.659002765562
+              },
+              {
+                "x": 76.3648898363806,
+                "y": 673.9796141228107
+              }
+            ],
+            "palmReferenceY": 779.7579730224609,
+            "cardBottomY": 704.6733012084642,
+            "palmBelowCardPixels": 75.08467181399669
+          }
+        },
+        {
+          "requested": 0.22,
+          "progress": 0.21973684210526315,
+          "handOpen": 0.8235622769219139,
+          "handFrame": 26,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 24.2077)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.014895172119139488,
+            "fingertipPixels": [
+              {
+                "x": 279.62840925048295,
+                "y": 769.4151108103106
+              },
+              {
+                "x": 182.76899626152954,
+                "y": 651.4220719721343
+              },
+              {
+                "x": 132.5192439356906,
+                "y": 641.7188411481911
+              },
+              {
+                "x": 81.60551592253432,
+                "y": 669.042122148021
+              },
+              {
+                "x": 53.10540652807049,
+                "y": 714.1053733243316
+              }
+            ],
+            "palmReferenceY": 782.5114965820312,
+            "cardBottomY": 707.4267802123704,
+            "palmBelowCardPixels": 75.08471636966078
+          }
+        },
+        {
+          "requested": 0.3,
+          "progress": 0.3,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 69.84)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.014893112182619461,
+            "fingertipPixels": [
+              {
+                "x": 284.11233817112634,
+                "y": 785.2869547196387
+              },
+              {
+                "x": 188.8666035930678,
+                "y": 662.0852963632642
+              },
+              {
+                "x": 133.85032667609357,
+                "y": 652.6503635531662
+              },
+              {
+                "x": 77.65975163710289,
+                "y": 681.8542638742383
+              },
+              {
+                "x": 46.15888585099435,
+                "y": 729.042068066512
+              }
+            ],
+            "palmReferenceY": 783.5389706420899,
+            "cardBottomY": 708.4542540104021,
+            "palmBelowCardPixels": 75.0847166316878
+          }
+        },
+        {
+          "requested": 0.42,
+          "progress": 0.41973684210526313,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 207.802)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+            "handLocalTransform": "none",
+            "supportErrorX": 0.014893112182619461,
+            "fingertipPixels": [
+              {
+                "x": 284.11236430487315,
+                "y": 939.8043864231295
+              },
+              {
+                "x": 188.8666096726365,
+                "y": 816.6027021264017
+              },
+              {
+                "x": 133.8503211718762,
+                "y": 807.16776732976
+              },
+              {
+                "x": 77.65973430184863,
+                "y": 836.3716737997711
+              },
+              {
+                "x": 46.1588618831704,
+                "y": 883.5594879275304
+              }
+            ],
+            "palmReferenceY": 938.056401977539,
+            "cardBottomY": 693.4884947330584,
+            "palmBelowCardPixels": 244.5679072444807
+          }
+        },
+        {
+          "requested": 0.56,
+          "progress": 0.5605263157894737,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+          "cardTurn": 60.86932618943478,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+            "handLocalTransform": "none",
+            "supportErrorX": 1.6910998535156239,
+            "fingertipPixels": [
+              {
+                "x": 284.11236430487315,
+                "y": 1024.4393961887545
+              },
+              {
+                "x": 188.8666096726365,
+                "y": 901.2377118920267
+              },
+              {
+                "x": 133.8503211718762,
+                "y": 891.802777095385
+              },
+              {
+                "x": 77.65973430184863,
+                "y": 921.0066835653961
+              },
+              {
+                "x": 46.1588618831704,
+                "y": 968.1944976931554
+              }
+            ],
+            "palmReferenceY": 1022.691411743164,
+            "cardBottomY": 673.6684794311204,
+            "palmBelowCardPixels": 349.0229323120436
+          }
+        },
+        {
+          "requested": 0.7,
+          "progress": 0.7,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+          "cardTurn": 157.28395061728392,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+            "handLocalTransform": "none",
+            "supportErrorX": 13.306383819580077,
+            "fingertipPixels": [
+              {
+                "x": 284.11236430487315,
+                "y": 1024.4393961887545
+              },
+              {
+                "x": 188.8666096726365,
+                "y": 901.2377118920267
+              },
+              {
+                "x": 133.8503211718762,
+                "y": 891.802777095385
+              },
+              {
+                "x": 77.65973430184863,
+                "y": 921.0066835653961
+              },
+              {
+                "x": 46.1588618831704,
+                "y": 968.1944976931554
+              }
+            ],
+            "palmReferenceY": 1022.691411743164,
+            "cardBottomY": 673.6684794311204,
+            "palmBelowCardPixels": 349.0229323120436
+          }
+        },
+        {
+          "requested": 0.84,
+          "progress": 0.8394736842105263,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+          "cardTurn": 180,
+          "fanOpacity": 0.412680684875098,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+            "handLocalTransform": "none",
+            "supportErrorX": 23.873509140014647,
+            "fingertipPixels": [
+              {
+                "x": 284.11236430487315,
+                "y": 1024.4393961887545
+              },
+              {
+                "x": 188.8666096726365,
+                "y": 901.2377118920267
+              },
+              {
+                "x": 133.8503211718762,
+                "y": 891.802777095385
+              },
+              {
+                "x": 77.65973430184863,
+                "y": 921.0066835653961
+              },
+              {
+                "x": 46.1588618831704,
+                "y": 968.1944976931554
+              }
+            ],
+            "palmReferenceY": 1022.691411743164,
+            "cardBottomY": 673.6684794311204,
+            "palmBelowCardPixels": 349.0229323120436
+          }
+        },
+        {
+          "requested": 0.96,
+          "progress": 0.9605263157894737,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 283.369)",
+          "cardTurn": 180,
+          "fanOpacity": 1,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0,
+          "composition": {
+            "sharedTransform": "matrix(1.12, 0, 0, 1.12, 0, 25.2352)",
+            "handLocalTransform": "none",
+            "supportErrorX": 24.654436798095702,
+            "fingertipPixels": [
+              {
+                "x": 284.11236430487315,
+                "y": 1024.4393961887545
+              },
+              {
+                "x": 188.8666096726365,
+                "y": 901.2377118920267
+              },
+              {
+                "x": 133.8503211718762,
+                "y": 891.802777095385
+              },
+              {
+                "x": 77.65973430184863,
+                "y": 921.0066835653961
+              },
+              {
+                "x": 46.1588618831704,
+                "y": 968.1944976931554
+              }
+            ],
+            "palmReferenceY": 1022.691411743164,
+            "cardBottomY": 673.6684794311204,
+            "palmBelowCardPixels": 349.0229323120436
+          }
+        }
+      ],
+      "cycles": [
+        {
+          "durationMs": 2400,
+          "samples": 143,
+          "p95RafGapMs": 16.700000000000728,
+          "maxRafGapMs": 50
+        },
+        {
+          "durationMs": 800,
+          "samples": 48,
+          "p95RafGapMs": 16.700000000000728,
+          "maxRafGapMs": 16.800000000000182
+        },
+        {
+          "durationMs": 800,
+          "samples": 48,
+          "p95RafGapMs": 16.700000000000728,
+          "maxRafGapMs": 16.700000000000728
+        }
+      ],
+      "scope": "Desktop automated scroll and rAF scheduling measurements; not physical-device FPS."
+    }
+  ],
+  "scope": "Local macOS browser automation with simulated portrait viewports and camera calls blocked. No production, physical phone, or actual target-tracking verification.",
+  "host": {
+    "platform": "darwin",
+    "release": "27.0.0",
+    "architecture": "arm64"
+  },
+  "browserVersion": "155.0.8059.41",
+  "summary": {
+    "total": 112,
+    "passed": 112,
+    "failed": 0
+  }
+}

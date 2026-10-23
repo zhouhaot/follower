@@ -1,0 +1,318 @@
+{
+  "date": "2026-10-14T06:37:30.140Z",
+  "scope": "Isolated background Chrome with synthetic records only; real user data and camera are untouched.",
+  "checks": [
+    {
+      "name": "1440: detail action persists viewed progress",
+      "pass": true
+    },
+    {
+      "name": "1440: next station resumes after reload",
+      "pass": true
+    },
+    {
+      "name": "1440: route progress undo",
+      "pass": true
+    },
+    {
+      "name": "1440: duplicate route rejected",
+      "pass": true
+    },
+    {
+      "name": "1440: route title rendered as literal text",
+      "pass": true
+    },
+    {
+      "name": "1440: long plain-text route title stays in viewport",
+      "pass": true
+    },
+    {
+      "name": "1440: views never alter scan collection",
+      "pass": true
+    },
+    {
+      "name": "1440: actual JSON download",
+      "pass": true
+    },
+    {
+      "name": "1440: import preflight is read-only",
+      "pass": true
+    },
+    {
+      "name": "1440: filename is text, not markup",
+      "pass": true
+    },
+    {
+      "name": "1440: merged restore retains direct record and tags history",
+      "pass": true
+    },
+    {
+      "name": "1440: collection distinguishes restored record",
+      "pass": true
+    },
+    {
+      "name": "1440: recovery survives navigation and restores original bytes",
+      "pass": true
+    },
+    {
+      "name": "1440: unsafe.json refused",
+      "pass": true
+    },
+    {
+      "name": "1440: large.json refused",
+      "pass": true
+    },
+    {
+      "name": "1440: future.json refused",
+      "pass": true
+    },
+    {
+      "name": "1440: broken.json refused",
+      "pass": true
+    },
+    {
+      "name": "1440: checksum mismatch refused",
+      "pass": true
+    },
+    {
+      "name": "1440: invalid UTF-8 refused",
+      "pass": true
+    },
+    {
+      "name": "1440: intervening data blocks confirmation",
+      "pass": true
+    },
+    {
+      "name": "1440: no overflow/camera/private-key access",
+      "pass": true,
+      "detail": {
+        "overflow": 0,
+        "camera": 0,
+        "sentinelRead": false,
+        "sentinelWritten": false
+      }
+    },
+    {
+      "name": "1440: no external request or file upload",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1440: visible keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "390: detail action persists viewed progress",
+      "pass": true
+    },
+    {
+      "name": "390: next station resumes after reload",
+      "pass": true
+    },
+    {
+      "name": "390: route progress undo",
+      "pass": true
+    },
+    {
+      "name": "390: duplicate route rejected",
+      "pass": true
+    },
+    {
+      "name": "390: route title rendered as literal text",
+      "pass": true
+    },
+    {
+      "name": "390: long plain-text route title stays in viewport",
+      "pass": true
+    },
+    {
+      "name": "390: views never alter scan collection",
+      "pass": true
+    },
+    {
+      "name": "390: actual JSON download",
+      "pass": true
+    },
+    {
+      "name": "390: import preflight is read-only",
+      "pass": true
+    },
+    {
+      "name": "390: filename is text, not markup",
+      "pass": true
+    },
+    {
+      "name": "390: merged restore retains direct record and tags history",
+      "pass": true
+    },
+    {
+      "name": "390: collection distinguishes restored record",
+      "pass": true
+    },
+    {
+      "name": "390: recovery survives navigation and restores original bytes",
+      "pass": true
+    },
+    {
+      "name": "390: unsafe.json refused",
+      "pass": true
+    },
+    {
+      "name": "390: large.json refused",
+      "pass": true
+    },
+    {
+      "name": "390: future.json refused",
+      "pass": true
+    },
+    {
+      "name": "390: broken.json refused",
+      "pass": true
+    },
+    {
+      "name": "390: checksum mismatch refused",
+      "pass": true
+    },
+    {
+      "name": "390: invalid UTF-8 refused",
+      "pass": true
+    },
+    {
+      "name": "390: intervening data blocks confirmation",
+      "pass": true
+    },
+    {
+      "name": "390: no overflow/camera/private-key access",
+      "pass": true,
+      "detail": {
+        "overflow": 0,
+        "camera": 0,
+        "sentinelRead": false,
+        "sentinelWritten": false
+      }
+    },
+    {
+      "name": "390: no external request or file upload",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390: visible keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "320: detail action persists viewed progress",
+      "pass": true
+    },
+    {
+      "name": "320: next station resumes after reload",
+      "pass": true
+    },
+    {
+      "name": "320: route progress undo",
+      "pass": true
+    },
+    {
+      "name": "320: duplicate route rejected",
+      "pass": true
+    },
+    {
+      "name": "320: route title rendered as literal text",
+      "pass": true
+    },
+    {
+      "name": "320: long plain-text route title stays in viewport",
+      "pass": true
+    },
+    {
+      "name": "320: views never alter scan collection",
+      "pass": true
+    },
+    {
+      "name": "320: actual JSON download",
+      "pass": true
+    },
+    {
+      "name": "320: import preflight is read-only",
+      "pass": true
+    },
+    {
+      "name": "320: filename is text, not markup",
+      "pass": true
+    },
+    {
+      "name": "320: merged restore retains direct record and tags history",
+      "pass": true
+    },
+    {
+      "name": "320: collection distinguishes restored record",
+      "pass": true
+    },
+    {
+      "name": "320: recovery survives navigation and restores original bytes",
+      "pass": true
+    },
+    {
+      "name": "320: unsafe.json refused",
+      "pass": true
+    },
+    {
+      "name": "320: large.json refused",
+      "pass": true
+    },
+    {
+      "name": "320: future.json refused",
+      "pass": true
+    },
+    {
+      "name": "320: broken.json refused",
+      "pass": true
+    },
+    {
+      "name": "320: checksum mismatch refused",
+      "pass": true
+    },
+    {
+      "name": "320: invalid UTF-8 refused",
+      "pass": true
+    },
+    {
+      "name": "320: intervening data blocks confirmation",
+      "pass": true
+    },
+    {
+      "name": "320: no overflow/camera/private-key access",
+      "pass": true,
+      "detail": {
+        "overflow": 0,
+        "camera": 0,
+        "sentinelRead": false,
+        "sentinelWritten": false
+      }
+    },
+    {
+      "name": "320: no external request or file upload",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "320: visible keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "Discarded storage shows failure instead of success",
+      "pass": true
+    },
+    {
+      "name": "No uncaught errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "total": 71,
+    "passed": 71,
+    "failed": 0
+  }
+}

@@ -1,0 +1,564 @@
+{
+  "date": "2026-10-14T02:13:31.143Z",
+  "base": "http://127.0.0.1:4173",
+  "scope": "Isolated headless desktop Chrome; simulated camera requests only. No Edge interaction, permission prompt, physical device or recognition test.",
+  "checks": [
+    {
+      "name": "Mid-scroll resize 0.18 to 390x844",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844,
+        "y": 194,
+        "progress": 0.25526315789473686,
+        "open": 0.9399194353998261,
+        "frame": 29,
+        "turn": 0,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 436,
+          "height": 388,
+          "cssWidth": 436.796875,
+          "cssHeight": 388.234375
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.18 to 844x390",
+      "pass": true,
+      "detail": {
+        "width": 844,
+        "height": 390,
+        "y": 194,
+        "progress": 0.41452991452991456,
+        "open": 1,
+        "frame": 31,
+        "turn": 0,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 557,
+          "height": 508,
+          "cssWidth": 557.03125,
+          "cssHeight": 508.1875
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.18 to 320x844",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844,
+        "y": 194,
+        "progress": 0.25526315789473686,
+        "open": 0.9399194353998261,
+        "frame": 29,
+        "turn": 0,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 358,
+          "height": 388,
+          "cssWidth": 358.390625,
+          "cssHeight": 388.234375
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.18 to 1440x900",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900,
+        "y": 194,
+        "progress": 0.17962962962962964,
+        "open": 0.6462213114908336,
+        "frame": 20,
+        "turn": 0,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 849,
+          "height": 747,
+          "cssWidth": 849.59375,
+          "cssHeight": 747
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.42 to 390x844",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844,
+        "y": 454,
+        "progress": 0.5973684210526315,
+        "open": 1,
+        "frame": 31,
+        "turn": 88.02645640853954,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 436,
+          "height": 388,
+          "cssWidth": 436.796875,
+          "cssHeight": 388.2344055175781
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.42 to 844x390",
+      "pass": true,
+      "detail": {
+        "width": 844,
+        "height": 390,
+        "y": 454,
+        "progress": 0.9700854700854701,
+        "open": 1,
+        "frame": 31,
+        "turn": 180,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 557,
+          "height": 508,
+          "cssWidth": 557.03125,
+          "cssHeight": 508.1875
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.42 to 320x844",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844,
+        "y": 454,
+        "progress": 0.5973684210526315,
+        "open": 1,
+        "frame": 31,
+        "turn": 88.02645640853954,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 358,
+          "height": 388,
+          "cssWidth": 358.390625,
+          "cssHeight": 388.2344055175781
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.42 to 1440x900",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900,
+        "y": 454,
+        "progress": 0.4203703703703704,
+        "open": 1,
+        "frame": 31,
+        "turn": 0.0005711671976131522,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 849,
+          "height": 747,
+          "cssWidth": 849.59375,
+          "cssHeight": 747
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.6 to 390x844",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844,
+        "y": 648,
+        "progress": 0.8526315789473684,
+        "open": 1,
+        "frame": 31,
+        "turn": 180,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 436,
+          "height": 388,
+          "cssWidth": 436.796875,
+          "cssHeight": 388.2344055175781
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.6 to 844x390",
+      "pass": true,
+      "detail": {
+        "width": 844,
+        "height": 390,
+        "y": 648,
+        "progress": 1,
+        "open": 1,
+        "frame": 31,
+        "turn": 180,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 557,
+          "height": 508,
+          "cssWidth": 557.03125,
+          "cssHeight": 508.1875
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.6 to 320x844",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844,
+        "y": 648,
+        "progress": 0.8526315789473684,
+        "open": 1,
+        "frame": 31,
+        "turn": 180,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 358,
+          "height": 388,
+          "cssWidth": 358.390625,
+          "cssHeight": 388.2344055175781
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.6 to 1440x900",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900,
+        "y": 648,
+        "progress": 0.6,
+        "open": 1,
+        "frame": 31,
+        "turn": 89.99999999999999,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 849,
+          "height": 747,
+          "cssWidth": 849.59375,
+          "cssHeight": 747
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.86 to 390x844",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844,
+        "y": 929,
+        "progress": 1,
+        "open": 1,
+        "frame": 31,
+        "turn": 180,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 436,
+          "height": 388,
+          "cssWidth": 436.796875,
+          "cssHeight": 388.2344055175781
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.86 to 844x390",
+      "pass": true,
+      "detail": {
+        "width": 844,
+        "height": 390,
+        "y": 929,
+        "progress": 1,
+        "open": 1,
+        "frame": 31,
+        "turn": 180,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 557,
+          "height": 508,
+          "cssWidth": 557.03125,
+          "cssHeight": 508.1875305175781
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.86 to 320x844",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844,
+        "y": 929,
+        "progress": 1,
+        "open": 1,
+        "frame": 31,
+        "turn": 180,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 358,
+          "height": 388,
+          "cssWidth": 358.390625,
+          "cssHeight": 388.2344055175781
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Mid-scroll resize 0.86 to 1440x900",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900,
+        "y": 929,
+        "progress": 0.8601851851851852,
+        "open": 1,
+        "frame": 31,
+        "turn": 180,
+        "reduced": false,
+        "overflow": 0,
+        "canvas": {
+          "width": 849,
+          "height": 747,
+          "cssWidth": 849.59375,
+          "cssHeight": 747
+        },
+        "cameraRequests": 0
+      }
+    },
+    {
+      "name": "Back restores the visible hand to the actual restored scroll position",
+      "pass": true,
+      "detail": {
+        "before": {
+          "width": 1440,
+          "height": 900,
+          "y": 238,
+          "progress": 0.22037037037037038,
+          "open": 0.8260390146789578,
+          "frame": 26,
+          "turn": 0,
+          "reduced": false,
+          "overflow": 0,
+          "canvas": {
+            "width": 849,
+            "height": 747,
+            "cssWidth": 849.59375,
+            "cssHeight": 747
+          },
+          "cameraRequests": 0
+        },
+        "back": {
+          "width": 1440,
+          "height": 900,
+          "y": 238,
+          "progress": 0.22037037037037038,
+          "open": 0.8260390146789578,
+          "frame": 26,
+          "turn": 0,
+          "reduced": false,
+          "overflow": 0,
+          "canvas": {
+            "width": 849,
+            "height": 747,
+            "cssWidth": 849.59375,
+            "cssHeight": 747
+          },
+          "cameraRequests": 0
+        }
+      }
+    },
+    {
+      "name": "Forward restores the catalogue",
+      "pass": true
+    },
+    {
+      "name": "Changing reduced-motion preference during the sequence releases the pinned scene",
+      "pass": true,
+      "detail": {
+        "matches": true,
+        "pin": "relative",
+        "fan": "none",
+        "animations": 0,
+        "progress": 0
+      }
+    },
+    {
+      "name": "Restoring motion leaves a finite reversible scene",
+      "pass": true
+    },
+    {
+      "name": "Keyboard reaches the visible skip link",
+      "pass": true
+    },
+    {
+      "name": "Skip link moves to the main content",
+      "pass": true
+    },
+    {
+      "name": "Keyboard reaches the scan entry",
+      "pass": true
+    },
+    {
+      "name": "Keyboard scan entry opens only the preparation state",
+      "pass": true,
+      "detail": {
+        "state": "idle",
+        "status": "点击「开启相机」后，浏览器才会请求相机权限。将清荷入梦花卡完整放入画面。",
+        "cameraRequests": 0,
+        "stoppedTracks": 0,
+        "workers": 0,
+        "videos": 0,
+        "scanCanvases": 0,
+        "collection": null
+      }
+    },
+    {
+      "name": "Cancel scan entry returns home without a camera call",
+      "pass": true
+    },
+    {
+      "name": "Cancel pending simulated request 1: late tracks close and resources stay released",
+      "pass": true,
+      "detail": {
+        "state": "stopped",
+        "status": "相机已关闭。点击「重新扫描」可再次开启。",
+        "cameraRequests": 1,
+        "stoppedTracks": 1,
+        "workers": 0,
+        "videos": 0,
+        "scanCanvases": 0,
+        "collection": null
+      }
+    },
+    {
+      "name": "Page-hide cancellation 1: stale request cannot restart",
+      "pass": true,
+      "detail": {
+        "state": "stopped",
+        "status": "相机已关闭。点击「重新扫描」可再次开启。",
+        "cameraRequests": 2,
+        "stoppedTracks": 2,
+        "workers": 0,
+        "videos": 0,
+        "scanCanvases": 0,
+        "collection": null
+      }
+    },
+    {
+      "name": "Cancel pending simulated request 2: late tracks close and resources stay released",
+      "pass": true,
+      "detail": {
+        "state": "stopped",
+        "status": "相机已关闭。点击「重新扫描」可再次开启。",
+        "cameraRequests": 1,
+        "stoppedTracks": 1,
+        "workers": 0,
+        "videos": 0,
+        "scanCanvases": 0,
+        "collection": null
+      }
+    },
+    {
+      "name": "Page-hide cancellation 2: stale request cannot restart",
+      "pass": true,
+      "detail": {
+        "state": "stopped",
+        "status": "相机已关闭。点击「重新扫描」可再次开启。",
+        "cameraRequests": 2,
+        "stoppedTracks": 2,
+        "workers": 0,
+        "videos": 0,
+        "scanCanvases": 0,
+        "collection": null
+      }
+    },
+    {
+      "name": "Cancel pending simulated request 3: late tracks close and resources stay released",
+      "pass": true,
+      "detail": {
+        "state": "stopped",
+        "status": "相机已关闭。点击「重新扫描」可再次开启。",
+        "cameraRequests": 1,
+        "stoppedTracks": 1,
+        "workers": 0,
+        "videos": 0,
+        "scanCanvases": 0,
+        "collection": null
+      }
+    },
+    {
+      "name": "Page-hide cancellation 3: stale request cannot restart",
+      "pass": true,
+      "detail": {
+        "state": "stopped",
+        "status": "相机已关闭。点击「重新扫描」可再次开启。",
+        "cameraRequests": 2,
+        "stoppedTracks": 2,
+        "workers": 0,
+        "videos": 0,
+        "scanCanvases": 0,
+        "collection": null
+      }
+    },
+    {
+      "name": "History return to scan never restarts a camera automatically",
+      "pass": true,
+      "detail": {
+        "state": "idle",
+        "status": "点击「开启相机」后，浏览器才会请求相机权限。将清荷入梦花卡完整放入画面。",
+        "cameraRequests": 0,
+        "stoppedTracks": 0,
+        "workers": 0,
+        "videos": 0,
+        "scanCanvases": 0,
+        "collection": null
+      }
+    },
+    {
+      "name": "No uncaught browser errors during lifecycle checks",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "events": [],
+  "browser": "155.0.8059.41",
+  "safari": {
+    "tested": false,
+    "reason": "This installed background harness uses Chrome. Safari was not launched: no existing approved background Safari automation was established, and visible UI or Remote Automation settings were not changed."
+  },
+  "summary": {
+    "total": 33,
+    "passed": 33,
+    "failed": 0
+  }
+}

@@ -1,0 +1,5853 @@
+{
+  "date": "2026-10-14T02:31:59.301Z",
+  "base": "http://127.0.0.1:4173",
+  "checks": [
+    {
+      "name": "1440px index.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开，\n自有回声。"
+        ]
+      }
+    },
+    {
+      "name": "1440px index.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px index.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px index.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px index.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px home 0: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0,
+        "handOpen": 0,
+        "handFrame": 0,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "1440px home 0.12: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.12037037037037036,
+        "handOpen": 0.3537786885091666,
+        "handFrame": 11,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "1440px home 0.22: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.22037037037037038,
+        "handOpen": 0.8260390146789578,
+        "handFrame": 26,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "1440px home 0.3: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.3,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "1440px home 0.42: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.4203703703703704,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 267.326)",
+        "cardTurn": 0.0005711671976131522,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "1440px home 0.56: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.5601851851851852,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 410.85)",
+        "cardTurn": 60.62588904310797,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "1440px home 0.7: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.7,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 410.85)",
+        "cardTurn": 157.28395061728392,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "1440px home 0.84: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.8398148148148148,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 410.85)",
+        "cardTurn": 180,
+        "fanOpacity": 0.4154857992842242,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "1440px home 0.96: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.9601851851851851,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 410.85)",
+        "cardTurn": 180,
+        "fanOpacity": 1,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "1440px home: fully open before withdrawal",
+      "pass": true,
+      "detail": {
+        "requested": 0.3,
+        "progress": 0.3,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "1440px home: card turns and five originals appear",
+      "pass": true,
+      "detail": {
+        "requested": 0.96,
+        "progress": 0.9601851851851851,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 410.85)",
+        "cardTurn": 180,
+        "fanOpacity": 1,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "1440px home: all five fan cards fit the screen",
+      "pass": true,
+      "detail": [
+        {
+          "left": 85.40744018554688,
+          "right": 422.5578918457031,
+          "top": 271.3968505859375,
+          "bottom": 736.1296997070312
+        },
+        {
+          "left": 340.4539794921875,
+          "right": 633.5286865234375,
+          "top": 234.26461791992188,
+          "bottom": 679.1170043945312
+        },
+        {
+          "left": 597.6015625,
+          "right": 842.3984375,
+          "top": 231.703125,
+          "bottom": 650.296875
+        },
+        {
+          "left": 806.4713134765625,
+          "right": 1099.5460205078125,
+          "top": 234.26461791992188,
+          "bottom": 679.1170043945312
+        },
+        {
+          "left": 1017.4420776367188,
+          "right": 1354.592529296875,
+          "top": 271.3968505859375,
+          "bottom": 736.1296997070312
+        }
+      ]
+    },
+    {
+      "name": "1440px reverse 0.96: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.96: rendered pixels match within raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "1440px reverse 0.84: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.7: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.56: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.56: rendered pixels match within raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "1440px reverse 0.42: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.3: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.22: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0.22: rendered pixels match within raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "1440px reverse 0.12: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "1440px reverse 0: rendered pixels match within raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "1440px home: native wheel works in both directions",
+      "pass": true,
+      "detail": {
+        "down": 0.16666666666666666,
+        "up": 0
+      }
+    },
+    {
+      "name": "1440px index.html: native scroll unfolds fan",
+      "pass": true,
+      "detail": {
+        "y": 1015,
+        "progress": 0.9398148148148148,
+        "fanOpacity": 0.999997
+      }
+    },
+    {
+      "name": "1440px index.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px catalogue.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "五种纹样，\n各自成诗。"
+        ]
+      }
+    },
+    {
+      "name": "1440px catalogue.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px catalogue.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px catalogue.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px catalogue.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px catalogue.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px collection.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "把相遇，\n留在这里。"
+        ]
+      }
+    },
+    {
+      "name": "1440px collection.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px collection.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px collection.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px collection.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px collection.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px guide.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "让一次相遇，\n慢慢发生。"
+        ]
+      }
+    },
+    {
+      "name": "1440px guide.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px guide.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px guide.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px guide.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px guide.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px work.html?card=flowers: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开有声"
+        ]
+      }
+    },
+    {
+      "name": "1440px work.html?card=flowers: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px work.html?card=flowers: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px work.html?card=flowers: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px work.html?card=flowers: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px work.html?card=flowers: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px preview.html?card=flowers: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开有声"
+        ]
+      }
+    },
+    {
+      "name": "1440px preview.html?card=flowers: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px preview.html?card=flowers: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px preview.html?card=flowers: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px preview.html?card=flowers: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px preview.html?card=flowers: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "1440px preview.html?card=flowers: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px scan.html?card=flowers: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开有声"
+        ]
+      }
+    },
+    {
+      "name": "1440px scan.html?card=flowers: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px scan.html?card=flowers: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px scan.html?card=flowers: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px scan.html?card=flowers: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px scan.html?card=flowers: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px work.html?card=peony: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "牡丹承瑞"
+        ]
+      }
+    },
+    {
+      "name": "1440px work.html?card=peony: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px work.html?card=peony: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px work.html?card=peony: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px work.html?card=peony: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px work.html?card=peony: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px preview.html?card=peony: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "牡丹承瑞"
+        ]
+      }
+    },
+    {
+      "name": "1440px preview.html?card=peony: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px preview.html?card=peony: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px preview.html?card=peony: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px preview.html?card=peony: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px preview.html?card=peony: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "1440px preview.html?card=peony: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px scan.html?card=peony: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "牡丹承瑞"
+        ]
+      }
+    },
+    {
+      "name": "1440px scan.html?card=peony: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px scan.html?card=peony: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px scan.html?card=peony: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px scan.html?card=peony: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px scan.html?card=peony: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px work.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "菊影流金"
+        ]
+      }
+    },
+    {
+      "name": "1440px work.html?card=chrysanthemum: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px work.html?card=chrysanthemum: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px work.html?card=chrysanthemum: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px work.html?card=chrysanthemum: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px work.html?card=chrysanthemum: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px preview.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "菊影流金"
+        ]
+      }
+    },
+    {
+      "name": "1440px preview.html?card=chrysanthemum: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px preview.html?card=chrysanthemum: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px preview.html?card=chrysanthemum: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px preview.html?card=chrysanthemum: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px preview.html?card=chrysanthemum: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "1440px preview.html?card=chrysanthemum: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px scan.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "菊影流金"
+        ]
+      }
+    },
+    {
+      "name": "1440px scan.html?card=chrysanthemum: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px scan.html?card=chrysanthemum: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px scan.html?card=chrysanthemum: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px scan.html?card=chrysanthemum: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px scan.html?card=chrysanthemum: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px work.html?card=lotus: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "清荷入梦"
+        ]
+      }
+    },
+    {
+      "name": "1440px work.html?card=lotus: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px work.html?card=lotus: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px work.html?card=lotus: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px work.html?card=lotus: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px work.html?card=lotus: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px preview.html?card=lotus: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "清荷入梦"
+        ]
+      }
+    },
+    {
+      "name": "1440px preview.html?card=lotus: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px preview.html?card=lotus: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px preview.html?card=lotus: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px preview.html?card=lotus: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px preview.html?card=lotus: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "1440px preview.html?card=lotus: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px scan.html?card=lotus: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "清荷入梦"
+        ]
+      }
+    },
+    {
+      "name": "1440px scan.html?card=lotus: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px scan.html?card=lotus: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px scan.html?card=lotus: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px scan.html?card=lotus: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px scan.html?card=lotus: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px work.html?card=leaves: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花叶生辉"
+        ]
+      }
+    },
+    {
+      "name": "1440px work.html?card=leaves: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px work.html?card=leaves: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px work.html?card=leaves: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px work.html?card=leaves: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px work.html?card=leaves: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px preview.html?card=leaves: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花叶生辉"
+        ]
+      }
+    },
+    {
+      "name": "1440px preview.html?card=leaves: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px preview.html?card=leaves: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px preview.html?card=leaves: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px preview.html?card=leaves: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px preview.html?card=leaves: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "1440px preview.html?card=leaves: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "1440px scan.html?card=leaves: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花叶生辉"
+        ]
+      }
+    },
+    {
+      "name": "1440px scan.html?card=leaves: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "1440px scan.html?card=leaves: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "1440px scan.html?card=leaves: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "1440px scan.html?card=leaves: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440px scan.html?card=leaves: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px index.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开，\n自有回声。"
+        ]
+      }
+    },
+    {
+      "name": "390px index.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px index.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px index.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px index.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px home 0: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0,
+        "handOpen": 0,
+        "handFrame": 0,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "390px home 0.12: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.11973684210526316,
+        "handOpen": 0.3507373051357233,
+        "handFrame": 11,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "390px home 0.22: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.21973684210526315,
+        "handOpen": 0.8235622769219139,
+        "handFrame": 26,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "390px home 0.3: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.3,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "390px home 0.42: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.41973684210526313,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 137.962)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "390px home 0.56: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.5605263157894737,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+        "cardTurn": 60.86932618943478,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "390px home 0.7: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.7,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+        "cardTurn": 157.28395061728392,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "390px home 0.84: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.8394736842105263,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+        "cardTurn": 180,
+        "fanOpacity": 0.412680684875098,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "390px home 0.96: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.9605263157894737,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+        "cardTurn": 180,
+        "fanOpacity": 1,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "390px home: fully open before withdrawal",
+      "pass": true,
+      "detail": {
+        "requested": 0.3,
+        "progress": 0.3,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "390px home: card turns and five originals appear",
+      "pass": true,
+      "detail": {
+        "requested": 0.96,
+        "progress": 0.9605263157894737,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+        "cardTurn": 180,
+        "fanOpacity": 1,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "390px home: all five fan cards fit the screen",
+      "pass": true,
+      "detail": [
+        {
+          "left": 12.638286590576172,
+          "right": 163.04203414916992,
+          "top": 404.1227111816406,
+          "bottom": 611.4151611328125
+        },
+        {
+          "left": 76.05304718017578,
+          "right": 206.78711700439453,
+          "top": 337.9030456542969,
+          "bottom": 536.3251953125
+        },
+        {
+          "left": 140.40625,
+          "right": 249.59375,
+          "top": 320.2109375,
+          "bottom": 506.9140625
+        },
+        {
+          "left": 183.21287536621094,
+          "right": 313.94696044921875,
+          "top": 337.9030456542969,
+          "bottom": 536.3251953125
+        },
+        {
+          "left": 226.9579620361328,
+          "right": 377.3617248535156,
+          "top": 404.1227111816406,
+          "bottom": 611.4151611328125
+        }
+      ]
+    },
+    {
+      "name": "390px reverse 0.96: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.96: rendered pixels match within raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "390px reverse 0.84: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.7: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.56: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.56: rendered pixels match within raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "390px reverse 0.42: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.3: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.22: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0.22: rendered pixels match within raster tolerance",
+      "pass": true,
+      "detail": {
+        "exact": true,
+        "meanChannelDelta": 0,
+        "maxChannelDelta": 0
+      }
+    },
+    {
+      "name": "390px reverse 0.12: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "390px reverse 0: rendered pixels match within raster tolerance",
+      "pass": false,
+      "detail": {
+        "exact": false,
+        "meanChannelDelta": 0.04311580994045449,
+        "maxChannelDelta": 22,
+        "changedChannelFraction": 0.025129116539069147
+      }
+    },
+    {
+      "name": "390px home: native wheel works in both directions",
+      "pass": true,
+      "detail": {
+        "down": 0.23684210526315788,
+        "up": 0
+      }
+    },
+    {
+      "name": "390px index.html: native scroll unfolds fan",
+      "pass": true,
+      "detail": {
+        "y": 714,
+        "progress": 0.9394736842105263,
+        "fanOpacity": 0.999974
+      }
+    },
+    {
+      "name": "390px index.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px catalogue.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "五种纹样，\n各自成诗。"
+        ]
+      }
+    },
+    {
+      "name": "390px catalogue.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px catalogue.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px catalogue.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px catalogue.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px catalogue.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px collection.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "把相遇，\n留在这里。"
+        ]
+      }
+    },
+    {
+      "name": "390px collection.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px collection.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px collection.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px collection.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px collection.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px guide.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "让一次相遇，\n慢慢发生。"
+        ]
+      }
+    },
+    {
+      "name": "390px guide.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px guide.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px guide.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px guide.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px guide.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px work.html?card=flowers: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开有声"
+        ]
+      }
+    },
+    {
+      "name": "390px work.html?card=flowers: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px work.html?card=flowers: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px work.html?card=flowers: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px work.html?card=flowers: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px work.html?card=flowers: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px preview.html?card=flowers: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开有声"
+        ]
+      }
+    },
+    {
+      "name": "390px preview.html?card=flowers: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px preview.html?card=flowers: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px preview.html?card=flowers: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px preview.html?card=flowers: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px preview.html?card=flowers: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "390px preview.html?card=flowers: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px scan.html?card=flowers: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开有声"
+        ]
+      }
+    },
+    {
+      "name": "390px scan.html?card=flowers: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px scan.html?card=flowers: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px scan.html?card=flowers: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px scan.html?card=flowers: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px scan.html?card=flowers: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px work.html?card=peony: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "牡丹承瑞"
+        ]
+      }
+    },
+    {
+      "name": "390px work.html?card=peony: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px work.html?card=peony: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px work.html?card=peony: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px work.html?card=peony: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px work.html?card=peony: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px preview.html?card=peony: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "牡丹承瑞"
+        ]
+      }
+    },
+    {
+      "name": "390px preview.html?card=peony: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px preview.html?card=peony: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px preview.html?card=peony: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px preview.html?card=peony: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px preview.html?card=peony: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "390px preview.html?card=peony: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px scan.html?card=peony: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "牡丹承瑞"
+        ]
+      }
+    },
+    {
+      "name": "390px scan.html?card=peony: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px scan.html?card=peony: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px scan.html?card=peony: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px scan.html?card=peony: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px scan.html?card=peony: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px work.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "菊影流金"
+        ]
+      }
+    },
+    {
+      "name": "390px work.html?card=chrysanthemum: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px work.html?card=chrysanthemum: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px work.html?card=chrysanthemum: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px work.html?card=chrysanthemum: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px work.html?card=chrysanthemum: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px preview.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "菊影流金"
+        ]
+      }
+    },
+    {
+      "name": "390px preview.html?card=chrysanthemum: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px preview.html?card=chrysanthemum: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px preview.html?card=chrysanthemum: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px preview.html?card=chrysanthemum: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px preview.html?card=chrysanthemum: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "390px preview.html?card=chrysanthemum: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px scan.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "菊影流金"
+        ]
+      }
+    },
+    {
+      "name": "390px scan.html?card=chrysanthemum: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px scan.html?card=chrysanthemum: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px scan.html?card=chrysanthemum: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px scan.html?card=chrysanthemum: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px scan.html?card=chrysanthemum: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px work.html?card=lotus: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "清荷入梦"
+        ]
+      }
+    },
+    {
+      "name": "390px work.html?card=lotus: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px work.html?card=lotus: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px work.html?card=lotus: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px work.html?card=lotus: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px work.html?card=lotus: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px preview.html?card=lotus: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "清荷入梦"
+        ]
+      }
+    },
+    {
+      "name": "390px preview.html?card=lotus: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px preview.html?card=lotus: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px preview.html?card=lotus: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px preview.html?card=lotus: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px preview.html?card=lotus: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "390px preview.html?card=lotus: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px scan.html?card=lotus: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "清荷入梦"
+        ]
+      }
+    },
+    {
+      "name": "390px scan.html?card=lotus: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px scan.html?card=lotus: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px scan.html?card=lotus: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px scan.html?card=lotus: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px scan.html?card=lotus: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px work.html?card=leaves: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花叶生辉"
+        ]
+      }
+    },
+    {
+      "name": "390px work.html?card=leaves: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px work.html?card=leaves: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px work.html?card=leaves: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px work.html?card=leaves: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px work.html?card=leaves: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px preview.html?card=leaves: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花叶生辉"
+        ]
+      }
+    },
+    {
+      "name": "390px preview.html?card=leaves: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px preview.html?card=leaves: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px preview.html?card=leaves: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px preview.html?card=leaves: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px preview.html?card=leaves: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "390px preview.html?card=leaves: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "390px scan.html?card=leaves: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花叶生辉"
+        ]
+      }
+    },
+    {
+      "name": "390px scan.html?card=leaves: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "390px scan.html?card=leaves: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "390px scan.html?card=leaves: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390px scan.html?card=leaves: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "390px scan.html?card=leaves: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px index.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开，\n自有回声。"
+        ]
+      }
+    },
+    {
+      "name": "320px index.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px index.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px index.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px index.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px home 0: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0,
+        "handOpen": 0,
+        "handFrame": 0,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "320px home 0.12: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.11973684210526316,
+        "handOpen": 0.3507373051357233,
+        "handFrame": 11,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "320px home 0.22: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.21973684210526315,
+        "handOpen": 0.8235622769219139,
+        "handFrame": 26,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "320px home 0.3: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.3,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "320px home 0.42: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.41973684210526313,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 137.962)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "320px home 0.56: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.5605263157894737,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+        "cardTurn": 60.86932618943478,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "320px home 0.7: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.7,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+        "cardTurn": 157.28395061728392,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "320px home 0.84: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.8394736842105263,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+        "cardTurn": 180,
+        "fanOpacity": 0.412680684875098,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "320px home 0.96: decoded hand follows native progress",
+      "pass": true,
+      "detail": {
+        "progress": 0.9605263157894737,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+        "cardTurn": 180,
+        "fanOpacity": 1,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "320px home: fully open before withdrawal",
+      "pass": true,
+      "detail": {
+        "requested": 0.3,
+        "progress": 0.3,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 1,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "cardTurn": 0,
+        "fanOpacity": 0,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "320px home: card turns and five originals appear",
+      "pass": true,
+      "detail": {
+        "requested": 0.96,
+        "progress": 0.9605263157894737,
+        "handOpen": 1,
+        "handFrame": 31,
+        "handSequence": "ready",
+        "handOpacity": 0,
+        "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+        "cardTurn": 180,
+        "fanOpacity": 1,
+        "modelReady": true,
+        "fallbackOnly": false,
+        "handDecoded": true,
+        "fanCards": 5,
+        "cameraCalls": 0
+      }
+    },
+    {
+      "name": "320px home: all five fan cards fit the screen",
+      "pass": true,
+      "detail": [
+        {
+          "left": 10.366647720336914,
+          "right": 133.78131294250488,
+          "top": 422.72015380859375,
+          "bottom": 592.8177490234375
+        },
+        {
+          "left": 62.399864196777344,
+          "right": 169.6741180419922,
+          "top": 355.70452880859375,
+          "bottom": 518.523681640625
+        },
+        {
+          "left": 115.203125,
+          "right": 204.796875,
+          "top": 336.9609375,
+          "bottom": 490.1640625
+        },
+        {
+          "left": 150.3258819580078,
+          "right": 257.6001281738281,
+          "top": 355.70452880859375,
+          "bottom": 518.523681640625
+        },
+        {
+          "left": 186.21868896484375,
+          "right": 309.63336181640625,
+          "top": 422.72015380859375,
+          "bottom": 592.8177490234375
+        }
+      ]
+    },
+    {
+      "name": "320px reverse 0.96: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.84: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.7: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.56: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.42: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.3: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.22: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0.12: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px reverse 0: identical hand and card state",
+      "pass": true
+    },
+    {
+      "name": "320px home: native wheel works in both directions",
+      "pass": true,
+      "detail": {
+        "down": 0.23684210526315788,
+        "up": 0
+      }
+    },
+    {
+      "name": "320px index.html: native scroll unfolds fan",
+      "pass": true,
+      "detail": {
+        "y": 714,
+        "progress": 0.9394736842105263,
+        "fanOpacity": 0.999974
+      }
+    },
+    {
+      "name": "320px index.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px catalogue.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "五种纹样，\n各自成诗。"
+        ]
+      }
+    },
+    {
+      "name": "320px catalogue.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px catalogue.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px catalogue.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px catalogue.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px catalogue.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px collection.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "把相遇，\n留在这里。"
+        ]
+      }
+    },
+    {
+      "name": "320px collection.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px collection.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px collection.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px collection.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px collection.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px guide.html: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "让一次相遇，\n慢慢发生。"
+        ]
+      }
+    },
+    {
+      "name": "320px guide.html: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px guide.html: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px guide.html: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px guide.html: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px guide.html: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px work.html?card=flowers: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开有声"
+        ]
+      }
+    },
+    {
+      "name": "320px work.html?card=flowers: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px work.html?card=flowers: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px work.html?card=flowers: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px work.html?card=flowers: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px work.html?card=flowers: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px preview.html?card=flowers: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开有声"
+        ]
+      }
+    },
+    {
+      "name": "320px preview.html?card=flowers: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px preview.html?card=flowers: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px preview.html?card=flowers: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px preview.html?card=flowers: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px preview.html?card=flowers: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "320px preview.html?card=flowers: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px scan.html?card=flowers: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花开有声"
+        ]
+      }
+    },
+    {
+      "name": "320px scan.html?card=flowers: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px scan.html?card=flowers: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px scan.html?card=flowers: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px scan.html?card=flowers: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px scan.html?card=flowers: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px work.html?card=peony: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "牡丹承瑞"
+        ]
+      }
+    },
+    {
+      "name": "320px work.html?card=peony: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px work.html?card=peony: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px work.html?card=peony: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px work.html?card=peony: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px work.html?card=peony: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px preview.html?card=peony: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "牡丹承瑞"
+        ]
+      }
+    },
+    {
+      "name": "320px preview.html?card=peony: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px preview.html?card=peony: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px preview.html?card=peony: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px preview.html?card=peony: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px preview.html?card=peony: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "320px preview.html?card=peony: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px scan.html?card=peony: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "牡丹承瑞"
+        ]
+      }
+    },
+    {
+      "name": "320px scan.html?card=peony: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px scan.html?card=peony: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px scan.html?card=peony: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px scan.html?card=peony: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px scan.html?card=peony: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px work.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "菊影流金"
+        ]
+      }
+    },
+    {
+      "name": "320px work.html?card=chrysanthemum: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px work.html?card=chrysanthemum: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px work.html?card=chrysanthemum: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px work.html?card=chrysanthemum: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px work.html?card=chrysanthemum: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px preview.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "菊影流金"
+        ]
+      }
+    },
+    {
+      "name": "320px preview.html?card=chrysanthemum: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px preview.html?card=chrysanthemum: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px preview.html?card=chrysanthemum: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px preview.html?card=chrysanthemum: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px preview.html?card=chrysanthemum: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "320px preview.html?card=chrysanthemum: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px scan.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "菊影流金"
+        ]
+      }
+    },
+    {
+      "name": "320px scan.html?card=chrysanthemum: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px scan.html?card=chrysanthemum: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px scan.html?card=chrysanthemum: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px scan.html?card=chrysanthemum: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px scan.html?card=chrysanthemum: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px work.html?card=lotus: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "清荷入梦"
+        ]
+      }
+    },
+    {
+      "name": "320px work.html?card=lotus: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px work.html?card=lotus: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px work.html?card=lotus: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px work.html?card=lotus: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px work.html?card=lotus: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px preview.html?card=lotus: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "清荷入梦"
+        ]
+      }
+    },
+    {
+      "name": "320px preview.html?card=lotus: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px preview.html?card=lotus: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px preview.html?card=lotus: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px preview.html?card=lotus: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px preview.html?card=lotus: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "320px preview.html?card=lotus: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px scan.html?card=lotus: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "清荷入梦"
+        ]
+      }
+    },
+    {
+      "name": "320px scan.html?card=lotus: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px scan.html?card=lotus: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px scan.html?card=lotus: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px scan.html?card=lotus: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px scan.html?card=lotus: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px work.html?card=leaves: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花叶生辉"
+        ]
+      }
+    },
+    {
+      "name": "320px work.html?card=leaves: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px work.html?card=leaves: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px work.html?card=leaves: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px work.html?card=leaves: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px work.html?card=leaves: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px preview.html?card=leaves: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花叶生辉"
+        ]
+      }
+    },
+    {
+      "name": "320px preview.html?card=leaves: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px preview.html?card=leaves: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px preview.html?card=leaves: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px preview.html?card=leaves: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px preview.html?card=leaves: preview does not collect",
+      "pass": true,
+      "detail": {
+        "writes": [],
+        "collection": null
+      }
+    },
+    {
+      "name": "320px preview.html?card=leaves: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "320px scan.html?card=leaves: renders",
+      "pass": true,
+      "detail": {
+        "h1": [
+          "花叶生辉"
+        ]
+      }
+    },
+    {
+      "name": "320px scan.html?card=leaves: no overflow",
+      "pass": true,
+      "detail": {
+        "pixels": 0
+      }
+    },
+    {
+      "name": "320px scan.html?card=leaves: local assets",
+      "pass": true,
+      "detail": {
+        "failed": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px scan.html?card=leaves: no JS errors",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320px scan.html?card=leaves: no camera autoplay",
+      "pass": true
+    },
+    {
+      "name": "320px scan.html?card=leaves: keyboard focus visible",
+      "pass": true,
+      "detail": {
+        "tag": "A",
+        "text": "跳到主要内容",
+        "visible": true,
+        "focusVisible": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "name": "flowers: catalogue detail link",
+      "pass": true
+    },
+    {
+      "name": "flowers: detail preview link",
+      "pass": true
+    },
+    {
+      "name": "flowers: preview scan link",
+      "pass": true
+    },
+    {
+      "name": "flowers: scan back preserves preview card",
+      "pass": true,
+      "detail": {
+        "url": "http://127.0.0.1:4173/preview.html?card=flowers"
+      }
+    },
+    {
+      "name": "flowers: detail scan link",
+      "pass": true
+    },
+    {
+      "name": "flowers: scan back preserves detail card",
+      "pass": true
+    },
+    {
+      "name": "peony: catalogue detail link",
+      "pass": true
+    },
+    {
+      "name": "peony: detail preview link",
+      "pass": true
+    },
+    {
+      "name": "peony: preview scan link",
+      "pass": true
+    },
+    {
+      "name": "peony: scan back preserves preview card",
+      "pass": true,
+      "detail": {
+        "url": "http://127.0.0.1:4173/preview.html?card=peony"
+      }
+    },
+    {
+      "name": "peony: detail scan link",
+      "pass": true
+    },
+    {
+      "name": "peony: scan back preserves detail card",
+      "pass": true
+    },
+    {
+      "name": "chrysanthemum: catalogue detail link",
+      "pass": true
+    },
+    {
+      "name": "chrysanthemum: detail preview link",
+      "pass": true
+    },
+    {
+      "name": "chrysanthemum: preview scan link",
+      "pass": true
+    },
+    {
+      "name": "chrysanthemum: scan back preserves preview card",
+      "pass": true,
+      "detail": {
+        "url": "http://127.0.0.1:4173/preview.html?card=chrysanthemum"
+      }
+    },
+    {
+      "name": "chrysanthemum: detail scan link",
+      "pass": true
+    },
+    {
+      "name": "chrysanthemum: scan back preserves detail card",
+      "pass": true
+    },
+    {
+      "name": "lotus: catalogue detail link",
+      "pass": true
+    },
+    {
+      "name": "lotus: detail preview link",
+      "pass": true
+    },
+    {
+      "name": "lotus: preview scan link",
+      "pass": true
+    },
+    {
+      "name": "lotus: scan back preserves preview card",
+      "pass": true,
+      "detail": {
+        "url": "http://127.0.0.1:4173/preview.html?card=lotus"
+      }
+    },
+    {
+      "name": "lotus: detail scan link",
+      "pass": true
+    },
+    {
+      "name": "lotus: scan back preserves detail card",
+      "pass": true
+    },
+    {
+      "name": "leaves: catalogue detail link",
+      "pass": true
+    },
+    {
+      "name": "leaves: detail preview link",
+      "pass": true
+    },
+    {
+      "name": "leaves: preview scan link",
+      "pass": true
+    },
+    {
+      "name": "leaves: scan back preserves preview card",
+      "pass": true,
+      "detail": {
+        "url": "http://127.0.0.1:4173/preview.html?card=leaves"
+      }
+    },
+    {
+      "name": "leaves: detail scan link",
+      "pass": true
+    },
+    {
+      "name": "leaves: scan back preserves detail card",
+      "pass": true
+    },
+    {
+      "name": "work: unknown card shows 404 content",
+      "pass": true,
+      "detail": {
+        "httpStatus": 200,
+        "title": "花卡详情 | 花开有声"
+      }
+    },
+    {
+      "name": "preview: unknown card shows 404 content",
+      "pass": true,
+      "detail": {
+        "httpStatus": 200,
+        "title": "花卡预览 | 花开有声"
+      }
+    },
+    {
+      "name": "scan: unknown card shows 404 content",
+      "pass": true,
+      "detail": {
+        "httpStatus": 200,
+        "title": "扫描花卡 | 花开有声"
+      }
+    },
+    {
+      "name": "Reduced motion: no animated or pinned exhibition",
+      "pass": true,
+      "detail": {
+        "matches": true,
+        "scrollBehavior": "auto",
+        "sticky": "relative",
+        "fanDisplay": "none",
+        "modelReady": true,
+        "progress": "0",
+        "heroTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "animations": 0
+      }
+    },
+    {
+      "name": "Reduced motion: finite scene progress",
+      "pass": true,
+      "detail": {
+        "matches": true,
+        "scrollBehavior": "auto",
+        "sticky": "relative",
+        "fanDisplay": "none",
+        "modelReady": true,
+        "progress": "0",
+        "heroTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "animations": 0
+      }
+    },
+    {
+      "name": "Unavailable 3D module: original card fallback is visible",
+      "pass": true
+    },
+    {
+      "name": "Fallback: card rotates with native scroll",
+      "pass": true
+    },
+    {
+      "name": "Unavailable hand manifest: initial decoded palm remains",
+      "pass": true
+    },
+    {
+      "name": "Unavailable hand manifest: five-card catalogue remains usable",
+      "pass": true
+    },
+    {
+      "name": "Image decode failure: last complete hand layers survive",
+      "pass": true
+    },
+    {
+      "name": "Image decode failure: no false collection",
+      "pass": true
+    }
+  ],
+  "routes": [
+    {
+      "route": "index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花开，\n自有回声。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "catalogue.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "五种纹样，\n各自成诗。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "collection.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "把相遇，\n留在这里。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "guide.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "让一次相遇，\n慢慢发生。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=flowers",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花开有声"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=flowers",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花开有声"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=flowers",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将花开有声花卡完整放入画面。",
+      "h1": [
+        "花开有声"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=peony",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=peony",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=peony",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将牡丹承瑞花卡完整放入画面。",
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=chrysanthemum",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "菊影流金"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=chrysanthemum",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "菊影流金"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=chrysanthemum",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将菊影流金花卡完整放入画面。",
+      "h1": [
+        "菊影流金"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=lotus",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "清荷入梦"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=lotus",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "清荷入梦"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=lotus",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将清荷入梦花卡完整放入画面。",
+      "h1": [
+        "清荷入梦"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=leaves",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花叶生辉"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=leaves",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花叶生辉"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=leaves",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将花叶生辉花卡完整放入画面。",
+      "h1": [
+        "花叶生辉"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "index.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花开，\n自有回声。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        {
+          "tag": "DIV",
+          "class": "hero-model model-ready",
+          "left": -23.40625,
+          "right": 413.390625
+        }
+      ],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "catalogue.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "五种纹样，\n各自成诗。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "collection.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "把相遇，\n留在这里。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "guide.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "让一次相遇，\n慢慢发生。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=flowers",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花开有声"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=flowers",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花开有声"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=flowers",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将花开有声花卡完整放入画面。",
+      "h1": [
+        "花开有声"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=peony",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=peony",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=peony",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将牡丹承瑞花卡完整放入画面。",
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=chrysanthemum",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "菊影流金"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=chrysanthemum",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "菊影流金"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=chrysanthemum",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将菊影流金花卡完整放入画面。",
+      "h1": [
+        "菊影流金"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=lotus",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "清荷入梦"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=lotus",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "清荷入梦"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=lotus",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将清荷入梦花卡完整放入画面。",
+      "h1": [
+        "清荷入梦"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=leaves",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花叶生辉"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=leaves",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花叶生辉"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=leaves",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将花叶生辉花卡完整放入画面。",
+      "h1": [
+        "花叶生辉"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "index.html",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花开，\n自有回声。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        {
+          "tag": "DIV",
+          "class": "hero-model model-ready",
+          "left": -19.203125,
+          "right": 339.1875
+        }
+      ],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "catalogue.html",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "五种纹样，\n各自成诗。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "collection.html",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "把相遇，\n留在这里。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "guide.html",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "让一次相遇，\n慢慢发生。"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=flowers",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花开有声"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=flowers",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花开有声"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=flowers",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将花开有声花卡完整放入画面。",
+      "h1": [
+        "花开有声"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=peony",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=peony",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=peony",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将牡丹承瑞花卡完整放入画面。",
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=chrysanthemum",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "菊影流金"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=chrysanthemum",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "菊影流金"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=chrysanthemum",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将菊影流金花卡完整放入画面。",
+      "h1": [
+        "菊影流金"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=lotus",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "清荷入梦"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=lotus",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "清荷入梦"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=lotus",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将清荷入梦花卡完整放入画面。",
+      "h1": [
+        "清荷入梦"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "work.html?card=leaves",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花叶生辉"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "preview.html?card=leaves",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "h1": [
+        "花叶生辉"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": true,
+      "fallbackOnly": false,
+      "collection": null
+    },
+    {
+      "route": "scan.html?card=leaves",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "failed": [],
+      "errors": [],
+      "consoleErrors": [],
+      "httpStatus": 200,
+      "status": "点击「开启相机」后，浏览器才会请求相机权限。将花叶生辉花卡完整放入画面。",
+      "h1": [
+        "花叶生辉"
+      ],
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "brokenImages": [],
+      "cameraCalls": 0,
+      "storageWrites": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "collection": null
+    }
+  ],
+  "screenshots": [
+    "1440-index-html.png",
+    "1440-home-phase-00.png",
+    "1440-home-phase-12.png",
+    "1440-home-phase-22.png",
+    "1440-home-phase-30.png",
+    "1440-home-phase-42.png",
+    "1440-home-phase-56.png",
+    "1440-home-phase-70.png",
+    "1440-home-phase-84.png",
+    "1440-home-phase-96.png",
+    "1440-home-reverse-96.png",
+    "1440-home-reverse-56.png",
+    "1440-home-reverse-22.png",
+    "1440-home-reverse-0.png",
+    "1440-home-scrolled.png",
+    "1440-catalogue-html.png",
+    "1440-collection-html.png",
+    "1440-guide-html.png",
+    "1440-work-html-card-lotus.png",
+    "1440-preview-html-card-lotus.png",
+    "1440-scan-html-card-lotus.png",
+    "390-index-html.png",
+    "390-home-phase-00.png",
+    "390-home-phase-12.png",
+    "390-home-phase-22.png",
+    "390-home-phase-30.png",
+    "390-home-phase-42.png",
+    "390-home-phase-56.png",
+    "390-home-phase-70.png",
+    "390-home-phase-84.png",
+    "390-home-phase-96.png",
+    "390-home-reverse-96.png",
+    "390-home-reverse-56.png",
+    "390-home-reverse-22.png",
+    "390-home-reverse-0.png",
+    "390-home-scrolled.png",
+    "390-catalogue-html.png",
+    "390-collection-html.png",
+    "390-guide-html.png",
+    "390-work-html-card-lotus.png",
+    "390-preview-html-card-lotus.png",
+    "390-scan-html-card-lotus.png",
+    "1440-home-reduced-motion.png",
+    "390-home-fallback.png"
+  ],
+  "motion": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "samples": [
+        {
+          "requested": 0,
+          "progress": 0,
+          "handOpen": 0,
+          "handFrame": 0,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.12,
+          "progress": 0.12037037037037036,
+          "handOpen": 0.3537786885091666,
+          "handFrame": 11,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.22,
+          "progress": 0.22037037037037038,
+          "handOpen": 0.8260390146789578,
+          "handFrame": 26,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.3,
+          "progress": 0.3,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.42,
+          "progress": 0.4203703703703704,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 267.326)",
+          "cardTurn": 0.0005711671976131522,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.56,
+          "progress": 0.5601851851851852,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 410.85)",
+          "cardTurn": 60.62588904310797,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.7,
+          "progress": 0.7,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 410.85)",
+          "cardTurn": 157.28395061728392,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.84,
+          "progress": 0.8398148148148148,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 410.85)",
+          "cardTurn": 180,
+          "fanOpacity": 0.4154857992842242,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.96,
+          "progress": 0.9601851851851851,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 410.85)",
+          "cardTurn": 180,
+          "fanOpacity": 1,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        }
+      ],
+      "cycles": [
+        {
+          "durationMs": 2400,
+          "samples": 145,
+          "p95RafGapMs": 16.799999999999272,
+          "maxRafGapMs": 16.800000000000182
+        },
+        {
+          "durationMs": 800,
+          "samples": 49,
+          "p95RafGapMs": 16.700000000000728,
+          "maxRafGapMs": 16.799999999999272
+        },
+        {
+          "durationMs": 800,
+          "samples": 48,
+          "p95RafGapMs": 16.799999999999272,
+          "maxRafGapMs": 16.80000000000109
+        }
+      ],
+      "scope": "Desktop automated scroll and rAF scheduling measurements; not physical-device FPS."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "samples": [
+        {
+          "requested": 0,
+          "progress": 0,
+          "handOpen": 0,
+          "handFrame": 0,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.12,
+          "progress": 0.11973684210526316,
+          "handOpen": 0.3507373051357233,
+          "handFrame": 11,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.22,
+          "progress": 0.21973684210526315,
+          "handOpen": 0.8235622769219139,
+          "handFrame": 26,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.3,
+          "progress": 0.3,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.42,
+          "progress": 0.41973684210526313,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 137.962)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.56,
+          "progress": 0.5605263157894737,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+          "cardTurn": 60.86932618943478,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.7,
+          "progress": 0.7,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+          "cardTurn": 157.28395061728392,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.84,
+          "progress": 0.8394736842105263,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+          "cardTurn": 180,
+          "fanOpacity": 0.412680684875098,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.96,
+          "progress": 0.9605263157894737,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+          "cardTurn": 180,
+          "fanOpacity": 1,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        }
+      ],
+      "cycles": [
+        {
+          "durationMs": 2400,
+          "samples": 145,
+          "p95RafGapMs": 16.799999999999272,
+          "maxRafGapMs": 16.800000000000182
+        },
+        {
+          "durationMs": 800,
+          "samples": 48,
+          "p95RafGapMs": 16.700000000000728,
+          "maxRafGapMs": 16.800000000000182
+        },
+        {
+          "durationMs": 800,
+          "samples": 48,
+          "p95RafGapMs": 16.700000000000728,
+          "maxRafGapMs": 16.800000000000182
+        }
+      ],
+      "scope": "Desktop automated scroll and rAF scheduling measurements; not physical-device FPS."
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "samples": [
+        {
+          "requested": 0,
+          "progress": 0,
+          "handOpen": 0,
+          "handFrame": 0,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.12,
+          "progress": 0.11973684210526316,
+          "handOpen": 0.3507373051357233,
+          "handFrame": 11,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.22,
+          "progress": 0.21973684210526315,
+          "handOpen": 0.8235622769219139,
+          "handFrame": 26,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.3,
+          "progress": 0.3,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.42,
+          "progress": 0.41973684210526313,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 1,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 137.962)",
+          "cardTurn": 0,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.56,
+          "progress": 0.5605263157894737,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+          "cardTurn": 60.86932618943478,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.7,
+          "progress": 0.7,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+          "cardTurn": 157.28395061728392,
+          "fanOpacity": 0,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.84,
+          "progress": 0.8394736842105263,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+          "cardTurn": 180,
+          "fanOpacity": 0.412680684875098,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        },
+        {
+          "requested": 0.96,
+          "progress": 0.9605263157894737,
+          "handOpen": 1,
+          "handFrame": 31,
+          "handSequence": "ready",
+          "handOpacity": 0,
+          "handTransform": "matrix(1, 0, 0, 1, 0, 213.529)",
+          "cardTurn": 180,
+          "fanOpacity": 1,
+          "modelReady": true,
+          "fallbackOnly": false,
+          "handDecoded": true,
+          "fanCards": 5,
+          "cameraCalls": 0
+        }
+      ],
+      "cycles": [
+        {
+          "durationMs": 2400,
+          "samples": 145,
+          "p95RafGapMs": 16.700000000000728,
+          "maxRafGapMs": 16.800000000000182
+        },
+        {
+          "durationMs": 800,
+          "samples": 48,
+          "p95RafGapMs": 16.700000000000728,
+          "maxRafGapMs": 16.799999999999272
+        },
+        {
+          "durationMs": 800,
+          "samples": 48,
+          "p95RafGapMs": 16.700000000000728,
+          "maxRafGapMs": 16.800000000000182
+        }
+      ],
+      "scope": "Desktop automated scroll and rAF scheduling measurements; not physical-device FPS."
+    }
+  ],
+  "scope": "Local macOS browser automation with simulated portrait viewports and camera calls blocked. No production, physical phone, or actual target-tracking verification.",
+  "host": {
+    "platform": "darwin",
+    "release": "27.0.0",
+    "architecture": "arm64"
+  },
+  "browserVersion": "155.0.8059.41",
+  "summary": {
+    "total": 475,
+    "passed": 474,
+    "failed": 1
+  }
+}

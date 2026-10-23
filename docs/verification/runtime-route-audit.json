@@ -1,0 +1,5930 @@
+{
+  "at": "2026-10-13T16:53:36.169Z",
+  "runtime": "Supported dot cloud Chromium, exact-size same-origin iframes; no device emulation",
+  "rows": [
+    {
+      "route": "/runtime-public/index.html",
+      "width": 1440,
+      "height": 900,
+      "title": "手托花卡 · 展览首页 | 花开有声",
+      "h1": [
+        "花开，自有回声。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/catalogue.html",
+      "width": 1440,
+      "height": 900,
+      "title": "花卡图录 | 花开有声",
+      "h1": [
+        "五种纹样，各自成诗。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/collection.html",
+      "width": 1440,
+      "height": 900,
+      "title": "我的收藏 | 花开有声",
+      "h1": [
+        "把相遇，留在这里。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/guide.html",
+      "width": 1440,
+      "height": 900,
+      "title": "参观指南 | 花开有声",
+      "h1": [
+        "让一次相遇，慢慢发生。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=flowers",
+      "width": 1440,
+      "height": 900,
+      "title": "花开有声 · 花卡图录 | 花开有声",
+      "h1": [
+        "花开有声"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=flowers",
+      "width": 1440,
+      "height": 900,
+      "title": "花开有声 · 花卡预览 | 花开有声",
+      "h1": [
+        "花开有声"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=flowers",
+      "width": 1440,
+      "height": 900,
+      "title": "花开有声 · 扫描花卡 | 花开有声",
+      "h1": [
+        "花开有声"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=peony",
+      "width": 1440,
+      "height": 900,
+      "title": "牡丹承瑞 · 花卡图录 | 花开有声",
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=peony",
+      "width": 1440,
+      "height": 900,
+      "title": "牡丹承瑞 · 花卡预览 | 花开有声",
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=peony",
+      "width": 1440,
+      "height": 900,
+      "title": "牡丹承瑞 · 扫描花卡 | 花开有声",
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=chrysanthemum",
+      "width": 1440,
+      "height": 900,
+      "title": "菊影流金 · 花卡图录 | 花开有声",
+      "h1": [
+        "菊影流金"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=chrysanthemum",
+      "width": 1440,
+      "height": 900,
+      "title": "菊影流金 · 花卡预览 | 花开有声",
+      "h1": [
+        "菊影流金"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=chrysanthemum",
+      "width": 1440,
+      "height": 900,
+      "title": "菊影流金 · 扫描花卡 | 花开有声",
+      "h1": [
+        "菊影流金"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=lotus",
+      "width": 1440,
+      "height": 900,
+      "title": "清荷入梦 · 花卡图录 | 花开有声",
+      "h1": [
+        "清荷入梦"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=lotus",
+      "width": 1440,
+      "height": 900,
+      "title": "清荷入梦 · 花卡预览 | 花开有声",
+      "h1": [
+        "清荷入梦"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=lotus",
+      "width": 1440,
+      "height": 900,
+      "title": "清荷入梦 · 扫描花卡 | 花开有声",
+      "h1": [
+        "清荷入梦"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=leaves",
+      "width": 1440,
+      "height": 900,
+      "title": "花叶生辉 · 花卡图录 | 花开有声",
+      "h1": [
+        "花叶生辉"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=leaves",
+      "width": 1440,
+      "height": 900,
+      "title": "花叶生辉 · 花卡预览 | 花开有声",
+      "h1": [
+        "花叶生辉"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=leaves",
+      "width": 1440,
+      "height": 900,
+      "title": "花叶生辉 · 扫描花卡 | 花开有声",
+      "h1": [
+        "花叶生辉"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/index.html",
+      "width": 390,
+      "height": 844,
+      "title": "手托花卡 · 展览首页 | 花开有声",
+      "h1": [
+        "花开，自有回声。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/catalogue.html",
+      "width": 390,
+      "height": 844,
+      "title": "花卡图录 | 花开有声",
+      "h1": [
+        "五种纹样，各自成诗。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/collection.html",
+      "width": 390,
+      "height": 844,
+      "title": "我的收藏 | 花开有声",
+      "h1": [
+        "把相遇，留在这里。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/guide.html",
+      "width": 390,
+      "height": 844,
+      "title": "参观指南 | 花开有声",
+      "h1": [
+        "让一次相遇，慢慢发生。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=flowers",
+      "width": 390,
+      "height": 844,
+      "title": "花开有声 · 花卡图录 | 花开有声",
+      "h1": [
+        "花开有声"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=flowers",
+      "width": 390,
+      "height": 844,
+      "title": "花开有声 · 花卡预览 | 花开有声",
+      "h1": [
+        "花开有声"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=flowers",
+      "width": 390,
+      "height": 844,
+      "title": "花开有声 · 扫描花卡 | 花开有声",
+      "h1": [
+        "花开有声"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=peony",
+      "width": 390,
+      "height": 844,
+      "title": "牡丹承瑞 · 花卡图录 | 花开有声",
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=peony",
+      "width": 390,
+      "height": 844,
+      "title": "牡丹承瑞 · 花卡预览 | 花开有声",
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=peony",
+      "width": 390,
+      "height": 844,
+      "title": "牡丹承瑞 · 扫描花卡 | 花开有声",
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=chrysanthemum",
+      "width": 390,
+      "height": 844,
+      "title": "菊影流金 · 花卡图录 | 花开有声",
+      "h1": [
+        "菊影流金"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=chrysanthemum",
+      "width": 390,
+      "height": 844,
+      "title": "菊影流金 · 花卡预览 | 花开有声",
+      "h1": [
+        "菊影流金"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=chrysanthemum",
+      "width": 390,
+      "height": 844,
+      "title": "菊影流金 · 扫描花卡 | 花开有声",
+      "h1": [
+        "菊影流金"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=lotus",
+      "width": 390,
+      "height": 844,
+      "title": "清荷入梦 · 花卡图录 | 花开有声",
+      "h1": [
+        "清荷入梦"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=lotus",
+      "width": 390,
+      "height": 844,
+      "title": "清荷入梦 · 花卡预览 | 花开有声",
+      "h1": [
+        "清荷入梦"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=lotus",
+      "width": 390,
+      "height": 844,
+      "title": "清荷入梦 · 扫描花卡 | 花开有声",
+      "h1": [
+        "清荷入梦"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=leaves",
+      "width": 390,
+      "height": 844,
+      "title": "花叶生辉 · 花卡图录 | 花开有声",
+      "h1": [
+        "花叶生辉"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=leaves",
+      "width": 390,
+      "height": 844,
+      "title": "花叶生辉 · 花卡预览 | 花开有声",
+      "h1": [
+        "花叶生辉"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=leaves",
+      "width": 390,
+      "height": 844,
+      "title": "花叶生辉 · 扫描花卡 | 花开有声",
+      "h1": [
+        "花叶生辉"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/index.html",
+      "width": 320,
+      "height": 844,
+      "title": "手托花卡 · 展览首页 | 花开有声",
+      "h1": [
+        "花开，自有回声。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/catalogue.html",
+      "width": 320,
+      "height": 844,
+      "title": "花卡图录 | 花开有声",
+      "h1": [
+        "五种纹样，各自成诗。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/collection.html",
+      "width": 320,
+      "height": 844,
+      "title": "我的收藏 | 花开有声",
+      "h1": [
+        "把相遇，留在这里。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/guide.html",
+      "width": 320,
+      "height": 844,
+      "title": "参观指南 | 花开有声",
+      "h1": [
+        "让一次相遇，慢慢发生。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=flowers",
+      "width": 320,
+      "height": 844,
+      "title": "花开有声 · 花卡图录 | 花开有声",
+      "h1": [
+        "花开有声"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=flowers",
+      "width": 320,
+      "height": 844,
+      "title": "花开有声 · 花卡预览 | 花开有声",
+      "h1": [
+        "花开有声"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=flowers",
+      "width": 320,
+      "height": 844,
+      "title": "花开有声 · 扫描花卡 | 花开有声",
+      "h1": [
+        "花开有声"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=peony",
+      "width": 320,
+      "height": 844,
+      "title": "牡丹承瑞 · 花卡图录 | 花开有声",
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=peony",
+      "width": 320,
+      "height": 844,
+      "title": "牡丹承瑞 · 花卡预览 | 花开有声",
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=peony",
+      "width": 320,
+      "height": 844,
+      "title": "牡丹承瑞 · 扫描花卡 | 花开有声",
+      "h1": [
+        "牡丹承瑞"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=chrysanthemum",
+      "width": 320,
+      "height": 844,
+      "title": "菊影流金 · 花卡图录 | 花开有声",
+      "h1": [
+        "菊影流金"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=chrysanthemum",
+      "width": 320,
+      "height": 844,
+      "title": "菊影流金 · 花卡预览 | 花开有声",
+      "h1": [
+        "菊影流金"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=chrysanthemum",
+      "width": 320,
+      "height": 844,
+      "title": "菊影流金 · 扫描花卡 | 花开有声",
+      "h1": [
+        "菊影流金"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=lotus",
+      "width": 320,
+      "height": 844,
+      "title": "清荷入梦 · 花卡图录 | 花开有声",
+      "h1": [
+        "清荷入梦"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=lotus",
+      "width": 320,
+      "height": 844,
+      "title": "清荷入梦 · 花卡预览 | 花开有声",
+      "h1": [
+        "清荷入梦"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=lotus",
+      "width": 320,
+      "height": 844,
+      "title": "清荷入梦 · 扫描花卡 | 花开有声",
+      "h1": [
+        "清荷入梦"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/work.html?card=leaves",
+      "width": 320,
+      "height": 844,
+      "title": "花叶生辉 · 花卡图录 | 花开有声",
+      "h1": [
+        "花叶生辉"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/preview.html?card=leaves",
+      "width": 320,
+      "height": 844,
+      "title": "花叶生辉 · 花卡预览 | 花开有声",
+      "h1": [
+        "花叶生辉"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/runtime-public/scan.html?card=leaves",
+      "width": 320,
+      "height": 844,
+      "title": "花叶生辉 · 扫描花卡 | 花开有声",
+      "h1": [
+        "花叶生辉"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "scanState": "unsupported",
+      "scanStatus": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。",
+      "startScanHidden": true,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": false,
+      "staleCopy": false
+    }
+  ],
+  "checks": [
+    {
+      "name": "1440 index.html: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 index.html: renders",
+      "pass": true,
+      "detail": [
+        "花开，自有回声。"
+      ]
+    },
+    {
+      "name": "1440 index.html: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 index.html: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 index.html: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 index.html: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 index.html: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 home: handheld-relief.webp loaded",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/handheld-relief.webp",
+        "width": 1200,
+        "height": 1600
+      }
+    },
+    {
+      "name": "1440 home: handheld-front.webp loaded",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/handheld-front.webp",
+        "width": 1200,
+        "height": 1600
+      }
+    },
+    {
+      "name": "1440 home: hand sequence ready",
+      "pass": true,
+      "detail": "ready"
+    },
+    {
+      "name": "1440 home: rig hand loaded",
+      "pass": true,
+      "detail": [
+        {
+          "src": "./assets/hand-sequence/hand-000.webp",
+          "frame": "0"
+        },
+        {
+          "src": "./assets/hand-sequence/hand-000.webp",
+          "frame": "0"
+        }
+      ]
+    },
+    {
+      "name": "1440 home: no old case layer",
+      "pass": true
+    },
+    {
+      "name": "1440 home: five cards retained",
+      "pass": true
+    },
+    {
+      "name": "1440 home: static exhibit clear",
+      "pass": true
+    },
+    {
+      "name": "1440 home: native vertical scroll retained",
+      "pass": true
+    },
+    {
+      "name": "1440 catalogue.html: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 catalogue.html: renders",
+      "pass": true,
+      "detail": [
+        "五种纹样，各自成诗。"
+      ]
+    },
+    {
+      "name": "1440 catalogue.html: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 catalogue.html: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 catalogue.html: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 catalogue.html: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 catalogue.html: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 collection.html: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 collection.html: renders",
+      "pass": true,
+      "detail": [
+        "把相遇，留在这里。"
+      ]
+    },
+    {
+      "name": "1440 collection.html: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 collection.html: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 collection.html: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 collection.html: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 collection.html: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 guide.html: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 guide.html: renders",
+      "pass": true,
+      "detail": [
+        "让一次相遇，慢慢发生。"
+      ]
+    },
+    {
+      "name": "1440 guide.html: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 guide.html: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 guide.html: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 guide.html: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 guide.html: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 work.html?card=flowers: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 work.html?card=flowers: renders",
+      "pass": true,
+      "detail": [
+        "花开有声"
+      ]
+    },
+    {
+      "name": "1440 work.html?card=flowers: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 work.html?card=flowers: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 work.html?card=flowers: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 work.html?card=flowers: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 work.html?card=flowers: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 work.html?card=flowers: selected title",
+      "pass": true,
+      "detail": "花开有声 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "1440 work.html?card=flowers: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=flowers&from=work&backCard=flowers"
+    },
+    {
+      "name": "1440 work.html?card=flowers: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/card.webp"
+    },
+    {
+      "name": "1440 preview.html?card=flowers: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 preview.html?card=flowers: renders",
+      "pass": true,
+      "detail": [
+        "花开有声"
+      ]
+    },
+    {
+      "name": "1440 preview.html?card=flowers: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 preview.html?card=flowers: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 preview.html?card=flowers: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 preview.html?card=flowers: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 preview.html?card=flowers: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=flowers: selected title",
+      "pass": true,
+      "detail": "花开有声 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "1440 preview.html?card=flowers: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=flowers&from=preview&backCard=flowers"
+    },
+    {
+      "name": "1440 preview.html?card=flowers: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=flowers: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/flowers-bloom.webp"
+    },
+    {
+      "name": "1440 preview.html?card=flowers: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=flowers: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/target.webp",
+        "alt": "花开有声原作正面"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=flowers: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/flowers-bloom.webp",
+        "alt": "花开有声立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=flowers: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/target.webp",
+        "alt": "花开有声原作正面"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=flowers: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/flowers-bloom.webp",
+        "alt": "花开有声立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=flowers: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=flowers: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=flowers: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 scan.html?card=flowers: renders",
+      "pass": true,
+      "detail": [
+        "花开有声"
+      ]
+    },
+    {
+      "name": "1440 scan.html?card=flowers: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 scan.html?card=flowers: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 scan.html?card=flowers: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 scan.html?card=flowers: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 scan.html?card=flowers: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=flowers: selected title",
+      "pass": true,
+      "detail": "花开有声 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "1440 scan.html?card=flowers: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=flowers&from=catalogue&backCard=flowers"
+    },
+    {
+      "name": "1440 scan.html?card=flowers: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=flowers: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=flowers: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "1440 work.html?card=peony: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 work.html?card=peony: renders",
+      "pass": true,
+      "detail": [
+        "牡丹承瑞"
+      ]
+    },
+    {
+      "name": "1440 work.html?card=peony: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 work.html?card=peony: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 work.html?card=peony: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 work.html?card=peony: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 work.html?card=peony: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 work.html?card=peony: selected title",
+      "pass": true,
+      "detail": "牡丹承瑞 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "1440 work.html?card=peony: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=peony&from=work&backCard=peony"
+    },
+    {
+      "name": "1440 work.html?card=peony: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/peony/card-named.webp"
+    },
+    {
+      "name": "1440 preview.html?card=peony: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 preview.html?card=peony: renders",
+      "pass": true,
+      "detail": [
+        "牡丹承瑞"
+      ]
+    },
+    {
+      "name": "1440 preview.html?card=peony: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 preview.html?card=peony: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 preview.html?card=peony: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 preview.html?card=peony: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 preview.html?card=peony: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=peony: selected title",
+      "pass": true,
+      "detail": "牡丹承瑞 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "1440 preview.html?card=peony: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=peony&from=preview&backCard=peony"
+    },
+    {
+      "name": "1440 preview.html?card=peony: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=peony: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/peony-bloom.webp"
+    },
+    {
+      "name": "1440 preview.html?card=peony: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=peony: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/peony/target.webp",
+        "alt": "牡丹承瑞原作正面"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=peony: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/peony-bloom.webp",
+        "alt": "牡丹承瑞立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=peony: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/peony/target.webp",
+        "alt": "牡丹承瑞原作正面"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=peony: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/peony-bloom.webp",
+        "alt": "牡丹承瑞立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=peony: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=peony: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=peony: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 scan.html?card=peony: renders",
+      "pass": true,
+      "detail": [
+        "牡丹承瑞"
+      ]
+    },
+    {
+      "name": "1440 scan.html?card=peony: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 scan.html?card=peony: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 scan.html?card=peony: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 scan.html?card=peony: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 scan.html?card=peony: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=peony: selected title",
+      "pass": true,
+      "detail": "牡丹承瑞 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "1440 scan.html?card=peony: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=peony&from=catalogue&backCard=peony"
+    },
+    {
+      "name": "1440 scan.html?card=peony: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=peony: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=peony: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "1440 work.html?card=chrysanthemum: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 work.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": [
+        "菊影流金"
+      ]
+    },
+    {
+      "name": "1440 work.html?card=chrysanthemum: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 work.html?card=chrysanthemum: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 work.html?card=chrysanthemum: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 work.html?card=chrysanthemum: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 work.html?card=chrysanthemum: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 work.html?card=chrysanthemum: selected title",
+      "pass": true,
+      "detail": "菊影流金 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "1440 work.html?card=chrysanthemum: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=chrysanthemum&from=work&backCard=chrysanthemum"
+    },
+    {
+      "name": "1440 work.html?card=chrysanthemum: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/chrysanthemum/card-named.webp"
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": [
+        "菊影流金"
+      ]
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: selected title",
+      "pass": true,
+      "detail": "菊影流金 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=chrysanthemum&from=preview&backCard=chrysanthemum"
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/chrysanthemum-bloom.webp"
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/chrysanthemum/target.webp",
+        "alt": "菊影流金原作正面"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/chrysanthemum-bloom.webp",
+        "alt": "菊影流金立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/chrysanthemum/target.webp",
+        "alt": "菊影流金原作正面"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/chrysanthemum-bloom.webp",
+        "alt": "菊影流金立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=chrysanthemum: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=chrysanthemum: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 scan.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": [
+        "菊影流金"
+      ]
+    },
+    {
+      "name": "1440 scan.html?card=chrysanthemum: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 scan.html?card=chrysanthemum: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 scan.html?card=chrysanthemum: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 scan.html?card=chrysanthemum: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 scan.html?card=chrysanthemum: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=chrysanthemum: selected title",
+      "pass": true,
+      "detail": "菊影流金 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "1440 scan.html?card=chrysanthemum: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=chrysanthemum&from=catalogue&backCard=chrysanthemum"
+    },
+    {
+      "name": "1440 scan.html?card=chrysanthemum: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=chrysanthemum: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=chrysanthemum: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "1440 work.html?card=lotus: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 work.html?card=lotus: renders",
+      "pass": true,
+      "detail": [
+        "清荷入梦"
+      ]
+    },
+    {
+      "name": "1440 work.html?card=lotus: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 work.html?card=lotus: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 work.html?card=lotus: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 work.html?card=lotus: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 work.html?card=lotus: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 work.html?card=lotus: selected title",
+      "pass": true,
+      "detail": "清荷入梦 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "1440 work.html?card=lotus: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=lotus&from=work&backCard=lotus"
+    },
+    {
+      "name": "1440 work.html?card=lotus: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/lotus/card-named.webp"
+    },
+    {
+      "name": "1440 preview.html?card=lotus: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 preview.html?card=lotus: renders",
+      "pass": true,
+      "detail": [
+        "清荷入梦"
+      ]
+    },
+    {
+      "name": "1440 preview.html?card=lotus: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 preview.html?card=lotus: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 preview.html?card=lotus: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 preview.html?card=lotus: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 preview.html?card=lotus: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=lotus: selected title",
+      "pass": true,
+      "detail": "清荷入梦 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "1440 preview.html?card=lotus: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=lotus&from=preview&backCard=lotus"
+    },
+    {
+      "name": "1440 preview.html?card=lotus: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=lotus: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/lotus-bloom.webp"
+    },
+    {
+      "name": "1440 preview.html?card=lotus: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=lotus: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/lotus/target.webp",
+        "alt": "清荷入梦原作正面"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=lotus: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/lotus-bloom.webp",
+        "alt": "清荷入梦立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=lotus: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/lotus/target.webp",
+        "alt": "清荷入梦原作正面"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=lotus: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/lotus-bloom.webp",
+        "alt": "清荷入梦立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=lotus: relief switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/lotus-transparent.webp",
+        "alt": "清荷入梦金属花卡静态效果图"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=lotus: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/lotus/target.webp",
+        "alt": "清荷入梦原作正面"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=lotus: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/lotus-bloom.webp",
+        "alt": "清荷入梦立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=lotus: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=lotus: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=lotus: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 scan.html?card=lotus: renders",
+      "pass": true,
+      "detail": [
+        "清荷入梦"
+      ]
+    },
+    {
+      "name": "1440 scan.html?card=lotus: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 scan.html?card=lotus: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 scan.html?card=lotus: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 scan.html?card=lotus: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 scan.html?card=lotus: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=lotus: selected title",
+      "pass": true,
+      "detail": "清荷入梦 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "1440 scan.html?card=lotus: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=lotus&from=catalogue&backCard=lotus"
+    },
+    {
+      "name": "1440 scan.html?card=lotus: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=lotus: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=lotus: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "1440 work.html?card=leaves: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 work.html?card=leaves: renders",
+      "pass": true,
+      "detail": [
+        "花叶生辉"
+      ]
+    },
+    {
+      "name": "1440 work.html?card=leaves: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 work.html?card=leaves: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 work.html?card=leaves: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 work.html?card=leaves: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 work.html?card=leaves: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 work.html?card=leaves: selected title",
+      "pass": true,
+      "detail": "花叶生辉 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "1440 work.html?card=leaves: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=leaves&from=work&backCard=leaves"
+    },
+    {
+      "name": "1440 work.html?card=leaves: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/leaves/card-named.webp"
+    },
+    {
+      "name": "1440 preview.html?card=leaves: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 preview.html?card=leaves: renders",
+      "pass": true,
+      "detail": [
+        "花叶生辉"
+      ]
+    },
+    {
+      "name": "1440 preview.html?card=leaves: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 preview.html?card=leaves: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 preview.html?card=leaves: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 preview.html?card=leaves: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 preview.html?card=leaves: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=leaves: selected title",
+      "pass": true,
+      "detail": "花叶生辉 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "1440 preview.html?card=leaves: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=leaves&from=preview&backCard=leaves"
+    },
+    {
+      "name": "1440 preview.html?card=leaves: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=leaves: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/leaves-bloom.webp"
+    },
+    {
+      "name": "1440 preview.html?card=leaves: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=leaves: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/leaves/target.webp",
+        "alt": "花叶生辉原作正面"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=leaves: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/leaves-bloom.webp",
+        "alt": "花叶生辉立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=leaves: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/leaves/target.webp",
+        "alt": "花叶生辉原作正面"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=leaves: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/leaves-bloom.webp",
+        "alt": "花叶生辉立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "1440 preview.html?card=leaves: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "1440 preview.html?card=leaves: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=leaves: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "1440 scan.html?card=leaves: renders",
+      "pass": true,
+      "detail": [
+        "花叶生辉"
+      ]
+    },
+    {
+      "name": "1440 scan.html?card=leaves: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "1440 scan.html?card=leaves: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "1440 scan.html?card=leaves: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 scan.html?card=leaves: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440 scan.html?card=leaves: current support copy",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=leaves: selected title",
+      "pass": true,
+      "detail": "花叶生辉 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "1440 scan.html?card=leaves: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=leaves&from=catalogue&backCard=leaves"
+    },
+    {
+      "name": "1440 scan.html?card=leaves: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=leaves: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "1440 scan.html?card=leaves: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "390 index.html: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 index.html: renders",
+      "pass": true,
+      "detail": [
+        "花开，自有回声。"
+      ]
+    },
+    {
+      "name": "390 index.html: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 index.html: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 index.html: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 index.html: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 index.html: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 home: handheld-relief.webp loaded",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/handheld-relief.webp",
+        "width": 1200,
+        "height": 1600
+      }
+    },
+    {
+      "name": "390 home: handheld-front.webp loaded",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/handheld-front.webp",
+        "width": 1200,
+        "height": 1600
+      }
+    },
+    {
+      "name": "390 home: hand sequence ready",
+      "pass": true,
+      "detail": "ready"
+    },
+    {
+      "name": "390 home: rig hand loaded",
+      "pass": true,
+      "detail": [
+        {
+          "src": "./assets/hand-sequence/hand-000.webp",
+          "frame": "0"
+        },
+        {
+          "src": "./assets/hand-sequence/hand-000.webp",
+          "frame": "0"
+        }
+      ]
+    },
+    {
+      "name": "390 home: no old case layer",
+      "pass": true
+    },
+    {
+      "name": "390 home: five cards retained",
+      "pass": true
+    },
+    {
+      "name": "390 home: static exhibit clear",
+      "pass": true
+    },
+    {
+      "name": "390 home: native vertical scroll retained",
+      "pass": true
+    },
+    {
+      "name": "390 catalogue.html: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 catalogue.html: renders",
+      "pass": true,
+      "detail": [
+        "五种纹样，各自成诗。"
+      ]
+    },
+    {
+      "name": "390 catalogue.html: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 catalogue.html: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 catalogue.html: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 catalogue.html: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 catalogue.html: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 collection.html: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 collection.html: renders",
+      "pass": true,
+      "detail": [
+        "把相遇，留在这里。"
+      ]
+    },
+    {
+      "name": "390 collection.html: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 collection.html: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 collection.html: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 collection.html: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 collection.html: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 guide.html: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 guide.html: renders",
+      "pass": true,
+      "detail": [
+        "让一次相遇，慢慢发生。"
+      ]
+    },
+    {
+      "name": "390 guide.html: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 guide.html: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 guide.html: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 guide.html: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 guide.html: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 work.html?card=flowers: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 work.html?card=flowers: renders",
+      "pass": true,
+      "detail": [
+        "花开有声"
+      ]
+    },
+    {
+      "name": "390 work.html?card=flowers: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 work.html?card=flowers: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 work.html?card=flowers: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 work.html?card=flowers: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 work.html?card=flowers: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 work.html?card=flowers: selected title",
+      "pass": true,
+      "detail": "花开有声 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "390 work.html?card=flowers: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=flowers&from=work&backCard=flowers"
+    },
+    {
+      "name": "390 work.html?card=flowers: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/card.webp"
+    },
+    {
+      "name": "390 preview.html?card=flowers: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 preview.html?card=flowers: renders",
+      "pass": true,
+      "detail": [
+        "花开有声"
+      ]
+    },
+    {
+      "name": "390 preview.html?card=flowers: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 preview.html?card=flowers: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 preview.html?card=flowers: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 preview.html?card=flowers: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 preview.html?card=flowers: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=flowers: selected title",
+      "pass": true,
+      "detail": "花开有声 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "390 preview.html?card=flowers: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=flowers&from=preview&backCard=flowers"
+    },
+    {
+      "name": "390 preview.html?card=flowers: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=flowers: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/flowers-bloom.webp"
+    },
+    {
+      "name": "390 preview.html?card=flowers: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=flowers: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/target.webp",
+        "alt": "花开有声原作正面"
+      }
+    },
+    {
+      "name": "390 preview.html?card=flowers: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/flowers-bloom.webp",
+        "alt": "花开有声立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "390 preview.html?card=flowers: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/target.webp",
+        "alt": "花开有声原作正面"
+      }
+    },
+    {
+      "name": "390 preview.html?card=flowers: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/flowers-bloom.webp",
+        "alt": "花开有声立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "390 preview.html?card=flowers: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=flowers: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=flowers: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 scan.html?card=flowers: renders",
+      "pass": true,
+      "detail": [
+        "花开有声"
+      ]
+    },
+    {
+      "name": "390 scan.html?card=flowers: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 scan.html?card=flowers: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 scan.html?card=flowers: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 scan.html?card=flowers: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 scan.html?card=flowers: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=flowers: selected title",
+      "pass": true,
+      "detail": "花开有声 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "390 scan.html?card=flowers: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=flowers&from=catalogue&backCard=flowers"
+    },
+    {
+      "name": "390 scan.html?card=flowers: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=flowers: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=flowers: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "390 work.html?card=peony: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 work.html?card=peony: renders",
+      "pass": true,
+      "detail": [
+        "牡丹承瑞"
+      ]
+    },
+    {
+      "name": "390 work.html?card=peony: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 work.html?card=peony: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 work.html?card=peony: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 work.html?card=peony: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 work.html?card=peony: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 work.html?card=peony: selected title",
+      "pass": true,
+      "detail": "牡丹承瑞 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "390 work.html?card=peony: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=peony&from=work&backCard=peony"
+    },
+    {
+      "name": "390 work.html?card=peony: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/peony/card-named.webp"
+    },
+    {
+      "name": "390 preview.html?card=peony: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 preview.html?card=peony: renders",
+      "pass": true,
+      "detail": [
+        "牡丹承瑞"
+      ]
+    },
+    {
+      "name": "390 preview.html?card=peony: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 preview.html?card=peony: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 preview.html?card=peony: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 preview.html?card=peony: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 preview.html?card=peony: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=peony: selected title",
+      "pass": true,
+      "detail": "牡丹承瑞 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "390 preview.html?card=peony: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=peony&from=preview&backCard=peony"
+    },
+    {
+      "name": "390 preview.html?card=peony: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=peony: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/peony-bloom.webp"
+    },
+    {
+      "name": "390 preview.html?card=peony: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=peony: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/peony/target.webp",
+        "alt": "牡丹承瑞原作正面"
+      }
+    },
+    {
+      "name": "390 preview.html?card=peony: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/peony-bloom.webp",
+        "alt": "牡丹承瑞立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "390 preview.html?card=peony: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/peony/target.webp",
+        "alt": "牡丹承瑞原作正面"
+      }
+    },
+    {
+      "name": "390 preview.html?card=peony: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/peony-bloom.webp",
+        "alt": "牡丹承瑞立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "390 preview.html?card=peony: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=peony: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=peony: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 scan.html?card=peony: renders",
+      "pass": true,
+      "detail": [
+        "牡丹承瑞"
+      ]
+    },
+    {
+      "name": "390 scan.html?card=peony: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 scan.html?card=peony: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 scan.html?card=peony: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 scan.html?card=peony: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 scan.html?card=peony: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=peony: selected title",
+      "pass": true,
+      "detail": "牡丹承瑞 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "390 scan.html?card=peony: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=peony&from=catalogue&backCard=peony"
+    },
+    {
+      "name": "390 scan.html?card=peony: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=peony: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=peony: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "390 work.html?card=chrysanthemum: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 work.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": [
+        "菊影流金"
+      ]
+    },
+    {
+      "name": "390 work.html?card=chrysanthemum: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 work.html?card=chrysanthemum: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 work.html?card=chrysanthemum: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 work.html?card=chrysanthemum: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 work.html?card=chrysanthemum: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 work.html?card=chrysanthemum: selected title",
+      "pass": true,
+      "detail": "菊影流金 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "390 work.html?card=chrysanthemum: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=chrysanthemum&from=work&backCard=chrysanthemum"
+    },
+    {
+      "name": "390 work.html?card=chrysanthemum: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/chrysanthemum/card-named.webp"
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": [
+        "菊影流金"
+      ]
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: selected title",
+      "pass": true,
+      "detail": "菊影流金 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=chrysanthemum&from=preview&backCard=chrysanthemum"
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/chrysanthemum-bloom.webp"
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/chrysanthemum/target.webp",
+        "alt": "菊影流金原作正面"
+      }
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/chrysanthemum-bloom.webp",
+        "alt": "菊影流金立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/chrysanthemum/target.webp",
+        "alt": "菊影流金原作正面"
+      }
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/chrysanthemum-bloom.webp",
+        "alt": "菊影流金立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=chrysanthemum: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=chrysanthemum: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 scan.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": [
+        "菊影流金"
+      ]
+    },
+    {
+      "name": "390 scan.html?card=chrysanthemum: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 scan.html?card=chrysanthemum: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 scan.html?card=chrysanthemum: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 scan.html?card=chrysanthemum: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 scan.html?card=chrysanthemum: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=chrysanthemum: selected title",
+      "pass": true,
+      "detail": "菊影流金 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "390 scan.html?card=chrysanthemum: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=chrysanthemum&from=catalogue&backCard=chrysanthemum"
+    },
+    {
+      "name": "390 scan.html?card=chrysanthemum: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=chrysanthemum: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=chrysanthemum: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "390 work.html?card=lotus: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 work.html?card=lotus: renders",
+      "pass": true,
+      "detail": [
+        "清荷入梦"
+      ]
+    },
+    {
+      "name": "390 work.html?card=lotus: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 work.html?card=lotus: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 work.html?card=lotus: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 work.html?card=lotus: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 work.html?card=lotus: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 work.html?card=lotus: selected title",
+      "pass": true,
+      "detail": "清荷入梦 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "390 work.html?card=lotus: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=lotus&from=work&backCard=lotus"
+    },
+    {
+      "name": "390 work.html?card=lotus: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/lotus/card-named.webp"
+    },
+    {
+      "name": "390 preview.html?card=lotus: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 preview.html?card=lotus: renders",
+      "pass": true,
+      "detail": [
+        "清荷入梦"
+      ]
+    },
+    {
+      "name": "390 preview.html?card=lotus: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 preview.html?card=lotus: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 preview.html?card=lotus: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 preview.html?card=lotus: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 preview.html?card=lotus: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=lotus: selected title",
+      "pass": true,
+      "detail": "清荷入梦 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "390 preview.html?card=lotus: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=lotus&from=preview&backCard=lotus"
+    },
+    {
+      "name": "390 preview.html?card=lotus: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=lotus: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/lotus-bloom.webp"
+    },
+    {
+      "name": "390 preview.html?card=lotus: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=lotus: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/lotus/target.webp",
+        "alt": "清荷入梦原作正面"
+      }
+    },
+    {
+      "name": "390 preview.html?card=lotus: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/lotus-bloom.webp",
+        "alt": "清荷入梦立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "390 preview.html?card=lotus: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/lotus/target.webp",
+        "alt": "清荷入梦原作正面"
+      }
+    },
+    {
+      "name": "390 preview.html?card=lotus: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/lotus-bloom.webp",
+        "alt": "清荷入梦立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "390 preview.html?card=lotus: relief switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/lotus-transparent.webp",
+        "alt": "清荷入梦金属花卡静态效果图"
+      }
+    },
+    {
+      "name": "390 preview.html?card=lotus: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/lotus/target.webp",
+        "alt": "清荷入梦原作正面"
+      }
+    },
+    {
+      "name": "390 preview.html?card=lotus: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/lotus-bloom.webp",
+        "alt": "清荷入梦立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "390 preview.html?card=lotus: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=lotus: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=lotus: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 scan.html?card=lotus: renders",
+      "pass": true,
+      "detail": [
+        "清荷入梦"
+      ]
+    },
+    {
+      "name": "390 scan.html?card=lotus: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 scan.html?card=lotus: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 scan.html?card=lotus: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 scan.html?card=lotus: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 scan.html?card=lotus: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=lotus: selected title",
+      "pass": true,
+      "detail": "清荷入梦 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "390 scan.html?card=lotus: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=lotus&from=catalogue&backCard=lotus"
+    },
+    {
+      "name": "390 scan.html?card=lotus: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=lotus: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=lotus: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "390 work.html?card=leaves: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 work.html?card=leaves: renders",
+      "pass": true,
+      "detail": [
+        "花叶生辉"
+      ]
+    },
+    {
+      "name": "390 work.html?card=leaves: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 work.html?card=leaves: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 work.html?card=leaves: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 work.html?card=leaves: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 work.html?card=leaves: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 work.html?card=leaves: selected title",
+      "pass": true,
+      "detail": "花叶生辉 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "390 work.html?card=leaves: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=leaves&from=work&backCard=leaves"
+    },
+    {
+      "name": "390 work.html?card=leaves: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/leaves/card-named.webp"
+    },
+    {
+      "name": "390 preview.html?card=leaves: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 preview.html?card=leaves: renders",
+      "pass": true,
+      "detail": [
+        "花叶生辉"
+      ]
+    },
+    {
+      "name": "390 preview.html?card=leaves: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 preview.html?card=leaves: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 preview.html?card=leaves: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 preview.html?card=leaves: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 preview.html?card=leaves: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=leaves: selected title",
+      "pass": true,
+      "detail": "花叶生辉 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "390 preview.html?card=leaves: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=leaves&from=preview&backCard=leaves"
+    },
+    {
+      "name": "390 preview.html?card=leaves: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=leaves: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/leaves-bloom.webp"
+    },
+    {
+      "name": "390 preview.html?card=leaves: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=leaves: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/leaves/target.webp",
+        "alt": "花叶生辉原作正面"
+      }
+    },
+    {
+      "name": "390 preview.html?card=leaves: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/leaves-bloom.webp",
+        "alt": "花叶生辉立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "390 preview.html?card=leaves: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/leaves/target.webp",
+        "alt": "花叶生辉原作正面"
+      }
+    },
+    {
+      "name": "390 preview.html?card=leaves: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/leaves-bloom.webp",
+        "alt": "花叶生辉立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "390 preview.html?card=leaves: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "390 preview.html?card=leaves: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=leaves: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "390 scan.html?card=leaves: renders",
+      "pass": true,
+      "detail": [
+        "花叶生辉"
+      ]
+    },
+    {
+      "name": "390 scan.html?card=leaves: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "390 scan.html?card=leaves: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "390 scan.html?card=leaves: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 scan.html?card=leaves: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390 scan.html?card=leaves: current support copy",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=leaves: selected title",
+      "pass": true,
+      "detail": "花叶生辉 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "390 scan.html?card=leaves: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=leaves&from=catalogue&backCard=leaves"
+    },
+    {
+      "name": "390 scan.html?card=leaves: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=leaves: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "390 scan.html?card=leaves: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "320 index.html: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 index.html: renders",
+      "pass": true,
+      "detail": [
+        "花开，自有回声。"
+      ]
+    },
+    {
+      "name": "320 index.html: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 index.html: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 index.html: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 index.html: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 index.html: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 home: handheld-relief.webp loaded",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/handheld-relief.webp",
+        "width": 1200,
+        "height": 1600
+      }
+    },
+    {
+      "name": "320 home: handheld-front.webp loaded",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/handheld-front.webp",
+        "width": 1200,
+        "height": 1600
+      }
+    },
+    {
+      "name": "320 home: hand sequence ready",
+      "pass": true,
+      "detail": "ready"
+    },
+    {
+      "name": "320 home: rig hand loaded",
+      "pass": true,
+      "detail": [
+        {
+          "src": "./assets/hand-sequence/hand-000.webp",
+          "frame": "0"
+        },
+        {
+          "src": "./assets/hand-sequence/hand-000.webp",
+          "frame": "0"
+        }
+      ]
+    },
+    {
+      "name": "320 home: no old case layer",
+      "pass": true
+    },
+    {
+      "name": "320 home: five cards retained",
+      "pass": true
+    },
+    {
+      "name": "320 home: static exhibit clear",
+      "pass": true
+    },
+    {
+      "name": "320 home: native vertical scroll retained",
+      "pass": true
+    },
+    {
+      "name": "320 catalogue.html: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 catalogue.html: renders",
+      "pass": true,
+      "detail": [
+        "五种纹样，各自成诗。"
+      ]
+    },
+    {
+      "name": "320 catalogue.html: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 catalogue.html: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 catalogue.html: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 catalogue.html: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 catalogue.html: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 collection.html: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 collection.html: renders",
+      "pass": true,
+      "detail": [
+        "把相遇，留在这里。"
+      ]
+    },
+    {
+      "name": "320 collection.html: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 collection.html: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 collection.html: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 collection.html: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 collection.html: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 guide.html: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 guide.html: renders",
+      "pass": true,
+      "detail": [
+        "让一次相遇，慢慢发生。"
+      ]
+    },
+    {
+      "name": "320 guide.html: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 guide.html: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 guide.html: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 guide.html: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 guide.html: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 work.html?card=flowers: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 work.html?card=flowers: renders",
+      "pass": true,
+      "detail": [
+        "花开有声"
+      ]
+    },
+    {
+      "name": "320 work.html?card=flowers: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 work.html?card=flowers: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 work.html?card=flowers: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 work.html?card=flowers: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 work.html?card=flowers: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 work.html?card=flowers: selected title",
+      "pass": true,
+      "detail": "花开有声 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "320 work.html?card=flowers: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=flowers&from=work&backCard=flowers"
+    },
+    {
+      "name": "320 work.html?card=flowers: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/card.webp"
+    },
+    {
+      "name": "320 preview.html?card=flowers: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 preview.html?card=flowers: renders",
+      "pass": true,
+      "detail": [
+        "花开有声"
+      ]
+    },
+    {
+      "name": "320 preview.html?card=flowers: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 preview.html?card=flowers: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 preview.html?card=flowers: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 preview.html?card=flowers: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 preview.html?card=flowers: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=flowers: selected title",
+      "pass": true,
+      "detail": "花开有声 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "320 preview.html?card=flowers: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=flowers&from=preview&backCard=flowers"
+    },
+    {
+      "name": "320 preview.html?card=flowers: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=flowers: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/flowers-bloom.webp"
+    },
+    {
+      "name": "320 preview.html?card=flowers: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=flowers: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/target.webp",
+        "alt": "花开有声原作正面"
+      }
+    },
+    {
+      "name": "320 preview.html?card=flowers: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/flowers-bloom.webp",
+        "alt": "花开有声立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "320 preview.html?card=flowers: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/target.webp",
+        "alt": "花开有声原作正面"
+      }
+    },
+    {
+      "name": "320 preview.html?card=flowers: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/flowers-bloom.webp",
+        "alt": "花开有声立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "320 preview.html?card=flowers: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=flowers: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=flowers: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 scan.html?card=flowers: renders",
+      "pass": true,
+      "detail": [
+        "花开有声"
+      ]
+    },
+    {
+      "name": "320 scan.html?card=flowers: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 scan.html?card=flowers: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 scan.html?card=flowers: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 scan.html?card=flowers: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 scan.html?card=flowers: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=flowers: selected title",
+      "pass": true,
+      "detail": "花开有声 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "320 scan.html?card=flowers: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=flowers&from=catalogue&backCard=flowers"
+    },
+    {
+      "name": "320 scan.html?card=flowers: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=flowers: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=flowers: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "320 work.html?card=peony: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 work.html?card=peony: renders",
+      "pass": true,
+      "detail": [
+        "牡丹承瑞"
+      ]
+    },
+    {
+      "name": "320 work.html?card=peony: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 work.html?card=peony: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 work.html?card=peony: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 work.html?card=peony: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 work.html?card=peony: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 work.html?card=peony: selected title",
+      "pass": true,
+      "detail": "牡丹承瑞 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "320 work.html?card=peony: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=peony&from=work&backCard=peony"
+    },
+    {
+      "name": "320 work.html?card=peony: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/peony/card-named.webp"
+    },
+    {
+      "name": "320 preview.html?card=peony: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 preview.html?card=peony: renders",
+      "pass": true,
+      "detail": [
+        "牡丹承瑞"
+      ]
+    },
+    {
+      "name": "320 preview.html?card=peony: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 preview.html?card=peony: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 preview.html?card=peony: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 preview.html?card=peony: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 preview.html?card=peony: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=peony: selected title",
+      "pass": true,
+      "detail": "牡丹承瑞 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "320 preview.html?card=peony: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=peony&from=preview&backCard=peony"
+    },
+    {
+      "name": "320 preview.html?card=peony: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=peony: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/peony-bloom.webp"
+    },
+    {
+      "name": "320 preview.html?card=peony: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=peony: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/peony/target.webp",
+        "alt": "牡丹承瑞原作正面"
+      }
+    },
+    {
+      "name": "320 preview.html?card=peony: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/peony-bloom.webp",
+        "alt": "牡丹承瑞立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "320 preview.html?card=peony: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/peony/target.webp",
+        "alt": "牡丹承瑞原作正面"
+      }
+    },
+    {
+      "name": "320 preview.html?card=peony: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/peony-bloom.webp",
+        "alt": "牡丹承瑞立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "320 preview.html?card=peony: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=peony: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=peony: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 scan.html?card=peony: renders",
+      "pass": true,
+      "detail": [
+        "牡丹承瑞"
+      ]
+    },
+    {
+      "name": "320 scan.html?card=peony: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 scan.html?card=peony: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 scan.html?card=peony: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 scan.html?card=peony: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 scan.html?card=peony: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=peony: selected title",
+      "pass": true,
+      "detail": "牡丹承瑞 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "320 scan.html?card=peony: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=peony&from=catalogue&backCard=peony"
+    },
+    {
+      "name": "320 scan.html?card=peony: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=peony: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=peony: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "320 work.html?card=chrysanthemum: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 work.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": [
+        "菊影流金"
+      ]
+    },
+    {
+      "name": "320 work.html?card=chrysanthemum: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 work.html?card=chrysanthemum: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 work.html?card=chrysanthemum: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 work.html?card=chrysanthemum: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 work.html?card=chrysanthemum: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 work.html?card=chrysanthemum: selected title",
+      "pass": true,
+      "detail": "菊影流金 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "320 work.html?card=chrysanthemum: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=chrysanthemum&from=work&backCard=chrysanthemum"
+    },
+    {
+      "name": "320 work.html?card=chrysanthemum: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/chrysanthemum/card-named.webp"
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": [
+        "菊影流金"
+      ]
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: selected title",
+      "pass": true,
+      "detail": "菊影流金 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=chrysanthemum&from=preview&backCard=chrysanthemum"
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/chrysanthemum-bloom.webp"
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/chrysanthemum/target.webp",
+        "alt": "菊影流金原作正面"
+      }
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/chrysanthemum-bloom.webp",
+        "alt": "菊影流金立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/chrysanthemum/target.webp",
+        "alt": "菊影流金原作正面"
+      }
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/chrysanthemum-bloom.webp",
+        "alt": "菊影流金立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=chrysanthemum: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=chrysanthemum: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 scan.html?card=chrysanthemum: renders",
+      "pass": true,
+      "detail": [
+        "菊影流金"
+      ]
+    },
+    {
+      "name": "320 scan.html?card=chrysanthemum: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 scan.html?card=chrysanthemum: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 scan.html?card=chrysanthemum: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 scan.html?card=chrysanthemum: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 scan.html?card=chrysanthemum: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=chrysanthemum: selected title",
+      "pass": true,
+      "detail": "菊影流金 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "320 scan.html?card=chrysanthemum: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=chrysanthemum&from=catalogue&backCard=chrysanthemum"
+    },
+    {
+      "name": "320 scan.html?card=chrysanthemum: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=chrysanthemum: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=chrysanthemum: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "320 work.html?card=lotus: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 work.html?card=lotus: renders",
+      "pass": true,
+      "detail": [
+        "清荷入梦"
+      ]
+    },
+    {
+      "name": "320 work.html?card=lotus: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 work.html?card=lotus: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 work.html?card=lotus: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 work.html?card=lotus: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 work.html?card=lotus: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 work.html?card=lotus: selected title",
+      "pass": true,
+      "detail": "清荷入梦 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "320 work.html?card=lotus: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=lotus&from=work&backCard=lotus"
+    },
+    {
+      "name": "320 work.html?card=lotus: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/lotus/card-named.webp"
+    },
+    {
+      "name": "320 preview.html?card=lotus: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 preview.html?card=lotus: renders",
+      "pass": true,
+      "detail": [
+        "清荷入梦"
+      ]
+    },
+    {
+      "name": "320 preview.html?card=lotus: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 preview.html?card=lotus: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 preview.html?card=lotus: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 preview.html?card=lotus: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 preview.html?card=lotus: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=lotus: selected title",
+      "pass": true,
+      "detail": "清荷入梦 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "320 preview.html?card=lotus: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=lotus&from=preview&backCard=lotus"
+    },
+    {
+      "name": "320 preview.html?card=lotus: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=lotus: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/lotus-bloom.webp"
+    },
+    {
+      "name": "320 preview.html?card=lotus: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=lotus: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/lotus/target.webp",
+        "alt": "清荷入梦原作正面"
+      }
+    },
+    {
+      "name": "320 preview.html?card=lotus: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/lotus-bloom.webp",
+        "alt": "清荷入梦立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "320 preview.html?card=lotus: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/lotus/target.webp",
+        "alt": "清荷入梦原作正面"
+      }
+    },
+    {
+      "name": "320 preview.html?card=lotus: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/lotus-bloom.webp",
+        "alt": "清荷入梦立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "320 preview.html?card=lotus: relief switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/lotus-transparent.webp",
+        "alt": "清荷入梦金属花卡静态效果图"
+      }
+    },
+    {
+      "name": "320 preview.html?card=lotus: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/lotus/target.webp",
+        "alt": "清荷入梦原作正面"
+      }
+    },
+    {
+      "name": "320 preview.html?card=lotus: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/lotus-bloom.webp",
+        "alt": "清荷入梦立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "320 preview.html?card=lotus: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=lotus: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=lotus: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 scan.html?card=lotus: renders",
+      "pass": true,
+      "detail": [
+        "清荷入梦"
+      ]
+    },
+    {
+      "name": "320 scan.html?card=lotus: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 scan.html?card=lotus: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 scan.html?card=lotus: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 scan.html?card=lotus: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 scan.html?card=lotus: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=lotus: selected title",
+      "pass": true,
+      "detail": "清荷入梦 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "320 scan.html?card=lotus: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=lotus&from=catalogue&backCard=lotus"
+    },
+    {
+      "name": "320 scan.html?card=lotus: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=lotus: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=lotus: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "320 work.html?card=leaves: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 work.html?card=leaves: renders",
+      "pass": true,
+      "detail": [
+        "花叶生辉"
+      ]
+    },
+    {
+      "name": "320 work.html?card=leaves: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 work.html?card=leaves: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 work.html?card=leaves: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 work.html?card=leaves: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 work.html?card=leaves: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 work.html?card=leaves: selected title",
+      "pass": true,
+      "detail": "花叶生辉 · 花卡图录 | 花开有声"
+    },
+    {
+      "name": "320 work.html?card=leaves: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=leaves&from=work&backCard=leaves"
+    },
+    {
+      "name": "320 work.html?card=leaves: correct original image",
+      "pass": true,
+      "detail": "./assets/originals/leaves/card-named.webp"
+    },
+    {
+      "name": "320 preview.html?card=leaves: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 preview.html?card=leaves: renders",
+      "pass": true,
+      "detail": [
+        "花叶生辉"
+      ]
+    },
+    {
+      "name": "320 preview.html?card=leaves: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 preview.html?card=leaves: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 preview.html?card=leaves: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 preview.html?card=leaves: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 preview.html?card=leaves: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=leaves: selected title",
+      "pass": true,
+      "detail": "花叶生辉 · 花卡预览 | 花开有声"
+    },
+    {
+      "name": "320 preview.html?card=leaves: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=leaves&from=preview&backCard=leaves"
+    },
+    {
+      "name": "320 preview.html?card=leaves: fallback is explicit",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=leaves: correct bloom fallback",
+      "pass": true,
+      "detail": "./assets/renders/leaves-bloom.webp"
+    },
+    {
+      "name": "320 preview.html?card=leaves: metal only for lotus",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=leaves: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/leaves/target.webp",
+        "alt": "花叶生辉原作正面"
+      }
+    },
+    {
+      "name": "320 preview.html?card=leaves: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/leaves-bloom.webp",
+        "alt": "花叶生辉立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "320 preview.html?card=leaves: front switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/originals/leaves/target.webp",
+        "alt": "花叶生辉原作正面"
+      }
+    },
+    {
+      "name": "320 preview.html?card=leaves: bloom switch",
+      "pass": true,
+      "detail": {
+        "src": "./assets/renders/leaves-bloom.webp",
+        "alt": "花叶生辉立体花朵静态效果图"
+      }
+    },
+    {
+      "name": "320 preview.html?card=leaves: reset leaves bloom selected",
+      "pass": true
+    },
+    {
+      "name": "320 preview.html?card=leaves: switches do not collect",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=leaves: exact viewport",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "height": 844
+      }
+    },
+    {
+      "name": "320 scan.html?card=leaves: renders",
+      "pass": true,
+      "detail": [
+        "花叶生辉"
+      ]
+    },
+    {
+      "name": "320 scan.html?card=leaves: no horizontal overflow",
+      "pass": true,
+      "detail": -15
+    },
+    {
+      "name": "320 scan.html?card=leaves: no broken assets",
+      "pass": true,
+      "detail": {
+        "images": [],
+        "resources": []
+      }
+    },
+    {
+      "name": "320 scan.html?card=leaves: no autoplay video",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "320 scan.html?card=leaves: collection unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320 scan.html?card=leaves: current support copy",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=leaves: selected title",
+      "pass": true,
+      "detail": "花叶生辉 · 扫描花卡 | 花开有声"
+    },
+    {
+      "name": "320 scan.html?card=leaves: header scan retains card",
+      "pass": true,
+      "detail": "scan.html?card=leaves&from=catalogue&backCard=leaves"
+    },
+    {
+      "name": "320 scan.html?card=leaves: all five picker links",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=leaves: selected picker title",
+      "pass": true
+    },
+    {
+      "name": "320 scan.html?card=leaves: unavailable graphics safe gate",
+      "pass": true,
+      "detail": "设备的三维显示暂不可用，无法开启识别。请检查浏览器的硬件加速设置，或先查看花卡预览。"
+    },
+    {
+      "name": "flowers: detail to preview navigation",
+      "pass": true,
+      "detail": "/runtime-public/preview.html?card=flowers"
+    },
+    {
+      "name": "flowers: preview to scan navigation",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=flowers&from=preview&backCard=flowers"
+    },
+    {
+      "name": "flowers: scan returns correct preview",
+      "pass": true,
+      "detail": "/runtime-public/preview.html?card=flowers"
+    },
+    {
+      "name": "flowers: work to scan navigation",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=flowers&from=work&backCard=flowers"
+    },
+    {
+      "name": "flowers: scan returns correct detail",
+      "pass": true,
+      "detail": "/runtime-public/work.html?card=flowers"
+    },
+    {
+      "name": "peony: detail to preview navigation",
+      "pass": true,
+      "detail": "/runtime-public/preview.html?card=peony"
+    },
+    {
+      "name": "peony: preview to scan navigation",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=peony&from=preview&backCard=peony"
+    },
+    {
+      "name": "peony: scan returns correct preview",
+      "pass": true,
+      "detail": "/runtime-public/preview.html?card=peony"
+    },
+    {
+      "name": "peony: work to scan navigation",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=peony&from=work&backCard=peony"
+    },
+    {
+      "name": "peony: scan returns correct detail",
+      "pass": true,
+      "detail": "/runtime-public/work.html?card=peony"
+    },
+    {
+      "name": "chrysanthemum: detail to preview navigation",
+      "pass": true,
+      "detail": "/runtime-public/preview.html?card=chrysanthemum"
+    },
+    {
+      "name": "chrysanthemum: preview to scan navigation",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=chrysanthemum&from=preview&backCard=chrysanthemum"
+    },
+    {
+      "name": "chrysanthemum: scan returns correct preview",
+      "pass": true,
+      "detail": "/runtime-public/preview.html?card=chrysanthemum"
+    },
+    {
+      "name": "chrysanthemum: work to scan navigation",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=chrysanthemum&from=work&backCard=chrysanthemum"
+    },
+    {
+      "name": "chrysanthemum: scan returns correct detail",
+      "pass": true,
+      "detail": "/runtime-public/work.html?card=chrysanthemum"
+    },
+    {
+      "name": "lotus: detail to preview navigation",
+      "pass": true,
+      "detail": "/runtime-public/preview.html?card=lotus"
+    },
+    {
+      "name": "lotus: preview to scan navigation",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=lotus&from=preview&backCard=lotus"
+    },
+    {
+      "name": "lotus: scan returns correct preview",
+      "pass": true,
+      "detail": "/runtime-public/preview.html?card=lotus"
+    },
+    {
+      "name": "lotus: work to scan navigation",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=lotus&from=work&backCard=lotus"
+    },
+    {
+      "name": "lotus: scan returns correct detail",
+      "pass": true,
+      "detail": "/runtime-public/work.html?card=lotus"
+    },
+    {
+      "name": "leaves: detail to preview navigation",
+      "pass": true,
+      "detail": "/runtime-public/preview.html?card=leaves"
+    },
+    {
+      "name": "leaves: preview to scan navigation",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=leaves&from=preview&backCard=leaves"
+    },
+    {
+      "name": "leaves: scan returns correct preview",
+      "pass": true,
+      "detail": "/runtime-public/preview.html?card=leaves"
+    },
+    {
+      "name": "leaves: work to scan navigation",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=leaves&from=work&backCard=leaves"
+    },
+    {
+      "name": "leaves: scan returns correct detail",
+      "pass": true,
+      "detail": "/runtime-public/work.html?card=leaves"
+    },
+    {
+      "name": "home/flowers: picker navigates to peony",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=peony&from=home&backCard=flowers"
+    },
+    {
+      "name": "home/flowers: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=peony&from=home&backCard=flowers"
+    },
+    {
+      "name": "home/flowers: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=peony&from=home&backCard=flowers"
+    },
+    {
+      "name": "home/flowers: picker retains return destination",
+      "pass": true,
+      "detail": "index.html"
+    },
+    {
+      "name": "home/flowers: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "home/peony: picker navigates to chrysanthemum",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=chrysanthemum&from=home&backCard=peony"
+    },
+    {
+      "name": "home/peony: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=chrysanthemum&from=home&backCard=peony"
+    },
+    {
+      "name": "home/peony: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=chrysanthemum&from=home&backCard=peony"
+    },
+    {
+      "name": "home/peony: picker retains return destination",
+      "pass": true,
+      "detail": "index.html"
+    },
+    {
+      "name": "home/peony: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "home/chrysanthemum: picker navigates to lotus",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=lotus&from=home&backCard=chrysanthemum"
+    },
+    {
+      "name": "home/chrysanthemum: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=lotus&from=home&backCard=chrysanthemum"
+    },
+    {
+      "name": "home/chrysanthemum: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=lotus&from=home&backCard=chrysanthemum"
+    },
+    {
+      "name": "home/chrysanthemum: picker retains return destination",
+      "pass": true,
+      "detail": "index.html"
+    },
+    {
+      "name": "home/chrysanthemum: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "home/lotus: picker navigates to leaves",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=leaves&from=home&backCard=lotus"
+    },
+    {
+      "name": "home/lotus: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=leaves&from=home&backCard=lotus"
+    },
+    {
+      "name": "home/lotus: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=leaves&from=home&backCard=lotus"
+    },
+    {
+      "name": "home/lotus: picker retains return destination",
+      "pass": true,
+      "detail": "index.html"
+    },
+    {
+      "name": "home/lotus: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "home/leaves: picker navigates to flowers",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=flowers&from=home&backCard=leaves"
+    },
+    {
+      "name": "home/leaves: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=flowers&from=home&backCard=leaves"
+    },
+    {
+      "name": "home/leaves: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=flowers&from=home&backCard=leaves"
+    },
+    {
+      "name": "home/leaves: picker retains return destination",
+      "pass": true,
+      "detail": "index.html"
+    },
+    {
+      "name": "home/leaves: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "catalogue/flowers: picker navigates to peony",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=peony&from=catalogue&backCard=flowers"
+    },
+    {
+      "name": "catalogue/flowers: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=peony&from=catalogue&backCard=flowers"
+    },
+    {
+      "name": "catalogue/flowers: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=peony&from=catalogue&backCard=flowers"
+    },
+    {
+      "name": "catalogue/flowers: picker retains return destination",
+      "pass": true,
+      "detail": "catalogue.html"
+    },
+    {
+      "name": "catalogue/flowers: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "catalogue/peony: picker navigates to chrysanthemum",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=chrysanthemum&from=catalogue&backCard=peony"
+    },
+    {
+      "name": "catalogue/peony: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=chrysanthemum&from=catalogue&backCard=peony"
+    },
+    {
+      "name": "catalogue/peony: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=chrysanthemum&from=catalogue&backCard=peony"
+    },
+    {
+      "name": "catalogue/peony: picker retains return destination",
+      "pass": true,
+      "detail": "catalogue.html"
+    },
+    {
+      "name": "catalogue/peony: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "catalogue/chrysanthemum: picker navigates to lotus",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=lotus&from=catalogue&backCard=chrysanthemum"
+    },
+    {
+      "name": "catalogue/chrysanthemum: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=lotus&from=catalogue&backCard=chrysanthemum"
+    },
+    {
+      "name": "catalogue/chrysanthemum: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=lotus&from=catalogue&backCard=chrysanthemum"
+    },
+    {
+      "name": "catalogue/chrysanthemum: picker retains return destination",
+      "pass": true,
+      "detail": "catalogue.html"
+    },
+    {
+      "name": "catalogue/chrysanthemum: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "catalogue/lotus: picker navigates to leaves",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=leaves&from=catalogue&backCard=lotus"
+    },
+    {
+      "name": "catalogue/lotus: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=leaves&from=catalogue&backCard=lotus"
+    },
+    {
+      "name": "catalogue/lotus: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=leaves&from=catalogue&backCard=lotus"
+    },
+    {
+      "name": "catalogue/lotus: picker retains return destination",
+      "pass": true,
+      "detail": "catalogue.html"
+    },
+    {
+      "name": "catalogue/lotus: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "catalogue/leaves: picker navigates to flowers",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=flowers&from=catalogue&backCard=leaves"
+    },
+    {
+      "name": "catalogue/leaves: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=flowers&from=catalogue&backCard=leaves"
+    },
+    {
+      "name": "catalogue/leaves: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=flowers&from=catalogue&backCard=leaves"
+    },
+    {
+      "name": "catalogue/leaves: picker retains return destination",
+      "pass": true,
+      "detail": "catalogue.html"
+    },
+    {
+      "name": "catalogue/leaves: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "collection/flowers: picker navigates to peony",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=peony&from=collection&backCard=flowers"
+    },
+    {
+      "name": "collection/flowers: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=peony&from=collection&backCard=flowers"
+    },
+    {
+      "name": "collection/flowers: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=peony&from=collection&backCard=flowers"
+    },
+    {
+      "name": "collection/flowers: picker retains return destination",
+      "pass": true,
+      "detail": "collection.html"
+    },
+    {
+      "name": "collection/flowers: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "collection/peony: picker navigates to chrysanthemum",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=chrysanthemum&from=collection&backCard=peony"
+    },
+    {
+      "name": "collection/peony: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=chrysanthemum&from=collection&backCard=peony"
+    },
+    {
+      "name": "collection/peony: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=chrysanthemum&from=collection&backCard=peony"
+    },
+    {
+      "name": "collection/peony: picker retains return destination",
+      "pass": true,
+      "detail": "collection.html"
+    },
+    {
+      "name": "collection/peony: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "collection/chrysanthemum: picker navigates to lotus",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=lotus&from=collection&backCard=chrysanthemum"
+    },
+    {
+      "name": "collection/chrysanthemum: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=lotus&from=collection&backCard=chrysanthemum"
+    },
+    {
+      "name": "collection/chrysanthemum: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=lotus&from=collection&backCard=chrysanthemum"
+    },
+    {
+      "name": "collection/chrysanthemum: picker retains return destination",
+      "pass": true,
+      "detail": "collection.html"
+    },
+    {
+      "name": "collection/chrysanthemum: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "collection/lotus: picker navigates to leaves",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=leaves&from=collection&backCard=lotus"
+    },
+    {
+      "name": "collection/lotus: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=leaves&from=collection&backCard=lotus"
+    },
+    {
+      "name": "collection/lotus: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=leaves&from=collection&backCard=lotus"
+    },
+    {
+      "name": "collection/lotus: picker retains return destination",
+      "pass": true,
+      "detail": "collection.html"
+    },
+    {
+      "name": "collection/lotus: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "collection/leaves: picker navigates to flowers",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=flowers&from=collection&backCard=leaves"
+    },
+    {
+      "name": "collection/leaves: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=flowers&from=collection&backCard=leaves"
+    },
+    {
+      "name": "collection/leaves: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=flowers&from=collection&backCard=leaves"
+    },
+    {
+      "name": "collection/leaves: picker retains return destination",
+      "pass": true,
+      "detail": "collection.html"
+    },
+    {
+      "name": "collection/leaves: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "work/flowers: picker navigates to peony",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=peony&from=work&backCard=flowers"
+    },
+    {
+      "name": "work/flowers: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=peony&from=work&backCard=flowers"
+    },
+    {
+      "name": "work/flowers: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=peony&from=work&backCard=flowers"
+    },
+    {
+      "name": "work/flowers: picker retains return destination",
+      "pass": true,
+      "detail": "work.html?card=flowers"
+    },
+    {
+      "name": "work/flowers: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "work/peony: picker navigates to chrysanthemum",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=chrysanthemum&from=work&backCard=peony"
+    },
+    {
+      "name": "work/peony: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=chrysanthemum&from=work&backCard=peony"
+    },
+    {
+      "name": "work/peony: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=chrysanthemum&from=work&backCard=peony"
+    },
+    {
+      "name": "work/peony: picker retains return destination",
+      "pass": true,
+      "detail": "work.html?card=peony"
+    },
+    {
+      "name": "work/peony: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "work/chrysanthemum: picker navigates to lotus",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=lotus&from=work&backCard=chrysanthemum"
+    },
+    {
+      "name": "work/chrysanthemum: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=lotus&from=work&backCard=chrysanthemum"
+    },
+    {
+      "name": "work/chrysanthemum: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=lotus&from=work&backCard=chrysanthemum"
+    },
+    {
+      "name": "work/chrysanthemum: picker retains return destination",
+      "pass": true,
+      "detail": "work.html?card=chrysanthemum"
+    },
+    {
+      "name": "work/chrysanthemum: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "work/lotus: picker navigates to leaves",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=leaves&from=work&backCard=lotus"
+    },
+    {
+      "name": "work/lotus: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=leaves&from=work&backCard=lotus"
+    },
+    {
+      "name": "work/lotus: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=leaves&from=work&backCard=lotus"
+    },
+    {
+      "name": "work/lotus: picker retains return destination",
+      "pass": true,
+      "detail": "work.html?card=lotus"
+    },
+    {
+      "name": "work/lotus: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "work/leaves: picker navigates to flowers",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=flowers&from=work&backCard=leaves"
+    },
+    {
+      "name": "work/leaves: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=flowers&from=work&backCard=leaves"
+    },
+    {
+      "name": "work/leaves: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=flowers&from=work&backCard=leaves"
+    },
+    {
+      "name": "work/leaves: picker retains return destination",
+      "pass": true,
+      "detail": "work.html?card=leaves"
+    },
+    {
+      "name": "work/leaves: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "preview/flowers: picker navigates to peony",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=peony&from=preview&backCard=flowers"
+    },
+    {
+      "name": "preview/flowers: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=peony&from=preview&backCard=flowers"
+    },
+    {
+      "name": "preview/flowers: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=peony&from=preview&backCard=flowers"
+    },
+    {
+      "name": "preview/flowers: picker retains return destination",
+      "pass": true,
+      "detail": "preview.html?card=flowers"
+    },
+    {
+      "name": "preview/flowers: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "preview/peony: picker navigates to chrysanthemum",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=chrysanthemum&from=preview&backCard=peony"
+    },
+    {
+      "name": "preview/peony: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=chrysanthemum&from=preview&backCard=peony"
+    },
+    {
+      "name": "preview/peony: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=chrysanthemum&from=preview&backCard=peony"
+    },
+    {
+      "name": "preview/peony: picker retains return destination",
+      "pass": true,
+      "detail": "preview.html?card=peony"
+    },
+    {
+      "name": "preview/peony: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "preview/chrysanthemum: picker navigates to lotus",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=lotus&from=preview&backCard=chrysanthemum"
+    },
+    {
+      "name": "preview/chrysanthemum: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=lotus&from=preview&backCard=chrysanthemum"
+    },
+    {
+      "name": "preview/chrysanthemum: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=lotus&from=preview&backCard=chrysanthemum"
+    },
+    {
+      "name": "preview/chrysanthemum: picker retains return destination",
+      "pass": true,
+      "detail": "preview.html?card=chrysanthemum"
+    },
+    {
+      "name": "preview/chrysanthemum: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "preview/lotus: picker navigates to leaves",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=leaves&from=preview&backCard=lotus"
+    },
+    {
+      "name": "preview/lotus: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=leaves&from=preview&backCard=lotus"
+    },
+    {
+      "name": "preview/lotus: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=leaves&from=preview&backCard=lotus"
+    },
+    {
+      "name": "preview/lotus: picker retains return destination",
+      "pass": true,
+      "detail": "preview.html?card=lotus"
+    },
+    {
+      "name": "preview/lotus: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "preview/leaves: picker navigates to flowers",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=flowers&from=preview&backCard=leaves"
+    },
+    {
+      "name": "preview/leaves: picker preserves origin and backCard",
+      "pass": true,
+      "detail": "/runtime-public/scan.html?card=flowers&from=preview&backCard=leaves"
+    },
+    {
+      "name": "preview/leaves: scan header retains current card and return origin",
+      "pass": true,
+      "detail": "?card=flowers&from=preview&backCard=leaves"
+    },
+    {
+      "name": "preview/leaves: picker retains return destination",
+      "pass": true,
+      "detail": "preview.html?card=leaves"
+    },
+    {
+      "name": "preview/leaves: picker stays safely gated",
+      "pass": true
+    },
+    {
+      "name": "work: unknown card explicit 404 without substitute",
+      "pass": true,
+      "detail": [
+        "这朵花，还未出现在图录。"
+      ]
+    },
+    {
+      "name": "preview: unknown card explicit 404 without substitute",
+      "pass": true,
+      "detail": [
+        "这朵花，还未出现在图录。"
+      ]
+    },
+    {
+      "name": "scan: unknown card explicit 404 without substitute",
+      "pass": true,
+      "detail": [
+        "这朵花，还未出现在图录。"
+      ]
+    },
+    {
+      "name": "All interactions preserve candidate collection",
+      "pass": true,
+      "detail": {
+        "before": null,
+        "after": null
+      }
+    }
+  ],
+  "limitations": [
+    "Cloud Chromium WebGL unavailable, live GPU rendering and tracking unverified.",
+    "Native prefers-reduced-motion and real device emulation not performed.",
+    "No real camera, physical card, iPhone or Safari test.",
+    "Storage checks compare values; no pre-navigation instrumentation is injected."
+  ],
+  "testType": "Standard route matrix",
+  "summary": {
+    "total": 871,
+    "passed": 871,
+    "failed": 0,
+    "routes": 57
+  },
+  "failures": []
+}

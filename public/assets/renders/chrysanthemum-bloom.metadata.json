@@ -1,0 +1,28 @@
+{
+  "title": "菊影流金 · Procedural chrysanthemum fallback",
+  "source": "New procedural 3D reconstruction made after visual inspection of the corresponding original; not a migrated AR model or image plane",
+  "source_module": "../../chrysanthemum-bloom.mjs",
+  "source_sha256": "1cb9d69a69b73dfb9cef882133d18f2c0e7aea1fb8c1115ec706c8d69a485c71",
+  "reference_image": "../originals/chrysanthemum/target.png",
+  "reference_sha256": "5e1471dceb89e5d94e0da2e1632b68d9cf567f9cd435107b02b082dd3f48adf9",
+  "image_sha256": "4c1f993f39f6a873ce78ae2332416f997a908a2d24d15d968a0203886659a9e6",
+  "renderer": "Blender Cycles CPU",
+  "samples": 192,
+  "denoising": false,
+  "size": [
+    1000,
+    1000
+  ],
+  "transparent": true,
+  "alpha_bounds": [
+    263,
+    73,
+    760,
+    942
+  ],
+  "growth": 1,
+  "triangles": 23656,
+  "draw_objects": 27,
+  "card_plane_included": false,
+  "verified": "CPU geometry render, palette, silhouette, full framing and alpha inspected; not browser WebGL, mobile GPU or physical-card tracking validation"
+}

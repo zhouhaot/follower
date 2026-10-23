@@ -1,0 +1,108 @@
+[
+  {
+    "id": "flowers",
+    "name": "花开有声",
+    "english": "FLOWERS SPEAK",
+    "keyword": "瓶插花卉",
+    "credit": "都江堰博物馆《瓶插花卉图》",
+    "accent": "#e36a90",
+    "target": "assets/target.png",
+    "image": "assets/card.png",
+    "ratio": 1.4,
+    "legacy": true,
+    "sourceName": "瓶插花卉图",
+    "museum": "都江堰博物馆"
+  },
+  {
+    "id": "peony",
+    "name": "牡丹承瑞",
+    "english": "PEONY IN BLOOM",
+    "keyword": "牡丹花卉",
+    "credit": "都江堰市博物馆《瓶插牡丹图》",
+    "accent": "#ee6688",
+    "target": "assets/peony/target.png",
+    "image": "assets/peony/card-named.png",
+    "ratio": 1.3933865450399088,
+    "legacy": false,
+    "crop": {
+      "left": 48,
+      "top": 48,
+      "width": 877,
+      "height": 1222
+    },
+    "sourceName": "瓶插牡丹图",
+    "photo": "assets/origins/museum-8399.jpg",
+    "viewBox": "230 615 232 450",
+    "description": "保留插瓶、主花与两侧花苞的关系，将石刻线条转化为清晰的花瓣与枝叶色块。",
+    "museum": "都江堰市博物馆"
+  },
+  {
+    "id": "chrysanthemum",
+    "name": "菊影流金",
+    "english": "GOLDEN CHRYSANTHEMUM",
+    "keyword": "菊花纹样",
+    "credit": "都江堰市博物馆《摘枝菊花图》",
+    "accent": "#df8439",
+    "target": "assets/chrysanthemum/target.png",
+    "image": "assets/chrysanthemum/card-named.png",
+    "ratio": 1.4034285714285715,
+    "legacy": false,
+    "crop": {
+      "left": 48,
+      "top": 46,
+      "width": 875,
+      "height": 1228
+    },
+    "sourceName": "摘枝菊花图",
+    "photo": "assets/origins/museum-8399.jpg",
+    "viewBox": "645 655 220 385",
+    "description": "从卷曲花瓣与舒展枝叶中提取轮廓，以橙黄花色和青绿枝叶呈现菊花的流动感。",
+    "museum": "都江堰市博物馆"
+  },
+  {
+    "id": "lotus",
+    "name": "清荷入梦",
+    "english": "LOTUS IN REVERIE",
+    "keyword": "莲荷纹样",
+    "credit": "都江堰市博物馆《荷花图》",
+    "accent": "#477cc7",
+    "target": "assets/lotus/target.png",
+    "image": "assets/lotus/card-named.png",
+    "ratio": 1.419683257918552,
+    "legacy": false,
+    "crop": {
+      "left": 45,
+      "top": 43,
+      "width": 884,
+      "height": 1255
+    },
+    "sourceName": "荷花图",
+    "photo": "assets/origins/museum-8400.jpg",
+    "viewBox": "165 480 275 450",
+    "description": "保留中央荷花、两侧圆叶与下方瓶形，以月白和清蓝重新组织纹样的对称秩序。",
+    "museum": "都江堰市博物馆"
+  },
+  {
+    "id": "leaves",
+    "name": "花叶生辉",
+    "english": "LEAVES IN RADIANCE",
+    "keyword": "折枝花叶",
+    "credit": "都江堰市博物馆《芙蓉花图》",
+    "accent": "#ad63ad",
+    "target": "assets/leaves/target.png",
+    "image": "assets/leaves/card-named.png",
+    "ratio": 1.4245175936435868,
+    "legacy": false,
+    "crop": {
+      "left": 45,
+      "top": 43,
+      "width": 881,
+      "height": 1255
+    },
+    "sourceName": "芙蓉花图",
+    "photo": "assets/origins/museum-8400.jpg",
+    "viewBox": "625 480 230 345",
+    "description": "提取斜向花枝、芙蓉花与五裂叶片，用兰紫花瓣和清爽绿叶延续原型的生长姿态。",
+    "museum": "都江堰市博物馆"
+  }
+]

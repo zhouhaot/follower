@@ -1,0 +1,292 @@
+{
+  "at": "2026-10-13T16:53:36.169Z",
+  "runtime": "Supported dot cloud Chromium, exact-size same-origin iframes; no device emulation",
+  "rows": [
+    {
+      "route": "/reports/qa/handheld-runtime-reduced-motion-fixture.html",
+      "width": 1440,
+      "height": 900,
+      "title": "手托花卡 · 展览首页 | 花开有声",
+      "h1": [
+        "花开，自有回声。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/reports/qa/handheld-runtime-reduced-motion-fixture.html",
+      "width": 390,
+      "height": 844,
+      "title": "手托花卡 · 展览首页 | 花开有声",
+      "h1": [
+        "花开，自有回声。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    },
+    {
+      "route": "/reports/qa/handheld-runtime-reduced-motion-fixture.html",
+      "width": 320,
+      "height": 844,
+      "title": "手托花卡 · 展览首页 | 花开有声",
+      "h1": [
+        "花开，自有回声。"
+      ],
+      "overflow": -15,
+      "brokenImages": [],
+      "videoCount": 0,
+      "collection": null,
+      "resourceErrors": [],
+      "modelReady": false,
+      "fallbackOnly": true,
+      "staleCopy": false
+    }
+  ],
+  "checks": [
+    {
+      "name": "1440: synthetic reduce CSS applied",
+      "pass": true
+    },
+    {
+      "name": "1440: stable initial pose",
+      "pass": true
+    },
+    {
+      "name": "1440: fan hidden",
+      "pass": true
+    },
+    {
+      "name": "1440: scroll no smooth behavior",
+      "pass": true
+    },
+    {
+      "name": "1440: no overflow or asset errors",
+      "pass": true,
+      "detail": {
+        "route": "/reports/qa/handheld-runtime-reduced-motion-fixture.html",
+        "width": 1440,
+        "height": 900,
+        "title": "手托花卡 · 展览首页 | 花开有声",
+        "h1": [
+          "花开，自有回声。"
+        ],
+        "overflow": -15,
+        "brokenImages": [],
+        "videoCount": 0,
+        "collection": null,
+        "resourceErrors": [],
+        "modelReady": false,
+        "fallbackOnly": true,
+        "staleCopy": false
+      }
+    },
+    {
+      "name": "1440: pose remains static after scroll",
+      "pass": true,
+      "detail": {
+        "before": {
+          "progress": "0",
+          "hand-open": "0",
+          "hand-release": "0",
+          "hand-opacity": "1",
+          "card-lift": "0",
+          "card-turn": "0",
+          "card-center": "0",
+          "fan-opacity": "0",
+          "spread": "0",
+          "copy-opacity": "1",
+          "scene-opacity": "1"
+        },
+        "after": {
+          "progress": "0",
+          "hand-open": "0",
+          "hand-release": "0",
+          "hand-opacity": "1",
+          "card-lift": "0",
+          "card-turn": "0",
+          "card-center": "0",
+          "fan-opacity": "0",
+          "spread": "0",
+          "copy-opacity": "1",
+          "scene-opacity": "1"
+        }
+      }
+    },
+    {
+      "name": "1440: collection and camera untouched",
+      "pass": true
+    },
+    {
+      "name": "390: synthetic reduce CSS applied",
+      "pass": true
+    },
+    {
+      "name": "390: stable initial pose",
+      "pass": true
+    },
+    {
+      "name": "390: fan hidden",
+      "pass": true
+    },
+    {
+      "name": "390: scroll no smooth behavior",
+      "pass": true
+    },
+    {
+      "name": "390: no overflow or asset errors",
+      "pass": true,
+      "detail": {
+        "route": "/reports/qa/handheld-runtime-reduced-motion-fixture.html",
+        "width": 390,
+        "height": 844,
+        "title": "手托花卡 · 展览首页 | 花开有声",
+        "h1": [
+          "花开，自有回声。"
+        ],
+        "overflow": -15,
+        "brokenImages": [],
+        "videoCount": 0,
+        "collection": null,
+        "resourceErrors": [],
+        "modelReady": false,
+        "fallbackOnly": true,
+        "staleCopy": false
+      }
+    },
+    {
+      "name": "390: pose remains static after scroll",
+      "pass": true,
+      "detail": {
+        "before": {
+          "progress": "0",
+          "hand-open": "0",
+          "hand-release": "0",
+          "hand-opacity": "1",
+          "card-lift": "0",
+          "card-turn": "0",
+          "card-center": "0",
+          "fan-opacity": "0",
+          "spread": "0",
+          "copy-opacity": "1",
+          "scene-opacity": "1"
+        },
+        "after": {
+          "progress": "0",
+          "hand-open": "0",
+          "hand-release": "0",
+          "hand-opacity": "1",
+          "card-lift": "0",
+          "card-turn": "0",
+          "card-center": "0",
+          "fan-opacity": "0",
+          "spread": "0",
+          "copy-opacity": "1",
+          "scene-opacity": "1"
+        }
+      }
+    },
+    {
+      "name": "390: collection and camera untouched",
+      "pass": true
+    },
+    {
+      "name": "320: synthetic reduce CSS applied",
+      "pass": true
+    },
+    {
+      "name": "320: stable initial pose",
+      "pass": true
+    },
+    {
+      "name": "320: fan hidden",
+      "pass": true
+    },
+    {
+      "name": "320: scroll no smooth behavior",
+      "pass": true
+    },
+    {
+      "name": "320: no overflow or asset errors",
+      "pass": true,
+      "detail": {
+        "route": "/reports/qa/handheld-runtime-reduced-motion-fixture.html",
+        "width": 320,
+        "height": 844,
+        "title": "手托花卡 · 展览首页 | 花开有声",
+        "h1": [
+          "花开，自有回声。"
+        ],
+        "overflow": -15,
+        "brokenImages": [],
+        "videoCount": 0,
+        "collection": null,
+        "resourceErrors": [],
+        "modelReady": false,
+        "fallbackOnly": true,
+        "staleCopy": false
+      }
+    },
+    {
+      "name": "320: pose remains static after scroll",
+      "pass": true,
+      "detail": {
+        "before": {
+          "progress": "0",
+          "hand-open": "0",
+          "hand-release": "0",
+          "hand-opacity": "1",
+          "card-lift": "0",
+          "card-turn": "0",
+          "card-center": "0",
+          "fan-opacity": "0",
+          "spread": "0",
+          "copy-opacity": "1",
+          "scene-opacity": "1"
+        },
+        "after": {
+          "progress": "0",
+          "hand-open": "0",
+          "hand-release": "0",
+          "hand-opacity": "1",
+          "card-lift": "0",
+          "card-turn": "0",
+          "card-center": "0",
+          "fan-opacity": "0",
+          "spread": "0",
+          "copy-opacity": "1",
+          "scene-opacity": "1"
+        }
+      }
+    },
+    {
+      "name": "320: collection and camera untouched",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "Cloud Chromium WebGL unavailable, live GPU rendering and tracking unverified.",
+    "Native prefers-reduced-motion and real device emulation not performed.",
+    "No real camera, physical card, iPhone or Safari test.",
+    "Storage checks compare values; no pre-navigation instrumentation is injected."
+  ],
+  "testType": "Authored reduced-motion fixture: matchMedia proxy and verbatim author reduce CSS. Native preference NOT tested.",
+  "summary": {
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "routes": 3
+  },
+  "failures": []
+}

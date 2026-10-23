@@ -1,0 +1,454 @@
+{
+  "all_decoded": true,
+  "frame_count": 32,
+  "frames": [
+    {
+      "file": "work/hand-rig/frames/hand-000.png",
+      "sha256": "e1d2d41e697097c180351a88fa4fccd453f4b5f9d9ccb6bc075cb69643d2fbca",
+      "alpha_bbox": [
+        195,
+        243,
+        586,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-001.png",
+      "sha256": "70996ebb65e96c8d8810b11bba9f0700e00d25f3adfa3fe24c6eaea4a1801ff5",
+      "alpha_bbox": [
+        191,
+        247,
+        589,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-002.png",
+      "sha256": "6d3c529dfbf7366a6e2a8a897bcaedc4f77ad58853c0e94f8f32a4e772ac7704",
+      "alpha_bbox": [
+        187,
+        251,
+        592,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-003.png",
+      "sha256": "3bccc6bdfda784d3fafa4483fb98246e27c8ce2945c1f4078a0da01062c662fa",
+      "alpha_bbox": [
+        183,
+        255,
+        595,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-004.png",
+      "sha256": "14007529d8d0b876c9c5cab6ee54fc11cdf938943a8afe58b9aaccc13e0bc189",
+      "alpha_bbox": [
+        180,
+        259,
+        599,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-005.png",
+      "sha256": "8bad202916edbfa91db885905ef371910f98cf16a1b16b556bda35b5b4e80068",
+      "alpha_bbox": [
+        176,
+        263,
+        602,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-006.png",
+      "sha256": "ef5c6c68dabb5b235761b9a209f9d2ddb5f235886f00446812fd431c06bb42a2",
+      "alpha_bbox": [
+        172,
+        267,
+        605,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-007.png",
+      "sha256": "7f5e729bd444105a512e7fc8f6bba40d0d0a6cb2a4db2e99265420dfe69e872c",
+      "alpha_bbox": [
+        168,
+        271,
+        608,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-008.png",
+      "sha256": "26f9280a604cf3b2210c82bddd1b91e2ec5ff586f7efa66b5725da8efc79a80d",
+      "alpha_bbox": [
+        164,
+        274,
+        611,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-009.png",
+      "sha256": "4078a749edb261eff266f5b2e21afbce5375766ae9fd014bbb74590723623942",
+      "alpha_bbox": [
+        160,
+        279,
+        614,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-010.png",
+      "sha256": "20d187b3861c5d567c2de41dfd0ca6818fe9a01d3a90c9618672f78e275cd831",
+      "alpha_bbox": [
+        157,
+        283,
+        617,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-011.png",
+      "sha256": "86395b9e13bdeaff4867ce5fa1ebe1626f1dd477e06af491921092d037ffde05",
+      "alpha_bbox": [
+        153,
+        286,
+        619,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-012.png",
+      "sha256": "4b02bda51cfc8704174fdbec3818518e23dca6a3f5f43f006930e714ebc455b5",
+      "alpha_bbox": [
+        149,
+        290,
+        622,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-013.png",
+      "sha256": "300936df6b5a8da5d6ae05d60d7f9d8bb48cb9729ef207be4635b27aeea7807c",
+      "alpha_bbox": [
+        145,
+        295,
+        625,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-014.png",
+      "sha256": "25685ef45ad5cc3d78e3119f708fcb77f57d832670c94287a1805ec68faf1230",
+      "alpha_bbox": [
+        142,
+        299,
+        628,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-015.png",
+      "sha256": "2fc24088bffcf73d89e9367f887ec6391e77f40ce525b23f02c068ac492cb1b7",
+      "alpha_bbox": [
+        138,
+        303,
+        630,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-016.png",
+      "sha256": "2c177f700c6a3ad09837a5a035680846aa3f49e1eb236a1c8114d0f28a9e3464",
+      "alpha_bbox": [
+        134,
+        307,
+        633,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-017.png",
+      "sha256": "966fdd2bac208ee3f4ebb3a00d8d7411d843010ac338c8f74afbf3274ba12cc2",
+      "alpha_bbox": [
+        130,
+        311,
+        635,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-018.png",
+      "sha256": "67be632b627495e9c8b68e33e9887265ed8f63ec157f8da8e3ba7d51dc8da047",
+      "alpha_bbox": [
+        127,
+        315,
+        638,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-019.png",
+      "sha256": "9107a8a86d8dbcb35fc8a12ee4b3fe59fd676fa1ba7ef41c197586004c5b9853",
+      "alpha_bbox": [
+        123,
+        319,
+        640,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-020.png",
+      "sha256": "f6d6574d9ad06bbe6431b094d633c1dc30102b9f87c08df4daef31f15c2483a2",
+      "alpha_bbox": [
+        120,
+        324,
+        643,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-021.png",
+      "sha256": "de3cf0719c2da33a3d7f00e5e2ef7b858bfb5d17b272f2bf59fae0a3390a4874",
+      "alpha_bbox": [
+        116,
+        328,
+        645,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-022.png",
+      "sha256": "bfe5cea70994d31466e1c594cb6a756d160b61477dacb0247ea90412212c3523",
+      "alpha_bbox": [
+        113,
+        332,
+        647,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-023.png",
+      "sha256": "3db748396932f1452864b32b3d111890851ada47c5d1128281a10ea91f27a4c7",
+      "alpha_bbox": [
+        109,
+        336,
+        650,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-024.png",
+      "sha256": "0b6e84de60e4ef28f71fdfccac13e482c4c2be0d3532125b545ccb2161585be8",
+      "alpha_bbox": [
+        106,
+        340,
+        652,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-025.png",
+      "sha256": "96950ff7b37f76ecb2ad87feb4f1ce684382388501e93fb9b73ff75e4010fe90",
+      "alpha_bbox": [
+        102,
+        345,
+        654,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-026.png",
+      "sha256": "eb730bf76566018f869df4956c1e1a823bdf72459a4923fde13aef88cbcf77a4",
+      "alpha_bbox": [
+        99,
+        349,
+        657,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-027.png",
+      "sha256": "29b823c361e976e059e8d77049587a426b22e2b0e19a366bbb5ec82687b432ec",
+      "alpha_bbox": [
+        95,
+        353,
+        659,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-028.png",
+      "sha256": "09a93ad551a7c88a8a0a4234f477851e9ce1f39213d7fb120772de71b1cece3a",
+      "alpha_bbox": [
+        92,
+        358,
+        661,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-029.png",
+      "sha256": "4e9fd09e7d909b62f729b0755dccc83d3551afdc758ff87b9f41d2f64d8d9f72",
+      "alpha_bbox": [
+        89,
+        362,
+        663,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-030.png",
+      "sha256": "fcb152978222217bc4955c72849e649a2f1e05c7916e42c3ce5dbba48feaffed",
+      "alpha_bbox": [
+        85,
+        366,
+        665,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "file": "work/hand-rig/frames/hand-031.png",
+      "sha256": "f7f883d7aa967734657847b0ddff1980d1df8fd8868ea55d744459d0ab070543",
+      "alpha_bbox": [
+        82,
+        371,
+        666,
+        960
+      ],
+      "size": [
+        720,
+        960
+      ]
+    }
+  ]
+}

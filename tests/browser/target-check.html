@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Five-card recognition integration check</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script type="importmap">{"imports":{"three":"../../public/vendor/three.module.js","three/addons/":"../../public/vendor/three/"}}</script>
+<style>body{font:16px system-ui;background:#182019;color:#eef3e7;padding:24px}button,select{font:inherit;padding:10px;margin:5px}label{display:block}#stage{position:relative;isolation:isolate;width:400px;max-width:90vw;height:600px;background:#080c09;overflow:hidden}pre{white-space:pre-wrap}#status{font-weight:bold}</style></head>
+<body><h1>Actual five-card MindAR check</h1><p>Test-only synthetic camera frames. No real camera permission, no upload, no persistent collection writes. The original target PNG is passed into the actual matcher. This does not validate a printed physical card or phone-camera behavior.</p>
+<label>Selected scanner <select id="card"></select></label>
+<label>Image presented <select id="target"><option value="same">Matching selected original target</option><option value="flowers">Flowers original target</option><option value="peony">Peony original target</option><option value="chrysanthemum">Chrysanthemum original target</option><option value="lotus">Lotus original target</option><option value="leaves">Hibiscus / leaves original target</option><option value="blank">Blank</option></select></label>
+<button id="run">Start actual matcher</button><button id="stop">Stop</button>
+<p id="status">idle</p><div id="stage"></div><pre id="log"></pre>
+<script type="module">
+import { createScanController } from '../../public/scan-controller.mjs';
+import { createImageTargetTracker } from '../../public/image-target-tracker.mjs';
+import { createCollectionStore } from '../../public/collection-store.mjs';
+import { cards } from '../../public/cards.mjs';
+const stage=document.querySelector('#stage'), status=document.querySelector('#status'), log=document.querySelector('#log');
+const selection=document.querySelector('#card');
+for(const card of cards){const option=document.createElement('option');option.value=card.key;option.textContent=card.title+' / '+card.key;selection.append(option);}
+selection.value='lotus';
+const data=new Map();const storage={getItem:key=>data.get(key)??null,setItem:(key,value)=>data.set(key,value)};
+const store=createCollectionStore({getStorage:()=>storage,eventTarget:null});
+let controller=null,timer=null,frameSource=null,requestCount=0,runId=0;
+const append=message=>{log.textContent+=`${new Date().toISOString()} ${message}\n`;};
+window.addEventListener('error',event=>append('ERROR: '+event.message));
+window.addEventListener('unhandledrejection',event=>append('REJECTION: '+String(event.reason)));
+function stop(){runId++;controller?.cleanup();controller=null;if(timer)clearInterval(timer);timer=null;frameSource=null;append('Stopped; video='+stage.querySelectorAll('video').length+', canvas='+stage.querySelectorAll('canvas').length+', saved='+JSON.stringify(store.getCollection()));status.textContent='stopped';}
+document.querySelector('#stop').onclick=stop;
+document.querySelector('#run').onclick=async()=>{
+ stop();const token=runId;data.clear();const card=cards.find(card=>card.key===selection.value);const chosen=document.querySelector('#target').value;const target=chosen==='same'?card.key:chosen;let observations=0;const before=performance.now();
+ append(`Selected ${card.key} (index ${card.targetIndex}); presented ${target}; expected ${target===card.key?'match selected card':'no collection'}`);
+ controller=createScanController({card,isSecureContext:()=>true,cameraAvailable:()=>true,
+  requestCamera:async()=>{requestCount++;append('Synthetic request '+requestCount);const canvas=document.createElement('canvas');canvas.width=640;canvas.height=960;const ctx=canvas.getContext('2d');const img=new Image();if(target!=='blank'){const input=cards.find(card=>card.key===target);img.src=new URL('../../public/'+input.target.replace(/^\.\//,''),location.href).href;await img.decode();}if(token!==runId)throw new DOMException('Cancelled','AbortError');const draw=()=>{ctx.fillStyle='#ecefe7';ctx.fillRect(0,0,640,960);if(target!=='blank'){const width=550,height=width*img.naturalHeight/img.naturalWidth;ctx.drawImage(img,(640-width)/2,(960-height)/2,width,height);}};draw();timer=setInterval(draw,66);frameSource=canvas;return canvas.captureStream(15);},
+  createTracker:options=>createImageTargetTracker({...options,container:stage,onTargetUpdate:event=>{observations++;if(observations%5===0)append('Real pose observations='+observations+'; '+JSON.stringify(event));options.onTargetUpdate(event);}}),
+  saveRecognition:evidence=>{append('MATCH EVIDENCE '+JSON.stringify(evidence));return store.recordRecognition(evidence);},
+  onState:state=>{status.textContent=state.state+' — '+state.message;append('STATE '+state.state+' '+Math.round(performance.now()-before)+'ms');if(['error','denied'].includes(state.state)&&timer){clearInterval(timer);timer=null;}}
+ });await controller.start();
+};
+window.addEventListener('pagehide',stop);
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')stop();});
+</script></body></html>

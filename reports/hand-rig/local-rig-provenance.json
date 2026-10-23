@@ -1,0 +1,10 @@
+{
+  "rig": "work/hand-rig/continuous-hand-rig.blend",
+  "sha256": "ce8fd67ac8110a0f7005fb614aeab570582b6cd9a800d9563cb9f84f2ae8ea7c",
+  "matchesImportedNumericReport": true,
+  "blenderLocalExecution": false,
+  "reason": "Blender unavailable; official release directory returned HTTP 403. No rerender attempted.",
+  "importedMinimumFrontClearanceM": 0.022053561522625387,
+  "importedMaximumPalmAngleDegrees": 0.0,
+  "scope": "Hash/provenance match only; the imported numerical geometry report has not been independently rerun on this Mac."
+}

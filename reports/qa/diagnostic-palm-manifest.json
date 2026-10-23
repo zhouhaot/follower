@@ -1,0 +1,9 @@
+{
+  "diagnostic": true,
+  "note": "Only three low-resolution pose samples, not production sequence QA.",
+  "frames": [
+    "/reports/hand-rig/front-facing-front-preview/hand-000.png",
+    "/reports/hand-rig/front-facing-front-preview/hand-016.png",
+    "/reports/hand-rig/front-facing-front-preview/hand-031.png"
+  ]
+}

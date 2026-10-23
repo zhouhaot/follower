@@ -1,0 +1,144 @@
+{
+  "scope": "Static two-hand composition blockout only; no actual hand meshes, skeletal poses, contact shadows or scanning.",
+  "checks": [
+    {
+      "name": "1440: HTTP",
+      "pass": true
+    },
+    {
+      "name": "1440: three frames",
+      "pass": true
+    },
+    {
+      "name": "1440: no overflow",
+      "pass": true,
+      "detail": {
+        "frames": 3,
+        "overflow": 0,
+        "sources": [
+          "http://127.0.0.1:4173/assets/renders/lotus-transparent.png",
+          "http://127.0.0.1:4173/assets/renders/lotus-transparent.png",
+          "http://127.0.0.1:4173/assets/renders/lotus-transparent.png"
+        ],
+        "notice": "构图占位，尚非双手渲染。虚线块只代表左右掌的投影占位，没有使用或镜像旧手部图片。真实左右手骨骼、指尖与拇指姿态、接触阴影仍未制作；这三帧不证明自然抓握。",
+        "cameraRequests": 0,
+        "animations": 0
+      }
+    },
+    {
+      "name": "1440: actual-pose limitation explicit",
+      "pass": true
+    },
+    {
+      "name": "1440: no old hand images or camera",
+      "pass": true
+    },
+    {
+      "name": "1440: static and error-free",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "390: HTTP",
+      "pass": true
+    },
+    {
+      "name": "390: three frames",
+      "pass": true
+    },
+    {
+      "name": "390: no overflow",
+      "pass": true,
+      "detail": {
+        "frames": 3,
+        "overflow": 0,
+        "sources": [
+          "http://127.0.0.1:4173/assets/renders/lotus-transparent.png",
+          "http://127.0.0.1:4173/assets/renders/lotus-transparent.png",
+          "http://127.0.0.1:4173/assets/renders/lotus-transparent.png"
+        ],
+        "notice": "构图占位，尚非双手渲染。虚线块只代表左右掌的投影占位，没有使用或镜像旧手部图片。真实左右手骨骼、指尖与拇指姿态、接触阴影仍未制作；这三帧不证明自然抓握。",
+        "cameraRequests": 0,
+        "animations": 0
+      }
+    },
+    {
+      "name": "390: actual-pose limitation explicit",
+      "pass": true
+    },
+    {
+      "name": "390: no old hand images or camera",
+      "pass": true
+    },
+    {
+      "name": "390: static and error-free",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "320: HTTP",
+      "pass": true
+    },
+    {
+      "name": "320: three frames",
+      "pass": true
+    },
+    {
+      "name": "320: no overflow",
+      "pass": true,
+      "detail": {
+        "frames": 3,
+        "overflow": 0,
+        "sources": [
+          "http://127.0.0.1:4173/assets/renders/lotus-transparent.png",
+          "http://127.0.0.1:4173/assets/renders/lotus-transparent.png",
+          "http://127.0.0.1:4173/assets/renders/lotus-transparent.png"
+        ],
+        "notice": "构图占位，尚非双手渲染。虚线块只代表左右掌的投影占位，没有使用或镜像旧手部图片。真实左右手骨骼、指尖与拇指姿态、接触阴影仍未制作；这三帧不证明自然抓握。",
+        "cameraRequests": 0,
+        "animations": 0
+      }
+    },
+    {
+      "name": "320: actual-pose limitation explicit",
+      "pass": true
+    },
+    {
+      "name": "320: no old hand images or camera",
+      "pass": true
+    },
+    {
+      "name": "320: static and error-free",
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "name": "Existing main preview served CSS matches restored delivered source",
+      "pass": true
+    },
+    {
+      "name": "public/styles.css: original preview preserved",
+      "pass": true
+    },
+    {
+      "name": "public/app.mjs: original preview preserved",
+      "pass": true
+    },
+    {
+      "name": "public/handheld-state.mjs: original preview preserved",
+      "pass": true
+    }
+  ],
+  "url": "http://127.0.0.1:4173/two-hand-study/",
+  "summary": {
+    "total": 22,
+    "passed": 22,
+    "failed": 0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "asset": "flowers-bloom.png",
+  "title": "花开有声 procedural bouquet preview",
+  "provenance": "Blender CPU render of the exact newly reconstructed Three.js procedural mesh geometry and vertex colours; no source-card image compositing",
+  "sourceModule": "public/flowers-bloom.mjs",
+  "referenceImage": "public/assets/originals/target.png",
+  "referenceDimensions": [
+    900,
+    1260
+  ],
+  "renderer": "Blender 4.3.2 Cycles CPU",
+  "samples": 96,
+  "denoising": false,
+  "transparent": true,
+  "size": [
+    1000,
+    1000
+  ],
+  "sourceSHA256": "d93bdfaaa92d1935e70e598f5ee74123aeccb39e898bf4a7e948a97f4572a26e",
+  "renderSHA256": "21937c4949f8d5c54b32d130eeaf03e67ad4bc6c1fa6da8dd1e91b05791941aa",
+  "geometry": {
+    "renderedTriangles": 42484,
+    "meshDrawObjects": 50,
+    "materials": 5
+  },
+  "coordinates": {
+    "units": "card-width",
+    "plane": "XY",
+    "up": "+Y",
+    "outward": "+Z",
+    "root": [
+      0,
+      -0.08333333333333333,
+      0.008
+    ]
+  },
+  "validation": "CPU shape inspection and numeric geometry tests only; browser WebGL and physical-card AR tracking are unverified",
+  "materialTranslation": "Three.js physical material base colour, roughness, metalness, clearcoat and clearcoat roughness mapped to Blender Principled; offline shader is not claimed pixel-identical to WebGL.",
+  "referenceSHA256": "9812ff4b9fe5cfb2d68ed786ed62cd63f4ae71aad6f27d2452add51930177c25"
+}

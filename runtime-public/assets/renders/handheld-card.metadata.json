@@ -1,0 +1,218 @@
+{
+  "description": "Independent transparent card render from the exact supplied GLB; no human, pedestal, glass or support is modeled.",
+  "source_glb": "public/assets/models/lotus-relief.glb",
+  "source_glb_sha256": "4d0b0e912d24dafb5186d62569a58729b34407352f11f871b960c593e4fd9ac3",
+  "source_geometry_changed": false,
+  "source_front_artwork_changed": false,
+  "source_transform": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "coordinate_system": "Three.js/glTF meters: +Y up, +Z relief face. Blender coordinates: (x,-z,y).",
+  "renderer": "Blender 4.3.2 Cycles CPU",
+  "samples": 256,
+  "denoising": false,
+  "dimensions_px": [
+    1200,
+    1600
+  ],
+  "reference_aspect": 0.75,
+  "transparent": true,
+  "face": "relief",
+  "camera": {
+    "position": [
+      0.07,
+      0.032,
+      0.34
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "lens_mm": 115.96643829345703,
+    "sensor_width_mm": 36,
+    "vertical_fov_degrees": 23.385318092504964,
+    "shift_x": -0.001846224069595337,
+    "shift_y": -0.10901793092489243,
+    "projection_matrix_offsets": [
+      -0.003692448139190674,
+      -0.16352689638733864
+    ]
+  },
+  "card_dimensions_m": [
+    0.06400000303983688,
+    0.09099999815225601,
+    0.0031182285747490823
+  ],
+  "card_bounds_normalized": [
+    0.2125280797481537,
+    0.09858614206314087,
+    0.801031768321991,
+    0.7385860979557037
+  ],
+  "card_relief_quad_normalized": [
+    [
+      0.21142040193080902,
+      0.10190749168395996
+    ],
+    [
+      0.7994920015335083,
+      0.09833782911300659
+    ],
+    [
+      0.7922931909561157,
+      0.7399437725543976
+    ],
+    [
+      0.21819263696670532,
+      0.7204129993915558
+    ]
+  ],
+  "hand_contact": {
+    "card_point_m": [
+      0,
+      -0.0455,
+      0.001
+    ],
+    "normalized": [
+      0.5,
+      0.7300000190734863
+    ],
+    "preferred_hand_support_y": 0.73,
+    "hand_bounds_y": [
+      0.7,
+      1
+    ]
+  },
+  "light_spec": [
+    {
+      "name": "Large soft upper-left neutral key",
+      "position": [
+        -0.15,
+        0.1905,
+        0.18
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "energy": 4.2,
+      "size": [
+        0.17,
+        0.22
+      ],
+      "color": [
+        1,
+        0.985,
+        0.965
+      ]
+    },
+    {
+      "name": "Quiet neutral right bounce",
+      "position": [
+        0.17,
+        0.0355,
+        0.075
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "energy": 0.4,
+      "size": [
+        0.085,
+        0.19
+      ],
+      "color": [
+        0.94,
+        0.97,
+        1
+      ]
+    },
+    {
+      "name": "Narrow ceiling edge reflection",
+      "position": [
+        -0.07,
+        0.1305,
+        -0.1
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "energy": 0.8,
+      "size": [
+        0.055,
+        0.14
+      ],
+      "color": [
+        1,
+        0.985,
+        0.97
+      ]
+    }
+  ],
+  "material_spec": {
+    "01": {
+      "color": [
+        0.2,
+        0.203,
+        0.198
+      ],
+      "metalness": 0.88,
+      "roughness": 0.32
+    },
+    "02": {
+      "color": [
+        0.38,
+        0.385,
+        0.37
+      ],
+      "metalness": 0.86,
+      "roughness": 0.31
+    },
+    "03": {
+      "color": [
+        0.4,
+        0.34,
+        0.24
+      ],
+      "metalness": 0.86,
+      "roughness": 0.31
+    },
+    "05": {
+      "color": [
+        0.43,
+        0.435,
+        0.42
+      ],
+      "metalness": 0.88,
+      "roughness": 0.29
+    }
+  },
+  "composition_notes": "Layer the entire raster at 0,0 in a 3:4 box, hand photograph below it. The hand is independent and can withdraw. The card remains an independent transformable element.",
+  "verified": "CPU render and projection metadata only; no browser GPU or physical AR claim.",
+  "output_asset": {
+    "path": "public/assets/renders/handheld-relief.webp",
+    "bytes": 583170,
+    "sha256": "b02f4297bac74ebe61ee678eb4b1324107ddebc94850a0ad64c91d76e10677e3"
+  },
+  "render_script_sha256": "06f0c256fc72402260000abd73a2a9272588fb3599e8d907ea54cd04876088d1"
+}

@@ -1,0 +1,80 @@
+{
+  "description": "Simulated gallery exhibit, CPU path-traced from actual supplied card geometry. This is not a museum photograph.",
+  "source_glb": "public/assets/models/lotus-relief.glb",
+  "source_glb_sha256": "4d0b0e912d24dafb5186d62569a58729b34407352f11f871b960c593e4fd9ac3",
+  "renderer": "Blender 4.3 Cycles CPU",
+  "sampling": 256,
+  "denoising": false,
+  "planar_glass_shadow_approximation": "Clear shadow rays; surface reflection, transmission, 0.7mm wall thickness and Fresnel remain modeled",
+  "dimensions_px": [
+    1200,
+    1400
+  ],
+  "coordinate_system": "Three.js / glTF: meters, +Y up, +Z relief face. Blender mapping: (x,-z,y).",
+  "card_center": [
+    0,
+    0.0795,
+    0
+  ],
+  "card_geometry_changed": false,
+  "original_front_artwork_changed": false,
+  "camera": {
+    "position": [
+      0.105,
+      0.123,
+      0.3
+    ],
+    "target": [
+      0,
+      0.069,
+      0
+    ],
+    "focal_length_mm": 80,
+    "sensor_width_mm": 36,
+    "vertical_fov_degrees": 29.416607799365497
+  },
+  "plinth": {
+    "size": [
+      0.105,
+      0.025,
+      0.052
+    ],
+    "center": [
+      0,
+      0.0125,
+      0
+    ],
+    "bevel": 0.0009
+  },
+  "glass": {
+    "outer_size": [
+      0.091,
+      0.115,
+      0.04
+    ],
+    "bottom_y": 0.025,
+    "wall_thickness": 0.0007,
+    "ior": 1.46,
+    "roughness": 0.003
+  },
+  "layer_notes": "Base excludes cover. Glass layer is physically rendered cover in isolation with no card, plinth or floor in any ray visibility. This removes secondary ghost artwork/reflections, enabling a clean removable overlay. Both images use exactly the same camera, crop and color transform. Glass refraction displacement is approximated in the CSS composite, with thin low-iron panes minimizing mismatch. Complete still is a reference full physical render. No glow, fog, bloom, painted reflections, or AI image edits.",
+  "output_assets": {
+    "hero-exhibit-base.webp": {
+      "bytes": 211760,
+      "sha256": "2ad35f4556f67dd14ad0f76208229a2c92f8a9ae7d3379d9045dc095699b9756",
+      "dimensions_px": [
+        1200,
+        1400
+      ]
+    },
+    "hero-exhibit-glass.webp": {
+      "bytes": 390390,
+      "sha256": "9d8bd3fc2e69c8514c603c1ed7b3783541eddad973a4b80797d462a590c906d7",
+      "dimensions_px": [
+        1200,
+        1400
+      ]
+    }
+  },
+  "render_script_sha256": "64ce3cd8d0a13ee93aa4f48f5c5622e241795ee3af0a37a8a3e30670949e103e"
+}

@@ -1,0 +1,404 @@
+{
+  "version": 1,
+  "frames": [
+    {
+      "src": "./assets/hand-sequence/hand-000.webp",
+      "foreground": "./assets/hand-sequence/hand-000.webp",
+      "progress": 0.0,
+      "sha256": "834543502718095908b088b39076668921e5e90c367f071a533b65b61ba01ad4",
+      "bytes": 49868,
+      "alphaPixels": 165992
+    },
+    {
+      "src": "./assets/hand-sequence/hand-001.webp",
+      "foreground": "./assets/hand-sequence/hand-001.webp",
+      "progress": 0.03225806451612903,
+      "sha256": "483882f5504548384ebc76c4554a49d6ce3ebb742fcb7baf72c41a97a4edda49",
+      "bytes": 50052,
+      "alphaPixels": 165939
+    },
+    {
+      "src": "./assets/hand-sequence/hand-002.webp",
+      "foreground": "./assets/hand-sequence/hand-002.webp",
+      "progress": 0.06451612903225806,
+      "sha256": "001baf9765a78652c54ba0d3cc9dc30ffddffcda380b1babacb7ff7b9808854e",
+      "bytes": 51130,
+      "alphaPixels": 165796
+    },
+    {
+      "src": "./assets/hand-sequence/hand-003.webp",
+      "foreground": "./assets/hand-sequence/hand-003.webp",
+      "progress": 0.0967741935483871,
+      "sha256": "453527797d8169c07a7820f6de48d5cc2f8e88b15fe3a8af54628538e5e9ab4f",
+      "bytes": 51746,
+      "alphaPixels": 165481
+    },
+    {
+      "src": "./assets/hand-sequence/hand-004.webp",
+      "foreground": "./assets/hand-sequence/hand-004.webp",
+      "progress": 0.12903225806451613,
+      "sha256": "0a58d2a1a8e9a9568002e2cdf390533aac9b8e57c93b16d113bb10becd4e89fb",
+      "bytes": 52114,
+      "alphaPixels": 165058
+    },
+    {
+      "src": "./assets/hand-sequence/hand-005.webp",
+      "foreground": "./assets/hand-sequence/hand-005.webp",
+      "progress": 0.16129032258064516,
+      "sha256": "a3c277a1b882eaedd422083c69af491e6b77aa9f2fc4fe9a1a5bc7c4df75bd65",
+      "bytes": 53192,
+      "alphaPixels": 164528
+    },
+    {
+      "src": "./assets/hand-sequence/hand-006.webp",
+      "foreground": "./assets/hand-sequence/hand-006.webp",
+      "progress": 0.1935483870967742,
+      "sha256": "6812344526234b48d9db2cc92dd14ae1a1c4a50f9e9fcbc081d8917f75f4840c",
+      "bytes": 53992,
+      "alphaPixels": 163953
+    },
+    {
+      "src": "./assets/hand-sequence/hand-007.webp",
+      "foreground": "./assets/hand-sequence/hand-007.webp",
+      "progress": 0.22580645161290322,
+      "sha256": "74735c2915bdc0369f35fa5313242e3faaa93585f8a40778e3399620e1cf736e",
+      "bytes": 50980,
+      "alphaPixels": 163398
+    },
+    {
+      "src": "./assets/hand-sequence/hand-008.webp",
+      "foreground": "./assets/hand-sequence/hand-008.webp",
+      "progress": 0.25806451612903225,
+      "sha256": "a5e01ba083d9f82eff5f5cb1913af39c93679da0a3214ddcc950603ecb900883",
+      "bytes": 51090,
+      "alphaPixels": 162785
+    },
+    {
+      "src": "./assets/hand-sequence/hand-009.webp",
+      "foreground": "./assets/hand-sequence/hand-009.webp",
+      "progress": 0.2903225806451613,
+      "sha256": "85861d11186f304d2af134cde492c8f9cc8a52711ae0240c8e6ec5b2e941c139",
+      "bytes": 50418,
+      "alphaPixels": 162179
+    },
+    {
+      "src": "./assets/hand-sequence/hand-010.webp",
+      "foreground": "./assets/hand-sequence/hand-010.webp",
+      "progress": 0.3225806451612903,
+      "sha256": "1dd0e1a632cb99e9d54c14c36713c75d23ab786deea2ac3bb35a7bc4f2c1778a",
+      "bytes": 50284,
+      "alphaPixels": 161577
+    },
+    {
+      "src": "./assets/hand-sequence/hand-011.webp",
+      "foreground": "./assets/hand-sequence/hand-011.webp",
+      "progress": 0.3548387096774194,
+      "sha256": "226f8ac1a329b96f959da773ac8c3b8f4ccb14cd5f94fa4f8819db0c1bedaeea",
+      "bytes": 53348,
+      "alphaPixels": 160967
+    },
+    {
+      "src": "./assets/hand-sequence/hand-012.webp",
+      "foreground": "./assets/hand-sequence/hand-012.webp",
+      "progress": 0.3870967741935484,
+      "sha256": "3737be148a96d587c1b364814cac233a9576554f707695edb90677d0f9c71d7f",
+      "bytes": 53826,
+      "alphaPixels": 160342
+    },
+    {
+      "src": "./assets/hand-sequence/hand-013.webp",
+      "foreground": "./assets/hand-sequence/hand-013.webp",
+      "progress": 0.41935483870967744,
+      "sha256": "eab067ac3fd9b750c80469f76c25f2d0ab00f48c57bcaa26699edf9ece6b6e89",
+      "bytes": 53882,
+      "alphaPixels": 159735
+    },
+    {
+      "src": "./assets/hand-sequence/hand-014.webp",
+      "foreground": "./assets/hand-sequence/hand-014.webp",
+      "progress": 0.45161290322580644,
+      "sha256": "da542f45e583d7dcd120dee35e4faf7df11901ce094804664737d3acbf4f9bde",
+      "bytes": 53424,
+      "alphaPixels": 159075
+    },
+    {
+      "src": "./assets/hand-sequence/hand-015.webp",
+      "foreground": "./assets/hand-sequence/hand-015.webp",
+      "progress": 0.4838709677419355,
+      "sha256": "7c1c624da4fa8841d27ff72f8f3676ec35613a8e13f1831709ac5fabda382cc6",
+      "bytes": 51664,
+      "alphaPixels": 158414
+    },
+    {
+      "src": "./assets/hand-sequence/hand-016.webp",
+      "foreground": "./assets/hand-sequence/hand-016.webp",
+      "progress": 0.5161290322580645,
+      "sha256": "79c0e58bf989ec7cb33b6f6631af9185fc10c810d84124ab0f6fa2c6f731a1ec",
+      "bytes": 52960,
+      "alphaPixels": 157774
+    },
+    {
+      "src": "./assets/hand-sequence/hand-017.webp",
+      "foreground": "./assets/hand-sequence/hand-017.webp",
+      "progress": 0.5483870967741935,
+      "sha256": "398853891c4c8bc041743a969f100fd0bd0a48906967515f66c3a4ebbb7dd585",
+      "bytes": 48664,
+      "alphaPixels": 157096
+    },
+    {
+      "src": "./assets/hand-sequence/hand-018.webp",
+      "foreground": "./assets/hand-sequence/hand-018.webp",
+      "progress": 0.5806451612903226,
+      "sha256": "629066468fa0299d6b7998f119e24ee0544cc67a4e4deefef62e8909a4fc02b2",
+      "bytes": 47870,
+      "alphaPixels": 156399
+    },
+    {
+      "src": "./assets/hand-sequence/hand-019.webp",
+      "foreground": "./assets/hand-sequence/hand-019.webp",
+      "progress": 0.6129032258064516,
+      "sha256": "042d0c692eacbd7b99ece2777e9c0173ffdf23434ccf8aa9435bcebd189fd93e",
+      "bytes": 50120,
+      "alphaPixels": 155739
+    },
+    {
+      "src": "./assets/hand-sequence/hand-020.webp",
+      "foreground": "./assets/hand-sequence/hand-020.webp",
+      "progress": 0.6451612903225806,
+      "sha256": "af2c74e4188ebd6825aa15196717efe895d59ecd2e4e40a2f66ce65aac7eeee0",
+      "bytes": 49122,
+      "alphaPixels": 155019
+    },
+    {
+      "src": "./assets/hand-sequence/hand-021.webp",
+      "foreground": "./assets/hand-sequence/hand-021.webp",
+      "progress": 0.6774193548387096,
+      "sha256": "f47702cddd6cfc5f73c1dcb0cccf3dd1a88417d8a68eda86ab673d838d28de1b",
+      "bytes": 46842,
+      "alphaPixels": 154301
+    },
+    {
+      "src": "./assets/hand-sequence/hand-022.webp",
+      "foreground": "./assets/hand-sequence/hand-022.webp",
+      "progress": 0.7096774193548387,
+      "sha256": "4408028346713d6ed485b3bc9747bc3bae081b478c2952ca0018d8538a7fec6f",
+      "bytes": 46628,
+      "alphaPixels": 153559
+    },
+    {
+      "src": "./assets/hand-sequence/hand-023.webp",
+      "foreground": "./assets/hand-sequence/hand-023.webp",
+      "progress": 0.7419354838709677,
+      "sha256": "302b57987c8ec9d7943f75c6ac5a8714aaf5bc3ce7d337c59e84ff6dc533fc32",
+      "bytes": 50508,
+      "alphaPixels": 152803
+    },
+    {
+      "src": "./assets/hand-sequence/hand-024.webp",
+      "foreground": "./assets/hand-sequence/hand-024.webp",
+      "progress": 0.7741935483870968,
+      "sha256": "f0be0ae3d410a5d9cbc2d4968ad6597b5f319e55bf9f26b27548c8cba24a1d52",
+      "bytes": 45758,
+      "alphaPixels": 152052
+    },
+    {
+      "src": "./assets/hand-sequence/hand-025.webp",
+      "foreground": "./assets/hand-sequence/hand-025.webp",
+      "progress": 0.8064516129032258,
+      "sha256": "31f433df35f956b2edb5cf2148fb87cabf5b3b6369be039337b10a73b0f83aef",
+      "bytes": 45954,
+      "alphaPixels": 151260
+    },
+    {
+      "src": "./assets/hand-sequence/hand-026.webp",
+      "foreground": "./assets/hand-sequence/hand-026.webp",
+      "progress": 0.8387096774193549,
+      "sha256": "e189c6f6655568076269142ccd83ead4c20ed7e8f9793ac9dfddeebf33fbd3dd",
+      "bytes": 45764,
+      "alphaPixels": 150479
+    },
+    {
+      "src": "./assets/hand-sequence/hand-027.webp",
+      "foreground": "./assets/hand-sequence/hand-027.webp",
+      "progress": 0.8709677419354839,
+      "sha256": "98d83e414c486d6a64d77ba8885ecb5e0da112aacb8eff668220b93e16f127c1",
+      "bytes": 49156,
+      "alphaPixels": 149674
+    },
+    {
+      "src": "./assets/hand-sequence/hand-028.webp",
+      "foreground": "./assets/hand-sequence/hand-028.webp",
+      "progress": 0.9032258064516129,
+      "sha256": "7dcbe2e94d4458580f9c359f6f47e3ff83f5b94b7d5e0305080845aaed08b18a",
+      "bytes": 44560,
+      "alphaPixels": 148831
+    },
+    {
+      "src": "./assets/hand-sequence/hand-029.webp",
+      "foreground": "./assets/hand-sequence/hand-029.webp",
+      "progress": 0.9354838709677419,
+      "sha256": "0090979760e6ba76b044c97bc88d2c0ab8e0be43e175b8645808e000b43a498e",
+      "bytes": 48750,
+      "alphaPixels": 147985
+    },
+    {
+      "src": "./assets/hand-sequence/hand-030.webp",
+      "foreground": "./assets/hand-sequence/hand-030.webp",
+      "progress": 0.967741935483871,
+      "sha256": "529fc5ddfe74d229f21785f5762d6c8721e421981936e10d2ca7a34677008076",
+      "bytes": 47998,
+      "alphaPixels": 147108
+    },
+    {
+      "src": "./assets/hand-sequence/hand-031.webp",
+      "foreground": "./assets/hand-sequence/hand-031.webp",
+      "progress": 1.0,
+      "sha256": "395c22a1fc1fa319c7d24d5065c834c0c49e42551dc66884bdefc9ed0ea54a2f",
+      "bytes": 43520,
+      "alphaPixels": 146247
+    }
+  ],
+  "width": 720,
+  "height": 960,
+  "dimensions": [
+    720,
+    960
+  ],
+  "frameCount": 32,
+  "startPose": "camera-facing palm with fingers nearly together",
+  "endPose": "camera-facing planar finger fan, hand slightly lower",
+  "motion": "same weighted 25-joint mesh, fixed camera, reversible absolute pose index",
+  "rootMotion": {
+    "coordinateSystem": "Blender meters",
+    "translationFrom": [
+      0,
+      0,
+      0
+    ],
+    "translationTo": [
+      0.0003146817034576088,
+      -0.001528454595245421,
+      -0.01692822575569153
+    ],
+    "interpolation": "linear by handOpen",
+    "rotationXDegreesFrom": 0,
+    "rotationXDegreesTo": 0,
+    "poseVariant": "FRONT",
+    "rootDropMeters": 0.017
+  },
+  "camera": {
+    "position": [
+      0.07,
+      0.032,
+      0.34
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "lens_mm": 115.96643829345703,
+    "sensor_width_mm": 36,
+    "vertical_fov_degrees": 23.385318092504964,
+    "shift_x": -0.001846224069595337,
+    "shift_y": -0.10901793092489243,
+    "projection_matrix_offsets": [
+      -0.003692448139190674,
+      -0.16352689638733864
+    ]
+  },
+  "contact": {
+    "normalized": [
+      0.5,
+      0.73
+    ],
+    "description": "Frontal fingers visibly overlap the lower card on screen while opening and lowering; model-space separation is positive and is not a physical grasp."
+  },
+  "layers": {
+    "src": "full hand, below independent card",
+    "foreground": "identical full hand, above card until release",
+    "sameImageReason": "Independently verified all 32 poses have positive front-of-card clearance; no card holdout or skin cutout needed."
+  },
+  "source": {
+    "url": "https://github.com/immersive-web/webxr-input-profiles/blob/main/packages/assets/profiles/generic-hand/right.glb",
+    "sha256": "291790c14f7f88a7f9bd35330c47392ed8e8d395ae6728f4bb7089f1bc1f2b96",
+    "license": "MIT, copyright 2019 Amazon"
+  },
+  "geometry": {
+    "sourceSkinCount": 1,
+    "weightedJointCount": 25,
+    "sourceVertexCount": 1360,
+    "sourceTriangleCount": 2314,
+    "fingerCount": 5,
+    "changes": [
+      "connected wrist extension",
+      "mirrored presentation",
+      "two-level subdivision",
+      "positional seam welding and smooth recomputed normals",
+      "dual-quaternion preserve-volume skinning"
+    ],
+    "independentGeneratedPoses": false
+  },
+  "clearanceScope": "Software checks describe the frozen source 3D scene before CSS presentation transforms; they do not prove zero-gap physical contact or browser-space collision.",
+  "poseVariant": "FRONT",
+  "poseSpecification": {
+    "angles": [
+      12,
+      6,
+      2
+    ],
+    "anglesEnd": [
+      0,
+      0,
+      0
+    ],
+    "adduction": [
+      -12,
+      -3,
+      7,
+      16
+    ],
+    "adductionEnd": [
+      5,
+      0,
+      -6,
+      -13
+    ],
+    "thumb": -16,
+    "thumbEnd": 8,
+    "tilt": 0,
+    "lower": 0
+  },
+  "render_script_sha256": "4f3990be5c6b34265892457a50f388da7d75edb4b2cd7000aafa11dd444b52d6",
+  "textureProjection": {
+    "stableUv": "CameraSkin",
+    "preservedFromPriorRig": true,
+    "projectionRegistrationSha256": "f58bfb9361d0f51ae7636968e8f03176c3d5ce27c867d742702b6cfdff419250",
+    "wristBoundaryBlend": "fixed rest-UV fade over v=0..0.10",
+    "appearance": "AI-created shape-preserving palmar surface detail, affine-aligned and used as bounded linear-light albedo detail; no generated per-pose hands",
+    "alignmentIoU": 0.95431,
+    "alignmentIoUScope": "prior source texture and accepted original projection, preserved through exact UV reuse"
+  },
+  "render": {
+    "renderer": "Blender 4.3.2 Cycles CPU",
+    "alpha": true,
+    "samples": 96,
+    "sameSeed": true,
+    "viewTransform": "AgX"
+  },
+  "palmAlignment": {
+    "normal": [
+      0.2008015215396881,
+      -0.9753217101097107,
+      0.09179499000310898
+    ],
+    "cameraAxisNormal": [
+      0.2008015215396881,
+      -0.9753217101097107,
+      0.09179499000310898
+    ],
+    "angleDegrees": 0.0,
+    "lockedThroughoutOpening": true
+  },
+  "reverse": "The same decoded frames are indexed in reverse; no transition or alternate images."
+}

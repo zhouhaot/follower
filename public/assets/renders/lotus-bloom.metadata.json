@@ -1,0 +1,17 @@
+{
+  "title": "Procedural SCAN-A lotus fallback",
+  "source": "New procedural 3D geometry, not the supplied metal relief GLB and not a recovered historical AR asset",
+  "source_module": "../../lotus-bloom.mjs",
+  "source_sha256": "45d49807439aa95b108d807403c0b8738e619cb84e6a8abe5921fe31e4b20566",
+  "image_sha256": "f9e1730121bbe185fda02dff479de49f26d7a24e80f2cd538a2ee3c8c1df2b93",
+  "renderer": "Blender Cycles CPU",
+  "samples": 96,
+  "size": [
+    1000,
+    1000
+  ],
+  "transparent": true,
+  "growth": 1,
+  "card_plane_included": false,
+  "verified": "CPU-rendered silhouette and transparency visually inspected; not a browser WebGL or physical-card tracking test"
+}

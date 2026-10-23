@@ -1,0 +1,20 @@
+{
+  "published_at": "2026-10-13T17:03:37.461951+00:00",
+  "project_id": "appgprj_6ace5234990081918f186b804514512c",
+  "version_id": "appgprj_6ace5234990081918f186b804514512c~appgver_7c82a66b0afc819181ab144799f5a691",
+  "version_number": 1,
+  "deployment_id": "appgdep_6ace6444c8788191ac4ba981722bf968",
+  "status": "succeeded",
+  "url": "https://zevth-handheld-card-preview.tunedlarch512.chatgpt.site",
+  "access_mode": "public",
+  "source_commit": "8d6bd1b6f8a2ffcb25922a475a01fa0fd80286f7",
+  "archive": "/workspace/scratch/82fef5354282/Zevth-Handheld-Sites-v0.4.0.tar.gz",
+  "backend_archive": {
+    "archive_format": "tar",
+    "sediment_file_id": "file_00000000df1881f7b428a0f772105694",
+    "content_hash": "sha256:1154ff187f11d1c7e69066e2a452b5eaffc5fed0d9bbc758367a6f5d61ed41b9",
+    "size_bytes": 24596480,
+    "file_count": 126
+  },
+  "runtime_fingerprint": "35d6fce19c31dd8ac6cf00009e1f62b59729a8fb527c3b31f7c203529b150e95"
+}

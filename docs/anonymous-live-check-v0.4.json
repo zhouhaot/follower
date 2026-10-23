@@ -1,0 +1,94 @@
+{
+  "sent_cookies": false,
+  "sent_authorization": false,
+  "results": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "url": "https://zevth-handheld-card-preview.tunedlarch512.chatgpt.site/",
+      "bytes": 981,
+      "sha256": "2bf4f17e98876c5d8d8e521146c2983d548e521f505eafa910b1ebb04db26f7e",
+      "type": "text/html"
+    },
+    {
+      "path": "catalogue.html",
+      "status": 200,
+      "url": "https://zevth-handheld-card-preview.tunedlarch512.chatgpt.site/catalogue",
+      "bytes": 970,
+      "sha256": "9593e6b9c5c40f13e08db90579e1a765eaf00dcca79fc6f45dc600efe4bd8f59",
+      "type": "text/html"
+    },
+    {
+      "path": "work.html?card=lotus",
+      "status": 200,
+      "url": "https://zevth-handheld-card-preview.tunedlarch512.chatgpt.site/work?card=lotus",
+      "bytes": 965,
+      "sha256": "ee589c5afa32b46405042c77026ba072225e44294377c64ab18a33f6d5708b33",
+      "type": "text/html"
+    },
+    {
+      "path": "collection.html",
+      "status": 200,
+      "url": "https://zevth-handheld-card-preview.tunedlarch512.chatgpt.site/collection",
+      "bytes": 971,
+      "sha256": "51c11b382ad47fdba50053a88987e58f182756ebf8ebab4249c6cc3eefe076de",
+      "type": "text/html"
+    },
+    {
+      "path": "guide.html",
+      "status": 200,
+      "url": "https://zevth-handheld-card-preview.tunedlarch512.chatgpt.site/guide",
+      "bytes": 966,
+      "sha256": "e52edbc2a0c8ad2fbbd05d0e7fd00696357538178a1630adf60271b2d804f56b",
+      "type": "text/html"
+    },
+    {
+      "path": "preview.html?card=lotus",
+      "status": 200,
+      "url": "https://zevth-handheld-card-preview.tunedlarch512.chatgpt.site/preview?card=lotus",
+      "bytes": 968,
+      "sha256": "a7498a89440313de298003eceb256c35860741d2e675c7639b5e2a486747a794",
+      "type": "text/html"
+    },
+    {
+      "path": "scan.html?card=lotus&from=work&backCard=lotus",
+      "status": 200,
+      "url": "https://zevth-handheld-card-preview.tunedlarch512.chatgpt.site/scan?card=lotus&from=work&backCard=lotus",
+      "bytes": 965,
+      "sha256": "0488b16c905195c00394cce012682524dac3db5559a628b981828af113b289a3",
+      "type": "text/html"
+    },
+    {
+      "path": "assets/hand-sequence/manifest.json",
+      "status": 200,
+      "url": "https://zevth-handheld-card-preview.tunedlarch512.chatgpt.site/assets/hand-sequence/manifest.json",
+      "bytes": 12650,
+      "sha256": "6db0b19d841ea5edadfdcba14933e8af3e43f47b30a9de948c3107e8b857f6b7",
+      "type": "application/json"
+    },
+    {
+      "path": "assets/hand-sequence/hand-000.webp",
+      "status": 200,
+      "url": "https://zevth-handheld-card-preview.tunedlarch512.chatgpt.site/assets/hand-sequence/hand-000.webp",
+      "bytes": 25718,
+      "sha256": "0fd33a9c8c86fd7bb17d7de6dbdb358fa8457243cc4d215e9b20e5c06e9d28d7",
+      "type": "application/octet-stream"
+    },
+    {
+      "path": "assets/hand-sequence/hand-031.webp",
+      "status": 200,
+      "url": "https://zevth-handheld-card-preview.tunedlarch512.chatgpt.site/assets/hand-sequence/hand-031.webp",
+      "bytes": 23352,
+      "sha256": "ee35b5afdc76ee986a8073623b10e34b6ec52536805053933171870cc044dbbe",
+      "type": "application/octet-stream"
+    },
+    {
+      "path": "assets/models/lotus-relief.glb",
+      "status": 200,
+      "url": "https://zevth-handheld-card-preview.tunedlarch512.chatgpt.site/assets/models/lotus-relief.glb",
+      "bytes": 4415512,
+      "sha256": "4d0b0e912d24dafb5186d62569a58729b34407352f11f871b960c593e4fd9ac3",
+      "type": "application/octet-stream"
+    }
+  ]
+}

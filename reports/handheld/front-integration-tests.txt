@@ -1,0 +1,40 @@
+✔ uniform pose selection is exact, clamped and fully reversible with no elapsed time (8.812655ms)
+✔ the hand completely opens before withdrawal or card lift, then ends in the fan (0.429108ms)
+✔ only the initial frame loads until decoded, followed by small adjacent prefetch (1.719157ms)
+✔ a requested frame replaces the hand only after decode, with no stale intermediate pose (29.466097ms)
+✔ reverse scrolling chooses the same cached frame immediately and ignores invalid progress (0.44986ms)
+✔ load and decode failures retain the last safe frame and explicit retry recovers (0.625715ms)
+✔ all layers switch together without changing existing accessibility attributes (0.302197ms)
+✔ reduced motion is the static first pose, with no adjacent preloads or hidden animation (13.658758ms)
+✔ disposal cancels pending loads, blocks late decodes and remains idempotent (0.323358ms)
+✔ frame inputs are copied and cache remains bounded during rapid scrubbing (1.043607ms)
+✔ canvas targets receive only decoded frames at the verified source dimensions (0.399774ms)
+✔ controller does not create animation loops, crossfades, storage writes or accessibility announcements (1.029256ms)
+✔ paired frames wait for both layers to decode before one atomic pose commit (0.392113ms)
+✔ one failed layer holds both previous frames and retries as an entire pose pair (12.745357ms)
+✔ reverse paired poses remain identical and cache is bounded by five pose pairs (0.697534ms)
+✔ late paired decodes and disposal cannot produce mismatched foreground fingers (8.447203ms)
+✔ paired source objects are immutable snapshots and malformed pairs are rejected (0.420976ms)
+✔ optional cache warmup downloads at most two compressed assets concurrently without decoding the sequence (1.001603ms)
+✔ warmup pauses on hidden or pagehide, resumes visibly, and removes all listeners at disposal (12.866912ms)
+✔ reduced motion and Save-Data suppress network warming and abort an active warmup (0.970727ms)
+✔ warmup skips off-origin URLs and failed requests do not retry forever (0.331962ms)
+✔ handheld scene retains the original GLB bytes, dimensions, topology and original reverse texture (32.453397ms)
+✔ shared state is dependency-free, finite, clamped and reversible for the complete native scroll (21.755051ms)
+✔ only the independent card turns; HTML owns common lift and centering (23.829315ms)
+✔ the initial fixed camera and lower-edge contact match the CPU card raster (287.632371ms)
+✔ responsive lens shift follows object-fit contain with no hand/card registration drift (1.289749ms)
+✔ geometry bounds stay finite, centered, unclipped and restore exactly throughout the flip (1.154654ms)
+✔ display-only PBR calibration matches the raster while original art, geometry and texture remain intact (21.617073ms)
+✔ the offscreen PBR environment has three neutral, broad softboxes matching physical light directions (0.651094ms)
+✔ hero WebGL unavailability preserves independent hand and fallback card DOM through repeated disposal (1.210359ms)
+✔ hero route is card-only, demand-rendered, transparent and lifecycle guarded (16.817681ms)
+✔ front-facing reveal retains a solid foreground hand until it clears the card (0.395617ms)
+ℹ tests 32
+ℹ suites 0
+ℹ pass 32
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1326.936545

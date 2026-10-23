@@ -1,0 +1,78 @@
+{
+  "title": "Photographic hand support layer",
+  "asset": "hero-hand.webp",
+  "source": "AI-generated photographic hand only. The artwork/card is not generated and must be layered independently from its preserved geometry.",
+  "generationTool": "Built-in image_gen.imagegen (no API/CLI)",
+  "selectedVersion": 3,
+  "originalGeneratedFile": "generated_images/exec-83220059-b47e-499c-832c-320ca0c05124.png",
+  "sourcePreservedAt": "work/hand-generation/hand-support-v3-original.png",
+  "promptPreservedAt": "work/hand-generation/hand-support-v3.prompt.txt",
+  "size": [
+    1086,
+    1448
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "genuineTransparency": true,
+    "range": [
+      0,
+      255
+    ],
+    "fullyTransparentPercent": 77.66424508816378,
+    "alphaPreservedExactlyInWebP": true,
+    "visibleBoundsThreshold16": [
+      42,
+      803,
+      1048,
+      1448
+    ],
+    "note": "Subvisible alpha values below 16 exist as sparse pixels above the visible hand; original output preserved with no masking or geometry edit."
+  },
+  "encoding": {
+    "format": "WebP",
+    "lossless": true,
+    "method": 6,
+    "dimensionsUnchanged": true
+  },
+  "png_sha256": "2a045523fcf48e8af7341e2e9fa42f89fb5ab5b6793200ab34aa000084c3f80f",
+  "webp_sha256": "40b505af34b9e6ba66c9ed82bf9551e25d4f05d11cb5c138b7bd7c9562f87ec6",
+  "referenceInspection": [
+    "public/assets/renders/lotus-transparent.png",
+    "public/assets/renders/hero-exhibit-base.webp"
+  ],
+  "compositing": {
+    "canvasAspect": "3:4",
+    "handCssTransform": "scale(.8)",
+    "handCssTransformOrigin": "50% 100%",
+    "handCssTranslate": "none",
+    "handBelowCard": true,
+    "supportNormalizedAfterTransform": {
+      "x": 0.5,
+      "y": 0.728
+    },
+    "cardBoundsNormalized": [
+      0.2125,
+      0.0986,
+      0.801,
+      0.7386
+    ],
+    "sourcePalmSupportPixels": {
+      "x": [
+        500,
+        690
+      ],
+      "y": [
+        950,
+        965
+      ]
+    }
+  },
+  "visualReview": "Natural skin texture, thumb and three clearly visible fingertips, with the far finger occluded. No duplicated fingertip in selected image. No jewelry or long forearm. Final scene contact and lighting should still be reviewed in the integrated webpage.",
+  "rejectedVersions": {
+    "1": "Duplicated central fingertip",
+    "2": "Unresolved duplicated fingertip",
+    "4": "Valid composition variant; selected v3 plus exact CSS scaling provides more predictable contact alignment."
+  },
+  "publicRawPng": null,
+  "finalWebP": "public/assets/renders/hero-hand.webp"
+}

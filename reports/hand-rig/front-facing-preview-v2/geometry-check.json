@@ -1,0 +1,1043 @@
+{
+  "frame_count": 32,
+  "source_card_sha256": "4d0b0e912d24dafb5186d62569a58729b34407352f11f871b960c593e4fd9ac3",
+  "render_script_sha256": "ebbd723a127727a93daa0527bb34038ec85225216e3b21688c629766c392d347",
+  "rig": "reports/hand-rig/front-facing-preview-v2/front-facing-preview.blend",
+  "rigSha256": "05c16c03f960cb9549f45718a9c28a180f7befc40afb39d49e08a1817445a38a",
+  "coordinateSystem": "Blender metres; separating plane normal points from scene toward camera",
+  "configuration": "All hand geometry behind immutable card; complete hand raster; card is invisible only to camera rays and remains a shadow caster.",
+  "minimumBehindCardClearanceM": 0.011198549997061491,
+  "maximumPalmNormalCameraAxisDegrees": 0.0,
+  "palmNormalDefinition": "Authored palm plane: source-space +X, transformed by the fixed rig root; natural local surface curvature is retained.",
+  "stableUvMaximumError": 0,
+  "packedTextureVerified": true,
+  "sourceCardGeometryChanged": false,
+  "cameraDrift": false,
+  "physicalGraspClaim": false,
+  "frames": [
+    {
+      "poseIndex": 0,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02236088691279292,
+      "separatingPlaneClearanceM": 0.011198549997061491,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.7814804315567017,
+          0.43193358182907104
+        ],
+        "index-finger": [
+          0.4728572368621826,
+          0.21179693937301636
+        ],
+        "middle-finger": [
+          0.3912576138973236,
+          0.17368119955062866
+        ],
+        "ring-finger": [
+          0.3218769431114197,
+          0.2219630479812622
+        ],
+        "pinky-finger": [
+          0.29217758774757385,
+          0.3224136233329773
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.18067964911460876,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 1,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.7858747839927673,
+          0.43361276388168335
+        ],
+        "index-finger": [
+          0.4764860272407532,
+          0.21053820848464966
+        ],
+        "middle-finger": [
+          0.39203938841819763,
+          0.17325657606124878
+        ],
+        "ring-finger": [
+          0.31907135248184204,
+          0.22212302684783936
+        ],
+        "pinky-finger": [
+          0.2869113087654114,
+          0.32238084077835083
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.1895747184753418,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 2,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.7902246713638306,
+          0.4353405237197876
+        ],
+        "index-finger": [
+          0.48014044761657715,
+          0.2093292474746704
+        ],
+        "middle-finger": [
+          0.39282602071762085,
+          0.17285913228988647
+        ],
+        "ring-finger": [
+          0.3162660002708435,
+          0.2223224639892578
+        ],
+        "pinky-finger": [
+          0.2816411852836609,
+          0.32243239879608154
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.19849926233291626,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 3,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.794529378414154,
+          0.43711626529693604
+        ],
+        "index-finger": [
+          0.4838191270828247,
+          0.2081705927848816
+        ],
+        "middle-finger": [
+          0.39361754059791565,
+          0.17248868942260742
+        ],
+        "ring-finger": [
+          0.31346163153648376,
+          0.2225615382194519
+        ],
+        "pinky-finger": [
+          0.27636978030204773,
+          0.322568416595459
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.20744934678077698,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 4,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.7987878322601318,
+          0.4389391541481018
+        ],
+        "index-finger": [
+          0.48752081394195557,
+          0.20706242322921753
+        ],
+        "middle-finger": [
+          0.394413560628891,
+          0.17214518785476685
+        ],
+        "ring-finger": [
+          0.3106590807437897,
+          0.22284001111984253
+        ],
+        "pinky-finger": [
+          0.27109962701797485,
+          0.3227892518043518
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.2164211869239807,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 5,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8029991984367371,
+          0.4408087134361267
+        ],
+        "index-finger": [
+          0.49124443531036377,
+          0.20600497722625732
+        ],
+        "middle-finger": [
+          0.3952140212059021,
+          0.1718285083770752
+        ],
+        "ring-finger": [
+          0.30785930156707764,
+          0.22315794229507446
+        ],
+        "pinky-finger": [
+          0.26583367586135864,
+          0.32309478521347046
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.22541075944900513,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 6,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8071622252464294,
+          0.4427242875099182
+        ],
+        "index-finger": [
+          0.4949885308742523,
+          0.20499855279922485
+        ],
+        "middle-finger": [
+          0.39601871371269226,
+          0.17153871059417725
+        ],
+        "ring-finger": [
+          0.3050629794597626,
+          0.22351515293121338
+        ],
+        "pinky-finger": [
+          0.26057419180870056,
+          0.32348495721817017
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.23441433906555176,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 7,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8112762570381165,
+          0.4446849822998047
+        ],
+        "index-finger": [
+          0.4987519085407257,
+          0.20404314994812012
+        ],
+        "middle-finger": [
+          0.3968273103237152,
+          0.17127585411071777
+        ],
+        "ring-finger": [
+          0.3022710978984833,
+          0.22391164302825928
+        ],
+        "pinky-finger": [
+          0.25532421469688416,
+          0.3239597678184509
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.24342769384384155,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 8,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8153401017189026,
+          0.44669026136398315
+        ],
+        "index-finger": [
+          0.5025334358215332,
+          0.203139066696167
+        ],
+        "middle-finger": [
+          0.3976397216320038,
+          0.17103970050811768
+        ],
+        "ring-finger": [
+          0.2994842231273651,
+          0.22434735298156738
+        ],
+        "pinky-finger": [
+          0.2500859498977661,
+          0.32451921701431274
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.2524474859237671,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 9,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8193532228469849,
+          0.4487394094467163
+        ],
+        "index-finger": [
+          0.5063316226005554,
+          0.20228654146194458
+        ],
+        "middle-finger": [
+          0.39845573902130127,
+          0.17083024978637695
+        ],
+        "ring-finger": [
+          0.2967033088207245,
+          0.2248220443725586
+        ],
+        "pinky-finger": [
+          0.24486227333545685,
+          0.32516300678253174
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.26146934926509857,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 10,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8233144879341125,
+          0.4508315920829773
+        ],
+        "index-finger": [
+          0.5101454257965088,
+          0.20148563385009766
+        ],
+        "middle-finger": [
+          0.3992752432823181,
+          0.1706472635269165
+        ],
+        "ring-finger": [
+          0.2939293682575226,
+          0.22533577680587769
+        ],
+        "pinky-finger": [
+          0.23965582251548767,
+          0.32589101791381836
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.2704896032810211,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 11,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8272230625152588,
+          0.45296627283096313
+        ],
+        "index-finger": [
+          0.5139734148979187,
+          0.20073658227920532
+        ],
+        "middle-finger": [
+          0.40009793639183044,
+          0.17049109935760498
+        ],
+        "ring-finger": [
+          0.2911628782749176,
+          0.22588831186294556
+        ],
+        "pinky-finger": [
+          0.23446914553642273,
+          0.3267030715942383
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.27950426936149597,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 12,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8310781121253967,
+          0.4551425576210022
+        ],
+        "index-finger": [
+          0.5178143382072449,
+          0.20003920793533325
+        ],
+        "middle-finger": [
+          0.40092363953590393,
+          0.1703612208366394
+        ],
+        "ring-finger": [
+          0.2884047329425812,
+          0.22647958993911743
+        ],
+        "pinky-finger": [
+          0.22930482029914856,
+          0.3275986909866333
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.2885095179080963,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 13,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8348788022994995,
+          0.4573597311973572
+        ],
+        "index-finger": [
+          0.5216671228408813,
+          0.19939392805099487
+        ],
+        "middle-finger": [
+          0.4017522633075714,
+          0.17025798559188843
+        ],
+        "ring-finger": [
+          0.2856559455394745,
+          0.22710943222045898
+        ],
+        "pinky-finger": [
+          0.22416557371616364,
+          0.32857781648635864
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.2975015491247177,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 14,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8386244177818298,
+          0.4596171975135803
+        ],
+        "index-finger": [
+          0.525530219078064,
+          0.19880062341690063
+        ],
+        "middle-finger": [
+          0.402583509683609,
+          0.1701810359954834
+        ],
+        "ring-finger": [
+          0.2829171121120453,
+          0.22777777910232544
+        ],
+        "pinky-finger": [
+          0.21905381977558136,
+          0.329639732837677
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.3064763993024826,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 15,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8423139452934265,
+          0.4619138836860657
+        ],
+        "index-finger": [
+          0.5294025540351868,
+          0.1982593536376953
+        ],
+        "middle-finger": [
+          0.40341717004776,
+          0.17013031244277954
+        ],
+        "ring-finger": [
+          0.2801891267299652,
+          0.22848427295684814
+        ],
+        "pinky-finger": [
+          0.21397222578525543,
+          0.33078426122665405
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.31543032824993134,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 16,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8459470272064209,
+          0.46424931287765503
+        ],
+        "index-finger": [
+          0.5332828760147095,
+          0.197770357131958
+        ],
+        "middle-finger": [
+          0.4042532444000244,
+          0.17010581493377686
+        ],
+        "ring-finger": [
+          0.2774726450443268,
+          0.22922903299331665
+        ],
+        "pinky-finger": [
+          0.20892350375652313,
+          0.3320106863975525
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.32435937225818634,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 17,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8495225310325623,
+          0.46662241220474243
+        ],
+        "index-finger": [
+          0.5371697545051575,
+          0.1973334550857544
+        ],
+        "middle-finger": [
+          0.4050912857055664,
+          0.17010748386383057
+        ],
+        "ring-finger": [
+          0.2747686207294464,
+          0.23001164197921753
+        ],
+        "pinky-finger": [
+          0.20390988886356354,
+          0.33331871032714844
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.33325986564159393,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 18,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8530399203300476,
+          0.4690325856208801
+        ],
+        "index-finger": [
+          0.54106205701828,
+          0.19694864749908447
+        ],
+        "middle-finger": [
+          0.4059313237667084,
+          0.1701352596282959
+        ],
+        "ring-finger": [
+          0.2720777094364166,
+          0.23083198070526123
+        ],
+        "pinky-finger": [
+          0.1989341527223587,
+          0.3347075581550598
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.3421279042959213,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 19,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8564985394477844,
+          0.47147905826568604
+        ],
+        "index-finger": [
+          0.5449585914611816,
+          0.1966160535812378
+        ],
+        "middle-finger": [
+          0.40677303075790405,
+          0.1701890230178833
+        ],
+        "ring-finger": [
+          0.2694007456302643,
+          0.23168981075286865
+        ],
+        "pinky-finger": [
+          0.1939987689256668,
+          0.3361767530441284
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.35095982253551483,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 20,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8598973751068115,
+          0.47396087646484375
+        ],
+        "index-finger": [
+          0.5488579273223877,
+          0.19633543491363525
+        ],
+        "middle-finger": [
+          0.4076163172721863,
+          0.17026865482330322
+        ],
+        "ring-finger": [
+          0.2667384743690491,
+          0.2325851321220398
+        ],
+        "pinky-finger": [
+          0.18910613656044006,
+          0.3377254605293274
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.35975179076194763,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 21,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8632360100746155,
+          0.4764772653579712
+        ],
+        "index-finger": [
+          0.5527589917182922,
+          0.19610708951950073
+        ],
+        "middle-finger": [
+          0.40846094489097595,
+          0.17037421464920044
+        ],
+        "ring-finger": [
+          0.26409173011779785,
+          0.23351752758026123
+        ],
+        "pinky-finger": [
+          0.18425866961479187,
+          0.3393530249595642
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.36850032210350037,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 22,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8665139675140381,
+          0.4790274500846863
+        ],
+        "index-finger": [
+          0.5566604137420654,
+          0.19593054056167603
+        ],
+        "middle-finger": [
+          0.4093066453933716,
+          0.17050516605377197
+        ],
+        "ring-finger": [
+          0.26146116852760315,
+          0.2344868779182434
+        ],
+        "pinky-finger": [
+          0.17945899069309235,
+          0.34105879068374634
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.3772014230489731,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 23,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8697302937507629,
+          0.4816105365753174
+        ],
+        "index-finger": [
+          0.5605608820915222,
+          0.19580596685409546
+        ],
+        "middle-finger": [
+          0.4101535379886627,
+          0.17066198587417603
+        ],
+        "ring-finger": [
+          0.2588476538658142,
+          0.2354927659034729
+        ],
+        "pinky-finger": [
+          0.17470937967300415,
+          0.34284186363220215
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.38585150241851807,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 24,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8728846311569214,
+          0.4842257499694824
+        ],
+        "index-finger": [
+          0.5644594430923462,
+          0.19573312997817993
+        ],
+        "middle-finger": [
+          0.4110010862350464,
+          0.1708441972732544
+        ],
+        "ring-finger": [
+          0.25625181198120117,
+          0.2365351915359497
+        ],
+        "pinky-finger": [
+          0.17001225054264069,
+          0.34470134973526
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.3944471925497055,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 25,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8759761452674866,
+          0.486872136592865
+        ],
+        "index-finger": [
+          0.5683544874191284,
+          0.195712149143219
+        ],
+        "middle-finger": [
+          0.4118492603302002,
+          0.1710519790649414
+        ],
+        "ring-finger": [
+          0.2536744177341461,
+          0.23761379718780518
+        ],
+        "pinky-finger": [
+          0.1653699278831482,
+          0.34663641452789307
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.4029845595359802,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 26,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8790044784545898,
+          0.4895489811897278
+        ],
+        "index-finger": [
+          0.5722450017929077,
+          0.19574260711669922
+        ],
+        "middle-finger": [
+          0.4126979410648346,
+          0.17128485441207886
+        ],
+        "ring-finger": [
+          0.2511163353919983,
+          0.23872828483581543
+        ],
+        "pinky-finger": [
+          0.1607847511768341,
+          0.3486461043357849
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.4114602506160736,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 27,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8819693326950073,
+          0.49225538969039917
+        ],
+        "index-finger": [
+          0.5761298537254333,
+          0.19582444429397583
+        ],
+        "middle-finger": [
+          0.4135468304157257,
+          0.17154312133789062
+        ],
+        "ring-finger": [
+          0.24857811629772186,
+          0.23987847566604614
+        ],
+        "pinky-finger": [
+          0.15625911951065063,
+          0.3507293462753296
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.4198707342147827,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 28,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8848696351051331,
+          0.49499034881591797
+        ],
+        "index-finger": [
+          0.5800076127052307,
+          0.1959574818611145
+        ],
+        "middle-finger": [
+          0.4143957495689392,
+          0.1718265414237976
+        ],
+        "ring-finger": [
+          0.2460605502128601,
+          0.2410639524459839
+        ],
+        "pinky-finger": [
+          0.15179508924484253,
+          0.3528851866722107
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.4282125234603882,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 29,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8877052068710327,
+          0.49775320291519165
+        ],
+        "index-finger": [
+          0.5838771462440491,
+          0.19614166021347046
+        ],
+        "middle-finger": [
+          0.4152446389198303,
+          0.1721348762512207
+        ],
+        "ring-finger": [
+          0.2435643970966339,
+          0.2422846555709839
+        ],
+        "pinky-finger": [
+          0.14739513397216797,
+          0.3551126718521118
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.4364820122718811,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 30,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8904755115509033,
+          0.5005428791046143
+        ],
+        "index-finger": [
+          0.5877373218536377,
+          0.19637662172317505
+        ],
+        "middle-finger": [
+          0.41609328985214233,
+          0.17246800661087036
+        ],
+        "ring-finger": [
+          0.24109026789665222,
+          0.24354010820388794
+        ],
+        "pinky-finger": [
+          0.1430613249540329,
+          0.3574105501174927
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.4446759968996048,
+      "evaluatedHandVertices": 28538
+    },
+    {
+      "poseIndex": 31,
+      "palmNormalCameraAxisDot": 1,
+      "palmNormalCameraAxisDegrees": 0.0,
+      "cardBackSupportM": -0.01116233691573143,
+      "handFrontSupportM": -0.02282689034473151,
+      "separatingPlaneClearanceM": 0.01166455342900008,
+      "tipScreenCoordinates": {
+        "thumb": [
+          0.8931801319122314,
+          0.5033586919307709
+        ],
+        "index-finger": [
+          0.5915868282318115,
+          0.19666218757629395
+        ],
+        "middle-finger": [
+          0.41694140434265137,
+          0.17282617092132568
+        ],
+        "ring-finger": [
+          0.23863889276981354,
+          0.24483001232147217
+        ],
+        "pinky-finger": [
+          0.1387956589460373,
+          0.359777569770813
+        ]
+      },
+      "fourFingerTipScreenWidth": 0.45279116928577423,
+      "evaluatedHandVertices": 28538
+    }
+  ]
+}

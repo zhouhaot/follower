@@ -1,0 +1,102 @@
+{
+  "samples": 20,
+  "resolution": [
+    360,
+    480
+  ],
+  "texture": "work/hand-rig/skin-detail-ratio.png",
+  "derivedMeshVertices": 1207,
+  "poseVariant": "FRONT",
+  "poseSpecification": {
+    "angles": [
+      12,
+      6,
+      2
+    ],
+    "anglesEnd": [
+      0,
+      0,
+      0
+    ],
+    "adduction": [
+      -12,
+      -3,
+      7,
+      16
+    ],
+    "adductionEnd": [
+      5,
+      0,
+      -6,
+      -13
+    ],
+    "thumb": -16,
+    "thumbEnd": 8,
+    "tilt": 0,
+    "lower": 0
+  },
+  "preserveVolume": true,
+  "clearedCustomNormals": true,
+  "nailPlateCount": 0,
+  "render_script_sha256": "c64fb5b22b7ef3bc5835a9cb4590fab28cedc5d6533aae7ff57c08c7663967d0",
+  "weightedBones": 25,
+  "rootMatrix": [
+    [
+      0.09036067873239517,
+      0.4394614100456238,
+      0.034765370190143585,
+      0.01225546095520258
+    ],
+    [
+      -0.43889474868774414,
+      0.09300829470157623,
+      -0.034940462559461594,
+      -0.043581120669841766
+    ],
+    [
+      0.04130774363875389,
+      0.026891324669122696,
+      -0.44729241728782654,
+      -0.034495752304792404
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "rootDisplacement": [
+    0.0003146817034576088,
+    -0.001528454595245421,
+    -0.01692822575569153
+  ],
+  "placement": "front",
+  "rootDropMeters": 0.017,
+  "palmNormal": [
+    0.2008015215396881,
+    -0.9753217101097107,
+    0.09179499000310898
+  ],
+  "cameraFacingNormal": [
+    0.2008015215396881,
+    -0.9753217101097107,
+    0.09179499000310898
+  ],
+  "palmNormalCameraAxisDot": 1.0000000298023224,
+  "palmAngleDegrees": 0.0,
+  "stableUvSource": "work/hand-rig/skin-uv-registration.json",
+  "stableUvSourceSha256": "f58bfb9361d0f51ae7636968e8f03176c3d5ce27c867d742702b6cfdff419250",
+  "fingerAnglesStart": [
+    12,
+    6,
+    2
+  ],
+  "fingerAnglesEnd": [
+    0,
+    0,
+    0
+  ],
+  "renderSeed": 0,
+  "persistentCamera": true
+}

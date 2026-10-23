@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN"><head><base href="/public/"><script>
+// QA-only authored simulation; no browser preference or application source is changed.
+const nativeMatchMedia=window.matchMedia.bind(window);
+window.matchMedia=query=>query.includes('prefers-reduced-motion')?{matches:true,media:query,onchange:null,addListener(){},removeListener(){},addEventListener(){},removeEventListener(){},dispatchEvent(){return false}}:nativeMatchMedia(query);
+</script><meta charset="UTF-8"><meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101310"><meta name="description" content="花开有声，五张源于花卉纹样的数字花卡。浏览原作，观赏金属浮雕，探索实体花卡识别候选体验。"><title>手托花卡 · 展览首页 | 花开有声</title><link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css"><script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/three/"}}</script><script>
+// Apply the author's reduced-motion CSS declarations verbatim for this fixture.
+const reduced=[];for(const sheet of document.styleSheets){for(const rule of sheet.cssRules){if(rule.type===CSSRule.MEDIA_RULE&&/prefers-reduced-motion\s*:\s*reduce/.test(rule.conditionText))reduced.push(...Array.from(rule.cssRules,r=>r.cssText))}}
+const qaReducedStyle=document.createElement('style');qaReducedStyle.dataset.qa='synthetic-reduced-motion';qaReducedStyle.textContent=reduced.join('\n');document.head.append(qaReducedStyle);
+</script></head><body data-page="home"><div id="app"></div><noscript><main style="padding:60px"><h1>花开有声</h1><p>此交互图录需要开启 JavaScript。你也可以<a href="https://zevth.work/">访问原站</a>。</p></main></noscript><script type="module" src="./app.mjs"></script></body></html>
