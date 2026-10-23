@@ -1,4 +1,6 @@
-import { cards, cardByKey } from './cards.mjs';
+import { visitorNavigation } from './visitor-navigation.mjs';
+import { scanURL } from './flow.mjs';
+import { cardByKey } from './cards.mjs';
 import { getStatus, hasCollected, addCollection, removeCollection, recordView, subscribe } from './collection-store-v2.mjs';
 import { createAudioPlayer, getAudioStateMessage } from './audio-player.mjs';
 
@@ -8,6 +10,7 @@ import { renderCollectionNotice, collectionFailureMessage } from './collection-f
 const params = new URLSearchParams(window.location.search);
 const flowerKey = params.get('key');
 const card = cardByKey(flowerKey);
+if (card) document.title = `${card.title} · 花的故事 | 花开有声`;
 
 if (!card) {
   document.getElementById('app').innerHTML = `
@@ -24,13 +27,11 @@ recordView({ key: card.key, source: 'detail' });
 
 // 创建音频播放器
 let audioPlayer = null;
-let audioState = 'unavailable';
 
 if (card.audioAvailable) {
   audioPlayer = createAudioPlayer({
     card,
-    onStateChange: (state) => {
-      audioState = state.state;
+    onStateChange: () => {
       updateAudioUI();
     }
   });
@@ -74,6 +75,7 @@ function updateCollectionUI() {
     collectBtn.classList.toggle('collected', collected);
     collectBtn.disabled = getStatus().kind !== 'ready';
   }
+  if (collectBtn) collectBtn.setAttribute('aria-pressed', String(collected));
   renderCollectionNotice(document.getElementById('collection-notice'), getStatus());
 }
 
@@ -84,6 +86,7 @@ function toggleCollection() {
     const result = removeCollection(card.key);
     if (result.saved) {
       updateCollectionUI();
+      document.getElementById('collection-status').textContent = collected ? '已取消收藏，最近浏览仍保留。' : '已收藏，可在“我的花册”找回。';
     } else {
       alert(collectionFailureMessage(result.reason));
     }
@@ -91,6 +94,7 @@ function toggleCollection() {
     const result = addCollection({ key: card.key });
     if (result.saved) {
       updateCollectionUI();
+      document.getElementById('collection-status').textContent = collected ? '已取消收藏，最近浏览仍保留。' : '已收藏，可在“我的花册”找回。';
     } else {
       alert(collectionFailureMessage(result.reason));
     }
@@ -107,14 +111,13 @@ function render() {
   const app = document.getElementById('app');
 
   app.innerHTML = `
-    <header style="padding:20px;border-bottom:1px solid #333">
-      <a href="./index.html" style="color:#fff;text-decoration:none">← 返回</a>
-    </header>
-    <main style="max-width:1200px;margin:0 auto;padding:40px 20px">
+    ${visitorNavigation('detail')}
+    <main id="main" class="visitor-main">
+      <a class="detail-back" href="./catalogue.html">← 返回花卡图录</a>
       <div id="collection-notice"></div>
       <div class="flower-detail-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start">
         <div class="flower-exhibit">
-          <img src="${card.image}" alt="${card.title}" style="width:100%;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,0.3)">
+          <img src="${card.image}" alt="${card.title}" width="1100" height="1881" class="detail-art">
         </div>
         <div class="flower-info">
           <h1 style="font-size:2.5rem;margin:0 0 10px">${card.title}</h1>
@@ -129,26 +132,29 @@ function render() {
             <p style="color:#999;line-height:1.8;margin:0">${card.story}</p>
           </div>
 
-          <div style="margin-bottom:30px;padding:20px;background:#1a1a1a;border-radius:8px">
+          <div class="audio-panel" style="margin-bottom:30px;padding:20px;background:#1a1a1a;border-radius:8px">
             <h3 style="font-size:1rem;margin:0 0 15px;color:#ccc">听花</h3>
             <div class="flower-audio-controls" style="display:flex;gap:10px;align-items:center;margin-bottom:10px">
               <button id="audio-btn" style="padding:10px 20px;background:#444;color:#fff;border:none;border-radius:4px;cursor:pointer">
                 ${card.audioAvailable ? '播放故事' : '暂无配音'}
               </button>
-              <span id="audio-status" style="color:#999;font-size:0.9rem"></span>
+              <span id="audio-status" role="status" style="color:#999;font-size:0.9rem"></span>
             </div>
-            ${!card.audioAvailable ? '<p style="color:#999;font-size:0.85rem;margin:10px 0 0">配音内容制作中，敬请期待</p>' : ''}
+            ${!card.audioAvailable ? '<p style="color:#999;font-size:0.85rem;margin:10px 0 0">当前暂无配音，完整故事已在上方呈现。</p>' : ''}
           </div>
 
           <div class="flower-actions" style="display:flex;gap:15px;margin-bottom:30px">
             <button id="collect-btn" style="padding:12px 30px;background:#16753a;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:1rem">
               收藏这朵花
             </button>
-            <a href="./scan.html?key=${card.key}" style="padding:12px 30px;background:#444;color:#fff;text-decoration:none;border-radius:4px;display:inline-block">
-              扫描花卡
+            <a href="./preview.html?card=${card.key}" style="padding:12px 30px;background:#444;color:#fff;text-decoration:none;border-radius:4px;display:inline-block">
+              观赏三维花卡
             </a>
           </div>
 
+          <p id="collection-status" role="status" aria-live="polite" class="save-status"></p>
+          <p class="detail-followup"><a href="./collection.html">到我的花册查看 →</a><span>收藏仅保存在当前浏览器</span></p>
+          <details class="optional-scan"><summary>有实体花卡？</summary><p>实体卡扫描仍为候选体验，扫描记录尚未接入新版花册。</p><a href="${scanURL(card.key, {from:'detail'})}">进入扫描准备页 →</a></details>
           <div style="padding:20px;background:#1a1a1a;border-radius:8px;font-size:0.85rem;color:#999">
             <p style="margin:0 0 5px"><strong>原作：</strong>${card.artwork}</p>
             <p style="margin:0"><strong>来源：</strong>${card.credit}</p>
@@ -157,7 +163,7 @@ function render() {
       </div>
 
       <div style="margin-top:60px;padding-top:40px;border-top:1px solid #333;text-align:center">
-        <a href="./catalogue.html" style="color:#2a5;text-decoration:none">浏览全部五朵花 →</a>
+        <a href="./catalogue.html" class="visitor-link">浏览全部五朵花 →</a>
       </div>
     </main>
   `;

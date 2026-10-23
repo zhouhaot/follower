@@ -18,3 +18,11 @@ test('each scan link preserves work and preview return card',()=>{for(const card
 test('untrusted navigation parameters cannot escape candidate',()=>{const req=requestFor('?card=lotus&from=https://bad.example&backCard=<script>');assert.equal(req.returnURL,'catalogue.html');assert.equal(req.backCard,'lotus');assert.equal(requestFor('?card=unknown').supported,false);assert.throws(()=>scanURL('unknown'))});
 test('supplied recovered flow baseline remains byte-identical',async()=>{const bytes=await readFile(new URL('../docs/restored/flow.mjs',import.meta.url));assert.equal(bytes.length,820);assert.equal(createHash('sha256').update(bytes).digest('hex'),'83b84ccd3fdd0fafa071e99a890c53b9d9c6104dcf79876f832572d422afb1dd')});
 test('preview code never invokes recognition storage writer',async()=>{const app=await readFile(new URL('../public/app.mjs',import.meta.url),'utf8');const viewer=await readFile(new URL('../public/model-viewer.mjs',import.meta.url),'utf8');assert.equal(app.includes('recordRecognition('),false);assert.equal(viewer.includes('recordRecognition('),false)});
+
+test('detail scan links preserve each flower and return to its story',()=>{
+ for(const card of cards){
+  const req=requestFor(scanURL(card.key,{from:'detail'}).split('?')[1]);
+  assert.equal(req.card.key,card.key);
+  assert.equal(req.returnURL,`flower-detail.html?key=${card.key}`);
+ }
+});

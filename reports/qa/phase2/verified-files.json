@@ -1,0 +1,17 @@
+{
+  "public/app.mjs": "b836df030f239f76749c552abeed7696b19da5a70704c62ed3e2b8b351b1f6f9",
+  "public/styles.css": "8481b368384a1cfac89ff81a1c4b2a13413723e8753f3429c1c3212a089638ae",
+  "public/catalogue-page.mjs": "9c44d4872ee18d13948858f07999eb0d0f36b9aa7ba1593c3d7592e76b0f8830",
+  "public/flower-detail.mjs": "1e3b49bbd439d07bea0b26ee22d35eca12a173d9f448d8598da4a2274c29aa47",
+  "public/my-collection.mjs": "419cc46f0caa496053bf14d5b06919634fda2ab1720e2452643a11549a500059",
+  "public/visitor-navigation.mjs": "4d941812f0dba352fb5ed9e2f39c0d5d11dc21b2305002815434fe1920c86c63",
+  "public/flow.mjs": "811c974c151c4396deb9df70858171f3dfea917e2dab691e0665767d26c04ae4",
+  "public/index.html": "b3412107fcdaa8dc185f2de57f9c1ccefc1276f3549f76b626cf4a3abdbbdec7",
+  "tests/phase2-browser.mjs": "92de9aa162b92f54d579fd8f444beda32026e600c080818e0b1eccf5f05ef0f9",
+  "tests/phase1-browser.mjs": "dc2fd6575635138408fd08853215dbbe784b47ea190ca11f560c5327bb8c66eb",
+  "tests/navigation.test.mjs": "0439706abff17d42cceedb25b5e901a35610155bbe4090c71ee2b0e01ea499c8",
+  "tests/exhibit-layout.test.mjs": "2b2e2ce783c8d34f4192467ab75848ed294f0cdf3729a9e8551ef49881e13943",
+  "package.json": "3ec3ef5d9a7a0890b9329f3dd44b6b153a8065feebf25ae3449c8a33aef8e9e7",
+  "PHASE-2-REPORT.md": "95c04fb9f3fe16056bb9940005d11d2fbc5905203c93fa25f9d63f804def4682",
+  "docs/usability/PHASE-2-TRIAL.md": "fbef382e838b8df106a133cbc52432c732a09b6d87cc0c5bb2878f96a4622df7"
+}

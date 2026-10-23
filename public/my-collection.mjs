@@ -1,3 +1,4 @@
+import { visitorNavigation } from './visitor-navigation.mjs';
 import { cards, cardByKey } from './cards.mjs';
 import { getData, getStatus, removeCollection, subscribe } from './collection-store-v2.mjs';
 
@@ -26,10 +27,6 @@ function removeFromCollection(key, event) {
   }
 }
 
-function goToDetail(key) {
-  window.location.href = `./flower-detail.html?key=${key}`;
-}
-
 function renderCollectionCard(collection) {
   const card = cardByKey(collection.key);
   if (!card) return '';
@@ -47,16 +44,15 @@ function renderCollectionCard(collection) {
       padding:20px;
       background:#1a1a1a;
       border-radius:8px;
-      cursor:pointer;
-    " onclick="window.myCollectionGoToDetail('${card.key}')">
-      <img src="${card.image}" alt="${card.title}" style="
+    ">
+      <a href="./flower-detail.html?key=${card.key}" aria-label="阅读${card.title}的故事"><img src="${card.image}" alt="${card.title}" style="
         width:120px;
         height:160px;
-        object-fit:cover;
+        object-fit:contain;
         border-radius:4px;
-      ">
+      "></a>
       <div style="flex:1">
-        <h3 style="margin:0 0 5px;font-size:1.2rem">${card.title}</h3>
+        <h3 style="margin:0 0 5px;font-size:1.2rem"><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h3>
         <p style="margin:0 0 10px;color:#999;font-size:0.85rem">${card.english}</p>
         <p style="margin:0 0 10px;color:#ccc;font-size:0.9rem;line-height:1.6">${card.description}</p>
         <div class="collection-meta" style="display:flex;justify-content:space-between;align-items:center;margin-top:15px">
@@ -69,8 +65,7 @@ function renderCollectionCard(collection) {
             color:#fff;
             border:none;
             border-radius:4px;
-            cursor:pointer;
-            font-size:0.85rem;
+                  font-size:0.85rem;
           ">取消收藏</button>
         </div>
       </div>
@@ -91,16 +86,15 @@ function renderEncounterCard(encounter) {
       padding:15px;
       background:#1a1a1a;
       border-radius:8px;
-      cursor:pointer;
-    " onclick="window.myCollectionGoToDetail('${card.key}')">
-      <img src="${card.image}" alt="${card.title}" style="
+    ">
+      <a href="./flower-detail.html?key=${card.key}" aria-label="阅读${card.title}的故事"><img src="${card.image}" alt="${card.title}" style="
         width:80px;
         height:100px;
-        object-fit:cover;
+        object-fit:contain;
         border-radius:4px;
-      ">
+      "></a>
       <div style="flex:1">
-        <h4 style="margin:0 0 5px;font-size:1rem">${card.title}</h4>
+        <h4 style="margin:0 0 5px;font-size:1rem"><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h4>
         <p style="margin:0;color:#999;font-size:0.85rem">
           ${sourceLabel} · ${formatTime(encounter.recognizedAt)}
         </p>
@@ -126,16 +120,15 @@ function renderRecentViewCard(view) {
       padding:15px;
       background:#1a1a1a;
       border-radius:8px;
-      cursor:pointer;
-    " onclick="window.myCollectionGoToDetail('${card.key}')">
-      <img src="${card.image}" alt="${card.title}" style="
+    ">
+      <a href="./flower-detail.html?key=${card.key}" aria-label="阅读${card.title}的故事"><img src="${card.image}" alt="${card.title}" style="
         width:80px;
         height:100px;
-        object-fit:cover;
+        object-fit:contain;
         border-radius:4px;
-      ">
+      "></a>
       <div style="flex:1">
-        <h4 style="margin:0 0 5px;font-size:1rem">${card.title}</h4>
+        <h4 style="margin:0 0 5px;font-size:1rem"><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h4>
         <p style="margin:0;color:#999;font-size:0.85rem">
           ${sourceLabel} · ${formatTime(view.viewedAt)}
         </p>
@@ -157,13 +150,8 @@ function render() {
   );
 
   app.innerHTML = `
-    <header style="padding:20px;border-bottom:1px solid #333">
-      <div style="max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center">
-        <a href="./index.html" style="color:#fff;text-decoration:none">← 返回首页</a>
-        <a href="./catalogue.html" style="color:#2a5;text-decoration:none">浏览图录</a>
-      </div>
-    </header>
-    <main style="max-width:1200px;margin:0 auto;padding:40px 20px">
+    ${visitorNavigation('collection')}
+    <main id="main" class="visitor-main">
       <h1 style="font-size:2.5rem;margin:0 0 10px">我的花册</h1>
       <p style="color:#999;margin:0 0 40px">你收藏的花、相遇的花和最近看过的花</p>
 
@@ -182,6 +170,7 @@ function render() {
         </div>
       ` : ''}
 
+      ${loaded && state.kind === 'ready' && hasAnyData && data.collections.length === 0 ? '<p class="no-collections">还没有主动收藏的花。最近浏览会留在下方，打开详情即可收藏。</p>' : ''}
       ${data.collections.length > 0 ? `
         <section style="margin-bottom:60px">
           <h2 style="font-size:1.5rem;margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid #333">
@@ -219,7 +208,7 @@ function render() {
         <p style="margin:0 0 10px"><strong style="color:#ccc">数据保存说明</strong></p>
         <p style="margin:0 0 5px">• 所有数据保存在当前浏览器的本地存储中</p>
         <p style="margin:0 0 5px">• 清除浏览器数据可能导致数据丢失</p>
-        <p style="margin:0">• 建议定期导出备份（功能开发中）</p>
+        <p style="margin:0">• 暂不支持跨设备同步或导出，请保留此浏览器的数据</p>
       </div>
     </main>
   `;
@@ -229,7 +218,6 @@ function render() {
 
 // 暴露全局函数
 window.myCollectionRemove = removeFromCollection;
-window.myCollectionGoToDetail = goToDetail;
 
 // 订阅数据变化
 unsubscribe = subscribe(() => {

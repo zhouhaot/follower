@@ -79,8 +79,8 @@ try {
   for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 }]) {
     const { context, page } = await setup(viewport); const prefix = String(viewport.width);
     await page.goto(`${base}/`);
-    await page.waitForFunction(() => document.querySelector('#hero-model')?.dataset.handSequence === 'ready');
-    check(`${prefix}: homepage scene and scan navigation`, await page.locator('.handheld-frame img').count() === 4 && await page.getByRole('link', { name: '扫描花卡', exact: true }).count() === 1);
+    await page.locator('.home-featured img').waitFor();
+    check(`${prefix}: homepage artwork and scan navigation`, await page.locator('.home-featured img').count() === 1 && await page.getByRole('link', { name: '扫描花卡', exact: true }).count() === 1);
     await shot(page, `${prefix}-home`);
     await page.getByRole('link', { name: '走进花卡图录', exact: true }).click();
     check(`${prefix}: five card titles`, JSON.stringify(await page.locator('.flower-card h3').allTextContents()) === JSON.stringify(['花开有声', '牡丹承瑞', '菊影流金', '清荷入梦', '花叶生辉']));
@@ -94,8 +94,8 @@ try {
     await shot(page, `${prefix}-catalogue`);
     await page.locator('.flower-card[data-key=lotus] img').click();
     check(`${prefix}: card body enters lotus detail`, page.url().endsWith('/flower-detail.html?key=lotus'));
-    check(`${prefix}: detail title, English and full story`, await page.locator('h1').textContent() === '清荷入梦' && await page.locator('.flower-info>p').textContent() === 'LOTUS IN REVERIE' && await page.locator('h2').filter({ hasText: '花的故事' }).locator('..').locator('p').textContent().then(t => t.length === 104));
-    check(`${prefix}: audio honestly unavailable`, await page.locator('#audio-btn').isDisabled() && await page.locator('#audio-btn').textContent() === '暂无配音' && await page.getByText('配音内容制作中，敬请期待', { exact: true }).count() === 1);
+    check(`${prefix}: detail title, English and full story`, await page.locator('h1').textContent() === '清荷入梦' && await page.locator('.flower-info>p').first().textContent() === 'LOTUS IN REVERIE' && await page.locator('h2').filter({ hasText: '花的故事' }).locator('..').locator('p').textContent().then(t => t.length === 104));
+    check(`${prefix}: audio honestly unavailable`, await page.locator('#audio-btn').isDisabled() && await page.locator('#audio-btn').textContent() === '暂无配音' && await page.getByText('当前暂无配音，完整故事已在上方呈现。', { exact: true }).count() === 1);
     await page.locator('#collect-btn').click(); await page.reload();
     check(`${prefix}: collection persists after reload`, await page.locator('#collect-btn').textContent() === '已收藏');
     await shot(page, `${prefix}-detail`);

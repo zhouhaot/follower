@@ -1,3 +1,7 @@
+# 第二阶段本地预览（2026-10-23）
+
+首页已改为原作花卡静态展示，移除手托滚动特效调用。无音频的阅读、收藏与找回流程及模拟走查结果见 [PHASE-2-REPORT.md](PHASE-2-REPORT.md)，真人试用准备见 [任务卡](docs/usability/PHASE-2-TRIAL.md)。`npm run dev` 启动后可运行 `npm run test:phase2-ui`。本阶段尚未部署线上；下方保留历史版本说明。
+
 # 第一阶段复验入口（2026-10-23）
 
 第一阶段 v2 收藏、相遇、浏览分离及修复结果见 [PHASE-1-REPORT.md](PHASE-1-REPORT.md)。运行 `npm run dev` 后执行 `npm test` 和 `npm run test:phase1-ui`；浏览器证据见 [阶段一截图与结果](reports/qa/phase1/README.md)。

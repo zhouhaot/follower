@@ -1,0 +1,53 @@
+{
+  "verifiedAt": "2026-10-23T07:16:26.070054+00:00",
+  "files": [
+    {
+      "source": "public/app.mjs",
+      "dist": "dist/app.mjs",
+      "sha256": "b836df030f239f76749c552abeed7696b19da5a70704c62ed3e2b8b351b1f6f9",
+      "match": true
+    },
+    {
+      "source": "public/styles.css",
+      "dist": "dist/styles.css",
+      "sha256": "8481b368384a1cfac89ff81a1c4b2a13413723e8753f3429c1c3212a089638ae",
+      "match": true
+    },
+    {
+      "source": "public/catalogue-page.mjs",
+      "dist": "dist/catalogue-page.mjs",
+      "sha256": "9c44d4872ee18d13948858f07999eb0d0f36b9aa7ba1593c3d7592e76b0f8830",
+      "match": true
+    },
+    {
+      "source": "public/flower-detail.mjs",
+      "dist": "dist/flower-detail.mjs",
+      "sha256": "1e3b49bbd439d07bea0b26ee22d35eca12a173d9f448d8598da4a2274c29aa47",
+      "match": true
+    },
+    {
+      "source": "public/my-collection.mjs",
+      "dist": "dist/my-collection.mjs",
+      "sha256": "419cc46f0caa496053bf14d5b06919634fda2ab1720e2452643a11549a500059",
+      "match": true
+    },
+    {
+      "source": "public/visitor-navigation.mjs",
+      "dist": "dist/visitor-navigation.mjs",
+      "sha256": "4d941812f0dba352fb5ed9e2f39c0d5d11dc21b2305002815434fe1920c86c63",
+      "match": true
+    },
+    {
+      "source": "public/flow.mjs",
+      "dist": "dist/flow.mjs",
+      "sha256": "811c974c151c4396deb9df70858171f3dfea917e2dab691e0665767d26c04ae4",
+      "match": true
+    },
+    {
+      "source": "public/index.html",
+      "dist": "dist/index.html",
+      "sha256": "b3412107fcdaa8dc185f2de57f9c1ccefc1276f3549f76b626cf4a3abdbbdec7",
+      "match": true
+    }
+  ]
+}

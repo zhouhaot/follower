@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-23T07:12:19.501Z",
+  "scope": "Isolated local Chrome contexts; synthetic data only; no camera or production requests.",
+  "checks": [
+    {
+      "name": "1280: homepage artwork and scan navigation",
+      "pass": true
+    },
+    {
+      "name": "1280-home: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: five card titles",
+      "pass": true
+    },
+    {
+      "name": "1280: flowers collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: flowers uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: peony collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: peony uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: chrysanthemum collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: chrysanthemum uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: lotus collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: lotus uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: leaves collect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280: leaves uncollect without navigation",
+      "pass": true
+    },
+    {
+      "name": "1280-catalogue: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: card body enters lotus detail",
+      "pass": true
+    },
+    {
+      "name": "Browser workflow completed",
+      "pass": false,
+      "detail": {
+        "message": "locator.textContent: Error: strict mode violation: locator('.flower-info>p') resolved to 3 elements:\n    1) <p>LOTUS IN REVERIE</p> aka getByText('LOTUS IN REVERIE')\n    2) <p role=\"status\" aria-live=\"polite\" class=\"save-status\" id=\"collection-status\"></p> aka locator('#collection-status')\n    3) <p class=\"detail-followup\">…</p> aka getByText('到我的花册查看 →收藏仅保存在当前浏览器')\n\nCall log:\n\u001b[2m  - waiting for locator('.flower-info>p')\u001b[22m\n",
+        "stack": "locator.textContent: Error: strict mode violation: locator('.flower-info>p') resolved to 3 elements:\n    1) <p>LOTUS IN REVERIE</p> aka getByText('LOTUS IN REVERIE')\n    2) <p role=\"status\" aria-live=\"polite\" class=\"save-status\" id=\"collection-status\"></p> aka locator('#collection-status')\n    3) <p class=\"detail-followup\">…</p> aka getByText('到我的花册查看 →收藏仅保存在当前浏览器')\n\nCall log:\n\u001b[2m  - waiting for locator('.flower-info>p')\u001b[22m\n\n    at /Users/airuquan/Documents/codex/2026-10-14/task-3/zevth-handoff-v041/zevth-local-handoff-2026-10-14/candidate/tests/phase1-browser.mjs:97:152"
+      }
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "1280-home.png",
+    "1280-catalogue.png"
+  ],
+  "browser": "155.0.8059.85",
+  "summary": {
+    "total": 16,
+    "passed": 15,
+    "failed": 1
+  }
+}

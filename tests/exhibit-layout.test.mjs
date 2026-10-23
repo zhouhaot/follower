@@ -4,17 +4,14 @@ import {readFile} from 'node:fs/promises';
 import {getHandheldState} from '../public/handheld-state.mjs';
 const app=await readFile(new URL('../public/app.mjs',import.meta.url),'utf8');
 const css=await readFile(new URL('../public/styles.css',import.meta.url),'utf8');
-test('separate handheld hero uses registered immutable card faces',()=>{
- assert.match(app,/class="handheld-frame"/);
- assert.match(app,/handheld-relief\.webp/);
- assert.match(app,/handheld-front\.webp/);
- assert.doesNotMatch(app,/class="exhibit-photo"/);
- assert.doesNotMatch(app,/class="fallback-(?:case|plinth)"/);
- assert.match(css,/\.hero-model\.model-ready \.handheld-card-flip\{display:none/);
+test('homepage presents the original card without loading the retired hand scene',()=>{
+ assert.match(app,/class="home-featured"/);
+ assert.match(app,/阅读清荷入梦的故事/);
+ assert.doesNotMatch(app,/import .*hand-sequence/);
+ assert.doesNotMatch(app,/id="hero-model"/);
+ assert.doesNotMatch(app,/class="exhibition-scroll"/);
 });
 test('handheld movement stays finite, native-scroll-driven and exactly reversible',()=>{
- assert.match(app,/getHandheldState\(p\)/);
- assert.match(app,/addEventListener\('scroll',schedule,\{passive:true\}\)/);
  assert.doesNotMatch(app,/addEventListener\(['"](?:wheel|touchmove)['"]/);
  assert.match(css,/@media\(prefers-reduced-motion:reduce\)\{\.handheld-hand-layer,\.handheld-card-media,\.handheld-card-flip/);
  const positions=[0,.1,.3,.42,.55,1,.55,.42,.3,.1,0];
@@ -27,8 +24,7 @@ test('handheld movement stays finite, native-scroll-driven and exactly reversibl
  }
 });
 test('initial card load keeps geometry and high priority without requesting camera',()=>{
- assert.match(app,/class="model-fallback handheld-relief"[^>]*width="1200" height="1600" fetchpriority="high"/);
- assert.match(app,/class="handheld-front"[^>]*aria-hidden="true"/);
+ assert.match(app,/width="1100" height="1881" fetchpriority="high"/);
  assert.doesNotMatch(app,/getUserMedia\(/);
  assert.match(css,/合成场景 · 预渲染画面/);
 });
