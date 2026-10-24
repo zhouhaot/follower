@@ -147,7 +147,7 @@ function render() {
   app.innerHTML = `
     ${siteHeader('flower-detail', card.key)}
     <main id="main" class="visitor-main">
-      <a class="detail-back" href="./catalogue.html">← 返回花卡图录</a>
+      <a class="detail-back" href="./catalogue.html">← 返回五花图录</a>
       <div id="collection-notice"></div>
       <header class="detail-title">
         <h1>${card.title}</h1>
