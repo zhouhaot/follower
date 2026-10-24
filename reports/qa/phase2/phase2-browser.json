@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-23T07:13:37.995Z",
+  "date": "2026-10-24T18:08:40.081Z",
   "scope": "Scripted simulated first-visit walkthrough; no human participants; isolated synthetic local storage; no camera access.",
   "checks": [
     {
@@ -11,7 +11,7 @@
       "pass": true
     },
     {
-      "name": "1280: static home makes no hand or Three requests",
+      "name": "1280: pearl home does not load hand or 3D flower models",
       "pass": true
     },
     {
@@ -67,7 +67,7 @@
       "pass": true
     },
     {
-      "name": "1280: preview returns to the same current story",
+      "name": "1280: model remains beside the same story",
       "pass": true
     },
     {
@@ -87,7 +87,7 @@
       "pass": true
     },
     {
-      "name": "768: static home makes no hand or Three requests",
+      "name": "768: pearl home does not load hand or 3D flower models",
       "pass": true
     },
     {
@@ -143,7 +143,7 @@
       "pass": true
     },
     {
-      "name": "768: preview returns to the same current story",
+      "name": "768: model remains beside the same story",
       "pass": true
     },
     {
@@ -163,7 +163,7 @@
       "pass": true
     },
     {
-      "name": "390: static home makes no hand or Three requests",
+      "name": "390: pearl home does not load hand or 3D flower models",
       "pass": true
     },
     {
@@ -219,7 +219,7 @@
       "pass": true
     },
     {
-      "name": "390: preview returns to the same current story",
+      "name": "390: model remains beside the same story",
       "pass": true
     },
     {
@@ -239,7 +239,7 @@
       "pass": true
     },
     {
-      "name": "320: static home makes no hand or Three requests",
+      "name": "320: pearl home does not load hand or 3D flower models",
       "pass": true
     },
     {
@@ -295,7 +295,7 @@
       "pass": true
     },
     {
-      "name": "320: preview returns to the same current story",
+      "name": "320: model remains beside the same story",
       "pass": true
     },
     {
@@ -335,7 +335,7 @@
     "320-collection.png",
     "320-catalogue.png"
   ],
-  "browser": "155.0.8059.85",
+  "browser": "156.0.8078.4",
   "summary": {
     "total": 78,
     "passed": 78,

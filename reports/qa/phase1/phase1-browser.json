@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-23T06:59:15.719Z",
+  "date": "2026-10-24T18:08:29.678Z",
   "scope": "Isolated local Chrome contexts; synthetic data only; no camera or production requests.",
   "checks": [
     {
-      "name": "1280: homepage scene and scan navigation",
+      "name": "1280: homepage artwork and scan navigation",
       "pass": true
     },
     {
@@ -163,7 +163,7 @@
       "pass": true
     },
     {
-      "name": "390: homepage scene and scan navigation",
+      "name": "390: homepage artwork and scan navigation",
       "pass": true
     },
     {
@@ -375,7 +375,7 @@
     "390-legacy-preview.png",
     "390-unreadable.png"
   ],
-  "browser": "155.0.8059.85",
+  "browser": "156.0.8078.4",
   "summary": {
     "total": 88,
     "passed": 88,
