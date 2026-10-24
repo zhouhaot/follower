@@ -26,10 +26,14 @@ function toggleCollection(key, event) {
 
 function renderCard(card, data) {
   const collected = data?.collections.some(c => c.key === card.key) || false;
+  const no = String(cards.indexOf(card) + 1).padStart(2, '0');
 
   return `
     <article class="flower-card" data-key="${card.key}">
-      <a class="flower-card-art" href="./flower-detail.html?key=${card.key}" aria-label="阅读${card.title}的故事"><img src="${card.image}" alt="${card.title}" width="1100" height="1881"></a>
+      <a class="flower-card-art" href="./flower-detail.html?key=${card.key}" aria-label="阅读${card.title}的故事">
+        <img src="${card.artworkImage}" alt="${card.title}插画纹样" width="987" height="1407">
+        <span class="card-index">${no} / 05</span>
+      </a>
       <div class="flower-card-body">
         <div class="flower-card-head">
           <div>
@@ -38,7 +42,10 @@ function renderCard(card, data) {
           </div>
           <button type="button" class="collect-btn ${collected ? 'collected' : ''}" data-key="${card.key}" aria-pressed="${collected}" onclick="event.stopPropagation();window.catalogueToggleCollection('${card.key}', event)">${collected ? '已收藏' : '收藏'}</button>
         </div>
-        <p class="flower-card-description">${card.description}</p>
+        <div class="flower-card-links">
+          <a href="./flower-detail.html?key=${card.key}">读设计与故事</a>
+          <a href="./flower-detail.html?key=${card.key}&view=original">查看实体花卡</a>
+        </div>
       </div>
     </article>
   `;
