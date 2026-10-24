@@ -45,7 +45,7 @@ try{
   await page.getByRole('link',{name:'到我的花册查看',exact:false}).click();
   check(`${width}: collection retrievable through visible link`,await page.locator('.collection-card h3').textContent()==='清荷入梦');
   await snapshot(page,`${width}-collection`);
-  const reopened=await context.newPage();await reopened.goto(`${base}/`);await reopened.getByRole('link',{name:'我的花册',exact:true}).click();
+  const reopened=await context.newPage();await reopened.goto(`${base}/`);await reopened.getByRole('link',{name:'我的花册',exact:true}).click();await reopened.locator('.collection-card').first().waitFor({state:'visible'});
   check(`${width}: later visit from home finds saved flower`,await reopened.locator('.collection-card').count()===1&&await reopened.locator('.collection-card h3').textContent()==='清荷入梦');
   await reopened.close();
   await page.getByRole('link',{name:'花卡图录',exact:true}).click();await snapshot(page,`${width}-catalogue`);

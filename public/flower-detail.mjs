@@ -1,6 +1,6 @@
 import {pearlCard} from './pearl-card.mjs';
 import { initDetailExhibit } from './detail-exhibit.mjs';
-import { visitorNavigation } from './visitor-navigation.mjs';
+import { siteHeader, siteFooter } from './site-chrome.mjs';
 import { scanURL } from './flow.mjs';
 import { cards, cardByKey } from './cards.mjs';
 import { getStatus, hasCollected, addCollection, removeCollection, recordView, subscribe } from './collection-store-v2.mjs';
@@ -124,7 +124,7 @@ function render() {
   const app = document.getElementById('app');
 
   app.innerHTML = `
-    ${visitorNavigation('detail')}
+    ${siteHeader('flower-detail', card.key)}
     <main id="main" class="visitor-main">
       <a class="detail-back" href="./catalogue.html">← 返回花卡图录</a>
       <div id="collection-notice"></div>
@@ -193,6 +193,7 @@ function render() {
         <a href="./catalogue.html" class="visitor-link">浏览全部五朵花 <span class="arrow-north arrow-right" aria-hidden="true"></span></a>
       </nav>
     </main>
+    ${siteFooter()}
   `;
 
   // 绑定事件
