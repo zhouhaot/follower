@@ -29,6 +29,13 @@ export function initDetailExhibit({card, initialView} = {}) {
     pearlDemo.disabled = pearl.querySelector('[data-pearl]').dataset.pearlState !== 'ready';
     reload.hidden = !isModel || !fallback;
     model.setAttribute('aria-busy', String(isModel && !viewer && !fallback));
+    // While the viewer is fetching, the model buttons wait with the card instead of
+    // taking more clicks; they re-open on ready or on the static fallback.
+    const modelPending = isModel && !viewer && !fallback;
+    buttons.forEach(button => {
+      const isModelButton = ['bloom', 'relief'].includes(button.dataset.exhibitView);
+      button.disabled = isModelButton && modelPending;
+    });
     if (isPearl) {
       const state = pearl.querySelector('[data-pearl]').dataset.pearlState;
       status.textContent = state === 'fallback' ? (pearl.querySelector('img').naturalWidth ? '珠光暂不可用，已保留花卉纹样。仍可阅读故事、查看实体花卡或收藏。' : '花卡图片暂不可用。仍可阅读故事、查看实体花卡或收藏。') : state !== 'ready' ? '纹样已呈现，正在准备珠光。' : reduced.matches ? '已减少动态效果，静态呈现珠光。可切换实体花卡对照。' : '横向轻拖或使用方向键，观察局部珠光；按 Home 归正。竖向滑动继续阅读。';

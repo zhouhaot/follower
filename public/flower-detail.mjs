@@ -80,7 +80,7 @@ function updateAudioUI() {
   if (!card.audioAvailable || !audioPlayer?.isAvailable()) {
     audioBtn.disabled = true;
     audioBtn.textContent = '暂无配音';
-    audioStatus.textContent = getAudioStateMessage('unavailable');
+    audioStatus.textContent = '';
   } else {
     audioBtn.disabled = false;
     const state = audioPlayer.getState();
@@ -215,7 +215,6 @@ function render() {
               <button id="audio-btn" type="button">${card.audioAvailable ? '播放故事' : '暂无配音'}</button>
               <span id="audio-status" role="status"></span>
             </div>
-            ${!card.audioAvailable ? '<p>当前暂无配音，完整故事已在上方呈现。</p>' : ''}
           </div>
           <dl class="detail-provenance"><div><dt>纹样原型</dt><dd>《${card.artwork}》</dd></div><div><dt>馆藏</dt><dd>${card.credit}</dd></div><div><dt>实体花卡</dt><dd>现代平面设计稿 · 原作图像来自 zevth.work</dd></div></dl>
           <details class="optional-scan"><summary>有实体花卡？</summary><p>实体卡扫描仍为候选体验，扫描记录尚未接入新版花册。</p><a href="${scanURL(card.key, {from:'detail'})}">进入扫描准备页 →</a></details>
