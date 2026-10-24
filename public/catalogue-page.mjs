@@ -1,4 +1,4 @@
-import { visitorNavigation } from './visitor-navigation.mjs';
+import { siteHeader, siteFooter } from './site-chrome.mjs';
 import { cards } from './cards.mjs';
 import { getData, getStatus, hasCollected, addCollection, removeCollection, subscribe } from './collection-store-v2.mjs';
 
@@ -26,46 +26,28 @@ function toggleCollection(key, event) {
 
 function renderCard(card, data) {
   const collected = data?.collections.some(c => c.key === card.key) || false;
+  const no = String(cards.indexOf(card) + 1).padStart(2, '0');
 
   return `
-    <div class="flower-card" data-key="${card.key}" style="
-      position:relative;
-      background:#1a1a1a;
-      border-radius:8px;
-      overflow:hidden;
-    ">
-      <a href="./flower-detail.html?key=${card.key}" aria-label="阅读${card.title}的故事"><img src="${card.image}" alt="${card.title}" style="
-        width:100%;
-        height:300px;
-        padding:16px;
-        object-fit:contain;
-      "></a>
-      <div style="padding:20px">
-        <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:10px">
+    <article class="flower-card" data-key="${card.key}">
+      <a class="flower-card-art" href="./flower-detail.html?key=${card.key}" aria-label="阅读${card.title}的故事">
+        <img src="${card.artworkImage}" alt="${card.title}插画纹样" width="987" height="1407">
+        <span class="card-index">${no} / 05</span>
+      </a>
+      <div class="flower-card-body">
+        <div class="flower-card-head">
           <div>
-            <h3 style="margin:0 0 5px;font-size:1.3rem"><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h3>
-            <p style="margin:0;color:#999;font-size:0.85rem">${card.english}</p>
+            <h3><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h3>
+            <p>${card.english}</p>
           </div>
-          <button
-            class="collect-btn ${collected ? 'collected' : ''}"
-            data-key="${card.key}"
-            onclick="event.stopPropagation();window.catalogueToggleCollection('${card.key}', event)"
-            style="
-              padding:8px 16px;
-              background:${collected ? '#16753a' : '#444'};
-              color:#fff;
-              border:none;
-              border-radius:4px;
-              cursor:pointer;
-              font-size:0.85rem;
-              white-space:nowrap;
-            ">
-            ${collected ? '已收藏' : '收藏'}
-          </button>
+          <button type="button" class="collect-btn ${collected ? 'collected' : ''}" data-key="${card.key}" aria-pressed="${collected}" onclick="event.stopPropagation();window.catalogueToggleCollection('${card.key}', event)">${collected ? '已收藏' : '收藏'}</button>
         </div>
-        <p style="color:#ccc;font-size:0.9rem;line-height:1.6;margin:10px 0 0">${card.description}</p>
+        <div class="flower-card-links">
+          <a href="./flower-detail.html?key=${card.key}">读设计与故事</a>
+          <a href="./flower-detail.html?key=${card.key}&view=original">查看实体花卡</a>
+        </div>
       </div>
-    </div>
+    </article>
   `;
 }
 
@@ -76,24 +58,22 @@ function render() {
   const state = getStatus();
 
   app.innerHTML = `
-    ${visitorNavigation('catalogue')}
-    <main id="main" class="visitor-main">
-      <h1 style="font-size:2.5rem;margin:0 0 10px;text-align:center">五花图录</h1>
-      <p style="text-align:center;color:#999;margin:0 0 40px">选一张花卡，阅读故事；喜欢就收藏。</p>
-
-      <div id="collection-notice"></div>
-      <div style="
-        display:grid;
-        grid-template-columns:repeat(auto-fit, minmax(min(100%, 300px), 1fr));
-        gap:30px;
-      ">
-        ${cards.map(card => renderCard(card, data)).join('')}
-      </div>
-
-      <div style="margin-top:60px;padding-top:40px;border-top:1px solid #333;text-align:center">
-        <p style="color:#999;font-size:0.9rem">点击原作或名称阅读故事 · 点击收藏按钮加入花册</p>
-      </div>
+    ${siteHeader('catalogue')}
+    <main id="main" class="light-page catalogue-page">
+      <section class="page-wrap">
+        <div class="page-heading">
+          <p class="eyebrow">THE COLLECTION / 全部五款</p>
+          <h1>五种纹样，<br><em>各自成诗。</em></h1>
+          <p class="lead">循着花枝与叶脉，走进五张花卡的世界。</p>
+        </div>
+        <div id="collection-notice"></div>
+        <div class="catalogue-cardwall">
+          ${cards.map(card => renderCard(card, data)).join('')}
+        </div>
+        <p class="catalogue-footnote quiet">点击花卡阅读故事与设计来源 · 收藏后可在“我的花册”找回</p>
+      </section>
     </main>
+    ${siteFooter()}
   `;
   renderCollectionNotice(document.getElementById('collection-notice'), state);
   for (const button of app.querySelectorAll('.collect-btn')) {

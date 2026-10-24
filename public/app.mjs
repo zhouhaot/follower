@@ -2,15 +2,12 @@ import {pearlCard} from './pearl-card.mjs';
 import {cards,cardByKey} from './cards.mjs';
 import {requestFor,scanURL} from './flow.mjs';
 import {getCollection,subscribeCollection} from './collection-store.mjs';
+import {siteHeader,siteFooter,arrow,icon} from './site-chrome.mjs';
 const $=s=>document.querySelector(s);
 const page=document.body.dataset.page;
 const params=new URLSearchParams(location.search);
 const selected=cardByKey(params.get('card')||'lotus');
 const no=(c)=>String(cards.indexOf(c)+1).padStart(2,'0');
-const icon=`<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M7 12h10" stroke="currentColor" stroke-width="1.3"/></svg>`;
-const arrow='<span class="arrow-north" aria-hidden="true"></span>';
-const nav=()=>`<a class="skip" href="#main">跳到主要内容</a><header class="site-header"><a href="index.html" class="brand" aria-label="花开有声 首页"><span class="brand-mark">花</span><span>花开有声<small>FLOWERS SPEAK</small></span></a><nav aria-label="主导航" class="glass-nav">${[['home','index.html','展览首页'],['catalogue','catalogue.html','花卡图录'],['collection','collection.html','我的花册'],['guide','guide.html','参观指南']].map(([id,url,label])=>`<a href="${url}" ${(page==='journey'?'guide':page==='backup'?'collection':page)===id?'aria-current="page"':''}>${label}</a>`).join('')}</nav><a class="scan-nav" aria-label="扫描花卡" href="${scanURL(selected?.key||'lotus',{from:['home','catalogue','collection','work','preview'].includes(page)?page:page==='scan'?requestFor(location.search).from:'catalogue',backCard:page==='scan'?requestFor(location.search).backCard:selected?.key||'lotus'})}">${icon}<span>扫描花卡</span></a></header>`;
-const footer=()=>`<footer><a href="index.html" class="footer-brand">花开有声<span>FLOWERS SPEAK</span></a><p>让古老的纹样，在此刻重新生长。</p><div><a href="guide.html">参观指南</a><a href="catalogue.html">全部花卡 ↗</a></div><small>数字花卡探索 · 本地图录候选<br>原作图像与作品名称来自 zevth.work</small></footer>`;
 const meta=(eyebrow,title,sub='')=>`<div class="page-heading"><p class="eyebrow">${eyebrow}</p><h1>${title}</h1>${sub?`<p class="lead">${sub}</p>`:''}</div>`;
 const cardMarkup=(c,i)=>`<article class="catalogue-card"><a href="flower-detail.html?key=${c.key}" class="card-image"><span class="card-index">${no(c)} / 05</span><img src="${c.image}" alt="${c.title}花卡原作正面" loading="lazy" width="1100" height="1881"><span class="card-view">观赏花卡 ${arrow}</span></a><a class="card-name" href="flower-detail.html?key=${c.key}"><h3>${c.title}</h3>${arrow}</a><p>《${c.artwork}》</p></article>`;
 function home(){const featured=cardByKey('lotus');return `<main id="main">
@@ -48,7 +45,7 @@ function journey(){return '<main id="main" class="light-page"><section class="pa
 function backup(){return '<main id="main" class="light-page"><section class="page-wrap"><div class="page-heading"><h1>把记录，<br><em>妥善留存。</em></h1><p class="lead">备份、预检、合并与撤销，都在本机完成。</p></div><div id="business-root" class="business-root"></div></section></main>'}
 const renderers={home,catalogue,work,collection,guide,preview,scan,journey,backup};
 function mount(content){$('#app').innerHTML=content.replaceAll('↗','<span class="arrow-north" aria-hidden="true"></span>').replaceAll('→','<span class="arrow-north arrow-right" aria-hidden="true"></span>').replaceAll('←','<span class="arrow-north arrow-left" aria-hidden="true"></span>')}
-mount(nav()+(renderers[page]||invalid)()+footer());
+mount(siteHeader(page,selected?.key||'lotus')+(renderers[page]||invalid)()+siteFooter());
 if(page==='home')import('./pearl-gallery.mjs').then(({initPearlGallery})=>{
  const button=$('#home-pearl-demo'),status=$('#home-pearl-status'),main=$('.home-main-card [data-pearl]');
  const gallery=initPearlGallery($('#main'),{onState:(state,element)=>{if(element!==main)return;button.disabled=state!=='ready';status.textContent=state==='fallback'?(element.querySelector('img').naturalWidth?'珠光暂不可用，已保留花卉纹样。':'花卡图片暂不可用，仍可进入故事。'):state==='ready'?(matchMedia('(prefers-reduced-motion: reduce)').matches?'珠光静态呈现，轻触花卡进入故事。':'轻移指针或横向拖动，让光掠过花瓣。轻触进入故事。'):'纹样已呈现，正在准备珠光。';}});
@@ -57,7 +54,7 @@ if(page==='home')import('./pearl-gallery.mjs').then(({initPearlGallery})=>{
 if(selected&&['work','preview','scan'].includes(page))document.title=`${selected.title} · ${page==='scan'?'扫描花卡':page==='preview'?'花卡预览':'花卡图录'} | 花开有声`;
 if(page==='preview'&&selected?.scanSupported){import('./model-viewer.mjs').then(async({createViewer})=>{const viewer=await createViewer($('#preview-model'),{interactive:true,cardKey:selected.key});document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{viewer?.setView(button.dataset.view);if(button.dataset.view!=='reset')document.querySelectorAll('[data-view][aria-pressed]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)))}))}).catch(()=>$('#preview-model').classList.add('fallback-only'))}
 if(page==='scan'&&requestFor(location.search).card){import('./scan-controller.mjs').then(({initScan})=>{const q=requestFor(location.search);initScan({card:q.card,returnURL:q.returnURL})}).catch(()=>{$('#scan-status').textContent='扫描组件未能加载。请刷新重试，或先观看花卡预览。';$('#start-scan').disabled=true;})}
-if(page==='collection')subscribeCollection(()=>{mount(nav()+collection()+footer())});
+if(page==='collection')subscribeCollection(()=>{mount(siteHeader(page,selected?.key||'lotus')+collection()+siteFooter())});
 
 // Local business tools: explicit user actions only; no camera or production writes.
 if(page==='guide'){const entry=document.createElement('a');entry.href='journey.html';entry.className='text-link business-entry-link';entry.textContent='安排我的本地导览';document.querySelector('.page-heading')?.append(entry)}

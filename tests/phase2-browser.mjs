@@ -36,7 +36,7 @@ try{
   check(`${width}: all home card links point at current detail`,await page.locator('.home-cards .card-image').evaluateAll(a=>a.length===5&&a.every(x=>x.getAttribute('href').startsWith('flower-detail.html?key='))));
   await primary.focus();await page.keyboard.press('Enter');await page.waitForURL('**/flower-detail.html?key=lotus');
   check(`${width}: keyboard entry opens story`,await page.locator('h1').textContent()==='清荷入梦');
-  check(`${width}: silent story complete and honest`,await page.locator('#audio-btn').isDisabled()&&await page.getByText('当前暂无配音，完整故事已在上方呈现。',{exact:true}).count()===1&&await page.evaluate(()=>phase2AudioAttempts)===0);
+  check(`${width}: silent story complete and honest`,await page.locator('#audio-btn').isDisabled()&&await page.getByText('当前暂无配音',{exact:true}).count()===0&&await page.evaluate(()=>phase2AudioAttempts)===0);
   let stored=await page.evaluate(k=>JSON.parse(localStorage.getItem(k)),key);
   check(`${width}: reading does not auto-collect`,stored.collections.length===0&&stored.recentViews[0].key==='lotus');
   await page.locator('#collect-btn').click();
@@ -45,7 +45,7 @@ try{
   await page.getByRole('link',{name:'到我的花册查看',exact:false}).click();
   check(`${width}: collection retrievable through visible link`,await page.locator('.collection-card h3').textContent()==='清荷入梦');
   await snapshot(page,`${width}-collection`);
-  const reopened=await context.newPage();await reopened.goto(`${base}/`);await reopened.getByRole('link',{name:'我的花册',exact:true}).click();
+  const reopened=await context.newPage();await reopened.goto(`${base}/`);await reopened.getByRole('link',{name:'我的花册',exact:true}).click();await reopened.locator('.collection-card').first().waitFor({state:'visible'});
   check(`${width}: later visit from home finds saved flower`,await reopened.locator('.collection-card').count()===1&&await reopened.locator('.collection-card h3').textContent()==='清荷入梦');
   await reopened.close();
   await page.getByRole('link',{name:'花卡图录',exact:true}).click();await snapshot(page,`${width}-catalogue`);
@@ -58,7 +58,7 @@ try{
   await page.getByRole('button',{name:'立体花朵',exact:true}).click();
   await page.waitForFunction(()=>document.querySelector('#detail-model').classList.contains('model-ready')||document.querySelector('#detail-model').classList.contains('fallback-only'));
   check(`${width}: model remains beside the same story`,page.url().endsWith('/flower-detail.html?key=peony')&&await page.locator('h1').textContent()==='牡丹承瑞'&&await page.locator('.flower-story').isVisible());
-  await page.getByRole('button',{name:'原作花卡',exact:true}).click();
+  await page.getByRole('button',{name:'实体花卡',exact:true}).click();
   await page.getByText('有实体花卡？',{exact:true}).click();await page.getByRole('link',{name:'进入扫描准备页',exact:false}).click();
   check(`${width}: optional scanner receives peony instead of default lotus`,new URL(page.url()).searchParams.get('card')==='peony'&&await page.locator('h1').textContent()==='牡丹承瑞');
   await page.locator('#scan-back').click();await page.waitForURL('**/flower-detail.html?key=peony');

@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-23T07:45:23.127Z",
+  "date": "2026-10-24T18:08:50.196Z",
   "scope": "Isolated local Chrome. Desktop and emulated touch layouts; no real phone, camera, audio, or human participant.",
   "checks": [
     {
@@ -40,6 +40,14 @@
     },
     {
       "name": "1280: zoom changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "1280: tiny trackpad wheel delta repaints immediately",
+      "pass": true
+    },
+    {
+      "name": "1280: reset after wheel restores exact image",
       "pass": true
     },
     {
@@ -116,6 +124,14 @@
     },
     {
       "name": "768: zoom changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "768: tiny trackpad wheel delta repaints immediately",
+      "pass": true
+    },
+    {
+      "name": "768: reset after wheel restores exact image",
       "pass": true
     },
     {
@@ -196,6 +212,14 @@
     },
     {
       "name": "390: touch drag changes model",
+      "pass": true
+    },
+    {
+      "name": "390: two-finger pinch changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "390: reset after pinch restores exact image",
       "pass": true
     },
     {
@@ -280,6 +304,14 @@
     },
     {
       "name": "320: touch drag changes model",
+      "pass": true
+    },
+    {
+      "name": "320: two-finger pinch changes rendered model",
+      "pass": true
+    },
+    {
+      "name": "320: reset after pinch restores exact image",
       "pass": true
     },
     {
@@ -439,10 +471,10 @@
     "flower-leaves.png",
     "390-model-unavailable.png"
   ],
-  "browser": "155.0.8059.85",
+  "browser": "156.0.8078.4",
   "summary": {
-    "total": 104,
-    "passed": 104,
+    "total": 112,
+    "passed": 112,
     "failed": 0
   }
 }
