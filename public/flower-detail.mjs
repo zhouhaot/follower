@@ -31,6 +31,27 @@ const observations = {
   lotus: '看看中央荷花、两侧圆叶与下方瓶形，怎样围绕中轴展开？',
   leaves: '沿着斜向花枝找到花朵，再找一片五裂叶，看看它们的方向。'
 };
+const designStories = {
+  lotus: [
+    {
+      step: '01 · 历史原型',
+      photo: { src: './assets/originals/origins/museum-8400.jpg', alt: '都江堰市博物馆石刻拓片展墙，其中有《荷花图》拓片', caption: '都江堰市博物馆《荷花图》石刻拓片 · 图源 zevth.work' },
+      text: '原型不是一张画，而是一块石刻：一瓶、一荷、两侧圆叶，线条由凿刻生出，转折硬朗，拓片上只剩黑白。'
+    },
+    {
+      step: '02 · 提取纹样',
+      text: '保留瓶插的骨架——中央荷花、两侧圆叶、下方瓶形，把刻线的转折整理成干净的色块轮廓，纹样仍是原构图的回声。'
+    },
+    {
+      step: '03 · 为什么这样配色',
+      text: '深藏青为底，取石刻青石的夜色；花瓣留白偏蓝，圆叶取青绿，让纹样像在石面上自己发光。数字版再以珠光让光随视角流转。'
+    },
+    {
+      step: '04 · 最终作品',
+      text: '实体花卡是含二维码与说明文字的平面设计稿，供印刷制作；你在这页看到的珠光呈现，是它在屏幕上的样子。'
+    }
+  ]
+};
 const otherCards = cards.filter(item => item.key !== card.key);
 const nextCard = otherCards[Math.floor(Math.random() * otherCards.length)];
 let exhibit;
@@ -134,22 +155,24 @@ function render() {
       </header>
       <div class="flower-detail-grid story-exhibit-grid">
         <section class="flower-exhibit" aria-label="${card.title}展台">
-          <div class="exhibit-switch" role="group" aria-label="选择花卡展示方式">
-            <button type="button" data-exhibit-view="pearl" aria-pressed="true">珠光花卡</button>
-            <button type="button" data-exhibit-view="original" aria-pressed="false">原作花卡</button>
-            <button type="button" data-exhibit-view="bloom" aria-pressed="false">立体花朵</button>
-            ${card.key === 'lotus' ? '<button type="button" data-exhibit-view="relief" aria-pressed="false">金属花卡</button>' : ''}
-          </div>
           <div class="detail-stage">
             <div id="detail-pearl" class="detail-media detail-pearl">${pearlCard(card,{interactive:true,priority:true})}</div>
             <div id="detail-original" class="detail-media" hidden>
-              <img src="${card.image}" alt="${card.title}完整原作" width="1100" height="1881" class="detail-art" fetchpriority="high">
+              <img src="${card.image}" alt="${card.title}实体花卡设计稿完整正面" width="1100" height="1881" class="detail-art" fetchpriority="high">
             </div>
             <div id="detail-model" class="detail-media detail-model" role="img" aria-label="${card.title}立体花朵" hidden>
               <img class="model-fallback" src="./assets/renders/${card.key}-bloom.png" alt="${card.title}立体花朵静态效果图">
             </div>
           </div>
-          <div class="pearl-detail-tools" role="group" aria-label="观察珠光花卡"><button class="pearl-button pearl-demo" type="button" id="detail-pearl-demo" disabled>演示光影</button><button class="pearl-button" type="button" id="detail-pearl-reset">归正</button><button class="pearl-button" type="button" id="detail-pearl-original">完整原作</button></div>
+          <p id="exhibit-status" class="exhibit-status" role="status" aria-live="polite">珠光作品呈现中。</p>
+          <div class="exhibit-switch" role="group" aria-label="换个角度看${card.title}">
+            <span class="exhibit-switch-label">换个角度看</span>
+            <button type="button" data-exhibit-view="pearl" aria-pressed="true">作品</button>
+            <button type="button" data-exhibit-view="bloom" aria-pressed="false">立体花朵</button>
+            ${card.key === 'lotus' ? '<button type="button" data-exhibit-view="relief" aria-pressed="false">金属花卡</button>' : ''}
+            <button type="button" data-exhibit-view="original" aria-pressed="false">实体花卡</button>
+          </div>
+          <div class="pearl-detail-tools" role="group" aria-label="观察珠光花卡"><button class="pearl-button pearl-demo" type="button" id="detail-pearl-demo" disabled>演示光影</button><button class="pearl-button" type="button" id="detail-pearl-reset">归正</button></div>
           <div class="view-tools" role="group" aria-label="调整模型视角" hidden>
             <button type="button" data-exhibit-adjust="left" aria-label="向左转动模型">左转</button>
             <button type="button" data-exhibit-adjust="right" aria-label="向右转动模型">右转</button>
@@ -157,16 +180,26 @@ function render() {
             <button type="button" data-exhibit-adjust="out" aria-label="缩小模型">缩小</button>
             <button type="button" data-exhibit-adjust="reset" aria-label="重置模型视角">重置</button>
           </div>
-          <p id="exhibit-status" class="exhibit-status" role="status" aria-live="polite">原作完整呈现。选择“立体花朵”，换个角度看花。</p>
           <button type="button" id="exhibit-reload" class="exhibit-reload" hidden>重新加载页面</button>
           <aside class="flower-observation" aria-labelledby="observation-title">
             <h2 id="observation-title">观察提示</h2>
             <p>${observations[card.key]}</p>
-            <span>可以对照原作与立体花朵，慢慢看。</span>
+            <span>可以对照实体花卡与立体花朵，慢慢看。</span>
           </aside>
         </section>
         <section class="flower-info" aria-labelledby="story-title">
           <p class="detail-description">${card.description}</p>
+          ${designStories[card.key] ? `
+          <div class="design-process" aria-label="从原型到作品的设计过程">
+            <h2 class="design-process-title">从原型到作品</h2>
+            ${designStories[card.key].map(block => `
+              <article class="design-step">
+                <h3>${block.step}</h3>
+                ${block.photo ? `<figure class="design-photo"><img src="${block.photo.src}" alt="${block.photo.alt}" loading="lazy" width="961" height="1280"><figcaption>${block.photo.caption}</figcaption></figure>` : ''}
+                <p>${block.text}</p>
+              </article>
+            `).join('')}
+          </div>` : ''}
           <div class="flower-story">
             <h2 id="story-title">花的故事</h2>
             <p>${card.story}</p>
@@ -184,7 +217,7 @@ function render() {
             </div>
             ${!card.audioAvailable ? '<p>当前暂无配音，完整故事已在上方呈现。</p>' : ''}
           </div>
-          <dl class="detail-provenance"><div><dt>原作</dt><dd>${card.artwork}</dd></div><div><dt>来源</dt><dd>${card.credit}</dd></div></dl>
+          <dl class="detail-provenance"><div><dt>纹样原型</dt><dd>《${card.artwork}》</dd></div><div><dt>馆藏</dt><dd>${card.credit}</dd></div><div><dt>实体花卡</dt><dd>现代平面设计稿 · 原作图像来自 zevth.work</dd></div></dl>
           <details class="optional-scan"><summary>有实体花卡？</summary><p>实体卡扫描仍为候选体验，扫描记录尚未接入新版花册。</p><a href="${scanURL(card.key, {from:'detail'})}">进入扫描准备页 →</a></details>
         </section>
       </div>

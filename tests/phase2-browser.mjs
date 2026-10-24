@@ -58,7 +58,7 @@ try{
   await page.getByRole('button',{name:'立体花朵',exact:true}).click();
   await page.waitForFunction(()=>document.querySelector('#detail-model').classList.contains('model-ready')||document.querySelector('#detail-model').classList.contains('fallback-only'));
   check(`${width}: model remains beside the same story`,page.url().endsWith('/flower-detail.html?key=peony')&&await page.locator('h1').textContent()==='牡丹承瑞'&&await page.locator('.flower-story').isVisible());
-  await page.getByRole('button',{name:'原作花卡',exact:true}).click();
+  await page.getByRole('button',{name:'实体花卡',exact:true}).click();
   await page.getByText('有实体花卡？',{exact:true}).click();await page.getByRole('link',{name:'进入扫描准备页',exact:false}).click();
   check(`${width}: optional scanner receives peony instead of default lotus`,new URL(page.url()).searchParams.get('card')==='peony'&&await page.locator('h1').textContent()==='牡丹承瑞');
   await page.locator('#scan-back').click();await page.waitForURL('**/flower-detail.html?key=peony');

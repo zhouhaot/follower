@@ -31,11 +31,11 @@ export function initDetailExhibit({card, initialView} = {}) {
     model.setAttribute('aria-busy', String(isModel && !viewer && !fallback));
     if (isPearl) {
       const state = pearl.querySelector('[data-pearl]').dataset.pearlState;
-      status.textContent = state === 'fallback' ? (pearl.querySelector('img').naturalWidth ? '珠光暂不可用，已保留花卉纹样。仍可阅读故事、查看原作或收藏。' : '花卡图片暂不可用。仍可阅读故事、查看完整原作或收藏。') : state !== 'ready' ? '纹样已呈现，正在准备珠光。' : reduced.matches ? '已减少动态效果，静态呈现珠光。可切换原作对照。' : '横向轻拖或使用方向键，观察局部珠光；按 Home 归正。竖向滑动继续阅读。';
+      status.textContent = state === 'fallback' ? (pearl.querySelector('img').naturalWidth ? '珠光暂不可用，已保留花卉纹样。仍可阅读故事、查看实体花卡或收藏。' : '花卡图片暂不可用。仍可阅读故事、查看实体花卡或收藏。') : state !== 'ready' ? '纹样已呈现，正在准备珠光。' : reduced.matches ? '已减少动态效果，静态呈现珠光。可切换实体花卡对照。' : '横向轻拖或使用方向键，观察局部珠光；按 Home 归正。竖向滑动继续阅读。';
     } else if (isOriginal) {
-      status.textContent = '原作完整呈现。选择“立体花朵”，换个角度看花。';
+      status.textContent = '实体花卡设计稿完整呈现。选择“立体花朵”，换个角度看花。';
     } else if (fallback) {
-      status.textContent = '三维暂不可用，当前显示静态效果图。仍可切换原作、阅读故事或收藏。';
+      status.textContent = '三维暂不可用，当前显示静态效果图。仍可切换实体花卡、阅读故事或收藏。';
     } else if (!viewer) {
       status.textContent = '正在加载三维画面，故事仍可阅读…';
     } else {
@@ -79,7 +79,7 @@ export function initDetailExhibit({card, initialView} = {}) {
   const events = new AbortController();
   pearlDemo.addEventListener('click',()=>pearlGallery?.demo(),{signal:events.signal});
   document.getElementById('detail-pearl-reset').addEventListener('click',()=>pearlGallery?.reset(),{signal:events.signal});
-  document.getElementById('detail-pearl-original').addEventListener('click',()=>select('original'),{signal:events.signal});
+  document.getElementById('detail-pearl-original')?.addEventListener('click',()=>select('original'),{signal:events.signal});
   buttons.forEach(button => button.addEventListener('click', () => select(button.dataset.exhibitView), {signal:events.signal}));
   document.querySelectorAll('[data-exhibit-adjust]').forEach(button => button.addEventListener('click', () => {
     if (view === 'original' || view === 'pearl' || !viewer || model.classList.contains('fallback-only')) return;

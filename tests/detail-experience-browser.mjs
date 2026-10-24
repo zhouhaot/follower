@@ -93,7 +93,7 @@ try{
   await page.getByRole('button',{name:'金属花卡',exact:true}).click();
   check(`${width}: metal view renders another model`,await page.locator('[data-exhibit-view=relief]').getAttribute('aria-pressed')==='true'&&before!==await canvasHash(page));
   if(width===1280||width===390)await screenshot(page,`${width}-relief`);
-  await page.getByRole('button',{name:'原作花卡',exact:true}).click();
+  await page.getByRole('button',{name:'实体花卡',exact:true}).click();
   check(`${width}: original return hides model tools`,await page.locator('#detail-original').isVisible()&&await page.locator('.view-tools').isHidden());
   let data=await page.evaluate(k=>JSON.parse(localStorage.getItem(k)),storageKey);
   check(`${width}: viewing and switching never collects`,data.collections.length===0&&data.recentViews[0].key==='lotus');
@@ -120,20 +120,20 @@ try{
  // Context loss must replace rotation guidance with honest static-mode messaging.
  await page.evaluate(()=>document.querySelector('#detail-model canvas').dispatchEvent(new Event('webglcontextlost',{cancelable:true})));
  await page.waitForFunction(()=>document.querySelector('#detail-model').classList.contains('fallback-only'));
- check('Context loss: fallback message and static image',await page.getByText('三维暂不可用，当前显示静态效果图。仍可切换原作、阅读故事或收藏。',{exact:true}).count()===1&&await page.locator('.view-tools').isHidden()&&await page.locator('#detail-model img').isVisible());
+ check('Context loss: fallback message and static image',await page.getByText('三维暂不可用，当前显示静态效果图。仍可切换实体花卡、阅读故事或收藏。',{exact:true}).count()===1&&await page.locator('.view-tools').isHidden()&&await page.locator('#detail-model img').isVisible());
  await context.close();
  for(const fault of ['webgl','module','asset']){
   const {context,page}=await setup(390,{fault});await page.goto(`${base}/flower-detail.html?key=lotus`);await page.getByRole('button',{name:'立体花朵',exact:true}).click();await ready(page);
   check(`${fault}: failure offers still image, original and story`,await page.locator('#detail-model').evaluate(e=>e.classList.contains('fallback-only'))&&await page.locator('.view-tools').isHidden()&&await page.locator('#exhibit-reload').isVisible()&&await page.locator('.flower-story p').textContent()===cards.find(c=>c.key==='lotus').story);
   await page.locator('#collect-btn').click();check(`${fault}: model failure does not block collection`,await page.locator('#collect-btn').textContent()==='已收藏');
   if(fault==='webgl')await screenshot(page,'390-model-unavailable');
-  await page.getByRole('button',{name:'原作花卡',exact:true}).click();check(`${fault}: original remains available`,await page.locator('#detail-original').isVisible());await context.close();
+  await page.getByRole('button',{name:'实体花卡',exact:true}).click();check(`${fault}: original remains available`,await page.locator('#detail-original').isVisible());await context.close();
  }
  const slow=await setup(390);let release;const gate=new Promise(resolve=>release=resolve);
  await slow.context.route('**/model-viewer.mjs',async route=>{await gate;await route.continue();});
  await slow.page.goto(`${base}/flower-detail.html?key=lotus`);await slow.page.getByRole('button',{name:'立体花朵',exact:true}).click();
  check('Slow load: story available while loading',await slow.page.getByText('正在加载三维画面，故事仍可阅读…',{exact:true}).count()===1&&await slow.page.locator('.flower-story').isVisible());
- await slow.page.getByRole('button',{name:'原作花卡',exact:true}).click();release();await ready(slow.page);
+ await slow.page.getByRole('button',{name:'实体花卡',exact:true}).click();release();await ready(slow.page);
  check('Slow load: late result does not override original choice',await slow.page.locator('#detail-original').isVisible()&&await slow.page.locator('[data-exhibit-view=original]').getAttribute('aria-pressed')==='true');await slow.context.close();
  const reduced=await setup(390,{reducedMotion:'reduce'});await reduced.page.goto(`${base}/flower-detail.html?key=lotus`);
  check('Reduced motion: no required animation to reach story',await reduced.page.locator('#detail-pearl').isVisible()&&await reduced.page.locator('.flower-story').isVisible());await reduced.context.close();

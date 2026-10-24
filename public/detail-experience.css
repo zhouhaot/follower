@@ -11,3 +11,21 @@
 @media(min-width:701px) and (max-width:1000px){.story-exhibit-grid{gap:32px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.detail-stage{height:430px}.exhibit-switch button{padding-inline:12px}.detail-description,.flower-story p{font-size:15px}}
 @media(max-width:700px){.detail-title{margin-bottom:24px}.detail-title h1{font-size:34px}.detail-title p{font-size:11px;overflow-wrap:anywhere}.story-exhibit-grid{grid-template-columns:minmax(0,1fr);gap:32px!important}.detail-stage{height:340px}.detail-media{padding:16px}.exhibit-switch{gap:8px;margin-bottom:12px}.exhibit-switch button{flex:1;min-width:72px;padding:8px;font-size:13px}.flower-observation{margin-top:20px;padding-top:20px}.flower-observation h2{font-size:19px}.flower-observation p{font-size:14px}.detail-description{font-size:15px;margin-bottom:24px}.flower-story h2{font-size:24px}.flower-story p{font-size:15px}.discovery-next{margin-top:32px;padding:28px 0;align-items:flex-start;flex-direction:column;gap:20px}.discovery-link{font-size:26px}.flower-info .flower-actions{margin-top:24px!important}.exhibit-status{font-size:12px}.detail-title + .flower-detail-grid{margin-top:0}}
 @media(max-width:350px){.detail-stage{height:300px}.view-tools{gap:6px}.view-tools button{font-size:12px}.detail-title h1{font-size:32px}}
+
+/* The work leads: the stage stands first in DOM order, view forms follow as a
+   quiet row. No flex/order reflow here — it perturbs the WebGL canvas pixels. */
+.exhibit-switch{margin:14px 0 0;align-items:center;gap:10px}
+.exhibit-switch-label{font-size:11px;color:#93a08a;letter-spacing:.08em;margin-right:2px}
+.exhibit-switch button{padding:7px 15px;border-radius:40px}
+.pearl-detail-tools{margin-top:12px}
+.flower-observation{margin-top:28px}
+.design-process{margin:36px 0 0;padding-top:28px;border-top:1px solid #3e4935}
+.design-process-title{font-size:26px;color:#e0e5da;margin:0 0 22px}
+.design-step{margin-bottom:26px}
+.design-step h3{font-family:Arial,'PingFang SC',sans-serif;font-size:11px;letter-spacing:.18em;color:#a7b59a;margin:0 0 10px}
+.design-step p{font-size:15px;line-height:2;color:#c3cdb9;max-width:65ch;margin:0}
+.design-photo{margin:0 0 14px;max-width:340px}
+.design-photo img{width:100%;height:auto;border-radius:8px;border:1px solid #3e4935}
+.design-photo figcaption{font-size:11px;color:#93a08a;margin-top:8px;line-height:1.7}
+.flower-info .flower-story{margin-top:36px;padding-top:28px;border-top:1px solid #3e4935}
+@media(max-width:700px){.exhibit-switch{gap:8px}.exhibit-switch-label{display:block;width:100%;margin:0 0 2px}.design-process{margin:28px 0 0;padding-top:22px}.design-process-title{font-size:22px}.design-photo{max-width:100%}}
