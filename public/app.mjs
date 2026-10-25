@@ -22,7 +22,7 @@ function home(){const featured=cardByKey('lotus');return `<main id="main">
     <a class="home-main-card" href="flower-detail.html?key=lotus" aria-label="阅读清荷入梦的故事">${pearlCard(featured,{priority:true})}</a>
     <div class="pearl-toolbar"><span class="pearl-note">局部珠光 · 清荷入梦</span><button class="pearl-button pearl-demo" id="home-pearl-demo" type="button" disabled>演示光影</button></div>
     <figcaption><small>纹样原型 ·《荷花图》</small><a href="flower-detail.html?key=lotus&view=bloom">观赏三维花朵 ${arrow}</a></figcaption>
-    <p id="home-pearl-status" class="pearl-note" role="status">轻触花卡，走进花的故事。</p>
+    <p id="home-pearl-status" class="pearl-note" role="status">轻触花卡，走进故事。</p>
   </figure>
   <a class="home-more" href="#catalogue">向下浏览五张花卡 <span class="arrow-north arrow-right" aria-hidden="true"></span></a>
 </section>
