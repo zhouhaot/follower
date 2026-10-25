@@ -42,6 +42,7 @@ function renderCard(card, data) {
           </div>
           <button type="button" class="collect-btn ${collected ? 'collected' : ''}" data-key="${card.key}" aria-pressed="${collected}" onclick="event.stopPropagation();window.catalogueToggleCollection('${card.key}', event)">${collected ? '已收藏' : '收藏'}</button>
         </div>
+        <p class="flower-card-trait">${card.trait ?? ''}</p>
         <div class="flower-card-links">
           <a href="./flower-detail.html?key=${card.key}">读设计与故事</a>
           <a href="./flower-detail.html?key=${card.key}&view=original">查看实体花卡</a>

@@ -111,8 +111,11 @@ try {
     await seed(page, null);await page.goto(`${base}/collection.html`);
     check(`${prefix}: genuine empty state`, await page.getByText('花册还是空的', { exact: true }).count() === 1);
     await shot(page, `${prefix}-empty`);
-    await page.getByRole('link', { name: '开始探索五朵花', exact: true }).click();
-    for (const flower of ['lotus', 'peony', 'chrysanthemum']) await page.locator(`.collect-btn[data-key="${flower}"]`).click();
+    await page.getByRole('link', { name: '看第一朵 · 清荷入梦', exact: true }).click();
+    check(`${prefix}: empty state guides to the first flower`, page.url().includes('flower-detail.html?key=lotus'));
+    await page.locator('#collect-btn').click();
+    await page.getByRole('link', { name: '五花图录', exact: true }).click();
+    for (const flower of ['peony', 'chrysanthemum']) await page.locator(`.collect-btn[data-key="${flower}"]`).click();
     await page.getByRole('link', { name: '我的花册', exact: true }).click();
     await page.locator('.collection-card').nth(2).waitFor();
     check(`${prefix}: three manual collections with date`, await page.locator('.collection-card').count() === 3 && (await page.locator('.collection-card').allTextContents()).every(t => /主动收藏 · \d{4}年\d{1,2}月\d{1,2}日/.test(t)));

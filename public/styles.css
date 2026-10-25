@@ -136,3 +136,8 @@ body[data-page=catalogue] .catalogue-page,body[data-page=collection] .collection
 
 .scan-nav svg{width:15px;height:15px;opacity:.85}
 body:has(.light-page) .scan-nav{color:#7d8672}
+
+.flower-card-trait{font-size:12px;color:#5c6750;margin:12px 0 0;line-height:1.8}
+.collection-empty-hint{font-family:Arial,sans-serif!important;font-size:13px!important;letter-spacing:0!important;margin:-12px 0 22px!important}
+.collection-empty .text-link{display:inline-flex;margin-top:18px;font-size:12px;color:#4e5c3f;border-bottom:1px solid #9aa38a;padding-bottom:5px}
+.page-heading .lead strong{font-family:var(--serif);font-weight:400;color:#33481f;font-size:17px}
