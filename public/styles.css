@@ -190,3 +190,23 @@ body:has(.light-page) .scan-nav{color:#7d8672}
 .label-secondary{display:flex;align-items:center;justify-content:center;min-height:46px;margin-top:10px;font-size:12px;color:#5c6750;text-decoration:underline;text-underline-offset:5px}
 .label-foot{text-align:center;font-size:9px;line-height:1.9;color:#77816b;letter-spacing:.05em}
 @media(max-width:350px){.label-card{padding:24px 18px 28px}.label-head h1{font-size:27px}}
+
+/* 花册画册化：布面跨页 + 贴页。克制拟物——只有布面、纸面、中缝与轻阴影。 */
+.album{background:#22301f;padding:16px;border-radius:10px;box-shadow:0 18px 44px #1a241c2e}
+.album-page{position:relative;background:#f6f4ec;border-radius:3px;padding:30px 30px 24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:26px 24px}
+.album-page:before{content:'';position:absolute;top:0;bottom:0;left:50%;width:30px;transform:translateX(-50%);background:linear-gradient(90deg,#0000,#8d877555 45%,#8d877570 50%,#8d877555 55%,#0000);pointer-events:none}
+.album-plate{margin:0;background:#fffdf6;border:1px solid #e3ddc8;border-radius:2px;padding:10px 10px 12px;box-shadow:0 6px 16px #4b462c1f;transform:rotate(-.8deg);transition:transform .25s,box-shadow .25s}
+.album-plate:nth-child(even){transform:rotate(.7deg)}
+.album-plate:hover{transform:rotate(0) translateY(-3px);box-shadow:0 14px 28px #4b462c2e}
+.album-plate img{width:100%;aspect-ratio:987/1407;object-fit:cover;display:block}
+.plate-caption{text-align:center;padding-top:10px}
+.plate-caption h3{font-family:var(--serif);font-weight:400;font-size:18px;letter-spacing:.08em;margin:0}
+.plate-caption h3 a:hover{text-decoration:underline;text-underline-offset:5px}
+.plate-trait{font-size:10px;color:#8a927e;margin:5px 0 0;line-height:1.6}
+.plate-date{font-size:10px;color:#8a927e;margin:6px 0 0;letter-spacing:.04em}
+.plate-caption button{margin-top:10px;min-height:34px;padding:5px 14px;border:1px solid #b9b29a;border-radius:40px;background:transparent;color:#6d7358;font-size:11px;cursor:pointer;transition:.2s}
+.plate-caption button:hover{background:#3a4630;border-color:#3a4630;color:#f2f4ea}
+.album-plate-empty{grid-column:1/-1;justify-items:center;display:grid;border:1.5px dashed #b9b29a;background:transparent;box-shadow:none;padding:54px 20px;transform:none}
+.album-plate-empty p{font-family:var(--serif);font-size:19px;letter-spacing:.12em;color:#8a927e;margin:14px 0 0}
+.plate-empty-mark{width:54px;height:70px;border:1.5px dashed #b9b29a;border-radius:2px}
+@media(max-width:700px){.album{padding:10px;border-radius:8px}.album-page{padding:20px 16px 16px}.album-page:before{display:none}.album-plate{transform:rotate(-.5deg)}.album-plate:nth-child(even){transform:rotate(.4deg)}}
