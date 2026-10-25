@@ -111,6 +111,7 @@ function render() {
           <p class="eyebrow">YOUR COLLECTION / 我的收藏</p>
           <h1>把相遇，<br><em>留在这里。</em></h1>
           <p class="lead">${data.collections.length > 0 ? `已收藏 <strong>${data.collections.length} / ${cards.length}</strong> 朵${data.collections.length < cards.length ? '，还有 ' + (cards.length - data.collections.length) + ' 朵在等你。' : '，五朵齐了。'}` : '你收藏的花、相遇的花和最近看过的花，都保存在这台浏览器。'}</p>
+          ${data.collections.length > 0 ? '<button type="button" class="pill-link dark-pill keepsake-print-btn" onclick="window.print()">做成纪念页 · 打印带走</button>' : ''}
         </div>
         <div id="collection-notice"></div>
         ${loaded && state.kind === 'ready' && !hasAnyData ? `
@@ -151,6 +152,21 @@ function render() {
         ` : ''}
 
         <p class="collection-storage-note quiet">收藏与浏览记录仅保存在当前浏览器的本地存储；清除浏览器数据会一并清除，暂不支持跨设备同步。</p>
+        ${data.collections.length > 0 ? `
+        <section class="keepsake" aria-label="参观纪念页">
+          <header class="keepsake-head">
+            <h2>花开有声 · 参观纪念</h2>
+            <p>${new Date().toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' })} · 已收藏 ${data.collections.length} / ${cards.length} 朵</p>
+          </header>
+          <div class="keepsake-flowers">
+            ${data.collections.map(collection => {
+              const c = cardByKey(collection.key);
+              if (!c) return '';
+              return `<figure><img src="${c.artworkImage}" alt="${c.title}纹样"><figcaption><strong>${c.title}</strong><span>${c.trait || ''}</span><small>收藏于 ${formatDate(collection.collectedAt)}</small></figcaption></figure>`;
+            }).join('')}
+          </div>
+          <footer class="keepsake-foot">纹样原型：都江堰市博物馆馆藏 · 原型图像与作品名称来自 zevth.work<br>花开有声 · 数字花卡探索 · 本数字衍生品未经博物馆审定</footer>
+        </section>` : ''}
       </section>
     </main>
     ${siteFooter()}

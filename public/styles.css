@@ -155,3 +155,23 @@ body:has(.light-page) .scan-nav{color:#7d8672}
 .transform-note{font-size:14px;line-height:2;color:#b5b7ad;max-width:62ch;margin:0 0 26px}
 .detail-creation{scroll-margin-top:120px}
 @media(max-width:900px){.transform-strip{grid-template-columns:1fr;gap:18px}.transform-arrow{display:none}.transform-strip img{height:240px}}
+
+.keepsake{margin-top:64px;padding:48px 44px;background:#fbfaf5;color:#1c231a;border:1px solid #c9cdb9;border-radius:4px}
+.keepsake-head{text-align:center;border-bottom:1px solid #1c231a;padding-bottom:22px}
+.keepsake-head h2{font-family:var(--serif);font-size:30px;letter-spacing:.14em;margin:0}
+.keepsake-head p{font-size:12px;color:#5c6750;margin-top:10px;letter-spacing:.08em}
+.keepsake-flowers{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:26px 22px;padding:30px 0 6px}
+.keepsake-flowers figure{margin:0;text-align:center}
+.keepsake-flowers img{width:100%;aspect-ratio:987/1407;object-fit:cover;border:1px solid #c9cdb9}
+.keepsake-flowers strong{display:block;font-family:var(--serif);font-weight:400;font-size:16px;margin-top:10px}
+.keepsake-flowers span{display:block;font-size:10px;color:#5c6750;margin-top:4px;line-height:1.7}
+.keepsake-flowers small{display:block;font-size:9px;color:#8a927e;margin-top:6px}
+.keepsake-foot{border-top:1px solid #1c231a;padding-top:14px;font-size:9px;color:#5c6750;line-height:1.8;text-align:center;letter-spacing:.04em}
+.keepsake-print-btn{margin-top:22px}
+@media print{
+  body{background:#fff}
+  .site-header,.skip,footer,.page-heading .keepsake-print-btn,.collection-notice,.collection-section,.collection-empty,.collection-storage-note,.no-collections{display:none!important}
+  .light-page{padding:0;background:#fff}
+  .page-wrap{padding:0;max-width:none}
+  .keepsake{margin:0;border:0;padding:24px 8px}
+}
