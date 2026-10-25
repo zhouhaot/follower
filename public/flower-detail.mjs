@@ -4,6 +4,7 @@ import { siteHeader, siteFooter } from './site-chrome.mjs';
 import { scanURL } from './flow.mjs';
 import { cards, cardByKey } from './cards.mjs';
 import { getStatus, hasCollected, addCollection, removeCollection, recordView, subscribe } from './collection-store-v2.mjs';
+import { createAudioPlayer } from './audio-player.mjs';
 
 import { renderCollectionNotice, collectionFailureMessage } from './collection-feedback.mjs';
 
@@ -70,6 +71,35 @@ const creationBlocks = {
     note: '实体花卡是含二维码与说明文字的平面设计稿，供印刷制作；页面里的珠光与三维，是这件设计在屏幕上的呈现方式。'
   }
 };
+
+const narrationTranscript = card.audioAvailable ? `清荷入梦，从一块石刻开始。它的原型，是都江堰市博物馆藏的《荷花图》拓片：一瓶，一荷，两侧圆叶，线条是凿出来的。设计保留了瓶插的骨架。中央的荷花，仍在最高的位置；修长的瓶，仍是画面的底座；花、瓶口与瓶底，落在同一条中轴上。重组的是两侧的圆叶——原型里它们大小不一，设计稿把它们对称化。配色取石刻的夜色：深藏青为底，花瓣留白偏蓝，圆叶用青绿。实体花卡是供印刷的平面设计稿；页面上的珠光是它在屏幕上的样子。` : '';
+
+// 解说音频：按需创建，绝不自动播放
+let audioPlayer = null;
+if (card.audioAvailable) {
+  audioPlayer = createAudioPlayer({ card, onStateChange: () => updateAudioUI() });
+}
+
+function updateAudioUI() {
+  const audioBtn = document.getElementById('audio-btn');
+  const audioStatus = document.getElementById('audio-status');
+  if (!audioBtn || !audioStatus) return;
+  if (!audioPlayer?.isAvailable()) {
+    audioBtn.disabled = true;
+    audioStatus.textContent = '解说音频加载失败，完整解说见下方文字。';
+    return;
+  }
+  const state = audioPlayer.getState();
+  audioBtn.disabled = false;
+  audioBtn.textContent = state === 'playing' ? '暂停解说' : '听设计解说';
+  audioStatus.textContent = { ready: '合成语音 · 约 74 秒', playing: '播放中', paused: '已暂停，完整文字在下方' }[state] || '';
+}
+
+function toggleNarration() {
+  if (!audioPlayer?.isAvailable()) return;
+  if (audioPlayer.getState() === 'playing') audioPlayer.pause();
+  else audioPlayer.play();
+}
 
 const otherCards = cards.filter(item => item.key !== card.key);
 const nextCard = otherCards[Math.floor(Math.random() * otherCards.length)];
@@ -229,6 +259,7 @@ function render() {
             </ol>
             <p class="creation-note" role="status"></p>
             <p class="creation-color">${creation.color}</p>
+            ${card.audioAvailable ? `<div class="narration-panel"><div class="narration-controls"><button id="audio-btn" type="button">听设计解说</button><span id="audio-status" role="status"></span></div><details class="narration-transcript"><summary>解说全文</summary><p>${narrationTranscript}</p></details></div>` : ''}
             <p class="creation-note-final quiet">${creation.note}</p>
           </div>
         </div>
@@ -253,6 +284,8 @@ function render() {
   `;
 
   document.getElementById('collect-btn')?.addEventListener('click', toggleCollection);
+  document.getElementById('audio-btn')?.addEventListener('click', toggleNarration);
+  updateAudioUI();
   bindCreation();
 
   updateCollectionUI();
@@ -263,6 +296,7 @@ function render() {
 window.addEventListener('pagehide', event => {
   if (event.persisted) return;
   exhibit?.dispose();
+  audioPlayer?.dispose();
   unsubscribe();
 });
 

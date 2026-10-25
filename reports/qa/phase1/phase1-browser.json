@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-25T04:59:33.669Z",
+  "date": "2026-10-25T05:37:40.713Z",
   "scope": "Isolated local Chrome contexts; synthetic data only; no camera or production requests.",
   "checks": [
     {
@@ -67,7 +67,7 @@
       "pass": true
     },
     {
-      "name": "1280: no audio controls until narration exists",
+      "name": "1280: narration available and honestly labelled",
       "pass": true
     },
     {
@@ -231,7 +231,7 @@
       "pass": true
     },
     {
-      "name": "390: no audio controls until narration exists",
+      "name": "390: narration available and honestly labelled",
       "pass": true
     },
     {

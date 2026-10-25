@@ -23,11 +23,8 @@ export function createAudioPlayer({ card, onStateChange = () => {} } = {}) {
     };
   }
 
-  // 音频可用时创建播放器
-  try {
-    audio = new Audio(card.audioUrl);
-    state = 'ready';
-
+  // 音频可用时准备播放器；Audio 对象延迟到首次播放才构造——没有用户手势就不发起任何音频请求
+  const bind = () => {
     audio.addEventListener('play', () => {
       state = 'playing';
       onStateChange({ state, available: true });
@@ -47,26 +44,24 @@ export function createAudioPlayer({ card, onStateChange = () => {} } = {}) {
       state = 'error';
       onStateChange({ state, available: true, error: e.error || e.message });
     });
-  } catch (e) {
-    state = 'error';
-    onStateChange({ state, available: false, reason: 'audio-init-failed', error: e.message });
-    return {
-      isAvailable: () => false,
-      getState: () => 'error',
-      play: () => ({ success: false, reason: 'audio-init-failed' }),
-      pause: () => ({ success: false, reason: 'audio-init-failed' }),
-      stop: () => ({ success: false, reason: 'audio-init-failed' }),
-      dispose: () => {}
-    };
-  }
+  };
+
+  const ensure = () => {
+    if (audio) return audio;
+    audio = new Audio(card.audioUrl);
+    bind();
+    return audio;
+  };
+  state = 'ready';
 
   return {
     isAvailable: () => true,
     getState: () => state,
     play() {
-      if (!audio || state === 'error') return { success: false, reason: 'audio-not-ready' };
+      if (state === 'error') return { success: false, reason: 'audio-not-ready' };
       try {
-        const promise = audio.play();
+        const a = ensure();
+        const promise = a.play();
         if (promise) {
           promise.catch(err => {
             state = 'error';

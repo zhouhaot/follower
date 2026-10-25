@@ -76,3 +76,13 @@
 .detail-memory .optional-scan{margin-top:26px;border-top:1px solid #3e4935;padding-top:18px}
 @media(max-width:900px){.origin-body{grid-template-columns:1fr;gap:26px}.origin-body .design-photo{max-width:340px}.creation-layout{grid-template-columns:1fr;gap:28px}}
 @media(max-width:700px){.detail-opening{grid-template-columns:1fr;gap:26px}.flower-intro{order:-1}.flower-intro h1{font-size:32px}.flower-intro .flower-lead{margin-top:14px;font-size:14px}.flower-intro{position:static}.origin-body{grid-template-columns:1fr;gap:26px}.origin-body .design-photo{max-width:340px}.creation-layout{grid-template-columns:1fr;gap:28px}}
+
+.narration-panel{margin:20px 0 6px;padding:16px 0 0;border-top:1px solid #3e4935}
+.narration-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.narration-controls #audio-btn{min-height:44px;padding:8px 20px;border:1px solid #8a7a4a;border-radius:4px;background:#2a2a1c;color:#e8d9ac;font-size:14px;cursor:pointer}
+.narration-controls #audio-btn:hover{background:#3a3826}
+.narration-controls #audio-btn:disabled{opacity:.5;cursor:not-allowed}
+.narration-controls #audio-status{font-size:12px;color:#a7b59a}
+.narration-transcript{margin-top:12px}
+.narration-transcript summary{cursor:pointer;font-size:12px;color:#93a08a;min-height:36px;display:flex;align-items:center}
+.narration-transcript p{font-size:13px;line-height:2;color:#b5c0aa;margin:8px 0 0}
