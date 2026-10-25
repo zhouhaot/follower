@@ -72,8 +72,8 @@ export const cards = [
     "source": "https://zevth.work/cards.json?v=20260913-pages",
     "description": "保留中央荷花、两侧圆叶与下方瓶形，以月白和清蓝重新组织纹样的对称秩序。",
     "story": "荷花出淤泥而不染，是纯洁与超脱的化身。石刻中的荷花居于画面中央，两侧圆叶对称展开，下方瓶形稳固支撑。月白色的花瓣与清蓝色的叶片相互映衬，营造出宁静致远的意境。这朵荷花不仅是形态的呈现，更是一种精神境界的象征。",
-    "audioUrl": null,
-    "audioAvailable": false
+    "audioUrl": "./audio/lotus-design-narration.mp3",
+    "audioAvailable": true
   },
   {
     "key": "leaves",

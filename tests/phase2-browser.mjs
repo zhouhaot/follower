@@ -36,7 +36,7 @@ try{
   check(`${width}: all home card links point at current detail`,await page.locator('.home-cards .card-image').evaluateAll(a=>a.length===5&&a.every(x=>x.getAttribute('href').startsWith('flower-detail.html?key='))));
   await primary.focus();await page.keyboard.press('Enter');await page.waitForURL('**/flower-detail.html?key=lotus');
   check(`${width}: keyboard entry opens story`,await page.locator('h1').textContent()==='清荷入梦');
-  check(`${width}: silent story complete and honest`,await page.locator('#audio-btn').count()===0&&await page.evaluate(()=>phase2AudioAttempts)===0);
+  check(`${width}: narration present but never autoplays`,await page.locator('#audio-btn').count()===1&&await page.evaluate(()=>phase2AudioAttempts)===0);
   let stored=await page.evaluate(k=>JSON.parse(localStorage.getItem(k)),key);
   check(`${width}: reading does not auto-collect`,stored.collections.length===0&&stored.recentViews[0].key==='lotus');
   await page.locator('#collect-btn').click();
