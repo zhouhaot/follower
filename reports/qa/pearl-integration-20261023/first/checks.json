@@ -58,7 +58,7 @@
       "detail": {
         "draws": 45,
         "median": 5.5999999940395355,
-        "p95": 5.699999995529652,
+        "p95": 5.600000008940697,
         "submissionAndCopyP95": 0.20000000298023224
       }
     },
@@ -71,7 +71,11 @@
       "pass": false
     },
     {
-      "name": "Detail 1280: pearl is default and retains full story",
+      "name": "Detail 1280: stable artwork is default, pearl is secondary",
+      "pass": true
+    },
+    {
+      "name": "Detail 1280: pearl entry retains full story",
       "pass": true
     },
     {
@@ -185,7 +189,11 @@
       "pass": false
     },
     {
-      "name": "Detail 768: pearl is default and retains full story",
+      "name": "Detail 768: stable artwork is default, pearl is secondary",
+      "pass": true
+    },
+    {
+      "name": "Detail 768: pearl entry retains full story",
       "pass": true
     },
     {
@@ -285,7 +293,7 @@
       "pass": true,
       "detail": {
         "draws": 45,
-        "median": 5.5,
+        "median": 5.5999999940395355,
         "p95": 5.700000002980232,
         "submissionAndCopyP95": 0.20000000298023224
       }
@@ -307,7 +315,11 @@
       "pass": true
     },
     {
-      "name": "Detail 390: pearl is default and retains full story",
+      "name": "Detail 390: stable artwork is default, pearl is secondary",
+      "pass": true
+    },
+    {
+      "name": "Detail 390: pearl entry retains full story",
       "pass": true
     },
     {
@@ -332,8 +344,8 @@
       "detail": {
         "draws": 45,
         "median": 5.5,
-        "p95": 5.899999998509884,
-        "submissionAndCopyP95": 0.30000000447034836
+        "p95": 5.899999991059303,
+        "submissionAndCopyP95": 0.30000001192092896
       }
     },
     {
@@ -421,7 +433,11 @@
       "pass": false
     },
     {
-      "name": "Detail 320: pearl is default and retains full story",
+      "name": "Detail 320: stable artwork is default, pearl is secondary",
+      "pass": true
+    },
+    {
+      "name": "Detail 320: pearl entry retains full story",
       "pass": true
     },
     {
@@ -586,7 +602,7 @@
       "dpr": 1,
       "draws": 45,
       "median": 5.5999999940395355,
-      "p95": 5.699999995529652,
+      "p95": 5.600000008940697,
       "submissionAndCopyP95": 0.20000000298023224
     },
     {
@@ -603,7 +619,7 @@
       "width": 390,
       "dpr": 1,
       "draws": 45,
-      "median": 5.5,
+      "median": 5.5999999940395355,
       "p95": 5.700000002980232,
       "submissionAndCopyP95": 0.20000000298023224
     },
@@ -613,14 +629,14 @@
       "dpr": 1,
       "draws": 45,
       "median": 5.5,
-      "p95": 5.899999998509884,
-      "submissionAndCopyP95": 0.30000000447034836
+      "p95": 5.899999991059303,
+      "submissionAndCopyP95": 0.30000001192092896
     }
   ],
   "scope": "Local Chrome, desktop and emulated touch. No physical phone/GPU guarantee.",
   "summary": {
-    "total": 138,
-    "passed": 135,
+    "total": 142,
+    "passed": 139,
     "failed": 3
   }
 }

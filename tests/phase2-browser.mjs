@@ -30,7 +30,7 @@ try{
   });
   await page.goto(base);
   await snapshot(page,`${width}-home`,true);
-  const primary=page.getByRole('link',{name:'从清荷入梦开始',exact:true});
+  const primary=page.getByRole('link',{name:'开始观展',exact:true});
   check(`${width}: story entry visible in first viewport`,await primary.evaluate(e=>{const r=e.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight;}));
   check(`${width}: pearl home does not load hand or 3D flower models`,requests.every(u=>!/(hand-sequence|handheld|model-viewer|\.glb)/.test(u))&&await page.locator('.pearl-card').count()===6);
   check(`${width}: all home card links point at current detail`,await page.locator('.home-cards .card-image').evaluateAll(a=>a.length===5&&a.every(x=>x.getAttribute('href').startsWith('flower-detail.html?key='))));
@@ -65,7 +65,7 @@ try{
   check(`${width}: scanner return retains flower`,await page.locator('h1').textContent()==='牡丹承瑞');
   await context.close();
  }
- const reduced=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});const p=await reduced.newPage();await p.goto(base);await p.getByRole('link',{name:'从清荷入梦开始',exact:true}).click();await p.waitForURL('**/flower-detail.html?key=lotus');
+ const reduced=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});const p=await reduced.newPage();await p.goto(base);await p.getByRole('link',{name:'开始观展',exact:true}).click();await p.waitForURL('**/flower-detail.html?key=lotus');
  check('Reduced motion: story entry remains available',await p.locator('h1').textContent()==='清荷入梦');await reduced.close();
  check('No page errors or HTTP failures',report.errors.length===0,report.errors);
 }catch(e){check('Walkthrough completed',false,{message:e.message,stack:e.stack});}
