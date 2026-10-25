@@ -95,16 +95,16 @@ try {
     await shot(page, `${prefix}-catalogue`);
     await page.locator('.flower-card[data-key=lotus] img').click();
     check(`${prefix}: card body enters lotus detail`, page.url().endsWith('/flower-detail.html?key=lotus'));
-    check(`${prefix}: detail title, English and full story`, await page.locator('h1').textContent() === '清荷入梦' && await page.locator('.detail-title>p').textContent() === 'LOTUS IN REVERIE' && await page.locator('h2').filter({ hasText: '花的故事' }).locator('..').locator('p').textContent().then(t => t.length === 104));
-    check(`${prefix}: audio honestly unavailable`, await page.locator('#audio-btn').isDisabled() && await page.locator('#audio-btn').textContent() === '暂无配音' && await page.getByText('当前暂无配音', { exact: true }).count() === 0);
+    check(`${prefix}: detail title, English and full story`, await page.locator('h1').textContent() === '清荷入梦' && await page.locator('.flower-english').textContent() === 'LOTUS IN REVERIE' && await page.locator('h3').filter({ hasText: '花的故事' }).locator('..').locator('p').textContent().then(t => t.length === 104));
+    check(`${prefix}: no audio controls until narration exists`, await page.locator('#audio-btn').count() === 0 && await page.getByText('暂无配音', { exact: true }).count() === 0);
     await page.locator('#collect-btn').click(); await page.reload();
     check(`${prefix}: collection persists after reload`, await page.locator('#collect-btn').textContent() === '已收藏');
     await shot(page, `${prefix}-detail`);
     check(`${prefix}: detail layout and labels remain readable`, await page.evaluate(() => {
       const art = document.querySelector('.flower-exhibit').getBoundingClientRect();
-      const info = document.querySelector('.flower-info').getBoundingClientRect();
+      const info = document.querySelector('.flower-intro').getBoundingClientRect();
       const button = document.querySelector('#collect-btn').getBoundingClientRect();
-      return (innerWidth > 700 || info.top >= art.bottom) && button.height <= 60 && button.width >= 100;
+      return (innerWidth > 700 || info.bottom <= art.top) && button.height <= 60 && button.width >= 100;
     }));
     await page.locator('#collect-btn').click();
     check(`${prefix}: detail uncollect`, await page.locator('#collect-btn').textContent() === '收藏这朵花');
