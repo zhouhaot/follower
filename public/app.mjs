@@ -15,7 +15,7 @@ function home(){const featured=cardByKey('lotus');return `<main id="main">
   <div class="home-introduction">
     <h1 id="home-title">花开有声</h1>
     <p class="home-description">五种花卉纹样，一场数字展览。<br>沿着花瓣与叶脉，看光影轻轻流转。</p>
-    <div class="home-start"><a class="pill-link" href="flower-detail.html?key=lotus">从清荷入梦开始 ${arrow}</a><a class="text-link" href="catalogue.html">走进花卡图录 ${arrow}</a></div>
+    <div class="home-start"><a class="pill-link" href="flower-detail.html?key=lotus">开始观展 ${arrow}</a><a class="text-link" href="catalogue.html">浏览图录 ${arrow}</a></div>
     <p class="home-availability">无需实体花卡 · 阅读故事，把喜欢的花留在花册</p>
   </div>
   <figure class="home-featured">
@@ -27,7 +27,19 @@ function home(){const featured=cardByKey('lotus');return `<main id="main">
   <a class="home-more" href="#catalogue">向下浏览五张花卡 <span class="arrow-north arrow-right" aria-hidden="true"></span></a>
 </section>
 <section class="catalogue-section" id="catalogue"><div class="section-title"><div><h2>五种纹样，各自盛放。</h2></div><a class="text-link" href="catalogue.html">查看完整图录 ${arrow}</a></div><div class="home-cards">${cards.map(c=>`<article class="catalogue-card"><a href="flower-detail.html?key=${c.key}" class="card-image" aria-label="观赏${c.title}">${pearlCard(c)}</a><a class="card-name" href="flower-detail.html?key=${c.key}"><h3>${c.title}</h3>${arrow}</a><p>《${c.artwork}》</p></article>`).join('')}</div></section>
-<section class="editorial-section home-editorial"><div><h2>把喜欢的花，<br>留在自己的花册。</h2></div><div class="editorial-copy"><p>阅读花的故事，点击“收藏这朵花”。下次来到这里，仍能在“我的花册”中找到它。</p><p class="quiet">花册保存在当前浏览器，不会跨设备同步。</p><a class="pill-link" href="collection.html">打开我的花册 ${arrow}</a><a class="text-link" href="guide.html">了解体验方式 →</a></div></section></main>`}
+<section class="home-transform" aria-labelledby="transform-title">
+  <div class="transform-heading"><p class="eyebrow">FROM STONE TO CARD / 设计转化</p><h2 id="transform-title">每一张卡，<br>都从馆藏石刻走来。</h2></div>
+  <div class="transform-strip">
+    <figure><img src="assets/originals/origins/museum-8400.jpg" alt="都江堰市博物馆《荷花图》石刻拓片" loading="lazy" width="961" height="1280"><figcaption>馆藏原型 ·《荷花图》石刻拓片</figcaption></figure>
+    <span class="transform-arrow" aria-hidden="true"></span>
+    <figure><img src="assets/originals/lotus/artwork.png" alt="清荷入梦纹样设计" loading="lazy" width="987" height="1407"><figcaption>提取纹样 · 清荷入梦</figcaption></figure>
+    <span class="transform-arrow" aria-hidden="true"></span>
+    <figure class="transform-final"><img src="assets/renders/lotus-bloom.png" alt="清荷入梦立体花朵" loading="lazy" width="1000" height="1000"><figcaption>数字呈现 · 珠光与立体</figcaption></figure>
+  </div>
+  <p class="transform-note">先看原型，再标注我们保留了什么、重组了什么、为什么这样配色——完整的转化过程，已在第一朵花里做好。</p>
+  <a class="pill-link" href="flower-detail.html?key=lotus#creation">看完整转化过程 ${arrow}</a>
+</section>
+<section class="editorial-section home-editorial"><div><p class="eyebrow">KEEP A FLOWER / 开始收藏</p><h2>把喜欢的花，<br>留在自己的花册。</h2></div><div class="editorial-copy"><p>阅读花的故事，点击“收藏这朵花”。下次来到这里，仍能在“我的花册”中找到它。</p><p class="quiet">花册保存在当前浏览器，不会跨设备同步。</p><a class="pill-link" href="collection.html">打开我的花册 ${arrow}</a><a class="text-link" href="guide.html">了解体验方式 →</a></div></section></main>`}
 
 function catalogue(){return `<main id="main" class="light-page"><section class="page-wrap">${meta('THE COLLECTION / 全部五款','五种纹样，<br><em>各自成诗。</em>','循着花枝与叶脉，走进五张花卡的世界。')}<div class="catalogue-meta"><span>花开有声系列</span><span>全部作品 · 05</span><span>点击花卡，查看原作与细节</span></div><div class="catalogue-grid">${cards.map(cardMarkup).join('')}</div></section></main>`}
 function work(){if(!selected)return invalid();const c=selected,i=cards.indexOf(c),next=cards[(i+1)%5];return `<main id="main" class="work-page"><div class="breadcrumb"><a href="catalogue.html">五花图录</a><span> / ${c.title}</span></div><section class="work-grid"><div class="work-art"><span class="eyebrow">${no(c)} / 05</span><img src="${c.image}" alt="${c.title}花卡原作完整正面" width="1100" height="1881"><span class="art-caption">ORIGINAL CARD / 原作正面</span></div><div class="work-info"><p class="eyebrow">${c.english}</p><h1>${c.title}</h1><p class="work-subtitle">纹样原型 ·《${c.artwork}》</p><p class="work-description">${c.description}</p><dl><div><dt>纹样原型</dt><dd>《${c.artwork}》</dd></div><div><dt>资料来源</dt><dd>${c.credit.replace('《'+c.artwork+'》','')}</dd></div><div><dt>系列</dt><dd>花开有声 · ${no(c)} / 05</dd></div><div><dt>候选版体验</dt><dd>${c.scanSupported?'三维花卉候选 / 实体卡识别待验证':'原作浏览 / 三维内容待制作'}</dd></div></dl><div class="work-actions"><a class="pill-link" href="preview.html?card=${c.key}">${c.scanSupported?'观赏三维花卡':'查看花卡预览'} ${arrow}</a><a class="text-link" href="${scanURL(c.key,{from:'work'})}">${c.scanSupported?'用实体花卡扫描':'查看扫描支持状态'} ${icon}</a></div><p class="quiet small">预览不会计入收藏。收藏仅在扫描识别成功后记录。</p><a class="next-work" href="work.html?card=${next.key}"><span>下一件作品</span><strong>${next.title} →</strong></a></div></section></main>`}

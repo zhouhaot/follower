@@ -82,7 +82,7 @@ try {
     await page.locator('.home-featured img').waitFor();
     check(`${prefix}: homepage artwork and scan navigation`, await page.locator('.home-featured img').count() === 1 && await page.getByRole('link', { name: '扫描花卡', exact: true }).count() === 1);
     await shot(page, `${prefix}-home`);
-    await page.getByRole('link', { name: '走进花卡图录', exact: true }).click();
+    await page.getByRole('link', { name: '浏览图录', exact: true }).click();
     await page.locator('.flower-card h3').nth(4).waitFor();
     check(`${prefix}: five card titles`, JSON.stringify(await page.locator('.flower-card h3').allTextContents()) === JSON.stringify(['花开有声', '牡丹承瑞', '菊影流金', '清荷入梦', '花叶生辉']));
     for (const flower of ['flowers', 'peony', 'chrysanthemum', 'lotus', 'leaves']) {

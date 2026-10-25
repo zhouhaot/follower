@@ -141,3 +141,17 @@ body:has(.light-page) .scan-nav{color:#7d8672}
 .collection-empty-hint{font-family:Arial,sans-serif!important;font-size:13px!important;letter-spacing:0!important;margin:-12px 0 22px!important}
 .collection-empty .text-link{display:inline-flex;margin-top:18px;font-size:12px;color:#4e5c3f;border-bottom:1px solid #9aa38a;padding-bottom:5px}
 .page-heading .lead strong{font-family:var(--serif);font-weight:400;color:#33481f;font-size:17px}
+
+.home-transform{background:#0b0c0c;color:#e8e9e2;padding:85px 8vw 90px;scroll-margin-top:60px}
+.home-transform .eyebrow{color:#a2aa97}
+.home-transform h2{font-size:clamp(28px,2.6vw,38px);line-height:1.6;letter-spacing:.06em;margin-top:18px}
+.transform-strip{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:26px;align-items:center;margin:44px 0 34px;max-width:1180px}
+.transform-strip figure{margin:0;min-width:0}
+.transform-strip img{width:100%;height:300px;object-fit:cover;border-radius:10px;border:1px solid #ffffff14;display:block}
+.transform-strip figcaption{font-size:11px;letter-spacing:.06em;color:#a7aba0;margin-top:10px}
+.transform-final img{object-fit:contain;background:#0f1712}
+.transform-arrow{width:34px;height:1px;background:#8b958a;position:relative;flex-shrink:0}
+.transform-arrow:after{content:'';position:absolute;right:0;top:-3px;width:7px;height:7px;border-top:1px solid #8b958a;border-right:1px solid #8b958a;transform:rotate(45deg)}
+.transform-note{font-size:14px;line-height:2;color:#b5b7ad;max-width:62ch;margin:0 0 26px}
+.detail-creation{scroll-margin-top:120px}
+@media(max-width:900px){.transform-strip{grid-template-columns:1fr;gap:18px}.transform-arrow{display:none}.transform-strip img{height:240px}}

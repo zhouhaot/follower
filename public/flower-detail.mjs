@@ -214,7 +214,7 @@ function render() {
       </section>
 
       ${creation ? `
-      <section class="detail-creation" aria-labelledby="creation-title">
+      <section class="detail-creation" id="creation" aria-labelledby="creation-title">
         <h2 id="creation-title">看懂这幅设计</h2>
         <p class="creation-intro">${creation.intro}</p>
         <div class="creation-layout">

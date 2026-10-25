@@ -46,7 +46,7 @@ try{
   const main=page.locator('.home-main-card [data-pearl]');await ready(main);
   check(`Home ${width}: actual pearl pixels`,await pixels(main));
   check(`Home ${width}: no 3D flower or hand assets`,!requests.some(u=>/model-viewer|\.glb|hand-sequence|handheld/.test(u)));
-  check(`Home ${width}: story action visible in first viewport`,await page.getByRole('link',{name:'从清荷入梦开始',exact:true}).evaluate(e=>e.getBoundingClientRect().bottom<innerHeight));
+  check(`Home ${width}: story action visible in first viewport`,await page.getByRole('link',{name:'开始观展',exact:true}).evaluate(e=>e.getBoundingClientRect().bottom<innerHeight));
   check(`Home ${width}: no horizontal overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   await idle(page,`Home ${width}: idle has no rendering loop`);
   const items=page.locator('.home-cards [data-pearl]');
@@ -65,7 +65,7 @@ try{
     check('Home card permits vertical touch scrolling',await page.evaluate(()=>scrollY)>before);
   }
   await page.locator('#home-pearl-demo').click();await frames(page,25);if(width===1280)await shot(page,'1280-home-light');await frames(page,100);await idle(page,`Home ${width}: finite light sweep stops`);
-  await page.getByRole('link',{name:'从清荷入梦开始',exact:true}).click();await page.waitForURL('**/flower-detail.html?key=lotus');
+  await page.getByRole('link',{name:'开始观展',exact:true}).click();await page.waitForURL('**/flower-detail.html?key=lotus');
   const card=page.locator('#detail-pearl [data-pearl]');
   check(`Detail ${width}: stable artwork is default, pearl is secondary`,await page.locator('[data-exhibit-view=artwork]').getAttribute('aria-pressed')==='true'&&await page.locator('#detail-pearl').isHidden());
   await page.getByRole('button',{name:'珠光光影',exact:true}).click();await ready(card);
