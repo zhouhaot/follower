@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-24T18:08:29.678Z",
+  "date": "2026-10-25T04:59:33.669Z",
   "scope": "Isolated local Chrome contexts; synthetic data only; no camera or production requests.",
   "checks": [
     {
@@ -67,7 +67,7 @@
       "pass": true
     },
     {
-      "name": "1280: audio honestly unavailable",
+      "name": "1280: no audio controls until narration exists",
       "pass": true
     },
     {
@@ -92,6 +92,10 @@
     },
     {
       "name": "1280-empty: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: empty state guides to the first flower",
       "pass": true
     },
     {
@@ -227,7 +231,7 @@
       "pass": true
     },
     {
-      "name": "390: audio honestly unavailable",
+      "name": "390: no audio controls until narration exists",
       "pass": true
     },
     {
@@ -252,6 +256,10 @@
     },
     {
       "name": "390-empty: no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: empty state guides to the first flower",
       "pass": true
     },
     {
@@ -377,8 +385,8 @@
   ],
   "browser": "156.0.8078.4",
   "summary": {
-    "total": 88,
-    "passed": 88,
+    "total": 90,
+    "passed": 90,
     "failed": 0
   }
 }

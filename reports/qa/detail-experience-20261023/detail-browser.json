@@ -1,9 +1,17 @@
 {
-  "date": "2026-10-24T18:08:50.196Z",
+  "date": "2026-10-25T05:00:02.033Z",
   "scope": "Isolated local Chrome. Desktop and emulated touch layouts; no real phone, camera, audio, or human participant.",
   "checks": [
     {
       "name": "1280: original view does not load Three or model",
+      "pass": true
+    },
+    {
+      "name": "1280: stable artwork is the default view",
+      "pass": true
+    },
+    {
+      "name": "1280: creation annotations explain structure",
       "pass": true
     },
     {
@@ -91,6 +99,10 @@
       "pass": true
     },
     {
+      "name": "768: stable artwork is the default view",
+      "pass": true
+    },
+    {
       "name": "768: title and view choices appear in first viewport",
       "pass": true
     },
@@ -172,6 +184,10 @@
     },
     {
       "name": "390: original view does not load Three or model",
+      "pass": true
+    },
+    {
+      "name": "390: stable artwork is the default view",
       "pass": true
     },
     {
@@ -264,6 +280,10 @@
     },
     {
       "name": "320: original view does not load Three or model",
+      "pass": true
+    },
+    {
+      "name": "320: stable artwork is the default view",
       "pass": true
     },
     {
@@ -473,8 +493,8 @@
   ],
   "browser": "156.0.8078.4",
   "summary": {
-    "total": 112,
-    "passed": 112,
+    "total": 117,
+    "passed": 117,
     "failed": 0
   }
 }

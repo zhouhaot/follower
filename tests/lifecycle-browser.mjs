@@ -40,7 +40,7 @@ try{
   }
  }
  await setProgress(.22);const before=await state();
- await page.getByRole('link',{name:'走进花卡图录',exact:true}).click();
+ await page.getByRole('link',{name:'浏览图录',exact:true}).click();
  await page.waitForURL('**/catalogue.html');await page.goBack({waitUntil:'networkidle'});await homeReady();await settle();const back=await state();
  check('Back restores the visible hand to the actual restored scroll position',back.frame===Math.round(back.open*31)&&Number.isFinite(back.progress),{before,back});
  await page.goForward({waitUntil:'networkidle'});check('Forward restores the catalogue',new URL(page.url()).pathname==='/catalogue.html');

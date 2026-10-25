@@ -82,7 +82,8 @@ try {
     await page.locator('.home-featured img').waitFor();
     check(`${prefix}: homepage artwork and scan navigation`, await page.locator('.home-featured img').count() === 1 && await page.getByRole('link', { name: '扫描花卡', exact: true }).count() === 1);
     await shot(page, `${prefix}-home`);
-    await page.getByRole('link', { name: '走进花卡图录', exact: true }).click();
+    await page.getByRole('link', { name: '浏览图录', exact: true }).click();
+    await page.locator('.flower-card h3').nth(4).waitFor();
     check(`${prefix}: five card titles`, JSON.stringify(await page.locator('.flower-card h3').allTextContents()) === JSON.stringify(['花开有声', '牡丹承瑞', '菊影流金', '清荷入梦', '花叶生辉']));
     for (const flower of ['flowers', 'peony', 'chrysanthemum', 'lotus', 'leaves']) {
       const button = page.locator(`.collect-btn[data-key="${flower}"]`);
@@ -94,25 +95,29 @@ try {
     await shot(page, `${prefix}-catalogue`);
     await page.locator('.flower-card[data-key=lotus] img').click();
     check(`${prefix}: card body enters lotus detail`, page.url().endsWith('/flower-detail.html?key=lotus'));
-    check(`${prefix}: detail title, English and full story`, await page.locator('h1').textContent() === '清荷入梦' && await page.locator('.detail-title>p').textContent() === 'LOTUS IN REVERIE' && await page.locator('h2').filter({ hasText: '花的故事' }).locator('..').locator('p').textContent().then(t => t.length === 104));
-    check(`${prefix}: audio honestly unavailable`, await page.locator('#audio-btn').isDisabled() && await page.locator('#audio-btn').textContent() === '暂无配音' && await page.getByText('当前暂无配音', { exact: true }).count() === 0);
+    check(`${prefix}: detail title, English and full story`, await page.locator('h1').textContent() === '清荷入梦' && await page.locator('.flower-english').textContent() === 'LOTUS IN REVERIE' && await page.locator('h3').filter({ hasText: '花的故事' }).locator('..').locator('p').textContent().then(t => t.length === 104));
+    check(`${prefix}: no audio controls until narration exists`, await page.locator('#audio-btn').count() === 0 && await page.getByText('暂无配音', { exact: true }).count() === 0);
     await page.locator('#collect-btn').click(); await page.reload();
     check(`${prefix}: collection persists after reload`, await page.locator('#collect-btn').textContent() === '已收藏');
     await shot(page, `${prefix}-detail`);
     check(`${prefix}: detail layout and labels remain readable`, await page.evaluate(() => {
       const art = document.querySelector('.flower-exhibit').getBoundingClientRect();
-      const info = document.querySelector('.flower-info').getBoundingClientRect();
+      const info = document.querySelector('.flower-intro').getBoundingClientRect();
       const button = document.querySelector('#collect-btn').getBoundingClientRect();
-      return (innerWidth > 700 || info.top >= art.bottom) && button.height <= 60 && button.width >= 100;
+      return (innerWidth > 700 || info.bottom <= art.top) && button.height <= 60 && button.width >= 100;
     }));
     await page.locator('#collect-btn').click();
     check(`${prefix}: detail uncollect`, await page.locator('#collect-btn').textContent() === '收藏这朵花');
     await seed(page, null);await page.goto(`${base}/collection.html`);
     check(`${prefix}: genuine empty state`, await page.getByText('花册还是空的', { exact: true }).count() === 1);
     await shot(page, `${prefix}-empty`);
-    await page.getByRole('link', { name: '开始探索五朵花', exact: true }).click();
-    for (const flower of ['lotus', 'peony', 'chrysanthemum']) await page.locator(`.collect-btn[data-key="${flower}"]`).click();
+    await page.getByRole('link', { name: '看第一朵 · 清荷入梦', exact: true }).click();
+    check(`${prefix}: empty state guides to the first flower`, page.url().includes('flower-detail.html?key=lotus'));
+    await page.locator('#collect-btn').click();
+    await page.getByRole('link', { name: '五花图录', exact: true }).click();
+    for (const flower of ['peony', 'chrysanthemum']) await page.locator(`.collect-btn[data-key="${flower}"]`).click();
     await page.getByRole('link', { name: '我的花册', exact: true }).click();
+    await page.locator('.collection-card').nth(2).waitFor();
     check(`${prefix}: three manual collections with date`, await page.locator('.collection-card').count() === 3 && (await page.locator('.collection-card').allTextContents()).every(t => /主动收藏 · \d{4}年\d{1,2}月\d{1,2}日/.test(t)));
     await shot(page, `${prefix}-collections`);
     for (const title of ['牡丹承瑞', '菊影流金']) await dialogClick(page, page.locator('.collection-card').filter({ hasText: title }).getByRole('button', { name: '取消收藏' }));

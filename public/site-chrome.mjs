@@ -7,7 +7,7 @@ const arrow = '<span class="arrow-north" aria-hidden="true"></span>';
 
 const NAV_ITEMS = [
   ['home', 'index.html', '展览首页'],
-  ['catalogue', 'catalogue.html', '花卡图录'],
+  ['catalogue', 'catalogue.html', '五花图录'],
   ['collection', 'collection.html', '我的花册'],
   ['guide', 'guide.html', '参观指南'],
 ];

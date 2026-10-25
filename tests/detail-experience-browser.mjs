@@ -42,10 +42,14 @@ try{
   const {context,page}=await setup(width);const requests=[];page.on('request',r=>requests.push(r.url()));
   await page.goto(`${base}/flower-detail.html?key=lotus&view=original`);
   check(`${width}: original view does not load Three or model`,!requests.some(u=>/three\.module|model-viewer|\.glb/.test(u))&&await page.locator('#detail-original').isVisible());
-  check(`${width}: title and view choices appear in first viewport`,await page.locator('.detail-title').evaluate(e=>e.getBoundingClientRect().bottom<innerHeight)&&await page.locator('.exhibit-switch').evaluate(e=>e.getBoundingClientRect().bottom<innerHeight));
+  await page.goto(`${base}/flower-detail.html?key=lotus`);
+  check(`${width}: stable artwork is the default view`,await page.locator('[data-exhibit-view=artwork]').getAttribute('aria-pressed')==='true'&&await page.locator('#detail-artwork').isVisible()&&await page.locator('#detail-pearl').isHidden());
+  if(width===1280){await page.locator('.creation-marker[data-creation-marker=vase]').click();check(`${width}: creation annotations explain structure`,await page.locator('.creation-legend li').count()===4&&(await page.locator('.creation-note').textContent()).includes('瓶'));}
+  await page.goto(`${base}/flower-detail.html?key=lotus&view=original`);
+  check(`${width}: title and view choices appear in first viewport`,await page.locator('.flower-intro').evaluate(e=>e.getBoundingClientRect().bottom<innerHeight)&&await page.locator('.exhibit-switch').evaluate(e=>e.getBoundingClientRect().bottom<innerHeight));
   check(`${width}: model and story use responsive layout`,await page.evaluate(()=>{
-   const a=document.querySelector('.flower-exhibit').getBoundingClientRect(),b=document.querySelector('.flower-info').getBoundingClientRect();
-   return innerWidth<=700?b.top>=a.bottom:b.left>=a.right&&Math.abs(a.top-b.top)<2;
+   const a=document.querySelector('.flower-exhibit').getBoundingClientRect(),b=document.querySelector('.flower-intro').getBoundingClientRect();
+   return innerWidth<=700?a.top>=b.bottom:b.left>=a.right&&Math.abs(a.top-b.top)<2;
   }));
   check(`${width}: original, story and observation belong to same flower`,await page.locator('.flower-story p').textContent()===cards.find(c=>c.key==='lotus').story&&(await page.locator('.flower-observation p').textContent()).includes('两侧圆叶'));
   await screenshot(page,`${width}-original`);
@@ -120,7 +124,7 @@ try{
  // Context loss must replace rotation guidance with honest static-mode messaging.
  await page.evaluate(()=>document.querySelector('#detail-model canvas').dispatchEvent(new Event('webglcontextlost',{cancelable:true})));
  await page.waitForFunction(()=>document.querySelector('#detail-model').classList.contains('fallback-only'));
- check('Context loss: fallback message and static image',await page.getByText('三维暂不可用，当前显示静态效果图。仍可切换实体花卡、阅读故事或收藏。',{exact:true}).count()===1&&await page.locator('.view-tools').isHidden()&&await page.locator('#detail-model img').isVisible());
+ check('Context loss: fallback message and static image',await page.getByText('三维暂不可用，当前显示静态效果图。仍可回到作品、阅读故事或收藏。',{exact:true}).count()===1&&await page.locator('.view-tools').isHidden()&&await page.locator('#detail-model img').isVisible());
  await context.close();
  for(const fault of ['webgl','module','asset']){
   const {context,page}=await setup(390,{fault});await page.goto(`${base}/flower-detail.html?key=lotus`);await page.getByRole('button',{name:'立体花朵',exact:true}).click();await ready(page);
@@ -136,7 +140,7 @@ try{
  await slow.page.getByRole('button',{name:'实体花卡',exact:true}).click();release();await ready(slow.page);
  check('Slow load: late result does not override original choice',await slow.page.locator('#detail-original').isVisible()&&await slow.page.locator('[data-exhibit-view=original]').getAttribute('aria-pressed')==='true');await slow.context.close();
  const reduced=await setup(390,{reducedMotion:'reduce'});await reduced.page.goto(`${base}/flower-detail.html?key=lotus`);
- check('Reduced motion: no required animation to reach story',await reduced.page.locator('#detail-pearl').isVisible()&&await reduced.page.locator('.flower-story').isVisible());await reduced.context.close();
+ check('Reduced motion: no required animation to reach story',await reduced.page.locator('#detail-artwork').isVisible()&&await reduced.page.locator('.flower-story').isVisible());await reduced.context.close();
  check('No uncaught page errors',report.errors.length===0,report.errors);
 }catch(error){check('Detail workflow completed',false,{message:error.message,stack:error.stack});}
 finally{await browser.close();report.summary={total:report.checks.length,passed:report.checks.filter(c=>c.pass).length,failed:report.checks.filter(c=>!c.pass).length};await writeFile(path.join(output,'detail-browser.json'),JSON.stringify(report,null,2));console.log('SUMMARY',report.summary);}

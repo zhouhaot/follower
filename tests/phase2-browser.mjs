@@ -30,13 +30,13 @@ try{
   });
   await page.goto(base);
   await snapshot(page,`${width}-home`,true);
-  const primary=page.getByRole('link',{name:'从清荷入梦开始',exact:true});
+  const primary=page.getByRole('link',{name:'开始观展',exact:true});
   check(`${width}: story entry visible in first viewport`,await primary.evaluate(e=>{const r=e.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight;}));
   check(`${width}: pearl home does not load hand or 3D flower models`,requests.every(u=>!/(hand-sequence|handheld|model-viewer|\.glb)/.test(u))&&await page.locator('.pearl-card').count()===6);
   check(`${width}: all home card links point at current detail`,await page.locator('.home-cards .card-image').evaluateAll(a=>a.length===5&&a.every(x=>x.getAttribute('href').startsWith('flower-detail.html?key='))));
   await primary.focus();await page.keyboard.press('Enter');await page.waitForURL('**/flower-detail.html?key=lotus');
   check(`${width}: keyboard entry opens story`,await page.locator('h1').textContent()==='清荷入梦');
-  check(`${width}: silent story complete and honest`,await page.locator('#audio-btn').isDisabled()&&await page.getByText('当前暂无配音',{exact:true}).count()===0&&await page.evaluate(()=>phase2AudioAttempts)===0);
+  check(`${width}: silent story complete and honest`,await page.locator('#audio-btn').count()===0&&await page.evaluate(()=>phase2AudioAttempts)===0);
   let stored=await page.evaluate(k=>JSON.parse(localStorage.getItem(k)),key);
   check(`${width}: reading does not auto-collect`,stored.collections.length===0&&stored.recentViews[0].key==='lotus');
   await page.locator('#collect-btn').click();
@@ -48,7 +48,7 @@ try{
   const reopened=await context.newPage();await reopened.goto(`${base}/`);await reopened.getByRole('link',{name:'我的花册',exact:true}).click();await reopened.locator('.collection-card').first().waitFor({state:'visible'});
   check(`${width}: later visit from home finds saved flower`,await reopened.locator('.collection-card').count()===1&&await reopened.locator('.collection-card h3').textContent()==='清荷入梦');
   await reopened.close();
-  await page.getByRole('link',{name:'花卡图录',exact:true}).click();await snapshot(page,`${width}-catalogue`);
+  await page.getByRole('link',{name:'五花图录',exact:true}).click();await snapshot(page,`${width}-catalogue`);
   const collect=page.locator('.collect-btn[data-key=leaves]');await collect.focus();await page.keyboard.press('Space');
   check(`${width}: collection toggle retains keyboard focus`,await collect.evaluate(e=>e===document.activeElement)&&await collect.getAttribute('aria-pressed')==='true');
   await page.keyboard.press('Space');
@@ -65,7 +65,7 @@ try{
   check(`${width}: scanner return retains flower`,await page.locator('h1').textContent()==='牡丹承瑞');
   await context.close();
  }
- const reduced=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});const p=await reduced.newPage();await p.goto(base);await p.getByRole('link',{name:'从清荷入梦开始',exact:true}).click();await p.waitForURL('**/flower-detail.html?key=lotus');
+ const reduced=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});const p=await reduced.newPage();await p.goto(base);await p.getByRole('link',{name:'开始观展',exact:true}).click();await p.waitForURL('**/flower-detail.html?key=lotus');
  check('Reduced motion: story entry remains available',await p.locator('h1').textContent()==='清荷入梦');await reduced.close();
  check('No page errors or HTTP failures',report.errors.length===0,report.errors);
 }catch(e){check('Walkthrough completed',false,{message:e.message,stack:e.stack});}

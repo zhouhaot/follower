@@ -2,6 +2,7 @@ export const cards = [
   {
     "key": "flowers",
     "title": "花开有声",
+    "trait": "一瓶花枝向上散开，构图最疏朗的一张。",
     "english": "FLOWERS SPEAK",
     "artwork": "瓶插花卉图",
     "credit": "都江堰博物馆《瓶插花卉图》",
@@ -20,6 +21,7 @@ export const cards = [
   {
     "key": "peony",
     "title": "牡丹承瑞",
+    "trait": "主花居中、两侧花苞对称，最雍容的一张。",
     "english": "PEONY IN BLOOM",
     "artwork": "瓶插牡丹图",
     "credit": "都江堰市博物馆《瓶插牡丹图》",
@@ -38,6 +40,7 @@ export const cards = [
   {
     "key": "chrysanthemum",
     "title": "菊影流金",
+    "trait": "花瓣层层向内卷，最见线条功夫的一张。",
     "english": "GOLDEN CHRYSANTHEMUM",
     "artwork": "摘枝菊花图",
     "credit": "都江堰市博物馆《摘枝菊花图》",
@@ -56,6 +59,7 @@ export const cards = [
   {
     "key": "lotus",
     "title": "清荷入梦",
+    "trait": "中央荷花配两侧圆叶，中轴最安静的一张。",
     "english": "LOTUS IN REVERIE",
     "artwork": "荷花图",
     "credit": "都江堰市博物馆《荷花图》",
@@ -74,6 +78,7 @@ export const cards = [
   {
     "key": "leaves",
     "title": "花叶生辉",
+    "trait": "花枝斜出、叶随枝走，最轻盈的一张。",
     "english": "LEAVES IN RADIANCE",
     "artwork": "芙蓉花图",
     "credit": "都江堰市博物馆《芙蓉花图》",
