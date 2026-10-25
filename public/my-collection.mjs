@@ -38,18 +38,15 @@ function renderCollectionCard(collection) {
   }[collection.source] || collection.source;
 
   return `
-    <div class="collection-card">
-      <a href="./flower-detail.html?key=${card.key}" aria-label="阅读${card.title}的故事"><img src="${card.image}" alt="${card.title}"></a>
-      <div>
+    <article class="collection-card album-plate">
+      <a href="./flower-detail.html?key=${card.key}" aria-label="阅读${card.title}的故事"><img src="${card.artworkImage}" alt="${card.title}纹样"></a>
+      <div class="plate-caption">
         <h3><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h3>
-        <p class="card-english">${card.english}</p>
-        <p class="card-description">${card.description}</p>
-        <div class="collection-meta">
-          <span>${sourceLabel} · ${formatDate(collection.collectedAt)}</span>
-          <button type="button" onclick="event.stopPropagation();window.myCollectionRemove('${card.key}', event)">取消收藏</button>
-        </div>
+        <p class="plate-trait">${card.trait || ''}</p>
+        <p class="plate-date">${sourceLabel} · ${formatDate(collection.collectedAt)}</p>
+        <button type="button" onclick="event.stopPropagation();window.myCollectionRemove('${card.key}', event)">取消收藏</button>
       </div>
-    </div>
+    </article>
   `;
 }
 
@@ -124,11 +121,24 @@ function render() {
         ` : ''}
 
         ${loaded && state.kind === 'ready' && hasAnyData && data.collections.length === 0 ? '<p class="no-collections">还没有主动收藏的花。最近浏览会留在下方，打开详情即可收藏。</p>' : ''}
+        ${loaded && state.kind === 'ready' && data.collections.length === 0 ? `
+          <section class="collection-section" aria-label="收藏画册">
+            <div class="album">
+              <div class="album-page">
+                <div class="album-plate album-plate-empty">
+                  <span class="plate-empty-mark" aria-hidden="true"></span>
+                  <p>第一朵，还没有贴进来。</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        ` : ''}
         ${data.collections.length > 0 ? `
-          <section class="collection-section">
-            <h2>我的收藏 <span>(${data.collections.length})</span></h2>
-            <div class="collection-list">
-              ${data.collections.map(c => renderCollectionCard(c)).join('')}
+          <section class="collection-section" aria-label="收藏画册">
+            <div class="album">
+              <div class="album-page">
+                ${data.collections.map(c => renderCollectionCard(c)).join('')}
+              </div>
             </div>
           </section>
         ` : ''}
