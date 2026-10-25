@@ -100,8 +100,8 @@
       "detail": {
         "draws": 45,
         "median": 5.5999999940395355,
-        "p95": 5.700000002980232,
-        "submissionAndCopyP95": 0.20000000298023224
+        "p95": 5.799999997019768,
+        "submissionAndCopyP95": 0.3999999910593033
       }
     },
     {
@@ -293,9 +293,9 @@
       "pass": true,
       "detail": {
         "draws": 45,
-        "median": 5.5999999940395355,
-        "p95": 5.700000002980232,
-        "submissionAndCopyP95": 0.20000000298023224
+        "median": 5.5,
+        "p95": 5.699999988079071,
+        "submissionAndCopyP95": 0.29999999701976776
       }
     },
     {
@@ -312,7 +312,7 @@
     },
     {
       "name": "Home 390: finite light sweep stops",
-      "pass": true
+      "pass": false
     },
     {
       "name": "Detail 390: stable artwork is default, pearl is secondary",
@@ -344,8 +344,8 @@
       "detail": {
         "draws": 45,
         "median": 5.5,
-        "p95": 5.899999991059303,
-        "submissionAndCopyP95": 0.30000001192092896
+        "p95": 5.700000002980232,
+        "submissionAndCopyP95": 0.20000000298023224
       }
     },
     {
@@ -611,17 +611,17 @@
       "dpr": 1,
       "draws": 45,
       "median": 5.5999999940395355,
-      "p95": 5.700000002980232,
-      "submissionAndCopyP95": 0.20000000298023224
+      "p95": 5.799999997019768,
+      "submissionAndCopyP95": 0.3999999910593033
     },
     {
       "surface": "home",
       "width": 390,
       "dpr": 1,
       "draws": 45,
-      "median": 5.5999999940395355,
-      "p95": 5.700000002980232,
-      "submissionAndCopyP95": 0.20000000298023224
+      "median": 5.5,
+      "p95": 5.699999988079071,
+      "submissionAndCopyP95": 0.29999999701976776
     },
     {
       "surface": "detail",
@@ -629,14 +629,14 @@
       "dpr": 1,
       "draws": 45,
       "median": 5.5,
-      "p95": 5.899999991059303,
-      "submissionAndCopyP95": 0.30000001192092896
+      "p95": 5.700000002980232,
+      "submissionAndCopyP95": 0.20000000298023224
     }
   ],
   "scope": "Local Chrome, desktop and emulated touch. No physical phone/GPU guarantee.",
   "summary": {
     "total": 142,
-    "passed": 139,
-    "failed": 3
+    "passed": 138,
+    "failed": 4
   }
 }

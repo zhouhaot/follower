@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-25T05:01:50.183Z",
+  "date": "2026-10-25T05:37:52.819Z",
   "scope": "Scripted simulated first-visit walkthrough; no human participants; isolated synthetic local storage; no camera access.",
   "checks": [
     {
@@ -23,7 +23,7 @@
       "pass": true
     },
     {
-      "name": "1280: silent story complete and honest",
+      "name": "1280: narration present but never autoplays",
       "pass": true
     },
     {
@@ -99,7 +99,7 @@
       "pass": true
     },
     {
-      "name": "768: silent story complete and honest",
+      "name": "768: narration present but never autoplays",
       "pass": true
     },
     {
@@ -175,7 +175,7 @@
       "pass": true
     },
     {
-      "name": "390: silent story complete and honest",
+      "name": "390: narration present but never autoplays",
       "pass": true
     },
     {
@@ -251,7 +251,7 @@
       "pass": true
     },
     {
-      "name": "320: silent story complete and honest",
+      "name": "320: narration present but never autoplays",
       "pass": true
     },
     {
