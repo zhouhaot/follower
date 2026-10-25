@@ -175,3 +175,18 @@ body:has(.light-page) .scan-nav{color:#7d8672}
   .page-wrap{padding:0;max-width:none}
   .keepsake{margin:0;border:0;padding:24px 8px}
 }
+
+.label-page{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:40px 22px;background:radial-gradient(ellipse at 50% 30%,#1b241c,#0b0d0b 70%)}
+.label-card{max-width:420px;width:100%;background:#f4f2e9;color:#20261c;border-radius:10px;padding:30px 28px 34px;text-align:center;box-shadow:0 24px 60px #00000066}
+.label-eyebrow{font-family:Arial,sans-serif;font-size:9px;letter-spacing:.22em;color:#77816b}
+.label-art{margin:22px auto 0;max-width:230px}
+.label-art img{width:100%;border-radius:6px;display:block}
+.label-head h1{font-family:var(--serif);font-weight:400;font-size:32px;letter-spacing:.1em;margin:22px 0 6px}
+.label-head p{font-family:Arial,sans-serif;font-size:10px;letter-spacing:.2em;color:#77816b}
+.label-trait{font-size:13px;line-height:1.9;color:#4c5842;margin:16px 0 0}
+.label-source{font-size:10px;color:#8a927e;margin:12px 0 0;letter-spacing:.04em}
+.label-primary{display:flex;align-items:center;justify-content:center;min-height:52px;margin-top:24px;border-radius:4px;background:#33481f;color:#f2f4ea;font-size:15px;letter-spacing:.08em}
+.label-primary:hover{background:#425c2c}
+.label-secondary{display:flex;align-items:center;justify-content:center;min-height:46px;margin-top:10px;font-size:12px;color:#5c6750;text-decoration:underline;text-underline-offset:5px}
+.label-foot{text-align:center;font-size:9px;line-height:1.9;color:#77816b;letter-spacing:.05em}
+@media(max-width:350px){.label-card{padding:24px 18px 28px}.label-head h1{font-size:27px}}
