@@ -58,8 +58,8 @@
       "detail": {
         "draws": 45,
         "median": 5.5999999940395355,
-        "p95": 5.600000008940697,
-        "submissionAndCopyP95": 0.20000000298023224
+        "p95": 5.9000000059604645,
+        "submissionAndCopyP95": 0.30000001192092896
       }
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "name": "Home 1280: finite light sweep stops",
-      "pass": false
+      "pass": true
     },
     {
       "name": "Detail 1280: stable artwork is default, pearl is secondary",
@@ -99,9 +99,9 @@
       "pass": true,
       "detail": {
         "draws": 45,
-        "median": 5.5999999940395355,
-        "p95": 5.799999997019768,
-        "submissionAndCopyP95": 0.3999999910593033
+        "median": 5.5,
+        "p95": 5.699999988079071,
+        "submissionAndCopyP95": 0.29999999701976776
       }
     },
     {
@@ -294,8 +294,8 @@
       "detail": {
         "draws": 45,
         "median": 5.5,
-        "p95": 5.699999988079071,
-        "submissionAndCopyP95": 0.29999999701976776
+        "p95": 5.700000002980232,
+        "submissionAndCopyP95": 0.20000000298023224
       }
     },
     {
@@ -312,7 +312,7 @@
     },
     {
       "name": "Home 390: finite light sweep stops",
-      "pass": false
+      "pass": true
     },
     {
       "name": "Detail 390: stable artwork is default, pearl is secondary",
@@ -344,8 +344,8 @@
       "detail": {
         "draws": 45,
         "median": 5.5,
-        "p95": 5.700000002980232,
-        "submissionAndCopyP95": 0.20000000298023224
+        "p95": 5.9000000059604645,
+        "submissionAndCopyP95": 0.5
       }
     },
     {
@@ -602,21 +602,12 @@
       "dpr": 1,
       "draws": 45,
       "median": 5.5999999940395355,
-      "p95": 5.600000008940697,
-      "submissionAndCopyP95": 0.20000000298023224
+      "p95": 5.9000000059604645,
+      "submissionAndCopyP95": 0.30000001192092896
     },
     {
       "surface": "detail",
       "width": 1280,
-      "dpr": 1,
-      "draws": 45,
-      "median": 5.5999999940395355,
-      "p95": 5.799999997019768,
-      "submissionAndCopyP95": 0.3999999910593033
-    },
-    {
-      "surface": "home",
-      "width": 390,
       "dpr": 1,
       "draws": 45,
       "median": 5.5,
@@ -624,19 +615,28 @@
       "submissionAndCopyP95": 0.29999999701976776
     },
     {
-      "surface": "detail",
+      "surface": "home",
       "width": 390,
       "dpr": 1,
       "draws": 45,
       "median": 5.5,
       "p95": 5.700000002980232,
       "submissionAndCopyP95": 0.20000000298023224
+    },
+    {
+      "surface": "detail",
+      "width": 390,
+      "dpr": 1,
+      "draws": 45,
+      "median": 5.5,
+      "p95": 5.9000000059604645,
+      "submissionAndCopyP95": 0.5
     }
   ],
   "scope": "Local Chrome, desktop and emulated touch. No physical phone/GPU guarantee.",
   "summary": {
     "total": 142,
-    "passed": 138,
-    "failed": 4
+    "passed": 140,
+    "failed": 2
   }
 }
