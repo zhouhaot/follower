@@ -2,7 +2,7 @@
 target: 网站布局组件UI评审与整改
 total_score: 29
 max_score: 40
-na_heuristics: 
+na_heuristics:
 p0_count: 0
 p1_count: 1
 target_identity: "file:/Users/airuquan/Documents/codex/follower-quality-20261029/public/index.html"
