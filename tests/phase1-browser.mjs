@@ -104,7 +104,8 @@ try {
       const art = document.querySelector('.flower-exhibit').getBoundingClientRect();
       const info = document.querySelector('.flower-intro').getBoundingClientRect();
       const button = document.querySelector('#collect-btn').getBoundingClientRect();
-      return (innerWidth > 700 || info.bottom <= art.top) && button.height >= 44 && button.height <= 60 && button.width >= 44 && button.right <= innerWidth;
+      const heading = document.querySelector('.detail-heading').getBoundingClientRect();
+      return (innerWidth > 700 || (heading.bottom <= art.top && art.bottom <= info.top)) && button.height >= 44 && button.height <= 60 && button.width >= 44 && button.right <= innerWidth;
     }));
     await page.locator('#collect-btn').click();
     check(`${prefix}: detail uncollect`, await page.locator('#collect-btn').textContent() === '收藏这朵花');
