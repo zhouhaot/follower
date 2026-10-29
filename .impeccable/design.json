@@ -181,8 +181,8 @@
     "motion": [
       {
         "name": "work-reveal-duration",
-        "value": "420ms",
-        "purpose": "作品切换淡入并从下方 12px 归位；减少动态时关闭。"
+        "value": "320ms",
+        "purpose": "等待新图解码，再叠化覆盖保留的旧图；减少动态时直接切换。"
       },
       {
         "name": "work-reveal-ease",

@@ -20,7 +20,6 @@ function home(){const featured=cardByKey('lotus');return `<main id="main">
   </div>
   <figure class="home-featured">
     <a class="home-main-card" href="flower-detail.html?key=lotus" aria-label="阅读清荷入梦的故事">${pearlCard(featured,{priority:true})}</a>
-    <div class="pearl-toolbar"><button class="pearl-button pearl-demo" id="home-pearl-demo" type="button" disabled>演示光影</button><button class="pearl-button" id="portal-motion" type="button" aria-pressed="true">暂停光场</button></div>
     <p id="home-pearl-status" class="pearl-note" role="status">轻触作品，走进故事。</p>
   </figure>
   <div class="portal-detail">

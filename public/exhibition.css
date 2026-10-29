@@ -291,3 +291,8 @@ body[data-page=home] .portal-wordmark .home-description{max-width:18ch}
 }
 @media(max-width:350px){body[data-page=flower-detail] .detail-stage{height:395px}}
 @media print{.keepsake footer{display:block!important;background:white!important;color:#192d36!important;padding:16px!important}}
+
+/* Decode the next artwork before covering the current one; the stage never fades to black. */
+body[data-page=home] .home-main-card{position:relative}
+.home-main-card>[data-pearl]{position:relative;z-index:1}
+.home-main-card>.portal-outgoing{position:absolute;inset:0;pointer-events:none;z-index:0}

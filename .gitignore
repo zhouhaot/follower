@@ -11,3 +11,5 @@ work/
 
 # Local redesign evidence; reviewed summaries are explicitly tracked.
 /reports/design-*/
+
+/reports/transition-*/

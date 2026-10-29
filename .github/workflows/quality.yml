@@ -27,6 +27,7 @@ jobs:
           PEARL_QA_OUTPUT: reports/quality-current/pearl
           QUALITY_QA_OUTPUT: reports/quality-current/core
           EXHIBITION_QA_OUTPUT: reports/quality-current/exhibition
+          TRANSITION_QA_OUTPUT: reports/quality-current/transition
           EXHIBITION_SHOTS: reports/quality-current/exhibition/screenshots
         run: |
           python3 scripts/serve-local.py dist 4173 > /tmp/follower-preview.log 2>&1 &
@@ -43,6 +44,7 @@ jobs:
           npm run test:pearl-ui
           npm run test:quality-ui
           npm run test:exhibition-ui
+          npm run test:transition-ui
       - uses: actions/upload-artifact@v4
         if: always()
         with:

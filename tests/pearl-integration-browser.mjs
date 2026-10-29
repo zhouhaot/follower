@@ -49,7 +49,7 @@ try{
   check(`Home ${width}: no 3D flower or hand assets`,!requests.some(u=>/model-viewer|\.glb|hand-sequence|handheld/.test(u)));
   check(`Home ${width}: story action visible in first viewport`,await page.getByRole('link',{name:'开始观展',exact:true}).evaluate(e=>e.getBoundingClientRect().bottom<innerHeight));
   check(`Home ${width}: no horizontal overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
-  await idle(page,`Home ${width}: idle has no rendering loop`);
+  await frames(page,110);await idle(page,`Home ${width}: automatic opening sweep finishes and stays idle`);
   const items=page.locator('.home-cards [data-pearl]');
   for(let i=0;i<5;i++){const item=items.nth(i);await item.scrollIntoViewIfNeeded();await ready(item);check(`Home ${width}: ${cards[i].key} artwork and pearl ready`,await pixels(item)&&await item.locator('img').evaluate(img=>img.complete&&img.naturalWidth>0));}
   check(`Home ${width}: six cards share one renderer plus one bounded portal field`,await page.evaluate(()=>window.__gls.length===2));
@@ -65,7 +65,7 @@ try{
     const before=await page.evaluate(()=>scrollY);await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x,y:y-130}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await frames(page,20);
     check('Home card permits vertical touch scrolling',await page.evaluate(()=>scrollY)>before);
   }
-  await page.locator('#home-pearl-demo').click();await frames(page,25);if(width===1280)await shot(page,'1280-home-light');await frames(page,100);await idle(page,`Home ${width}: finite light sweep stops`);
+  check(`Home ${width}: light effects do not require toolbar buttons`,await page.locator('#home-pearl-demo,#portal-motion').count()===0);await idle(page,`Home ${width}: finite light sweep stops`);
   await page.getByRole('link',{name:'开始观展',exact:true}).click();await page.waitForURL('**/flower-detail.html?key=lotus');
   const card=page.locator('#detail-pearl [data-pearl]');
   check(`Detail ${width}: stable artwork is default, pearl is secondary`,await page.locator('[data-exhibit-view=artwork]').getAttribute('aria-pressed')==='true'&&await page.locator('#detail-pearl').isHidden());

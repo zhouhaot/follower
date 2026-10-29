@@ -9,26 +9,43 @@ export function initPortal(root) {
   const listen = (node, type, fn, options = {}) => node.addEventListener(type, fn, { ...options, signal });
   const stage = root.querySelector('.portal-stage');
   const canvas = root.querySelector('#portal-field');
-  const toggle = root.querySelector('#portal-motion');
   const main = root.querySelector('.home-main-card');
-  const demo = root.querySelector('#home-pearl-demo');
   const status = root.querySelector('#home-pearl-status');
   const cardButtons = [...root.querySelectorAll('[data-portal-card]')];
   let gallery, current = cards.findIndex(c => c.key === 'lotus');
+  let requested = current, selection = 0, transition;
   function mountGallery() {
     gallery?.dispose();
     const mainCard = main.querySelector('[data-pearl]');
     gallery = initPearlGallery(root, { onState(state, element) {
       if (element !== mainCard) return;
-      demo.disabled = state !== 'ready';
+      if (state === 'ready') gallery.demo(element);
       status.textContent = state === 'fallback' ? '光影暂不可用，仍可进入故事。' : state === 'ready' ? '移动光，慢慢看。轻触作品，走进故事。' : '原作已呈现，正在准备光影。';
     } });
   }
-  function select(index, updateURL = true) {
-    current = (index + cards.length) % cards.length;
-    const card = cards[current];
+  async function select(index, updateURL = true) {
+    requested = (index + cards.length) % cards.length;
+    const id = ++selection, nextIndex = requested, card = cards[nextIndex];
+    if (nextIndex === current) { status.textContent = '轻触作品，走进故事。'; return; }
+    const container = document.createElement('div');
+    container.innerHTML = pearlCard(card, { priority: true });
+    const incoming = container.firstElementChild;
+    status.textContent = `正在准备${card.title}，当前作品仍可观看。`;
+    try { await incoming.querySelector('img').decode(); }
+    catch {
+      if (id === selection) { requested = current; status.textContent = '这张作品暂未加载，请再次选择重试；当前作品仍可观看。'; }
+      return;
+    }
+    if (id !== selection) return;
+    transition?.cancel();
+    main.querySelector('.portal-outgoing')?.remove();
+    const outgoing = main.querySelector('[data-pearl]');
     gallery?.dispose();
-    main.innerHTML = pearlCard(card, { priority: true });
+    outgoing.removeAttribute('data-pearl');
+    outgoing.classList.add('portal-outgoing');
+    outgoing.setAttribute('aria-hidden', 'true');
+    main.append(incoming);
+    current = nextIndex;
     main.href = `flower-detail.html?key=${card.key}`;
     main.setAttribute('aria-label', `阅读${card.title}的故事`);
     root.querySelector('#portal-title').textContent = card.title;
@@ -39,29 +56,32 @@ export function initPortal(root) {
     root.querySelector('#portal-bloom').href = `flower-detail.html?key=${card.key}&view=bloom`;
     cardButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.portalCard === card.key)));
     if (updateURL) history.replaceState(null, '', `#${card.key}`);
-    if (!media.matches) main.animate([{ opacity: .35, transform: 'translateY(12px)' }, { opacity: 1, transform: 'translateY(0)' }], { duration: 420, easing: 'cubic-bezier(.16,1,.3,1)' });
+    if (media.matches) outgoing.remove();
+    else {
+      transition = incoming.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 320, easing: 'cubic-bezier(.16,1,.3,1)' });
+      transition.onfinish = () => outgoing.remove();
+    }
     mountGallery();
     wake();
   }
   cardButtons.forEach(button => listen(button, 'click', () => select(cards.findIndex(c => c.key === button.dataset.portalCard))));
-  listen(root.querySelector('#portal-previous'), 'click', () => select(current - 1));
-  listen(root.querySelector('#portal-next'), 'click', () => select(current + 1));
-  listen(demo, 'click', () => gallery.demo(main.querySelector('[data-pearl]')));
+  listen(root.querySelector('#portal-previous'), 'click', () => select(requested - 1));
+  listen(root.querySelector('#portal-next'), 'click', () => select(requested + 1));
 
-  let gl, program, buffer, frame = null, until = 0, visible = true, enabled = !media.matches, lost = false;
+  let gl, program, buffer, frame = null, until = 0, visible = true, lost = false;
   let mouse = [.63, .56], target = [...mouse], phase = 0;
   const locations = {};
   function draw(time) {
     frame = null;
     if (!gl || lost || document.hidden || !visible) return;
     mouse = mouse.map((n, i) => n + (target[i] - n) * .09);
-    phase += enabled && !media.matches ? .008 : 0;
+    phase += !media.matches ? .008 : 0;
     gl.viewport(0, 0, canvas.width, canvas.height);
     gl.uniform2f(locations.resolution, canvas.width, canvas.height);
     gl.uniform2f(locations.pointer, mouse[0], mouse[1]);
     gl.uniform1f(locations.phase, phase);
     gl.drawArrays(gl.TRIANGLES, 0, 6);
-    if (enabled && !media.matches && time < until) frame = requestAnimationFrame(draw);
+    if (!media.matches && time < until) frame = requestAnimationFrame(draw);
   }
   function wake() {
     if (!gl || lost || document.hidden || !visible) return;
@@ -70,14 +90,12 @@ export function initPortal(root) {
   }
   function resize() {
     const ratio = Math.min(devicePixelRatio || 1, 1.5);
-    canvas.width = Math.round(stage.clientWidth * ratio);
-    canvas.height = Math.round(stage.clientHeight * ratio);
-    wake();
-  }
-  function controls() {
-    toggle.disabled = !gl || lost || media.matches;
-    toggle.setAttribute('aria-pressed', String(enabled && !media.matches));
-    toggle.textContent = media.matches ? '静态光场' : !gl || lost ? '静态展厅' : enabled ? '暂停光场' : '开启光场';
+    const width = Math.round(stage.clientWidth * ratio), height = Math.round(stage.clientHeight * ratio);
+    if (canvas.width === width && canvas.height === height) return;
+    canvas.width = width; canvas.height = height;
+    // Resizing clears a canvas: repaint in this callback, before the browser presents it.
+    cancelAnimationFrame(frame); frame = null;
+    draw(performance.now());
   }
   try {
     gl = canvas.getContext('webgl', { alpha: false, antialias: false, depth: false, powerPreference: 'low-power' });
@@ -122,18 +140,17 @@ export function initPortal(root) {
   const observer = new IntersectionObserver(entries => { visible = entries[0].isIntersecting; if (visible) wake(); else { cancelAnimationFrame(frame); frame = null; } });
   observer.observe(stage);
   const sizes = new ResizeObserver(resize); sizes.observe(stage);
-  listen(stage, 'pointermove', event => { if (!enabled || media.matches) return; const rect = stage.getBoundingClientRect(); target = [(event.clientX - rect.left) / rect.width, 1 - (event.clientY - rect.top) / rect.height]; wake(); }, { passive: true });
-  listen(toggle, 'click', () => { enabled = !enabled; if (!enabled) { cancelAnimationFrame(frame); frame = null; } else wake(); controls(); });
-  listen(media, 'change', () => { enabled = !media.matches; cancelAnimationFrame(frame); frame = null; controls(); wake(); });
-  listen(canvas, 'webglcontextlost', () => { lost = true; cancelAnimationFrame(frame); frame = null; canvas.hidden = true; controls(); });
+  listen(stage, 'pointermove', event => { if (media.matches) return; const rect = stage.getBoundingClientRect(); target = [(event.clientX - rect.left) / rect.width, 1 - (event.clientY - rect.top) / rect.height]; wake(); }, { passive: true });
+  listen(media, 'change', () => { transition?.finish(); cancelAnimationFrame(frame); frame = null; wake(); });
+  listen(canvas, 'webglcontextlost', () => { lost = true; cancelAnimationFrame(frame); frame = null; canvas.hidden = true; });
   listen(document, 'visibilitychange', () => { if (document.hidden) { cancelAnimationFrame(frame); frame = null; } else wake(); });
   listen(window, 'pagehide', event => {
     cancelAnimationFrame(frame); frame = null;
     if (event.persisted) return;
-    gallery?.dispose(); observer.disconnect(); sizes.disconnect(); events.abort(); gl?.deleteBuffer(buffer); gl?.deleteProgram(program);
+    selection++; transition?.cancel(); gallery?.dispose(); observer.disconnect(); sizes.disconnect(); events.abort(); gl?.deleteBuffer(buffer); gl?.deleteProgram(program);
   });
   listen(window, 'pageshow', () => wake());
-  controls();
   const restored = cards.findIndex(c => `#${c.key}` === location.hash);
-  if (restored !== -1) select(restored, false); else mountGallery();
+  mountGallery();
+  if (restored !== -1) select(restored, false);
 }
