@@ -152,10 +152,10 @@ function bindCreation() {
   const section = document.querySelector('.detail-creation');
   if (!section) return;
   const markers = [...section.querySelectorAll('.creation-marker')];
-  const items = [...section.querySelectorAll('.creation-legend li')];
+  const items = [...section.querySelectorAll('.creation-legend button')];
   const setActive = id => {
-    markers.forEach(m => m.classList.toggle('active', m.dataset.creationMarker === id));
-    items.forEach(li => li.classList.toggle('active', li.dataset.creationStep === id));
+    markers.forEach(m => { const active = m.dataset.creationMarker === id; m.classList.toggle('active', active); m.setAttribute('aria-pressed', String(active)); });
+    items.forEach(button => { const active = button.dataset.creationStep === id; button.closest('li').classList.toggle('active', active); button.setAttribute('aria-pressed', String(active)); });
     const note = section.querySelector('.creation-note');
     const current = creationBlocks[card.key]?.markers.find(m => m.id === id);
     if (note && current) {
@@ -164,10 +164,7 @@ function bindCreation() {
     }
   };
   markers.forEach(m => m.addEventListener('click', () => setActive(m.dataset.creationMarker)));
-  items.forEach(li => {
-    li.addEventListener('click', () => setActive(li.dataset.creationStep));
-    li.addEventListener('focus', () => setActive(li.dataset.creationStep));
-  });
+  items.forEach(button => button.addEventListener('click', () => setActive(button.dataset.creationStep)));
   if (markers.length) setActive(markers[0].dataset.creationMarker);
 }
 
@@ -180,10 +177,15 @@ function render() {
   app.innerHTML = `
     ${siteHeader('flower-detail', card.key)}
     <main id="main" class="visitor-main">
-      <a class="detail-back" href="./catalogue.html">← 返回五花图录</a>
+      <a class="detail-back" href="./catalogue.html"><span class="arrow-north arrow-left" aria-hidden="true"></span>返回五花图录</a>
       <div id="collection-notice"></div>
 
       <section class="detail-opening" aria-label="看见作品">
+        <header class="detail-heading">
+          <p class="work-position">${no} / 05</p>
+          <h1>${card.title}</h1>
+          <p class="flower-english">${card.english}</p>
+        </header>
         <div class="flower-exhibit" aria-label="${card.title}展台">
           <div class="detail-stage">
             <div id="detail-artwork" class="detail-media detail-artwork">
@@ -221,9 +223,6 @@ function render() {
           </aside>
         </div>
         <aside class="flower-intro" aria-label="${card.title}简介">
-          <p class="work-position">${no} / 05</p>
-          <h1>${card.title}</h1>
-          <p class="flower-english">${card.english}</p>
           <p class="flower-lead">${card.description}</p>
           <div class="intro-actions"><button id="collect-btn" type="button">收藏这朵花</button><a href="#origin-title">读作品故事</a></div><p id="collection-status" role="status" aria-live="polite" class="save-status"></p>
 
@@ -254,13 +253,13 @@ function render() {
           <div class="creation-stage">
             <img src="${card.artworkImage}" alt="${card.title}纹样结构标注图" width="987" height="1407">
             <span class="creation-axis" aria-hidden="true"></span>
-            ${creation.markers.map(m => `<button type="button" class="creation-marker" data-creation-marker="${m.id}" style="--x:${m.x}%;--y:${m.y}%" aria-label="${m.name}">${creation.markers.indexOf(m) + 1}</button>`).join('')}
+            ${creation.markers.map(m => `<button type="button" class="creation-marker" data-creation-marker="${m.id}" style="--x:${m.x}%;--y:${m.y}%" aria-label="${m.name}" aria-pressed="false" aria-controls="creation-note">${creation.markers.indexOf(m) + 1}</button>`).join('')}
           </div>
           <div class="creation-side">
             <ol class="creation-legend">
-              ${creation.markers.map(m => `<li data-creation-step="${m.id}" tabindex="0">${m.name}<span aria-hidden="true"></span></li>`).join('')}
+              ${creation.markers.map(m => `<li><button type="button" data-creation-step="${m.id}" aria-pressed="false" aria-controls="creation-note">${m.name}</button></li>`).join('')}
             </ol>
-            <p class="creation-note" role="status"></p>
+            <p id="creation-note" class="creation-note" role="status"></p>
             <p class="creation-color">${creation.color}</p>
 
             <p class="creation-note-final quiet">${creation.note}</p>
@@ -280,7 +279,7 @@ function render() {
           <a href="./catalogue.html">浏览全部五朵花</a>
         </div>
         <p class="memory-note quiet">收藏保存在当前浏览器，不会跨设备同步。</p>
-        <details class="optional-scan"><summary>有实体花卡？</summary><p>实体卡识别成功后记入花册的“扫描相遇”；实体卡追踪仍待真机验收。</p><a href="${scanURL(card.key, {from:'detail'})}">进入扫描准备页 →</a></details>
+        <details class="optional-scan"><summary>有实体花卡？</summary><p>实体卡识别成功后记入花册的“扫描相遇”；实体卡追踪仍待真机验收。</p><a href="${scanURL(card.key, {from:'detail'})}">进入扫描准备页 <span class="arrow-north arrow-right" aria-hidden="true"></span></a></details>
       </section>
     </main>
     ${siteFooter()}

@@ -45,13 +45,19 @@ try{
   check(`${width}: original view does not load Three or model`,!requests.some(u=>/three\.module|model-viewer|\.glb/.test(u))&&await page.locator('#detail-original').isVisible());
   await page.goto(`${base}/flower-detail.html?key=lotus`);
   check(`${width}: stable artwork is the default view`,await page.locator('[data-exhibit-view=artwork]').getAttribute('aria-pressed')==='true'&&await page.locator('#detail-artwork').isVisible()&&await page.locator('#detail-pearl').isHidden());
-  if(width===1280){await page.locator('.creation-marker[data-creation-marker=vase]').click();check(`${width}: creation annotations explain structure`,await page.locator('.creation-legend li').count()===4&&(await page.locator('.creation-note').textContent()).includes('瓶'));}
+  if(width===1280){const note=await page.locator('.creation-note').textContent();await page.locator('.creation-legend button[data-creation-step=vase]').focus();check('Annotation focus alone preserves the chosen explanation',await page.locator('.creation-note').textContent()===note);await page.keyboard.press('Enter');check('Annotation keyboard activation reports the selected state',await page.locator('.creation-legend button[data-creation-step=vase]').getAttribute('aria-pressed')==='true'&&await page.locator('.creation-marker[data-creation-marker=vase]').getAttribute('aria-pressed')==='true');check(`${width}: creation annotations explain structure`,await page.locator('.creation-legend li').count()===4&&(await page.locator('.creation-note').textContent()).includes('瓶'));}
   await page.goto(`${base}/flower-detail.html?key=lotus&view=original`);
-  check(`${width}: title and primary actions are discoverable without header overlap`,await page.locator('.flower-intro h1').evaluate(e=>{const r=e.getBoundingClientRect();return r.top>=document.querySelector('.site-header').getBoundingClientRect().bottom&&r.top<innerHeight;})&&await page.locator('#collect-btn').isVisible()&&await page.getByText('更多观看方式',{exact:true}).count()===1);
+  check(`${width}: title and primary actions are discoverable without header overlap`,await page.locator('.detail-heading h1').evaluate(e=>{const r=e.getBoundingClientRect();return r.top>=document.querySelector('.site-header').getBoundingClientRect().bottom&&r.top<innerHeight;})&&await page.locator('#collect-btn').isVisible()&&await page.getByText('更多观看方式',{exact:true}).count()===1);
   check(`${width}: model and story use responsive layout`,await page.evaluate(()=>{
-   const a=document.querySelector('.flower-exhibit').getBoundingClientRect(),b=document.querySelector('.flower-intro').getBoundingClientRect();
-   return innerWidth<=700?a.top>=b.bottom:b.left>=a.right&&Math.abs(a.top-b.top)<2;
+   const a=document.querySelector('.flower-exhibit').getBoundingClientRect(),b=document.querySelector('.flower-intro').getBoundingClientRect(),h=document.querySelector('.detail-heading').getBoundingClientRect();
+   return innerWidth<=700?h.bottom<=a.top&&a.bottom<=b.top:h.left>=a.right&&b.left>=a.right&&b.top>=h.bottom;
   }));
+  check(`${width}: scan navigation remains a full touch target`,await page.locator('.scan-nav').evaluate(e=>{const r=e.getBoundingClientRect();return r.width>=44&&r.height>=44;}));
+  if(width<701){
+   await page.locator('.detail-back').focus();const tops=[];
+   for(let i=0;i<5;i++){await page.keyboard.press('Tab');tops.push(await page.evaluate(()=>document.activeElement.getBoundingClientRect().top+scrollY));}
+   check(`${width}: keyboard follows the mobile reading direction`,tops.every((y,i)=>i===0||y>=tops[i-1]-2));
+  }
   check(`${width}: original, story and observation belong to same flower`,await page.locator('.flower-story p').textContent()===cards.find(c=>c.key==='lotus').story&&(await page.locator('.flower-observation p').textContent()).includes('两侧圆叶'));
   await screenshot(page,`${width}-original`);
   const initialHeight=await page.locator('.detail-stage').evaluate(e=>e.getBoundingClientRect().height);

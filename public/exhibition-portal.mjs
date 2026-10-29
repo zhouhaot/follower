@@ -53,6 +53,7 @@ export function initPortal(root) {
     root.querySelector('#portal-artwork').textContent = `纹样原型 ·《${card.artwork}》`;
     root.querySelector('#portal-description').textContent = card.trait || card.description;
     root.querySelector('#portal-enter').href = main.href;
+    root.querySelector('#portal-start').href = main.href;
     root.querySelector('#portal-number').textContent = `${String(current + 1).padStart(2, '0')} / 05`;
     root.querySelector('#portal-bloom').href = `flower-detail.html?key=${card.key}&view=bloom`;
     cardButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.portalCard === card.key)));

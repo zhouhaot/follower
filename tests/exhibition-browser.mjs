@@ -14,8 +14,9 @@ try {
   await context.addInitScript(()=>{window.fieldDraws=0;const fn=WebGLRenderingContext.prototype.drawArrays;WebGLRenderingContext.prototype.drawArrays=function(...args){window.fieldDraws++;return fn.apply(this,args)}});
   const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
   await page.goto(base);await page.waitForSelector('#portal-field[data-field-state=ready]');
+  check(`${width}: current work and story entry share one group`,await page.locator('.portal-detail #portal-enter').count()===1);
   await page.locator('[data-portal-card=peony]').click();await page.waitForFunction(()=>document.querySelector('#portal-title').textContent==='牡丹承瑞');
-  check(`${width}: select work updates artwork, name, link and URL`,await page.locator('#portal-title').textContent()==='牡丹承瑞'&&(await page.locator('.home-main-card').getAttribute('href')).includes('key=peony')&&(await page.locator('.home-main-card [data-pearl]').getAttribute('data-pearl'))==='peony'&&new URL(page.url()).hash==='#peony');
+  check(`${width}: select work updates artwork, name, link and URL`,await page.locator('#portal-title').textContent()==='牡丹承瑞'&&(await page.locator('.home-main-card').getAttribute('href')).includes('key=peony')&&(await page.locator('#portal-start').getAttribute('href')).includes('key=peony')&&(await page.locator('#portal-enter').getAttribute('href')).includes('key=peony')&&(await page.locator('.home-main-card [data-pearl]').getAttribute('data-pearl'))==='peony'&&new URL(page.url()).hash==='#peony');
   await page.reload();await page.waitForFunction(()=>document.querySelector('#portal-title').textContent==='牡丹承瑞');
   check(`${width}: refresh restores selected work`,await page.locator('[data-portal-card=peony]').getAttribute('aria-pressed')==='true');
   await page.getByRole('button',{name:'下一张作品',exact:true}).click();await page.waitForFunction(()=>document.querySelector('#portal-title').textContent==='菊影流金');check(`${width}: next button advances to matching work`,await page.locator('#portal-title').textContent()==='菊影流金');
@@ -31,6 +32,7 @@ try {
   const promise=page.waitForEvent('download');await page.getByRole('button',{name:'下载花册备份 JSON',exact:true}).click();const download=await promise,text=await readFile(await download.path(),'utf8'),data=JSON.parse(text);
   check(`${width}: downloaded backup contains active collection and browsing`,data.version===3&&data.data.collections[0].key==='lotus'&&data.data.recentViews[0].key==='lotus');
   const target=await browser.newContext({viewport:{width,height:844},acceptDownloads:true});const restore=await target.newPage();restore.on('pageerror',e=>errors.push(e.message));await restore.goto(`${base}/backup.html`);
+  check(`${width}: backup begins with no empty preview or premature confirmation`,await restore.locator('.business-preview').isHidden()&&await restore.locator('.backup-confirm').isHidden()&&await restore.getByRole('button',{name:'下载花册备份 JSON',exact:true}).isVisible());
   const choose=async(text,name='album.json')=>{await restore.locator('#backup-file').setInputFiles({name,mimeType:'application/json',buffer:Buffer.from(text)})};
   await choose(text);await restore.waitForFunction(()=>document.querySelector('.business-preview').textContent.includes('预检通过'));
   check(`${width}: preview does not write and commit needs consent`,await restore.evaluate(k=>localStorage.getItem(k)===null,key)&&await restore.getByRole('button',{name:'确认合并到本机花册',exact:true}).isDisabled());

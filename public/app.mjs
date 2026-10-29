@@ -8,7 +8,7 @@ const page=document.body.dataset.page;
 const params=new URLSearchParams(location.search);
 const selected=cardByKey(params.get('card')||'lotus');
 const no=(c)=>String(cards.indexOf(c)+1).padStart(2,'0');
-const meta=(eyebrow,title,sub='')=>`<div class="page-heading"><p class="eyebrow">${eyebrow}</p><h1>${title}</h1>${sub?`<p class="lead">${sub}</p>`:''}</div>`;
+const meta=(eyebrow,title,sub='')=>`<div class="page-heading"><h1>${title}</h1>${sub?`<p class="lead">${sub}</p>`:''}</div>`;
 const cardMarkup=(c,i)=>`<article class="catalogue-card"><a href="flower-detail.html?key=${c.key}" class="card-image"><span class="card-index">${no(c)} / 05</span><img src="${c.image}" alt="${c.title}花卡原作正面" loading="lazy" width="1100" height="1881"><span class="card-view">观赏花卡 ${arrow}</span></a><a class="card-name" href="flower-detail.html?key=${c.key}"><h3>${c.title}</h3>${arrow}</a><p>《${c.artwork}》</p></article>`;
 function home(){const featured=cardByKey('lotus');return `<main id="main">
 <section class="home-exhibition portal-stage" aria-labelledby="home-title">
@@ -16,7 +16,7 @@ function home(){const featured=cardByKey('lotus');return `<main id="main">
   <div class="portal-wordmark home-introduction">
     <h1 id="home-title"><span>花开</span><span>有声</span></h1>
     <p class="home-description">五种花卉纹样，一场数字展览。</p>
-    <p class="portal-hint">从石刻的线条，走进光的形状。</p><div class="home-start"><a id="portal-enter" class="pill-link" href="flower-detail.html?key=lotus">开始观展 ${arrow}</a><a class="text-link" href="catalogue.html">浏览图录 ${arrow}</a></div>
+    <p class="portal-hint">从石刻的线条，走进光的形状。</p><div class="portal-quick-links"><a id="portal-start" class="text-link" href="flower-detail.html?key=lotus">开始观展 ${arrow}</a><a class="text-link" href="catalogue.html">浏览图录 ${arrow}</a></div>
   </div>
   <figure class="home-featured">
     <a class="home-main-card" href="flower-detail.html?key=lotus" aria-label="阅读清荷入梦的故事">${pearlCard(featured,{priority:true})}</a>
@@ -28,8 +28,11 @@ function home(){const featured=cardByKey('lotus');return `<main id="main">
     <p id="portal-artwork">纹样原型 ·《${featured.artwork}》</p>
     <p id="portal-description">${featured.trait}</p>
 
+    <div class="portal-actions">
+      <div class="home-start"><a id="portal-enter" class="pill-link" href="flower-detail.html?key=lotus">读作品故事 ${arrow}</a></div>
+      <div class="portal-arrows"><button id="portal-previous" aria-label="上一张作品" type="button"><span class="arrow-north arrow-left" aria-hidden="true"></span></button><button id="portal-next" aria-label="下一张作品" type="button"><span class="arrow-north arrow-right" aria-hidden="true"></span></button></div>
+    </div>
     <a id="portal-bloom" class="text-link" href="flower-detail.html?key=lotus&view=bloom">观赏三维花朵 ${arrow}</a>
-    <div class="portal-arrows"><button id="portal-previous" aria-label="上一张作品" type="button"><span class="arrow-north arrow-left" aria-hidden="true"></span></button><button id="portal-next" aria-label="下一张作品" type="button"><span class="arrow-north arrow-right" aria-hidden="true"></span></button></div>
   </div>
   <div class="portal-selector" role="group" aria-label="选择展览作品">${cards.map((c,i)=>`<button type="button" data-portal-card="${c.key}" aria-pressed="${c.key==='lotus'}"><span>${String(i+1).padStart(2,'0')}</span>${c.title}</button>`).join('')}</div>
   <a class="home-more" href="#catalogue">继续浏览五张花卡 <span class="arrow-north arrow-right" aria-hidden="true"></span></a>
@@ -62,7 +65,7 @@ function preview(){
 function scan(){const q=requestFor(location.search);if(!q.card)return invalid();return `<main id="main" class="scan-page"><a class="back-link" id="scan-back" href="${q.returnURL}">← 返回上一页</a><div class="scan-layout"><section class="scan-instructions"><p class="eyebrow">ENCOUNTER / 扫描花卡</p><h1>${q.card.title}</h1><nav class="scan-card-picker" aria-label="选择要扫描的花卡">${cards.map(c=>`<a href="${scanURL(c.key,{from:q.from,backCard:q.backCard})}" ${c.key===q.card.key?'aria-current="true"':''}>${c.title}</a>`).join('')}</nav><p class="lead">让花，从卡片上浮起。</p><p>将完整花卡放入取景框，保持光线均匀。识别成功会记录在花册的“扫描相遇”中。喜欢这朵花，也可以在详情页主动收藏。</p><div class="scan-notice"><span>候选体验</span>五款各自的图像目标与三维花卉已接入。只识别当前选中的花卡；实体卡追踪仍待逐款真机验证。</div><div class="scan-controls"><button id="start-scan" class="pill-link">${icon} 开启相机</button><button id="retry-scan" class="pill-link" hidden>重新尝试</button><button id="stop-scan" class="text-button" hidden>关闭相机</button></div><a id="scan-preview" class="text-link" href="preview.html?card=${q.card.key}">先看无需相机的预览 ${arrow}</a><p class="small quiet">相机仅在你点击后开启，画面在设备上处理。离开页面即关闭。</p></section><section class="scan-view"><div id="scan-stage"><div class="scan-placeholder">${icon}<span>等待你开启相机</span></div><div class="viewfinder" aria-hidden="true"></div></div><p id="scan-status" role="status" aria-live="polite">准备好实体花卡后，点击开启相机。</p></section></div></main>`}
 function invalid(){return `<main id="main" class="error-page">${meta('404 / 未找到花卡','这朵花，<br>还未出现在图录。','请从完整图录中选择一张花卡。')}<a href="catalogue.html" class="pill-link">返回五花图录 →</a></main>`}
 function journey(){return '<main id="main" class="light-page"><section class="page-wrap"><div class="page-heading"><h1>按自己的节奏，<br><em>看完这一程。</em></h1><p class="lead">安排花卡顺序，留下本机导览进度。</p></div><div id="business-root" class="business-root"></div></section></main>'}
-function backup(){return '<main id="main" class="light-page"><section class="page-wrap"><div class="page-heading"><h1>把记录，<br><em>妥善留存。</em></h1><p class="lead">备份、预检、合并与撤销，都在本机完成。</p></div><div id="business-root" class="business-root"></div></section></main>'}
+function backup(){return '<main id="main" class="light-page backup-page"><section class="page-wrap"><div class="page-heading"><h1>备份与恢复花册</h1><p class="lead">下载一份备份，或从已有文件恢复。所有操作都在本机完成。</p></div><div id="business-root" class="business-root"></div></section></main>'}
 const renderers={home,catalogue,work,collection,guide,preview,scan,journey,backup};
 function mount(content){$('#app').innerHTML=content.replaceAll('↗','<span class="arrow-north" aria-hidden="true"></span>').replaceAll('→','<span class="arrow-north arrow-right" aria-hidden="true"></span>').replaceAll('←','<span class="arrow-north arrow-left" aria-hidden="true"></span>')}
 mount(siteHeader(page,selected?.key||'lotus')+(renderers[page]||invalid)()+siteFooter());

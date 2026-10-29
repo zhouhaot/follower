@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-29T06:38:34.893940+00:00",
+  "generatedAt": "2026-10-29T07:43:28.786127+00:00",
   "title": "Design System: 花开有声 · 沉浸式光场数字艺术展",
   "extensions": {
     "colorMeta": {
@@ -223,17 +223,17 @@
       "name": "主要故事入口",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "主入口，保持原生链接语义。",
-      "html": "<a class=\"ds-primary\" href=\"#story\">开始观展 →</a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;min-height:48px;padding:10px 24px;border:0;border-radius:3px;background:var(--signal,#c5e6c2);color:var(--room,#0b1426);font-size:15px;text-decoration:none;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-primary:hover{background:#e0f2de}.ds-primary:focus-visible{outline:2px solid #e0cea3;outline-offset:5px}"
+      "description": "当前作品信息区的故事主按钮；展名区另有“开始观展”文字快捷入口，两者与作品切换同步并保留原生链接语义。",
+      "html": "<a class=\"ds-primary\" href=\"#story\">读作品故事 →</a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;min-height:48px;padding:10px 24px;border:0;border-radius:3px;background:var(--signal,#c5e6c2);color:var(--room,#0b1426);font-size:15px;text-decoration:none;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-primary:hover{background:#e0f2de}.ds-primary:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}"
     },
     {
       "name": "珠光工具",
       "kind": "button",
       "refersTo": "pearl-button",
-      "description": "首页工具；没有模拟图形功能。",
+      "description": "详情的珠光工具；示例没有模拟图形功能。",
       "html": "<button class=\"ds-pearl\">演示光影</button>",
-      "css": ".ds-pearl{min-height:44px;padding:8px 14px;border:1px solid var(--rule,#8196b54d);border-radius:3px;background:transparent;color:var(--soft,#b9c9d7);font-size:12px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-pearl:hover{background:var(--signal,#c5e6c2);color:var(--room,#0b1426)}.ds-pearl:disabled{opacity:.5;cursor:default}.ds-pearl:focus-visible{outline:2px solid #e0cea3;outline-offset:5px}"
+      "css": ".ds-pearl{min-height:44px;padding:8px 14px;border:1px solid var(--rule,#8196b54d);border-radius:3px;background:transparent;color:var(--soft,#b9c9d7);font-size:12px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-pearl:hover{background:var(--signal,#c5e6c2);color:var(--room,#0b1426)}.ds-pearl:disabled{opacity:.5;cursor:default}.ds-pearl:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}"
     },
     {
       "name": "共享文字导航",
@@ -249,23 +249,23 @@
       "refersTo": "work-selector",
       "description": "选中态以顶线和文字表示；示例只展示状态。",
       "html": "<div class=\"ds-track\" role=\"group\" aria-label=\"作品选择\"><button aria-pressed=\"true\"><span>04</span> 清荷入梦</button><button aria-pressed=\"false\"><span>05</span> 下一件作品</button></div>",
-      "css": ".ds-track{display:flex;border-top:1px solid var(--rule,#8196b54d);font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-track button{display:flex;align-items:center;gap:12px;min-height:64px;padding:12px 10px;border:0;border-top:2px solid transparent;background:none;color:var(--soft,#b9c9d7);font-size:14px}.ds-track span{font-size:11px;font-variant-numeric:tabular-nums}.ds-track [aria-pressed=true]{border-top-color:var(--signal,#c5e6c2);color:var(--text,#f0f3ed)}.ds-track button:hover{color:var(--signal,#c5e6c2)}.ds-track button:focus-visible{outline:2px solid #e0cea3;outline-offset:5px}"
+      "css": ".ds-track{display:flex;border-top:1px solid var(--rule,#8196b54d);font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-track button{display:flex;align-items:center;gap:12px;min-height:64px;padding:12px 10px;border:0;border-top:2px solid transparent;background:none;color:var(--soft,#b9c9d7);font-size:14px}.ds-track span{font-size:11px;font-variant-numeric:tabular-nums}.ds-track [aria-pressed=true]{border-top-color:var(--signal,#c5e6c2);color:var(--text,#f0f3ed)}.ds-track button:hover{color:var(--signal,#c5e6c2)}.ds-track button:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}"
     },
     {
       "name": "图录收藏",
       "kind": "button",
       "refersTo": "collect-button",
       "description": "图录收藏默认态；动作需实际存储逻辑。",
-      "html": "<button class=\"ds-collect\">收藏</button>",
-      "css": ".ds-collect{min-height:44px;padding:7px 14px;border:1px solid var(--rule,#8196b54d);border-radius:3px;background:transparent;color:var(--signal,#c5e6c2);font-size:13px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-collect:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}"
+      "html": "<button class=\"ds-collect\" aria-pressed=\"false\">收藏</button>",
+      "css": ".ds-collect{min-height:44px;padding:7px 14px;border:1px solid var(--rule,#8196b54d);border-radius:3px;background:transparent;color:var(--signal,#c5e6c2);font-size:13px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-collect:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}.ds-collect:hover{border-color:var(--signal,#c5e6c2);background:var(--room-panel,#142139);color:var(--signal,#c5e6c2)}"
     },
     {
       "name": "已收藏状态",
       "kind": "button",
       "refersTo": "collect-button-selected",
-      "description": "图录选中态，不代替真实收藏记录。",
+      "description": "图录与详情共用的选中色态；图录示例不代替真实收藏记录。",
       "html": "<button class=\"ds-collected\" aria-pressed=\"true\">已收藏</button>",
-      "css": ".ds-collected{min-height:44px;padding:7px 14px;border:1px solid var(--signal,#c5e6c2);border-radius:3px;background:var(--signal,#c5e6c2);color:var(--room,#0b1426);font-size:13px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-collected:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}"
+      "css": ".ds-collected{min-height:44px;padding:7px 14px;border:1px solid var(--signal,#c5e6c2);border-radius:3px;background:var(--signal,#c5e6c2);color:var(--room,#0b1426);font-size:13px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-collected:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}.ds-collected:hover{background:#e0f2de;color:var(--room,#0b1426)}"
     },
     {
       "name": "图录作品容器",
@@ -279,9 +279,9 @@
       "name": "备份动作",
       "kind": "button",
       "refersTo": "backup-action",
-      "description": "保留现有较高优先级浅色动作样式。",
+      "description": "导出和预检确认使用的主要动作；恢复确认仅在有效预检有新增记录后展示。",
       "html": "<button class=\"ds-backup\">下载花册备份 JSON</button>",
-      "css": ".ds-backup{min-height:44px;padding:8px 18px;border:1px solid #76856a;border-radius:3px;background:#dfe3d6;color:#24351d;font-size:14px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-backup:hover{background:#d2d9c5}.ds-backup:focus-visible{outline:2px solid #466b35;outline-offset:5px}"
+      "css": ".ds-backup{min-height:48px;padding:8px 18px;border:1px solid var(--signal,#c5e6c2);border-radius:3px;background:var(--signal,#c5e6c2);color:var(--room,#0b1426);font-size:14px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-backup:hover:not(:disabled){background:#e0f2de}.ds-backup:disabled{background:var(--room-panel,#142139);color:var(--soft,#b9c9d7);border-color:var(--rule,#8196b54d);opacity:.6}.ds-backup:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}@media(max-width:700px){.ds-backup{padding:12px 16px;width:100%}}"
     },
     {
       "name": "备份文件输入",
@@ -289,12 +289,12 @@
       "refersTo": "backup-file",
       "description": "浏览器原生文件选择；示例不处理文件。",
       "html": "<label class=\"ds-file-label\" for=\"ds-backup-file\">选择花册备份文件</label><input class=\"ds-file\" id=\"ds-backup-file\" type=\"file\" accept=\".json,application/json\">",
-      "css": ".ds-file-label{display:block;color:var(--text,#f0f3ed);font-size:15px;margin:14px 0 7px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-file{min-height:44px;width:100%;max-width:500px;padding:10px 12px;border:1px solid #7d8c70;border-radius:3px;background:#f9faf3;color:#24351d;font-size:16px;accent-color:var(--signal,#c5e6c2);caret-color:var(--signal,#c5e6c2);font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-file:focus-visible{outline:2px solid #466b35;outline-offset:3px}"
+      "css": ".ds-file-label{display:block;color:var(--text,#f0f3ed);font-size:15px;margin:14px 0 7px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-file{min-height:44px;width:100%;max-width:500px;padding:10px 12px;border:1px solid var(--rule,#8196b54d);border-radius:3px;background:var(--room-deep,#070f1e);color:var(--text,#f0f3ed);color-scheme:dark;font-size:16px;accent-color:var(--signal,#c5e6c2);caret-color:var(--signal,#c5e6c2);font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-file:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}.ds-file::file-selector-button{font:inherit;min-height:36px;padding:4px 12px;margin-right:12px;border:0;border-radius:3px;background:var(--room-panel,#142139);color:var(--text,#f0f3ed);cursor:pointer}"
     }
   ],
   "narrative": {
     "northStar": "深靛蓝中的光场花园",
-    "overview": "以深靛蓝空间承托完整花卉原作，冷白文字负责阅读，青绿提示负责方向。大标题、平直控件与文字导航构成稳定界面，作品保留自己的全部色彩。光场由代码生成，珠光随观察动作变化；内容与入口始终独立于图形增强。\n\n本记录从当前代码提取，替换旧版深绿纸卡世界；适用首页、图录、详情、花册、备份与共享导航。它记录视觉实现，不代表正式部署、真实用户试用或实体扫描验收。首页构图策略以 surface brief 为准，不扩大为每页必须使用全屏光场。",
+    "overview": "以深靛蓝空间承托完整花卉原作，冷白文字负责阅读，青绿提示负责方向。大标题、平直控件与文字导航构成稳定界面，作品保留自己的全部色彩。光场由代码生成，珠光随观察动作变化；内容与入口始终独立于图形增强。\n\n本记录从当前代码提取，延续已确认的深靛蓝光场体系；本轮精修入口层级、详情阅读顺序、收藏状态与备份操作，适用首页、图录、详情、花册、备份与共享导航。它记录视觉实现，不代表正式部署、真实用户试用或实体扫描验收。首页构图策略以 surface brief 为准，不扩大为每页必须使用全屏光场。",
     "keyCharacteristics": [
       "深靛蓝空间、冷白正文、青绿方向提示。",
       "完整原作先呈现；图形失败仍可阅读和进入故事。",
