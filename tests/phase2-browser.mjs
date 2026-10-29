@@ -7,7 +7,7 @@ assert.ok(['127.0.0.1','localhost','[::1]'].includes(new URL(base).hostname), 'L
 const output = path.resolve(process.env.PHASE2_QA_OUTPUT || 'reports/qa/phase2');
 await mkdir(output,{recursive:true});
 const report={date:new Date().toISOString(),scope:'Scripted simulated first-visit walkthrough; no human participants; isolated synthetic local storage; no camera access.',checks:[],errors:[],screenshots:[]};
-const browser=await chromium.launch({headless:true,executablePath:process.env.AUDIT_CHROMIUM || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+const browser=await chromium.launch({headless:true,...(process.env.AUDIT_CHROMIUM || process.platform==='darwin' ? {executablePath:process.env.AUDIT_CHROMIUM || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'} : {})});
 report.browser=browser.version();
 function check(name,pass,detail){report.checks.push({name,pass:!!pass,...(detail===undefined?{}:{detail})});console.log(`${pass?'PASS':'FAIL'} ${name}`);}
 async function snapshot(page,name,fullPage=true){

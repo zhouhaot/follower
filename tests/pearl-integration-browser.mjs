@@ -6,7 +6,7 @@ import {cards} from '../public/cards.mjs';
 const base=process.env.AUDIT_URL||'http://127.0.0.1:4173';assert.ok(['localhost','127.0.0.1'].includes(new URL(base).hostname));
 const output=process.env.PEARL_QA_OUTPUT||'reports/qa/pearl-integration-20261023/first';await mkdir(output,{recursive:true});
 const report={checks:[],errors:[],performance:[],scope:'Local Chrome, desktop and emulated touch. No physical phone/GPU guarantee.'};
-const browser=await chromium.launch({headless:true,executablePath:process.env.AUDIT_CHROMIUM||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+const browser=await chromium.launch({headless:true,...(process.env.AUDIT_CHROMIUM || process.platform==='darwin' ? {executablePath:process.env.AUDIT_CHROMIUM || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'} : {})});
 const check=(name,pass,detail)=>{report.checks.push({name,pass:!!pass,...(detail===undefined?{}:{detail})});console.log(`${pass?'PASS':'FAIL'} ${name}`);};
 const hash=b=>createHash('sha256').update(b).digest('hex');
 async function frames(page,n=8){await page.evaluate(async n=>{for(let i=0;i<n;i++)await window.__frame();},n);}

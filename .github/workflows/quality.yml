@@ -1,0 +1,50 @@
+name: Product quality
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - name: Browser regression against build output
+        env:
+          PHASE1_QA_OUTPUT: reports/quality-current/phase1
+          PHASE2_QA_OUTPUT: reports/quality-current/phase2
+          DETAIL_QA_OUTPUT: reports/quality-current/detail
+          PEARL_QA_OUTPUT: reports/quality-current/pearl
+          QUALITY_QA_OUTPUT: reports/quality-current/core
+        run: |
+          python3 scripts/serve-local.py dist 4173 > /tmp/follower-preview.log 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid"' EXIT
+          for attempt in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:4173/version.json; then break; fi
+            sleep 1
+          done
+          curl --fail --silent http://127.0.0.1:4173/version.json > reports/quality-version.json
+          npm run test:phase1-ui
+          npm run test:phase2-ui
+          npm run test:detail-ui
+          npm run test:pearl-ui
+          npm run test:quality-ui
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: quality-${{ github.sha }}
+          path: |
+            reports/quality-current/
+            reports/quality-version.json
+          retention-days: 14

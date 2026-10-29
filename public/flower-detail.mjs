@@ -91,8 +91,8 @@ function updateAudioUI() {
   }
   const state = audioPlayer.getState();
   audioBtn.disabled = false;
-  audioBtn.textContent = state === 'playing' ? '暂停解说' : '听设计解说';
-  audioStatus.textContent = { ready: '合成语音 · 约 74 秒', playing: '播放中', paused: '已暂停，完整文字在下方' }[state] || '';
+  audioBtn.textContent = state === 'error' ? '重试解说' : state === 'playing' ? '暂停解说' : '听设计解说';
+  audioStatus.textContent = { ready: 'AI 合成语音 · 约 74 秒', playing: '播放中 · AI 合成语音', paused: '已暂停，完整文字在下方', error: '音频加载失败，可重试或阅读下方完整解说。' }[state] || '';
 }
 
 function toggleNarration() {
@@ -294,6 +294,7 @@ function render() {
 
 // 页面卸载时清理
 window.addEventListener('pagehide', event => {
+  audioPlayer?.pause();
   if (event.persisted) return;
   exhibit?.dispose();
   audioPlayer?.dispose();

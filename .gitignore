@@ -4,3 +4,7 @@ dist/
 work/
 *.log
 .DS_Store
+
+# Current QA output is retained locally and uploaded as CI artifacts.
+/reports/quality-*/
+/reports/quality-version.json

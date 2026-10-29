@@ -9,7 +9,7 @@ assert.ok(['127.0.0.1','localhost','[::1]'].includes(new URL(base).hostname),'Lo
 const output=path.resolve(process.env.DETAIL_QA_OUTPUT||'reports/qa/detail-experience-20261023');
 await mkdir(output,{recursive:true});
 const report={date:new Date().toISOString(),scope:'Isolated local Chrome. Desktop and emulated touch layouts; no real phone, camera, audio, or human participant.',checks:[],errors:[],screenshots:[]};
-const browser=await chromium.launch({headless:true,executablePath:process.env.AUDIT_CHROMIUM||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+const browser=await chromium.launch({headless:true,...(process.env.AUDIT_CHROMIUM || process.platform==='darwin' ? {executablePath:process.env.AUDIT_CHROMIUM || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'} : {})});
 report.browser=browser.version();
 const storageKey='flowers-speak:cloud-candidate:collection:v2';
 function check(name,passed,detail){report.checks.push({name,pass:!!passed,...(detail===undefined?{}:{detail})});console.log(`${passed?'PASS':'FAIL'} ${name}`);}
