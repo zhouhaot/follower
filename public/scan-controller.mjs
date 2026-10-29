@@ -1,4 +1,4 @@
-import { recordRecognition, MIN_RECOGNITION_MS } from './collection-store.mjs';
+import { recordEncounter, MIN_RECOGNITION_MS } from './collection-store-v2.mjs';
 import { imageTargetFor } from './image-targets.mjs';
 import { bloomAvailable } from './bloom-registry.mjs';
 
@@ -12,8 +12,8 @@ const copyFor = (title) => ({
   loading: `相机已开启，正在加载${title}识别与立体模型…`,
   scanning: `将${title}花卡完整放入画面，保持平稳并避免反光。识别成功后，对应的立体花卉会从卡面升起。`,
   tracking: `已找到${title}纹样，请保持平稳，正在确认识别…`,
-  collected: `${title}识别成功，已收入此候选版图鉴。移动花卡，查看对应的三维花卉。`,
-  recognized: `${title}识别成功，但浏览器未能保存图鉴进度。`,
+  collected: `${title}识别成功，已记入花册的扫描相遇。移动花卡，查看对应的三维花卉。`,
+  recognized: `${title}识别成功，但浏览器未能保存相遇记录。`,
   denied: '相机权限未开启。请在浏览器的网站设置中允许相机，然后重试；也可以先查看预览。',
   error: '相机或识别暂时未能启动。请检查网络与相机占用后重试，或先查看预览。',
   stopped: '相机已关闭。点击「重新扫描」可再次开启。',
@@ -36,7 +36,7 @@ export function createScanController({
   modelAvailable = bloomAvailable,
   requestCamera = () => globalThis.navigator.mediaDevices.getUserMedia({ audio: false, video: { facingMode: { ideal: 'environment' }, width: { ideal: 1280 }, height: { ideal: 720 } } }),
   createTracker,
-  saveRecognition = recordRecognition,
+  saveRecognition = recordEncounter,
   onState = () => {},
   now = () => performance.now(),
   setTimer = setTimeout,
@@ -87,7 +87,7 @@ export function createScanController({
     if (data.tracked !== true) {
       resetEvidence();
       transition('scanning', recognitionRecorded
-        ? (recognitionState === 'collected' ? `花卡暂时离开画面。已完成的收集会保留；重新对准${title}花卡即可继续观看。` : `花卡暂时离开画面。浏览器未能保存图鉴进度；重新对准${title}花卡即可继续观看。`)
+        ? (recognitionState === 'collected' ? `花卡暂时离开画面。已记录的相遇会保留；重新对准${title}花卡即可继续观看。` : `花卡暂时离开画面。浏览器未能保存相遇记录；重新对准${title}花卡即可继续观看。`)
         : `花卡暂时离开画面，请重新对准${title}纹样。`);
       return;
     }
@@ -102,7 +102,7 @@ export function createScanController({
     try { result = saveRecognition({ key: target.key, source: 'image-target', targetIndex: target.index, stableMs: time - firstSeen, observationCount: observations }); } catch { result = { saved: false }; }
     recognitionRecorded = true;
     recognitionState = result?.saved ? 'collected' : 'recognized';
-    recognitionMessage = result?.saved ? COPY.collected : `${title}识别成功，对应的三维花卉已显示。浏览器未能保存图鉴进度；此页面中的预览不会补记收集。`;
+    recognitionMessage = result?.saved ? COPY.collected : `${title}识别成功，对应的三维花卉已显示。浏览器未能保存相遇记录；此页面中的预览不会补记收集。`;
     transition(recognitionState, recognitionMessage);
   }
   async function start() {

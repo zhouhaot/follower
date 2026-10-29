@@ -202,9 +202,9 @@ function render() {
             <span class="exhibit-switch-label">换个角度看</span>
             <button type="button" data-exhibit-view="artwork" aria-pressed="true">作品</button>
             <button type="button" data-exhibit-view="pearl" aria-pressed="false">珠光光影</button>
-            <button type="button" data-exhibit-view="bloom" aria-pressed="false">立体花朵</button>
+            <details class="exhibit-more"><summary>更多观看方式</summary><div><button type="button" data-exhibit-view="bloom" aria-pressed="false">立体花朵</button>
             ${card.key === 'lotus' ? '<button type="button" data-exhibit-view="relief" aria-pressed="false">金属花卡</button>' : ''}
-            <button type="button" data-exhibit-view="original" aria-pressed="false">实体花卡</button>
+            <button type="button" data-exhibit-view="original" aria-pressed="false">实体花卡</button></div></details>
           </div>
           <div class="pearl-detail-tools" role="group" aria-label="观察珠光花卡" hidden><button class="pearl-button pearl-demo" type="button" id="detail-pearl-demo" disabled>演示光影</button><button class="pearl-button" type="button" id="detail-pearl-reset">归正</button></div>
           <div class="view-tools" role="group" aria-label="调整模型视角" hidden>
@@ -221,10 +221,13 @@ function render() {
           </aside>
         </div>
         <aside class="flower-intro" aria-label="${card.title}简介">
-          <p class="eyebrow">${no} / 05</p>
+          <p class="work-position">${no} / 05</p>
           <h1>${card.title}</h1>
           <p class="flower-english">${card.english}</p>
           <p class="flower-lead">${card.description}</p>
+          <div class="intro-actions"><button id="collect-btn" type="button">收藏这朵花</button><a href="#origin-title">读作品故事</a></div><p id="collection-status" role="status" aria-live="polite" class="save-status"></p>
+
+            ${card.audioAvailable ? `<div class="narration-panel"><div class="narration-controls"><button id="audio-btn" type="button">听设计解说</button><span id="audio-status" role="status"></span></div><details class="narration-transcript"><summary>解说全文</summary><p>${narrationTranscript}</p></details></div>` : ''}
         </aside>
       </section>
 
@@ -259,7 +262,7 @@ function render() {
             </ol>
             <p class="creation-note" role="status"></p>
             <p class="creation-color">${creation.color}</p>
-            ${card.audioAvailable ? `<div class="narration-panel"><div class="narration-controls"><button id="audio-btn" type="button">听设计解说</button><span id="audio-status" role="status"></span></div><details class="narration-transcript"><summary>解说全文</summary><p>${narrationTranscript}</p></details></div>` : ''}
+
             <p class="creation-note-final quiet">${creation.note}</p>
           </div>
         </div>
@@ -268,16 +271,16 @@ function render() {
       <section class="detail-memory" aria-labelledby="memory-title">
         <h2 id="memory-title">留下记忆</h2>
         <div class="memory-actions">
-          <button id="collect-btn" type="button">收藏这朵花</button>
+          <a class="pill-link" href="#main">返回作品</a>
           <a id="meet-another" href="./flower-detail.html?key=${nextCard.key}" class="memory-next">继续看下一朵<small>${nextCard.title}</small></a>
         </div>
-        <p id="collection-status" role="status" aria-live="polite" class="save-status"></p>
+
         <div class="memory-links">
           <a href="./collection.html">到我的花册查看</a>
           <a href="./catalogue.html">浏览全部五朵花</a>
         </div>
         <p class="memory-note quiet">收藏保存在当前浏览器，不会跨设备同步。</p>
-        <details class="optional-scan"><summary>有实体花卡？</summary><p>实体卡扫描仍为候选体验，扫描记录尚未接入新版花册。</p><a href="${scanURL(card.key, {from:'detail'})}">进入扫描准备页 →</a></details>
+        <details class="optional-scan"><summary>有实体花卡？</summary><p>实体卡识别成功后记入花册的“扫描相遇”；实体卡追踪仍待真机验收。</p><a href="${scanURL(card.key, {from:'detail'})}">进入扫描准备页 →</a></details>
       </section>
     </main>
     ${siteFooter()}
@@ -289,6 +292,7 @@ function render() {
   bindCreation();
 
   updateCollectionUI();
+  if (['bloom','relief','original'].includes(params.get('view'))) document.querySelector('.exhibit-more').open = true;
   exhibit = initDetailExhibit({ card, initialView: params.get('view') });
 }
 

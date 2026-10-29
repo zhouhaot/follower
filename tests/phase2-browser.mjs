@@ -1,3 +1,4 @@
+async function openMode(page,name){if(!await page.locator('.exhibit-more').evaluate(e=>e.open))await page.getByText('更多观看方式',{exact:true}).click();await page.getByRole('button',{name,exact:true}).click();}
 import { chromium } from 'playwright';
 import assert from 'node:assert/strict';
 import { mkdir, writeFile } from 'node:fs/promises';
@@ -55,10 +56,10 @@ try{
   check(`${width}: second keyboard toggle cancels same collection`,await collect.getAttribute('aria-pressed')==='false');
   const story=page.locator('.flower-card[data-key=peony]').getByRole('link',{name:'牡丹承瑞',exact:true});await story.focus();await page.keyboard.press('Enter');await page.waitForURL('**/flower-detail.html?key=peony');
   check(`${width}: catalogue supports keyboard story entry`,await page.locator('h1').textContent()==='牡丹承瑞');
-  await page.getByRole('button',{name:'立体花朵',exact:true}).click();
+  await openMode(page,'立体花朵');
   await page.waitForFunction(()=>document.querySelector('#detail-model').classList.contains('model-ready')||document.querySelector('#detail-model').classList.contains('fallback-only'));
   check(`${width}: model remains beside the same story`,page.url().endsWith('/flower-detail.html?key=peony')&&await page.locator('h1').textContent()==='牡丹承瑞'&&await page.locator('.flower-story').isVisible());
-  await page.getByRole('button',{name:'实体花卡',exact:true}).click();
+  await openMode(page,'实体花卡');
   await page.getByText('有实体花卡？',{exact:true}).click();await page.getByRole('link',{name:'进入扫描准备页',exact:false}).click();
   check(`${width}: optional scanner receives peony instead of default lotus`,new URL(page.url()).searchParams.get('card')==='peony'&&await page.locator('h1').textContent()==='牡丹承瑞');
   await page.locator('#scan-back').click();await page.waitForURL('**/flower-detail.html?key=peony');

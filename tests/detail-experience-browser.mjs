@@ -1,3 +1,4 @@
+async function openMode(page,name){if(!await page.locator('.exhibit-more').evaluate(e=>e.open))await page.getByText('更多观看方式',{exact:true}).click();await page.getByRole('button',{name,exact:true}).click();}
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
@@ -46,7 +47,7 @@ try{
   check(`${width}: stable artwork is the default view`,await page.locator('[data-exhibit-view=artwork]').getAttribute('aria-pressed')==='true'&&await page.locator('#detail-artwork').isVisible()&&await page.locator('#detail-pearl').isHidden());
   if(width===1280){await page.locator('.creation-marker[data-creation-marker=vase]').click();check(`${width}: creation annotations explain structure`,await page.locator('.creation-legend li').count()===4&&(await page.locator('.creation-note').textContent()).includes('瓶'));}
   await page.goto(`${base}/flower-detail.html?key=lotus&view=original`);
-  check(`${width}: title and view choices appear in first viewport`,await page.locator('.flower-intro').evaluate(e=>e.getBoundingClientRect().bottom<innerHeight)&&await page.locator('.exhibit-switch').evaluate(e=>e.getBoundingClientRect().bottom<innerHeight));
+  check(`${width}: title and primary actions are discoverable without header overlap`,await page.locator('.flower-intro h1').evaluate(e=>{const r=e.getBoundingClientRect();return r.top>=document.querySelector('.site-header').getBoundingClientRect().bottom&&r.top<innerHeight;})&&await page.locator('#collect-btn').isVisible()&&await page.getByText('更多观看方式',{exact:true}).count()===1);
   check(`${width}: model and story use responsive layout`,await page.evaluate(()=>{
    const a=document.querySelector('.flower-exhibit').getBoundingClientRect(),b=document.querySelector('.flower-intro').getBoundingClientRect();
    return innerWidth<=700?a.top>=b.bottom:b.left>=a.right&&Math.abs(a.top-b.top)<2;
@@ -54,7 +55,7 @@ try{
   check(`${width}: original, story and observation belong to same flower`,await page.locator('.flower-story p').textContent()===cards.find(c=>c.key==='lotus').story&&(await page.locator('.flower-observation p').textContent()).includes('两侧圆叶'));
   await screenshot(page,`${width}-original`);
   const initialHeight=await page.locator('.detail-stage').evaluate(e=>e.getBoundingClientRect().height);
-  await page.getByRole('button',{name:'立体花朵',exact:true}).click();await ready(page);
+  await openMode(page,'立体花朵');await ready(page);
   const interactive=await page.locator('#detail-model').evaluate(e=>e.classList.contains('model-ready')&&!e.classList.contains('fallback-only'));
   check(`${width}: actual interactive model loads`,interactive);
   if(!interactive)throw Error(`Unexpected model fallback at ${width}`);
@@ -94,10 +95,10 @@ try{
     await cdp.detach();
   }
   await screenshot(page,`${width}-bloom`);
-  await page.getByRole('button',{name:'金属花卡',exact:true}).click();
+  await openMode(page,'金属花卡');
   check(`${width}: metal view renders another model`,await page.locator('[data-exhibit-view=relief]').getAttribute('aria-pressed')==='true'&&before!==await canvasHash(page));
   if(width===1280||width===390)await screenshot(page,`${width}-relief`);
-  await page.getByRole('button',{name:'实体花卡',exact:true}).click();
+  await openMode(page,'实体花卡');
   check(`${width}: original return hides model tools`,await page.locator('#detail-original').isVisible()&&await page.locator('.view-tools').isHidden());
   let data=await page.evaluate(k=>JSON.parse(localStorage.getItem(k)),storageKey);
   check(`${width}: viewing and switching never collects`,data.collections.length===0&&data.recentViews[0].key==='lotus');
@@ -127,17 +128,17 @@ try{
  check('Context loss: fallback message and static image',await page.getByText('三维暂不可用，当前显示静态效果图。仍可回到作品、阅读故事或收藏。',{exact:true}).count()===1&&await page.locator('.view-tools').isHidden()&&await page.locator('#detail-model img').isVisible());
  await context.close();
  for(const fault of ['webgl','module','asset']){
-  const {context,page}=await setup(390,{fault});await page.goto(`${base}/flower-detail.html?key=lotus`);await page.getByRole('button',{name:'立体花朵',exact:true}).click();await ready(page);
+  const {context,page}=await setup(390,{fault});await page.goto(`${base}/flower-detail.html?key=lotus`);await openMode(page,'立体花朵');await ready(page);
   check(`${fault}: failure offers still image, original and story`,await page.locator('#detail-model').evaluate(e=>e.classList.contains('fallback-only'))&&await page.locator('.view-tools').isHidden()&&await page.locator('#exhibit-reload').isVisible()&&await page.locator('.flower-story p').textContent()===cards.find(c=>c.key==='lotus').story);
   await page.locator('#collect-btn').click();check(`${fault}: model failure does not block collection`,await page.locator('#collect-btn').textContent()==='已收藏');
   if(fault==='webgl')await screenshot(page,'390-model-unavailable');
-  await page.getByRole('button',{name:'实体花卡',exact:true}).click();check(`${fault}: original remains available`,await page.locator('#detail-original').isVisible());await context.close();
+  await openMode(page,'实体花卡');check(`${fault}: original remains available`,await page.locator('#detail-original').isVisible());await context.close();
  }
  const slow=await setup(390);let release;const gate=new Promise(resolve=>release=resolve);
  await slow.context.route('**/model-viewer.mjs',async route=>{await gate;await route.continue();});
- await slow.page.goto(`${base}/flower-detail.html?key=lotus`);await slow.page.getByRole('button',{name:'立体花朵',exact:true}).click();
+ await slow.page.goto(`${base}/flower-detail.html?key=lotus`);await openMode(slow.page,'立体花朵');
  check('Slow load: story available while loading',await slow.page.getByText('正在加载三维画面，故事仍可阅读…',{exact:true}).count()===1&&await slow.page.locator('.flower-story').isVisible());
- await slow.page.getByRole('button',{name:'实体花卡',exact:true}).click();release();await ready(slow.page);
+ await openMode(slow.page,'实体花卡');release();await ready(slow.page);
  check('Slow load: late result does not override original choice',await slow.page.locator('#detail-original').isVisible()&&await slow.page.locator('[data-exhibit-view=original]').getAttribute('aria-pressed')==='true');await slow.context.close();
  const reduced=await setup(390,{reducedMotion:'reduce'});await reduced.page.goto(`${base}/flower-detail.html?key=lotus`);
  check('Reduced motion: no required animation to reach story',await reduced.page.locator('#detail-artwork').isVisible()&&await reduced.page.locator('.flower-story').isVisible());await reduced.context.close();

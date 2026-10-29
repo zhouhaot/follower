@@ -15,7 +15,8 @@
     "test:detail-ui": "node tests/detail-experience-browser.mjs",
     "test:assets": "node scripts/check-assets.mjs",
     "test:pearl-ui": "node tests/pearl-integration-browser.mjs",
-    "test:quality-ui": "node tests/quality-browser.mjs"
+    "test:quality-ui": "node tests/quality-browser.mjs",
+    "test:exhibition-ui": "node tests/exhibition-browser.mjs"
   },
   "dependencies": {
     "three": "0.160.0"

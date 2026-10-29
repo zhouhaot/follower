@@ -26,6 +26,8 @@ jobs:
           DETAIL_QA_OUTPUT: reports/quality-current/detail
           PEARL_QA_OUTPUT: reports/quality-current/pearl
           QUALITY_QA_OUTPUT: reports/quality-current/core
+          EXHIBITION_QA_OUTPUT: reports/quality-current/exhibition
+          EXHIBITION_SHOTS: reports/quality-current/exhibition/screenshots
         run: |
           python3 scripts/serve-local.py dist 4173 > /tmp/follower-preview.log 2>&1 &
           preview_pid=$!
@@ -40,6 +42,7 @@ jobs:
           npm run test:detail-ui
           npm run test:pearl-ui
           npm run test:quality-ui
+          npm run test:exhibition-ui
       - uses: actions/upload-artifact@v4
         if: always()
         with:

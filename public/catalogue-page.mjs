@@ -37,7 +37,7 @@ function renderCard(card, data) {
       <div class="flower-card-body">
         <div class="flower-card-head">
           <div>
-            <h3><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h3>
+            <h2><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h2>
             <p>${card.english}</p>
           </div>
           <button type="button" class="collect-btn ${collected ? 'collected' : ''}" data-key="${card.key}" aria-pressed="${collected}" onclick="event.stopPropagation();window.catalogueToggleCollection('${card.key}', event)">${collected ? '已收藏' : '收藏'}</button>
@@ -63,7 +63,7 @@ function render() {
     <main id="main" class="light-page catalogue-page">
       <section class="page-wrap">
         <div class="page-heading">
-          <p class="eyebrow">THE COLLECTION / 全部五款</p>
+
           <h1>五种纹样，<br><em>各自成诗。</em></h1>
           <p class="lead">循着花枝与叶脉，走进五张花卡的世界。</p>
         </div>

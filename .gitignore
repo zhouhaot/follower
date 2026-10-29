@@ -8,3 +8,6 @@ work/
 # Current QA output is retained locally and uploaded as CI artifacts.
 /reports/quality-*/
 /reports/quality-version.json
+
+# Local redesign evidence; reviewed summaries are explicitly tracked.
+/reports/design-*/

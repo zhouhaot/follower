@@ -1,0 +1,474 @@
+{
+  "note": "No raster created or modified in this redesign. Existing images retained byte-for-byte; provenance recorded externally to preserve originals. Original upstream licensing is not re-certified.",
+  "assets": [
+    {
+      "path": "public/assets/hand-sequence/hand-000.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "834543502718095908b088b39076668921e5e90c367f071a533b65b61ba01ad4",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-001.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "483882f5504548384ebc76c4554a49d6ce3ebb742fcb7baf72c41a97a4edda49",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-002.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "001baf9765a78652c54ba0d3cc9dc30ffddffcda380b1babacb7ff7b9808854e",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-003.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "453527797d8169c07a7820f6de48d5cc2f8e88b15fe3a8af54628538e5e9ab4f",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-004.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "0a58d2a1a8e9a9568002e2cdf390533aac9b8e57c93b16d113bb10becd4e89fb",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-005.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "a3c277a1b882eaedd422083c69af491e6b77aa9f2fc4fe9a1a5bc7c4df75bd65",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-006.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "6812344526234b48d9db2cc92dd14ae1a1c4a50f9e9fcbc081d8917f75f4840c",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-007.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "74735c2915bdc0369f35fa5313242e3faaa93585f8a40778e3399620e1cf736e",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-008.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "a5e01ba083d9f82eff5f5cb1913af39c93679da0a3214ddcc950603ecb900883",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-009.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "85861d11186f304d2af134cde492c8f9cc8a52711ae0240c8e6ec5b2e941c139",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-010.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "1dd0e1a632cb99e9d54c14c36713c75d23ab786deea2ac3bb35a7bc4f2c1778a",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-011.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "226f8ac1a329b96f959da773ac8c3b8f4ccb14cd5f94fa4f8819db0c1bedaeea",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-012.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "3737be148a96d587c1b364814cac233a9576554f707695edb90677d0f9c71d7f",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-013.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "eab067ac3fd9b750c80469f76c25f2d0ab00f48c57bcaa26699edf9ece6b6e89",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-014.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "da542f45e583d7dcd120dee35e4faf7df11901ce094804664737d3acbf4f9bde",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-015.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "7c1c624da4fa8841d27ff72f8f3676ec35613a8e13f1831709ac5fabda382cc6",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-016.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "79c0e58bf989ec7cb33b6f6631af9185fc10c810d84124ab0f6fa2c6f731a1ec",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-017.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "398853891c4c8bc041743a969f100fd0bd0a48906967515f66c3a4ebbb7dd585",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-018.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "629066468fa0299d6b7998f119e24ee0544cc67a4e4deefef62e8909a4fc02b2",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-019.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "042d0c692eacbd7b99ece2777e9c0173ffdf23434ccf8aa9435bcebd189fd93e",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-020.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "af2c74e4188ebd6825aa15196717efe895d59ecd2e4e40a2f66ce65aac7eeee0",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-021.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "f47702cddd6cfc5f73c1dcb0cccf3dd1a88417d8a68eda86ab673d838d28de1b",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-022.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "4408028346713d6ed485b3bc9747bc3bae081b478c2952ca0018d8538a7fec6f",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-023.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "302b57987c8ec9d7943f75c6ac5a8714aaf5bc3ce7d337c59e84ff6dc533fc32",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-024.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "f0be0ae3d410a5d9cbc2d4968ad6597b5f319e55bf9f26b27548c8cba24a1d52",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-025.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "31f433df35f956b2edb5cf2148fb87cabf5b3b6369be039337b10a73b0f83aef",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-026.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "e189c6f6655568076269142ccd83ead4c20ed7e8f9793ac9dfddeebf33fbd3dd",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-027.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "98d83e414c486d6a64d77ba8885ecb5e0da112aacb8eff668220b93e16f127c1",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-028.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "7dcbe2e94d4458580f9c359f6f47e3ff83f5b94b7d5e0305080845aaed08b18a",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-029.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "0090979760e6ba76b044c97bc88d2c0ab8e0be43e175b8645808e000b43a498e",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-030.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "529fc5ddfe74d229f21785f5762d6c8721e421981936e10d2ca7a34677008076",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/hand-sequence/hand-031.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "395c22a1fc1fa319c7d24d5065c834c0c49e42551dc66884bdefc9ed0ea54a2f",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/artwork.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "a1d2efc1abdcf22f7e2025430b6267eededc00ddc18bc39ab997aa3e6b177a7a",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/blooms.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "71fc467659fd4b01b85a3ab2dc1795198bf398ebd9559d38dcacb9a67b322eb7",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/card.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "09a2bdcfab9b237191184b20b887a3be931d535658b08e2f2ce03b8e3b1f5434",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/chrysanthemum/artwork.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "f6c658b898cd0dc94affeda17a6797d85897d84839486f0df6acf7439a496dd3",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/chrysanthemum/card-named.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "7e66c0db664301104b2952bd2085eb6be5ff68556a5ade1bfba427ffb534cdaa",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/chrysanthemum/target.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "5e1471dceb89e5d94e0da2e1632b68d9cf567f9cd435107b02b082dd3f48adf9",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/details.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "039d6c383a52f453e4d054fe3436dd92fa681f7685b68de980313a48bb8f19cb",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/greens.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "1b7766959a2b9f15b55db236b01f11aa44f333f2d0f06fa2f1e3d02d7db5b15f",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/leaves/artwork.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "704f2983846dc1e4562372618857e9a409f2b236a8d6059dd0aadd6dfb6c2515",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/leaves/card-named.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "30b1b16ff93cebf44c311c789e80325df34c116c59a8ea881feefa7759c1840b",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/leaves/target.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "e9c96c998db83870baec2c47c50092eec634c94dc7771a257cb305c356ef36db",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/lotus/artwork.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "c28043854b1c7ce9eb3c831bbf35783c477da7e40d777b8b0a2824a3427802eb",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/lotus/card-named.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "31a466768a1696135ab70953ae9c614fae3160924c016297d359c8310227dcda",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/lotus/target.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "5589f2774dfdbc46e64d4d6656b28d3626eab1f072c3703198d098bcd0464ba2",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/origins/museum-8399.jpg",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "3ea74b361f626cf4a42272ec3179d3945c0c758e297fe34a9b80d24ef674f83e",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/origins/museum-8400.jpg",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "65a6c0b50784eb6c086d5153ba8271e382d0e2ba36047780e5a532420a47ffe2",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/ornaments.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "8ce610c4add2619a5b565d59edde885415392336b883bdf7b8d350033aaee62f",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/peony/artwork.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "b444a505c3ed3a657a358c1d3181e6ac5b10f7cdb5add0264645564bd09a52a9",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/peony/card-named.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "2343f2ba0cd1b171e25b307e6adaffff164516424d891e72fc9e93a49ecc3de6",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/peony/target.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "18f704962a3ce011ebdca8c75705ec2d8cd0bc611feee3d84f0ec32f7323053c",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/target.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "9812ff4b9fe5cfb2d68ed786ed62cd63f4ae71aad6f27d2452add51930177c25",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/originals/vase.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "b2c10c30018e28f6d885e3e2bdf70fe318a590084b6772749175199b00dcfcd2",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/renders/chrysanthemum-bloom.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "4c1f993f39f6a873ce78ae2332416f997a908a2d24d15d968a0203886659a9e6",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/renders/flowers-bloom.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "21937c4949f8d5c54b32d130eeaf03e67ad4bc6c1fa6da8dd1e91b05791941aa",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/renders/handheld-front.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "1525858238984155badcbb091c2079c9d19af291ae62314a37822ccbc8cead98",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/renders/handheld-relief.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "b02f4297bac74ebe61ee678eb4b1324107ddebc94850a0ad64c91d76e10677e3",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/renders/hero-exhibit-base.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "2ad35f4556f67dd14ad0f76208229a2c92f8a9ae7d3379d9045dc095699b9756",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/renders/hero-exhibit-glass.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "9d8bd3fc2e69c8514c603c1ed7b3783541eddad973a4b80797d462a590c906d7",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/renders/hero-hand.webp",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "40b505af34b9e6ba66c9ed82bf9551e25d4f05d11cb5c138b7bd7c9562f87ec6",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/renders/leaves-bloom.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "ed5132509f91d5d90619b70b89becbc00c562dad69088a75c503294bc8e0d597",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/renders/lotus-bloom.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "f9e1730121bbe185fda02dff479de49f26d7a24e80f2cd538a2ee3c8c1df2b93",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/renders/lotus-quarter.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "6aa2f54ba0c43fb1112fd0fb0f70d7189b07c9ac0f880da87561d2901dc4d220",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/renders/lotus-relief.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "2dca66d585c07d6ca0924eebaa6cc6cffef357c49a80b8225e14f21212497941",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/renders/lotus-transparent.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "0595427b632598759ca372a77ea39c01eb6517d333e1fd849f03437c4cf27416",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/renders/peony-bloom.png",
+      "origin": "pre-existing repository asset",
+      "sourceCommit": "c995870afdeb1e2e493e14f0be6e30f6d32377ce",
+      "sha256": "a5211e1176339b00aba8094a4a06c7e2cb1f73d58f583e858a9f3ce631488fb6",
+      "unchanged": true
+    }
+  ]
+}
