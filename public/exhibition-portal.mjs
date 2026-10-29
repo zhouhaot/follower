@@ -13,27 +13,28 @@ export function initPortal(root) {
   const status = root.querySelector('#home-pearl-status');
   const cardButtons = [...root.querySelectorAll('[data-portal-card]')];
   let gallery, current = cards.findIndex(c => c.key === 'lotus');
-  let requested = current, selection = 0, transition;
+  let requested = current, selection = 0, transition, selectionMessage = null;
   function mountGallery() {
     gallery?.dispose();
     const mainCard = main.querySelector('[data-pearl]');
     gallery = initPearlGallery(root, { onState(state, element) {
       if (element !== mainCard) return;
       if (state === 'ready') gallery.demo(element);
+      if (selectionMessage) return;
       status.textContent = state === 'fallback' ? '光影暂不可用，仍可进入故事。' : state === 'ready' ? '移动光，慢慢看。轻触作品，走进故事。' : '原作已呈现，正在准备光影。';
     } });
   }
   async function select(index, updateURL = true) {
     requested = (index + cards.length) % cards.length;
     const id = ++selection, nextIndex = requested, card = cards[nextIndex];
-    if (nextIndex === current) { status.textContent = '轻触作品，走进故事。'; return; }
+    if (nextIndex === current) { selectionMessage = null; status.textContent = '轻触作品，走进故事。'; return; }
     const container = document.createElement('div');
     container.innerHTML = pearlCard(card, { priority: true });
     const incoming = container.firstElementChild;
-    status.textContent = `正在准备${card.title}，当前作品仍可观看。`;
+    status.textContent = selectionMessage = `正在准备${card.title}，当前作品仍可观看。`;
     try { await incoming.querySelector('img').decode(); }
     catch {
-      if (id === selection) { requested = current; status.textContent = '这张作品暂未加载，请再次选择重试；当前作品仍可观看。'; }
+      if (id === selection) { requested = current; status.textContent = selectionMessage = '这张作品暂未加载，请再次选择重试；当前作品仍可观看。'; }
       return;
     }
     if (id !== selection) return;
@@ -45,7 +46,7 @@ export function initPortal(root) {
     outgoing.classList.add('portal-outgoing');
     outgoing.setAttribute('aria-hidden', 'true');
     main.append(incoming);
-    current = nextIndex;
+    current = nextIndex; selectionMessage = null;
     main.href = `flower-detail.html?key=${card.key}`;
     main.setAttribute('aria-label', `阅读${card.title}的故事`);
     root.querySelector('#portal-title').textContent = card.title;

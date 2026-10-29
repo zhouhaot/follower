@@ -46,7 +46,10 @@ try{
   await page.waitForFunction(()=>document.querySelector('.home-main-card [data-pearl]').dataset.pearlState==='ready');await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:`${out}/home-${width}.png`,fullPage:true});await context.close();
  }
  const context=await browser.newContext({viewport:{width:1033,height:870}}),page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
- await page.route('**/peony/target.png',r=>r.abort());await page.goto(base);await page.waitForFunction(()=>document.querySelector('.home-main-card img')?.complete);await page.locator('[data-portal-card=peony]').click();await page.waitForFunction(()=>document.querySelector('#home-pearl-status').textContent.includes('再次选择重试'));
+ let releaseRenderer;const rendererGate=new Promise(r=>releaseRenderer=r);await page.route('**/pearl-renderer.mjs',async r=>{await rendererGate;await r.continue()});
+ await page.route('**/peony/target.png',r=>r.abort());await page.goto(base,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.querySelector('.home-main-card img')?.complete);await page.locator('[data-portal-card=peony]').click();await page.waitForFunction(()=>document.querySelector('#home-pearl-status').textContent.includes('再次选择重试'));
+ releaseRenderer();await page.waitForFunction(()=>document.querySelector('.home-main-card [data-pearl]').dataset.pearlState==='ready');
+ check('late enhancement cannot erase the image retry message',await page.locator('#home-pearl-status').textContent()==='这张作品暂未加载，请再次选择重试；当前作品仍可观看。');
  check('failed image keeps current artwork and story entry',await page.locator('.home-main-card [data-pearl]').getAttribute('data-pearl')==='lotus'&&(await page.locator('#portal-enter').getAttribute('href')).includes('lotus'));
  await page.unroute('**/peony/target.png');await page.locator('[data-portal-card=peony]').click();await page.waitForFunction(()=>document.querySelector('#portal-title').textContent==='牡丹承瑞');check('same choice retries successfully after network recovery',await page.locator('.home-main-card [data-pearl] img').evaluate(e=>e.complete&&e.naturalWidth>0));await context.close();
  check('No uncaught browser errors',errors.length===0);
