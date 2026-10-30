@@ -184,7 +184,7 @@ function render() {
         <header class="detail-heading">
           <p class="work-position">${no} / 05</p>
           <h1>${card.title}</h1>
-          <p class="flower-english">${card.english}</p>
+
         </header>
         <div class="flower-exhibit" aria-label="${card.title}展台">
           <div class="detail-stage">
@@ -199,7 +199,7 @@ function render() {
               <img class="model-fallback" src="./assets/renders/${card.key}-bloom.png" alt="${card.title}立体花朵静态效果图">
             </div>
           </div>
-          <p id="exhibit-status" class="exhibit-status" role="status" aria-live="polite">作品画面呈现。</p>
+          <p id="exhibit-status" class="exhibit-status" role="status" aria-live="polite"></p>
           <div class="exhibit-switch" role="group" aria-label="换个角度看${card.title}">
             <span class="exhibit-switch-label">换个角度看</span>
             <button type="button" data-exhibit-view="artwork" aria-pressed="true">作品</button>

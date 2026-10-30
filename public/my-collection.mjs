@@ -42,7 +42,7 @@ function renderCollectionCard(collection) {
       <a href="./flower-detail.html?key=${card.key}" aria-label="阅读${card.title}的故事"><img src="${card.artworkImage}" alt="${card.title}纹样"></a>
       <div class="plate-caption">
         <h3><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h3>
-        <p class="plate-trait">${card.trait || ''}</p>
+
         <p class="plate-date">${sourceLabel} · ${formatDate(collection.collectedAt)}</p>
         <button type="button" onclick="event.stopPropagation();window.myCollectionRemove('${card.key}', event)">取消收藏</button>
       </div>
@@ -107,14 +107,14 @@ function render() {
         <div class="page-heading">
 
           <h1>把相遇，<br><em>留在这里。</em></h1>
-          <p class="lead">${data.collections.length > 0 ? `已收藏 <strong>${data.collections.length} / ${cards.length}</strong> 朵${data.collections.length < cards.length ? '，还有 ' + (cards.length - data.collections.length) + ' 朵在等你。' : '，五朵齐了。'}` : '你收藏的花、相遇的花和最近看过的花，都保存在这台浏览器。'}</p>
+          <p class="lead">${data.collections.length > 0 ? `已收藏 <strong>${data.collections.length} / ${cards.length}</strong> 朵${data.collections.length < cards.length ? '，还有 ' + (cards.length - data.collections.length) + ' 朵在等你。' : '，五朵齐了。'}` : '收藏、扫描相遇与最近浏览。'}</p>
           ${data.collections.length > 0 ? '<button type="button" class="pill-link dark-pill keepsake-print-btn" onclick="window.print()">做成纪念页 · 打印带走</button>' : ''}
         </div>
         <div id="collection-notice"></div>
         ${loaded && state.kind === 'ready' && !hasAnyData ? `
           <div class="collection-empty">
             <p>花册还是空的</p>
-            <p class="collection-empty-hint">从最完整的一朵开始：清荷入梦。</p>
+
             <a class="pill-link dark-pill" href="./flower-detail.html?key=lotus">看第一朵 · 清荷入梦</a>
             <a class="text-link" href="./catalogue.html">或浏览五花图录</a>
           </div>

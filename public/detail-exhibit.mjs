@@ -41,7 +41,7 @@ export function initDetailExhibit({card, initialView} = {}) {
     });
     if (isArtwork) {
       const image=artwork.querySelector('img');
-      status.textContent = image.complete && !image.naturalWidth ? '图片加载失败。可刷新重试，或继续阅读故事、切换其他视图。' : '作品画面呈现。想在光里看它，选择「珠光光影」。';
+      status.textContent = image.complete && !image.naturalWidth ? '图片加载失败。可刷新重试，或继续阅读故事、切换其他视图。' : '';
     } else if (isPearl) {
       const state = pearl.querySelector('[data-pearl]').dataset.pearlState;
       status.textContent = state === 'fallback' ? (pearl.querySelector('img').naturalWidth ? '珠光暂不可用，已保留花卉纹样。仍可回到作品、阅读故事或收藏。' : '花卡图片暂不可用。仍可回到作品、阅读故事或收藏。') : state !== 'ready' ? '纹样已呈现，正在准备珠光。' : reduced.matches ? '已减少动态效果，静态呈现珠光。' : '横向轻拖或使用方向键，观察局部珠光；按 Home 归正。竖向滑动继续阅读。';

@@ -23,11 +23,11 @@ export function siteHeader(page, cardKey = 'lotus', search = window.location.sea
     from: scanFrom,
     backCard: page === 'scan' ? requestFor(search).backCard : selected?.key || 'lotus',
   });
-  return `<a class="skip" href="#main">跳到主要内容</a><header class="site-header"><a href="index.html" class="brand" aria-label="花开有声 首页"><span class="brand-mark">花</span><span>花开有声<small>FLOWERS SPEAK</small></span></a><nav aria-label="主导航" class="glass-nav">${NAV_ITEMS.map(([id, url, label]) => `<a href="${url}" ${current === id ? 'aria-current="page"' : ''}>${label}</a>`).join('')}</nav><a class="scan-nav" aria-label="扫描花卡" href="${scanHref}">${icon}<span>扫描花卡</span></a></header>`;
+  return `<a class="skip" href="#main">跳到主要内容</a><header class="site-header"><a href="index.html" class="brand" aria-label="花开有声 首页"><span class="brand-mark">花</span><span>花开有声</span></a><nav aria-label="主导航" class="glass-nav">${NAV_ITEMS.map(([id, url, label]) => `<a href="${url}" ${current === id ? 'aria-current="page"' : ''}>${label}</a>`).join('')}</nav><a class="scan-nav" aria-label="扫描花卡" href="${scanHref}">${icon}<span>扫描花卡</span></a></header>`;
 }
 
 export function siteFooter() {
-  return `<footer><a href="index.html" class="footer-brand">花开有声<span>FLOWERS SPEAK</span></a><p>让古老的纹样，在此刻重新生长。</p><div><a href="guide.html">参观指南</a><a href="catalogue.html">全部花卡 ${arrow}</a></div><small>数字花卡探索 · 本地图录候选<br>纹样原型：都江堰市博物馆馆藏 · 原型图像与作品名称来自 zevth.work<br>本数字衍生品未经博物馆审定，仅作学习与展示</small></footer>`;
+  return `<footer><a href="index.html" class="footer-brand">花开有声</a><div><a href="guide.html">参观指南</a><a href="catalogue.html">全部花卡 ${arrow}</a></div><small>纹样原型：都江堰市博物馆馆藏 · 原型图像与作品名称来自 zevth.work<br>本数字衍生品未经博物馆审定，仅作学习与展示</small></footer>`;
 }
 
 export { cards, arrow, icon };

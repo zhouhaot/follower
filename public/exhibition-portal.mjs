@@ -21,13 +21,13 @@ export function initPortal(root) {
       if (element !== mainCard) return;
       if (state === 'ready') gallery.demo(element);
       if (selectionMessage) return;
-      status.textContent = state === 'fallback' ? '光影暂不可用，仍可进入故事。' : state === 'ready' ? '移动光，慢慢看。轻触作品，走进故事。' : '原作已呈现，正在准备光影。';
+      status.textContent = state === 'fallback' ? '光影暂不可用，仍可进入故事。' : state === 'ready' ? '' : '原作已呈现，正在准备光影。';
     } });
   }
   async function select(index, updateURL = true) {
     requested = (index + cards.length) % cards.length;
     const id = ++selection, nextIndex = requested, card = cards[nextIndex];
-    if (nextIndex === current) { selectionMessage = null; status.textContent = '轻触作品，走进故事。'; return; }
+    if (nextIndex === current) { selectionMessage = null; status.textContent = ''; return; }
     const container = document.createElement('div');
     container.innerHTML = pearlCard(card, { priority: true });
     const incoming = container.firstElementChild;
@@ -51,7 +51,6 @@ export function initPortal(root) {
     main.setAttribute('aria-label', `阅读${card.title}的故事`);
     root.querySelector('#portal-title').textContent = card.title;
     root.querySelector('#portal-artwork').textContent = `纹样原型 ·《${card.artwork}》`;
-    root.querySelector('#portal-description').textContent = card.trait || card.description;
     root.querySelector('#portal-enter').href = main.href;
     root.querySelector('#portal-start').href = main.href;
     root.querySelector('#portal-number').textContent = `${String(current + 1).padStart(2, '0')} / 05`;

@@ -95,7 +95,7 @@ try {
     await shot(page, `${prefix}-catalogue`);
     await page.locator('.flower-card[data-key=lotus] img').click();
     check(`${prefix}: card body enters lotus detail`, page.url().endsWith('/flower-detail.html?key=lotus'));
-    check(`${prefix}: detail title, English and full story`, await page.locator('h1').textContent() === '清荷入梦' && await page.locator('.flower-english').textContent() === 'LOTUS IN REVERIE' && await page.locator('h3').filter({ hasText: '花的故事' }).locator('..').locator('p').textContent().then(t => t.length === 104));
+    check(`${prefix}: detail title and full story without duplicate subtitle`, await page.locator('h1').textContent() === '清荷入梦' && await page.locator('.flower-english').count() === 0 && await page.locator('h3').filter({ hasText: '花的故事' }).locator('..').locator('p').textContent().then(t => t.length === 104));
     check(`${prefix}: narration available and honestly labelled`, await page.locator('#audio-btn').count() === 1 && (await page.locator('#audio-btn').textContent()) === '听设计解说' && await page.getByText('暂无配音', { exact: true }).count() === 0);
     await page.locator('#collect-btn').click(); await page.reload();
     check(`${prefix}: collection persists after reload`, await page.locator('#collect-btn').textContent() === '已收藏');

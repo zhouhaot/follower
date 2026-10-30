@@ -56,7 +56,7 @@ body[data-page=home] #home-pearl-status{font-size:12px;color:var(--soft);line-he
 .portal-detail{align-self:center;padding:0 0 0 10px}
 .portal-position{font-size:13px;color:var(--signal);font-variant-numeric:tabular-nums;display:block;margin-bottom:18px}
 .portal-detail h2{font-size:clamp(28px,3vw,42px);letter-spacing:.015em;line-height:1.25;margin-bottom:14px}
-#portal-artwork,#portal-description{font-size:13px;color:var(--soft);margin:8px 0;line-height:1.9}
+#portal-artwork{font-size:13px;color:var(--soft);margin:8px 0;line-height:1.9}
 body[data-page=home] .home-start{margin:0;display:flex;justify-content:flex-start;gap:0}
 body[data-page=home] .home-start .pill-link{background:var(--signal);color:var(--room);font-size:15px}
 #portal-bloom{margin-top:12px;color:var(--soft)}
@@ -105,7 +105,7 @@ body[data-page=home] .home-editorial .editorial-copy p{font-size:16px;color:var(
 .flower-card-links a{font-size:13px;min-height:44px;display:inline-flex;align-items:center;color:var(--soft)}
 .collect-btn{color:var(--signal);background:transparent;border:1px solid var(--rule);border-radius:3px;padding:7px 14px;font-size:13px;min-height:44px;white-space:nowrap}
 .collect-btn.collected{color:var(--room);background:var(--signal);border-color:var(--signal)}
-.catalogue-footnote{margin-top:60px;font-size:13px;color:var(--soft)}
+
 /* Detail: one unobstructed opening, with reading and listening in reach. */
 body[data-page=flower-detail] .visitor-main{max-width:1320px;padding:28px 5vw 90px;margin:auto}
 body .detail-back{position:static;display:inline-flex;align-items:center;gap:10px;min-height:44px;margin:0 0 24px;color:var(--soft);font-size:14px}
@@ -118,7 +118,7 @@ body .detail-back{position:static;display:inline-flex;align-items:center;gap:10p
 .flower-intro{grid-column:2;grid-row:2;padding:0;position:static}
 .detail-heading .work-position{font-size:13px;font-variant-numeric:tabular-nums;color:var(--signal);margin-bottom:16px}
 .detail-heading h1{font-size:clamp(40px,4.6vw,64px);letter-spacing:-.02em;line-height:1.15;margin:0 0 15px}
-.flower-english{font-size:13px;color:var(--soft);letter-spacing:.06em}
+
 .flower-lead{font-size:16px;line-height:1.95;color:var(--soft);max-width:32ch;margin-top:28px}
 .exhibit-switch{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;align-items:start}
 .exhibit-switch-label{display:none}
@@ -181,7 +181,7 @@ body[data-page=flower-detail] .exhibit-switch button[aria-pressed=true]{backgrou
 .collection-card img{height:300px!important;width:100%!important;object-fit:contain;box-shadow:none!important;transform:none!important;filter:none}
 .plate-caption{padding:20px 0 0}
 .plate-caption h3{font-size:26px;color:var(--text)}
-.plate-trait,.plate-date{font-size:13px;color:var(--soft)}
+.plate-date{font-size:13px;color:var(--soft)}
 .plate-caption button{font-size:13px;min-height:44px;color:var(--soft);padding:8px 0}
 .collection-section h2{font-size:28px;color:var(--text);margin-bottom:24px}
 .collection-section h2 span{font-size:16px;color:var(--soft)}
@@ -229,7 +229,7 @@ body[data-page=home] #home-pearl-status{font-size:12px;min-height:0}
 .portal-position{margin:0;grid-column:2;grid-row:1;color:var(--signal)}
 .portal-detail h2{font-size:30px;margin:0;grid-column:1;grid-row:1}
 #portal-artwork{grid-column:1/-1;margin:0;font-size:12px}
-#portal-description{grid-column:1/-1;margin:0;font-size:13px}
+
 body[data-page=home] .home-start{margin:0;justify-content:flex-start}
 .portal-actions{grid-column:1/-1;gap:12px;justify-content:space-between;margin-top:12px}
 .portal-quick-links{grid-column:1/-1;margin:0}
@@ -259,7 +259,7 @@ body .page-wrap{padding:44px 24px 64px}body .page-heading{margin-bottom:35px}bod
 .flower-card-art{padding:24px}.flower-card-art img{height:360px;object-fit:contain}.flower-card-body{padding:20px 0 0}.flower-card-head h2{font-size:27px}
 body[data-page=flower-detail] .visitor-main{padding:18px 24px 64px}
 .detail-opening{grid-template-columns:1fr;grid-template-rows:auto;gap:24px}.detail-heading,.flower-exhibit,.flower-intro{grid-column:auto;grid-row:auto;padding:0}.flower-intro{order:0}.detail-heading .work-position{margin-bottom:12px;font-size:12px}
-.detail-heading h1{font-size:42px}.flower-lead{margin-top:18px;font-size:15px;max-width:100%}.flower-english{font-size:12px}
+.detail-heading h1{font-size:42px}.flower-lead{margin-top:18px;font-size:15px;max-width:100%}
 .detail-stage{height:460px}.detail-media{padding:24px}.detail-art{max-height:100%;height:100%}
 .exhibit-switch{gap:8px}.exhibit-switch button{font-size:13px;min-width:0;flex:none;padding:8px 15px}.exhibit-more summary{font-size:13px;padding:8px 12px}
 .exhibit-more>div{gap:8px}.narration-panel{margin-top:18px;padding-top:18px}.narration-controls #audio-status{font-size:12px}
@@ -344,3 +344,6 @@ body[data-page=backup] .business-root>.business-status:empty{display:none}
 .backup-import{border-left:0;border-top:1px solid var(--rule);padding:32px 0 0}
 }
 @media(max-width:700px){.guide-steps article{grid-template-columns:32px minmax(0,1fr);gap:10px 16px}.guide-steps article h2{font-size:24px}.backup-page .page-heading h1{font-size:36px}.backup-export .business-actions{display:block}.backup-export .backup-primary{width:100%}.backup-confirm .backup-primary{width:100%}}
+
+/* Quiet states leave room for the work; loading and failures remain visible. */
+#home-pearl-status:empty, #exhibit-status:empty { display: none; }
