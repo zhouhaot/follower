@@ -83,8 +83,8 @@ try {
     check(`${prefix}: homepage artwork and scan navigation`, await page.locator('.home-featured img').count() === 1 && await page.getByRole('link', { name: '扫描花卡', exact: true }).count() === 1);
     await shot(page, `${prefix}-home`);
     await page.getByRole('link', { name: '浏览图录', exact: true }).click();
-    await page.locator('.flower-card h3').nth(4).waitFor();
-    check(`${prefix}: five card titles`, JSON.stringify(await page.locator('.flower-card h3').allTextContents()) === JSON.stringify(['花开有声', '牡丹承瑞', '菊影流金', '清荷入梦', '花叶生辉']));
+    await page.locator('.flower-card h2').nth(4).waitFor();
+    check(`${prefix}: five card titles`, JSON.stringify(await page.locator('.flower-card h2').allTextContents()) === JSON.stringify(['花开有声', '牡丹承瑞', '菊影流金', '清荷入梦', '花叶生辉']));
     for (const flower of ['flowers', 'peony', 'chrysanthemum', 'lotus', 'leaves']) {
       const button = page.locator(`.collect-btn[data-key="${flower}"]`);
       await button.click();
@@ -95,7 +95,7 @@ try {
     await shot(page, `${prefix}-catalogue`);
     await page.locator('.flower-card[data-key=lotus] img').click();
     check(`${prefix}: card body enters lotus detail`, page.url().endsWith('/flower-detail.html?key=lotus'));
-    check(`${prefix}: detail title, English and full story`, await page.locator('h1').textContent() === '清荷入梦' && await page.locator('.flower-english').textContent() === 'LOTUS IN REVERIE' && await page.locator('h3').filter({ hasText: '花的故事' }).locator('..').locator('p').textContent().then(t => t.length === 104));
+    check(`${prefix}: detail title and full story without duplicate subtitle`, await page.locator('h1').textContent() === '清荷入梦' && await page.locator('.flower-english').count() === 0 && await page.locator('h3').filter({ hasText: '花的故事' }).locator('..').locator('p').textContent().then(t => t.length === 104));
     check(`${prefix}: narration available and honestly labelled`, await page.locator('#audio-btn').count() === 1 && (await page.locator('#audio-btn').textContent()) === '听设计解说' && await page.getByText('暂无配音', { exact: true }).count() === 0);
     await page.locator('#collect-btn').click(); await page.reload();
     check(`${prefix}: collection persists after reload`, await page.locator('#collect-btn').textContent() === '已收藏');
@@ -104,7 +104,8 @@ try {
       const art = document.querySelector('.flower-exhibit').getBoundingClientRect();
       const info = document.querySelector('.flower-intro').getBoundingClientRect();
       const button = document.querySelector('#collect-btn').getBoundingClientRect();
-      return (innerWidth > 700 || info.bottom <= art.top) && button.height <= 60 && button.width >= 100;
+      const heading = document.querySelector('.detail-heading').getBoundingClientRect();
+      return (innerWidth > 700 || (heading.bottom <= art.top && art.bottom <= info.top)) && button.height >= 44 && button.height <= 60 && button.width >= 44 && button.right <= innerWidth;
     }));
     await page.locator('#collect-btn').click();
     check(`${prefix}: detail uncollect`, await page.locator('#collect-btn').textContent() === '收藏这朵花');

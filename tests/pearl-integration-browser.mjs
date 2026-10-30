@@ -1,3 +1,4 @@
+async function openMode(page,name){if(!await page.locator('.exhibit-more').evaluate(e=>e.open))await page.getByText('更多观看方式',{exact:true}).click();await page.getByRole('button',{name,exact:true}).click();}
 import {chromium} from 'playwright';
 import {mkdir,writeFile,readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
@@ -6,7 +7,7 @@ import {cards} from '../public/cards.mjs';
 const base=process.env.AUDIT_URL||'http://127.0.0.1:4173';assert.ok(['localhost','127.0.0.1'].includes(new URL(base).hostname));
 const output=process.env.PEARL_QA_OUTPUT||'reports/qa/pearl-integration-20261023/first';await mkdir(output,{recursive:true});
 const report={checks:[],errors:[],performance:[],scope:'Local Chrome, desktop and emulated touch. No physical phone/GPU guarantee.'};
-const browser=await chromium.launch({headless:true,executablePath:process.env.AUDIT_CHROMIUM||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+const browser=await chromium.launch({headless:true,...(process.env.AUDIT_CHROMIUM || process.platform==='darwin' ? {executablePath:process.env.AUDIT_CHROMIUM || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'} : {})});
 const check=(name,pass,detail)=>{report.checks.push({name,pass:!!pass,...(detail===undefined?{}:{detail})});console.log(`${pass?'PASS':'FAIL'} ${name}`);};
 const hash=b=>createHash('sha256').update(b).digest('hex');
 async function frames(page,n=8){await page.evaluate(async n=>{for(let i=0;i<n;i++)await window.__frame();},n);}
@@ -48,10 +49,10 @@ try{
   check(`Home ${width}: no 3D flower or hand assets`,!requests.some(u=>/model-viewer|\.glb|hand-sequence|handheld/.test(u)));
   check(`Home ${width}: story action visible in first viewport`,await page.getByRole('link',{name:'开始观展',exact:true}).evaluate(e=>e.getBoundingClientRect().bottom<innerHeight));
   check(`Home ${width}: no horizontal overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
-  await idle(page,`Home ${width}: idle has no rendering loop`);
+  await frames(page,110);await idle(page,`Home ${width}: automatic opening sweep finishes and stays idle`);
   const items=page.locator('.home-cards [data-pearl]');
   for(let i=0;i<5;i++){const item=items.nth(i);await item.scrollIntoViewIfNeeded();await ready(item);check(`Home ${width}: ${cards[i].key} artwork and pearl ready`,await pixels(item)&&await item.locator('img').evaluate(img=>img.complete&&img.naturalWidth>0));}
-  check(`Home ${width}: six cards share one WebGL context`,await page.evaluate(()=>window.__gls.length===1));
+  check(`Home ${width}: six cards share one renderer plus one bounded portal field`,await page.evaluate(()=>window.__gls.length===2));
   await page.evaluate(()=>scrollTo({top:0,behavior:'instant'}));await ready(main);await shot(page,`${width}-home`);check(`Home ${width}: settled fonts and navigation fit`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1&&[...document.querySelectorAll('.glass-nav a')].every(e=>{const r=e.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth;})));
   const link=page.locator('.home-main-card');await link.focus();await page.keyboard.press('ArrowRight');await frames(page);
   check(`Home ${width}: focused link supports pearl keyboard control`,await main.evaluate(e=>parseFloat(e.style.getPropertyValue('--pearl-y'))>0));
@@ -64,19 +65,19 @@ try{
     const before=await page.evaluate(()=>scrollY);await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x,y:y-130}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await frames(page,20);
     check('Home card permits vertical touch scrolling',await page.evaluate(()=>scrollY)>before);
   }
-  await page.locator('#home-pearl-demo').click();await frames(page,25);if(width===1280)await shot(page,'1280-home-light');await frames(page,100);await idle(page,`Home ${width}: finite light sweep stops`);
+  check(`Home ${width}: light effects do not require toolbar buttons`,await page.locator('#home-pearl-demo,#portal-motion').count()===0);await idle(page,`Home ${width}: finite light sweep stops`);
   await page.getByRole('link',{name:'开始观展',exact:true}).click();await page.waitForURL('**/flower-detail.html?key=lotus');
   const card=page.locator('#detail-pearl [data-pearl]');
   check(`Detail ${width}: stable artwork is default, pearl is secondary`,await page.locator('[data-exhibit-view=artwork]').getAttribute('aria-pressed')==='true'&&await page.locator('#detail-pearl').isHidden());
   await page.getByRole('button',{name:'珠光光影',exact:true}).click();await ready(card);
   check(`Detail ${width}: pearl entry retains full story`,await page.locator('[data-exhibit-view=pearl]').getAttribute('aria-pressed')==='true'&&await pixels(card)&&await page.locator('.flower-story p').textContent()===cards.find(c=>c.key==='lotus').story);
-  check(`Detail ${width}: layout fits and keeps touch controls`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1&&[...document.querySelectorAll('.exhibit-switch button,.pearl-detail-tools button')].every(e=>e.getBoundingClientRect().height>=44)));
+  check(`Detail ${width}: layout fits and keeps touch controls`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1&&[...document.querySelectorAll('.exhibit-switch button,.pearl-detail-tools button')].filter(e=>e.offsetParent!==null).every(e=>e.getBoundingClientRect().height>=44)));
   await shot(page,`${width}-detail`);await idle(page,`Detail ${width}: pearl idle has no rendering loop`);
   await card.focus();await page.keyboard.press('Home');await frames(page);const before=hash(await card.locator('canvas').screenshot());await page.keyboard.press('ArrowLeft');await frames(page);
   check(`Detail ${width}: keyboard changes material pixels`,before!==hash(await card.locator('canvas').screenshot()));await page.keyboard.press('Home');await frames(page);check(`Detail ${width}: reset restores exact pearl pixels`,before===hash(await card.locator('canvas').screenshot()));
   if(width===1280||width===390)await performanceSample(page,card,width,'detail');
-  await page.getByRole('button',{name:'实体花卡',exact:true}).click();check(`Detail ${width}: complete original remains accessible`,await page.locator('#detail-original').isVisible()&&await page.locator('#detail-original img').getAttribute('src')===cards.find(c=>c.key==='lotus').image);await idle(page,`Detail ${width}: original view stops pearl drawing`);
-  await page.getByRole('button',{name:'立体花朵',exact:true}).click();await page.waitForSelector('#detail-model.model-ready');
+  await openMode(page,'实体花卡');check(`Detail ${width}: complete original remains accessible`,await page.locator('#detail-original').isVisible()&&await page.locator('#detail-original img').getAttribute('src')===cards.find(c=>c.key==='lotus').image);await idle(page,`Detail ${width}: original view stops pearl drawing`);
+  await openMode(page,'立体花朵');await page.waitForSelector('#detail-model.model-ready');
   check(`Detail ${width}: explicit model loads beside same story`,await page.locator('#detail-model').isVisible()&&await page.locator('#detail-pearl').isHidden()&&await page.locator('.flower-story').isVisible());await idle(page,`Detail ${width}: model and hidden pearl remain idle`);
   await page.getByRole('button',{name:'珠光光影',exact:true}).click();await ready(card);check(`Detail ${width}: return to pearl preserves content`,await pixels(card)&&await page.locator('#detail-model').isHidden());
   await page.locator('#collect-btn').click();await page.reload();await page.getByRole('button',{name:'珠光光影',exact:true}).click();await ready(page.locator('#detail-pearl [data-pearl]'));check(`Detail ${width}: collection still persists`,await page.locator('#collect-btn').textContent()==='已收藏');
@@ -101,11 +102,11 @@ try{
   if(fault==='context'){await ready(page.locator('#detail-pearl [data-pearl]'));await page.evaluate(()=>window.__gls[0].getExtension('WEBGL_lose_context').loseContext());}
   await page.waitForFunction(()=>document.querySelector('#detail-pearl [data-pearl]').dataset.pearlState==='fallback',null,{timeout:20000});
   check(`${fault}: failure is explicit and story still available`,(await page.locator('#exhibit-status').textContent()).includes('暂不可用')&&await page.locator('.flower-story p').textContent()===cards.find(c=>c.key==='lotus').story);
-  await page.locator('#collect-btn').click();check(`${fault}: failure does not block collection`,await page.locator('#collect-btn').textContent()==='已收藏');await page.getByRole('button',{name:'实体花卡',exact:true}).click();check(`${fault}: complete original still available`,await page.locator('#detail-original img').isVisible());
+  await page.locator('#collect-btn').click();check(`${fault}: failure does not block collection`,await page.locator('#collect-btn').textContent()==='已收藏');await openMode(page,'实体花卡');check(`${fault}: complete original still available`,await page.locator('#detail-original img').isVisible());
   if(fault==='renderer')await shot(page,'390-fallback');await context.close();
  }
  {
-  const {context,page}=await setup(1280);let release;const gate=new Promise(r=>release=r);await page.route('**/pearl-renderer.mjs',async route=>{await gate;await route.continue();});await page.goto(`${base}/flower-detail.html?key=lotus`);await page.getByRole('button',{name:'实体花卡',exact:true}).click();release();await frames(page,30);check('Late pearl load never overrides original selection',await page.locator('#detail-original').isVisible()&&await page.locator('#detail-pearl').isHidden());await page.getByRole('button',{name:'珠光光影',exact:true}).click();await ready(page.locator('#detail-pearl [data-pearl]'));
+  const {context,page}=await setup(1280);let release;const gate=new Promise(r=>release=r);await page.route('**/pearl-renderer.mjs',async route=>{await gate;await route.continue();});await page.goto(`${base}/flower-detail.html?key=lotus`);await openMode(page,'实体花卡');release();await frames(page,30);check('Late pearl load never overrides original selection',await page.locator('#detail-original').isVisible()&&await page.locator('#detail-pearl').isHidden());await page.getByRole('button',{name:'珠光光影',exact:true}).click();await ready(page.locator('#detail-pearl [data-pearl]'));
   await page.locator('#detail-pearl-demo').click();await page.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,get:()=>true});document.dispatchEvent(new Event('visibilitychange'));});await idle(page,'Hidden document cancels pearl drawing');
   await page.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,get:()=>false});document.dispatchEvent(new Event('visibilitychange'));});await frames(page);await page.evaluate(()=>{document.querySelector('main').style.paddingBottom='1200px';scrollTo(0,document.body.scrollHeight);});await frames(page);await idle(page,'Offscreen pearl stops drawing');await context.close();
  }

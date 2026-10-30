@@ -1,218 +1,203 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-23T09:41:34.041039+00:00",
-  "title": "Design System: 花开有声 · 局部珠光展陈",
+  "generatedAt": "2026-10-29T07:43:28.786127+00:00",
+  "title": "Design System: 花开有声 · 沉浸式光场数字艺术展",
   "extensions": {
     "colorMeta": {
-      "exhibit-room": {
+      "room": {
         "role": "neutral",
-        "displayName": "深绿展厅",
-        "canonical": "#182421",
+        "displayName": "深靛蓝展厅",
         "tonalRamp": [
-          "oklch(15% 0.01771 177.64)",
-          "oklch(26% 0.01771 177.64)",
-          "oklch(38% 0.01771 177.64)",
-          "oklch(49% 0.01771 177.64)",
-          "oklch(61% 0.01771 177.64)",
-          "oklch(72% 0.01771 177.64)",
-          "oklch(84% 0.01771 177.64)",
-          "oklch(95% 0.01771 177.64)"
+          "oklch(15% 0.03905 263.10)",
+          "oklch(26% 0.03905 263.10)",
+          "oklch(38% 0.03905 263.10)",
+          "oklch(49% 0.03905 263.10)",
+          "oklch(61% 0.03905 263.10)",
+          "oklch(72% 0.03905 263.10)",
+          "oklch(84% 0.03905 263.10)",
+          "oklch(95% 0.03905 263.10)"
         ]
       },
-      "exhibit-ink": {
+      "room-deep": {
         "role": "neutral",
-        "displayName": "暖白文字",
-        "canonical": "#f0ece1",
+        "displayName": "深夜展厅",
         "tonalRamp": [
-          "oklch(15% 0.01525 90.24)",
-          "oklch(26% 0.01525 90.24)",
-          "oklch(38% 0.01525 90.24)",
-          "oklch(49% 0.01525 90.24)",
-          "oklch(61% 0.01525 90.24)",
-          "oklch(72% 0.01525 90.24)",
-          "oklch(84% 0.01525 90.24)",
-          "oklch(95% 0.01525 90.24)"
+          "oklch(15% 0.03406 261.46)",
+          "oklch(26% 0.03406 261.46)",
+          "oklch(38% 0.03406 261.46)",
+          "oklch(49% 0.03406 261.46)",
+          "oklch(61% 0.03406 261.46)",
+          "oklch(72% 0.03406 261.46)",
+          "oklch(84% 0.03406 261.46)",
+          "oklch(95% 0.03406 261.46)"
         ]
       },
-      "exhibit-muted": {
+      "room-panel": {
         "role": "neutral",
-        "displayName": "灰绿说明",
-        "canonical": "#bdc8bf",
+        "displayName": "蓝色展面",
         "tonalRamp": [
-          "oklch(15% 0.01728 151.05)",
-          "oklch(26% 0.01728 151.05)",
-          "oklch(38% 0.01728 151.05)",
-          "oklch(49% 0.01728 151.05)",
-          "oklch(61% 0.01728 151.05)",
-          "oklch(72% 0.01728 151.05)",
-          "oklch(84% 0.01728 151.05)",
-          "oklch(95% 0.01728 151.05)"
+          "oklch(15% 0.04936 261.85)",
+          "oklch(26% 0.04936 261.85)",
+          "oklch(38% 0.04936 261.85)",
+          "oklch(49% 0.04936 261.85)",
+          "oklch(61% 0.04936 261.85)",
+          "oklch(72% 0.04936 261.85)",
+          "oklch(84% 0.04936 261.85)",
+          "oklch(95% 0.04936 261.85)"
         ]
       },
-      "exhibit-line": {
+      "text": {
         "role": "neutral",
-        "displayName": "展厅轻边界",
-        "canonical": "#a7b8ad40",
+        "displayName": "冷白正文",
         "tonalRamp": [
-          "oklch(15% 0.02435 157.43 / 0.25098)",
-          "oklch(26% 0.02435 157.43 / 0.25098)",
-          "oklch(38% 0.02435 157.43 / 0.25098)",
-          "oklch(49% 0.02435 157.43 / 0.25098)",
-          "oklch(61% 0.02435 157.43 / 0.25098)",
-          "oklch(72% 0.02435 157.43 / 0.25098)",
-          "oklch(84% 0.02435 157.43 / 0.25098)",
-          "oklch(95% 0.02435 157.43 / 0.25098)"
+          "oklch(15% 0.00855 128.56)",
+          "oklch(26% 0.00855 128.56)",
+          "oklch(38% 0.00855 128.56)",
+          "oklch(49% 0.00855 128.56)",
+          "oklch(61% 0.00855 128.56)",
+          "oklch(72% 0.00855 128.56)",
+          "oklch(84% 0.00855 128.56)",
+          "oklch(95% 0.00855 128.56)"
         ]
       },
-      "exhibit-paper": {
+      "soft": {
         "role": "neutral",
-        "displayName": "浅色卡缘",
-        "canonical": "#e5e8e1",
+        "displayName": "蓝灰说明",
         "tonalRamp": [
-          "oklch(15% 0.00987 125.69)",
-          "oklch(26% 0.00987 125.69)",
-          "oklch(38% 0.00987 125.69)",
-          "oklch(49% 0.00987 125.69)",
-          "oklch(61% 0.00987 125.69)",
-          "oklch(72% 0.00987 125.69)",
-          "oklch(84% 0.00987 125.69)",
-          "oklch(95% 0.00987 125.69)"
+          "oklch(15% 0.02632 244.48)",
+          "oklch(26% 0.02632 244.48)",
+          "oklch(38% 0.02632 244.48)",
+          "oklch(49% 0.02632 244.48)",
+          "oklch(61% 0.02632 244.48)",
+          "oklch(72% 0.02632 244.48)",
+          "oklch(84% 0.02632 244.48)",
+          "oklch(95% 0.02632 244.48)"
         ]
       },
-      "action-paper": {
+      "signal": {
         "role": "primary",
-        "displayName": "浅色动作底",
-        "canonical": "#e1e7d7",
+        "displayName": "青绿方向提示",
         "tonalRamp": [
-          "oklch(15% 0.02228 123.65)",
-          "oklch(26% 0.02228 123.65)",
-          "oklch(38% 0.02228 123.65)",
-          "oklch(49% 0.02228 123.65)",
-          "oklch(61% 0.02228 123.65)",
-          "oklch(72% 0.02228 123.65)",
-          "oklch(84% 0.02228 123.65)",
-          "oklch(95% 0.02228 123.65)"
+          "oklch(15% 0.05975 142.82)",
+          "oklch(26% 0.05975 142.82)",
+          "oklch(38% 0.05975 142.82)",
+          "oklch(49% 0.05975 142.82)",
+          "oklch(61% 0.05975 142.82)",
+          "oklch(72% 0.05975 142.82)",
+          "oklch(84% 0.05975 142.82)",
+          "oklch(95% 0.05975 142.82)"
         ]
       },
-      "action-ink": {
-        "role": "primary",
-        "displayName": "深绿动作字",
-        "canonical": "#24362b",
-        "tonalRamp": [
-          "oklch(15% 0.03068 157.28)",
-          "oklch(26% 0.03068 157.28)",
-          "oklch(38% 0.03068 157.28)",
-          "oklch(49% 0.03068 157.28)",
-          "oklch(61% 0.03068 157.28)",
-          "oklch(72% 0.03068 157.28)",
-          "oklch(84% 0.03068 157.28)",
-          "oklch(95% 0.03068 157.28)"
-        ]
-      },
-      "pearl-hover": {
-        "role": "primary",
-        "displayName": "暖色悬停",
-        "canonical": "#d3c29c",
-        "tonalRamp": [
-          "oklch(15% 0.05434 86.73)",
-          "oklch(26% 0.05434 86.73)",
-          "oklch(38% 0.05434 86.73)",
-          "oklch(49% 0.05434 86.73)",
-          "oklch(61% 0.05434 86.73)",
-          "oklch(72% 0.05434 86.73)",
-          "oklch(84% 0.05434 86.73)",
-          "oklch(95% 0.05434 86.73)"
-        ]
-      },
-      "focus": {
-        "role": "primary",
-        "displayName": "暖色焦点",
-        "canonical": "#e0cea3",
-        "tonalRamp": [
-          "oklch(15% 0.06017 87.98)",
-          "oklch(26% 0.06017 87.98)",
-          "oklch(38% 0.06017 87.98)",
-          "oklch(49% 0.06017 87.98)",
-          "oklch(61% 0.06017 87.98)",
-          "oklch(72% 0.06017 87.98)",
-          "oklch(84% 0.06017 87.98)",
-          "oklch(95% 0.06017 87.98)"
-        ]
-      },
-      "catalogue-paper": {
+      "rule": {
         "role": "neutral",
-        "displayName": "首页图录纸色",
-        "canonical": "#e8e7dd",
+        "displayName": "透明蓝灰细线",
         "tonalRamp": [
-          "oklch(15% 0.01339 102.03)",
-          "oklch(26% 0.01339 102.03)",
-          "oklch(38% 0.01339 102.03)",
-          "oklch(49% 0.01339 102.03)",
-          "oklch(61% 0.01339 102.03)",
-          "oklch(72% 0.01339 102.03)",
-          "oklch(84% 0.01339 102.03)",
-          "oklch(95% 0.01339 102.03)"
+          "oklch(15% 0.05209 258.01 / 0.302)",
+          "oklch(26% 0.05209 258.01 / 0.302)",
+          "oklch(38% 0.05209 258.01 / 0.302)",
+          "oklch(49% 0.05209 258.01 / 0.302)",
+          "oklch(61% 0.05209 258.01 / 0.302)",
+          "oklch(72% 0.05209 258.01 / 0.302)",
+          "oklch(84% 0.05209 258.01 / 0.302)",
+          "oklch(95% 0.05209 258.01 / 0.302)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "浅色原型段",
+        "tonalRamp": [
+          "oklch(15% 0.00679 145.52)",
+          "oklch(26% 0.00679 145.52)",
+          "oklch(38% 0.00679 145.52)",
+          "oklch(49% 0.00679 145.52)",
+          "oklch(61% 0.00679 145.52)",
+          "oklch(72% 0.00679 145.52)",
+          "oklch(84% 0.00679 145.52)",
+          "oklch(95% 0.00679 145.52)"
+        ]
+      },
+      "paper-ink": {
+        "role": "neutral",
+        "displayName": "原型段深字",
+        "tonalRamp": [
+          "oklch(15% 0.03067 228.35)",
+          "oklch(26% 0.03067 228.35)",
+          "oklch(38% 0.03067 228.35)",
+          "oklch(49% 0.03067 228.35)",
+          "oklch(61% 0.03067 228.35)",
+          "oklch(72% 0.03067 228.35)",
+          "oklch(84% 0.03067 228.35)",
+          "oklch(95% 0.03067 228.35)"
+        ]
+      },
+      "signal-hover": {
+        "role": "primary",
+        "displayName": "浅青绿悬停",
+        "tonalRamp": [
+          "oklch(15% 0.03268 142.49)",
+          "oklch(26% 0.03268 142.49)",
+          "oklch(38% 0.03268 142.49)",
+          "oklch(49% 0.03268 142.49)",
+          "oklch(61% 0.03268 142.49)",
+          "oklch(72% 0.03268 142.49)",
+          "oklch(84% 0.03268 142.49)",
+          "oklch(95% 0.03268 142.49)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "display",
-        "purpose": "首页桌面标题"
+        "purpose": "首页展名"
       },
       "headline": {
         "displayName": "headline",
-        "purpose": "详情页桌面标题"
+        "purpose": "图录、花册与备份页标题"
+      },
+      "title": {
+        "displayName": "title",
+        "purpose": "首页当前作品名称"
       },
       "body": {
         "displayName": "body",
-        "purpose": "首页介绍与详情说明"
+        "purpose": "基础正文"
       },
       "story": {
         "displayName": "story",
-        "purpose": "详情故事正文"
+        "purpose": "详情阅读正文"
       },
       "label": {
         "displayName": "label",
-        "purpose": "珠光工具文字"
-      },
-      "card-title": {
-        "displayName": "card-title",
-        "purpose": "卡片题签"
+        "purpose": "操作与说明标签"
       }
     },
     "shadows": [
       {
-        "name": "pearl-main",
+        "name": "detail-pearl-material",
         "value": "2px 3px 0 #9aa69e,8px 20px 32px #080e0c70",
-        "purpose": "首页主卡与详情珠光卡"
-      },
-      {
-        "name": "pearl-small",
-        "value": "1px 2px 0 #9aa69e,4px 12px 20px #253e3022",
-        "purpose": "首页五卡列表"
+        "purpose": "仅详情保留的珠光纸缘；不用于公共导航、图录与花册。"
       }
     ],
     "motion": [
       {
-        "name": "manual-demo",
-        "value": "1600ms",
-        "purpose": "手动触发，结束归正；非自动循环"
+        "name": "work-reveal-duration",
+        "value": "320ms",
+        "purpose": "等待新图解码，再叠化覆盖保留的旧图；减少动态时直接切换。"
       },
       {
-        "name": "pearl-tilt",
-        "value": "perspective(1100px); rotateX ≤ 8deg; rotateY ≤ 11deg",
-        "purpose": "输入驱动；低动态偏好取消倾转"
+        "name": "work-reveal-ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "作品切换缓动。"
       },
       {
-        "name": "navigation-feedback",
-        "value": "background .2s, color .2s",
-        "purpose": "既有导航悬停反馈"
+        "name": "field-wake-window",
+        "value": "900ms",
+        "purpose": "一次输入后的有限光场绘制窗口。"
       }
     ],
     "breakpoints": [
       {
-        "name": "narrow",
+        "name": "narrow-phone",
         "value": "350px"
       },
       {
@@ -220,84 +205,125 @@
         "value": "700px"
       },
       {
-        "name": "tablet-max",
+        "name": "desktop-alignment-start",
+        "value": "701px"
+      },
+      {
+        "name": "tablet",
         "value": "1000px"
+      },
+      {
+        "name": "wide",
+        "value": "1600px"
       }
     ]
   },
   "components": [
     {
-      "name": "首页开始入口",
+      "name": "主要故事入口",
       "kind": "button",
-      "refersTo": "home-start",
-      "description": "首页现有主链接；预览仅展示视觉状态。",
-      "html": "<a class=\"ds-button\" href=\"#\">从清荷入梦开始</a>",
-      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;font-family:Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;font-size:13px;line-height:1.6;border-radius:4px;cursor:pointer;text-decoration:none}.ds-button{padding:12px 20px;background:#e1e7d7;color:#24362b;border:1px solid #a6ae9470;font-size:14px;transition:background .2s}.ds-button:hover{background:#fff}.ds-button:focus-visible,.ds-nav a:focus-visible,.ds-switch button:focus-visible,.ds-card:focus-visible{outline:2px solid #e0cea3;outline-offset:5px}"
+      "refersTo": "button-primary",
+      "description": "当前作品信息区的故事主按钮；展名区另有“开始观展”文字快捷入口，两者与作品切换同步并保留原生链接语义。",
+      "html": "<a class=\"ds-primary\" href=\"#story\">读作品故事 →</a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;min-height:48px;padding:10px 24px;border:0;border-radius:3px;background:var(--signal,#c5e6c2);color:var(--room,#0b1426);font-size:15px;text-decoration:none;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-primary:hover{background:#e0f2de}.ds-primary:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}"
     },
     {
       "name": "珠光工具",
       "kind": "button",
       "refersTo": "pearl-button",
-      "description": "归正、完整原作及有限演示的同一工具样式。",
-      "html": "<button class=\"ds-button\" type=\"button\">完整原作</button>",
-      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;font-family:Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;font-size:13px;line-height:1.6;border-radius:4px;cursor:pointer;text-decoration:none}.ds-button{padding:8px 14px;background:transparent;color:var(--exhibit-ink,#f0ece1);border:1px solid #a7b8ad70}.ds-button:hover{background:#d3c29c;color:#182421}.ds-button:disabled{opacity:.5;cursor:default}.ds-button:focus-visible,.ds-nav a:focus-visible,.ds-switch button:focus-visible,.ds-card:focus-visible{outline:2px solid #e0cea3;outline-offset:5px}"
+      "description": "详情的珠光工具；示例没有模拟图形功能。",
+      "html": "<button class=\"ds-pearl\">演示光影</button>",
+      "css": ".ds-pearl{min-height:44px;padding:8px 14px;border:1px solid var(--rule,#8196b54d);border-radius:3px;background:transparent;color:var(--soft,#b9c9d7);font-size:12px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-pearl:hover{background:var(--signal,#c5e6c2);color:var(--room,#0b1426)}.ds-pearl:disabled{opacity:.5;cursor:default}.ds-pearl:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}"
     },
     {
-      "name": "首页导航",
+      "name": "共享文字导航",
       "kind": "nav",
-      "refersTo": "home-nav",
-      "description": "有限透光、当前项目和小屏点击区域；示例只显示两项。",
-      "html": "<nav class=\"ds-nav\" aria-label=\"展览导航\"><a href=\"#\" aria-current=\"page\">展览首页</a><a href=\"#\">花卡图录</a></nav>",
-      "css": ".ds-nav{display:flex;padding:6px;gap:4px;border-radius:50px;background:#d5e5db12;border:1px solid #a7b8ad38;backdrop-filter:blur(10px)}.ds-nav a{display:flex;align-items:center;min-height:44px;padding:9px 17px;white-space:nowrap;border-radius:30px;font-family:Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;font-size:12px;color:var(--exhibit-muted,#bdc8bf);text-decoration:none;transition:background .2s,color .2s}.ds-nav a:hover{color:#fff;background:#ffffff0b}.ds-nav a[aria-current=page]{background:#d3c29c24;color:var(--exhibit-ink,#f0ece1)}.ds-button:focus-visible,.ds-nav a:focus-visible,.ds-switch button:focus-visible,.ds-card:focus-visible{outline:2px solid #e0cea3;outline-offset:5px}"
+      "refersTo": "navigation",
+      "description": "当前项使用底线；手机放到独立一行。",
+      "html": "<nav class=\"ds-nav\" aria-label=\"展览导航\"><a href=\"#home\" aria-current=\"page\">展览首页</a><a href=\"#catalogue\">五花图录</a><a href=\"#album\">我的花册</a></nav>",
+      "css": ".ds-nav{display:flex;gap:26px;background:var(--room-deep,#070f1e);font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-nav a{display:flex;align-items:center;min-height:44px;padding:8px 0;color:var(--soft,#b9c9d7);font-size:14px;text-decoration:none}.ds-nav a[aria-current]{color:var(--text,#f0f3ed);box-shadow:inset 0 -2px var(--signal,#c5e6c2)}.ds-nav a:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}"
     },
     {
-      "name": "展示切换",
+      "name": "作品选择轨",
+      "kind": "chip",
+      "refersTo": "work-selector",
+      "description": "选中态以顶线和文字表示；示例只展示状态。",
+      "html": "<div class=\"ds-track\" role=\"group\" aria-label=\"作品选择\"><button aria-pressed=\"true\"><span>04</span> 清荷入梦</button><button aria-pressed=\"false\"><span>05</span> 下一件作品</button></div>",
+      "css": ".ds-track{display:flex;border-top:1px solid var(--rule,#8196b54d);font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-track button{display:flex;align-items:center;gap:12px;min-height:64px;padding:12px 10px;border:0;border-top:2px solid transparent;background:none;color:var(--soft,#b9c9d7);font-size:14px}.ds-track span{font-size:11px;font-variant-numeric:tabular-nums}.ds-track [aria-pressed=true]{border-top-color:var(--signal,#c5e6c2);color:var(--text,#f0f3ed)}.ds-track button:hover{color:var(--signal,#c5e6c2)}.ds-track button:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}"
+    },
+    {
+      "name": "图录收藏",
       "kind": "button",
-      "refersTo": "exhibit-switch",
-      "description": "选中与未选中外观，业务切换由页面负责。",
-      "html": "<div class=\"ds-switch\" role=\"group\" aria-label=\"展示方式\"><button type=\"button\" aria-pressed=\"true\">珠光花卡</button><button type=\"button\" aria-pressed=\"false\">原作花卡</button></div>",
-      "css": ".ds-switch{display:flex;gap:8px;flex-wrap:wrap}.ds-switch button{min-height:44px;padding:8px 16px;border:1px solid #889b8766;border-radius:4px;background:transparent;color:#d6dfd2;font-family:Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;font-size:14px;cursor:pointer}.ds-switch button[aria-pressed=true]{background:#e1e7d7;color:#24362b;border-color:#e1e7d7}.ds-switch button:hover{border-color:#dbe1cf}.ds-button:focus-visible,.ds-nav a:focus-visible,.ds-switch button:focus-visible,.ds-card:focus-visible{outline:2px solid #e0cea3;outline-offset:5px}"
+      "refersTo": "collect-button",
+      "description": "图录收藏默认态；动作需实际存储逻辑。",
+      "html": "<button class=\"ds-collect\" aria-pressed=\"false\">收藏</button>",
+      "css": ".ds-collect{min-height:44px;padding:7px 14px;border:1px solid var(--rule,#8196b54d);border-radius:3px;background:transparent;color:var(--signal,#c5e6c2);font-size:13px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-collect:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}.ds-collect:hover{border-color:var(--signal,#c5e6c2);background:var(--room-panel,#142139);color:var(--signal,#c5e6c2)}"
     },
     {
-      "name": "珠光卡缘与题签",
+      "name": "已收藏状态",
+      "kind": "button",
+      "refersTo": "collect-button-selected",
+      "description": "图录与详情共用的选中色态；图录示例不代替真实收藏记录。",
+      "html": "<button class=\"ds-collected\" aria-pressed=\"true\">已收藏</button>",
+      "css": ".ds-collected{min-height:44px;padding:7px 14px;border:1px solid var(--signal,#c5e6c2);border-radius:3px;background:var(--signal,#c5e6c2);color:var(--room,#0b1426);font-size:13px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-collected:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}.ds-collected:hover{background:#e0f2de;color:var(--room,#0b1426)}"
+    },
+    {
+      "name": "图录作品容器",
       "kind": "card",
-      "refersTo": "pearl-face",
-      "description": "仅结构预览；原作占位区不代表花纹或珠光效果。",
-      "html": "<figure class=\"ds-card\" tabindex=\"0\"><div class=\"ds-art\">原作区域 · 结构预览</div><figcaption class=\"ds-caption\"><span>清荷入梦</span><small>花卡</small></figcaption></figure>",
-      "css": ".ds-card{margin:0;width:260px;max-width:100%;padding:12px 12px 8px;background:var(--exhibit-paper,#e5e8e1);border-radius:12px;box-shadow:2px 3px 0 #9aa69e,8px 20px 32px #080e0c70;overflow:hidden}.ds-art{aspect-ratio:884/1255;display:grid;place-items:center;background:#102224;color:var(--exhibit-muted,#bdc8bf);font-family:Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;font-size:12px}.ds-caption{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:43px;color:#294440}.ds-caption span{font-family:var(--serif,Exhibition, 'Noto Serif SC', 'Songti SC', SimSun, serif);font-size:18px;letter-spacing:.04em}.ds-caption small{font-family:Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;font-size:11px;color:#4e5a52}.ds-button:focus-visible,.ds-nav a:focus-visible,.ds-switch button:focus-visible,.ds-card:focus-visible{outline:2px solid #e0cea3;outline-offset:5px}"
+      "refersTo": "artwork-container",
+      "description": "示例只展示容器，完整作品需来自真实资源。",
+      "html": "<article class=\"ds-work\"><div class=\"ds-work-art\" role=\"img\" aria-label=\"完整原作画幅示意，不含作品\">完整原作画幅</div><h3>作品名称</h3><a href=\"#story\">进入作品故事 →</a></article>",
+      "css": ".ds-work{color:var(--text,#f0f3ed);font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-work-art{display:grid;place-items:center;min-height:220px;padding:20px;background:var(--room-panel,#142139);color:var(--soft,#b9c9d7)}.ds-work h3{font-family:var(--serif,serif);font-size:27px;font-weight:400;margin:24px 0 18px}.ds-work a{display:inline-flex;align-items:center;min-height:44px;font-size:13px;color:var(--soft,#b9c9d7);text-decoration:none}.ds-work a:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}"
+    },
+    {
+      "name": "备份动作",
+      "kind": "button",
+      "refersTo": "backup-action",
+      "description": "导出和预检确认使用的主要动作；恢复确认仅在有效预检有新增记录后展示。",
+      "html": "<button class=\"ds-backup\">下载花册备份 JSON</button>",
+      "css": ".ds-backup{min-height:48px;padding:8px 18px;border:1px solid var(--signal,#c5e6c2);border-radius:3px;background:var(--signal,#c5e6c2);color:var(--room,#0b1426);font-size:14px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-backup:hover:not(:disabled){background:#e0f2de}.ds-backup:disabled{background:var(--room-panel,#142139);color:var(--soft,#b9c9d7);border-color:var(--rule,#8196b54d);opacity:.6}.ds-backup:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}@media(max-width:700px){.ds-backup{padding:12px 16px;width:100%}}"
+    },
+    {
+      "name": "备份文件输入",
+      "kind": "input",
+      "refersTo": "backup-file",
+      "description": "浏览器原生文件选择；示例不处理文件。",
+      "html": "<label class=\"ds-file-label\" for=\"ds-backup-file\">选择花册备份文件</label><input class=\"ds-file\" id=\"ds-backup-file\" type=\"file\" accept=\".json,application/json\">",
+      "css": ".ds-file-label{display:block;color:var(--text,#f0f3ed);font-size:15px;margin:14px 0 7px;font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-file{min-height:44px;width:100%;max-width:500px;padding:10px 12px;border:1px solid var(--rule,#8196b54d);border-radius:3px;background:var(--room-deep,#070f1e);color:var(--text,#f0f3ed);color-scheme:dark;font-size:16px;accent-color:var(--signal,#c5e6c2);caret-color:var(--signal,#c5e6c2);font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;}.ds-file:focus-visible{outline:2px solid var(--signal,#c5e6c2);outline-offset:5px}.ds-file::file-selector-button{font:inherit;min-height:36px;padding:4px 12px;margin-right:12px;border:0;border-radius:3px;background:var(--room-panel,#142139);color:var(--text,#f0f3ed);cursor:pointer}"
     }
   ],
   "narrative": {
-    "northStar": "当代博物馆数字展览",
-    "overview": "以完整花卉纹样为主角，深绿展厅承托暖白文字，浅色卡缘提供观看边界。标题延续项目自托管 Exhibition 字体；局部珠光随观察动作变化，界面保持克制。\n\n本记录只适用于首页、花卡详情及其共享珠光卡组件，来自用户已确认的局部珠光样稿与两页延展。首页的浅色五卡区域属于本次范围；独立图录、收藏、导览页面不据此宣称已统一。珠光是屏幕上的数字材质近似，不是实体印刷工艺或实物效果承诺。",
+    "northStar": "深靛蓝中的光场花园",
+    "overview": "以深靛蓝空间承托完整花卉原作，冷白文字负责阅读，青绿提示负责方向。大标题、平直控件与文字导航构成稳定界面，作品保留自己的全部色彩。光场由代码生成，珠光随观察动作变化；内容与入口始终独立于图形增强。\n\n本记录从当前代码提取，延续已确认的深靛蓝光场体系；本轮精修入口层级、详情阅读顺序、收藏状态与备份操作，适用首页、图录、详情、花册、备份与共享导航。它记录视觉实现，不代表正式部署、真实用户试用或实体扫描验收。首页构图策略以 surface brief 为准，不扩大为每页必须使用全屏光场。",
     "keyCharacteristics": [
-      "完整原作与五种花卉差异优先。",
-      "深绿背景、暖白文字、浅色卡缘和有限导航透光。",
-      "输入驱动的局部光影；静止时无持续绘制。"
+      "深靛蓝空间、冷白正文、青绿方向提示。",
+      "完整原作先呈现；图形失败仍可阅读和进入故事。",
+      "文字导航与平直轮廓；作品页按阅读与操作需要调整密度。",
+      "有限时长、输入驱动的光影，保留自然滚动与原生光标。"
     ],
     "rules": [
       {
-        "name": "The Artwork First Rule",
-        "body": "保留每种花卉自己的完整资源与比例；光影不得替代原作，原作入口保持可访问。",
+        "name": "Artwork First",
+        "body": "原作始终完整包含，不用裁切、悬停放大或 shader 遮挡替代真实纹样。",
         "section": "colors"
       },
       {
-        "name": "The Finite Motion Rule",
-        "body": "珠光响应输入；手动演示在 1.6 秒后结束。隐藏、离屏或静止时不持续绘制，低动态偏好不倾转。",
+        "name": "Finite Motion",
+        "body": "光场响应输入，在有限时间后停止；隐藏、离屏和减少动态效果时不保持连续绘制。",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do 保持完整花卉纹样可辨，使用对应原作资源与原始比例。",
-      "Do 保留键盘方向键、Home 归正、纵向触摸阅读和清晰焦点。",
-      "Do 让关键控件至少有 44px 高度，并保留原作、故事及现有收藏入口。",
-      "Do 将图像、模块与 WebGL 故障回退到可阅读原作的路径。"
+      "Do 保留每款花卡自己的完整原作、比例、署名与可用媒体。",
+      "Do 保持原作与故事入口在图形增强失败时可访问。",
+      "Do 保持主要控件至少 44px 高，保留语义化当前项、选中态和键盘焦点。",
+      "Do 让手机内容自然重排与滚动，使用真实可用的收藏和备份状态。"
     ],
     "donts": [
-      "Don't 把局部珠光扩展成整屏光晕、持续自动旋转或空闲绘制循环。",
-      "Don't 将此记录当成独立图录、收藏、导览已完成统一改版的证明。",
-      "Don't 将本机浏览器与模拟触摸结果写成所有实体手机流畅的保证。",
-      "Don't 将数字珠光描述为已经验证的实体珠光印刷效果。"
+      "Don't 恢复装饰性玻璃导航、拟真书册阴影或全页纸色外壳。",
+      "Don't 把静态截图或普通浏览记录标成实体卡识别成功。",
+      "Don't 为缺失媒体、馆藏授权、生成图或真机性能编造证明。",
+      "Don't 将 sidecar 的色阶预览与组件样例当成新的产品界面或运行时 token。"
     ]
   }
 }

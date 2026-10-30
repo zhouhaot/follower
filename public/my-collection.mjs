@@ -42,7 +42,7 @@ function renderCollectionCard(collection) {
       <a href="./flower-detail.html?key=${card.key}" aria-label="阅读${card.title}的故事"><img src="${card.artworkImage}" alt="${card.title}纹样"></a>
       <div class="plate-caption">
         <h3><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h3>
-        <p class="plate-trait">${card.trait || ''}</p>
+
         <p class="plate-date">${sourceLabel} · ${formatDate(collection.collectedAt)}</p>
         <button type="button" onclick="event.stopPropagation();window.myCollectionRemove('${card.key}', event)">取消收藏</button>
       </div>
@@ -54,13 +54,13 @@ function renderEncounterCard(encounter) {
   const card = cardByKey(encounter.key);
   if (!card) return '';
 
-  const sourceLabel = encounter.source === 'camera' ? '扫描识别' : encounter.source;
+  const sourceLabel = encounter.restoredFromBackup ? '历史备份恢复' : encounter.source === 'camera' ? '扫描识别' : '历史相遇';
 
   return `
     <div class="encounter-card">
       <a href="./flower-detail.html?key=${card.key}" aria-label="阅读${card.title}的故事"><img src="${card.image}" alt="${card.title}"></a>
       <div>
-        <h4><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h4>
+        <h3><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h3>
         <p>${sourceLabel} · ${formatTime(encounter.recognizedAt)}</p>
       </div>
     </div>
@@ -81,7 +81,7 @@ function renderRecentViewCard(view) {
     <div class="view-card">
       <a href="./flower-detail.html?key=${card.key}" aria-label="阅读${card.title}的故事"><img src="${card.image}" alt="${card.title}"></a>
       <div>
-        <h4><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h4>
+        <h3><a href="./flower-detail.html?key=${card.key}">${card.title}</a></h3>
         <p>${sourceLabel} · ${formatTime(view.viewedAt)}</p>
       </div>
     </div>
@@ -105,34 +105,22 @@ function render() {
     <main id="main" class="light-page collection-page">
       <section class="page-wrap">
         <div class="page-heading">
-          <p class="eyebrow">YOUR COLLECTION / 我的收藏</p>
+
           <h1>把相遇，<br><em>留在这里。</em></h1>
-          <p class="lead">${data.collections.length > 0 ? `已收藏 <strong>${data.collections.length} / ${cards.length}</strong> 朵${data.collections.length < cards.length ? '，还有 ' + (cards.length - data.collections.length) + ' 朵在等你。' : '，五朵齐了。'}` : '你收藏的花、相遇的花和最近看过的花，都保存在这台浏览器。'}</p>
+          <p class="lead">${data.collections.length > 0 ? `已收藏 <strong>${data.collections.length} / ${cards.length}</strong> 朵${data.collections.length < cards.length ? '，还有 ' + (cards.length - data.collections.length) + ' 朵在等你。' : '，五朵齐了。'}` : '收藏、扫描相遇与最近浏览。'}</p>
           ${data.collections.length > 0 ? '<button type="button" class="pill-link dark-pill keepsake-print-btn" onclick="window.print()">做成纪念页 · 打印带走</button>' : ''}
         </div>
         <div id="collection-notice"></div>
         ${loaded && state.kind === 'ready' && !hasAnyData ? `
           <div class="collection-empty">
             <p>花册还是空的</p>
-            <p class="collection-empty-hint">从最完整的一朵开始：清荷入梦。</p>
+
             <a class="pill-link dark-pill" href="./flower-detail.html?key=lotus">看第一朵 · 清荷入梦</a>
             <a class="text-link" href="./catalogue.html">或浏览五花图录</a>
           </div>
         ` : ''}
 
         ${loaded && state.kind === 'ready' && hasAnyData && data.collections.length === 0 ? '<p class="no-collections">还没有主动收藏的花。最近浏览会留在下方，打开详情即可收藏。</p>' : ''}
-        ${loaded && state.kind === 'ready' && data.collections.length === 0 ? `
-          <section class="collection-section" aria-label="收藏画册">
-            <div class="album">
-              <div class="album-page">
-                <div class="album-plate album-plate-empty">
-                  <span class="plate-empty-mark" aria-hidden="true"></span>
-                  <p>第一朵，还没有贴进来。</p>
-                </div>
-              </div>
-            </div>
-          </section>
-        ` : ''}
         ${data.collections.length > 0 ? `
           <section class="collection-section" aria-label="收藏画册">
             <div class="album">
@@ -161,7 +149,7 @@ function render() {
           </section>
         ` : ''}
 
-        <p class="collection-storage-note quiet">收藏与浏览记录仅保存在当前浏览器的本地存储；清除浏览器数据会一并清除，暂不支持跨设备同步。</p>
+        <a href="./backup.html" class="text-link">备份与恢复花册 ↗</a><p class="collection-storage-note quiet">收藏与浏览记录仅保存在当前浏览器的本地存储；清除浏览器数据会一并清除，暂不支持跨设备同步。</p>
         ${data.collections.length > 0 ? `
         <section class="keepsake" aria-label="参观纪念页">
           <header class="keepsake-head">

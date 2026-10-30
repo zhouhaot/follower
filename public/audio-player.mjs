@@ -58,8 +58,11 @@ export function createAudioPlayer({ card, onStateChange = () => {} } = {}) {
     isAvailable: () => true,
     getState: () => state,
     play() {
-      if (state === 'error') return { success: false, reason: 'audio-not-ready' };
       try {
+        if (state === 'error' && audio) {
+          audio.load();
+          state = 'ready';
+        }
         const a = ensure();
         const promise = a.play();
         if (promise) {

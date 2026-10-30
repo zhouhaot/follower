@@ -12,12 +12,20 @@
     "test:business-ui": "node tests/business-browser.mjs",
     "test:phase1-ui": "node tests/phase1-browser.mjs",
     "test:phase2-ui": "node tests/phase2-browser.mjs",
-    "test:detail-ui": "node tests/detail-experience-browser.mjs"
+    "test:detail-ui": "node tests/detail-experience-browser.mjs",
+    "test:assets": "node scripts/check-assets.mjs",
+    "test:pearl-ui": "node tests/pearl-integration-browser.mjs",
+    "test:quality-ui": "node tests/quality-browser.mjs",
+    "test:exhibition-ui": "node tests/exhibition-browser.mjs",
+    "test:transition-ui": "node tests/transition-browser.mjs"
   },
   "dependencies": {
     "three": "0.160.0"
   },
   "devDependencies": {
     "playwright": "1.64.0"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

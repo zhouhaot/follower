@@ -40,12 +40,14 @@ export function initDetailExhibit({card, initialView} = {}) {
       button.disabled = isModelButton && modelPending;
     });
     if (isArtwork) {
-      status.textContent = '作品画面呈现。想在光里看它，选择「珠光光影」。';
+      const image=artwork.querySelector('img');
+      status.textContent = image.complete && !image.naturalWidth ? '图片加载失败。可刷新重试，或继续阅读故事、切换其他视图。' : '';
     } else if (isPearl) {
       const state = pearl.querySelector('[data-pearl]').dataset.pearlState;
       status.textContent = state === 'fallback' ? (pearl.querySelector('img').naturalWidth ? '珠光暂不可用，已保留花卉纹样。仍可回到作品、阅读故事或收藏。' : '花卡图片暂不可用。仍可回到作品、阅读故事或收藏。') : state !== 'ready' ? '纹样已呈现，正在准备珠光。' : reduced.matches ? '已减少动态效果，静态呈现珠光。' : '横向轻拖或使用方向键，观察局部珠光；按 Home 归正。竖向滑动继续阅读。';
     } else if (isOriginal) {
-      status.textContent = '实体花卡平面设计稿完整呈现——含二维码与说明文字的印刷版式。';
+      const image=original.querySelector('img');
+      status.textContent = image.complete && !image.naturalWidth ? '图片加载失败。可刷新重试，或继续阅读故事、切换其他视图。' : '实体花卡平面设计稿完整呈现——含二维码与说明文字的印刷版式。';
     } else if (fallback) {
       status.textContent = '三维暂不可用，当前显示静态效果图。仍可回到作品、阅读故事或收藏。';
     } else if (!viewer) {
@@ -99,6 +101,11 @@ export function initDetailExhibit({card, initialView} = {}) {
   }
 
   const events = new AbortController();
+  for (const container of [artwork,original]) {
+    const image=container.querySelector('img');
+    image.addEventListener('load',update,{signal:events.signal});
+    image.addEventListener('error',update,{signal:events.signal});
+  }
   buttons.forEach(button => button.addEventListener('click', () => select(button.dataset.exhibitView), {signal:events.signal}));
   pearlDemo.addEventListener('click',()=>pearlGallery?.demo(),{signal:events.signal});
   document.getElementById('detail-pearl-reset').addEventListener('click',()=>pearlGallery?.reset(),{signal:events.signal});

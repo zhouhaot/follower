@@ -1,99 +1,58 @@
-# 珠光花卡 · 当代博物馆数字展览（2026-10-23）
+# 花开有声
 
-已将用户选定的局部珠光用于首页主花卡、五张图录缩略卡和五款详情；详情仍可切换完整原作与三维模型，同页阅读故事和收藏。[首页预览](http://127.0.0.1:4173/) · [详情预览](http://127.0.0.1:4173/flower-detail.html?key=lotus) · [接入与验证说明](PEARL-INTEGRATION-REPORT.md)。本次提交包含珠光首页与详情、已验证的三维性能优化及对应验收记录；GitHub同步结果以提交后的远端回读为准，未部署线上。
+五张实体花卡与数字展览：观看原作和三维花朵、阅读故事、聆听清荷的 AI 合成设计解说、主动收藏并在同一浏览器的花册中找回。
 
-# 模型与故事同页及材质探索记录（2026-10-23）
+当前为验收候选。**实体卡扫描是正式上线硬门槛，尚未完成真机逐卡验收；不要据此更新正式服务器。** 本轮基线为 main `981d6ab4e26a5fbb921c9e770f09f80eeed77110`，开发分支为 `codex/quality-preview-20261029`。产物身份以构建后的 `dist/version.json` 为准。正式站点与仓库的一致性本轮未核验。
 
-莲花卡新增「纸本压纹／局部珠光」可交互比较样稿：[本地预览](http://127.0.0.1:4173/card-material.html) · [验证与边界](CARD-MATERIAL-REPORT.md)。可演示光影、拖动卡片、切回原图；该报告保留当时的本地验收快照；当前源码随本次提交保存。
+## 运行与验证
 
-历史首页曾试作花卡展开、电脑指针轻转、磨砂玻璃导航与作品说明浮层；现已由上方珠光展览首页替代，旧模块保留但不再从首页加载。[首页动效与玻璃 UI 验证](HOME-GLASS-REPORT.md)。该历史实验及证据随本次提交保留，当前首页以珠光版为准。
+要求 Node.js 22+、npm 和 Python 3。干净克隆后运行：
 
-本地新增三维拖动与细小缩放优化：合并同帧重绘，保留模型外观。测量结果与验证边界见[动效性能说明](MOTION-PERFORMANCE-REPORT.md)。该报告保留当时的本地验收快照；当前源码随本次提交保存。
-
-五款花卡已整合同页原作、三维模型、故事和收藏，并加入观察提示与“再遇一朵”。[交付与验证说明](DETAIL-EXPERIENCE-REPORT.md)。运行 `npm run test:detail-ui` 复验。下方第二阶段记录保留为已推送历史版本说明。
-
-# 第二阶段本地预览（2026-10-23）
-
-首页已改为原作花卡静态展示，移除手托滚动特效调用。无音频的阅读、收藏与找回流程及模拟走查结果见 [PHASE-2-REPORT.md](PHASE-2-REPORT.md)，真人试用准备见 [任务卡](docs/usability/PHASE-2-TRIAL.md)。`npm run dev` 启动后可运行 `npm run test:phase2-ui`。本阶段尚未部署线上；下方保留历史版本说明。
-
-# 第一阶段复验入口（2026-10-23）
-
-第一阶段 v2 收藏、相遇、浏览分离及修复结果见 [PHASE-1-REPORT.md](PHASE-1-REPORT.md)。运行 `npm run dev` 后执行 `npm test` 和 `npm run test:phase1-ui`；浏览器证据见 [阶段一截图与结果](reports/qa/phase1/README.md)。
-
-本轮交付使用 `public/`，构建输出 `dist/`。`runtime-public/` 为历史副本，尚未同步 v2；下方旧版本的备份/恢复及扫描说明不代表 v2 功能已完成。真机扫描、生产部署与 v2 导入导出仍不在本阶段通过结论内。
-
-# 本地业务开发版 0.5.0（未发布）
-
-新增本地导览路线/进度，以及收藏 JSON 备份、预检、历史恢复与撤销。入口分别位于参观指南和我的收藏；原首页与手部构图未变，双手建模仍暂停。
-
-应用层与第三方边界、AI 辅助记录、实际操作、数据限制和材料准备缺口见 [BUSINESS-APPLICATION-LAYER.md](docs/BUSINESS-APPLICATION-LAYER.md)。`npm test` 与 `npm run test:business-ui` 可验证新增闭环；后者使用隔离合成数据，不操作当前浏览器收藏。此版本不代表登记申请或登记成功。
-
-下文保留既有视觉版本与资产历史说明。
-
-# 花开有声 · 手托花卡候选版
-
-这是独立的手托花卡候选（v0.4.1）：从已验证原作素材与现有金属花卡模型重建，并补齐五款各自的三维花卉。它没有替换 zevth.work，也不代表原 Mac 工程已完整迁移。
-
-## 运行
-
-要求 Python 3；本地验收脚本另需 Node.js 20+ 与已安装的 Chromium 类浏览器。所有运行时文件都在 `public/`，无第三方 CDN 请求：
-
-```
-npm run dev
-```
-
-浏览器打开 `http://localhost:4173`。请勿直接用 file:// 打开，因为浏览器的模块和相机安全限制会阻止部分功能。
-
-可选开发命令（Node.js 20+）：
-
-```
+```sh
 npm ci
 npm test
 npm run build
+python3 scripts/serve-local.py dist 4173
 ```
 
-构建输出 `dist/` 可交给静态托管服务。此目录是新手托版本；已备份的展柜版独立保留，zevth.work 正式站未变。当前发布与测试结果见 `docs/QA-STATUS.md`。
+打开 `http://127.0.0.1:4173/`。另一终端运行：
 
-本次修正让手掌正对观众，掌面与屏幕平行。手指在正面横向展开，同时手掌下移，显露卡牌，再升起、旋转并展开五张图录。手部是合成视觉素材，卡牌由既有模型与未改动的原作素材呈现，不是真实拍摄纪录。实现、来源与验证边界见 `docs/HANDHELD-v0.4.md`。
+```sh
+npx playwright install chromium
+npm run test:phase1-ui
+npm run test:phase2-ui
+npm run test:detail-ui
+npm run test:pearl-ui
+npm run test:quality-ui
+```
 
-## 内容
+macOS 默认使用已安装的 Google Chrome，也可用 `AUDIT_CHROMIUM` 指定可执行文件；Linux CI 使用 Playwright Chromium。所有浏览器脚本只允许 localhost，使用隔离的测试存储，不读取日常浏览器花册。`npm run dev` 则直接预览可编辑的 `public/`。
 
-- 首页：黑色空间、手掌与金属浮雕 GLB，原生滚动展开手指并呈现五张原作花卡
-- 图录：五款原作与五个独立详情入口
-- 收藏：独立本地候选记录，预览不会计入
-- 指南：相机权限、隐私、支持范围和故障说明
-- 预览：五款各自的立体花朵与原作正面；清荷入梦另有金属花卡
-- 扫描：主动开启相机、匹配当前选定花卡的正确图像目标、对应花朵生长、错误/重试/退出路径
+GitHub Actions 配置见 [quality.yml](.github/workflows/quality.yml)，在 push、PR 和手动触发时运行单测、资源校验、构建和浏览器回归，并以 Git SHA 命名证据附件。工作流失败会使 job 失败；是否禁止合并还取决于 GitHub 分支保护，当前未设置或核验该保护。
 
-扫描需要安全上下文（HTTPS 或 localhost）、相机权限与 WebGL。五款的真机实体卡测试仍分别是独立验收项。软件单元测试不是 iPhone 实测证明。
+## 目录职责
 
-## 真实资产与重建边界
+| 目录 | 用途 |
+|---|---|
+| `public/` | 当前网站源码与资源，唯一发布输入；原图保留原字节 |
+| `runtime-public/` | 历史轻量副本，未同步当前功能；不用于本轮构建或发布 |
+| `dist/` | `npm run build` 生成；不手改、不入 Git |
+| `tests/fixtures/hand-rig/` | 带许可证和 SHA-256 的手部模型测试夹具，不进入网站 |
+| `work/` | 忽略的历史制作工作区，网站构建和单测不得依赖它 |
+| `reports/quality-*/` | 当次运行日志、截图和结果；本地保留，CI 上传 |
 
-完整来源清单见 `docs/PROVENANCE.md`。所有五张原卡正面按原字节保留，包含原有印刷二维码。二维码仍指向原作已有目的地，并非候选版入口。
+`npm run test:assets` 检查 public 文件已被 Git 跟踪、代码中的静态引用、五卡映射及音频状态。保留在 `assets/originals/_source/` 的上游历史源码不作为应用入口检查。动态加载与故障行为由浏览器回归覆盖。构建生成 `version.json`，包含源提交、源码是否有未提交修改、逐文件 SHA-256 和整包摘要；复制成功不能替代运行验收。
 
-金属花卡用于方案 B 展陈与预览；扫描使用另行重建的方案 A 五款三维花卉，二者不混用。
+## 内容和数据边界
 
-## 隐私
+- 清荷：AI 合成设计解说，按点击播放，提供全文、错误提示和重试。其余四款目前为文字导览。
+- 五款三维花卉由代码生成；金属花卡使用本地 GLB。模型和珠光均为可选视图。
+- 浏览、主动收藏与扫描记录含义不同。当前花册使用 v2；扫描和历史备份页仍使用 v1，不能宣称扫描已接入新版花册，也不能用旧备份页备份 v2 主动收藏。
+- 无账号、无跨设备同步。花册只在当前浏览器保存。
+- 原卡图片中的二维码沿用原始目的地，不自动指向本次独立预览站；实体入口必须另行验收。
 
-无账号、无统计脚本、无视频上传、无云端收藏。相机由用户点击后开启，离开扫描时关闭。候选收藏键为 `flowers-speak:cloud-candidate:collection:v1`，不读取、不覆盖未知生产收藏格式。
+## 验收与发布
 
-## 测试与验收
+[本轮要求、发现和上线门槛](docs/ACCEPTANCE-20261029.md) · [真机与用户试用记录表](docs/usability/ACCEPTANCE-20261029.md)。Sites 只承载独立测试环境；不覆盖 zevth.work。正式服务器上线由用户后续确认，需版本核对、旧版保留和实际回滚演练。
 
-- `npm test`：原作校验、导航、收藏隔离、扫描状态机和三维几何测试
-- `node tests/ui-audit.mjs`：可选浏览器烟测，需要另行安装 Playwright 与其 Chromium，并先启动本地服务器；可用 `AUDIT_CHROMIUM` 指定本机浏览器路径。本次实际浏览器结果来自 `docs/QA-STATUS.md` 所述的云浏览器检查，不来自这个未能在云端启动的替代脚本
-- `docs/AR-STATUS.md`：追踪实现和实测边界
-- `docs/LOTUS-MODEL.md`：新建立体荷花的结构与坐标约定
-
-浏览器视觉核验、真机识别与最终验收的实际结果以 `docs/QA-STATUS.md` 为准，不以未执行的测试脚本作为通过证据。
-
-第一阶段源代码包 Zevth-Cloud-Candidate-2026-10-13.zip 已保留，SHA-256 为633dcdede3ef4614e17435659239cc91906ef494d4d66c0497f260bae04c20dc。此阶段没有覆盖该发布包。
-
-另提供轻量运行包：PNG 经无损 WebP 编码，逐张解码后的 RGBA 像素、尺寸完全一致；未缩放、裁剪或改色。完整源代码包仍保留原始 PNG。运行包的 `runtime-assets.json` 列明每张图的校验结果。
-
-## 2026-10-14 Mac 接手结果
-
-32 张正面手掌 PNG 已验证并集成新的 FRONT WebP 序列，未重渲染。源码与轻量运行包各通过 475 项本地 Chrome 检查；120 项单元测试及构建通过。窄屏末段五卡已全部收进画面。详见 `docs/QA-STATUS.md`、`reports/qa/local-public/` 与 `reports/qa/local-runtime/`。
-
-轻量版通过 `npm run dev:runtime` 在 `http://127.0.0.1:4175/` 启动。验收服务在任务结束时关闭。两项本地命令都仅监听回环地址。Python 打包依赖固定在 `requirements-tooling.txt`。
-
-Blender 本机复核因缺少程序及官方下载目录 HTTP 403 未执行；已有骨骼报告只作为带哈希的导入证据。未测试真实手机扫描，也未部署。生产备份、访问与恢复条件尚未核实。
+旧 README 完整保存在 [历史快照](docs/archive/README-before-quality-20261029.md)。根目录阶段报告、`docs/QA-STATUS.md` 与 `docs/DEPLOYMENT-v0.4.md` 均为各自日期的历史证据，不代表当前测试、部署或真实设备验收。
